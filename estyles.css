@@ -1,0 +1,64 @@
+body
+	{
+		width:50%;
+		font-size:1em;
+		text-align: justify;
+	}
+title
+	{
+		font-size:xx-large;
+	}
+
+body, div, seg
+	{
+		display:block;
+	}
+div[type="chapter"]:before
+	{
+		content: attr(id) ": ";
+	}
+div[type="chapter"]
+	{
+		margin:3rem;
+	}
+rs
+	{
+		text-decoration: underline;
+	}
+
+rs[key^="org"]
+	{
+		color:green;
+	}
+rs[key^="pla"]
+	{
+		color:orange;
+	}
+
+rs[key="per14"]
+	{
+		color:white;
+		background-color:black;
+	}
+rs[key="per1"]
+	{
+		color:white;
+		background-color:darkred;
+	}
+sp:before
+	{
+		content: '«';
+	}
+sp:after
+	{
+		content: '»';
+	}
+sp[who="per14"]
+	{
+		color:blue;
+	}
+
+sp[who="per1"]
+	{
+		color:darkred;
+	}
