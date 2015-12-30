@@ -5,7 +5,7 @@ namespace sch = "http://purl.oclc.org/dsdl/schematron"
 default namespace tei = "http://www.tei-c.org/ns/1.0"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2015-12-30T18:54:46Z. August 2012.
+# Schema generated from ODD source 2015-12-30T19:19:15Z. August 2012.
 # TEI Edition: Version 2.9.1. Last updated on
 #	15th October 2015, revision 46ac023
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
@@ -561,12 +561,12 @@ model.emphLike_sequenceOptional = title?
 model.emphLike_sequenceOptionalRepeatable = title*
 model.emphLike_sequenceRepeatable = title+
 model.highlighted = model.hiLike | model.emphLike
-model.dateLike = date
-model.dateLike_alternation = date
-model.dateLike_sequence = date
-model.dateLike_sequenceOptional = date?
-model.dateLike_sequenceOptionalRepeatable = date*
-model.dateLike_sequenceRepeatable = date+
+model.dateLike = date | time
+model.dateLike_alternation = date | time
+model.dateLike_sequence = date, time
+model.dateLike_sequenceOptional = date?, time?
+model.dateLike_sequenceOptionalRepeatable = date*, time*
+model.dateLike_sequenceRepeatable = date+, time+
 model.measureLike = notAllowed
 model.measureLike_alternation = notAllowed
 model.measureLike_sequence = empty
@@ -644,12 +644,12 @@ model.lLike_sequence = l
 model.lLike_sequenceOptional = l?
 model.lLike_sequenceOptionalRepeatable = l*
 model.lLike_sequenceRepeatable = l+
-model.pLike = p
-model.pLike_alternation = p
-model.pLike_sequence = p
-model.pLike_sequenceOptional = p?
-model.pLike_sequenceOptionalRepeatable = p*
-model.pLike_sequenceRepeatable = p+
+model.pLike = p | ab
+model.pLike_alternation = p | ab
+model.pLike_sequence = p, ab
+model.pLike_sequenceOptional = p?, ab?
+model.pLike_sequenceOptionalRepeatable = p*, ab*
+model.pLike_sequenceRepeatable = p+, ab+
 model.stageLike = notAllowed
 model.stageLike_alternation = notAllowed
 model.stageLike_sequence = empty
@@ -657,7 +657,7 @@ model.stageLike_sequenceOptional = empty
 model.stageLike_sequenceOptionalRepeatable = empty
 model.stageLike_sequenceRepeatable = notAllowed
 model.global.edit = notAllowed
-model.divPart = model.lLike | model.pLike | lg | sp
+model.divPart = model.lLike | model.pLike | lg
 model.placeNamePart = notAllowed
 model.placeNamePart_alternation = notAllowed
 model.placeNamePart_sequence = empty
@@ -684,13 +684,14 @@ model.quoteLike_sequence = empty
 model.quoteLike_sequenceOptional = empty
 model.quoteLike_sequenceOptionalRepeatable = empty
 model.quoteLike_sequenceRepeatable = notAllowed
-model.qLike = model.quoteLike
-model.qLike_alternation = model.quoteLike_alternation
-model.qLike_sequence = model.quoteLike_sequence
-model.qLike_sequenceOptional = model.quoteLike_sequenceOptional?
+model.qLike = model.quoteLike | said
+model.qLike_alternation = model.quoteLike_alternation | said
+model.qLike_sequence = model.quoteLike_sequence, said
+model.qLike_sequenceOptional = model.quoteLike_sequenceOptional?, said?
 model.qLike_sequenceOptionalRepeatable =
-  model.quoteLike_sequenceOptionalRepeatable*
-model.qLike_sequenceRepeatable = model.quoteLike_sequenceRepeatable+
+  model.quoteLike_sequenceOptionalRepeatable*, said*
+model.qLike_sequenceRepeatable =
+  model.quoteLike_sequenceRepeatable+, said+
 model.respLike =
   author | editor | respStmt | sponsor | funder | principal
 model.divWrapper = notAllowed
@@ -887,6 +888,22 @@ hi =
   
   ## (highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [3.3.2.2. Emphatic Words and Phrases 3.3.2. Emphasis, Foreign Words, and Unusual Language]
   element hi { macro.paraContent, att.global.attributes, empty }
+said =
+  
+  ## (speech or thought) indicates passages thought or spoken aloud, whether explicitly indicated in the source or not, whether directly or indirectly reported, whether by real people or fictional characters. [3.3.3. Quotation]
+  element said {
+    macro.specialPara,
+    att.global.attributes,
+    att.ascribed.attributes,
+    
+    ## may be used to indicate whether the quoted matter is regarded as having been vocalized or signed.
+    [ a:defaultValue = "unknown" ]
+    attribute aloud { data.xTruthValue }?,
+    
+    ## may be used to indicate whether the quoted matter is regarded as direct or indirect speech.
+    [ a:defaultValue = "true" ] attribute direct { data.xTruthValue }?,
+    empty
+  }
 name =
   
   ## (name, proper noun) contains a proper noun or noun phrase. [3.5.1. Referring Strings]
@@ -918,6 +935,17 @@ date =
   
   ## contains a date in any format. [3.5.4. Dates and Times 2.2.4. Publication, Distribution, Licensing, etc. 2.6. The Revision Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.3.6. Dates and Times]
   element date {
+    (text | model.gLike | model.phrase | model.global)*,
+    att.global.attributes,
+    att.datable.attributes,
+    att.editLike.attributes,
+    att.typed.attributes,
+    empty
+  }
+time =
+  
+  ## contains a phrase defining a time of day in any format. [3.5.4. Dates and Times]
+  element time {
     (text | model.gLike | model.phrase | model.global)*,
     att.global.attributes,
     att.datable.attributes,
@@ -1157,22 +1185,6 @@ lg =
     att.divLike.attributes,
     att.typed.attributes,
     att.declaring.attributes,
-    empty
-  }
-sp =
-  
-  ## (speech) contains an individual speech in a performance text, or a passage presented as such in a prose or verse text. [3.12.2. Core Tags for Drama 3.12. Passages of Verse or Drama 7.2.2. Speeches and Speakers]
-  element sp {
-    (model.global*,
-     ((lg
-       | model.lLike
-       | model.pLike
-       | model.listLike
-       | model.stageLike
-       | model.qLike),
-      model.global*)+),
-    att.global.attributes,
-    att.ascribed.attributes,
     empty
   }
 teiHeader =
@@ -1747,6 +1759,60 @@ att.global.linking.attribute.prev =
   
   ## (previous) points to the previous element of a virtual aggregate of which the current element is part.
   attribute prev { data.pointer }?
+ab =
+  
+  ## (anonymous block) contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of, a paragraph. [16.3. Blocks, Segments, and Anchors]
+  element ab {
+    macro.paraContent
+    >> sch:pattern [
+         id =
+           "tei_teibible0001-ab-abstractModel-structure-p-constraint-8"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:ab"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test =
+               "(ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum         |parent::tei:item         |parent::tei:note         |parent::tei:q         |parent::tei:quote         |parent::tei:remarks         |parent::tei:said         |parent::tei:sp         |parent::tei:stage         |parent::tei:cell         |parent::tei:figure)"
+             "\x{a}" ~
+             "        Abstract model violation: ab may not contain paragraphs or other ab elements.\x{a}" ~
+             "      "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "tei_teibible0001-ab-abstractModel-structure-l-constraint-9"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:ab"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "ancestor::tei:l or ancestor::tei:lg"
+             "\x{a}" ~
+             "        Abstract model violation: Lines may not contain higher-level divisions such as p or ab.\x{a}" ~
+             "      "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    att.global.attributes,
+    att.typed.attributes,
+    att.declaring.attributes,
+    att.fragmentable.attributes,
+    empty
+  }
 seg =
   
   ## (arbitrary segment) represents any segmentation of text below the chunk level. [16.3. Blocks, Segments, and Anchors 6.2. Components of the Verse Line 7.2.5. Speech Contents]
