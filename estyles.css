@@ -45,20 +45,50 @@ rs[key="per1"]
 		color:white;
 		background-color:darkred;
 	}
-sp:before
+said
+	{
+		border: black solid 2px;
+	}
+
+
+said:before
 	{
 		content: '«';
 	}
-sp:after
+said:after
 	{
 		content: '»';
 	}
-sp[who="per14"]
+said[who="per14"]
 	{
 		color:blue;
 	}
 
-sp[who="per1"]
+said[who="per1"]
 	{
 		color:darkred;
+	}
+
+ab[type="verse"]
+	{
+				
+		display:block;
+		margin:1rem;
+	}
+
+ab[type="verse"]
+	{
+				
+		content:block;
+		margin:1rem;
+	}
+ab[type="verse"]:before
+	{
+		content:attr(n);
+		color:grey;
+	}
+div[type="chapter"]:before
+	{
+		content:'Chapter 'attr(n);
+		color:grey;
 	}
