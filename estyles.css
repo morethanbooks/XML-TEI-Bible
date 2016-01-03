@@ -34,7 +34,10 @@ rs[key^="pla"]
 	{
 		color:orange;
 	}
-
+time
+    {
+        color:blue;
+    }
 rs[key="per14"]
 	{
 		color:white;
@@ -73,13 +76,12 @@ ab[type="verse"]
 	{
 				
 		display:block;
-		margin:1rem;
+		margin: 1rem;
 	}
 
 ab[type="verse"]
 	{
-				
-		content:block;
+		display:block;
 		margin:1rem;
 	}
 ab[type="verse"]:before
@@ -92,3 +94,4 @@ div[type="chapter"]:before
 		content:'Chapter 'attr(n);
 		color:grey;
 	}
+
