@@ -91,7 +91,18 @@ ab[type="verse"]:before
 	}
 div[type="chapter"]:before
 	{
-		content:'Chapter 'attr(n);
+		content:'Capítulo 'attr(n);
 		color:grey;
 	}
-
+rs:before	{
+		content:attr(key);
+		color:grey;
+		font-size:0.7rem;
+		background-color:white;
+	}
+said:before	{
+		content:attr(who);
+		color:grey;
+		font-size:0.7rem;
+		background-color:white;
+	}
