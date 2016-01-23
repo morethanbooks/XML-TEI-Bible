@@ -28,41 +28,41 @@ rs
 
 rs[key^="org"]
 	{
-		color:green;
+		color:purple;
+	}
+rs[key^="per"]
+	{
+		color:DeepSkyBlue;
 	}
 rs[key^="pla"]
 	{
-		color:orange;
+		color:ForestGreen;
+	}
+rs[key^="tim"]
+	{
+		color:darkgreen;
 	}
 time
-    {
-        color:blue;
-    }
-rs[key="per14"]
 	{
-		color:white;
-		background-color:black;
+		color:blue;
 	}
-rs[key="per1"]
+rs[key="per14"],
+rs[key="per1"],
+rs[key="per17"]
 	{
 		color:white;
-		background-color:darkred;
+		background-color:CornflowerBlue ;
 	}
 said
 	{
-		border: black solid 2px;
+		border: grey solid 2px;
 	}
-
-said[who="per14"]
+said[who="per14"],
+said[who="per1"],
+said[who="per17"]
 	{
-		border-color:blue;
+		border-color:CornflowerBlue ;
 	}
-
-said[who="per1"]
-	{
-		border-color:darkred;
-	}
-
 ab[type="verse"]
 	{
 				
