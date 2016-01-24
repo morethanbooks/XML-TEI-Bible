@@ -21,6 +21,10 @@ div[type="chapter"]
 	{
 		margin:3rem;
 	}
+ab
+    {
+        line-height:1.5rem;
+    }
 rs
 	{
 		text-decoration: underline;
@@ -42,10 +46,6 @@ rs[key^="tim"]
 	{
 		color:darkgreen;
 	}
-time
-	{
-		color:blue;
-	}
 rs[key="per14"],
 rs[key="per1"],
 rs[key="per17"]
@@ -57,12 +57,31 @@ said
 	{
 		border: grey solid 2px;
 	}
+said[who^="per"]
+	{
+		border:DeepSkyBlue solid 2px;
+	}
+said[who^="org"]
+	{
+		border:purple solid 2px;
+	}
+said[who^="pla"]
+	{
+		border:ForestGreen solid 2px;
+	}
 said[who="per14"],
 said[who="per1"],
 said[who="per17"]
 	{
 		border-color:CornflowerBlue ;
 	}
+said[who="per14"]
+    {
+        font-weight:bold;
+        font-variant: small-caps;
+        font-size:1.2rem;
+    }
+
 ab[type="verse"]
 	{
 				
