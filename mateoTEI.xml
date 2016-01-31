@@ -37,6 +37,7 @@
 			<change when="2015-12-30" who="jct">Created schema and changed some elements that were wrong</change>
 			<change when="2016-01-01" who="jct">Added information to header</change>
 			<change when="2016-01-29" who="jct">Text corrected personally</change>
+			<change when="2016-01-31" who="jct">Element said change to q and added type and source</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -260,16 +261,16 @@
 						El <rs key="per20">tentador</rs> se Acercó y le dijo: <q type="oral" who="per20">Si eres <rs key="per1">Hijo de Dios</rs>, di que estas piedras se conviertan en pan.</q>
 					</ab>
 					<ab xml:id="b.MAT.4.4" type="verse" n="4">
-						Pero él Respondió y dijo: <q type="oral" who="per1">Escrito Está: <q who="wor1" type="written">No Sólo de pan Vivirá el hombre, sino de toda palabra que sale de la boca de <rs key="per14">Dios</rs></q>.</q>
+						Pero él Respondió y dijo: <q type="oral" who="per1">Escrito Está: <q source="wor1" type="written">No Sólo de pan Vivirá el hombre, sino de toda palabra que sale de la boca de <rs key="per14">Dios</rs></q>.</q>
 					</ab>
 					<ab xml:id="b.MAT.4.5" type="verse" n="5">
 						Entonces el <rs key="per20">diablo</rs> le Llevó a la <rs key="pla3">santa ciudad</rs>, le puso de pie sobre el Pináculo del <rs key="pla30">templo</rs>,
 					</ab>
 					<ab xml:id="b.MAT.4.6" type="verse" n="6">
-						y le dijo: <q type="oral" who="per20">Si eres <rs key="per1">Hijo de Dios</rs>, échate abajo, porque escrito Está: <q  who="wor1" type="written">A sus <rs key="org4">ángeles</rs> Mandará acerca de ti, y en sus manos te Llevarán, de modo que nunca tropieces con tu pie en piedra.</q></q>
+						y le dijo: <q type="oral" who="per20">Si eres <rs key="per1">Hijo de Dios</rs>, échate abajo, porque escrito Está: <q  source="wor1" type="written">A sus <rs key="org4">ángeles</rs> Mandará acerca de ti, y en sus manos te Llevarán, de modo que nunca tropieces con tu pie en piedra.</q></q>
 					</ab>
 					<ab xml:id="b.MAT.4.7" type="verse" n="7">
-						<rs key="per1">Jesús</rs> le dijo: <q type="oral" who="per1">Además Está escrito: <q who="wor1" type="written">No Pondrás a prueba al <rs key="per14">Señor</rs> tu <rs key="per14">Dios</rs>.</q></q>
+						<rs key="per1">Jesús</rs> le dijo: <q type="oral" who="per1">Además Está escrito: <q source="wor1" type="written">No Pondrás a prueba al <rs key="per14">Señor</rs> tu <rs key="per14">Dios</rs>.</q></q>
 					</ab>
 					<ab xml:id="b.MAT.4.8" type="verse" n="8">
 						Otra vez el <rs key="per20">diablo</rs> le Llevó a un monte muy alto, y le Mostró todos los reinos del mundo y su gloria.
@@ -278,7 +279,7 @@
 						Y le dijo: <q type="oral" who="per20">Todo esto te daré, si postrado me adoras.</q>
 					</ab>
 					<ab xml:id="b.MAT.4.10" type="verse" n="10">
-						Entonces <rs key="per1">Jesús</rs> le dijo: <q type="oral" who="per1">Vete, <rs key="pla20">Satanás</rs>, porque escrito Está: <q who="wor1" type="written">Al <rs key="per14">Señor</rs> tu <rs key="per14">Dios</rs> Adorarás y a él solo Servirás.</q></q>
+						Entonces <rs key="per1">Jesús</rs> le dijo: <q type="oral" who="per1">Vete, <rs key="pla20">Satanás</rs>, porque escrito Está: <q source="wor1" type="written">Al <rs key="per14">Señor</rs> tu <rs key="per14">Dios</rs> Adorarás y a él solo Servirás.</q></q>
 					</ab>
 					<ab xml:id="b.MAT.4.11" type="verse" n="11">
 						Entonces el <rs key="per20">diablo</rs> le Dejó, y he Aquí, los <rs key="org4">ángeles</rs> vinieron y le Servían.
@@ -867,7 +868,7 @@
 						Mientras aquéllos Salían, he Aquí le trajeron un hombre <rs  key="org6">mudo endemoniado</rs>.
 					</ab>
 					<ab xml:id="b.MAT.9.33" type="verse" n="33">
-						Y tan pronto fue echado fuera el <rs  key="org6">demonio</rs>, el <rs key="org15">mudo</rs> Habló. Y las multitudes se maravillaban diciendo: <q type="soCalled">¡Nunca se ha visto semejante cosa en <rs  key="pla4">Israel</rs>!</q>
+						Y tan pronto fue echado fuera el <rs  key="org6">demonio</rs>, el <rs key="org15">mudo</rs> Habló. Y las multitudes se maravillaban diciendo: <q type="oral">¡Nunca se ha visto semejante cosa en <rs  key="pla4">Israel</rs>!</q>
 					</ab>
 					<ab xml:id="b.MAT.9.34" type="verse" n="34">
 						Pero los <rs  key="org2">fariseos</rs> Decían: <q type="oral" who="org2">Por el <rs  key="per20">Príncipe de los demonios</rs> echa fuera los <rs  key="org6">demonios</rs>.</q>
@@ -1167,7 +1168,7 @@
 						<q who="per19" type="written"><q who="per14" type="unknown">La caña cascada no Quebrará, y la mecha que humea no Apagará, hasta que saque a triunfo el juicio.</q></q>
 					</ab>
 					<ab xml:id="b.MAT.12.21" type="verse" n="21">
-						<q who="per19" type="written"><q who="per14">Y en su nombre las naciones Pondrán su esperanza.</q></q>
+						<q who="per19" type="written"><q who="per14" type="unknown">Y en su nombre las naciones Pondrán su esperanza.</q></q>
 					</ab>
 					<ab xml:id="b.MAT.12.22" type="verse" n="22">
 						Entonces fue Traído a él <rs key="org6">un endemoniado</rs>, <rs key="org15">ciego y mudo</rs>; y le Sanó, de manera que <rs key="org15">el mudo</rs> hablaba y Veía.
@@ -1236,7 +1237,7 @@
 						<q type="oral" who="per1">Cuando el <rs  key="org6">Espíritu inmundo</rs> ha salido del <rs key="org6">hombre</rs>, anda por lugares secos buscando reposo, y no lo encuentra.</q>
 					</ab>
 					<ab xml:id="b.MAT.12.44" type="verse" n="44">
-						<q type="oral" who="per1">Entonces dice: <q who="org6" type="soCalled">Volveré a mi casa de donde Salí.</q> Cuando regresa, la halla desocupada, barrida y adornada.</q>
+						<q type="oral" who="per1">Entonces dice: <q who="org6" type="thought">Volveré a mi casa de donde Salí.</q> Cuando regresa, la halla desocupada, barrida y adornada.</q>
 					</ab>
 					<ab xml:id="b.MAT.12.45" type="verse" n="45">
 						<q type="oral" who="per1">Entonces va y trae consigo otros siete <rs key="org6">Espíritus</rs> peores que él. Y después de entrar, habitan Allí; y el estado final de aquel <rs key="org6">hombre</rs> llega a ser peor que el primero. Así también Sucederá a esta perversa Generación.</q>
@@ -2174,7 +2175,7 @@
 						Entró <rs key="per1">Jesús</rs> en el <rs key="pla30">templo</rs> y Echó fuera a todos los que Vendían y compraban en el <rs key="pla30">templo</rs>. Volcó las mesas de los cambistas y las sillas de los que Vendían palomas,
 					</ab>
 					<ab xml:id="b.MAT.21.13" type="verse" n="13">
-						y les dijo: <q type="oral" who="per1">Escrito Está: <q who="per14" type="written"><rs key="pla30">Mi casa</rs> Será llamada casa de Oración, pero vosotros la habéis hecho <rs key="pla30">cueva de ladrones</rs></q>.</q>
+						y les dijo: <q type="oral" who="per1">Escrito Está: <q who="per14" type="written" cert="low"><rs key="pla30">Mi casa</rs> Será llamada casa de Oración, pero vosotros la habéis hecho <rs key="pla30">cueva de ladrones</rs></q>.</q>
 					</ab>
 					<ab xml:id="b.MAT.21.14" type="verse" n="14">
 						Entonces <rs key="org15">ciegos</rs> y <rs key="org15">cojos</rs> vinieron a él en el <rs key="pla30">templo</rs>, y él los Sanó.
@@ -2183,7 +2184,7 @@
 						Pero los principales <rs key="org12">sacerdotes</rs> y los <rs key="org5">escribas</rs> se indignaron cuando vieron las maravillas que él hizo, y a los muchachos que le aclamaban en el <rs key="pla30">templo</rs> diciendo: <q type="oral">¡Hosanna al <rs key="per1">Hijo de David</rs>!</q>
 					</ab>
 					<ab xml:id="b.MAT.21.16" type="verse" n="16">
-						Y le dijeron: <q type="oral" who="org12 org5">¿Oyes lo que dicen éstos?</q> <rs key="per1">Jesús</rs> les dijo: <q type="oral" who="per1">Sí. ¿Nunca Leísteis: <q type="written" who="wor1" cert="low">De la boca de los niños y de los que maman preparaste la alabanza</q>?</q>
+						Y le dijeron: <q type="oral" who="org12 org5">¿Oyes lo que dicen éstos?</q> <rs key="per1">Jesús</rs> les dijo: <q type="oral" who="per1">Sí. ¿Nunca Leísteis: <q type="written" source="wor1" cert="low">De la boca de los niños y de los que maman preparaste la alabanza</q>?</q>
 					</ab>
 					<ab xml:id="b.MAT.21.17" type="verse" n="17">
 						Los Dejó y Salió fuera de la <rs key="pla3">ciudad</rs> a <rs key="pla31">Betania</rs>, y se Alojó Allí.
@@ -2408,7 +2409,7 @@
 						El les dijo: <q type="oral" who="per1">Entonces, ¿Cómo es que <rs key="per35">David</rs>, mediante el <rs key="per17">Espíritu</rs>, le llama <rs key="per14">Señor</rs>? Pues dice:</q>
 					</ab>
 					<ab xml:id="b.MAT.22.44" type="verse" n="44">
-						<q type="oral" who="per1"><q who="per35" type="written">Dijo el <rs key="per14">Señor</rs> a mi <rs key="per1" cert="low">Señor</rs>: <q who="per14">Siéntate a mi diestra hasta que ponga a tus enemigos debajo de tus pies.</q></q></q>
+						<q type="oral" who="per1"><q who="per35" type="written">Dijo el <rs key="per14">Señor</rs> a mi <rs key="per1" cert="low">Señor</rs>: <q who="per14" type="unknown">Siéntate a mi diestra hasta que ponga a tus enemigos debajo de tus pies.</q></q></q>
 					</ab>
 					<ab xml:id="b.MAT.22.45" type="verse" n="45">
 						<q type="oral" who="per1">Pues, si <rs key="per35">David</rs> le llama <rs key="per14">Señor</rs>, ¿Cómo es su hijo?</q>
@@ -2923,7 +2924,7 @@
 						Y después de cantar un himno, salieron al <rs key="pla28">monte de los Olivos</rs>.
 					</ab>
 					<ab xml:id="b.MAT.26.31" type="verse" n="31">
-						Entonces <rs key="per1">Jesús</rs> les dijo: <q type="oral" who="per1">Todos vosotros os escandalizaréis de Mí esta noche, porque Está escrito: <q type="written" who="wor1" cert="low">Heriré al Pastor, y las ovejas del rebaño Serán dispersadas</q>.</q>
+						Entonces <rs key="per1">Jesús</rs> les dijo: <q type="oral" who="per1">Todos vosotros os escandalizaréis de Mí esta noche, porque Está escrito: <q type="written" source="wor1" cert="low">Heriré al Pastor, y las ovejas del rebaño Serán dispersadas</q>.</q>
 					</ab>
 					<ab xml:id="b.MAT.26.32" type="verse" n="32">
 						Pero después de haber resucitado, iré delante de vosotros a <rs key="pla7">Galilea</rs>.
