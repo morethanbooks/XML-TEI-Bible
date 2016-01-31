@@ -1,0 +1,88 @@
+body
+	{
+		width:50%;
+		font-size:1em;
+		text-align: justify;
+	}
+title
+	{
+		font-size:xx-large;
+	}
+
+body, div, seg
+	{
+		display:block;
+	}
+div[type="chapter"]:before
+	{
+		content: attr(id) ": ";
+	}
+div[type="chapter"]
+	{
+		margin:3rem;
+	}
+ab
+    {
+        line-height:1.5rem;
+    }
+q[type="oral"]
+	{
+		border: blue solid 2px;
+	}
+q[type="dream"]
+	{
+		border:pink solid 2px;
+	}
+q[type="written"]
+	{
+		border:green solid 2px;
+	}
+q[type="thought"]
+	{
+		border:red solid 2px;
+	}
+q[type="idea"]
+	{
+		border:purple solid 2px;
+	}
+q[type="soCalled"]
+	{
+		border:orange solid 2px;
+	}
+	q[type="prayer"]
+	{
+		border:black solid 2px;
+	}
+q[type="spoken"]
+	{
+		border:grey solid 2px;
+	}
+q:before
+	{
+		content:attr(type);
+		color:grey;
+	}
+
+
+ab[type="verse"]
+	{
+				
+		display:block;
+		margin: 1rem;
+	}
+
+ab[type="verse"]
+	{
+		display:block;
+		margin:1rem;
+	}
+ab[type="verse"]:before
+	{
+		content:attr(n);
+		color:grey;
+	}
+div[type="chapter"]:before
+	{
+		content:'Capítulo 'attr(n);
+		color:grey;
+	}
