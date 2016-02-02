@@ -1,6 +1,6 @@
 body
 	{
-		width:50%;
+		width:70%;
 		font-size:1em;
 		text-align: justify;
 	}
@@ -9,13 +9,9 @@ title
 		font-size:xx-large;
 	}
 
-body, div, seg
+body, div, seg, ab
 	{
 		display:block;
-	}
-div[type="chapter"]:before
-	{
-		content: attr(id) ": ";
 	}
 div[type="chapter"]
 	{
@@ -25,6 +21,12 @@ ab
     {
         line-height:1.5rem;
     }
+ab[type="pericope"]
+	{
+	text-align:center;
+	background-color:grey;
+	color:white;
+	}
 rs
 	{
 		text-decoration: underline;
@@ -53,29 +55,29 @@ rs[key="per17"]
 		color:white;
 		background-color:CornflowerBlue ;
 	}
-said
+q
 	{
 		border: grey solid 2px;
 	}
-said[who^="per"]
+q[who^="per"]
 	{
 		border:DeepSkyBlue solid 2px;
 	}
-said[who^="org"]
+q[who^="org"]
 	{
 		border:purple solid 2px;
 	}
-said[who^="pla"]
+q[who^="pla"]
 	{
 		border:ForestGreen solid 2px;
 	}
-said[who="per14"],
-said[who="per1"],
-said[who="per17"]
+q[who="per14"],
+q[who="per1"],
+q[who="per17"]
 	{
 		border-color:CornflowerBlue ;
 	}
-said[who="per14"]
+q[who="per14"]
     {
         font-weight:bold;
         font-variant: small-caps;
@@ -103,6 +105,7 @@ div[type="chapter"]:before
 	{
 		content:'Capítulo 'attr(n);
 		color:grey;
+		font-size:2rem;
 	}
 rs:before	{
 		content:attr(key);
