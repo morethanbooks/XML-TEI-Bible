@@ -1,0 +1,66 @@
+	/*word{display:none;}*/
+	span
+	{
+	width: 500px;
+	height: 100px;
+	border: 3px solid #73AD21;
+	}
+	paragraph {
+	display:block;
+	border:black 3px solid;
+	float:left;
+	border-radius:50%;
+	margin:1rem;
+	padding:1rem;
+	background-color:white;
+  }
+	said
+	{
+	display:block;
+	border:blue 2px solid;
+	float:left;
+	border-radius:50%;
+	padding:1rem;
+	background-color:blue;
+	}
+
+	sentence
+	{
+	display:block;
+	border:green 2px solid;
+	float:left;
+	border-radius:50%;
+	padding:1rem;
+	background-color:green;
+	}
+	
+	word
+	{
+	display:none;
+	border:orange 2px solid;
+	float:left;
+	border-radius:50%;
+	padding:1rem;
+	width:3%
+	background-color:orange;
+	
+	}
+	
+	.said:before {content: "«";}
+	.said:after {content: "»";}
+	
+	.sentence>.word:first-of-type {text-transform:capitalize;}
+	
+	.sentence[title="affirmative"]:after{content:".";}
+	.sentence[title="interrogative"]:after{content:"?";}
+	.sentence[title="exclamatory "]:after{content:"!";}
+	
+	.word+.word {margin:0 0.5rem 0 0.5rem;}
+	
+	.word.NNP {text-transform:capitalize;}
+	
+	.pause.brief:before {content: ","}
+	
+	.pause.long:before {content: " --- "}
+	
+	.word[title="i"] {text-transform:capitalize;}
