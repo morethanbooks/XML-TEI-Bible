@@ -1,4 +1,6 @@
  TEI{ font-size:1px;
+width:75%;
+margin:5% auto 0;
  }
  teiHeader
  {
@@ -25,7 +27,10 @@ div[type="pericope"]
 	padding:1px;
 }
 */
-
+ab[type="pericope"]
+{
+	display:none;
+}
 ab[type="verse"]
 {
 	display:block;
@@ -35,7 +40,6 @@ ab[type="verse"]
 	width:20em;
 	height:20em;
 	padding:1em;
-
 }
 
 ab>q 
