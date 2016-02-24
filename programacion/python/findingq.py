@@ -14,6 +14,7 @@ def findingq(text):
     """
         It decodes the HTML entities and it deletes some anoying characters
     """
+    """
     text = re.sub(r'("(per[0-9]+)((?!"per).)*>[^<]*?)"([^>]*?[^\r])"([^>])', r'\1<!--revisar--><q who="\2">\4</q>\5', text, flags=re.MULTILINE|re.DOTALL)
 
     text = re.sub(r'((per[0-9]*)((?!"per).)*>[^<]*?)"([^>]*?[^\r]*)"', r'\1<!--revisar--><q who="\2">\4</q>', text, flags=re.MULTILINE|re.DOTALL)
@@ -23,6 +24,22 @@ def findingq(text):
     text = re.sub(r'("(per[0-9]+).*?[^!])--([^>].*?)$', r'\1<!--revisar--><q who="\2">\3</q>', text, flags=re.MULTILINE|re.DOTALL)
 
     text = re.sub(r'("(per[0-9]+).*?[^!])--([^>].*?)$', r'\1<!--revisar--><q who="\2">\3</q>', text, flags=re.MULTILINE|re.DOTALL)
+    """
+    text = re.sub(r':? ?«(.*?)»', r' <q>\1</q>', text, flags=re.MULTILINE)
+
+    text = re.sub(r'xml:id', r'xml_id', text, flags=re.MULTILINE)
+    text = re.sub(r'http:', r'http_', text, flags=re.MULTILINE)
+
+
+    text = re.sub(r':(.+)', r' <q>\1</q>', text, flags=re.MULTILINE)
+
+    text = re.sub(r'^(\t+)((((?!<q).)*)[^\w](yo|tú)[^\w].+)', r'\1<q>\2</q>', text, flags=re.MULTILINE|re.IGNORECASE)
+
+    text = re.sub(r'(<rs key="((per|org)\d+).*?>.*?)<q>', r'\1<q who="\2">', text, flags=re.MULTILINE)
+    text = re.sub(r'(<rs key="((per|org)\d+).*?>.*?)<q>', r'\1<q who="\2">', text, flags=re.MULTILINE)
+    text = re.sub(r'(<rs key="((per|org)\d+).*?>.*?)<q>', r'\1<q who="\2">', text, flags=re.MULTILINE)
+
+    text = re.sub(r'_', r':', text, flags=re.MULTILINE)
 
     return text
 
