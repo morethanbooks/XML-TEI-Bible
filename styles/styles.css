@@ -119,3 +119,79 @@ said:before	{
 		font-size:0.7rem;
 		background-color:white;
 	}
+
+
+q[type]
+	{
+		border:black solid 2px;
+	}
+
+q:before
+	{
+		content:'who: 'attr(who)' | 2who: 'attr(ana) ' | type: 'attr(type) ' ';
+		color:grey;
+	}
+
+ab[type="verse"]
+	{
+				
+		display:block;
+		margin: 1rem;
+	}
+
+ab[type="verse"]
+	{
+		display:block;
+		margin:1rem;
+	}
+ab[type="verse"]:before
+	{
+		content:attr(n);
+		color:grey;
+	}
+div[type="chapter"]:before
+	{
+		content:'Capítulo 'attr(n);
+		color:grey;
+	}
+rs
+	{
+		text-decoration: underline;
+	}
+rs:before	{
+		content:attr(key);
+		color:grey;
+		font-size:0.7rem;
+		background-color:white;
+	}
+ab[type="pericope"]
+	{
+		color:grey;
+	}
+
+
+/**/
+
+q[ana="per1"]
+	{
+		border: red solid 2px;
+	}
+q[ana="org3"]
+	{
+		border:blue solid 2px;
+	}
+q[ana="org2"],
+q[ana="org5"],
+q[ana="org7"]
+
+	{
+		border:green solid 2px;
+	}
+q[ana="per14"]
+	{
+		border: orange solid 2px;
+	}
+q[ana="general"]
+	{
+		border: yellow solid 2px;
+	}
