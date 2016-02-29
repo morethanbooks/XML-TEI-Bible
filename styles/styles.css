@@ -17,6 +17,10 @@ div[type="chapter"]
 	{
 		margin:3rem;
 	}
+div[cert="high"]
+    {
+        display:none;
+    }
 ab
     {
         line-height:1.5rem;
@@ -128,7 +132,7 @@ q[type]
 
 q:before
 	{
-		content:'who: 'attr(who)' | 2who: 'attr(ana) ' | type: 'attr(type) ' ';
+		content:'who: 'attr(who)' | 2who: 'attr(corresp) ' | type: 'attr(type) ' ';
 		color:grey;
 	}
 
@@ -172,26 +176,26 @@ ab[type="pericope"]
 
 /**/
 
-q[ana="per1"]
+q[corresp="per1"]
 	{
 		border: red solid 2px;
 	}
-q[ana="org3"]
+q[corresp="org3"]
 	{
 		border:blue solid 2px;
 	}
-q[ana="org2"],
-q[ana="org5"],
-q[ana="org7"]
+q[corresp="org2"],
+q[corresp="org5"],
+q[corresp="org7"]
 
 	{
 		border:green solid 2px;
 	}
-q[ana="per14"]
+q[corresp="per14"]
 	{
 		border: orange solid 2px;
 	}
-q[ana="general"]
+q[corresp="general"]
 	{
 		border: yellow solid 2px;
 	}
