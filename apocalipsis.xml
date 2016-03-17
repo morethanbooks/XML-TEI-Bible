@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
 <?xml-stylesheet type="text/css" href="styles/text2pic3.css" rel="stylesheet" title="Word2pic-3"?>
 <?xml-stylesheet type="text/css" href="styles/text2pic2.css" rel="stylesheet" title="Word2pic-2"?>
 <?xml-stylesheet type="text/css" href="styles/styles-q-type.css" rel="alternate stylesheet" title="q-type"?>
 <?xml-stylesheet type="text/css" href="styles/text2pic1.css" rel="stylesheet" title="Word2pic"?>
-<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
@@ -13,14 +13,14 @@
 					<idno type="viaf"></idno>
 				</title>
 				<author>
-					<name type="short">Juan</name>
-					<name type="full">San Juan</name>
+					<name type="short"><rs key="per25">Juan</rs></name>
+					<name type="full">San <rs key="per25">Juan</rs></name>
 					<idno type="viaf"></idno>
 				</author>
-				<principal key="#jct">José Calvo Tello</principal>
+				<principal key="#jct"><rs key="0">José</rs> Calvo Tello</principal>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>José Calvo Tello</publisher>
+				<publisher><rs key="0">José</rs> Calvo Tello</publisher>
 				<availability status="free">
 					<p>The text is freely available.</p>
 				</availability>
@@ -28,7 +28,7 @@
 			</publicationStmt>
 			<sourceDesc>
 				<bibl type="digital-source">, <date when="2000">?</date>, <idno></idno>	.</bibl>
-				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="print-source">Reina <rs key="0">Valera</rs>, <date when="1995">1995</date></bibl>
 				<bibl type="edition-first"><date when="1569">1569</date></bibl>
 			</sourceDesc>
 		</fileDesc>
@@ -46,82 +46,82 @@
 		<body>
 			<div xml:id="b.JUA" type="book">
 				<div xml:id="b.APO.1" type="chapter" n="1">
-					<ab xml:id="b.APO.1.1" type="verse" n="1">La revelación de Jesucristo, que Dios le dio para manifestar a sus siervos las cosas que deben suceder pronto. La declaró enviándola por medio de su ángel a su siervo Juan,</ab>
-					<ab xml:id="b.APO.1.2" type="verse" n="2">el cual ha dado testimonio de la palabra de Dios, del testimonio de Jesucristo y de todas las cosas que ha visto.</ab>
-					<ab xml:id="b.APO.1.3" type="verse" n="3">Bienaventurado el que lee y los que oyen las palabras de esta profecía, y guardan las cosas en ella escritas, porque el tiempo está cerca.</ab>
-					<ab xml:id="b.APO.1.4" type="verse" n="4">Juan, a las siete iglesias que están en Asia: Gracia y paz a vosotros de parte del que es y que era y que ha de venir, de los siete espíritus que están delante de su trono,</ab>
-					<ab xml:id="b.APO.1.5" type="verse" n="5">y de Jesucristo, el testigo fiel, el primogénito de los muertos y el soberano de los reyes de la tierra. Al que nos ama, nos ha lavado de nuestros pecados con su sangre</ab>
-					<ab xml:id="b.APO.1.6" type="verse" n="6">y nos hizo reyes y sacerdotes para Dios, su Padre, a él sea gloria e imperio por los siglos de los siglos. Amén.</ab>
+					<ab xml:id="b.APO.1.1" type="verse" n="1">La revelación de <rs key="per1">Jesucristo</rs>, que <rs key="per14">Dios</rs> le dio para manifestar a sus siervos las cosas que deben suceder pronto. La declaró enviándola por medio de su <rs key="org4">ángel</rs> a su <rs key="per25">siervo</rs> <rs key="per25">Juan</rs>,</ab>
+					<ab xml:id="b.APO.1.2" type="verse" n="2">el cual ha dado testimonio de la palabra de <rs key="per14">Dios</rs>, del testimonio de <rs key="per1">Jesucristo</rs> y de todas las cosas que ha visto.</ab>
+					<ab xml:id="b.APO.1.3" type="verse" n="3">Bienaventurado el que lee y los que oyen las palabras de esta <rs key="wor3">profecía</rs>, y guardan las cosas en ella escritas, porque el <rs key="t2">tiempo</rs> está cerca.</ab>
+					<ab xml:id="b.APO.1.4" type="verse" n="4"><rs key="per25">Juan</rs>, a las <rs key="org30 org31 org32 org33 org34 org35 org36">siete iglesias que están en <rs key="pla63">Asia</rs></rs>: Gracia y paz a vosotros de parte del que es y que era y que ha de venir, de los siete espíritus que están delante de su trono,</ab>
+					<ab xml:id="b.APO.1.5" type="verse" n="5">y de <rs key="per1">Jesucristo</rs>, el <rs key="per1">testigo fiel</rs>, el <rs key="per1">primogénito de los muertos</rs> y el <rs key="per1">soberano de los reyes de la tierra</rs>. Al <rs key="per1">que nos ama</rs>, nos ha lavado de nuestros pecados con su sangre</ab>
+					<ab xml:id="b.APO.1.6" type="verse" n="6">y nos hizo <rs key="org18">reyes</rs> y <rs key="org18">sacerdotes</rs> para <rs key="per14">Dios</rs>, su <rs key="per14">Padre</rs>, a él sea gloria e imperio por los siglos de los siglos. Amén.</ab>
 					<ab xml:id="b.APO.1.7" type="verse" n="7">He aquí que viene con las nubes: Todo ojo lo verá, y los que lo traspasaron; y todos los linajes de la tierra se lamentarán por causa de él. Sí, amén.</ab>
-					<ab xml:id="b.APO.1.8" type="verse" n="8">«Yo soy el Alfa y la Omega, principio y fin», dice el Señor, el que es y que era y que ha de venir, el Todopoderoso.</ab>
-					<ab xml:id="b.APO.1.9" type="verse" n="9">Yo, Juan, vuestro hermano y compañero en la tribulación, en el reino y en la perseverancia de Jesucristo, estaba en la isla llamada Patmos, por causa de la palabra de Dios y del testimonio de Jesucristo.</ab>
-					<ab xml:id="b.APO.1.10" type="verse" n="10">Estando yo en el Espíritu en el día del Señor oí detrás de mí una gran voz, como de trompeta,</ab>
-					<ab xml:id="b.APO.1.11" type="verse" n="11">que decía: «Yo soy el Alfa y la Omega, el primero y el último. Escribe en un libro lo que ves y envíalo a las siete iglesias que están en Asia: a Éfeso, Esmirna, Pérgamo, Tiatira, Sardis, Filadelfia y Laodicea».</ab>
-					<ab xml:id="b.APO.1.12" type="verse" n="12">Me volví para ver la voz que hablaba conmigo. Y vuelto, vi siete candelabros de oro,</ab>
-					<ab xml:id="b.APO.1.13" type="verse" n="13">y en medio de los siete candelabros a uno semejante al Hijo del hombre, vestido de una ropa que llegaba hasta los pies, y tenía el pecho ceñido con un cinto de oro.</ab>
+					<ab xml:id="b.APO.1.8" type="verse" n="8"><q who="per1" corresp="per25" type="oral">Yo soy el <rs key="per1">Alfa</rs> y la <rs key="per1">Omega</rs>, <rs key="per1">principio</rs> y <rs key="per1">fin</rs></q>, dice el <rs key="per1">Señor</rs>, el que es y que era y que ha de venir, el <rs key="per1">Todopoderoso</rs>.</ab>
+					<ab xml:id="b.APO.1.9" type="verse" n="9">Yo, <rs key="per25">Juan</rs>, vuestro <rs key="per25">hermano</rs> y <rs key="per25">compañero en la tribulación</rs>, en el <rs key="pla19">reino y en la perseverancia de <rs key="per1">Jesucristo</rs></rs>, estaba en la <rs key="pla70">isla</rs> llamada <rs key="pla70">Patmos</rs>, por causa de la palabra de <rs key="per14">Dios</rs> y del testimonio de <rs key="per1">Jesucristo</rs>.</ab>
+					<ab xml:id="b.APO.1.10" type="verse" n="10">Estando yo en el <rs key="per17">Espíritu</rs> en el <rs cert="low" key="tim9">día del <rs key="per14">Señor</rs></rs> oí detrás de mí una gran voz, como de trompeta,</ab>
+					<ab xml:id="b.APO.1.11" type="verse" n="11">que decía: <q who="per1" corresp="per25" type="oral">Yo soy el <rs key="per14">Alfa</rs> y la <rs key="per1">Omega</rs>, el <rs key="per1">primero</rs> y el <rs key="per1">último</rs>. Escribe en un <rs key="wor3">libro</rs> lo que ves y envíalo a las <rs key="org30 org31 org32 org33 org34 org35 org36">siete iglesias que están en <rs key="pla63">Asia</rs></rs>: a <rs key="org30">Éfeso</rs>, <rs key="org31">Esmirna</rs>, <rs key="org32">Pérgamo</rs>, <rs key="org33">Tiatira</rs>, <rs key="org34">Sardis</rs>, <rs key="org35">Filadelfia</rs> y <rs key="org36">Laodicea</rs>.</q></ab>
+					<ab xml:id="b.APO.1.12" type="verse" n="12">Me volví para ver la voz que hablaba conmigo. Y vuelto, vi <rs key="org30 org31 org32 org33 org34 org35 org36">siete candelabros de oro</rs>,</ab>
+					<ab xml:id="b.APO.1.13" type="verse" n="13">y en medio de los <rs key="org30 org31 org32 org33 org34 org35 org36">siete candelabros</rs> a uno semejante al <rs key="per1">Hijo del hombre</rs>, vestido de una ropa que llegaba hasta los pies, y tenía el pecho ceñido con un cinto de oro.</ab>
 					<ab xml:id="b.APO.1.14" type="verse" n="14">Su cabeza y sus cabellos eran blancos como blanca lana, como nieve; sus ojos, como llama de fuego.</ab>
-					<ab xml:id="b.APO.1.15" type="verse" n="15">Sus pies eran semejantes al bronce pulido, refulgente como en un horno, y su voz como el estruendo de muchas aguas.,</ab>
+					<ab xml:id="b.APO.1.15" type="verse" n="15">Sus pies eran semejantes al bronce pulido, refulgente como en un horno, y su voz como el estruendo de muchas aguas.</ab>
 					<ab xml:id="b.APO.1.16" type="verse" n="16">En su diestra tenía siete estrellas; de su boca salía una espada aguda de dos filos y su rostro era como el sol cuando resplandece con toda su fuerza.</ab>
-					<ab xml:id="b.APO.1.17" type="verse" n="17">Cuando lo vi, caí a sus pies como muerto. Y él puso su diestra sobre mí, diciéndome: «No temas. Yo soy el primero y el último,</ab>
-					<ab xml:id="b.APO.1.18" type="verse" n="18">el que vive. Estuve muerto, pero vivo por los siglos de los siglos, amén. Y tengo las llaves de la muerte y del Hades.</ab>
-					<ab xml:id="b.APO.1.19" type="verse" n="19">Escribe, pues, las cosas que has visto, las que son y las que han de ser después de estas.</ab>
-					<ab xml:id="b.APO.1.20" type="verse" n="20">Respecto al misterio de las siete estrellas que has visto en mi diestra, y de los siete candelabros de oro: las siete estrellas son los ángeles de las siete iglesias, y los siete candelabros que has visto son las siete iglesias.</ab>
+					<ab xml:id="b.APO.1.17" type="verse" n="17">Cuando lo vi, caí a sus pies como muerto. Y él puso su diestra sobre mí, diciéndome: <q who="per1" corresp="per25" type="oral">No temas. Yo soy el <rs key="per1">primero</rs> y el <rs key="per1">último</rs>,</q></ab>
+					<ab xml:id="b.APO.1.18" type="verse" n="18"><q who="per1" corresp="per25" type="oral">el <rs key="per1">que vive</rs>. Estuve muerto, pero vivo por los siglos de los siglos, amén. Y tengo las llaves de la muerte y del <rs key="pla15">Hades</rs>.</q></ab>
+					<ab xml:id="b.APO.1.19" type="verse" n="19"><q who="per1" corresp="per25" type="oral">Escribe, pues, las cosas que has visto, las que son y las que han de ser después de estas.</q></ab>
+					<ab xml:id="b.APO.1.20" type="verse" n="20"><q who="per1" corresp="per25" type="oral">Respecto al misterio de las <rs key="org4">siete estrellas</rs> que has visto en mi diestra, y de los <rs key="org30 org31 org32 org33 org34 org35 org36">siete candelabros de oro</rs>: las <rs key="org4">siete estrellas</rs> son los <rs key="org4">ángeles de las <rs key="org30 org31 org32 org33 org34 org35 org36">siete iglesias</rs></rs>, y los <rs key="org30 org31 org32 org33 org34 org35 org36">siete candelabros</rs> que has visto son las <rs key="org30 org31 org32 org33 org34 org35 org36">siete iglesias</rs>.</q></ab>
 
 				</div>
 				<div xml:id="b.APO.2" type="chapter" n="2">
-					<ab xml:id="b.APO.2.1" type="verse" n="1">»Escribe al ángel de la iglesia en Éfeso: »El que tiene las siete estrellas en su diestra, el que camina en medio de los siete candelabros de oro, dice esto:</ab>
+					<ab xml:id="b.APO.2.1" type="verse" n="1">»Escribe al <rs key="org4">ángel</rs> de la iglesia en <rs key="pla62">Éfeso</rs>: »El que tiene las siete estrellas en su diestra, el que camina en medio de los siete candelabros de oro, dice esto:</ab>
 					<ab xml:id="b.APO.2.2" type="verse" n="2">»Yo conozco tus obras, tu arduo trabajo y tu perseverancia, y que no puedes soportar a los malos, has probado a los que se dicen ser apóstoles y no lo son, y los has hallado mentirosos.</ab>
 					<ab xml:id="b.APO.2.3" type="verse" n="3">Has sufrido, has sido perseverante, has trabajado arduamente por amor de mi nombre y no has desmayado.</ab>
 					<ab xml:id="b.APO.2.4" type="verse" n="4">Pero tengo contra ti que has dejado tu primer amor.</ab>
 					<ab xml:id="b.APO.2.5" type="verse" n="5">Recuerda, por tanto, de dónde has caído, arrepiéntete y haz las primeras obras, pues si no te arrepientes, pronto vendré a ti y quitaré tu candelabro de su lugar.</ab>
 					<ab xml:id="b.APO.2.6" type="verse" n="6">Pero tienes esto: que aborreces las obras de los nicolaítas, las cuales yo también aborrezco.</ab>
-					<ab xml:id="b.APO.2.7" type="verse" n="7">El que tiene oído, oiga lo que el Espíritu dice a las iglesias. Al vencedor le daré a comer del árbol de la vida, que está en medio del paraíso de Dios .</ab>
-					<ab xml:id="b.APO.2.8" type="verse" n="8">»Escribe al ángel de la iglesia en Esmirna: »El primero y el postrero, el que estuvo muerto y vivió, dice esto:</ab>
-					<ab xml:id="b.APO.2.9" type="verse" n="9">»Yo conozco tus obras, tu tribulación, tu pobreza (aunque eres rico) y la blasfemia de los que dicen ser judíos y no lo son, sino que son sinagoga de Satanás.</ab>
+					<ab xml:id="b.APO.2.7" type="verse" n="7">El que tiene oído, oiga lo que el Espíritu dice a las iglesias. Al vencedor le daré a comer del árbol de la vida, que está en medio del paraíso de <rs key="per14">Dios</rs> .</ab>
+					<ab xml:id="b.APO.2.8" type="verse" n="8">»Escribe al <rs key="org4">ángel</rs> de la iglesia en <rs key="pla65">Esmirna</rs>: »El primero y el postrero, el que estuvo muerto y vivió, dice esto:</ab>
+					<ab xml:id="b.APO.2.9" type="verse" n="9">»Yo conozco tus obras, tu tribulación, tu pobreza (aunque eres rico) y la blasfemia de los que dicen ser judíos y no lo son, sino que son sinagoga de <rs key="per20">Satanás</rs>.</ab>
 					<ab xml:id="b.APO.2.10" type="verse" n="10">No temas lo que has de padecer. El diablo echará a algunos de vosotros en la cárcel para que seáis probados, y tendréis tribulación por diez días. ¡Sé fiel hasta la muerte y yo te daré la corona de la vida!</ab>
 					<ab xml:id="b.APO.2.11" type="verse" n="11">El que tiene oído, oiga lo que el Espíritu dice a las iglesias. El vencedor no sufrirá daño de la segunda muerte .</ab>
-					<ab xml:id="b.APO.2.12" type="verse" n="12">»Escribe al ángel de la iglesia en Pérgamo: »El que tiene la espada aguda de dos filos dice esto:</ab>
-					<ab xml:id="b.APO.2.13" type="verse" n="13">»Yo conozco tus obras y dónde habitas: donde está el trono de Satanás. Pero retienes mi nombre y no has negado mi fe ni aun en los días en que Antipas, mi testigo fiel, fue muerto entre vosotros, donde habita Satanás.</ab>
-					<ab xml:id="b.APO.2.14" type="verse" n="14">Pero tengo unas pocas cosas contra ti: que tienes ahí a los que retienen la doctrina de Balaam, que enseñaba a Balac a poner tropiezo ante los hijos de Israel, a comer de cosas sacrificadas a los ídolos y a cometer fornicación.</ab>
+					<ab xml:id="b.APO.2.12" type="verse" n="12">»Escribe al <rs key="org4">ángel</rs> de la iglesia en <rs key="pla68">Pérgamo</rs>: »El que tiene la espada aguda de dos filos dice esto:</ab>
+					<ab xml:id="b.APO.2.13" type="verse" n="13">»Yo conozco tus obras y dónde habitas: donde está el trono de <rs key="per20">Satanás</rs>. Pero retienes mi nombre y no has negado mi fe ni aun en los días en que <rs key="0">Antipas</rs>, mi testigo fiel, fue muerto entre vosotros, donde habita <rs key="per20">Satanás</rs>.</ab>
+					<ab xml:id="b.APO.2.14" type="verse" n="14">Pero tengo unas pocas cosas contra ti: que tienes ahí a los que retienen la doctrina de <rs key="0">Balaam</rs>, que enseñaba a <rs key="0">Balac</rs> a poner tropiezo ante los hijos de <rs key="pla4">Israel</rs>, a comer de cosas sacrificadas a los ídolos y a cometer fornicación.</ab>
 					<ab xml:id="b.APO.2.15" type="verse" n="15">Y también tienes a los que retienen la doctrina de los nicolaítas, la que yo aborrezco.</ab>
 					<ab xml:id="b.APO.2.16" type="verse" n="16">Por tanto, arrepiéntete, pues si no, vendré pronto hasta ti y pelearé contra ellos con la espada de mi boca.</ab>
 					<ab xml:id="b.APO.2.17" type="verse" n="17">El que tiene oído, oiga lo que el Espíritu dice a las iglesias. Al vencedor le daré de comer del maná escondido, y le daré una piedrecita blanca y en la piedrecita un nombre nuevo escrito, el cual nadie conoce sino el que lo recibe .</ab>
-					<ab xml:id="b.APO.2.18" type="verse" n="18">»Escribe al ángel de la iglesia en Tiatira: »El Hijo de Dios, el que tiene ojos como llama de fuego y pies semejantes al bronce pulido, dice esto:</ab>
+					<ab xml:id="b.APO.2.18" type="verse" n="18">»Escribe al <rs key="org4">ángel</rs> de la iglesia en <rs key="pla61">Tiatira</rs>: »El <rs key="per1">Hijo</rs> de <rs key="per14">Dios</rs>, el que tiene ojos como llama de fuego y pies semejantes al bronce pulido, dice esto:</ab>
 					<ab xml:id="b.APO.2.19" type="verse" n="19">»Yo conozco tus obras, tu amor, tu fe, tu servicio, tu perseverancia y que tus obras postreras son superiores a las primeras.</ab>
-					<ab xml:id="b.APO.2.20" type="verse" n="20">Pero tengo contra ti que toleras que esa mujer Jezabel, que se dice profetisa, enseñe y seduzca a mis siervos para fornicar y para comer cosas sacrificadas a los ídolos.</ab>
+					<ab xml:id="b.APO.2.20" type="verse" n="20">Pero tengo contra ti que toleras que esa mujer <rs key="0">Jezabel</rs>, que se dice profetisa, enseñe y seduzca a mis siervos para fornicar y para comer cosas sacrificadas a los ídolos.</ab>
 					<ab xml:id="b.APO.2.21" type="verse" n="21">Yo le he dado tiempo para que se arrepienta, pero no quiere arrepentirse de su fornicación.</ab>
 					<ab xml:id="b.APO.2.22" type="verse" n="22">Por tanto, yo la arrojo en cama; y en gran tribulación a los que adulteran con ella, si no se arrepienten de las obras de ella.</ab>
 					<ab xml:id="b.APO.2.23" type="verse" n="23">A sus hijos heriré de muerte y todas las iglesias sabrán que yo soy el que escudriña la mente y el corazón. Os daré a cada uno según vuestras obras.</ab>
-					<ab xml:id="b.APO.2.24" type="verse" n="24">Pero a los demás que están en Tiatira, a cuantos no tienen esa doctrina y no han conocido lo que ellos llaman las profundidades de Satanás, yo os digo: No os impongo otra carga;</ab>
+					<ab xml:id="b.APO.2.24" type="verse" n="24">Pero a los demás que están en <rs key="pla61">Tiatira</rs>, a cuantos no tienen esa doctrina y no han conocido lo que ellos llaman las profundidades de <rs key="per20">Satanás</rs>, yo os digo: No os impongo otra carga;</ab>
 					<ab xml:id="b.APO.2.25" type="verse" n="25">pero lo que tenéis, retenedlo hasta que yo venga.</ab>
 					<ab xml:id="b.APO.2.26" type="verse" n="26">Al vencedor que guarde mis obras hasta el fin, yo le daré autoridad sobre las naciones;</ab>
-					<ab xml:id="b.APO.2.27" type="verse" n="27">las regirá con vara de hierro y serán quebradas como un vaso de alfarero; como yo también la he recibido de mi Padre.</ab>
+					<ab xml:id="b.APO.2.27" type="verse" n="27">las regirá con vara de hierro y serán quebradas como un vaso de alfarero; como yo también la he recibido de mi <rs key="per14">Padre</rs>.</ab>
 					<ab xml:id="b.APO.2.28" type="verse" n="28">Y le daré la estrella de la mañana.</ab>
 					<ab xml:id="b.APO.2.29" type="verse" n="29">El que tiene oído, oiga lo que el Espíritu dice a las iglesias .</ab>
 
 				</div>
 				<div xml:id="b.APO.3" type="chapter" n="3">
-					<ab xml:id="b.APO.3.1" type="verse" n="1">»Escribe al ángel de la iglesia en Sardis: »El que tiene los siete espíritus de Dios y las siete estrellas dice esto: »Yo conozco tus obras, que tienes nombre de que vives y estás muerto.</ab>
-					<ab xml:id="b.APO.3.2" type="verse" n="2">Sé vigilante y confirma las otras cosas que están para morir, porque no he hallado tus obras bien acabadas delante de Dios.</ab>
+					<ab xml:id="b.APO.3.1" type="verse" n="1">»Escribe al <rs key="org4">ángel</rs> de la iglesia en <rs key="pla60">Sardis</rs>: »El que tiene los siete espíritus de <rs key="per14">Dios</rs> y las siete estrellas dice esto: »Yo conozco tus obras, que tienes nombre de que vives y estás muerto.</ab>
+					<ab xml:id="b.APO.3.2" type="verse" n="2">Sé vigilante y confirma las otras cosas que están para morir, porque no he hallado tus obras bien acabadas delante de <rs key="per14">Dios</rs>.</ab>
 					<ab xml:id="b.APO.3.3" type="verse" n="3">Acuérdate, pues, de lo que has recibido y oído; guárdalo y arrepiéntete, pues si no velas vendré sobre ti como ladrón y no sabrás a qué hora vendré sobre ti.</ab>
-					<ab xml:id="b.APO.3.4" type="verse" n="4">Pero tienes unas pocas personas en Sardis que no han manchado sus vestiduras y andarán conmigo en vestiduras blancas, porque son dignas.</ab>
-					<ab xml:id="b.APO.3.5" type="verse" n="5">El vencedor será vestido de vestiduras blancas, y no borraré su nombre del libro de la vida, y confesaré su nombre delante de mi Padre y delante de sus ángeles.</ab>
+					<ab xml:id="b.APO.3.4" type="verse" n="4">Pero tienes unas pocas personas en <rs key="pla60">Sardis</rs> que no han manchado sus vestiduras y andarán conmigo en vestiduras blancas, porque son dignas.</ab>
+					<ab xml:id="b.APO.3.5" type="verse" n="5">El vencedor será vestido de vestiduras blancas, y no borraré su nombre del libro de la vida, y confesaré su nombre delante de mi <rs key="per14">Padre</rs> y delante de sus <rs key="org4">ángeles</rs>.</ab>
 					<ab xml:id="b.APO.3.6" type="verse" n="6">El que tiene oído, oiga lo que el Espíritu dice a las iglesias .</ab>
-					<ab xml:id="b.APO.3.7" type="verse" n="7">»Escribe al ángel de la iglesia en Filadelfia: »Esto dice el Santo, el Verdadero, el que tiene la llave de David, el que abre y ninguno cierra, y cierra y ninguno abre:</ab>
+					<ab xml:id="b.APO.3.7" type="verse" n="7">»Escribe al <rs key="org4">ángel</rs> de la iglesia en <rs key="pla67">Filadelfia</rs>: »Esto dice el <rs key="per14">Santo</rs>, el <rs key="0">Verdadero</rs>, el que tiene la llave de <rs key="per35">David</rs>, el que abre y ninguno cierra, y cierra y ninguno abre:</ab>
 					<ab xml:id="b.APO.3.8" type="verse" n="8">»Yo conozco tus obras. Por eso, he puesto delante de ti una puerta abierta, la cual nadie puede cerrar, pues aunque tienes poca fuerza, has guardado mi palabra y no has negado mi nombre.</ab>
-					<ab xml:id="b.APO.3.9" type="verse" n="9">De la sinagoga de Satanás, de los que dicen ser judíos y no lo son, sino que mienten, te daré algunos. Yo haré que vengan y se postren a tus pies reconociendo que yo te he amado.</ab>
+					<ab xml:id="b.APO.3.9" type="verse" n="9">De la sinagoga de <rs key="per20">Satanás</rs>, de los que dicen ser judíos y no lo son, sino que mienten, te daré algunos. Yo haré que vengan y se postren a tus pies reconociendo que yo te he amado.</ab>
 					<ab xml:id="b.APO.3.10" type="verse" n="10">Por cuanto has guardado la palabra de mi paciencia, yo también te guardaré de la hora de la prueba que ha de venir sobre el mundo entero para probar a los que habitan sobre la tierra.</ab>
 					<ab xml:id="b.APO.3.11" type="verse" n="11">Vengo pronto; retén lo que tienes, para que ninguno tome tu corona.</ab>
-					<ab xml:id="b.APO.3.12" type="verse" n="12">Al vencedor yo lo haré columna en el templo de mi Dios y nunca más saldrá de allí. Escribiré sobre él el nombre de mi Dios y el nombre de la ciudad de mi Dios, la nueva Jerusalén, la cual desciende del cielo, con mi Dios, y mi nombre nuevo.</ab>
+					<ab xml:id="b.APO.3.12" type="verse" n="12">Al vencedor yo lo haré columna en el templo de mi <rs key="per14">Dios</rs> y nunca más saldrá de allí. Escribiré sobre él el nombre de mi <rs key="per14">Dios</rs> y el nombre de la ciudad de mi <rs key="per14">Dios</rs>, la nueva <rs key="pla3">Jerusalén</rs>, la cual desciende del cielo, con mi <rs key="per14">Dios</rs>, y mi nombre nuevo.</ab>
 					<ab xml:id="b.APO.3.13" type="verse" n="13">El que tiene oído, oiga lo que el Espíritu dice a las iglesias .</ab>
-					<ab xml:id="b.APO.3.14" type="verse" n="14">»Escribe al ángel de la iglesia en Laodicea: »El Amén, el testigo fiel y verdadero, el Principio de la creación de Dios, dice esto:</ab>
+					<ab xml:id="b.APO.3.14" type="verse" n="14">»Escribe al <rs key="org4">ángel</rs> de la iglesia en <rs key="pla66">Laodicea</rs>: »El Amén, el testigo fiel y verdadero, el <rs key="0">Principio</rs> de la creación de <rs key="per14">Dios</rs>, dice esto:</ab>
 					<ab xml:id="b.APO.3.15" type="verse" n="15">»Yo conozco tus obras, que ni eres frío ni caliente. ¡Ojalá fueras frío o caliente!</ab>
 					<ab xml:id="b.APO.3.16" type="verse" n="16">Pero por cuanto eres tibio y no frío ni caliente, te vomitaré de mi boca.</ab>
 					<ab xml:id="b.APO.3.17" type="verse" n="17">Tú dices: Yo soy rico, me he enriquecido y de nada tengo necesidad. Pero no sabes que eres desventurado, miserable, pobre, ciego y estás desnudo.</ab>
 					<ab xml:id="b.APO.3.18" type="verse" n="18">Por tanto, yo te aconsejo que compres de mí oro refinado en el fuego para que seas rico, y vestiduras blancas para vestirte, para que no se descubra la vergüenza de tu desnudez. Y unge tus ojos con colirio para que veas.</ab>
 					<ab xml:id="b.APO.3.19" type="verse" n="19">Yo reprendo y castigo a todos los que amo; sé, pues, celoso y arrepiéntete.</ab>
 					<ab xml:id="b.APO.3.20" type="verse" n="20">Yo estoy a la puerta y llamo; si alguno oye mi voz y abre la puerta, entraré a él y cenaré con él y él conmigo.</ab>
-					<ab xml:id="b.APO.3.21" type="verse" n="21">Al vencedor le concederé que se siente conmigo en mi trono, así como yo he vencido y me he sentado con mi Padre en su trono.</ab>
+					<ab xml:id="b.APO.3.21" type="verse" n="21">Al vencedor le concederé que se siente conmigo en mi trono, así como yo he vencido y me he sentado con mi <rs key="per14">Padre</rs> en su trono.</ab>
 					<ab xml:id="b.APO.3.22" type="verse" n="22">El que tiene oído, oiga lo que el Espíritu dice a las iglesias ».</ab>
 
 				</div>
@@ -130,104 +130,104 @@
 					<ab xml:id="b.APO.4.2" type="verse" n="2">Al instante, estando yo en el Espíritu, vi un trono establecido en el cielo, y en el trono, uno sentado.</ab>
 					<ab xml:id="b.APO.4.3" type="verse" n="3">La apariencia del que estaba sentado era semejante a una piedra de jaspe y de cornalina, y alrededor del trono había un arco iris semejante en su apariencia a la esmeralda.</ab>
 					<ab xml:id="b.APO.4.4" type="verse" n="4">Alrededor del trono había veinticuatro tronos, y en los tronos vi sentados a veinticuatro ancianos vestidos de ropas blancas, con coronas de oro en sus cabezas.</ab>
-					<ab xml:id="b.APO.4.5" type="verse" n="5">Del trono salían relámpagos, truenos y voces. Delante del trono ardían siete lámparas de fuego, que son los siete espíritus de Dios.</ab>
+					<ab xml:id="b.APO.4.5" type="verse" n="5">Del trono salían relámpagos, truenos y voces. Delante del trono ardían siete lámparas de fuego, que son los siete espíritus de <rs key="per14">Dios</rs>.</ab>
 					<ab xml:id="b.APO.4.6" type="verse" n="6">También delante del trono había como un mar de vidrio semejante al cristal, y junto al trono y alrededor del trono había cuatro seres vivientes llenos de ojos por delante y por detrás.</ab>
 					<ab xml:id="b.APO.4.7" type="verse" n="7">El primer ser viviente era semejante a un león; el segundo era semejante a un becerro; el tercero tenía rostro como de hombre; y el cuarto era semejante a un águila volando.</ab>
-					<ab xml:id="b.APO.4.8" type="verse" n="8">Los cuatro seres vivientes tenían cada uno seis alas, y alrededor y por dentro estaban llenos de ojos, y día y noche, sin cesar, decían: «¡Santo, santo, santo es el Señor Dios Todopoderoso, el que era, el que es y el que ha de venir!».</ab>
+					<ab xml:id="b.APO.4.8" type="verse" n="8">Los cuatro seres vivientes tenían cada uno seis alas, y alrededor y por dentro estaban llenos de ojos, y día y noche, sin cesar, decían: «¡<rs key="per14">Santo</rs>, santo, santo es el <rs key="per14">Señor</rs> <rs key="per14">Dios</rs> <rs key="per14">Todopoderoso</rs>, el que era, el que es y el que ha de venir!».</ab>
 					<ab xml:id="b.APO.4.9" type="verse" n="9">Cada vez que aquellos seres vivientes dan gloria y honra y acción de gracias al que está sentado en el trono, al que vive por los siglos de los siglos,</ab>
 					<ab xml:id="b.APO.4.10" type="verse" n="10">los veinticuatro ancianos se postran delante del que está sentado en el trono y adoran al que vive por los siglos de los siglos, y echan sus coronas delante del trono, diciendo:</ab>
-					<ab xml:id="b.APO.4.11" type="verse" n="11">«Señor, digno eres de recibir la gloria, la honra y el poder, porque tú creaste todas las cosas, y por tu voluntad existen y fueron creadas».</ab>
+					<ab xml:id="b.APO.4.11" type="verse" n="11">«<rs key="per14">Señor</rs>, digno eres de recibir la gloria, la honra y el poder, porque tú creaste todas las cosas, y por tu voluntad existen y fueron creadas».</ab>
 
 				</div>
 				<div xml:id="b.APO.5" type="chapter" n="5">
 					<ab xml:id="b.APO.5.1" type="verse" n="1">Vi en la mano derecha del que estaba sentado en el trono un libro escrito por dentro y por fuera, sellado con siete sellos.</ab>
-					<ab xml:id="b.APO.5.2" type="verse" n="2">Y vi un ángel poderoso que pregonaba a gran voz: «¿Quién es digno de abrir el libro y desatar sus sellos?».</ab>
+					<ab xml:id="b.APO.5.2" type="verse" n="2">Y vi un <rs key="org4">ángel</rs> poderoso que pregonaba a gran voz: «¿Quién es digno de abrir el libro y desatar sus sellos?».</ab>
 					<ab xml:id="b.APO.5.3" type="verse" n="3">Pero ninguno, ni en el cielo ni en la tierra ni debajo de la tierra, podía abrir el libro, ni siquiera mirarlo.</ab>
 					<ab xml:id="b.APO.5.4" type="verse" n="4">Y lloraba yo mucho, porque no se hallaba a nadie que fuera digno de abrir el libro, ni siquiera de mirarlo.</ab>
-					<ab xml:id="b.APO.5.5" type="verse" n="5">Entonces uno de los ancianos me dijo: «No llores, porque el León de la tribu de Judá, la raíz de David, ha vencido para abrir el libro y desatar sus siete sellos».</ab>
-					<ab xml:id="b.APO.5.6" type="verse" n="6">Miré, y vi que en medio del trono y de los cuatro seres vivientes y en medio de los ancianos estaba en pie un Cordero como inmolado, que tenía siete cuernos y siete ojos, los cuales son los siete espíritus de Dios enviados por toda la tierra.</ab>
+					<ab xml:id="b.APO.5.5" type="verse" n="5">Entonces uno de los ancianos me dijo: «No llores, porque el <rs key="0">León</rs> de la tribu de <rs key="per5">Judá</rs>, la raíz de <rs key="per35">David</rs>, ha vencido para abrir el libro y desatar sus siete sellos».</ab>
+					<ab xml:id="b.APO.5.6" type="verse" n="6">Miré, y vi que en medio del trono y de los cuatro seres vivientes y en medio de los ancianos estaba en pie un <rs key="0">Cordero</rs> como inmolado, que tenía siete cuernos y siete ojos, los cuales son los siete espíritus de <rs key="per14">Dios</rs> enviados por toda la tierra.</ab>
 					<ab xml:id="b.APO.5.7" type="verse" n="7">Él vino y tomó el libro de la mano derecha del que estaba sentado en el trono.</ab>
-					<ab xml:id="b.APO.5.8" type="verse" n="8">Cuando hubo tomado el libro, los cuatro seres vivientes y los veinticuatro ancianos se postraron delante del Cordero. Todos tenían arpas y copas de oro llenas de incienso, que son las oraciones de los santos.</ab>
-					<ab xml:id="b.APO.5.9" type="verse" n="9">Y cantaban un cántico nuevo, diciendo: «Digno eres de tomar el libro y de abrir sus sellos, porque tú fuiste inmolado, y con tu sangre nos has redimido para Dios, de todo linaje, lengua, pueblo y nación;</ab>
-					<ab xml:id="b.APO.5.10" type="verse" n="10">nos has hecho para nuestro Dios un reino y sacerdotes, y reinaremos sobre la tierra».</ab>
-					<ab xml:id="b.APO.5.11" type="verse" n="11">Miré, y oí la voz de muchos ángeles alrededor del trono, de los seres vivientes y de los ancianos. Su número era millones de millones,</ab>
-					<ab xml:id="b.APO.5.12" type="verse" n="12">y decían a gran voz: «El Cordero que fue inmolado es digno de tomar el poder, las riquezas, la sabiduría, la fortaleza, la honra, la gloria y la alabanza».</ab>
-					<ab xml:id="b.APO.5.13" type="verse" n="13">A todo lo creado que está en el cielo, sobre la tierra, debajo de la tierra y en el mar, y a todas las cosas que hay en ellos, oí decir: «Al que está sentado en el trono y al Cordero, sea la alabanza, la honra, la gloria y el poder, por los siglos de los siglos».</ab>
+					<ab xml:id="b.APO.5.8" type="verse" n="8">Cuando hubo tomado el libro, los cuatro seres vivientes y los veinticuatro ancianos se postraron delante del <rs key="0">Cordero</rs>. Todos tenían arpas y copas de oro llenas de incienso, que son las oraciones de los santos.</ab>
+					<ab xml:id="b.APO.5.9" type="verse" n="9">Y cantaban un cántico nuevo, diciendo: «Digno eres de tomar el libro y de abrir sus sellos, porque tú fuiste inmolado, y con tu sangre nos has redimido para <rs key="per14">Dios</rs>, de todo linaje, lengua, pueblo y nación;</ab>
+					<ab xml:id="b.APO.5.10" type="verse" n="10">nos has hecho para nuestro <rs key="per14">Dios</rs> un reino y sacerdotes, y reinaremos sobre la tierra».</ab>
+					<ab xml:id="b.APO.5.11" type="verse" n="11">Miré, y oí la voz de muchos <rs key="org4">ángeles</rs> alrededor del trono, de los seres vivientes y de los ancianos. Su número era millones de millones,</ab>
+					<ab xml:id="b.APO.5.12" type="verse" n="12">y decían a gran voz: «El <rs key="0">Cordero</rs> que fue inmolado es digno de tomar el poder, las riquezas, la sabiduría, la fortaleza, la honra, la gloria y la alabanza».</ab>
+					<ab xml:id="b.APO.5.13" type="verse" n="13">A todo lo creado que está en el cielo, sobre la tierra, debajo de la tierra y en el mar, y a todas las cosas que hay en ellos, oí decir: «Al que está sentado en el trono y al <rs key="0">Cordero</rs>, sea la alabanza, la honra, la gloria y el poder, por los siglos de los siglos».</ab>
 					<ab xml:id="b.APO.5.14" type="verse" n="14">Los cuatro seres vivientes decían: «¡Amén!». Y los veinticuatro ancianos se postraron sobre sus rostros y adoraron al que vive por los siglos de los siglos.</ab>
 
 				</div>
 				<div xml:id="b.APO.6" type="chapter" n="6">
-					<ab xml:id="b.APO.6.1" type="verse" n="1">Entonces vi que el Cordero abrió uno de los sellos, y oí a uno de los cuatro seres vivientes decir con una voz como de trueno: «¡Ven!».</ab>
+					<ab xml:id="b.APO.6.1" type="verse" n="1">Entonces vi que el <rs key="0">Cordero</rs> abrió uno de los sellos, y oí a uno de los cuatro seres vivientes decir con una voz como de trueno: «¡Ven!».</ab>
 					<ab xml:id="b.APO.6.2" type="verse" n="2">Miré, y vi un caballo blanco. El que lo montaba tenía un arco y le fue dada una corona, y salió venciendo y para vencer.</ab>
 					<ab xml:id="b.APO.6.3" type="verse" n="3">Cuando abrió el segundo sello, oí al segundo ser viviente, que decía: «¡Ven!».</ab>
 					<ab xml:id="b.APO.6.4" type="verse" n="4">Salió otro caballo, de color rojizo. Al que lo montaba le fue dado poder para quitar la paz de la tierra y hacer que se mataran unos a otros. Y se le dio una espada muy grande.</ab>
 					<ab xml:id="b.APO.6.5" type="verse" n="5">Cuando abrió el tercer sello, oí al tercer ser viviente, que decía: «¡Ven!». Miré, y vi un caballo negro. El que lo montaba tenía una balanza en la mano.</ab>
 					<ab xml:id="b.APO.6.6" type="verse" n="6">Y oí una voz de en medio de los cuatro seres vivientes, que decía: «Dos libras de trigo por un denario y seis libras de cebada por un denario, pero no dañes el aceite ni el vino».</ab>
 					<ab xml:id="b.APO.6.7" type="verse" n="7">Cuando abrió el cuarto sello, oí la voz del cuarto ser viviente que decía: «¡Ven!».</ab>
-					<ab xml:id="b.APO.6.8" type="verse" n="8">Miré, y vi un caballo amarillo. El que lo montaba tenía por nombre Muerte, y el Hades lo seguía: y les fue dada potestad sobre la cuarta parte de la tierra, para matar con espada, con hambre, con mortandad y con las fieras de la tierra.</ab>
-					<ab xml:id="b.APO.6.9" type="verse" n="9">Cuando abrió el quinto sello, vi debajo del altar las almas de los que habían muerto por causa de la palabra de Dios y del testimonio que tenían.</ab>
-					<ab xml:id="b.APO.6.10" type="verse" n="10">Clamaban a gran voz, diciendo: «¿Hasta cuándo Señor, santo y verdadero, vas a tardar en juzgar y vengar nuestra sangre de los que habitan sobre la tierra?».,</ab>
+					<ab xml:id="b.APO.6.8" type="verse" n="8">Miré, y vi un caballo amarillo. El que lo montaba tenía por nombre <rs key="0">Muerte</rs>, y el <rs key="pla15">Hades</rs> lo seguía: y les fue dada potestad sobre la cuarta parte de la tierra, para matar con espada, con hambre, con mortandad y con las fieras de la tierra.</ab>
+					<ab xml:id="b.APO.6.9" type="verse" n="9">Cuando abrió el quinto sello, vi debajo del altar las almas de los que habían muerto por causa de la palabra de <rs key="per14">Dios</rs> y del testimonio que tenían.</ab>
+					<ab xml:id="b.APO.6.10" type="verse" n="10">Clamaban a gran voz, diciendo: «¿Hasta cuándo <rs key="per14">Señor</rs>, santo y verdadero, vas a tardar en juzgar y vengar nuestra sangre de los que habitan sobre la tierra?».,</ab>
 					<ab xml:id="b.APO.6.11" type="verse" n="11">Entonces se les dio vestiduras blancas y se les dijo que descansaran todavía un poco de tiempo, hasta que se completara el número de sus consiervos y sus hermanos que también habían de ser muertos como ellos.</ab>
 					<ab xml:id="b.APO.6.12" type="verse" n="12">Miré cuando abrió el sexto sello, y hubo un gran terremoto. El sol se puso negro como tela de luto, la luna entera se volvió toda como sangre</ab>
 					<ab xml:id="b.APO.6.13" type="verse" n="13">y las estrellas del cielo cayeron sobre la tierra, como la higuera deja caer sus higos cuando es sacudida por un fuerte viento.</ab>
 					<ab xml:id="b.APO.6.14" type="verse" n="14">El cielo se replegó como un pergamino que se enrolla, y todo monte y toda isla fueron removidos de sus lugares.</ab>
 					<ab xml:id="b.APO.6.15" type="verse" n="15">Los reyes de la tierra, los grandes, los ricos, los capitanes, los poderosos, todo esclavo y todo libre, se escondieron en las cuevas y entre las peñas de los montes,</ab>
-					<ab xml:id="b.APO.6.16" type="verse" n="16">y decían a los montes y a las peñas: «Caed sobre nosotros y escondednos del rostro de aquel que está sentado sobre el trono, y de la ira del Cordero,</ab>
+					<ab xml:id="b.APO.6.16" type="verse" n="16">y decían a los montes y a las peñas: «Caed sobre nosotros y escondednos del rostro de aquel que está sentado sobre el trono, y de la ira del <rs key="0">Cordero</rs>,</ab>
 					<ab xml:id="b.APO.6.17" type="verse" n="17">porque el gran día de su ira ha llegado y ¿quién podrá sostenerse en pie?».</ab>
 
 				</div>
 				<div xml:id="b.APO.7" type="chapter" n="7">
-					<ab xml:id="b.APO.7.1" type="verse" n="1">Después de esto vi cuatro ángeles de pie sobre los cuatro ángulos de la tierra, deteniendo los cuatro vientos de la tierra para que no soplara viento alguno sobre la tierra ni sobre el mar ni sobre árbol alguno.</ab>
-					<ab xml:id="b.APO.7.2" type="verse" n="2">Vi también otro ángel, que subía desde donde sale el sol y que tenía el sello del Dios vivo. Clamó a gran voz a los cuatro ángeles a quienes se les había dado el poder de hacer daño a la tierra y al mar,</ab>
-					<ab xml:id="b.APO.7.3" type="verse" n="3">diciendo: «No hagáis daño a la tierra ni al mar ni a los árboles hasta que hayamos sellado en sus frentes a los siervos de nuestro Dios».</ab>
-					<ab xml:id="b.APO.7.4" type="verse" n="4">Y oí el número de los sellados: ciento cuarenta y cuatro mil sellados de todas las tribus de los hijos de Israel.</ab>
-					<ab xml:id="b.APO.7.5" type="verse" n="5">De la tribu de Judá, doce mil sellados. De la tribu de Rubén, doce mil. De la tribu de Gad, doce mil.</ab>
-					<ab xml:id="b.APO.7.6" type="verse" n="6">De la tribu de Aser, doce mil. De la tribu de Neftalí, doce mil. De la tribu de Manasés, doce mil.</ab>
-					<ab xml:id="b.APO.7.7" type="verse" n="7">De la tribu de Simeón, doce mil. De la tribu de Leví, doce mil. De la tribu de Isacar, doce mil.</ab>
-					<ab xml:id="b.APO.7.8" type="verse" n="8">De la tribu de Zabulón, doce mil. De la tribu de José, doce mil. De la tribu de Benjamín, doce mil sellados.</ab>
-					<ab xml:id="b.APO.7.9" type="verse" n="9">Después de esto miré, y vi una gran multitud, la cual nadie podía contar, de todas las naciones, tribus, pueblos y lenguas. Estaban delante del trono y en la presencia del Cordero, vestidos de ropas blancas y con palmas en sus manos.</ab>
-					<ab xml:id="b.APO.7.10" type="verse" n="10">Clamaban a gran voz, diciendo: «¡La salvación pertenece a nuestro Dios, que está sentado en el trono, y al Cordero!».</ab>
-					<ab xml:id="b.APO.7.11" type="verse" n="11">Y todos los ángeles que estaban en pie alrededor del trono y de los ancianos y de los cuatro seres vivientes, se postraron sobre sus rostros delante del trono y adoraron a Dios,</ab>
-					<ab xml:id="b.APO.7.12" type="verse" n="12">diciendo: «¡Amén! La bendición, la gloria, la sabiduría, la acción de gracias, la honra, el poder y la fortaleza sean a nuestro Dios por los siglos de los siglos. ¡Amén!».</ab>
+					<ab xml:id="b.APO.7.1" type="verse" n="1">Después de esto vi cuatro <rs key="org4">ángeles</rs> de pie sobre los cuatro ángulos de la tierra, deteniendo los cuatro vientos de la tierra para que no soplara viento alguno sobre la tierra ni sobre el mar ni sobre árbol alguno.</ab>
+					<ab xml:id="b.APO.7.2" type="verse" n="2">Vi también otro <rs key="org4">ángel</rs>, que subía desde donde sale el sol y que tenía el sello del <rs key="per14">Dios</rs> vivo. Clamó a gran voz a los cuatro <rs key="org4">ángeles</rs> a quienes se les había dado el poder de hacer daño a la tierra y al mar,</ab>
+					<ab xml:id="b.APO.7.3" type="verse" n="3">diciendo: «No hagáis daño a la tierra ni al mar ni a los árboles hasta que hayamos sellado en sus frentes a los siervos de nuestro <rs key="per14">Dios</rs>».</ab>
+					<ab xml:id="b.APO.7.4" type="verse" n="4">Y oí el número de los sellados: ciento cuarenta y cuatro mil sellados de todas las tribus de los hijos de <rs key="pla4">Israel</rs>.</ab>
+					<ab xml:id="b.APO.7.5" type="verse" n="5">De la tribu de <rs key="per5">Judá</rs>, doce mil sellados. De la tribu de <rs key="0">Rubén</rs>, doce mil. De la tribu de <rs key="0">Gad</rs>, doce mil.</ab>
+					<ab xml:id="b.APO.7.6" type="verse" n="6">De la tribu de <rs key="0">Aser</rs>, doce mil. De la tribu de <rs key="0">Neftalí</rs>, doce mil. De la tribu de <rs key="0">Manasés</rs>, doce mil.</ab>
+					<ab xml:id="b.APO.7.7" type="verse" n="7">De la tribu de <rs key="0">Simeón</rs>, doce mil. De la tribu de <rs key="0">Leví</rs>, doce mil. De la tribu de <rs key="0">Isacar</rs>, doce mil.</ab>
+					<ab xml:id="b.APO.7.8" type="verse" n="8">De la tribu de <rs key="0">Zabulón</rs>, doce mil. De la tribu de <rs key="0">José</rs>, doce mil. De la tribu de <rs key="0">Benjamín</rs>, doce mil sellados.</ab>
+					<ab xml:id="b.APO.7.9" type="verse" n="9">Después de esto miré, y vi una gran multitud, la cual nadie podía contar, de todas las naciones, tribus, pueblos y lenguas. Estaban delante del trono y en la presencia del <rs key="0">Cordero</rs>, vestidos de ropas blancas y con palmas en sus manos.</ab>
+					<ab xml:id="b.APO.7.10" type="verse" n="10">Clamaban a gran voz, diciendo: «¡La salvación pertenece a nuestro <rs key="per14">Dios</rs>, que está sentado en el trono, y al <rs key="0">Cordero</rs>!».</ab>
+					<ab xml:id="b.APO.7.11" type="verse" n="11">Y todos los <rs key="org4">ángeles</rs> que estaban en pie alrededor del trono y de los ancianos y de los cuatro seres vivientes, se postraron sobre sus rostros delante del trono y adoraron a <rs key="per14">Dios</rs>,</ab>
+					<ab xml:id="b.APO.7.12" type="verse" n="12">diciendo: «¡Amén! La bendición, la gloria, la sabiduría, la acción de gracias, la honra, el poder y la fortaleza sean a nuestro <rs key="per14">Dios</rs> por los siglos de los siglos. ¡Amén!».</ab>
 					<ab xml:id="b.APO.7.13" type="verse" n="13">Entonces uno de los ancianos habló, diciéndome: «Estos que están vestidos de ropas blancas, ¿quiénes son y de dónde han venido?».</ab>
-					<ab xml:id="b.APO.7.14" type="verse" n="14">Yo le dije: «Señor, tú lo sabes». Él me dijo: «Estos son los que han salido de la gran tribulación; han lavado sus ropas y las han blanqueado en la sangre del Cordero.</ab>
-					<ab xml:id="b.APO.7.15" type="verse" n="15">Por eso están delante del trono de Dios y lo sirven día y noche en su templo. El que está sentado sobre el trono extenderá su tienda junto a ellos.</ab>
+					<ab xml:id="b.APO.7.14" type="verse" n="14">Yo le dije: «<rs key="per14">Señor</rs>, tú lo sabes». Él me dijo: «Estos son los que han salido de la gran tribulación; han lavado sus ropas y las han blanqueado en la sangre del <rs key="0">Cordero</rs>.</ab>
+					<ab xml:id="b.APO.7.15" type="verse" n="15">Por eso están delante del trono de <rs key="per14">Dios</rs> y lo sirven día y noche en su templo. El que está sentado sobre el trono extenderá su tienda junto a ellos.</ab>
 					<ab xml:id="b.APO.7.16" type="verse" n="16">»Ya no tendrán hambre ni sed, y el sol no caerá más sobre ellos, ni calor alguno,</ab>
-					<ab xml:id="b.APO.7.17" type="verse" n="17">porque el Cordero que está en medio del trono los pastoreará y los guiará a fuentes de aguas vivas. Y Dios enjugará toda lágrima de los ojos de ellos».</ab>
+					<ab xml:id="b.APO.7.17" type="verse" n="17">porque el <rs key="0">Cordero</rs> que está en medio del trono los pastoreará y los guiará a fuentes de aguas vivas. Y <rs key="per14">Dios</rs> enjugará toda lágrima de los ojos de ellos».</ab>
 
 				</div>
 				<div xml:id="b.APO.8" type="chapter" n="8">
 					<ab xml:id="b.APO.8.1" type="verse" n="1">Cuando abrió el séptimo sello, se hizo silencio en el cielo como por media hora.</ab>
-					<ab xml:id="b.APO.8.2" type="verse" n="2">Luego vi los siete ángeles que estaban de pie ante Dios, y se les dieron siete trompetas.</ab>
-					<ab xml:id="b.APO.8.3" type="verse" n="3">Otro ángel vino entonces y se paró ante el altar, con un incensario de oro; y se le dio mucho incienso para añadirlo a las oraciones de todos los santos sobre el altar de oro que estaba delante del trono.</ab>
-					<ab xml:id="b.APO.8.4" type="verse" n="4">El humo del incienso con las oraciones de los santos subió de la mano del ángel a la presencia de Dios.</ab>
-					<ab xml:id="b.APO.8.5" type="verse" n="5">Y el ángel tomó el incensario, lo llenó del fuego del altar y lo arrojó a la tierra; y hubo truenos, voces, relámpagos y un terremoto.</ab>
-					<ab xml:id="b.APO.8.6" type="verse" n="6">Los siete ángeles que tenían las siete trompetas se dispusieron a tocarlas.</ab>
-					<ab xml:id="b.APO.8.7" type="verse" n="7">El primer ángel tocó la trompeta, y hubo granizo y fuego mezclados con sangre que fueron lanzados sobre la tierra. Y se quemó la tercera parte de los árboles, y toda la hierba verde fue quemada.</ab>
-					<ab xml:id="b.APO.8.8" type="verse" n="8">El segundo ángel tocó la trompeta, y algo como un gran monte ardiendo en fuego fue precipitado en el mar. La tercera parte del mar se convirtió en sangre,</ab>
+					<ab xml:id="b.APO.8.2" type="verse" n="2">Luego vi los siete <rs key="org4">ángeles</rs> que estaban de pie ante <rs key="per14">Dios</rs>, y se les dieron siete trompetas.</ab>
+					<ab xml:id="b.APO.8.3" type="verse" n="3">Otro <rs key="org4">ángel</rs> vino entonces y se paró ante el altar, con un incensario de oro; y se le dio mucho incienso para añadirlo a las oraciones de todos los santos sobre el altar de oro que estaba delante del trono.</ab>
+					<ab xml:id="b.APO.8.4" type="verse" n="4">El humo del incienso con las oraciones de los santos subió de la mano del <rs key="org4">ángel</rs> a la presencia de <rs key="per14">Dios</rs>.</ab>
+					<ab xml:id="b.APO.8.5" type="verse" n="5">Y el <rs key="org4">ángel</rs> tomó el incensario, lo llenó del fuego del altar y lo arrojó a la tierra; y hubo truenos, voces, relámpagos y un terremoto.</ab>
+					<ab xml:id="b.APO.8.6" type="verse" n="6">Los siete <rs key="org4">ángeles</rs> que tenían las siete trompetas se dispusieron a tocarlas.</ab>
+					<ab xml:id="b.APO.8.7" type="verse" n="7">El primer <rs key="org4">ángel</rs> tocó la trompeta, y hubo granizo y fuego mezclados con sangre que fueron lanzados sobre la tierra. Y se quemó la tercera parte de los árboles, y toda la hierba verde fue quemada.</ab>
+					<ab xml:id="b.APO.8.8" type="verse" n="8">El segundo <rs key="org4">ángel</rs> tocó la trompeta, y algo como un gran monte ardiendo en fuego fue precipitado en el mar. La tercera parte del mar se convirtió en sangre,</ab>
 					<ab xml:id="b.APO.8.9" type="verse" n="9">murió la tercera parte de los seres vivientes que estaban en el mar y la tercera parte de las naves fue destruida.</ab>
-					<ab xml:id="b.APO.8.10" type="verse" n="10">El tercer ángel tocó la trompeta, y cayó del cielo una gran estrella ardiendo como una antorcha. Cayó sobre la tercera parte de los ríos y sobre las fuentes de las aguas.</ab>
-					<ab xml:id="b.APO.8.11" type="verse" n="11">El nombre de la estrella es Ajenjo. La tercera parte de las aguas se convirtió en ajenjo y muchos hombres murieron a causa de esas aguas, porque se volvieron amargas.</ab>
-					<ab xml:id="b.APO.8.12" type="verse" n="12">El cuarto ángel tocó la trompeta, y fue herida la tercera parte del sol, la tercera parte de la luna y la tercera parte de las estrellas, para que se oscureciera la tercera parte de ellos y no hubiera luz en la tercera parte del día, y asimismo en la noche.</ab>
-					<ab xml:id="b.APO.8.13" type="verse" n="13">Miré, y oí un ángel que volaba en medio del cielo y decía a gran voz: «¡Ay, ay, ay de los que habitan en la tierra, a causa de los otros toques de trompeta que están para tocar los tres ángeles!».</ab>
+					<ab xml:id="b.APO.8.10" type="verse" n="10">El tercer <rs key="org4">ángel</rs> tocó la trompeta, y cayó del cielo una gran estrella ardiendo como una antorcha. Cayó sobre la tercera parte de los ríos y sobre las fuentes de las aguas.</ab>
+					<ab xml:id="b.APO.8.11" type="verse" n="11">El nombre de la estrella es <rs key="0">Ajenjo</rs>. La tercera parte de las aguas se convirtió en ajenjo y muchos hombres murieron a causa de esas aguas, porque se volvieron amargas.</ab>
+					<ab xml:id="b.APO.8.12" type="verse" n="12">El cuarto <rs key="org4">ángel</rs> tocó la trompeta, y fue herida la tercera parte del sol, la tercera parte de la luna y la tercera parte de las estrellas, para que se oscureciera la tercera parte de ellos y no hubiera luz en la tercera parte del día, y asimismo en la noche.</ab>
+					<ab xml:id="b.APO.8.13" type="verse" n="13">Miré, y oí un <rs key="org4">ángel</rs> que volaba en medio del cielo y decía a gran voz: «¡Ay, ay, ay de los que habitan en la tierra, a causa de los otros toques de trompeta que están para tocar los tres <rs key="org4">ángeles</rs>!».</ab>
 
 				</div>
 				<div xml:id="b.APO.9" type="chapter" n="9">
-					<ab xml:id="b.APO.9.1" type="verse" n="1">El quinto ángel tocó la trompeta, y vi una estrella que cayó del cielo a la tierra. Y se le dio la llave del pozo del abismo.</ab>
+					<ab xml:id="b.APO.9.1" type="verse" n="1">El quinto <rs key="org4">ángel</rs> tocó la trompeta, y vi una estrella que cayó del cielo a la tierra. Y se le dio la llave del pozo del abismo.</ab>
 					<ab xml:id="b.APO.9.2" type="verse" n="2">Abrió el pozo del abismo, y del pozo subió humo como humo de un gran horno, y el sol y el aire se oscurecieron por el humo del pozo.</ab>
 					<ab xml:id="b.APO.9.3" type="verse" n="3">Del humo salieron langostas sobre la tierra, y se les dio poder, como el poder que tienen los escorpiones de la tierra.</ab>
-					<ab xml:id="b.APO.9.4" type="verse" n="4">Se les mandó que no dañaran la hierba de la tierra, ni cosa verde alguna ni ningún árbol, sino solamente a los hombres que no tuvieran el sello de Dios en sus frentes.</ab>
+					<ab xml:id="b.APO.9.4" type="verse" n="4">Se les mandó que no dañaran la hierba de la tierra, ni cosa verde alguna ni ningún árbol, sino solamente a los hombres que no tuvieran el sello de <rs key="per14">Dios</rs> en sus frentes.</ab>
 					<ab xml:id="b.APO.9.5" type="verse" n="5">Pero no se les permitió que los mataran, sino que los atormentaran cinco meses; y su tormento era como el tormento del escorpión cuando hiere al hombre.</ab>
 					<ab xml:id="b.APO.9.6" type="verse" n="6">En aquellos días los hombres buscarán la muerte, pero no la hallarán; ansiarán morir, pero la muerte huirá de ellos.</ab>
 					<ab xml:id="b.APO.9.7" type="verse" n="7">El aspecto de las langostas era semejante a caballos preparados para la guerra; en las cabezas tenían como coronas de oro, sus caras eran como caras humanas,</ab>
 					<ab xml:id="b.APO.9.8" type="verse" n="8">tenían cabello como cabello de mujer y sus dientes eran como de leones;</ab>
 					<ab xml:id="b.APO.9.9" type="verse" n="9">tenían corazas como corazas de hierro y el ruido de sus alas era como el estruendo de muchos carros de caballos corriendo a la batalla;</ab>
 					<ab xml:id="b.APO.9.10" type="verse" n="10">tenían colas como de escorpiones, y también aguijones, y en sus colas tenían poder para dañar a los hombres durante cinco meses.</ab>
-					<ab xml:id="b.APO.9.11" type="verse" n="11">Sobre ellos tienen como rey al ángel del abismo, cuyo nombre en hebreo es Abadón, y en griego, Apolión.</ab>
+					<ab xml:id="b.APO.9.11" type="verse" n="11">Sobre ellos tienen como rey al <rs key="org4">ángel</rs> del abismo, cuyo nombre en hebreo es <rs key="0">Abadón</rs>, y en griego, <rs key="0">Apolión</rs>.</ab>
 					<ab xml:id="b.APO.9.12" type="verse" n="12">El primer ay pasó; pero vienen aún dos ayes después de esto.</ab>
-					<ab xml:id="b.APO.9.13" type="verse" n="13">El sexto ángel tocó la trompeta, y oí una voz de entre los cuatro cuernos del altar de oro que estaba delante de Dios,</ab>
-					<ab xml:id="b.APO.9.14" type="verse" n="14">la cual decía al sexto ángel que tenía la trompeta: «¡Desata a los cuatro ángeles que están atados junto al gran río Éufrates!».</ab>
-					<ab xml:id="b.APO.9.15" type="verse" n="15">Y fueron desatados los cuatro ángeles que estaban preparados para la hora, día, mes y año, a fin de matar la tercera parte de los hombres.</ab>
+					<ab xml:id="b.APO.9.13" type="verse" n="13">El sexto <rs key="org4">ángel</rs> tocó la trompeta, y oí una voz de entre los cuatro cuernos del altar de oro que estaba delante de <rs key="per14">Dios</rs>,</ab>
+					<ab xml:id="b.APO.9.14" type="verse" n="14">la cual decía al sexto <rs key="org4">ángel</rs> que tenía la trompeta: «¡Desata a los cuatro <rs key="org4">ángeles</rs> que están atados junto al gran río <rs key="pla64">Éufrates</rs>!».</ab>
+					<ab xml:id="b.APO.9.15" type="verse" n="15">Y fueron desatados los cuatro <rs key="org4">ángeles</rs> que estaban preparados para la hora, día, mes y año, a fin de matar la tercera parte de los hombres.</ab>
 					<ab xml:id="b.APO.9.16" type="verse" n="16">Y el número de los ejércitos de los jinetes era de doscientos millones. Yo oí su número.</ab>
 					<ab xml:id="b.APO.9.17" type="verse" n="17">Así vi en visión los caballos y sus jinetes, que tenían corazas de fuego, zafiro y azufre. Las cabezas de los caballos eran como cabezas de leones, y de sus bocas salía fuego, humo y azufre.</ab>
 					<ab xml:id="b.APO.9.18" type="verse" n="18">Por estas tres plagas fue muerta la tercera parte de los hombres: por el fuego, el humo y el azufre que salía de sus bocas,</ab>
@@ -237,39 +237,39 @@
 
 				</div>
 				<div xml:id="b.APO.10" type="chapter" n="10">
-					<ab xml:id="b.APO.10.1" type="verse" n="1">Vi descender del cielo otro ángel fuerte, envuelto en una nube, con el arco iris sobre su cabeza. Su rostro era como el sol y sus pies como columnas de fuego.</ab>
+					<ab xml:id="b.APO.10.1" type="verse" n="1">Vi descender del cielo otro <rs key="org4">ángel</rs> fuerte, envuelto en una nube, con el arco iris sobre su cabeza. Su rostro era como el sol y sus pies como columnas de fuego.</ab>
 					<ab xml:id="b.APO.10.2" type="verse" n="2">Tenía en su mano un librito abierto; puso su pie derecho sobre el mar y el izquierdo sobre la tierra</ab>
 					<ab xml:id="b.APO.10.3" type="verse" n="3">y clamó a gran voz, como ruge un león; y cuando hubo clamado, siete truenos emitieron sus voces.</ab>
 					<ab xml:id="b.APO.10.4" type="verse" n="4">Cuando los siete truenos hubieron emitido sus voces, yo iba a escribir; pero oí una voz del cielo que me decía: «Sella las cosas que los siete truenos han dicho, y no las escribas».</ab>
-					<ab xml:id="b.APO.10.5" type="verse" n="5">El ángel que vi de pie sobre el mar y sobre la tierra levantó su mano hacia el cielo</ab>
+					<ab xml:id="b.APO.10.5" type="verse" n="5">El <rs key="org4">ángel</rs> que vi de pie sobre el mar y sobre la tierra levantó su mano hacia el cielo</ab>
 					<ab xml:id="b.APO.10.6" type="verse" n="6">y juró por el que vive por los siglos de los siglos, que creó el cielo y las cosas que están en él, y la tierra y las cosas que están en ella, y el mar y las cosas que están en él, que el tiempo no sería más,</ab>
-					<ab xml:id="b.APO.10.7" type="verse" n="7">sino que en los días de la voz del séptimo ángel, cuando él comience a tocar la trompeta, el misterio de Dios se consumará, como él lo anunció a sus siervos los profetas.</ab>
-					<ab xml:id="b.APO.10.8" type="verse" n="8">La voz que oí del cielo habló otra vez conmigo, y dijo: «Ve y toma el librito que está abierto en la mano del ángel que está en pie sobre el mar y sobre la tierra».</ab>
-					<ab xml:id="b.APO.10.9" type="verse" n="9">Fui donde el ángel, diciéndole que me diera el librito. Y él me dijo: «Toma y cómelo; te amargará el vientre, pero en tu boca será dulce como la miel».</ab>
-					<ab xml:id="b.APO.10.10" type="verse" n="10">Entonces tomé el librito de la mano del ángel y lo comí. En mi boca era dulce como la miel, pero cuando lo hube comido amargó mi vientre.</ab>
+					<ab xml:id="b.APO.10.7" type="verse" n="7">sino que en los días de la voz del séptimo <rs key="org4">ángel</rs>, cuando él comience a tocar la trompeta, el misterio de <rs key="per14">Dios</rs> se consumará, como él lo anunció a sus siervos los profetas.</ab>
+					<ab xml:id="b.APO.10.8" type="verse" n="8">La voz que oí del cielo habló otra vez conmigo, y dijo: «Ve y toma el librito que está abierto en la mano del <rs key="org4">ángel</rs> que está en pie sobre el mar y sobre la tierra».</ab>
+					<ab xml:id="b.APO.10.9" type="verse" n="9">Fui donde el <rs key="org4">ángel</rs>, diciéndole que me diera el librito. Y él me dijo: «Toma y cómelo; te amargará el vientre, pero en tu boca será dulce como la miel».</ab>
+					<ab xml:id="b.APO.10.10" type="verse" n="10">Entonces tomé el librito de la mano del <rs key="org4">ángel</rs> y lo comí. En mi boca era dulce como la miel, pero cuando lo hube comido amargó mi vientre.</ab>
 					<ab xml:id="b.APO.10.11" type="verse" n="11">Él me dijo: «Es necesario que profetices otra vez sobre muchos pueblos, naciones, lenguas y reyes».</ab>
 
 				</div>
 				<div xml:id="b.APO.11" type="chapter" n="11">
-					<ab xml:id="b.APO.11.1" type="verse" n="1">Entonces me fue dada una caña semejante a una vara de medir y se me dijo: «Levántate y mide el templo de Dios y el altar y a los que adoran en él.</ab>
+					<ab xml:id="b.APO.11.1" type="verse" n="1">Entonces me fue dada una caña semejante a una vara de medir y se me dijo: «Levántate y mide el templo de <rs key="per14">Dios</rs> y el altar y a los que adoran en él.</ab>
 					<ab xml:id="b.APO.11.2" type="verse" n="2">Pero el patio que está fuera del templo déjalo aparte y no lo midas, porque ha sido entregado a los gentiles. Ellos hollarán la ciudad santa cuarenta y dos meses.</ab>
 					<ab xml:id="b.APO.11.3" type="verse" n="3">Y ordenaré a mis dos testigos que profeticen por mil doscientos sesenta días, vestidos con ropas ásperas».</ab>
-					<ab xml:id="b.APO.11.4" type="verse" n="4">Estos testigos son los dos olivos y los dos candelabros que están de pie delante del Dios de la tierra.</ab>
+					<ab xml:id="b.APO.11.4" type="verse" n="4">Estos testigos son los dos olivos y los dos candelabros que están de pie delante del <rs key="per14">Dios</rs> de la tierra.</ab>
 					<ab xml:id="b.APO.11.5" type="verse" n="5">Si alguno quiere dañarlos, sale fuego de la boca de ellos y devora a sus enemigos; si alguno quiere hacerles daño, debe morir de la misma manera.</ab>
 					<ab xml:id="b.APO.11.6" type="verse" n="6">Estos tienen poder para cerrar el cielo a fin de que no llueva en los días de su profecía; y tienen poder sobre las aguas, para convertirlas en sangre y para herir la tierra con toda plaga cuantas veces quieran.</ab>
 					<ab xml:id="b.APO.11.7" type="verse" n="7">Cuando hayan acabado su testimonio, la bestia que sube del abismo hará guerra contra ellos, los vencerá y los matará.</ab>
-					<ab xml:id="b.APO.11.8" type="verse" n="8">Sus cadáveres estarán en la plaza de la gran ciudad que en sentido espiritual se llama Sodoma y Egipto, donde también nuestro Señor fue crucificado.</ab>
+					<ab xml:id="b.APO.11.8" type="verse" n="8">Sus cadáveres estarán en la plaza de la gran ciudad que en sentido espiritual se llama <rs key="0">Sodoma</rs> y <rs key="0">Egipto</rs>, donde también nuestro <rs key="per14">Señor</rs> fue crucificado.</ab>
 					<ab xml:id="b.APO.11.9" type="verse" n="9">Gentes de todo pueblo, tribu, lengua y nación verán sus cadáveres por tres días y medio y no permitirán que sean sepultados.</ab>
 					<ab xml:id="b.APO.11.10" type="verse" n="10">Los habitantes de la tierra se regocijarán sobre ellos, se alegrarán y se enviarán regalos unos a otros, porque estos dos profetas habían atormentado a los habitantes de la tierra.</ab>
-					<ab xml:id="b.APO.11.11" type="verse" n="11">Pero después de tres días y medio el espíritu de vida enviado por Dios entró en ellos, se levantaron sobre sus pies y cayó gran temor sobre los que los vieron.</ab>
+					<ab xml:id="b.APO.11.11" type="verse" n="11">Pero después de tres días y medio el espíritu de vida enviado por <rs key="per14">Dios</rs> entró en ellos, se levantaron sobre sus pies y cayó gran temor sobre los que los vieron.</ab>
 					<ab xml:id="b.APO.11.12" type="verse" n="12">Entonces oyeron una gran voz del cielo, que les decía: «¡Subid acá!». Y subieron al cielo en una nube, y los vieron sus enemigos.</ab>
-					<ab xml:id="b.APO.11.13" type="verse" n="13">En aquella hora hubo un gran terremoto y la décima parte de la ciudad se derrumbó. Por el terremoto murieron siete mil hombres. Los demás se aterrorizaron y dieron gloria al Dios del cielo.</ab>
+					<ab xml:id="b.APO.11.13" type="verse" n="13">En aquella hora hubo un gran terremoto y la décima parte de la ciudad se derrumbó. Por el terremoto murieron siete mil hombres. Los demás se aterrorizaron y dieron gloria al <rs key="per14">Dios</rs> del cielo.</ab>
 					<ab xml:id="b.APO.11.14" type="verse" n="14">El segundo ay pasó. He aquí que el tercer ay viene pronto.</ab>
-					<ab xml:id="b.APO.11.15" type="verse" n="15">El séptimo ángel tocó la trompeta, y hubo grandes voces en el cielo, que decían: «Los reinos del mundo han venido a ser de nuestro Señor y de su Cristo; y él reinará por los siglos de los siglos».</ab>
-					<ab xml:id="b.APO.11.16" type="verse" n="16">Los veinticuatro ancianos que estaban sentados en sus tronos delante de Dios, se postraron sobre sus rostros y adoraron a Dios,</ab>
-					<ab xml:id="b.APO.11.17" type="verse" n="17">diciendo: «Te damos gracias, Señor Dios Todopoderoso, el que eres, que eras y que has de venir, porque has tomado tu gran poder y has reinado.</ab>
+					<ab xml:id="b.APO.11.15" type="verse" n="15">El séptimo <rs key="org4">ángel</rs> tocó la trompeta, y hubo grandes voces en el cielo, que decían: «Los reinos del mundo han venido a ser de nuestro <rs key="per14">Señor</rs> y de su <rs key="per1">Cristo</rs>; y él reinará por los siglos de los siglos».</ab>
+					<ab xml:id="b.APO.11.16" type="verse" n="16">Los veinticuatro ancianos que estaban sentados en sus tronos delante de <rs key="per14">Dios</rs>, se postraron sobre sus rostros y adoraron a <rs key="per14">Dios</rs>,</ab>
+					<ab xml:id="b.APO.11.17" type="verse" n="17">diciendo: «Te damos gracias, <rs key="per14">Señor</rs> <rs key="per14">Dios</rs> <rs key="per14">Todopoderoso</rs>, el que eres, que eras y que has de venir, porque has tomado tu gran poder y has reinado.</ab>
 					<ab xml:id="b.APO.11.18" type="verse" n="18">Las naciones se airaron y tu ira ha venido: el tiempo de juzgar a los muertos, de dar el galardón a tus siervos los profetas, a los santos y a los que temen tu nombre, a los pequeños y a los grandes, y de destruir a los que destruyen la tierra».</ab>
-					<ab xml:id="b.APO.11.19" type="verse" n="19">El templo de Dios fue abierto en el cielo, y el Arca de su pacto se dejó ver en el templo. Hubo relámpagos, voces, truenos, un terremoto y granizo grande.</ab>
+					<ab xml:id="b.APO.11.19" type="verse" n="19">El templo de <rs key="per14">Dios</rs> fue abierto en el cielo, y el <rs key="0">Arca</rs> de su pacto se dejó ver en el templo. Hubo relámpagos, voces, truenos, un terremoto y granizo grande.</ab>
 
 				</div>
 				<div xml:id="b.APO.12" type="chapter" n="12">
@@ -277,19 +277,19 @@
 					<ab xml:id="b.APO.12.2" type="verse" n="2">Estaba encinta y gritaba con dolores de parto, en la angustia del alumbramiento.</ab>
 					<ab xml:id="b.APO.12.3" type="verse" n="3">Otra señal también apareció en el cielo: un gran dragón escarlata que tenía siete cabezas y diez cuernos, y en sus cabezas tenía siete diademas.</ab>
 					<ab xml:id="b.APO.12.4" type="verse" n="4">Su cola arrastró la tercera parte de las estrellas del cielo y las arrojó sobre la tierra. Y el dragón se paró frente a la mujer que estaba para dar a luz, a fin de devorar a su hijo tan pronto como naciera.</ab>
-					<ab xml:id="b.APO.12.5" type="verse" n="5">Ella dio a luz un hijo varón, que va a regir a todas las naciones con vara de hierro; y su hijo fue arrebatado para Dios y para su trono.</ab>
-					<ab xml:id="b.APO.12.6" type="verse" n="6">La mujer huyó al desierto, donde tenía un lugar preparado por Dios para ser sustentada allí por mil doscientos sesenta días.</ab>
-					<ab xml:id="b.APO.12.7" type="verse" n="7">Entonces hubo una guerra en el cielo: Miguel y sus ángeles luchaban contra el dragón. Luchaban el dragón y sus ángeles,</ab>
+					<ab xml:id="b.APO.12.5" type="verse" n="5">Ella dio a luz un hijo varón, que va a regir a todas las naciones con vara de hierro; y su hijo fue arrebatado para <rs key="per14">Dios</rs> y para su trono.</ab>
+					<ab xml:id="b.APO.12.6" type="verse" n="6">La mujer huyó al desierto, donde tenía un lugar preparado por <rs key="per14">Dios</rs> para ser sustentada allí por mil doscientos sesenta días.</ab>
+					<ab xml:id="b.APO.12.7" type="verse" n="7">Entonces hubo una guerra en el cielo: Miguel y sus <rs key="org4">ángeles</rs> luchaban contra el dragón. Luchaban el dragón y sus <rs key="org4">ángeles</rs>,</ab>
 					<ab xml:id="b.APO.12.8" type="verse" n="8">pero no prevalecieron ni se halló ya lugar para ellos en el cielo.</ab>
-					<ab xml:id="b.APO.12.9" type="verse" n="9">Y fue lanzado fuera el gran dragón, la serpiente antigua, que se llama Diablo y Satanás, el cual engaña al mundo entero. Fue arrojado a la tierra y sus ángeles fueron arrojados con él.</ab>
-					<ab xml:id="b.APO.12.10" type="verse" n="10">Entonces oí una gran voz en el cielo, que decía: «Ahora ha venido la salvación, el poder y el reino de nuestro Dios y la autoridad de su Cristo, porque ha sido expulsado el acusador de nuestros hermanos, el que los acusaba delante de nuestro Dios día y noche.</ab>
-					<ab xml:id="b.APO.12.11" type="verse" n="11">Ellos lo han vencido por medio de la sangre del Cordero y de la palabra del testimonio de ellos, que menospreciaron sus vidas hasta la muerte.</ab>
+					<ab xml:id="b.APO.12.9" type="verse" n="9">Y fue lanzado fuera el gran dragón, la serpiente antigua, que se llama <rs key="per20">Diablo</rs> y <rs key="per20">Satanás</rs>, el cual engaña al mundo entero. Fue arrojado a la tierra y sus <rs key="org4">ángeles</rs> fueron arrojados con él.</ab>
+					<ab xml:id="b.APO.12.10" type="verse" n="10">Entonces oí una gran voz en el cielo, que decía: «Ahora ha venido la salvación, el poder y el reino de nuestro <rs key="per14">Dios</rs> y la autoridad de su <rs key="per1">Cristo</rs>, porque ha sido expulsado el acusador de nuestros hermanos, el que los acusaba delante de nuestro <rs key="per14">Dios</rs> día y noche.</ab>
+					<ab xml:id="b.APO.12.11" type="verse" n="11">Ellos lo han vencido por medio de la sangre del <rs key="0">Cordero</rs> y de la palabra del testimonio de ellos, que menospreciaron sus vidas hasta la muerte.</ab>
 					<ab xml:id="b.APO.12.12" type="verse" n="12">Por lo cual alegraos, cielos, y los que moráis en ellos. ¡Ay de los moradores de la tierra y del mar!, porque el diablo ha descendido a vosotros con gran ira, sabiendo que tiene poco tiempo».</ab>
 					<ab xml:id="b.APO.12.13" type="verse" n="13">Cuando el dragón vio que había sido arrojado a la tierra, persiguió a la mujer que había dado a luz al hijo varón.</ab>
 					<ab xml:id="b.APO.12.14" type="verse" n="14">Pero se le dieron a la mujer las dos alas de la gran águila para que volara de delante de la serpiente al desierto, a su lugar, donde es sustentada por un tiempo, tiempos y la mitad de un tiempo.</ab>
 					<ab xml:id="b.APO.12.15" type="verse" n="15">Y la serpiente arrojó de su boca, tras la mujer, agua como un río, para que fuera arrastrada por el río.</ab>
 					<ab xml:id="b.APO.12.16" type="verse" n="16">Pero la tierra ayudó a la mujer, pues la tierra abrió su boca y se tragó el río que el dragón había echado de su boca.</ab>
-					<ab xml:id="b.APO.12.17" type="verse" n="17">Entonces el dragón se llenó de ira contra la mujer y se fue a hacer la guerra contra el resto de la descendencia de ella, contra los que guardan los mandamientos de Dios y tienen el testimonio de Jesucristo.</ab>
+					<ab xml:id="b.APO.12.17" type="verse" n="17">Entonces el dragón se llenó de ira contra la mujer y se fue a hacer la guerra contra el resto de la descendencia de ella, contra los que guardan los mandamientos de <rs key="per14">Dios</rs> y tienen el testimonio de <rs key="per1">Jesucristo</rs>.</ab>
 
 				</div>
 				<div xml:id="b.APO.13" type="chapter" n="13">
@@ -298,9 +298,9 @@
 					<ab xml:id="b.APO.13.3" type="verse" n="3">Vi una de sus cabezas como herida de muerte, pero su herida mortal fue sanada. Toda la tierra se maravilló en pos de la bestia,</ab>
 					<ab xml:id="b.APO.13.4" type="verse" n="4">y adoraron al dragón que había dado autoridad a la bestia, y adoraron a la bestia, diciendo: «¿Quién como la bestia y quién podrá luchar contra ella?».</ab>
 					<ab xml:id="b.APO.13.5" type="verse" n="5">También se le dio boca que hablaba arrogancias y blasfemias, y se le dio autoridad para actuar por cuarenta y dos meses.</ab>
-					<ab xml:id="b.APO.13.6" type="verse" n="6">Y abrió su boca para blasfemar contra Dios, para blasfemar de su nombre, de su tabernáculo y de los que habitan en el cielo.</ab>
+					<ab xml:id="b.APO.13.6" type="verse" n="6">Y abrió su boca para blasfemar contra <rs key="per14">Dios</rs>, para blasfemar de su nombre, de su tabernáculo y de los que habitan en el cielo.</ab>
 					<ab xml:id="b.APO.13.7" type="verse" n="7">Se le permitió hacer guerra contra los santos, y vencerlos. También se le dio autoridad sobre toda tribu, pueblo, lengua y nación.</ab>
-					<ab xml:id="b.APO.13.8" type="verse" n="8">La adoraron todos los habitantes de la tierra cuyos nombres no estaban escritos desde el principio del mundo en el libro de la vida del Cordero que fue inmolado.</ab>
+					<ab xml:id="b.APO.13.8" type="verse" n="8">La adoraron todos los habitantes de la tierra cuyos nombres no estaban escritos desde el principio del mundo en el libro de la vida del <rs key="0">Cordero</rs> que fue inmolado.</ab>
 					<ab xml:id="b.APO.13.9" type="verse" n="9">Si alguno tiene oído, oiga:</ab>
 					<ab xml:id="b.APO.13.10" type="verse" n="10">«Si alguno lleva en cautividad, a cautividad irá. Si alguno mata a espada, a espada será muerto». Aquí está la perseverancia y la fe de los santos.</ab>
 					<ab xml:id="b.APO.13.11" type="verse" n="11">Después vi otra bestia que subía de la tierra. Tenía dos cuernos semejantes a los de un cordero, pero hablaba como un dragón.</ab>
@@ -314,95 +314,95 @@
 
 				</div>
 				<div xml:id="b.APO.14" type="chapter" n="14">
-					<ab xml:id="b.APO.14.1" type="verse" n="1">Después miré, y vi que el Cordero estaba de pie sobre el monte de Sión, y con él ciento cuarenta y cuatro mil que tenían el nombre de él y el de su Padre escrito en la frente.</ab>
+					<ab xml:id="b.APO.14.1" type="verse" n="1">Después miré, y vi que el <rs key="0">Cordero</rs> estaba de pie sobre el monte de <rs key="0">Sión</rs>, y con él ciento cuarenta y cuatro mil que tenían el nombre de él y el de su <rs key="per14">Padre</rs> escrito en la frente.</ab>
 					<ab xml:id="b.APO.14.2" type="verse" n="2">Oí una voz del cielo como el estruendo de muchas aguas y como el sonido de un gran trueno. La voz que oí era como de arpistas que tocaban sus arpas.</ab>
 					<ab xml:id="b.APO.14.3" type="verse" n="3">Cantaban un cántico nuevo delante del trono y delante de los cuatro seres vivientes y de los ancianos. Nadie podía aprender el cántico, sino aquellos ciento cuarenta y cuatro mil que fueron redimidos de entre los de la tierra.</ab>
-					<ab xml:id="b.APO.14.4" type="verse" n="4">Estos son los que no se han contaminado con mujeres, pues son vírgenes. Son los que siguen al Cordero por dondequiera que va. Estos fueron redimidos de entre los hombres como primicias para Dios y para el Cordero.</ab>
-					<ab xml:id="b.APO.14.5" type="verse" n="5">En sus bocas no fue hallada mentira, pues son sin mancha delante del trono de Dios.</ab>
-					<ab xml:id="b.APO.14.6" type="verse" n="6">En medio del cielo vi volar otro ángel que tenía el evangelio eterno para predicarlo a los habitantes de la tierra, a toda nación, tribu, lengua y pueblo.</ab>
-					<ab xml:id="b.APO.14.7" type="verse" n="7">Decía a gran voz: «¡Temed a Dios y dadle gloria, porque la hora de su juicio ha llegado. Adorad a aquel que hizo el cielo y la tierra, el mar y las fuentes de las aguas!».</ab>
-					<ab xml:id="b.APO.14.8" type="verse" n="8">Otro ángel lo siguió, diciendo: «Ha caído, ha caído Babilonia, la gran ciudad, porque ha hecho beber a todas las naciones del vino del furor de su fornicación».</ab>
-					<ab xml:id="b.APO.14.9" type="verse" n="9">Y un tercer ángel los siguió, diciendo a gran voz: «Si alguno adora a la bestia y a su imagen y recibe la marca en su frente o en su mano,</ab>
-					<ab xml:id="b.APO.14.10" type="verse" n="10">él también beberá del vino de la ira de Dios, que ha sido vaciado puro en el cáliz de su ira; y será atormentado con fuego y azufre delante de los santos ángeles y del Cordero.</ab>
+					<ab xml:id="b.APO.14.4" type="verse" n="4">Estos son los que no se han contaminado con mujeres, pues son vírgenes. Son los que siguen al <rs key="0">Cordero</rs> por dondequiera que va. Estos fueron redimidos de entre los hombres como primicias para <rs key="per14">Dios</rs> y para el <rs key="0">Cordero</rs>.</ab>
+					<ab xml:id="b.APO.14.5" type="verse" n="5">En sus bocas no fue hallada mentira, pues son sin mancha delante del trono de <rs key="per14">Dios</rs>.</ab>
+					<ab xml:id="b.APO.14.6" type="verse" n="6">En medio del cielo vi volar otro <rs key="org4">ángel</rs> que tenía el evangelio eterno para predicarlo a los habitantes de la tierra, a toda nación, tribu, lengua y pueblo.</ab>
+					<ab xml:id="b.APO.14.7" type="verse" n="7">Decía a gran voz: «¡Temed a <rs key="per14">Dios</rs> y dadle gloria, porque la hora de su juicio ha llegado. Adorad a aquel que hizo el cielo y la tierra, el mar y las fuentes de las aguas!».</ab>
+					<ab xml:id="b.APO.14.8" type="verse" n="8">Otro <rs key="org4">ángel</rs> lo siguió, diciendo: «Ha caído, ha caído <rs key="pla69">Babilonia</rs>, la gran ciudad, porque ha hecho beber a todas las naciones del vino del furor de su fornicación».</ab>
+					<ab xml:id="b.APO.14.9" type="verse" n="9">Y un tercer <rs key="org4">ángel</rs> los siguió, diciendo a gran voz: «Si alguno adora a la bestia y a su imagen y recibe la marca en su frente o en su mano,</ab>
+					<ab xml:id="b.APO.14.10" type="verse" n="10">él también beberá del vino de la ira de <rs key="per14">Dios</rs>, que ha sido vaciado puro en el cáliz de su ira; y será atormentado con fuego y azufre delante de los santos <rs key="org4">ángeles</rs> y del <rs key="0">Cordero</rs>.</ab>
 					<ab xml:id="b.APO.14.11" type="verse" n="11">El humo de su tormento sube por los siglos de los siglos. No tienen reposo de día ni de noche los que adoran a la bestia y a su imagen, ni nadie que reciba la marca de su nombre».</ab>
-					<ab xml:id="b.APO.14.12" type="verse" n="12">Aquí está la perseverancia de los santos, los que guardan los mandamientos de Dios y la fe de Jesús.</ab>
-					<ab xml:id="b.APO.14.13" type="verse" n="13">Y oí una voz que me decía desde el cielo: «Escribe: Bienaventurados de aquí en adelante los muertos que mueren en el Señor. Sí, dice el Espíritu, descansarán de sus trabajos, porque sus obras con ellos siguen».</ab>
-					<ab xml:id="b.APO.14.14" type="verse" n="14">Miré, y vi una nube blanca. Sentado sobre la nube, uno semejante al Hijo del hombre, que llevaba en la cabeza una corona de oro y en la mano una hoz aguda.</ab>
-					<ab xml:id="b.APO.14.15" type="verse" n="15">Y otro ángel salió del templo gritando a gran voz al que estaba sentado sobre la nube: «¡Mete tu hoz y siega, porque la hora de segar ha llegado, pues la mies de la tierra está madura!».</ab>
+					<ab xml:id="b.APO.14.12" type="verse" n="12">Aquí está la perseverancia de los santos, los que guardan los mandamientos de <rs key="per14">Dios</rs> y la fe de <rs key="per1">Jesús</rs>.</ab>
+					<ab xml:id="b.APO.14.13" type="verse" n="13">Y oí una voz que me decía desde el cielo: «Escribe: Bienaventurados de aquí en adelante los muertos que mueren en el <rs key="per14">Señor</rs>. Sí, dice el Espíritu, descansarán de sus trabajos, porque sus obras con ellos siguen».</ab>
+					<ab xml:id="b.APO.14.14" type="verse" n="14">Miré, y vi una nube blanca. Sentado sobre la nube, uno semejante al <rs key="per1">Hijo</rs> del hombre, que llevaba en la cabeza una corona de oro y en la mano una hoz aguda.</ab>
+					<ab xml:id="b.APO.14.15" type="verse" n="15">Y otro <rs key="org4">ángel</rs> salió del templo gritando a gran voz al que estaba sentado sobre la nube: «¡Mete tu hoz y siega, porque la hora de segar ha llegado, pues la mies de la tierra está madura!».</ab>
 					<ab xml:id="b.APO.14.16" type="verse" n="16">El que estaba sentado sobre la nube metió su hoz en la tierra y la tierra fue segada.</ab>
-					<ab xml:id="b.APO.14.17" type="verse" n="17">Otro ángel salió del templo que está en el cielo, llevando también una hoz aguda.</ab>
-					<ab xml:id="b.APO.14.18" type="verse" n="18">Y salió del altar otro ángel, que tenía poder sobre el fuego, y llamó a gran voz al que llevaba la hoz aguda, diciendo: «¡Mete tu hoz aguda y vendimia los racimos de la tierra, porque sus uvas están maduras!».</ab>
-					<ab xml:id="b.APO.14.19" type="verse" n="19">El ángel metió su hoz en la tierra, vendimió la viña de la tierra y echó las uvas en el gran lagar de la ira de Dios.</ab>
+					<ab xml:id="b.APO.14.17" type="verse" n="17">Otro <rs key="org4">ángel</rs> salió del templo que está en el cielo, llevando también una hoz aguda.</ab>
+					<ab xml:id="b.APO.14.18" type="verse" n="18">Y salió del altar otro <rs key="org4">ángel</rs>, que tenía poder sobre el fuego, y llamó a gran voz al que llevaba la hoz aguda, diciendo: «¡Mete tu hoz aguda y vendimia los racimos de la tierra, porque sus uvas están maduras!».</ab>
+					<ab xml:id="b.APO.14.19" type="verse" n="19">El <rs key="org4">ángel</rs> metió su hoz en la tierra, vendimió la viña de la tierra y echó las uvas en el gran lagar de la ira de <rs key="per14">Dios</rs>.</ab>
 					<ab xml:id="b.APO.14.20" type="verse" n="20">El lagar fue pisado fuera de la ciudad, y del lagar salió sangre que llegó hasta los frenos de los caballos en una extensión de mil seiscientos estadios.</ab>
 
 				</div>
 				<div xml:id="b.APO.15" type="chapter" n="15">
-					<ab xml:id="b.APO.15.1" type="verse" n="1">Vi en el cielo otra señal grande y admirable: siete ángeles con las siete plagas postreras, porque en ellas se consumaba la ira de Dios.</ab>
-					<ab xml:id="b.APO.15.2" type="verse" n="2">También vi como un mar de vidrio mezclado con fuego, y a los que habían alcanzado la victoria sobre la bestia y su imagen, sobre su marca y el número de su nombre, de pie sobre el mar de vidrio, con las arpas de Dios.</ab>
-					<ab xml:id="b.APO.15.3" type="verse" n="3">Y cantan el cántico de Moisés, siervo de Dios, y el cántico del Cordero, diciendo: «Grandes y maravillosas son tus obras, Señor Dios Todopoderoso; justos y verdaderos son tus caminos, Rey de los santos.</ab>
-					<ab xml:id="b.APO.15.4" type="verse" n="4">¿Quién no te temerá, Señor, y glorificará tu nombre?, pues solo tú eres santo; por lo cual todas las naciones vendrán y te adorarán, porque tus juicios se han manifestado».</ab>
+					<ab xml:id="b.APO.15.1" type="verse" n="1">Vi en el cielo otra señal grande y admirable: siete <rs key="org4">ángeles</rs> con las siete plagas postreras, porque en ellas se consumaba la ira de <rs key="per14">Dios</rs>.</ab>
+					<ab xml:id="b.APO.15.2" type="verse" n="2">También vi como un mar de vidrio mezclado con fuego, y a los que habían alcanzado la victoria sobre la bestia y su imagen, sobre su marca y el número de su nombre, de pie sobre el mar de vidrio, con las arpas de <rs key="per14">Dios</rs>.</ab>
+					<ab xml:id="b.APO.15.3" type="verse" n="3">Y cantan el cántico de <rs key="0">Moisés</rs>, siervo de <rs key="per14">Dios</rs>, y el cántico del <rs key="0">Cordero</rs>, diciendo: «Grandes y maravillosas son tus obras, <rs key="per14">Señor</rs> <rs key="per14">Dios</rs> <rs key="per14">Todopoderoso</rs>; justos y verdaderos son tus caminos, <rs key="per14">Rey</rs> de los santos.</ab>
+					<ab xml:id="b.APO.15.4" type="verse" n="4">¿Quién no te temerá, <rs key="per14">Señor</rs>, y glorificará tu nombre?, pues solo tú eres santo; por lo cual todas las naciones vendrán y te adorarán, porque tus juicios se han manifestado».</ab>
 					<ab xml:id="b.APO.15.5" type="verse" n="5">Después de estas cosas miré, y fue abierto en el cielo el santuario del tabernáculo del testimonio.</ab>
-					<ab xml:id="b.APO.15.6" type="verse" n="6">Del templo salieron los siete ángeles con las siete plagas, vestidos de lino limpio y resplandeciente y ceñidos alrededor del pecho con cintos de oro.</ab>
-					<ab xml:id="b.APO.15.7" type="verse" n="7">Uno de los cuatro seres vivientes dio a los siete ángeles siete copas de oro llenas de la ira de Dios, quien vive por los siglos de los siglos.</ab>
-					<ab xml:id="b.APO.15.8" type="verse" n="8">Y el templo se llenó de humo por causa de la gloria de Dios y por causa de su poder. Nadie podía entrar en el templo hasta que se cumplieran las siete plagas de los siete ángeles.</ab>
+					<ab xml:id="b.APO.15.6" type="verse" n="6">Del templo salieron los siete <rs key="org4">ángeles</rs> con las siete plagas, vestidos de lino limpio y resplandeciente y ceñidos alrededor del pecho con cintos de oro.</ab>
+					<ab xml:id="b.APO.15.7" type="verse" n="7">Uno de los cuatro seres vivientes dio a los siete <rs key="org4">ángeles</rs> siete copas de oro llenas de la ira de <rs key="per14">Dios</rs>, quien vive por los siglos de los siglos.</ab>
+					<ab xml:id="b.APO.15.8" type="verse" n="8">Y el templo se llenó de humo por causa de la gloria de <rs key="per14">Dios</rs> y por causa de su poder. Nadie podía entrar en el templo hasta que se cumplieran las siete plagas de los siete <rs key="org4">ángeles</rs>.</ab>
 
 				</div>
 				<div xml:id="b.APO.16" type="chapter" n="16">
-					<ab xml:id="b.APO.16.1" type="verse" n="1">Entonces oí desde el templo una gran voz que decía a los siete ángeles: «Id y derramad sobre la tierra las siete copas de la ira de Dios».</ab>
+					<ab xml:id="b.APO.16.1" type="verse" n="1">Entonces oí desde el templo una gran voz que decía a los siete <rs key="org4">ángeles</rs>: «Id y derramad sobre la tierra las siete copas de la ira de <rs key="per14">Dios</rs>».</ab>
 					<ab xml:id="b.APO.16.2" type="verse" n="2">Fue el primero y derramó su copa sobre la tierra, y vino una úlcera maligna y pestilente sobre los hombres que tenían la marca de la bestia y que adoraban su imagen.</ab>
-					<ab xml:id="b.APO.16.3" type="verse" n="3">El segundo ángel derramó su copa sobre el mar, y este se convirtió en sangre como de muerto, y murió todo ser viviente que había en el mar.</ab>
-					<ab xml:id="b.APO.16.4" type="verse" n="4">El tercer ángel derramó su copa sobre los ríos y sobre las fuentes de las aguas, y se convirtieron en sangre.</ab>
-					<ab xml:id="b.APO.16.5" type="verse" n="5">Y oí que el ángel de las aguas decía: «Justo eres tú, Señor, el que eres y que eras, el Santo, porque has juzgado estas cosas.</ab>
+					<ab xml:id="b.APO.16.3" type="verse" n="3">El segundo <rs key="org4">ángel</rs> derramó su copa sobre el mar, y este se convirtió en sangre como de muerto, y murió todo ser viviente que había en el mar.</ab>
+					<ab xml:id="b.APO.16.4" type="verse" n="4">El tercer <rs key="org4">ángel</rs> derramó su copa sobre los ríos y sobre las fuentes de las aguas, y se convirtieron en sangre.</ab>
+					<ab xml:id="b.APO.16.5" type="verse" n="5">Y oí que el <rs key="org4">ángel</rs> de las aguas decía: «Justo eres tú, <rs key="per14">Señor</rs>, el que eres y que eras, el <rs key="per14">Santo</rs>, porque has juzgado estas cosas.</ab>
 					<ab xml:id="b.APO.16.6" type="verse" n="6">Por cuanto derramaron la sangre de los santos y de los profetas, también tú les has dado a beber sangre, pues se lo merecen».</ab>
-					<ab xml:id="b.APO.16.7" type="verse" n="7">También oí a otro, que desde el altar decía: «¡Ciertamente, Señor Dios Todopoderoso, tus juicios son verdaderos y justos!».</ab>
-					<ab xml:id="b.APO.16.8" type="verse" n="8">El cuarto ángel derramó su copa sobre el sol, al cual le fue permitido quemar a los hombres con fuego.</ab>
-					<ab xml:id="b.APO.16.9" type="verse" n="9">Los hombres fueron quemados con el gran calor y blasfemaron el nombre de Dios, que tiene poder sobre estas plagas, y no se arrepintieron para darle gloria.</ab>
-					<ab xml:id="b.APO.16.10" type="verse" n="10">El quinto ángel derramó su copa sobre el trono de la bestia, y su reino se cubrió de tinieblas. La gente se mordía la lengua por causa del dolor</ab>
-					<ab xml:id="b.APO.16.11" type="verse" n="11">y blasfemaron contra el Dios del cielo por sus dolores y por sus úlceras, y no se arrepintieron de sus obras.</ab>
-					<ab xml:id="b.APO.16.12" type="verse" n="12">El sexto ángel derramó su copa sobre el gran río Éufrates, y el agua de este se secó para preparar el camino a los reyes del oriente.</ab>
+					<ab xml:id="b.APO.16.7" type="verse" n="7">También oí a otro, que desde el altar decía: «¡Ciertamente, <rs key="per14">Señor</rs> <rs key="per14">Dios</rs> <rs key="per14">Todopoderoso</rs>, tus juicios son verdaderos y justos!».</ab>
+					<ab xml:id="b.APO.16.8" type="verse" n="8">El cuarto <rs key="org4">ángel</rs> derramó su copa sobre el sol, al cual le fue permitido quemar a los hombres con fuego.</ab>
+					<ab xml:id="b.APO.16.9" type="verse" n="9">Los hombres fueron quemados con el gran calor y blasfemaron el nombre de <rs key="per14">Dios</rs>, que tiene poder sobre estas plagas, y no se arrepintieron para darle gloria.</ab>
+					<ab xml:id="b.APO.16.10" type="verse" n="10">El quinto <rs key="org4">ángel</rs> derramó su copa sobre el trono de la bestia, y su reino se cubrió de tinieblas. La gente se mordía la lengua por causa del dolor</ab>
+					<ab xml:id="b.APO.16.11" type="verse" n="11">y blasfemaron contra el <rs key="per14">Dios</rs> del cielo por sus dolores y por sus úlceras, y no se arrepintieron de sus obras.</ab>
+					<ab xml:id="b.APO.16.12" type="verse" n="12">El sexto <rs key="org4">ángel</rs> derramó su copa sobre el gran río <rs key="pla64">Éufrates</rs>, y el agua de este se secó para preparar el camino a los reyes del oriente.</ab>
 					<ab xml:id="b.APO.16.13" type="verse" n="13">Vi salir de la boca del dragón, de la boca de la bestia y de la boca del falso profeta, tres espíritus inmundos semejantes a ranas.</ab>
-					<ab xml:id="b.APO.16.14" type="verse" n="14">Son espíritus de demonios, que hacen señales y van a los reyes de la tierra en todo el mundo para reunirlos para la batalla de aquel gran día del Dios Todopoderoso.</ab>
+					<ab xml:id="b.APO.16.14" type="verse" n="14">Son espíritus de demonios, que hacen señales y van a los reyes de la tierra en todo el mundo para reunirlos para la batalla de aquel gran día del <rs key="per14">Dios</rs> <rs key="per14">Todopoderoso</rs>.</ab>
 					<ab xml:id="b.APO.16.15" type="verse" n="15">«Yo vengo como ladrón. Bienaventurado el que vela y guarda sus vestiduras, no sea que ande desnudo y vean su vergüenza».</ab>
-					<ab xml:id="b.APO.16.16" type="verse" n="16">Y los reunió en el lugar que en hebreo se llama Armagedón.</ab>
-					<ab xml:id="b.APO.16.17" type="verse" n="17">El séptimo ángel derramó su copa por el aire. Y salió una gran voz del santuario del cielo, desde el trono, que decía: «¡Ya está hecho!».</ab>
+					<ab xml:id="b.APO.16.16" type="verse" n="16">Y los reunió en el lugar que en hebreo se llama <rs key="0">Armagedón</rs>.</ab>
+					<ab xml:id="b.APO.16.17" type="verse" n="17">El séptimo <rs key="org4">ángel</rs> derramó su copa por el aire. Y salió una gran voz del santuario del cielo, desde el trono, que decía: «¡Ya está hecho!».</ab>
 					<ab xml:id="b.APO.16.18" type="verse" n="18">Entonces hubo relámpagos, voces, truenos y un gran temblor de tierra, un terremoto tan grande cual no lo hubo jamás desde que los hombres existen sobre la tierra.</ab>
-					<ab xml:id="b.APO.16.19" type="verse" n="19">La gran ciudad se dividió en tres partes y las ciudades de las naciones cayeron. La gran Babilonia vino en memoria delante de Dios, para darle el cáliz del vino del ardor de su ira.</ab>
+					<ab xml:id="b.APO.16.19" type="verse" n="19">La gran ciudad se dividió en tres partes y las ciudades de las naciones cayeron. La gran <rs key="pla69">Babilonia</rs> vino en memoria delante de <rs key="per14">Dios</rs>, para darle el cáliz del vino del ardor de su ira.</ab>
 					<ab xml:id="b.APO.16.20" type="verse" n="20">Toda isla huyó y los montes ya no fueron hallados.</ab>
-					<ab xml:id="b.APO.16.21" type="verse" n="21">Del cielo cayó sobre los hombres un enorme granizo, como del peso de un talento. Y los hombres blasfemaron contra Dios por la plaga del granizo, porque su plaga fue sumamente grande.</ab>
+					<ab xml:id="b.APO.16.21" type="verse" n="21">Del cielo cayó sobre los hombres un enorme granizo, como del peso de un talento. Y los hombres blasfemaron contra <rs key="per14">Dios</rs> por la plaga del granizo, porque su plaga fue sumamente grande.</ab>
 
 				</div>
 				<div xml:id="b.APO.17" type="chapter" n="17">
-					<ab xml:id="b.APO.17.1" type="verse" n="1">Vino uno de los siete ángeles que tenían las siete copas y habló conmigo, diciendo: «Ven acá y te mostraré la sentencia contra la gran ramera, la que está sentada sobre muchas aguas.</ab>
+					<ab xml:id="b.APO.17.1" type="verse" n="1">Vino uno de los siete <rs key="org4">ángeles</rs> que tenían las siete copas y habló conmigo, diciendo: «Ven acá y te mostraré la sentencia contra la gran ramera, la que está sentada sobre muchas aguas.</ab>
 					<ab xml:id="b.APO.17.2" type="verse" n="2">Con ella han fornicado los reyes de la tierra, y los habitantes de la tierra se han embriagado con el vino de su fornicación».</ab>
 					<ab xml:id="b.APO.17.3" type="verse" n="3">Me llevó en el Espíritu al desierto, y vi a una mujer sentada sobre una bestia escarlata llena de nombres de blasfemia, que tenía siete cabezas y diez cuernos.</ab>
 					<ab xml:id="b.APO.17.4" type="verse" n="4">La mujer estaba vestida de púrpura y escarlata, adornada de oro, piedras preciosas y perlas, y tenía en la mano un cáliz de oro lleno de abominaciones y de la inmundicia de su fornicación.</ab>
-					<ab xml:id="b.APO.17.5" type="verse" n="5">En su frente tenía un nombre escrito, un misterio: «Babilonia la grande, la madre de las rameras y de las abominaciones de la tierra».</ab>
-					<ab xml:id="b.APO.17.6" type="verse" n="6">Vi a la mujer ebria de la sangre de los santos y de la sangre de los mártires de Jesús. Cuando la vi quedé asombrado con gran asombro.</ab>
-					<ab xml:id="b.APO.17.7" type="verse" n="7">El ángel me dijo: «¿Por qué te asombras? Yo te diré el misterio de la mujer y de la bestia que la lleva, la cual tiene siete cabezas y diez cuernos.</ab>
+					<ab xml:id="b.APO.17.5" type="verse" n="5">En su frente tenía un nombre escrito, un misterio: «<rs key="pla69">Babilonia</rs> la grande, la madre de las rameras y de las abominaciones de la tierra».</ab>
+					<ab xml:id="b.APO.17.6" type="verse" n="6">Vi a la mujer ebria de la sangre de los santos y de la sangre de los mártires de <rs key="per1">Jesús</rs>. Cuando la vi quedé asombrado con gran asombro.</ab>
+					<ab xml:id="b.APO.17.7" type="verse" n="7">El <rs key="org4">ángel</rs> me dijo: «¿Por qué te asombras? Yo te diré el misterio de la mujer y de la bestia que la lleva, la cual tiene siete cabezas y diez cuernos.</ab>
 					<ab xml:id="b.APO.17.8" type="verse" n="8">La bestia que has visto era y no es, y está para subir del abismo e ir a perdición. Los habitantes de la tierra, aquellos cuyos nombres no están escritos en el libro de la vida desde la fundación del mundo, se asombrarán viendo la bestia que era y no es, y será.</ab>
 					<ab xml:id="b.APO.17.9" type="verse" n="9">»Esto, para la mente que tenga sabiduría: Las siete cabezas son siete montes sobre los cuales se sienta la mujer,</ab>
 					<ab xml:id="b.APO.17.10" type="verse" n="10">y son siete reyes. Cinco de ellos han caído; uno es y el otro aún no ha venido, y cuando venga deberá durar breve tiempo.</ab>
 					<ab xml:id="b.APO.17.11" type="verse" n="11">La bestia que era y no es, es también el octavo, y es uno de los siete y va a la perdición.</ab>
 					<ab xml:id="b.APO.17.12" type="verse" n="12">Los diez cuernos que has visto son diez reyes que aún no han recibido reino; pero recibirán autoridad como reyes por una hora, juntamente con la bestia.</ab>
 					<ab xml:id="b.APO.17.13" type="verse" n="13">Estos tienen un mismo propósito: entregarán su poder y autoridad a la bestia.</ab>
-					<ab xml:id="b.APO.17.14" type="verse" n="14">Pelearán contra el Cordero, y el Cordero los vencerá, porque es Señor de señores y Rey de reyes; y los que están con él son llamados, elegidos y fieles».</ab>
+					<ab xml:id="b.APO.17.14" type="verse" n="14">Pelearán contra el <rs key="0">Cordero</rs>, y el <rs key="0">Cordero</rs> los vencerá, porque es <rs key="per14">Señor</rs> de señores y <rs key="per14">Rey</rs> de reyes; y los que están con él son llamados, elegidos y fieles».</ab>
 					<ab xml:id="b.APO.17.15" type="verse" n="15">También me dijo: «Las aguas que has visto, donde se sienta la ramera, son pueblos, muchedumbres, naciones y lenguas.</ab>
 					<ab xml:id="b.APO.17.16" type="verse" n="16">Y los diez cuernos que viste, y la bestia, aborrecerán a la ramera, la dejarán desolada y desnuda, devorarán sus carnes y la quemarán con fuego.</ab>
-					<ab xml:id="b.APO.17.17" type="verse" n="17">Dios ha puesto en sus corazones el ejecutar lo que él quiso: ponerse de acuerdo y dar su reino a la bestia hasta que se hayan cumplido las palabras de Dios.</ab>
+					<ab xml:id="b.APO.17.17" type="verse" n="17"><rs key="per14">Dios</rs> ha puesto en sus corazones el ejecutar lo que él quiso: ponerse de acuerdo y dar su reino a la bestia hasta que se hayan cumplido las palabras de <rs key="per14">Dios</rs>.</ab>
 					<ab xml:id="b.APO.17.18" type="verse" n="18">Y la mujer que has visto es la gran ciudad que reina sobre los reyes de la tierra».</ab>
 
 				</div>
 				<div xml:id="b.APO.18" type="chapter" n="18">
-					<ab xml:id="b.APO.18.1" type="verse" n="1">Después de esto vi otro ángel que descendía del cielo con gran poder, y la tierra fue alumbrada con su gloria.</ab>
-					<ab xml:id="b.APO.18.2" type="verse" n="2">Clamó con voz potente, diciendo: «¡Ha caído, ha caído la gran Babilonia! Se ha convertido en habitación de demonios, en guarida de todo espíritu inmundo y en albergue de toda ave inmunda y aborrecible,</ab>
+					<ab xml:id="b.APO.18.1" type="verse" n="1">Después de esto vi otro <rs key="org4">ángel</rs> que descendía del cielo con gran poder, y la tierra fue alumbrada con su gloria.</ab>
+					<ab xml:id="b.APO.18.2" type="verse" n="2">Clamó con voz potente, diciendo: «¡Ha caído, ha caído la gran <rs key="pla69">Babilonia</rs>! Se ha convertido en habitación de demonios, en guarida de todo espíritu inmundo y en albergue de toda ave inmunda y aborrecible,</ab>
 					<ab xml:id="b.APO.18.3" type="verse" n="3">porque todas las naciones han bebido del vino del furor de su fornicación. Los reyes de la tierra han fornicado con ella y los mercaderes de la tierra se han enriquecido con el poder de sus lujos sensuales».</ab>
 					<ab xml:id="b.APO.18.4" type="verse" n="4">Y oí otra voz del cielo, que decía: «¡Salid de ella, pueblo mío, para que no seáis partícipes de sus pecados ni recibáis parte de sus plagas!,</ab>
-					<ab xml:id="b.APO.18.5" type="verse" n="5">porque sus pecados han llegado hasta el cielo y Dios se ha acordado de sus maldades.</ab>
+					<ab xml:id="b.APO.18.5" type="verse" n="5">porque sus pecados han llegado hasta el cielo y <rs key="per14">Dios</rs> se ha acordado de sus maldades.</ab>
 					<ab xml:id="b.APO.18.6" type="verse" n="6">Dadle a ella tal como ella os ha dado y pagadle el doble según sus obras. En el cáliz en que ella preparó bebida, preparadle el doble a ella.</ab>
 					<ab xml:id="b.APO.18.7" type="verse" n="7">Cuanto ella se ha glorificado y ha vivido en deleites, tanto dadle de tormento y llanto, porque dice en su corazón: Yo estoy sentada como una reina, no soy viuda y no veré llanto».</ab>
-					<ab xml:id="b.APO.18.8" type="verse" n="8">Por lo cual, en un solo día vendrán sus plagas: muerte, llanto y hambre, y será quemada con fuego, porque poderoso es Dios el Señor, que la juzga.</ab>
+					<ab xml:id="b.APO.18.8" type="verse" n="8">Por lo cual, en un solo día vendrán sus plagas: muerte, llanto y hambre, y será quemada con fuego, porque poderoso es <rs key="per14">Dios</rs> el <rs key="per14">Señor</rs>, que la juzga.</ab>
 					<ab xml:id="b.APO.18.9" type="verse" n="9">Los reyes de la tierra que han fornicado con ella y con ella han vivido en deleites, llorarán y harán lamentación sobre ella cuando vean el humo de su incendio.</ab>
-					<ab xml:id="b.APO.18.10" type="verse" n="10">Poniéndose lejos por el temor de su tormento, dirán: «¡Ay, ay de la gran ciudad, de Babilonia, la ciudad fuerte!, porque en una sola hora vino tu juicio».</ab>
+					<ab xml:id="b.APO.18.10" type="verse" n="10">Poniéndose lejos por el temor de su tormento, dirán: «¡Ay, ay de la gran ciudad, de <rs key="pla69">Babilonia</rs>, la ciudad fuerte!, porque en una sola hora vino tu juicio».</ab>
 					<ab xml:id="b.APO.18.11" type="verse" n="11">Los mercaderes de la tierra lloran y hacen lamentación sobre ella, porque ninguno compra más sus mercaderías:</ab>
 					<ab xml:id="b.APO.18.12" type="verse" n="12">mercadería de oro y plata; de piedras preciosas y perlas; de lino fino, púrpura, seda y escarlata; de toda madera olorosa, todo objeto de marfil y todo objeto de madera preciosa; de cobre, hierro y mármol;</ab>
 					<ab xml:id="b.APO.18.13" type="verse" n="13">canela y especias aromáticas; incienso, mirra y olíbano; vino y aceite; flor de harina y trigo; bestias y ovejas; caballos y carros; esclavos y almas de hombres.</ab>
@@ -412,31 +412,31 @@
 					<ab xml:id="b.APO.18.17" type="verse" n="17">porque en una sola hora han sido consumidas tantas riquezas». Todo piloto y todos los que viajan en naves, los marineros y todos los que trabajan en el mar, se pusieron lejos,</ab>
 					<ab xml:id="b.APO.18.18" type="verse" n="18">y viendo el humo de su incendio dieron voces, diciendo: «¿Qué ciudad era semejante a esta gran ciudad?».</ab>
 					<ab xml:id="b.APO.18.19" type="verse" n="19">Y echaron polvo sobre sus cabezas y dieron voces, llorando y lamentando, diciendo: «¡Ay, ay de la gran ciudad, en la cual todos los que tenían naves en el mar se habían enriquecido de sus riquezas! ¡En una sola hora ha sido desolada!</ab>
-					<ab xml:id="b.APO.18.20" type="verse" n="20">Alégrate sobre ella, cielo, y vosotros santos, apóstoles y profetas, porque Dios os ha hecho justicia en ella».</ab>
-					<ab xml:id="b.APO.18.21" type="verse" n="21">Un ángel poderoso tomó una piedra, como una gran piedra de molino, y la arrojó en el mar, diciendo: «Con el mismo ímpetu será derribada Babilonia, la gran ciudad, y nunca más será hallada.</ab>
+					<ab xml:id="b.APO.18.20" type="verse" n="20">Alégrate sobre ella, cielo, y vosotros santos, apóstoles y profetas, porque <rs key="per14">Dios</rs> os ha hecho justicia en ella».</ab>
+					<ab xml:id="b.APO.18.21" type="verse" n="21">Un <rs key="org4">ángel</rs> poderoso tomó una piedra, como una gran piedra de molino, y la arrojó en el mar, diciendo: «Con el mismo ímpetu será derribada <rs key="pla69">Babilonia</rs>, la gran ciudad, y nunca más será hallada.</ab>
 					<ab xml:id="b.APO.18.22" type="verse" n="22">Voz de arpistas, músicos, flautistas y trompetistas no se oirá más de ti. Ni se hallará más en ti artífice de oficio alguno, ni ruido de molinos se oirá más en ti.</ab>
 					<ab xml:id="b.APO.18.23" type="verse" n="23">Luz de lámpara no alumbrará más en ti, ni voz de esposo y esposa se oirá más en ti, porque tus mercaderes eran los grandes de la tierra y por tus hechicerías fueron engañadas todas las naciones.</ab>
 					<ab xml:id="b.APO.18.24" type="verse" n="24">En ella se halló la sangre de los profetas y de los santos y de todos los que han sido muertos en la tierra».</ab>
 
 				</div>
 				<div xml:id="b.APO.19" type="chapter" n="19">
-					<ab xml:id="b.APO.19.1" type="verse" n="1">Después de esto oí una gran voz, como de una gran multitud en el cielo, que decía: «¡Aleluya! Salvación, honra, gloria y poder son del Señor Dios nuestro,</ab>
+					<ab xml:id="b.APO.19.1" type="verse" n="1">Después de esto oí una gran voz, como de una gran multitud en el cielo, que decía: «¡Aleluya! Salvación, honra, gloria y poder son del <rs key="per14">Señor</rs> <rs key="per14">Dios</rs> nuestro,</ab>
 					<ab xml:id="b.APO.19.2" type="verse" n="2">porque sus juicios son verdaderos y justos, pues ha juzgado a la gran ramera que corrompía la tierra con su fornicación, y ha vengado la sangre de sus siervos de la mano de ella».</ab>
 					<ab xml:id="b.APO.19.3" type="verse" n="3">Otra vez dijeron: «¡Aleluya! El humo de ella ha de subir por los siglos de los siglos».</ab>
-					<ab xml:id="b.APO.19.4" type="verse" n="4">Entonces los veinticuatro ancianos y los cuatro seres vivientes se postraron en tierra y adoraron a Dios, que estaba sentado en el trono. Decían: «¡Amén! ¡Aleluya!».</ab>
-					<ab xml:id="b.APO.19.5" type="verse" n="5">Y del trono salió una voz que decía: «Alabad a nuestro Dios todos sus siervos, y los que lo teméis, así pequeños como grandes».</ab>
-					<ab xml:id="b.APO.19.6" type="verse" n="6">Y oí como la voz de una gran multitud, como el estruendo de muchas aguas y como la voz de grandes truenos, que decía: «¡Aleluya!, porque el Señor, nuestro Dios Todopoderoso, reina.</ab>
-					<ab xml:id="b.APO.19.7" type="verse" n="7">Gocémonos, alegrémonos y démosle gloria, porque han llegado las bodas del Cordero y su esposa se ha preparado.</ab>
+					<ab xml:id="b.APO.19.4" type="verse" n="4">Entonces los veinticuatro ancianos y los cuatro seres vivientes se postraron en tierra y adoraron a <rs key="per14">Dios</rs>, que estaba sentado en el trono. Decían: «¡Amén! ¡Aleluya!».</ab>
+					<ab xml:id="b.APO.19.5" type="verse" n="5">Y del trono salió una voz que decía: «Alabad a nuestro <rs key="per14">Dios</rs> todos sus siervos, y los que lo teméis, así pequeños como grandes».</ab>
+					<ab xml:id="b.APO.19.6" type="verse" n="6">Y oí como la voz de una gran multitud, como el estruendo de muchas aguas y como la voz de grandes truenos, que decía: «¡Aleluya!, porque el <rs key="per14">Señor</rs>, nuestro <rs key="per14">Dios</rs> <rs key="per14">Todopoderoso</rs>, reina.</ab>
+					<ab xml:id="b.APO.19.7" type="verse" n="7">Gocémonos, alegrémonos y démosle gloria, porque han llegado las bodas del <rs key="0">Cordero</rs> y su esposa se ha preparado.</ab>
 					<ab xml:id="b.APO.19.8" type="verse" n="8">Y a ella se le ha concedido que se vista de lino fino, limpio y resplandeciente (pues el lino fino significa las acciones justas de los santos)».</ab>
-					<ab xml:id="b.APO.19.9" type="verse" n="9">El ángel me dijo: «Escribe: Bienaventurados los que son llamados a la cena de las bodas del Cordero». Y me dijo: «Estas son palabras verdaderas de Dios».</ab>
-					<ab xml:id="b.APO.19.10" type="verse" n="10">Yo me postré a sus pies para adorarlo, pero él me dijo: «¡Mira, no lo hagas! Yo soy consiervo tuyo y de tus hermanos que mantienen el testimonio de Jesús. ¡Adora a Dios!». (El testimonio de Jesús es el espíritu de la profecía.)</ab>
-					<ab xml:id="b.APO.19.11" type="verse" n="11">Entonces vi el cielo abierto, y había un caballo blanco. El que lo montaba se llamaba Fiel y Verdadero, y con justicia juzga y pelea.</ab>
+					<ab xml:id="b.APO.19.9" type="verse" n="9">El <rs key="org4">ángel</rs> me dijo: «Escribe: Bienaventurados los que son llamados a la cena de las bodas del <rs key="0">Cordero</rs>». Y me dijo: «Estas son palabras verdaderas de <rs key="per14">Dios</rs>».</ab>
+					<ab xml:id="b.APO.19.10" type="verse" n="10">Yo me postré a sus pies para adorarlo, pero él me dijo: «¡Mira, no lo hagas! Yo soy consiervo tuyo y de tus hermanos que mantienen el testimonio de <rs key="per1">Jesús</rs>. ¡Adora a <rs key="per14">Dios</rs>!». (El testimonio de <rs key="per1">Jesús</rs> es el espíritu de la profecía.)</ab>
+					<ab xml:id="b.APO.19.11" type="verse" n="11">Entonces vi el cielo abierto, y había un caballo blanco. El que lo montaba se llamaba <rs key="0">Fiel</rs> y <rs key="0">Verdadero</rs>, y con justicia juzga y pelea.</ab>
 					<ab xml:id="b.APO.19.12" type="verse" n="12">Sus ojos eran como llama de fuego, en su cabeza tenía muchas diademas y tenía escrito un nombre que ninguno conocía sino él mismo.</ab>
-					<ab xml:id="b.APO.19.13" type="verse" n="13">Estaba vestido de una ropa teñida en sangre y su nombre es: La Palabra de Dios.</ab>
+					<ab xml:id="b.APO.19.13" type="verse" n="13">Estaba vestido de una ropa teñida en sangre y su nombre es: La <rs key="0">Palabra</rs> de <rs key="per14">Dios</rs>.</ab>
 					<ab xml:id="b.APO.19.14" type="verse" n="14">Los ejércitos celestiales, vestidos de lino finísimo, blanco y limpio, lo seguían en caballos blancos.</ab>
-					<ab xml:id="b.APO.19.15" type="verse" n="15">De su boca sale una espada aguda para herir con ella a las naciones, y él las regirá con vara de hierro. Él pisa el lagar del vino del furor y de la ira del Dios Todopoderoso.</ab>
-					<ab xml:id="b.APO.19.16" type="verse" n="16">En su vestidura y en su muslo tiene escrito este nombre: Rey de reyes y Señor de señores.</ab>
-					<ab xml:id="b.APO.19.17" type="verse" n="17">Vi un ángel que estaba de pie en el sol, y clamó a gran voz diciendo a todas las aves que vuelan en medio del cielo: «¡Venid y congregaos a la gran cena de Dios!</ab>
+					<ab xml:id="b.APO.19.15" type="verse" n="15">De su boca sale una espada aguda para herir con ella a las naciones, y él las regirá con vara de hierro. Él pisa el lagar del vino del furor y de la ira del <rs key="per14">Dios</rs> <rs key="per14">Todopoderoso</rs>.</ab>
+					<ab xml:id="b.APO.19.16" type="verse" n="16">En su vestidura y en su muslo tiene escrito este nombre: <rs key="per14">Rey</rs> de reyes y <rs key="per14">Señor</rs> de señores.</ab>
+					<ab xml:id="b.APO.19.17" type="verse" n="17">Vi un <rs key="org4">ángel</rs> que estaba de pie en el sol, y clamó a gran voz diciendo a todas las aves que vuelan en medio del cielo: «¡Venid y congregaos a la gran cena de <rs key="per14">Dios</rs>!</ab>
 					<ab xml:id="b.APO.19.18" type="verse" n="18">Para que comáis carnes de reyes y capitanes y carnes de fuertes; carnes de caballos y de sus jinetes; carnes de todos, libres y esclavos, pequeños y grandes».</ab>
 					<ab xml:id="b.APO.19.19" type="verse" n="19">Vi a la bestia y a los reyes de la tierra y sus ejércitos, reunidos para guerrear contra el que montaba el caballo y contra su ejército.</ab>
 					<ab xml:id="b.APO.19.20" type="verse" n="20">La bestia fue apresada, y con ella el falso profeta que había hecho delante de ella las señales con las cuales había engañado a los que recibieron la marca de la bestia y habían adorado su imagen. Estos dos fueron lanzados vivos dentro de un lago de fuego que arde con azufre.</ab>
@@ -444,75 +444,75 @@
 
 				</div>
 				<div xml:id="b.APO.20" type="chapter" n="20">
-					<ab xml:id="b.APO.20.1" type="verse" n="1">Vi un ángel que descendía del cielo con la llave del abismo y una gran cadena en la mano.</ab>
-					<ab xml:id="b.APO.20.2" type="verse" n="2">Prendió al dragón, la serpiente antigua, que es el Diablo y Satanás, y lo ató por mil años.</ab>
+					<ab xml:id="b.APO.20.1" type="verse" n="1">Vi un <rs key="org4">ángel</rs> que descendía del cielo con la llave del abismo y una gran cadena en la mano.</ab>
+					<ab xml:id="b.APO.20.2" type="verse" n="2">Prendió al dragón, la serpiente antigua, que es el <rs key="per20">Diablo</rs> y <rs key="per20">Satanás</rs>, y lo ató por mil años.</ab>
 					<ab xml:id="b.APO.20.3" type="verse" n="3">Lo arrojó al abismo, lo encerró y puso un sello sobre él, para que no engañara más a las naciones hasta que fueran cumplidos mil años. Después de esto debe ser desatado por un poco de tiempo.</ab>
-					<ab xml:id="b.APO.20.4" type="verse" n="4">Vi tronos, y se sentaron sobre ellos los que recibieron facultad de juzgar. Y vi las almas de los decapitados por causa del testimonio de Jesús y por la palabra de Dios, los que no habían adorado a la bestia ni a su imagen, ni recibieron la marca en sus frentes ni en sus manos; y vivieron y reinaron con Cristo mil años.</ab>
+					<ab xml:id="b.APO.20.4" type="verse" n="4">Vi tronos, y se sentaron sobre ellos los que recibieron facultad de juzgar. Y vi las almas de los decapitados por causa del testimonio de <rs key="per1">Jesús</rs> y por la palabra de <rs key="per14">Dios</rs>, los que no habían adorado a la bestia ni a su imagen, ni recibieron la marca en sus frentes ni en sus manos; y vivieron y reinaron con <rs key="per1">Cristo</rs> mil años.</ab>
 					<ab xml:id="b.APO.20.5" type="verse" n="5">Pero los otros muertos no volvieron a vivir hasta que se cumplieron mil años. Esta es la primera resurrección.</ab>
-					<ab xml:id="b.APO.20.6" type="verse" n="6">Bienaventurado y santo el que tiene parte en la primera resurrección; la segunda muerte no tiene poder sobre estos, sino que serán sacerdotes de Dios y de Cristo y reinarán con él mil años.</ab>
-					<ab xml:id="b.APO.20.7" type="verse" n="7">Cuando los mil años se cumplan, Satanás será suelto de su prisión</ab>
-					<ab xml:id="b.APO.20.8" type="verse" n="8">y saldrá a engañar a las naciones que están en los cuatro ángulos de la tierra, a Gog y a Magog, a fin de reunirlos para la batalla. Su número es como la arena del mar.</ab>
-					<ab xml:id="b.APO.20.9" type="verse" n="9">Subieron por la anchura de la tierra y rodearon el campamento de los santos y la ciudad amada; pero de Dios descendió fuego del cielo y los consumió.</ab>
+					<ab xml:id="b.APO.20.6" type="verse" n="6">Bienaventurado y santo el que tiene parte en la primera resurrección; la segunda muerte no tiene poder sobre estos, sino que serán sacerdotes de <rs key="per14">Dios</rs> y de <rs key="per1">Cristo</rs> y reinarán con él mil años.</ab>
+					<ab xml:id="b.APO.20.7" type="verse" n="7">Cuando los mil años se cumplan, <rs key="per20">Satanás</rs> será suelto de su prisión</ab>
+					<ab xml:id="b.APO.20.8" type="verse" n="8">y saldrá a engañar a las naciones que están en los cuatro ángulos de la tierra, a <rs key="0">Gog</rs> y a <rs key="0">Magog</rs>, a fin de reunirlos para la batalla. Su número es como la arena del mar.</ab>
+					<ab xml:id="b.APO.20.9" type="verse" n="9">Subieron por la anchura de la tierra y rodearon el campamento de los santos y la ciudad amada; pero de <rs key="per14">Dios</rs> descendió fuego del cielo y los consumió.</ab>
 					<ab xml:id="b.APO.20.10" type="verse" n="10">Y el diablo, que los engañaba, fue lanzado en el lago de fuego y azufre donde estaban la bestia y el falso profeta; y serán atormentados día y noche por los siglos de los siglos.</ab>
 					<ab xml:id="b.APO.20.11" type="verse" n="11">Vi un gran trono blanco y al que estaba sentado en él, de delante del cual huyeron la tierra y el cielo y ningún lugar se halló ya para ellos.</ab>
-					<ab xml:id="b.APO.20.12" type="verse" n="12">Y vi los muertos, grandes y pequeños, de pie ante Dios. Los libros fueron abiertos, y otro libro fue abierto, el cual es el libro de la vida. Y fueron juzgados los muertos por las cosas que estaban escritas en los libros, según sus obras.</ab>
-					<ab xml:id="b.APO.20.13" type="verse" n="13">El mar entregó los muertos que había en él, y la muerte y el Hades entregaron los muertos que había en ellos, y fueron juzgados cada uno según sus obras.</ab>
-					<ab xml:id="b.APO.20.14" type="verse" n="14">La muerte y el Hades fueron lanzados al lago de fuego. Esta es la muerte segunda.</ab>
+					<ab xml:id="b.APO.20.12" type="verse" n="12">Y vi los muertos, grandes y pequeños, de pie ante <rs key="per14">Dios</rs>. Los libros fueron abiertos, y otro libro fue abierto, el cual es el libro de la vida. Y fueron juzgados los muertos por las cosas que estaban escritas en los libros, según sus obras.</ab>
+					<ab xml:id="b.APO.20.13" type="verse" n="13">El mar entregó los muertos que había en él, y la muerte y el <rs key="pla15">Hades</rs> entregaron los muertos que había en ellos, y fueron juzgados cada uno según sus obras.</ab>
+					<ab xml:id="b.APO.20.14" type="verse" n="14">La muerte y el <rs key="pla15">Hades</rs> fueron lanzados al lago de fuego. Esta es la muerte segunda.</ab>
 					<ab xml:id="b.APO.20.15" type="verse" n="15">El que no se halló inscrito en el libro de la vida, fue lanzado al lago de fuego.</ab>
 
 				</div>
 				<div xml:id="b.APO.21" type="chapter" n="21">
 					<ab xml:id="b.APO.21.1" type="verse" n="1">Entonces vi un cielo nuevo y una tierra nueva, porque el primer cielo y la primera tierra habían pasado y el mar ya no existía más.</ab>
-					<ab xml:id="b.APO.21.2" type="verse" n="2">Y yo, Juan, vi la santa ciudad, la nueva Jerusalén, descender del cielo, de parte de Dios, ataviada como una esposa hermoseada para su esposo.</ab>
-					<ab xml:id="b.APO.21.3" type="verse" n="3">Y oí una gran voz del cielo, que decía: «El tabernáculo de Dios está ahora con los hombres. Él morará con ellos, ellos serán su pueblo y Dios mismo estará con ellos como su Dios.</ab>
-					<ab xml:id="b.APO.21.4" type="verse" n="4">Enjugará Dios toda lágrima de los ojos de ellos; y ya no habrá más muerte, ni habrá más llanto ni clamor ni dolor, porque las primeras cosas ya pasaron».</ab>
+					<ab xml:id="b.APO.21.2" type="verse" n="2">Y yo, <rs key="per25">Juan</rs>, vi la santa ciudad, la nueva <rs key="pla3">Jerusalén</rs>, descender del cielo, de parte de <rs key="per14">Dios</rs>, ataviada como una esposa hermoseada para su esposo.</ab>
+					<ab xml:id="b.APO.21.3" type="verse" n="3">Y oí una gran voz del cielo, que decía: «El tabernáculo de <rs key="per14">Dios</rs> está ahora con los hombres. Él morará con ellos, ellos serán su pueblo y <rs key="per14">Dios</rs> mismo estará con ellos como su <rs key="per14">Dios</rs>.</ab>
+					<ab xml:id="b.APO.21.4" type="verse" n="4">Enjugará <rs key="per14">Dios</rs> toda lágrima de los ojos de ellos; y ya no habrá más muerte, ni habrá más llanto ni clamor ni dolor, porque las primeras cosas ya pasaron».</ab>
 					<ab xml:id="b.APO.21.5" type="verse" n="5">El que estaba sentado en el trono dijo: «Yo hago nuevas todas las cosas». Me dijo: «Escribe, porque estas palabras son fieles y verdaderas».</ab>
-					<ab xml:id="b.APO.21.6" type="verse" n="6">Y me dijo: «Hecho está. Yo soy el Alfa y la Omega, el principio y el fin. Al que tiene sed, le daré gratuitamente de la fuente del agua de vida.</ab>
-					<ab xml:id="b.APO.21.7" type="verse" n="7">El vencedor heredará todas las cosas, y yo seré su Dios y él será mi hijo.</ab>
+					<ab xml:id="b.APO.21.6" type="verse" n="6">Y me dijo: «Hecho está. Yo soy el <rs key="per14">Alfa</rs> y la <rs key="per14">Omega</rs>, el principio y el fin. Al que tiene sed, le daré gratuitamente de la fuente del agua de vida.</ab>
+					<ab xml:id="b.APO.21.7" type="verse" n="7">El vencedor heredará todas las cosas, y yo seré su <rs key="per14">Dios</rs> y él será mi hijo.</ab>
 					<ab xml:id="b.APO.21.8" type="verse" n="8">Pero los cobardes e incrédulos, los abominables y homicidas, los fornicarios y hechiceros, los idólatras y todos los mentirosos tendrán su parte en el lago que arde con fuego y azufre, que es la muerte segunda».</ab>
-					<ab xml:id="b.APO.21.9" type="verse" n="9">Entonces vino a mí uno de los siete ángeles que tenían las siete copas llenas de las siete plagas postreras y habló conmigo, diciendo: «Ven acá, te mostraré la desposada, la esposa del Cordero».</ab>
-					<ab xml:id="b.APO.21.10" type="verse" n="10">Me llevó en el Espíritu a un monte grande y alto y me mostró la gran ciudad, la santa Jerusalén, que descendía del cielo de parte de Dios.</ab>
-					<ab xml:id="b.APO.21.11" type="verse" n="11">Tenía la gloria de Dios y su fulgor era semejante al de una piedra preciosísima, como piedra de jaspe, diáfana como el cristal.</ab>
-					<ab xml:id="b.APO.21.12" type="verse" n="12">Tenía un muro grande y alto, con doce puertas, y en las puertas doce ángeles, y nombres inscritos, que son los de las doce tribus de los hijos de Israel.</ab>
+					<ab xml:id="b.APO.21.9" type="verse" n="9">Entonces vino a mí uno de los siete <rs key="org4">ángeles</rs> que tenían las siete copas llenas de las siete plagas postreras y habló conmigo, diciendo: «Ven acá, te mostraré la desposada, la esposa del <rs key="0">Cordero</rs>».</ab>
+					<ab xml:id="b.APO.21.10" type="verse" n="10">Me llevó en el Espíritu a un monte grande y alto y me mostró la gran ciudad, la santa <rs key="pla3">Jerusalén</rs>, que descendía del cielo de parte de <rs key="per14">Dios</rs>.</ab>
+					<ab xml:id="b.APO.21.11" type="verse" n="11">Tenía la gloria de <rs key="per14">Dios</rs> y su fulgor era semejante al de una piedra preciosísima, como piedra de jaspe, diáfana como el cristal.</ab>
+					<ab xml:id="b.APO.21.12" type="verse" n="12">Tenía un muro grande y alto, con doce puertas, y en las puertas doce <rs key="org4">ángeles</rs>, y nombres inscritos, que son los de las doce tribus de los hijos de <rs key="pla4">Israel</rs>.</ab>
 					<ab xml:id="b.APO.21.13" type="verse" n="13">Tres puertas al oriente, tres puertas al norte, tres puertas al sur, tres puertas al occidente.</ab>
-					<ab xml:id="b.APO.21.14" type="verse" n="14">El muro de la ciudad tenía doce cimientos y sobre ellos los doce nombres de los doce apóstoles del Cordero.</ab>
+					<ab xml:id="b.APO.21.14" type="verse" n="14">El muro de la ciudad tenía doce cimientos y sobre ellos los doce nombres de los doce apóstoles del <rs key="0">Cordero</rs>.</ab>
 					<ab xml:id="b.APO.21.15" type="verse" n="15">El que hablaba conmigo tenía una caña de medir, de oro, para medir la ciudad, sus puertas y su muro.</ab>
 					<ab xml:id="b.APO.21.16" type="verse" n="16">La ciudad se halla establecida como un cuadrado: su longitud es igual a su anchura. Con la caña midió la ciudad: doce mil estadios. La longitud, la altura y la anchura de ella son iguales.</ab>
-					<ab xml:id="b.APO.21.17" type="verse" n="17">Y midió su muro: ciento cuarenta y cuatro codos, según medida de hombre, la cual era la del ángel.</ab>
+					<ab xml:id="b.APO.21.17" type="verse" n="17">Y midió su muro: ciento cuarenta y cuatro codos, según medida de hombre, la cual era la del <rs key="org4">ángel</rs>.</ab>
 					<ab xml:id="b.APO.21.18" type="verse" n="18">El material de su muro era de jaspe, pero la ciudad era de oro puro, semejante al vidrio limpio.</ab>
 					<ab xml:id="b.APO.21.19" type="verse" n="19">Los cimientos del muro de la ciudad estaban adornados con toda clase de piedras preciosas. El primer cimiento era de jaspe, el segundo de zafiro, el tercero de ágata, el cuarto de esmeralda,</ab>
 					<ab xml:id="b.APO.21.20" type="verse" n="20">el quinto de ónice, el sexto de cornalina, el séptimo de crisólito, el octavo de berilo, el noveno de topacio, el décimo de crisopraso, el undécimo de jacinto y el duodécimo de amatista.</ab>
 					<ab xml:id="b.APO.21.21" type="verse" n="21">Las doce puertas eran doce perlas; cada una de las puertas era una perla. Y la calle de la ciudad era de oro puro, como vidrio transparente.</ab>
-					<ab xml:id="b.APO.21.22" type="verse" n="22">En ella no vi templo, porque el Señor Dios Todopoderoso es su templo, y el Cordero.</ab>
-					<ab xml:id="b.APO.21.23" type="verse" n="23">La ciudad no tiene necesidad de sol ni de luna que brillen en ella, porque la gloria de Dios la ilumina y el Cordero es su lumbrera.</ab>
+					<ab xml:id="b.APO.21.22" type="verse" n="22">En ella no vi templo, porque el <rs key="per14">Señor</rs> <rs key="per14">Dios</rs> <rs key="per14">Todopoderoso</rs> es su templo, y el <rs key="0">Cordero</rs>.</ab>
+					<ab xml:id="b.APO.21.23" type="verse" n="23">La ciudad no tiene necesidad de sol ni de luna que brillen en ella, porque la gloria de <rs key="per14">Dios</rs> la ilumina y el <rs key="0">Cordero</rs> es su lumbrera.</ab>
 					<ab xml:id="b.APO.21.24" type="verse" n="24">Las naciones que hayan sido salvas andarán a la luz de ella y los reyes de la tierra traerán su gloria y su honor a ella.</ab>
 					<ab xml:id="b.APO.21.25" type="verse" n="25">Sus puertas nunca serán cerradas de día, pues allí no habrá noche.</ab>
 					<ab xml:id="b.APO.21.26" type="verse" n="26">Llevarán a ella la gloria y el honor de las naciones.</ab>
-					<ab xml:id="b.APO.21.27" type="verse" n="27">No entrará en ella ninguna cosa impura o que haga abominación y mentira, sino solamente los que están inscritos en el libro de la vida del Cordero.</ab>
+					<ab xml:id="b.APO.21.27" type="verse" n="27">No entrará en ella ninguna cosa impura o que haga abominación y mentira, sino solamente los que están inscritos en el libro de la vida del <rs key="0">Cordero</rs>.</ab>
 
 				</div>
 				<div xml:id="b.APO.22" type="chapter" n="22">
-					<ab xml:id="b.APO.22.1" type="verse" n="1">Después me mostró un río limpio, de agua de vida, resplandeciente como cristal, que fluía del trono de Dios y del Cordero.</ab>
+					<ab xml:id="b.APO.22.1" type="verse" n="1">Después me mostró un río limpio, de agua de vida, resplandeciente como cristal, que fluía del trono de <rs key="per14">Dios</rs> y del <rs key="0">Cordero</rs>.</ab>
 					<ab xml:id="b.APO.22.2" type="verse" n="2">En medio de la calle de la ciudad y a uno y otro lado del río estaba el árbol de la vida, que produce doce frutos, dando cada mes su fruto; y las hojas del árbol eran para la sanidad de las naciones.</ab>
-					<ab xml:id="b.APO.22.3" type="verse" n="3">Y no habrá más maldición. El trono de Dios y del Cordero estará en ella, sus siervos lo servirán,</ab>
+					<ab xml:id="b.APO.22.3" type="verse" n="3">Y no habrá más maldición. El trono de <rs key="per14">Dios</rs> y del <rs key="0">Cordero</rs> estará en ella, sus siervos lo servirán,</ab>
 					<ab xml:id="b.APO.22.4" type="verse" n="4">verán su rostro y su nombre estará en sus frentes.</ab>
-					<ab xml:id="b.APO.22.5" type="verse" n="5">Allí no habrá más noche; y no tienen necesidad de luz de lámpara ni de luz del sol, porque Dios el Señor los iluminará y reinarán por los siglos de los siglos.</ab>
-					<ab xml:id="b.APO.22.6" type="verse" n="6">Me dijo: «Estas palabras son fieles y verdaderas. El Señor, el Dios de los espíritus de los profetas, ha enviado su ángel para mostrar a sus siervos las cosas que deben suceder pronto.</ab>
+					<ab xml:id="b.APO.22.5" type="verse" n="5">Allí no habrá más noche; y no tienen necesidad de luz de lámpara ni de luz del sol, porque <rs key="per14">Dios</rs> el <rs key="per14">Señor</rs> los iluminará y reinarán por los siglos de los siglos.</ab>
+					<ab xml:id="b.APO.22.6" type="verse" n="6">Me dijo: «Estas palabras son fieles y verdaderas. El <rs key="per14">Señor</rs>, el <rs key="per14">Dios</rs> de los espíritus de los profetas, ha enviado su <rs key="org4">ángel</rs> para mostrar a sus siervos las cosas que deben suceder pronto.</ab>
 					<ab xml:id="b.APO.22.7" type="verse" n="7">»¡Vengo pronto! Bienaventurado el que guarda las palabras de la profecía de este libro».</ab>
-					<ab xml:id="b.APO.22.8" type="verse" n="8">Yo, Juan, soy el que oyó y vio estas cosas. Después que las hube oído y visto, me postré a los pies del ángel que me mostraba estas cosas, para adorarlo.</ab>
-					<ab xml:id="b.APO.22.9" type="verse" n="9">Pero él me dijo: «¡Mira, no lo hagas!, pues yo soy consiervo tuyo, de tus hermanos los profetas y de los que guardan las palabras de este libro. ¡Adora a Dios!».</ab>
+					<ab xml:id="b.APO.22.8" type="verse" n="8">Yo, <rs key="per25">Juan</rs>, soy el que oyó y vio estas cosas. Después que las hube oído y visto, me postré a los pies del <rs key="org4">ángel</rs> que me mostraba estas cosas, para adorarlo.</ab>
+					<ab xml:id="b.APO.22.9" type="verse" n="9">Pero él me dijo: «¡Mira, no lo hagas!, pues yo soy consiervo tuyo, de tus hermanos los profetas y de los que guardan las palabras de este libro. ¡Adora a <rs key="per14">Dios</rs>!».</ab>
 					<ab xml:id="b.APO.22.10" type="verse" n="10">Y me dijo: «No selles las palabras de la profecía de este libro, porque el tiempo está cerca.</ab>
 					<ab xml:id="b.APO.22.11" type="verse" n="11">El que es injusto, sea injusto todavía; el que es impuro, sea impuro todavía; el que es justo, practique la justicia todavía, y el que es santo, santifíquese más todavía.</ab>
 					<ab xml:id="b.APO.22.12" type="verse" n="12">»¡Vengo pronto!, y mi galardón conmigo, para recompensar a cada uno según sea su obra.</ab>
-					<ab xml:id="b.APO.22.13" type="verse" n="13">Yo soy el Alfa y la Omega, el principio y el fin, el primero y el último.</ab>
+					<ab xml:id="b.APO.22.13" type="verse" n="13">Yo soy el <rs key="per14">Alfa</rs> y la <rs key="per14">Omega</rs>, el principio y el fin, el primero y el último.</ab>
 					<ab xml:id="b.APO.22.14" type="verse" n="14">»Bienaventurados los que lavan sus ropas para tener derecho al árbol de la vida y para entrar por las puertas en la ciudad.</ab>
 					<ab xml:id="b.APO.22.15" type="verse" n="15">Pero los perros estarán afuera, y los hechiceros, los fornicarios, los homicidas, los idólatras y todo aquel que ama y practica la mentira.</ab>
-					<ab xml:id="b.APO.22.16" type="verse" n="16">»Yo, Jesús, he enviado mi ángel para daros testimonio de estas cosas en las iglesias. Yo soy la raíz y el linaje de David, la estrella resplandeciente de la mañana».</ab>
-					<ab xml:id="b.APO.22.17" type="verse" n="17">El Espíritu y la Esposa dicen: «¡Ven!». El que oye, diga: «¡Ven!». Y el que tiene sed, venga. El que quiera, tome gratuitamente del agua de la vida.</ab>
-					<ab xml:id="b.APO.22.18" type="verse" n="18">Yo advierto a todo aquel que oye las palabras de la profecía de este libro: Si alguno añade a estas cosas, Dios traerá sobre él las plagas que están escritas en este libro.</ab>
-					<ab xml:id="b.APO.22.19" type="verse" n="19">Y si alguno quita de las palabras del libro de esta profecía, Dios quitará su parte del libro de la vida y de la santa ciudad y de las cosas que están escritas en este libro.</ab>
-					<ab xml:id="b.APO.22.20" type="verse" n="20">El que da testimonio de estas cosas dice: «Ciertamente vengo en breve». ¡Amén! ¡Ven, Señor Jesús!</ab>
-					<ab xml:id="b.APO.22.21" type="verse" n="21">La gracia de nuestro Señor Jesucristo sea con todos vosotros. Amén.</ab>
+					<ab xml:id="b.APO.22.16" type="verse" n="16">»Yo, <rs key="per1">Jesús</rs>, he enviado mi <rs key="org4">ángel</rs> para daros testimonio de estas cosas en las iglesias. Yo soy la raíz y el linaje de <rs key="per35">David</rs>, la estrella resplandeciente de la mañana».</ab>
+					<ab xml:id="b.APO.22.17" type="verse" n="17">El Espíritu y la <rs key="0">Esposa</rs> dicen: «¡Ven!». El que oye, diga: «¡Ven!». Y el que tiene sed, venga. El que quiera, tome gratuitamente del agua de la vida.</ab>
+					<ab xml:id="b.APO.22.18" type="verse" n="18">Yo advierto a todo aquel que oye las palabras de la profecía de este libro: Si alguno añade a estas cosas, <rs key="per14">Dios</rs> traerá sobre él las plagas que están escritas en este libro.</ab>
+					<ab xml:id="b.APO.22.19" type="verse" n="19">Y si alguno quita de las palabras del libro de esta profecía, <rs key="per14">Dios</rs> quitará su parte del libro de la vida y de la santa ciudad y de las cosas que están escritas en este libro.</ab>
+					<ab xml:id="b.APO.22.20" type="verse" n="20">El que da testimonio de estas cosas dice: «Ciertamente vengo en breve». ¡Amén! ¡Ven, <rs key="per14">Señor</rs> <rs key="per1">Jesús</rs>!</ab>
+					<ab xml:id="b.APO.22.21" type="verse" n="21">La gracia de nuestro <rs key="per14">Señor</rs> <rs key="per1">Jesucristo</rs> sea con todos vosotros. Amén.</ab>
 
 
 				</div>
