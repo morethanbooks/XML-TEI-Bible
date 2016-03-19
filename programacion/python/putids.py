@@ -9,7 +9,7 @@ import re
 import glob
 import os
 
-def put_ids(inputcsv,inputtei, outputtei,):
+def put_ids(inputcsv,inputtei, outputtei):
     """
     get the names from a csv table and place ids as xml elements of rs in a TEI document
     df = put_ids("/home/jose/Dropbox/TEIBibel/datos/personas-ids-apocalipsis.csv", "/home/jose/Dropbox/TEIBibel/apocalipsis.xml","/home/jose/Dropbox/TEIBibel/programacion/python/output/")
@@ -34,35 +34,3 @@ def put_ids(inputcsv,inputtei, outputtei,):
         with open (os.path.join(outputtei+docFormatOut), "w", encoding="utf-8") as fout:
             fout.write(content)
     return df
-
-    """
-    for doc in glob.glob(wdir+txtFolder+"*"):
-        
-        with open(doc, "r", errors="replace", encoding="utf-8") as fin:
-            content = fin.read()
-
-            #We create a list for the names
-            names=[]
-            # We search for any word that starts with capital letter and that before didn't have anything that looks like an starting of a sentence
-            names = re.findall(r'(?<=[a-zá-úñüç,;] )([A-ZÁ-ÚÜÑ][a-zá-úñüç]+)', content)
-
-            # We delete the duplicated items in the list            
-            names=list(set(names))
-            #print(names)
-            
-            # Now we put the list in a data frame
-            df=pd.DataFrame(names,columns=["name"])
-            #print(df)
-            #And we add a new column for the frequency and we fill it with zeros
-            df["frequency"]=0
-            #print(df)
-
-            # Now, for every row, we take the indexes and the other columns with the real values (names and frequency)            
-            for index, row in df.iterrows():
-                # For each, we fill the frecuency with the the amount (len) of a times that the name appears in the text with something 
-                df.at[index,"frequency"] = len(re.findall(r'[^a-zá-úçñüA-ZÁ-ÚÜÑ\-]'+ re.escape(row["name"]) + r'[^a-zá-úçñüA-ZÁ-ÚÜÑ\-]', content))
-            df=df.sort(["frequency"], ascending=True)
-            print(df)
-            df.to_csv(wdir+'out.csv')
-    return df
-    """

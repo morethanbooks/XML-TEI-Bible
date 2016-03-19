@@ -175,27 +175,12 @@ ab[type="pericope"]
 
 
 /**/
+q[who="org4"]
+    {
+        border-color:red;
+    }
 
-q[corresp="per1"]
-	{
-		border: red solid 2px;
-	}
-q[corresp="org3"]
-	{
-		border:blue solid 2px;
-	}
-q[corresp="org2"],
-q[corresp="org5"],
-q[corresp="org7"]
-
-	{
-		border:green solid 2px;
-	}
-q[corresp="per14"]
-	{
-		border: orange solid 2px;
-	}
-q[corresp="general"]
-	{
-		border: yellow solid 2px;
-	}
+q[who="per1"]
+    {
+        border-color:blue;
+    }
