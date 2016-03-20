@@ -8,8 +8,10 @@
     <xsl:output method="text"/>
     
     <xsl:template match="/">
+        <xsl:text>whoid,correspid
+</xsl:text>
         <!--für jedes q (select) macht eine Gruppe (for-each-group) und gruppiere (group by)  nach dem einzelnen Wert im who @-->
-        <xsl:for-each-group select="//q" group-by="@who/tokenize(.,'\s')">
+        <xsl:for-each-group select="//div[@xml:id='b.MAT']//q" group-by="@who/tokenize(.,'\s')">
             <!--<xsl:sort/>-->
             <!--Nimmt den aktuellen key und speichert das als Variable-->
             <xsl:variable name="currkey" select="current-grouping-key()"/>
