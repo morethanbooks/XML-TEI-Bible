@@ -5,12 +5,10 @@ Created on Tue Mar 15 10:35:08 2016
 @author: jose
 """
 import pandas as pd
-import re
-import glob
 import os
 
 
-def csvids2csvnames(inputcsv,inputontology,outputfolder):
+def csvids2csvnames(inputcsv,inputontology,outputfolder,columns):
 
     """
     inputcsv = "/home/jose/Dropbox/TEIBibel/datos/mateo-grafo-q-who-q-corresp.csv"
@@ -19,7 +17,11 @@ def csvids2csvnames(inputcsv,inputontology,outputfolder):
     """
     """
     It adds a regularized name to a list of csv ids.
-    df = csvids2csvnames("/home/jose/Dropbox/TEIBibel/datos/20160320-mateo-grafo-q-who-q-corresp.csv","/home/jose/Dropbox/TEIBibel/ontology.csv","/home/jose/Dropbox/TEIBibel/programacion/python/output/")
+    df = csvids2csvnames("/home/jose/Dropbox/Biblia/TEIBibel/datos/apocalipsis-ids.txt",
+    "/home/jose/Dropbox/Biblia/TEIBibel/ontology.csv",
+    "/home/jose/Dropbox/Biblia/TEIBibel/programacion/python/output/",
+    ["whoid", "correspid"]
+    )
     """
     #Lets open the csv file
     df=pd.read_csv(inputcsv, encoding="utf-8")
