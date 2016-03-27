@@ -7,17 +7,29 @@
 	xpath-default-namespace="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="tei xsl xhtml"
 	>
+	
+	<!--
+	Choose the book through its id in the xml:id attribute and put it in the select attribute of the next variable
+	Examples:
+	<xsl:variable name="text" select="'b.APO'"></xsl:variable>
+	<xsl:variable name="text" select="'b.MAT'"></xsl:variable>
+	<xsl:variable name="text" select="'b.JUA'"></xsl:variable>
+	-->
+	<xsl:variable name="name" select="'b.MAT'" />
 
-<xsl:output method="xhtml" indent="yes"/>
-
-<xsl:template match="/">
-<xsl:for-each select="//rs/@key">
-	<xsl:for-each select="./tokenize(.,'\s')">
-<xsl:text>
+<xsl:output method="text" indent="yes"/>
+	<xsl:template match="/">
+		<xsl:result-document  href="output/{$name}_rs-ids.csv" method="text">
+			<xsl:text>id
 </xsl:text>
-<xsl:value-of select="."/>
-</xsl:for-each>
-</xsl:for-each>
-</xsl:template>
-
+			<xsl:for-each select="//div[@xml:id=$name]//rs/@key">
+			<xsl:for-each select="./tokenize(.,'\s')">
+				<xsl:value-of select="."/>
+				<xsl:text>
+</xsl:text>
+			</xsl:for-each>
+		</xsl:for-each>
+		</xsl:result-document>
+	</xsl:template>
+	
 </xsl:stylesheet>
