@@ -19,10 +19,10 @@
 
 <xsl:output method="text" indent="yes"/>
 	<xsl:template match="/">
-		<xsl:result-document  href="output/{$name}_rs-ids.csv" method="text">
+		<xsl:result-document  href="output/{$name}_q-ids.csv" method="text">
 			<xsl:text>id
 </xsl:text>
-			<xsl:for-each select="//div[@xml:id=$name]//rs/@key">
+			<xsl:for-each select="//div[@xml:id=$name]//q/@who">
 			<xsl:for-each select="./tokenize(.,'\s')">
 				<xsl:value-of select="."/>
 				<xsl:text>

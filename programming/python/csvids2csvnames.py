@@ -13,17 +13,11 @@ def csvids2csvnames(inputcsv,inputontology,outputfolder,columns):
     It adds a regularized name to a list of csv ids. The user have to give where the csv with the ids is, where the ontology is, where does he want the output file and how are the ids columns called
     For example:
     df = csvids2csvnames(
-    "/home/jose/Dropbox/Biblia/TEIBibel/programacion/xslt/output/rs-ids-b.MAT.csv",
-    "/home/jose/Dropbox/Biblia/TEIBibel/ontology.csv",
-    "/home/jose/Dropbox/Biblia/TEIBibel/programacion/python/output/",
+    "/home/jose/Dropbox/biblia/tb/programming/xslt/output/b._rs-ids.csv",
+    "/home/jose/Dropbox/biblia/tb/ontology.csv",
+    "/home/jose/Dropbox/biblia/tb/programming/python/output/",
     ["id"],
     )
-    """
-    """
-    inputcsv = "/home/jose/Dropbox/Biblia/TEIBibel/programacion/xslt/output/rs-ids-b.APO.csv"
-    inputontology = "/home/jose/Dropbox/Biblia/TEIBibel/ontology.csv"
-    outputfolder = "/home/jose/Dropbox/Biblia/TEIBibel/programacion/python/output/"
-    columns= ["id"]
     """
     # Lets open the text file
     basenamedoc = os.path.basename(inputcsv)[:-4]
@@ -35,7 +29,7 @@ def csvids2csvnames(inputcsv,inputontology,outputfolder,columns):
     dfOntology=dfOntology.fillna(value=" ")
     
     #Lets open the csv file
-    df=pd.read_csv(inputcsv, encoding="utf-8")
+    df=pd.read_csv(inputcsv, encoding="utf-8", sep=";")
     # NaN is sustitued with zeros
     df=df.fillna(value="0")
     
