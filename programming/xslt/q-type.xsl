@@ -15,14 +15,14 @@
 	<xsl:variable name="text" select="'b.MAT'"/>
 	<xsl:variable name="text" select="'b.JOH'"/>
 	-->
-	<xsl:variable name="name" select="'b.APO'" />
+	<xsl:variable name="name" select="'b.JOH'" />
 	
 	<xsl:output method="text" indent="yes"/>
 	<xsl:template match="/">
-		<xsl:result-document  href="output/{$name}_rs-text.csv" method="text">
+		<xsl:result-document  href="output/{$name}_q-type.csv" method="text">
 			<xsl:text>text
 </xsl:text>
-			<xsl:for-each select="//div[@xml:id=$name]//rs/text()">
+			<xsl:for-each select="//div[@xml:id=$name]//q/@type">
 	<xsl:value-of select="."/>
 		<xsl:text>
 </xsl:text>
