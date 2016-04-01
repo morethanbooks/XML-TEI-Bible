@@ -12,10 +12,14 @@ import os
 def put_ids(inputcsv,inputtei, outputtei):
     """
     get the names from a csv table and place ids as xml elements of rs in a TEI document
-    df = put_ids("/home/jose/Dropbox/TEIBibel/datos/personas-ids-apocalipsis.csv", "/home/jose/Dropbox/TEIBibel/apocalipsis.xml","/home/jose/Dropbox/TEIBibel/programacion/python/output/")
+    df = put_ids(
+    "/home/jose/Dropbox/biblia/tb/personas-ids-genesis.csv",
+    "/home/jose/Dropbox/biblia/tb/genesis.xml",
+    "/home/jose/Dropbox/biblia/tb/programming/python/output/"
+    )
     """
     #Lets open the csv file
-    df=pd.read_csv(inputcsv, encoding="utf-8")
+    df=pd.read_csv(inputcsv, encoding = "utf-8", sep = "\t")
     # NaN is sustitued with zeros
     df=df.fillna(value="0")
     print(df)
