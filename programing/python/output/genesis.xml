@@ -1,6 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" cert="high">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Génesis</title>
+                <title type="idno">
+                    <idno type="string">GEN</idno>
+                    <idno type="viaf"></idno>
+                </title>
+                <author>
+                    <name type="short"></name>
+                    <name type="full"></name>z
+                    <idno type="viaf"></idno>
+                </author>
+                <principal key="#jct">José Calvo Tello</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>José Calvo Tello</publisher>
+                <availability status="free">
+                    <p>The text is freely available.</p>
+                </availability>
+                <date when="2016">2016</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digital-source">, <date when="2000">?</date>, <idno></idno>	.</bibl>
+                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+                <bibl type="edition-first"><date when="1569">1569</date></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p></p>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2016-04-01" who="#jct">First version of Genesis</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div />
+        </front>
+            
 <body>
-
-
 <div xml:id="b.GEN.1" type="chapter" n="1">
 <ab xml:id="b.GEN.1.1" type="verse" n="1">En el principio creó <rs key="per14">Dios</rs> los cielos y la <rs key="pla41">tierra</rs>.</ab>
 <ab xml:id="b.GEN.1.2" type="verse" n="2">La <rs key="pla41">tierra</rs> estaba desordenada y vacía, las tinieblas estaban sobre la faz del abismo y el espíritu de <rs key="per14">Dios</rs> se movía sobre la faz de las aguas.</ab>
@@ -1684,3 +1723,8 @@
 <ab xml:id="b.GEN.50.26" type="verse" n="26">Murió <rs key="per104">José</rs> a la edad de ciento diez años; lo embalsamaron, y lo pusieron en un ataúd en <rs key="pla5">Egipto</rs>.,</ab>
 </div>
 </body>
+        <back>
+            <div />
+        </back>
+    </text>
+</TEI>        
