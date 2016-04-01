@@ -11,7 +11,10 @@ import glob
 def findingq(text):
     """
         It decodes the HTML entities and it deletes some anoying characters
-        finq = finq("/home/jose/Dropbox/TEIBibel/apocalipsis.xml", "/home/jose/Dropbox/TEIBibel/programacion/python/output/")
+        finq = finq(
+        "/home/jose/Dropbox/biblia/tb/genesis.xml",
+        "/home/jose/Dropbox/biblia/tb/programing/python/output/"
+        )
 
     """
     text = re.sub(r':? ?«(.*?)»', r' <q who="per1" corresp="#" type="oral" >\1</q>', text, flags=re.MULTILINE)

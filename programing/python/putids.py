@@ -15,7 +15,7 @@ def put_ids(inputcsv,inputtei, outputtei):
     df = put_ids(
     "/home/jose/Dropbox/biblia/tb/personas-ids-genesis.csv",
     "/home/jose/Dropbox/biblia/tb/genesis.xml",
-    "/home/jose/Dropbox/biblia/tb/programming/python/output/"
+    "/home/jose/Dropbox/biblia/tb/programing/python/output/"
     )
     """
     #Lets open the csv file

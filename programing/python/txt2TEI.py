@@ -28,7 +28,7 @@ def txt2TEI(text):
 
 def main():
     i=1
-    for doc in glob.glob("/home/jose/Dropbox/biblia/tb/programming/python/input/*.txt"):
+    for doc in glob.glob("/home/jose/Dropbox/biblia/tb/programing/python/input/*.txt"):
     
         # It takes the base name of the html file, it cuts its ending and keeps a new xml name
         basenamedoc = os.path.basename(doc)[:-3]  
@@ -44,7 +44,7 @@ def main():
             
             # It writes the result in the output folder
     
-        with open (os.path.join("/home/jose/Dropbox/biblia/tb/programming/python/output/", docFormatOut), "w", encoding="utf-8") as fout:
+        with open (os.path.join("/home/jose/Dropbox/biblia/tb/programing/python/output/", docFormatOut), "w", encoding="utf-8") as fout:
                 fout.write(content)
         print(doc)
         print("Processed documents: ",i)
