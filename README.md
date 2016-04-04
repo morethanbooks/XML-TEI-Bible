@@ -1,6 +1,6 @@
-# TEIBible
+# XML-TEI Bible
 
-This project encodes the Bibel in TEI, starting with the John and Mathew Gospels and Apocalypse in Spanish. José Calvo Tello started this project because the Bible is a interesting text that speaks to everyone, and XML-TEI makes possible to listen the text in new ways. 
+This project encodes the Bible in TEI, starting with the John and Mathew Gospels and Apocalypse in Spanish. José Calvo Tello started this project because the Bible is a interesting text that speaks to everyone, and XML-TEI makes possible to listen the text in new ways. 
 
 And because I didn't find any XML-TEI Version of the Bible, so someone had to do it!
 
@@ -15,4 +15,7 @@ This project also includes some other files:
 * Some files of documentation
 * XSLT and Python scripts to extract some interesting information
 * The resulting data and visualizations
+* CSV file (ontology.csv) to control the ids used
+
+
 
