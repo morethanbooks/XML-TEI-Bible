@@ -17,5 +17,4 @@ This project also includes some other files:
 * The resulting data and visualizations
 * CSV file (ontology.csv) to control the ids used
 
-
-
+My work in this project and its markup are published under Creative Commons Licence BY Attribution 4.0 International.
