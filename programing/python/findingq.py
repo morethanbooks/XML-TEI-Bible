@@ -12,12 +12,12 @@ def findingq(text):
     """
         It decodes the HTML entities and it deletes some anoying characters
         finq = finq(
-        "/home/jose/Dropbox/biblia/tb/genesis.xml",
+        "/home/jose/Dropbox/biblia/tb/genesis0.xml",
         "/home/jose/Dropbox/biblia/tb/programing/python/output/"
         )
 
     """
-    text = re.sub(r':? ?«(.*?)»', r' <q who="per1" corresp="#" type="oral" >\1</q>', text, flags=re.MULTILINE)
+    text = re.sub(r':? ?«(.*?)»', r' <q who="per14" corresp="#" type="oral" >\1</q>', text, flags=re.MULTILINE)
 
     text = re.sub(r'xml:id', r'xml_id', text, flags=re.MULTILINE)
     text = re.sub(r'http:', r'http_', text, flags=re.MULTILINE)
