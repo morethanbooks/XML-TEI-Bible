@@ -1,0 +1,63 @@
+Other projects about the Bible:
+Via Frederik Elwert
+From: christian.chiarcos@WEB.DE
+
+*The* classical work in this direction is Resnik (1996, http://www.umiacs.umd.edu/~resnik/parallel/bible.html), of course. This isn't actual TEI, but CES/SGML, but it provides an authoritative point of orientation for any TEI representation.
+
+Recently, Resnik-based CES/XML editions of larger collections of Bibles have been produced. You can find 100 Bibles under http://homepages.inf.ed.ac.uk/s0787820/bible/. Independently from this, also my group converted some more 1200 Bibles and Bible fragments in an XML adaptation of Resnik's CES schema, but the copyright isn't clarified yet (the original texts are free, but their digital editions may still be in copyright -- this expires 25 years after digital publication).
+
+From CES/XML, it is relatively easy to come to a TEI representation. There are some tricky cases, e.g., if verses are not translated 1:1 but in groups. I asked a few years ago for a TEI-conformant solution to this very problem, see http://tei-l.970651.n3.nabble.com/Cross-references-among-segs-in-TEI-tp4024814.html.
+
+===============
+From: James.Cummings@IT.OX.AC.UK
+
+The only difference in @cRef and @target  here is that @target is a URI datatype and so more limited.  As you expand @cRef with <cRefPattern> you can also do with <prefixDef> http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-prefixDef.html. If you are using one, it might seem redundant to use the other.
+
+As for TEI versions of the Bible. I've certainly seen many over the years in TEI though not sure I can point to more than a handful at the moment. http://ota.ox.ac.uk/desc/3158 for example. A project I worked on had a TEI P4 Vulgate.  And I remember converting some other Bibles to TEI for people over the years. So they must exist. 
+
+
+
+=====
+From: KalvesmakiJ@DOAKS.ORG
+
+I have made several XML biblical texts available in a TEI-conformable[1]
+XML:
+https://github.com/Arithmeticus/TAN-bible
+
+That same project has files (under TAN-A-div/) illustrating stand-off
+references, both to identify quotations and to reconcile differences in
+reference systems. Another TAN library --
+https://github.com/Arithmeticus/TAN-Evagrius (esp.  under TAN-A-div/) --
+illustrates how those base texts can be used by an independent project to
+annotate quotations or to create other types of alignment in a distributed
+manner (i.e., no dependency upon a particular service). It also shows that
+the approach works not just for the Bible but for other literature
+(Aristotle¹s Categories, etc.).
+
+I am refining stylesheets, not yet published, that illustrate the extent
+of syntactic and semantic interoperability this approach affords. Some
+preliminary sample derivative output is at http://textalign.net/output/. A
+slice of the theoretical background was presented at last year¹s
+Balisage.[2] The work is at this point experimental, so I welcome feedback
+(critical or not) or collaboration.
+
+
+========
+From Silvia Gutiérrez:
+
+http://www.wulfila.be/gothic/text/header/
+http://www.informatik.uni-leipzig.de:8080/BibleVerses/
+https://t.co/Jpvyy17sM2
+
+=========
+
+http://www.htmlbible.com/sacrednamebiblecom/kjvstrongs/
+https://en.wikipedia.org/wiki/Strong's_Concordance
+https://github.com/morphgnt/strongs-dictionary-xml
+https://en.wikipedia.org/wiki/Thompson_Chain-Reference_Bible
+
+
+=========
+Frederik Elwert
+
+http://www.umiacs.umd.edu/~resnik/parallel/bible/bookcodes.all
