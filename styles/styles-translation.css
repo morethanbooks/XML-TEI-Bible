@@ -1,0 +1,206 @@
+body
+	{
+		width:70%;
+		font-size:1em;
+		text-align: justify;
+	}
+title
+	{
+		font-size:xx-large;
+	}
+
+body, div, seg, ab
+	{
+		display:block;
+	}
+div[type="chapter"]
+	{
+		margin:3rem;
+	}
+div[cert="high"]
+    {
+        display:none;
+    }
+ab
+    {
+        line-height:1.5rem;
+    }
+ab[type="pericope"]
+	{
+	text-align:center;
+	background-color:grey;
+	color:white;
+	}
+rs
+	{
+		text-decoration: underline;
+	}
+
+rs[key^="org"]
+	{
+		color:purple;
+	}
+rs[key^="per"]
+	{
+		color:DeepSkyBlue;
+	}
+rs[key^="pla"]
+	{
+		color:ForestGreen;
+	}
+rs[key^="tim"]
+	{
+		color:darkgreen;
+	}
+rs[key="per14"],
+rs[key="per1"],
+rs[key="per17"]
+	{
+		color:white;
+		background-color:CornflowerBlue ;
+	}
+q
+	{
+		border: grey solid 2px;
+	}
+q[who^="per"]
+	{
+		border:DeepSkyBlue solid 2px;
+	}
+q[who^="org"]
+	{
+		border:purple solid 2px;
+	}
+q[who^="pla"]
+	{
+		border:ForestGreen solid 2px;
+	}
+q[who="per14"],
+q[who="per1"],
+q[who="per17"]
+	{
+		border-color:CornflowerBlue ;
+	}
+q[who="per14"]
+    {
+        font-weight:bold;
+        font-variant: small-caps;
+        font-size:1.2rem;
+    }
+
+ab[type="verse"]
+	{
+				
+		display:block;
+		margin: 1rem;
+	}
+
+ab[type="verse"]
+	{
+		display:block;
+		margin:1rem;
+	}
+ab[type="verse"]:before
+	{
+		content:attr(n);
+		color:grey;
+	}
+div[type="chapter"]:before
+	{
+		content:'Capítulo 'attr(n);
+		color:grey;
+		font-size:2rem;
+	}
+rs:before	{
+		content:attr(key);
+		color:grey;
+		font-size:0.7rem;
+		background-color:white;
+	}
+said:before	{
+		content:attr(who);
+		color:grey;
+		font-size:0.7rem;
+		background-color:white;
+	}
+
+
+q[type]
+	{
+		border:black solid 2px;
+	}
+
+q:before
+	{
+		content:'who: 'attr(who)' | 2who: 'attr(corresp) ' | type: 'attr(type) ' ';
+		color:grey;
+	}
+
+ab[type="verse"]
+	{
+				
+		display:block;
+		margin: 1rem;
+	}
+
+ab[type="verse"]
+	{
+		display:block;
+		margin:1rem;
+	}
+ab[type="verse"]:before
+	{
+		content:attr(n);
+		color:grey;
+	}
+div[type="chapter"]:before
+	{
+		content:'Capítulo 'attr(n);
+		color:grey;
+	}
+rs
+	{
+		text-decoration: underline;
+	}
+rs:before	{
+		content:attr(key);
+		color:grey;
+		font-size:0.7rem;
+		background-color:white;
+	}
+ab[type="pericope"]
+	{
+		color:grey;
+	}
+
+
+/**/
+
+q[corresp="per1"]
+	{
+		border: red solid 2px;
+	}
+q[corresp="org3"]
+	{
+		border:blue solid 2px;
+	}
+q[corresp="org2"],
+q[corresp="org5"],
+q[corresp="org7"]
+
+	{
+		border:green solid 2px;
+	}
+q[corresp="per14"]
+	{
+		border: orange solid 2px;
+	}
+q[corresp="general"]
+	{
+		border: yellow solid 2px;
+	}
+
+div rs[key="per14"]:first-of-type{
+    color:red;
+    }
+}
