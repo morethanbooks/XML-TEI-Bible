@@ -8,15 +8,17 @@ import pandas as pd
 import os
 
 
-def csvids2csvnames(inputcsv,inputontology,outputfolder,columns):
+def csvids2csvnames(inputcsv,inputontology,outputfolder,columns, languages):
     """
     It adds a regularized name to a list of csv ids. The user have to give where the csv with the ids is, where the ontology is, where does he want the output file and how are the ids columns called
+    Supported languages are for now Spanish (sp), German (ge) and Portuguese (po). If you want it in English or other languages, help us translate the ontolgy file!
     For example:
     df = csvids2csvnames(
-    "/home/jose/Dropbox/biblia/tb/programming/xslt/output/b._rs-ids.csv",
+    "/home/jose/Dropbox/biblia/tb/programing/xslt/output/b.MAT_rs-ids.csv",
     "/home/jose/Dropbox/biblia/tb/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programming/python/output/",
+    "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     ["id"],
+    ["ge", "po","sp"]
     )
     """
     # Lets open the text file
@@ -32,20 +34,22 @@ def csvids2csvnames(inputcsv,inputontology,outputfolder,columns):
     df=pd.read_csv(inputcsv, encoding="utf-8", sep=";")
     # NaN is sustitued with zeros
     df=df.fillna(value="0")
-    
-    # For each column, create another
-    for column in columns:
-        df[column+"_name"] = " "
-        #print(column)
-    
-        for index, row in df.iterrows():
-            #print(row[column])
-        
-            # The line of the ontology is extracted and saved
-            dfontologyrow = dfOntology[dfOntology.id == row[column]]
-        
-            df.at[index,column+"_name"] = ''.join(dfontologyrow["normalizedName"].get_values())
 
-    print(df)
+    #print(column)
+    for language in languages:
     
-    df.to_csv(outputfolder+basenamedoc+'.csv', sep=';', encoding='utf-8')
+        # For each column, create another
+        for column in columns:
+            df[column+"_name"] = " "
+            
+            for index, row in df.iterrows():
+                #print(row[column])
+            
+                # The line of the ontology is extracted and saved
+                dfontologyrow = dfOntology[dfOntology.id == row[column]]
+            
+                df.at[index,column+"_name"] = ''.join(dfontologyrow["NormalizedName-"+language].get_values())
+    
+        print("done in ",language)
+        
+        df.to_csv(outputfolder+language+'_'+basenamedoc+'.csv', sep=';', encoding='utf-8')
