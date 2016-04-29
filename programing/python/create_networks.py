@@ -11,6 +11,8 @@ import re
 from lxml import etree
 import pandas as pd
 
+
+
 def main2(inputcsv,inputtei, output, border):
     """
     main2(
@@ -43,6 +45,22 @@ def main2(inputcsv,inputtei, output, border):
         basenamedoc,extesiondoc= os.path.basename(doc).split(".")
         #print("Va el docu!: "+basenamedoc)
     
+        documento_xml = etree.parse(doc)
+        print(documento_xml)
+        print(etree.tostring(documento_xml, pretty_print=True, encoding="unicode"))
+        #Definimos los namespaces
+        namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
+
+        teis = documento_xml.xpath('//tei:TEI', namespaces=namespaces_concretos)
+        print(len(teis))
+        
+        tei = teis[2]
+        
+        print(type(tei))
+
+
+        
+        """
         with open(doc, "r", errors="replace", encoding="utf-8") as text:           
             text = text.read()
 
@@ -84,10 +102,11 @@ def main2(inputcsv,inputtei, output, border):
     dfnetworks.to_csv(output+'networks-id.csv', sep='\t', encoding='utf-8')
 
     return networks
+    """
 
 main2(
     inputcsv = "/home/jose/Dropbox/biblia/tb/ontology.csv",
-    inputtei = "/home/jose/Dropbox/biblia/tb/apocalipsis", 
+    inputtei = "/home/jose/Dropbox/biblia/tb/TEIBible", 
     output = "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     border = "ab"
     )
