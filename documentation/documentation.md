@@ -20,18 +20,29 @@ Although this project is not part of my research work, neither I am preparing th
 
 # Text
 
-## Language
-
-The text is in Spanish because is my mother tongue. The project doesn't forsee to export the structure of the markup to other languages. If some would have interested to export the structure of the markup to other languages (alive or dead) with some kind of machine learning method, I could help to develope the 
 
 ## Original Text
 
+The original text comes from a Reina Valera translation into Spanish. I didn't take any of the most modern in order to avoid copy right problems.
+
+## Language
+
+The text is in Spanish because is my mother tongue. The project doesn't forsee to export the structure of the markup to other languages, but I could help to develope a strategy of doing it.
 
 ## Markup
 
-### Name entities
+The text is encoded in XML-TEI and controlled with a scheme, also published in the project. The root element of the TEIBible.xml  is a teiCorpus, which has very basic metadata. Every book is then encoded as a TEI element, with some basic Metadata.
 
-### Pericopes
+### Chapters, Pericopes and Verses
+
+The books of the Bible are identified using the ids from here: http://www.umiacs.umd.edu/~resnik/parallel/bible/bookcodes.all
+
+In each book, the chapters are encoded as divs, keeping the number of the chapter both in a @n attribute and in the id. The verses follow the same system but are encoded as ab elements (I decided to use it because neither the definition of the p element nor l element fit the concept of the biblical verse).
+
+Between chapters and verses exists a medium level of division, which typically has a title. I call it pericopes (although the pericopes are often used only to this level of division in the Gospels). 
+	
+
+### Name entities
 
 ### Direct Speech
 
@@ -64,7 +75,10 @@ This project also includes some other files:
 
 # Thanks to
 
-# 
+# Future Work
+
+## Colaboration
+If some would have interested to export the structure of the markup to other languages (alive or dead) with some kind of machine learning method, I could help to develope the idea and 
 
 
 
