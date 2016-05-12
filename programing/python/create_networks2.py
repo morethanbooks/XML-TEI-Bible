@@ -72,6 +72,21 @@ def main2(inputcsv,inputtei, output, border, book):
         
         print(etree.tostring(documento_xml, pretty_print=True, encoding="unicode"))
 
+        ab_list = documento_xml.xpath('//tei:rs', namespaces=namespaces_concretos,  with_tail=False)
+
+        for ab in ab_list:
+            print("rs!: ", type(ab))
+            print(etree.tostring(ab, pretty_print=True, encoding="unicode"))
+            attribute_list = ab.xpath('/@who|/@key|/@corresp', namespaces=namespaces_concretos)
+            for attribute in attribute_list:
+                #print("atributo!: ", type(attribute))
+                #print(etree.tostring(attribute, pretty_print=True, encoding="unicode"))
+
+                attribute = attribute.split(" ")
+                #print(attribute)
+
+            #print(etree.tostring(ab, pretty_print=True, encoding="unicode"))
+        #print(ab_list)
         
         """
         with open(doc, "r", errors="replace", encoding="utf-8") as text:           
@@ -119,7 +134,7 @@ def main2(inputcsv,inputtei, output, border, book):
 
 main2(
     inputcsv = "/home/jose/Dropbox/biblia/tb/ontology.csv",
-    inputtei = "/home/jose/Dropbox/biblia/tb/TEIBible", 
+    inputtei = "/home/jose/Dropbox/biblia/tb/programing/python/input/TEIBible", 
     output = "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     border = "ab",
     book = "MAT"
