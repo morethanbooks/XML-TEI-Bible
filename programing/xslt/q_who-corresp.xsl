@@ -14,7 +14,7 @@
 	<xsl:variable name="text" select="'b.MAT'"/>
 	<xsl:variable name="text" select="'b.JOH'"/>
 	-->
-    <xsl:variable name="name" select="'b.APO'" />
+    <xsl:variable name="name" select="'b.GEN'" />
     
     <xsl:output method="text"/>
     

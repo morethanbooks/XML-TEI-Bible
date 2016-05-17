@@ -31,7 +31,7 @@ def csvids2csvnames(inputcsv,inputontology,outputfolder,columns, languages):
     dfOntology=dfOntology.fillna(value=" ")
     
     #Lets open the csv file
-    df=pd.read_csv(inputcsv, encoding="utf-8", sep=";")
+    df=pd.read_csv(inputcsv, encoding="utf-8", sep="\t")
     # NaN is sustitued with zeros
     df=df.fillna(value="0")
 

@@ -25,9 +25,10 @@ At the moment following books are fully encoded in this chronological order:
 * Gospel of Matthew
 * Gospel of John
 * Revelation
+* Genesis
 
 At the moment, following book is being encoded:
-* Genesis
+* Book of Jonah
 
 ## Original Text
 
