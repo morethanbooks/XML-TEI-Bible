@@ -1,112 +1,126 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Feb  1 18:56:20 2016
+This script gets the relationships between entities that appear in the same verse (that means, that they are values of the attribute who, corresp or key of the elements q or rs).
 
-@author: jose
 """
 
-import glob
-import os
-import re
 from lxml import etree
 import pandas as pd
+from collections import Counter
 
 
-
-def main2(inputcsv,inputtei, output, border):
+def create_networks(inputtei, output, border, book, subelements, attributes):
     """
-    main2(
-    inputcsv = "/home/jose/Dropbox/MTB/proyectos/LiteraturaLab/LotR/basic-data/ontology.csv",
-    inputtei = "/home/jose/Dropbox/MTB/proyectos/LiteraturaLab/LotR/text/Tolkien_LotR_processed-rs", 
-    output = "/home/jose/Dropbox/MTB/proyectos/LiteraturaLab/LotR/output/",
-    border = "p"
-    )
+    La función toma:
+    inputtei: el lugar del tei
+    output: el lugar donde debe guardar el csv
+    border: el nombre del elemento que consideramos como unidad
+    book: la especificación que debe tener el div xml:id (sin b.)
+    subelements: los elementos que deben ser tenidos en cuenta de donde rescatar los valores
+    attributes: los atributos que deben ser tenidos en cuenta de donde sacar los valores
     
+    Ejemplo de como usarlo:
+    
+    create_networks(
+        inputtei = "/home/jose/Dropbox/biblia/tb/TEIBible.xml", 
+        output = "/home/jose/Dropbox/biblia/tb/programing/python/output/",
+        border = "ab",
+        book = "GEN",
+        subelements = ["q","rs"],
+        attributes = ["who","corresp","key"],
+        )
     """
-    # Abrimos la tabla de los nombres y sacamos los nombres
+    # Una lista vacía es creada para guardar las relaciones de personajes
+    networks = []
+    # Parseamos el archivo xml-tei
+    documento_xml = etree.parse(inputtei)
 
-    #Lets open the csv file
-    dfontolgy = pd.read_csv(inputcsv, encoding = "utf-8", sep = "\t")
-    # NaN is sustitued with zeros
-    dfontolgy = dfontolgy.fillna(value="0")
-    print(dfontolgy)
+    # Y lo convertimos en un tipo element
+    documento_root = documento_xml.getroot()
+    #print(type(documento_root))
 
-    persons = dfontolgy['id'].tolist()
-    print(persons)
-    
-    # Abrimos el archivo. Borramos el front y el back. Borramos también todo el texto.
+    # Definimos el namespace del TEI con el que trabajamos
+    namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
 
-    networks = {}
-    oldPersons = []
-    print(inputtei)
-    #beta-metadata=["author-text-relation","group-text","protagonist-age","protagonist-name","protagonist-profession","protagonist-social-level","representation","setting-continent","setting-country","setting-name","setting-territory","subgenre-lithist","text-movement","time-period","time-span","type-end"]
-    for doc in glob.glob(inputtei+"*.xml"):
-        # It takes the base name of the html file, it cuts its ending and keeps a new xml name
-        basenamedoc,extesiondoc= os.path.basename(doc).split(".")
-        #print("Va el docu!: "+basenamedoc)
-    
-        documento_xml = etree.parse(doc)
-        print(documento_xml)
-        print(etree.tostring(documento_xml, pretty_print=True, encoding="unicode"))
-        #Definimos los namespaces
-        namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
+    # Borramos todos los libros que no sean el que hemos señalado
+    # Intenté hacerlo de manera positiva (es decir, solo seleccionar lo que quería), pero parecía que no borraba del todo el resto de libros y no entendía el funcionamiento realmente
+    for non_wanted_book in documento_root.xpath('//tei:div[@type="book"][not(@xml:id="b.'+book+'")]', namespaces=namespaces_concretos):
+        non_wanted_book.getparent().remove(non_wanted_book)
 
-        teis = documento_xml.xpath('//tei:TEI', namespaces=namespaces_concretos)
-        print(len(teis))
-        
-        tei = teis[2]
-        
-        print(type(tei))
+    # Hacemos una lista de aquellas unidades que hemos seleccionado
+    basic_unities = documento_root.xpath('//tei:'+border+'', namespaces=namespaces_concretos) 
+    #print(len(basic_unities))
 
 
-        
-        """
-        with open(doc, "r", errors="replace", encoding="utf-8") as text:           
-            text = text.read()
+    # Creamos una cadena para usarla como xpath con los elementos que hemos pasado
+    unity_xpath = ""
+    # Sacamos los elementos de la lista
+    for subelement in subelements:
+        # Los colocamos con el prefijo del namespace
+        unity_xpath = unity_xpath+"|tei:"+subelement    
+    # Eliminamos la primera barra
+    unity_xpath = unity_xpath[1:]
+    #print(unity_xpath )
 
-            text = re.sub(r'<teiHeader>.*?</teiHeader>', r'', text)
-            text = re.sub(r'<front>.*?</front>', r'', text)
-            text = re.sub(r'<back>.*?</back>', r'', text)
-            text = re.sub(r'(>)[^<>]*?(<)', r'\1\2', text)
-                
+    # Por cada una de ella
+    for unity in basic_unities:
+        # Hacemos una lista vacía para los atributos de los elementos inline
+        valores_atributos = []
+
+        # Sacamos una lista de los elementos por debajo de la unidad que queremos inspeccionar
+        subunities = unity.xpath(unity_xpath, namespaces=namespaces_concretos)
+        # Por cada uno de ellos:
+        for subunity in subunities:
             
+            # Le sacamos los atributos y los ponemos en un diccionario
+            atributo = dict(subunity.attrib)
+            
+            # Le borramos los atributos que no queremos utilizar (por ejemplo cert, type...)
+            n_atributo = {k:v for k,v in atributo.items() if any(k == attribute for attribute in attributes) }
+            #print(n_atributo)
 
-            ab_text = re.split("(<" + re.escape(border) + r"[^>]*?>.*?</" + re.escape(border) + r">)",text, flags=re.DOTALL)
-            #print(ab_text)
-            #print(type(text))
-            ipersons=0
-            for person1 in persons:
-                oldPersons.append(person1)
-                for person2 in persons:
-                    if person2 not in oldPersons:
-                        icount=0
-                        networks[person1,person2]= [icount]
-                        ipersons+=1
-                        for ab in ab_text:
-                            searchperson1=re.findall("(\"| )"+person1+"(\"| )",ab)
-                            searchperson2=re.findall("(\"| )"+person2+"(\"| )",ab)
-                            if searchperson1 and searchperson2:
-                                networks[person1,person2][0] = networks[person1,person2][0]+1
+            # Ponemos todos los valores de una misma unidad en la lista. Es decir, que si por ejemplo en un versículo tenemos diferentes q y rs, en este punto perdemos esa diferenciación
+            valores_atributos = valores_atributos + list(n_atributo.values())
 
+        # Debido a que un atributo puede tener diferentes valores seguidos, convertimos la lista en una cadena
+        valores_atributos  = ' '.join(valores_atributos)
+        # Ahora lo que hacemos es volver a separar los valores en una lista (así ya no hacemos diferencia si los atributos iban en diferentes atributos o como varios valores en un mismo atributo)
+        valores_atributos  = valores_atributos.split(' ')
+
+        # La lista la ordenamos para que no haya cosas como per1 per14; per14 per1; además borramos casos repetidos dentro de cada lista, es decir, que si en un versículo aparecía dos veces la misma persona, esa duplicidad se borra
+        valores_atributos  = sorted(list(set(valores_atributos)))
+
+        # Hacemos una lista para guardar cada entidad ya vista
+        old_entity = []
+        # Vamos por iterando por cada valor
+        for entity1 in valores_atributos:
+            # Y lo ponemos en la lista de entidaddes ya vistas
+            old_entity.append(entity1)
+            
+            #Iteramos de nuevo por las entidades
+            for entity2 in valores_atributos:
+                # Miramos si la entidad no está ya en la lista
+                if entity2 not in old_entity:
+                    # Creamos una tuple con esta relación
+                    relation = entity1,entity2
+                    # Lo añadimos a la lista de relaciones
+                    networks.append(relation)
+    # Una vez hemos terminado, creamos un counter para ver cuántas veces se repetía cada relación
+    networks = Counter(networks)
+    #print(type(networks))
     
-    print(sorted(networks.items(), key=lambda x:x[1]))   
-    print(type(networks))
-    
-    # Creamos un dataframe a partir de ello
-    dfnetworks = pd.DataFrame(networks)
-    # Le damos la vuelta
-    dfnetworks = dfnetworks.T
-    # Le ponemos unos títulos chulos a las columnas
+    # A partir de ese creamos una tabla    
+    dfnetworks = pd.DataFrame(list(networks.items()), columns=['entidades','weight'])
+
+    # Dividimos la tuple de entidades en dos columnas diferentes 
+    dfnetworks[['source', 'target']] = dfnetworks['entidades'].apply(pd.Series)
+    # Y nos cargamos la columna de las tuples de entidades
+    dfnetworks = dfnetworks.drop('entidades', 1)
+    # Ordenamos la tabla para visualizarla
+    dfnetworks = dfnetworks.sort(["weight"], ascending=True)
     print(dfnetworks)
 
-    dfnetworks.to_csv(output+'networks-id.csv', sep='\t', encoding='utf-8')
-
-    return networks
-    """
-
-main2(
-    inputcsv = "/home/jose/Dropbox/biblia/tb/ontology.csv",
-    inputtei = "/home/jose/Dropbox/biblia/tb/TEIBible", 
-    output = "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    border = "ab"
-    )
+    # La ordenamos de nuevo para ponerla en el csv
+    dfnetworks = dfnetworks.sort(["weight"], ascending=False)
+    dfnetworks.to_csv(output+book+'-networks-id.csv', sep='\t', encoding='utf-8')
+    print("print as: ", output+book+'-networks-id.csv')
