@@ -57,7 +57,7 @@ def create_networks(inputtei, output, border, book, subelements, attributes):
     # Sacamos los elementos de la lista
     for subelement in subelements:
         # Los colocamos con el prefijo del namespace
-        unity_xpath = unity_xpath+"|tei:"+subelement    
+        unity_xpath = unity_xpath+"|.//tei:"+subelement    
     # Eliminamos la primera barra
     unity_xpath = unity_xpath[1:]
     #print(unity_xpath )
