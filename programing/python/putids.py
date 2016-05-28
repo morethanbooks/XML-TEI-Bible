@@ -35,6 +35,13 @@ def put_ids(inputcsv,inputtei, outputtei):
         # It goes row by row
         for index, row in df.iterrows():
             print(row["name"])
+            if row["type"] == "person" and row["importance"] == 1:
+                content = re.sub(r'(\W)('+ re.escape(row["name"]) +r')(\W)', r'\1<rs key="'+idvalue+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
+            if row["type"] == "group"                
+                content = re.sub(r'(\W)('+ re.escape(row["name"]) +r')(\W)', r'\1<rs key="'+idvalue+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
+            if row["type"] == "place"                
+                content = re.sub(r'(\W)('+ re.escape(row["name"]) +r')(\W)', r'\1<rs key="'+idvalue+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
+            
             # The id is saved in a variable
             idvalue=re.escape(row["id"])
             # The names of the persons are surrounded witht the <rs key="id">
