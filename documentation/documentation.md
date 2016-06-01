@@ -26,9 +26,10 @@ At the moment following books are fully encoded in this chronological order:
 * Gospel of John
 * Revelation
 * Genesis
+* Book of Ruth
 
 At the moment, following book is being encoded:
-* Book of Ruth
+* Book of Jonah
 
 ## Original Text
 
