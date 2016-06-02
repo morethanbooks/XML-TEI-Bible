@@ -28,7 +28,7 @@ def txt2TEI(text):
 
 def main():
     i=1
-    for doc in glob.glob("/home/jose/Dropbox/biblia/tb/programing/python/input/rut.txt"):
+    for doc in glob.glob("/home/jose/Dropbox/biblia/tb/programing/python/input/jonas.txt"):
     
         # It takes the base name of the html file, it cuts its ending and keeps a new xml name
         basenamedoc = os.path.basename(doc)[:-3]  

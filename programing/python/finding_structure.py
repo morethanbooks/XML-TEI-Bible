@@ -25,14 +25,14 @@ def finding_standard_rs(content):
         for value in values:
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
     
-    content = re.sub(r'([a-zá-úñüç,;] )([A-ZÁ-ÚÜÑ][a-zá-úñüç]+)([^a-zá-úñüç,; ])', r'\1<rs key="per">\2</rs>\3', content)
-
     variaciones_comunes = {
         "per14" : ["Jehová","Todopoderoso"],
     }
     for key,values in variaciones_comunes.items():
         for value in values:
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
+
+    content = re.sub(r'([a-zá-úñüç,;] )([A-ZÁ-ÚÜÑ][a-zá-úñüç]+)([^a-zá-úñüç])', r'\1<rs key="per">\2</rs>\3', content)
     
     return content
 
@@ -78,7 +78,7 @@ def findingq(text):
     text = re.sub(r'http:', r'http_', text)
 
 
-    text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os)[^\w].+?)</ab>', r'\1<q who="per" corresp="per" type="oral">\2</q>', text)
+    text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os)[^\w].+?)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\2</q>\6', text)
 
     text = re.sub(r'_', r':', text, flags=re.MULTILINE)
 
@@ -145,7 +145,7 @@ def finding_structure(inputcsv, inputtei, outputtei, book):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/rut.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/jonas.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "RUT"    
+    "JON"    
     )
