@@ -145,7 +145,7 @@ def finding_structure(inputcsv, inputtei, outputtei, book):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/jonas.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/salmos.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     "JON"    
     )
