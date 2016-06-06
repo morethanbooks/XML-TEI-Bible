@@ -1,8 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/text2pic3.css" rel="stylesheet" title="Word2pic-3"?>
+<?xml-stylesheet type="text/css" href="styles/text2pic2.css" rel="stylesheet" title="Word2pic-2"?>
+<?xml-stylesheet type="text/css" href="styles/styles-q-type.css" rel="alternate stylesheet" title="q-type"?>
+<?xml-stylesheet type="text/css" href="styles/text2pic1.css" rel="stylesheet" title="Word2pic"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" cert="high">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Génesis</title>
+                <title>Salmos</title>
                 <title type="idno">
                     <idno type="string">SAL</idno>
                     <idno type="viaf"></idno>
@@ -43,7 +49,7 @@
     <div xml:id="b.SAL" type="book" n="1">
         <head>LIBRO 1</head>
             
-<div xml:id="b.SAL.1" type="chapter" n="1">
+<div xml:id="b.SAL.1" type="chapter" n="1" cert="high">
     <div>
     <head>El justo y los pecadores</head>
         <ab xml:id="b.SAL.1.1" type="verse" n="1"><rs key="org18">Bienaventurado</rs> el <rs key="org18">varón</rs> que no anduvo en consejo de <rs key="org19">malos</rs>, ni estuvo en camino de <rs key="org19">pecadores</rs>, ni en silla de <rs key="org19">escarnecedores</rs> se ha sentado,</ab>
@@ -55,31 +61,36 @@
 
 </div>
 </div>
-<div xml:id="b.SAL.2" type="chapter" n="2">
-<ab xml:id="b.SAL.2.1" type="verse" n="1">¿Por qué se amotinan las gentes y los <rs key="org">pueblos</rs> piensan cosas vanas?</ab>
-<ab xml:id="b.SAL.2.2" type="verse" n="2">Se levantarán los <rs key="per">reyes de la <rs key="#pla41">tierra</rs></rs>, y príncipes conspirarán contra <rs key="per14">Jehová</rs> y contra su ungido,, diciendo:</ab>
-<ab xml:id="b.SAL.2.3" type="verse" n="3">«Rompamos sus ligaduras y echemos de nosotros sus cuerdas».</ab>
-<ab xml:id="b.SAL.2.4" type="verse" n="4">El que mora en los cielos se reirá; el <rs key="per">Señor</rs> se burlará de ellos.</ab>
+        <div xml:id="b.SAL.2" type="chapter" n="2" cert="high">
+    <div>
+        <head>El reino del ungido de Jehová</head>
+        <ab xml:id="b.SAL.2.1" type="verse" n="1">¿Por qué se amotinan las <rs key="org0">gentes</rs> y los <rs key="org0">pueblos</rs> piensan cosas vanas?</ab>
+        <ab xml:id="b.SAL.2.2" type="verse" n="2">Se levantarán los <rs key="org100">reyes de la <rs key="#pla41">tierra</rs></rs>, y <rs key="org100">príncipes</rs> conspirarán contra <rs key="per14">Jehová</rs> y contra su <rs key="per1" cert="low">ungido</rs>, diciendo:</ab>
+        <ab xml:id="b.SAL.2.3" type="verse" n="3"><q who="org100" corresp="org100" type="oral">«Rompamos sus ligaduras y echemos de nosotros sus cuerdas».</q></ab>
+<ab xml:id="b.SAL.2.4" type="verse" n="4">El que mora en los cielos se reirá; el <rs key="per14">Señor</rs> se burlará de ellos.</ab>
 <ab xml:id="b.SAL.2.5" type="verse" n="5">Luego les hablará en su furor, y los turbará con su ira:</ab>
-<ab xml:id="b.SAL.2.6" type="verse" n="6"><q who="per" corresp="per" type="oral">«Yo he puesto mi <rs key="per">rey</rs> sobre <rs key="#pla72">Sión</rs>, mi santo monte».</q></ab>
-<ab xml:id="b.SAL.2.7" type="verse" n="7"><q who="per" corresp="per" type="oral">Yo publicaré el decreto; <rs key="per14">Jehová</rs> me ha dicho: «Mi <rs key="per">hijo</rs> eres tú; yo te engendré hoy.</q></ab>
-<ab xml:id="b.SAL.2.8" type="verse" n="8"><q who="per" corresp="per" type="oral">Pídeme, y te daré por herencia las naciones y como posesión tuya los confines de la <rs key="#pla41">tierra</rs>.</q></ab>
-<ab xml:id="b.SAL.2.9" type="verse" n="9">Los quebrantarás con vara de hierro; como vasija de alfarero los desmenuzarás».</ab>
-<ab xml:id="b.SAL.2.10" type="verse" n="10">Ahora, pues, <rs key="per">reyes</rs>, sed prudentes; admitid amonestación, <rs key="#org95">jueces de la <rs key="#pla41">tierra</rs></rs>.</ab>
+        <ab xml:id="b.SAL.2.6" type="verse" n="6"><q who="per14" corresp="org100" type="oral">«Yo he puesto mi <rs key="per1" cert="low">rey</rs> sobre <rs key="#pla72">Sión</rs>, mi <rs key="#pla72">santo monte</rs>».</q></ab>
+        <ab xml:id="b.SAL.2.7" type="verse" n="7">Yo publicaré el decreto; <rs key="per14">Jehová</rs> me ha dicho: <q who="per14" corresp="per1" type="oral">«Mi <rs key="per1" cert="low">hijo</rs> eres tú; yo te engendré hoy.</q></ab>
+        <ab xml:id="b.SAL.2.8" type="verse" n="8"><q who="per14" corresp="per1" type="oral">Pídeme, y te daré por herencia las naciones y como posesión tuya los confines de la <rs key="#pla41">tierra</rs>.</q></ab>
+        <ab xml:id="b.SAL.2.9" type="verse" n="9"><q who="per14" corresp="per1" type="oral">Los quebrantarás con vara de hierro; como <rs key="org100">vasija de alfarero</rs> los desmenuzarás».</q></ab>
+        <ab xml:id="b.SAL.2.10" type="verse" n="10">Ahora, pues, <rs key="org100">reyes</rs>, sed prudentes; admitid amonestación, <rs key="#org100">jueces de la <rs key="#pla41">tierra</rs></rs>.</ab>
 <ab xml:id="b.SAL.2.11" type="verse" n="11">Servid a <rs key="per14">Jehová</rs> con temor y alegraos con temblor.</ab>
-<ab xml:id="b.SAL.2.12" type="verse" n="12">Honrad al <rs key="per">Hijo</rs>, para que no se enoje y perezcáis en el camino, pues se inflama de pronto su ira. ¡Bienaventurados todos los que en él confían!</ab>
-
+<ab xml:id="b.SAL.2.12" type="verse" n="12">Honrad al <rs key="per1" cert="low">Hijo</rs>, para que no se enoje y perezcáis en el camino, pues se inflama de pronto su ira. ¡Bienaventurados todos los que en él confían!</ab>
+    </div>
 </div>
 <div xml:id="b.SAL.3" type="chapter" n="3">
-<ab xml:id="b.SAL.3.1" type="verse" n="1">¡<rs key="per14">Jehová</rs>, cuánto se han multiplicado mis adversarios! Muchos son los que se levantan contra mí;</ab>
-<ab xml:id="b.SAL.3.2" type="verse" n="2"><q who="per" corresp="per" type="oral">muchos son los que dicen de mí: «No hay para él salvación en <rs key="#per14">Dios</rs>». Selah</q></ab>
-<ab xml:id="b.SAL.3.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Mas tú, <rs key="per14">Jehová</rs>, eres escudo alrededor de mí; mi gloria, y el que levanta mi cabeza.</q></ab>
-<ab xml:id="b.SAL.3.4" type="verse" n="4"><q who="per" corresp="per" type="oral">Con mi voz clamé a <rs key="per14">Jehová</rs> y él me respondió desde su monte santo. Selah</q></ab>
-<ab xml:id="b.SAL.3.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Yo me acosté y dormí, y desperté, porque <rs key="per14">Jehová</rs> me sustentaba.</q></ab>
+    <div>
+        <head>Oración matutina de confianza en Dios</head>
+        <head type="explicacion">Salmo de David, cuando huía de delante de su hijo Absalón.</head>
+        <ab xml:id="b.SAL.3.1" type="verse" n="1"><q who="per34" corresp="per14" type="oral">¡<rs key="per14">Jehová</rs>, cuánto se han multiplicado mis adversarios! Muchos son los que se levantan contra mí;</q></ab>
+        <ab xml:id="b.SAL.3.2" type="verse" n="2"><q who="per34" corresp="per14" type="oral">muchos son los que dicen de mí: <q who="org0" corresp="org0" type="soCalled">«No hay para él salvación en <rs key="#per14">Dios</rs>»</q>. </q><hi rend="italic">Selah</hi></ab>
+        <ab xml:id="b.SAL.3.3" type="verse" n="3"><q who="per34" corresp="per14" type="oral">Mas tú, <rs key="per14">Jehová</rs>, eres <rs key="per14">escudo</rs> alrededor de mí; mi <rs key="per14">gloria</rs>, y el que levanta mi cabeza.</q></ab>
+        <ab xml:id="b.SAL.3.4" type="verse" n="4">Con mi voz clamé a <rs key="per14">Jehová</rs> y él me respondió desde su <rs key="#pla72">monte santo</rs>. <hi rend="italic">Selah</hi></ab>
+<ab xml:id="b.SAL.3.5" type="verse" n="5">Yo me acosté y dormí, y desperté, porque <rs key="per14">Jehová</rs> me sustentaba.</ab>
 <ab xml:id="b.SAL.3.6" type="verse" n="6">No temeré ni a una gran multitud que ponga sitio contra mí.</ab>
 <ab xml:id="b.SAL.3.7" type="verse" n="7">¡Levántate, <rs key="per14">Jehová</rs>! ¡Sálvame, <rs key="#per14">Dios</rs> mío! Tú heriste a todos mis enemigos en la mejilla; los dientes de los perversos rompiste.</ab>
-<ab xml:id="b.SAL.3.8" type="verse" n="8"><q who="per" corresp="per" type="oral">La salvación es de <rs key="per14">Jehová</rs>. ¡Sobre tu <rs key="org">pueblo</rs> sea tu bendición! Selah</q></ab>
-
+        <ab xml:id="b.SAL.3.8" type="verse" n="8">La salvación es de <rs key="per14">Jehová</rs>. ¡Sobre tu <rs key="org13">pueblo</rs> sea tu bendición! <hi rend="italic">Selah</hi></ab>
+    </div>
 </div>
 <div xml:id="b.SAL.4" type="chapter" n="4">
 <ab xml:id="b.SAL.4.1" type="verse" n="1"><q who="per" corresp="per" type="oral">¡Respóndeme cuando clamo, <rs key="#per14">Dios</rs>, justicia mía! Cuando estaba en angustia, tú me diste alivio. Ten misericordia de mí y oye mi oración.</q></ab>
