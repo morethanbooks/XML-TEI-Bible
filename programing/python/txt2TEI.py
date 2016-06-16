@@ -16,8 +16,8 @@ def txt2TEI(text):
     """
     text = re.sub(r'\A(.*?)\Z', r'<body>\n\1\n</body>', text, flags=re.IGNORECASE|re.MULTILINE|re.DOTALL)
 
-    text = re.sub(r'^\|(\d+)\|(\d+)\|(\d+)\|(.+?)\|\d+', r'<ab xml:id="b.GEN.\2.\3" type="verse" n="\3">\4</ab>', text, flags=re.IGNORECASE|re.MULTILINE)
-    text = re.sub(r'(<ab xml:id="(b.GEN.(\d+)).[^>]*?n="1">)', r'\n<div xml:id="\2" type="chapter" n="\3">\n\1', text, flags=re.IGNORECASE|re.MULTILINE)
+    text = re.sub(r'^\|(\d+)\|(\d+)\|(\d+)\|(.+?)\|\d+', r'<ab xml:id="b.SAL.\2.\3" type="verse" n="\3">\4</ab>', text, flags=re.IGNORECASE|re.MULTILINE)
+    text = re.sub(r'(<ab xml:id="(b.SAL.(\d+)).[^>]*?n="1">)', r'\n<div xml:id="\2" type="chapter" n="\3">\n\1', text, flags=re.IGNORECASE|re.MULTILINE)
     text = re.sub(r'(</ab>\s+)(<div|</body>)', r'\1</div>\n\2', text, flags=re.IGNORECASE|re.MULTILINE)
 
 
@@ -28,7 +28,7 @@ def txt2TEI(text):
 
 def main():
     i=1
-    for doc in glob.glob("/home/jose/Dropbox/biblia/tb/salmos.txt"):
+    for doc in glob.glob("/home/jose/Dropbox/biblia/tb/programing/python/input/salmos.txt"):
     
         # It takes the base name of the html file, it cuts its ending and keeps a new xml name
         basenamedoc = os.path.basename(doc)[:-3]  

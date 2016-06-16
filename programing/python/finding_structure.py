@@ -139,13 +139,15 @@ def finding_structure(inputcsv, inputtei, outputtei, book):
      
             
             # It writes the result in the output folder
+
     
             with open (os.path.join(outputtei, docFormatOut), "w", encoding="utf-8") as fout:
                 fout.write(content)
+            print(i)
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
     "/home/jose/Dropbox/biblia/tb/programing/python/input/salmos.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "JON"    
+    "SAL"    
     )

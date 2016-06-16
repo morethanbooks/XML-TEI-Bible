@@ -5,227 +5,571 @@
 <?xml-stylesheet type="text/css" href="styles/styles-q-type.css" rel="alternate stylesheet" title="q-type"?>
 <?xml-stylesheet type="text/css" href="styles/text2pic1.css" rel="stylesheet" title="Word2pic"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" cert="high">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Salmos</title>
-                <title type="idno">
-                    <idno type="string">SAL</idno>
-                    <idno type="viaf"></idno>
-                </title>
-                <author>
-                    <name type="short"></name>
-                    <name type="full"></name>z
-                    <idno type="viaf"></idno>
-                </author>
-                <principal key="#jct">José Calvo Tello</principal>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>José Calvo Tello</publisher>
-                <availability status="free">
-                    <p>The text is freely available.</p>
-                </availability>
-                <date when="2016">2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
-                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
-                <bibl type="edition-first"><date when="1569">1569</date></bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p></p>
-        </encodingDesc>
-        <revisionDesc>
-            <change when="2016-06-05" who="#jct">First version of Psalms</change>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <front>
-            <div />
-        </front>
-<body>
-    <div xml:id="b.SAL" type="book" n="1">
-        <head>LIBRO 1</head>
-            
-<div xml:id="b.SAL.1" type="chapter" n="1" cert="high">
-    <div>
-    <head>El justo y los pecadores</head>
-        <ab xml:id="b.SAL.1.1" type="verse" n="1"><rs key="org18">Bienaventurado</rs> el <rs key="org18">varón</rs> que no anduvo en consejo de <rs key="org19">malos</rs>, ni estuvo en camino de <rs key="org19">pecadores</rs>, ni en silla de <rs key="org19">escarnecedores</rs> se ha sentado,</ab>
-<ab xml:id="b.SAL.1.2" type="verse" n="2">sino que en la ley de <rs key="per14">Jehová</rs> está su delicia y en su <rs key="wor1">Ley</rs> medita de día y de noche.</ab>
-        <ab xml:id="b.SAL.1.3" type="verse" n="3">Será como <rs key="org18">árbol plantado</rs> junto a corrientes de aguas, que da su fruto en su tiempo y su hoja no cae, y todo lo que hace prosperará.</ab>
-        <ab xml:id="b.SAL.1.4" type="verse" n="4">No así los <rs key="org19">malos</rs>, que son como el <rs key="org19">tamo</rs> que arrebata el viento.</ab>
-        <ab xml:id="b.SAL.1.5" type="verse" n="5">Por tanto, no se levantarán los <rs key="org19">malos</rs> en el juicio ni los <rs key="org19">pecadores</rs> en la <rs key="org18">congregación de los <rs key="org19">justos</rs></rs>,</ab>
-        <ab xml:id="b.SAL.1.6" type="verse" n="6">porque <rs key="per14">Jehová</rs> conoce el camino de los <rs key="org8">justos</rs>, mas la senda de los <rs key="org19">malos</rs> perecerá.</ab>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Salmos</title>
+				<title type="idno">
+					<idno type="string">SAL</idno>
+					<idno type="viaf"></idno>
+				</title>
+				<author>
+					<name type="short"></name>
+					<name type="full"></name>z
+					<idno type="viaf"></idno>
+				</author>
+				<principal key="#jct">José Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>José Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2016">2016</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2016-06-05" who="#jct">First version of Psalms</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div />
+		</front>
+		<body>
+			<div xml:id="b.SAL" type="book" n="1">
+				<head>LIBRO 1</head>
+				<div xml:id="b.SAL.1" type="chapter" n="1" cert="high">
+					<div>
+						<head>El justo y los pecadores</head>
+						<ab xml:id="b.SAL.1.1" type="verse" n="1"><rs key="org18">Bienaventurado</rs> el <rs key="org18">varón</rs> que no anduvo en consejo de <rs key="org19">malos</rs>, ni estuvo en camino de <rs key="org19">pecadores</rs>, ni en silla de <rs key="org19">escarnecedores</rs> se ha sentado,</ab>
+						<ab xml:id="b.SAL.1.2" type="verse" n="2">sino que en la ley de <rs key="per14">Jehová</rs> está su delicia y en su <rs key="wor1">Ley</rs> medita de día y de noche.</ab>
+						<ab xml:id="b.SAL.1.3" type="verse" n="3">Será como <rs key="org18">árbol plantado</rs> junto a corrientes de aguas, que da su fruto en su tiempo y su hoja no cae, y todo lo que hace prosperará.</ab>
+						<ab xml:id="b.SAL.1.4" type="verse" n="4">No así los <rs key="org19">malos</rs>, que son como el <rs key="org19">tamo</rs> que arrebata el viento.</ab>
+						<ab xml:id="b.SAL.1.5" type="verse" n="5">Por tanto, no se levantarán los <rs key="org19">malos</rs> en el juicio ni los <rs key="org19">pecadores</rs> en la <rs key="org18">congregación de los <rs key="org19">justos</rs></rs>,</ab>
+						<ab xml:id="b.SAL.1.6" type="verse" n="6">porque <rs key="per14">Jehová</rs> conoce el camino de los <rs key="org8">justos</rs>, mas la senda de los <rs key="org19">malos</rs> perecerá.</ab>
 
-</div>
-</div>
-        <div xml:id="b.SAL.2" type="chapter" n="2" cert="high">
-    <div>
-        <head>El reino del ungido de Jehová</head>
-        <ab xml:id="b.SAL.2.1" type="verse" n="1">¿Por qué se amotinan las <rs key="org0">gentes</rs> y los <rs key="org0">pueblos</rs> piensan cosas vanas?</ab>
-        <ab xml:id="b.SAL.2.2" type="verse" n="2">Se levantarán los <rs key="org100">reyes de la <rs key="#pla41">tierra</rs></rs>, y <rs key="org100">príncipes</rs> conspirarán contra <rs key="per14">Jehová</rs> y contra su <rs key="per1" cert="low">ungido</rs>, diciendo:</ab>
-        <ab xml:id="b.SAL.2.3" type="verse" n="3"><q who="org100" corresp="org100" type="oral">«Rompamos sus ligaduras y echemos de nosotros sus cuerdas».</q></ab>
-<ab xml:id="b.SAL.2.4" type="verse" n="4">El que mora en los cielos se reirá; el <rs key="per14">Señor</rs> se burlará de ellos.</ab>
-<ab xml:id="b.SAL.2.5" type="verse" n="5">Luego les hablará en su furor, y los turbará con su ira:</ab>
-        <ab xml:id="b.SAL.2.6" type="verse" n="6"><q who="per14" corresp="org100" type="oral">«Yo he puesto mi <rs key="per1" cert="low">rey</rs> sobre <rs key="#pla72">Sión</rs>, mi <rs key="#pla72">santo monte</rs>».</q></ab>
-        <ab xml:id="b.SAL.2.7" type="verse" n="7">Yo publicaré el decreto; <rs key="per14">Jehová</rs> me ha dicho: <q who="per14" corresp="per1" type="oral">«Mi <rs key="per1" cert="low">hijo</rs> eres tú; yo te engendré hoy.</q></ab>
-        <ab xml:id="b.SAL.2.8" type="verse" n="8"><q who="per14" corresp="per1" type="oral">Pídeme, y te daré por herencia las naciones y como posesión tuya los confines de la <rs key="#pla41">tierra</rs>.</q></ab>
-        <ab xml:id="b.SAL.2.9" type="verse" n="9"><q who="per14" corresp="per1" type="oral">Los quebrantarás con vara de hierro; como <rs key="org100">vasija de alfarero</rs> los desmenuzarás».</q></ab>
-        <ab xml:id="b.SAL.2.10" type="verse" n="10">Ahora, pues, <rs key="org100">reyes</rs>, sed prudentes; admitid amonestación, <rs key="#org100">jueces de la <rs key="#pla41">tierra</rs></rs>.</ab>
-<ab xml:id="b.SAL.2.11" type="verse" n="11">Servid a <rs key="per14">Jehová</rs> con temor y alegraos con temblor.</ab>
-<ab xml:id="b.SAL.2.12" type="verse" n="12">Honrad al <rs key="per1" cert="low">Hijo</rs>, para que no se enoje y perezcáis en el camino, pues se inflama de pronto su ira. ¡Bienaventurados todos los que en él confían!</ab>
-    </div>
-</div>
-<div xml:id="b.SAL.3" type="chapter" n="3" cert="high">
-    <div>
-        <head>Oración matutina de confianza en Dios</head>
-        <head type="explicacion">Salmo de David, cuando huía de delante de su hijo Absalón.</head>
-        <ab xml:id="b.SAL.3.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">¡<rs key="per14">Jehová</rs>, cuánto se han multiplicado mis adversarios! Muchos son los que se levantan contra mí;</q></ab>
-        <ab xml:id="b.SAL.3.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">muchos son los que dicen de mí: <q who="org0" corresp="org0" type="soCalled">«No hay para él salvación en <rs key="#per14">Dios</rs>»</q>. </q><hi rend="italic">Selah</hi></ab>
-        <ab xml:id="b.SAL.3.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer">Mas tú, <rs key="per14">Jehová</rs>, eres <rs key="per14">escudo</rs> alrededor de mí; mi <rs key="per14">gloria</rs>, y el que levanta mi cabeza.</q></ab>
-        <ab xml:id="b.SAL.3.4" type="verse" n="4">Con mi voz clamé a <rs key="per14">Jehová</rs> y él me respondió desde su <rs key="#pla72">monte santo</rs>. <hi rend="italic">Selah</hi></ab>
-<ab xml:id="b.SAL.3.5" type="verse" n="5">Yo me acosté y dormí, y desperté, porque <rs key="per14">Jehová</rs> me sustentaba.</ab>
-<ab xml:id="b.SAL.3.6" type="verse" n="6">No temeré ni a una gran multitud que ponga sitio contra mí.</ab>
-<ab xml:id="b.SAL.3.7" type="verse" n="7">¡Levántate, <rs key="per14">Jehová</rs>! ¡Sálvame, <rs key="#per14">Dios</rs> mío! Tú heriste a todos mis enemigos en la mejilla; los dientes de los perversos rompiste.</ab>
-        <ab xml:id="b.SAL.3.8" type="verse" n="8">La salvación es de <rs key="per14">Jehová</rs>. ¡Sobre tu <rs key="org13">pueblo</rs> sea tu bendición! <hi rend="italic">Selah</hi></ab>
-    </div>
-</div>
-<div xml:id="b.SAL.4" type="chapter" n="4" cert="high">
-    <div>
-        <head>Oración vespertina de confianza en Dios</head>
-        <head type="explicacion">Al músico principal; sobre Neginot. Salmo de David</head>
-    <ab xml:id="b.SAL.4.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">¡Respóndeme cuando clamo, <rs key="#per14">Dios</rs>, <rs key="#per14">justicia</rs> mía! Cuando estaba en angustia, tú me diste alivio. Ten misericordia de mí y oye mi oración.</q></ab>
-    <ab xml:id="b.SAL.4.2" type="verse" n="2"><q who="per35" corresp="org0" type="oral"><rs key="org0">Hijos de los <rs key="org0">hombres</rs></rs>, ¿hasta cuándo volveréis mi honra en infamia, amaréis la vanidad y buscaréis la mentira?</q><hi rend="italic">Selah</hi></ab>
-<ab xml:id="b.SAL.4.3" type="verse" n="3"><q who="per35" corresp="org0" type="oral">Sabed, pues, que <rs key="per14">Jehová</rs> ha escogido al piadoso para sí; <rs key="per14">Jehová</rs> oirá cuando yo a él clame.</q></ab>
-    <ab xml:id="b.SAL.4.4" type="verse" n="4"><q who="per35" corresp="org0" type="oral">¡Temblad y no pequéis! Meditad en vuestro corazón estando en vuestra cama, y callad.</q> <hi rend="italic">Selah</hi></ab>
-    <ab xml:id="b.SAL.4.5" type="verse" n="5"><q who="per35" corresp="org0" type="oral">Ofreced sacrificios de justicia y confiad en <rs key="per14">Jehová</rs>.</q></ab>
-    <ab xml:id="b.SAL.4.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Muchos son los que dicen: <q who="org0" corresp="org0" type="oral">«¿Quién nos mostrará el bien?».</q> Alza sobre nosotros, <rs key="per14">Jehová</rs>, la luz de tu rostro.</q></ab>
-<ab xml:id="b.SAL.4.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">Tú diste alegría a mi corazón, mayor que la de ellos cuando abundaba su grano y su mosto.</q></ab>
-<ab xml:id="b.SAL.4.8" type="verse" n="8"><q who="per35" corresp="per14" type="prayer">En paz me acostaré y asimismo dormiré, porque sólo tú, <rs key="per14">Jehová</rs>, me haces vivir confiado.</q></ab>
-    </div>
-</div>
-<div xml:id="b.SAL.5" type="chapter" n="5" cert="high">
-    <div>
-        <head>Plegaria pidiendo protección</head>
-        <head>Al músico principal; sobre Nehilot. Salmo de David</head>
-<ab xml:id="b.SAL.5.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">Escucha, <rs key="per14">Jehová</rs>, mis palabras; considera mi gemir.</q></ab>
-<ab xml:id="b.SAL.5.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">Atiende a la voz de mi clamor, <rs key="per14">Rey</rs> mío y <rs key="#per14">Dios</rs> mío, porque a ti oraré.</q></ab>
-<ab xml:id="b.SAL.5.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs>, de mañana oirás mi voz; de mañana me presentaré delante de ti y esperaré.</q></ab>
-<ab xml:id="b.SAL.5.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">Porque tú no eres un <rs key="#per14">Dios</rs> que se complace en la maldad, el <rs key="org19">malo</rs> no habitará junto a ti.</q></ab>
-        <ab xml:id="b.SAL.5.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">Los <rs key="org19">insensatos</rs> no estarán delante de tus ojos; aborreces a todos los que hacen iniquidad.</q></ab>
-        <ab xml:id="b.SAL.5.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Destruirás a los que hablan mentira; al <rs key="org19">hombre sanguinario</rs> y engañador abominará <rs key="per14">Jehová</rs>.</q></ab>
-        <ab xml:id="b.SAL.5.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">Mas yo por la abundancia de tu misericordia entraré en tu <rs key="pla30" cert="medium">Casa</rs>; adoraré con reverencia hacia tu <rs key="pla30" cert="medium">santo Templo</rs>.</q></ab>
-        <ab xml:id="b.SAL.5.8" type="verse" n="8"><q who="per35" corresp="per14" type="prayer">Guíame, <rs key="per14">Jehová</rs>, en tu justicia, a causa de mis <rs key="org101">enemigos</rs>; endereza delante de mí tu camino.</q></ab>
-        <ab xml:id="b.SAL.5.9" type="verse" n="9"><q who="per35" corresp="per14" type="prayer">En la boca de ellos no hay sinceridad; su interior está lleno de maldad, sepulcro abierto es su garganta, su lengua es mentirosa.</q></ab>
-        <ab xml:id="b.SAL.5.10" type="verse" n="10"><q who="per35" corresp="per14" type="prayer">¡Castígalos, <rs key="#per14">Dios</rs>! ¡Caigan por sus mismas intrigas! Por la multitud de sus transgresiones échalos fuera, porque se rebelaron contra ti.</q></ab>
-<ab xml:id="b.SAL.5.11" type="verse" n="11"><q who="per35" corresp="per14" type="prayer">Pero alégrense todos los que en ti confían; den voces de júbilo para siempre, porque tú los defiendes; en ti se regocijen los que aman tu nombre.</q></ab>
-<ab xml:id="b.SAL.5.12" type="verse" n="12"><q who="per35" corresp="per14" type="prayer">Tú, <rs key="per14">Jehová</rs>, bendecirás al <rs key="org18">justo</rs>; como con un escudo lo rodearás de tu favor.</q></ab>
-    </div>
+					</div>
+				</div>
+				<div xml:id="b.SAL.2" type="chapter" n="2" cert="high">
+					<div>
+						<head>El reino del ungido de Jehová</head>
+						<ab xml:id="b.SAL.2.1" type="verse" n="1">¿Por qué se amotinan las <rs key="org0">gentes</rs> y los <rs key="org0">pueblos</rs> piensan cosas vanas?</ab>
+						<ab xml:id="b.SAL.2.2" type="verse" n="2">Se levantarán los <rs key="org100">reyes de la <rs key="#pla41">tierra</rs></rs>, y <rs key="org100">príncipes</rs> conspirarán contra <rs key="per14">Jehová</rs> y contra su <rs key="per1" cert="low">ungido</rs>, diciendo:</ab>
+						<ab xml:id="b.SAL.2.3" type="verse" n="3"><q who="org100" corresp="org100" type="oral">«Rompamos sus ligaduras y echemos de nosotros sus cuerdas».</q></ab>
+						<ab xml:id="b.SAL.2.4" type="verse" n="4">El que mora en los cielos se reirá; el <rs key="per14">Señor</rs> se burlará de ellos.</ab>
+						<ab xml:id="b.SAL.2.5" type="verse" n="5">Luego les hablará en su furor, y los turbará con su ira:</ab>
+						<ab xml:id="b.SAL.2.6" type="verse" n="6"><q who="per14" corresp="org100" type="oral">«Yo he puesto mi <rs key="per1" cert="low">rey</rs> sobre <rs key="#pla72">Sión</rs>, mi <rs key="#pla72">santo monte</rs>».</q></ab>
+						<ab xml:id="b.SAL.2.7" type="verse" n="7">Yo publicaré el decreto; <rs key="per14">Jehová</rs> me ha dicho: <q who="per14" corresp="per1" type="oral">«Mi <rs key="per1" cert="low">hijo</rs> eres tú; yo te engendré hoy.</q></ab>
+						<ab xml:id="b.SAL.2.8" type="verse" n="8"><q who="per14" corresp="per1" type="oral">Pídeme, y te daré por herencia las naciones y como posesión tuya los confines de la <rs key="#pla41">tierra</rs>.</q></ab>
+						<ab xml:id="b.SAL.2.9" type="verse" n="9"><q who="per14" corresp="per1" type="oral">Los quebrantarás con vara de hierro; como <rs key="org100">vasija de alfarero</rs> los desmenuzarás».</q></ab>
+						<ab xml:id="b.SAL.2.10" type="verse" n="10">Ahora, pues, <rs key="org100">reyes</rs>, sed prudentes; admitid amonestación, <rs key="#org100">jueces de la <rs key="#pla41">tierra</rs></rs>.</ab>
+						<ab xml:id="b.SAL.2.11" type="verse" n="11">Servid a <rs key="per14">Jehová</rs> con temor y alegraos con temblor.</ab>
+						<ab xml:id="b.SAL.2.12" type="verse" n="12">Honrad al <rs key="per1" cert="low">Hijo</rs>, para que no se enoje y perezcáis en el camino, pues se inflama de pronto su ira. ¡Bienaventurados todos los que en él confían!</ab>
+					</div>
+				</div>
+				<div xml:id="b.SAL.3" type="chapter" n="3" cert="high">
+					<div>
+						<head>Oración matutina de confianza en Dios</head>
+						<head type="explicacion">Salmo de David, cuando huía de delante de su hijo Absalón.</head>
+						<ab xml:id="b.SAL.3.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">¡<rs key="per14">Jehová</rs>, cuánto se han multiplicado mis adversarios! Muchos son los que se levantan contra mí;</q></ab>
+						<ab xml:id="b.SAL.3.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">muchos son los que dicen de mí: <q who="org0" corresp="org0" type="soCalled">«No hay para él salvación en <rs key="#per14">Dios</rs>»</q>. </q><hi rend="italic">Selah</hi></ab>
+						<ab xml:id="b.SAL.3.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer">Mas tú, <rs key="per14">Jehová</rs>, eres <rs key="per14">escudo</rs> alrededor de mí; mi <rs key="per14">gloria</rs>, y el que levanta mi cabeza.</q></ab>
+						<ab xml:id="b.SAL.3.4" type="verse" n="4">Con mi voz clamé a <rs key="per14">Jehová</rs> y él me respondió desde su <rs key="#pla72">monte santo</rs>. <hi rend="italic">Selah</hi></ab>
+						<ab xml:id="b.SAL.3.5" type="verse" n="5">Yo me acosté y dormí, y desperté, porque <rs key="per14">Jehová</rs> me sustentaba.</ab>
+						<ab xml:id="b.SAL.3.6" type="verse" n="6">No temeré ni a una gran multitud que ponga sitio contra mí.</ab>
+						<ab xml:id="b.SAL.3.7" type="verse" n="7">¡Levántate, <rs key="per14">Jehová</rs>! ¡Sálvame, <rs key="#per14">Dios</rs> mío! Tú heriste a todos mis <rs key="org18">enemigos</rs> en la mejilla; los dientes de los perversos rompiste.</ab>
+						<ab xml:id="b.SAL.3.8" type="verse" n="8">La salvación es de <rs key="per14">Jehová</rs>. ¡Sobre tu <rs key="org13">pueblo</rs> sea tu bendición! <hi rend="italic">Selah</hi></ab>
+					</div>
+				</div>
+				<div xml:id="b.SAL.4" type="chapter" n="4" cert="high">
+					<div>
+						<head>Oración vespertina de confianza en Dios</head>
+						<head type="explicacion">Al músico principal; sobre Neginot. Salmo de David</head>
+						<ab xml:id="b.SAL.4.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">¡Respóndeme cuando clamo, <rs key="#per14">Dios</rs>, <rs key="#per14">justicia</rs> mía! Cuando estaba en angustia, tú me diste alivio. Ten misericordia de mí y oye mi oración.</q></ab>
+						<ab xml:id="b.SAL.4.2" type="verse" n="2"><q who="per35" corresp="org0" type="oral"><rs key="org0">Hijos de los <rs key="org0">hombres</rs></rs>, ¿hasta cuándo volveréis mi honra en infamia, amaréis la vanidad y buscaréis la mentira?</q><hi rend="italic">Selah</hi></ab>
+						<ab xml:id="b.SAL.4.3" type="verse" n="3"><q who="per35" corresp="org0" type="oral">Sabed, pues, que <rs key="per14">Jehová</rs> ha escogido al piadoso para sí; <rs key="per14">Jehová</rs> oirá cuando yo a él clame.</q></ab>
+						<ab xml:id="b.SAL.4.4" type="verse" n="4"><q who="per35" corresp="org0" type="oral">¡Temblad y no pequéis! Meditad en vuestro corazón estando en vuestra cama, y callad.</q> <hi rend="italic">Selah</hi></ab>
+						<ab xml:id="b.SAL.4.5" type="verse" n="5"><q who="per35" corresp="org0" type="oral">Ofreced sacrificios de justicia y confiad en <rs key="per14">Jehová</rs>.</q></ab>
+						<ab xml:id="b.SAL.4.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Muchos son los que dicen: <q who="org0" corresp="org0" type="oral">«¿Quién nos mostrará el bien?».</q> Alza sobre nosotros, <rs key="per14">Jehová</rs>, la luz de tu rostro.</q></ab>
+						<ab xml:id="b.SAL.4.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">Tú diste alegría a mi corazón, mayor que la de ellos cuando abundaba su grano y su mosto.</q></ab>
+						<ab xml:id="b.SAL.4.8" type="verse" n="8"><q who="per35" corresp="per14" type="prayer">En paz me acostaré y asimismo dormiré, porque sólo tú, <rs key="per14">Jehová</rs>, me haces vivir confiado.</q></ab>
+					</div>
+				</div>
+				<div xml:id="b.SAL.5" type="chapter" n="5" cert="high">
+					<div>
+						<head>Plegaria pidiendo protección</head>
+						<head>Al músico principal; sobre Nehilot. Salmo de David</head>
+						<ab xml:id="b.SAL.5.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">Escucha, <rs key="per14">Jehová</rs>, mis palabras; considera mi gemir.</q></ab>
+						<ab xml:id="b.SAL.5.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">Atiende a la voz de mi clamor, <rs key="per14">Rey</rs> mío y <rs key="#per14">Dios</rs> mío, porque a ti oraré.</q></ab>
+						<ab xml:id="b.SAL.5.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs>, de mañana oirás mi voz; de mañana me presentaré delante de ti y esperaré.</q></ab>
+						<ab xml:id="b.SAL.5.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">Porque tú no eres un <rs key="#per14">Dios</rs> que se complace en la maldad, el <rs key="org19">malo</rs> no habitará junto a ti.</q></ab>
+						<ab xml:id="b.SAL.5.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">Los <rs key="org19">insensatos</rs> no estarán delante de tus ojos; aborreces a todos los que hacen iniquidad.</q></ab>
+						<ab xml:id="b.SAL.5.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Destruirás a los que hablan mentira; al <rs key="org19">hombre sanguinario</rs> y engañador abominará <rs key="per14">Jehová</rs>.</q></ab>
+						<ab xml:id="b.SAL.5.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">Mas yo por la abundancia de tu misericordia entraré en tu <rs key="pla30" cert="medium">Casa</rs>; adoraré con reverencia hacia tu <rs key="pla30" cert="medium">santo Templo</rs>.</q></ab>
+						<ab xml:id="b.SAL.5.8" type="verse" n="8"><q who="per35" corresp="per14" type="prayer">Guíame, <rs key="per14">Jehová</rs>, en tu justicia, a causa de mis <rs key="org101">enemigos</rs>; endereza delante de mí tu camino.</q></ab>
+						<ab xml:id="b.SAL.5.9" type="verse" n="9"><q who="per35" corresp="per14" type="prayer">En la boca de ellos no hay sinceridad; su interior está lleno de maldad, sepulcro abierto es su garganta, su lengua es mentirosa.</q></ab>
+						<ab xml:id="b.SAL.5.10" type="verse" n="10"><q who="per35" corresp="per14" type="prayer">¡Castígalos, <rs key="#per14">Dios</rs>! ¡Caigan por sus mismas intrigas! Por la multitud de sus transgresiones échalos fuera, porque se rebelaron contra ti.</q></ab>
+						<ab xml:id="b.SAL.5.11" type="verse" n="11"><q who="per35" corresp="per14" type="prayer">Pero alégrense todos los que en ti confían; den voces de júbilo para siempre, porque tú los defiendes; en ti se regocijen los que aman tu nombre.</q></ab>
+						<ab xml:id="b.SAL.5.12" type="verse" n="12"><q who="per35" corresp="per14" type="prayer">Tú, <rs key="per14">Jehová</rs>, bendecirás al <rs key="org18">justo</rs>; como con un escudo lo rodearás de tu favor.</q></ab>
+					</div>
 
-</div>
-<div xml:id="b.SAL.6" type="chapter" n="6" cert="high">
-    <div>
-        <head>Oración pidiendo misericordia en tiempo de prueba</head>
-            <head>Al músico principal; en Neginot, sobre Seminit. Salmo de David</head>
-<ab xml:id="b.SAL.6.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs>, no me reprendas en tu enojo ni me castigues con tu ira.</q></ab>
-<ab xml:id="b.SAL.6.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">Ten misericordia de mí, <rs key="per14">Jehová</rs>, porque estoy enfermo; sáname, <rs key="per14">Jehová</rs>, porque mis huesos se estremecen.</q></ab>
-<ab xml:id="b.SAL.6.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer">Mi alma también está muy turbada; y tú, <rs key="per14">Jehová</rs>, ¿hasta cuándo?</q></ab>
-<ab xml:id="b.SAL.6.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">Vuélvete, <rs key="per14">Jehová</rs>, libra mi alma. ¡Sálvame por tu misericordia!,</q></ab>
-<ab xml:id="b.SAL.6.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">porque en la muerte no hay memoria de ti; en el <rs key="pla15" cert="medium">seol</rs>, ¿quién te alabará?</q></ab>
-<ab xml:id="b.SAL.6.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Me he consumido a fuerza de gemir; todas las noches inundo de llanto mi lecho, riego mi cama con mis lágrimas.</q></ab>
-        <ab xml:id="b.SAL.6.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">Mis ojos están gastados de sufrir; se han envejecido a causa de todos mis <rs key="org101">angustiadores</rs>.</q></ab>
-        <ab xml:id="b.SAL.6.8" type="verse" n="8"><q who="per35" corresp="org101" type="oral">¡Apartaos de mí, todos los <rs key="org101">hacedores de maldad</rs>, porque <rs key="per14">Jehová</rs> ha oído la voz de mi lloro!</q></ab>
-        <ab xml:id="b.SAL.6.9" type="verse" n="9"><q who="per35" corresp="org101" type="oral"><rs key="per14">Jehová</rs> ha oído mi ruego; ha recibido <rs key="per14">Jehová</rs> mi oración.</q></ab>
-        <ab xml:id="b.SAL.6.10" type="verse" n="10">Se avergonzarán y se turbarán mucho todos mis <rs key="org101">enemigos</rs>; se volverán y serán avergonzados de repente.</ab>
-    </div>
-</div>
-<div xml:id="b.SAL.7" type="chapter" n="7" cert="high">
-    <div>
-        <head>Plegaria pidiendo vindicación</head>
-            <head>Sigaión de David, que cantó a Jehová acerca de las palabras de Cus, hijo de Benjamín.</head>
-<ab xml:id="b.SAL.7.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío, en ti he confiado; sálvame de todos los que me persiguen, y líbrame,</q></ab>
-<ab xml:id="b.SAL.7.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">no sea que desgarren mi alma cual <rs key="per35">león</rs> y me destrocen sin que haya quien me libre.</q></ab>
-<ab xml:id="b.SAL.7.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío, si de algo soy culpable, si hay en mis manos iniquidad,</q></ab>
-        <ab xml:id="b.SAL.7.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">si he dado mal pago al que estaba en paz conmigo (al contrario, he libertado al que sin causa era mi <rs key="org101">enemigo</rs>),</q></ab>
-        <ab xml:id="b.SAL.7.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">que me persiga el <rs key="org101">enemigo</rs> y me alcance, que pisotee en tierra mi vida y mi honra ponga en el polvo. </q> <hi rend="italic">Selah</hi></ab>
-        <ab xml:id="b.SAL.7.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">¡Levántate, <rs key="per14">Jehová</rs>, en tu ira! ¡Álzate en contra de la furia de mis <rs key="org101">angustiadores</rs> y despierta en favor mío el juicio que mandaste!</q></ab>
-        <ab xml:id="b.SAL.7.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">Te rodeará una congregación de <rs key="org0">pueblos</rs> y sobre ella vuélvete a sentar en alto.</q></ab>
-<ab xml:id="b.SAL.7.8" type="verse" n="8"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs> juzgará a los <rs key="org0">pueblos</rs>. Júzgame, <rs key="per14">Jehová</rs>, conforme a mi justicia y conforme a mi integridad.</q></ab>
-        <ab xml:id="b.SAL.7.9" type="verse" n="9"><q who="per35" corresp="per14" type="prayer">Termine ahora la maldad de los <rs key="org19">malvados</rs>, mas establece tú al <rs key="org18">justo</rs>, porque el <rs key="#per14">Dios justo</rs> prueba la mente y el corazón.</q></ab>
-        <ab xml:id="b.SAL.7.10" type="verse" n="10">Mi escudo está en <rs key="#per14">Dios</rs>, que salva a los <rs key="org18">rectos de corazón</rs>.</ab>
-<ab xml:id="b.SAL.7.11" type="verse" n="11"><rs key="#per14">Dios</rs> es <rs key="per14">juez justo</rs>; y <rs key="#per14">Dios</rs> está airado contra el <rs key="org19">impío</rs> todos los días.</ab>
-<ab xml:id="b.SAL.7.12" type="verse" n="12">Si no se arrepiente, él afilará su espada; armado tiene ya su arco y lo ha preparado.</ab>
-<ab xml:id="b.SAL.7.13" type="verse" n="13">Asimismo ha preparado armas de muerte y ha hecho saetas ardientes.</ab>
-        <ab xml:id="b.SAL.7.14" type="verse" n="14">El <rs key="org19">impío</rs> concibió maldad, se preñó de iniquidad y dio a luz engaño.</ab>
-<ab xml:id="b.SAL.7.15" type="verse" n="15">Pozo ha cavado y lo ha ahondado; pero en el hoyo que hizo, caerá.</ab>
-<ab xml:id="b.SAL.7.16" type="verse" n="16">¡Su iniquidad recaerá sobre su cabeza y su agravio caerá sobre su propia coronilla!</ab>
-<ab xml:id="b.SAL.7.17" type="verse" n="17">Alabaré a <rs key="per14">Jehová</rs> conforme a su justicia y cantaré al nombre de <rs key="per14">Jehová</rs>, el <rs key="per14">Altísimo</rs>.</ab>
-    </div>
+				</div>
+				<div xml:id="b.SAL.6" type="chapter" n="6" cert="high">
+					<div>
+						<head>Oración pidiendo misericordia en tiempo de prueba</head>
+						<head>Al músico principal; en Neginot, sobre Seminit. Salmo de David</head>
+						<ab xml:id="b.SAL.6.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs>, no me reprendas en tu enojo ni me castigues con tu ira.</q></ab>
+						<ab xml:id="b.SAL.6.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">Ten misericordia de mí, <rs key="per14">Jehová</rs>, porque estoy enfermo; sáname, <rs key="per14">Jehová</rs>, porque mis huesos se estremecen.</q></ab>
+						<ab xml:id="b.SAL.6.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer">Mi alma también está muy turbada; y tú, <rs key="per14">Jehová</rs>, ¿hasta cuándo?</q></ab>
+						<ab xml:id="b.SAL.6.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">Vuélvete, <rs key="per14">Jehová</rs>, libra mi alma. ¡Sálvame por tu misericordia!,</q></ab>
+						<ab xml:id="b.SAL.6.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">porque en la muerte no hay memoria de ti; en el <rs key="pla15" cert="medium">seol</rs>, ¿quién te alabará?</q></ab>
+						<ab xml:id="b.SAL.6.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Me he consumido a fuerza de gemir; todas las noches inundo de llanto mi lecho, riego mi cama con mis lágrimas.</q></ab>
+						<ab xml:id="b.SAL.6.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">Mis ojos están gastados de sufrir; se han envejecido a causa de todos mis <rs key="org101">angustiadores</rs>.</q></ab>
+						<ab xml:id="b.SAL.6.8" type="verse" n="8"><q who="per35" corresp="org101" type="oral">¡Apartaos de mí, todos los <rs key="org101">hacedores de maldad</rs>, porque <rs key="per14">Jehová</rs> ha oído la voz de mi lloro!</q></ab>
+						<ab xml:id="b.SAL.6.9" type="verse" n="9"><q who="per35" corresp="org101" type="oral"><rs key="per14">Jehová</rs> ha oído mi ruego; ha recibido <rs key="per14">Jehová</rs> mi oración.</q></ab>
+						<ab xml:id="b.SAL.6.10" type="verse" n="10">Se avergonzarán y se turbarán mucho todos mis <rs key="org101">enemigos</rs>; se volverán y serán avergonzados de repente.</ab>
+					</div>
+				</div>
+				<div xml:id="b.SAL.7" type="chapter" n="7" cert="high">
+					<div>
+						<head>Plegaria pidiendo vindicación</head>
+						<head>Sigaión de David, que cantó a Jehová acerca de las palabras de Cus, hijo de Benjamín.</head>
+						<ab xml:id="b.SAL.7.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío, en ti he confiado; sálvame de todos los que me persiguen, y líbrame,</q></ab>
+						<ab xml:id="b.SAL.7.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">no sea que desgarren mi alma cual <rs key="per35">león</rs> y me destrocen sin que haya quien me libre.</q></ab>
+						<ab xml:id="b.SAL.7.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío, si de algo soy culpable, si hay en mis manos iniquidad,</q></ab>
+						<ab xml:id="b.SAL.7.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">si he dado mal pago al que estaba en paz conmigo (al contrario, he libertado al que sin causa era mi <rs key="org101">enemigo</rs>),</q></ab>
+						<ab xml:id="b.SAL.7.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">que me persiga el <rs key="org101">enemigo</rs> y me alcance, que pisotee en tierra mi vida y mi honra ponga en el polvo. </q> <hi rend="italic">Selah</hi></ab>
+						<ab xml:id="b.SAL.7.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">¡Levántate, <rs key="per14">Jehová</rs>, en tu ira! ¡Álzate en contra de la furia de mis <rs key="org101">angustiadores</rs> y despierta en favor mío el juicio que mandaste!</q></ab>
+						<ab xml:id="b.SAL.7.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">Te rodeará una congregación de <rs key="org0">pueblos</rs> y sobre ella vuélvete a sentar en alto.</q></ab>
+						<ab xml:id="b.SAL.7.8" type="verse" n="8"><q who="per35" corresp="per14" type="prayer"><rs key="per14">Jehová</rs> juzgará a los <rs key="org0">pueblos</rs>. Júzgame, <rs key="per14">Jehová</rs>, conforme a mi justicia y conforme a mi integridad.</q></ab>
+						<ab xml:id="b.SAL.7.9" type="verse" n="9"><q who="per35" corresp="per14" type="prayer">Termine ahora la maldad de los <rs key="org19">malvados</rs>, mas establece tú al <rs key="org18">justo</rs>, porque el <rs key="#per14">Dios justo</rs> prueba la mente y el corazón.</q></ab>
+						<ab xml:id="b.SAL.7.10" type="verse" n="10">Mi escudo está en <rs key="#per14">Dios</rs>, que salva a los <rs key="org18">rectos de corazón</rs>.</ab>
+						<ab xml:id="b.SAL.7.11" type="verse" n="11"><rs key="#per14">Dios</rs> es <rs key="per14">juez justo</rs>; y <rs key="#per14">Dios</rs> está airado contra el <rs key="org19">impío</rs> todos los días.</ab>
+						<ab xml:id="b.SAL.7.12" type="verse" n="12">Si no se arrepiente, él afilará su espada; armado tiene ya su arco y lo ha preparado.</ab>
+						<ab xml:id="b.SAL.7.13" type="verse" n="13">Asimismo ha preparado armas de muerte y ha hecho saetas ardientes.</ab>
+						<ab xml:id="b.SAL.7.14" type="verse" n="14">El <rs key="org19">impío</rs> concibió maldad, se preñó de iniquidad y dio a luz engaño.</ab>
+						<ab xml:id="b.SAL.7.15" type="verse" n="15">Pozo ha cavado y lo ha ahondado; pero en el hoyo que hizo, caerá.</ab>
+						<ab xml:id="b.SAL.7.16" type="verse" n="16">¡Su iniquidad recaerá sobre su cabeza y su agravio caerá sobre su propia coronilla!</ab>
+						<ab xml:id="b.SAL.7.17" type="verse" n="17">Alabaré a <rs key="per14">Jehová</rs> conforme a su justicia y cantaré al nombre de <rs key="per14">Jehová</rs>, el <rs key="per14">Altísimo</rs>.</ab>
+					</div>
 
-</div>
-<div xml:id="b.SAL.8" type="chapter" n="8" cert="high">
-    <div>
-        <head>La gloria de Dios y la honra del hombre</head>
-            <head>Al músico principal; sobre Gitit. Salmo de David</head>
-<ab xml:id="b.SAL.8.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">¡<rs key="per14">Jehová</rs>, <rs key="per14">Señor</rs> nuestro, cuán grande es tu nombre en toda la <rs key="#pla41">tierra</rs>! ¡Has puesto tu gloria sobre los <rs key="pla18">cielos</rs>!</q></ab>
-        <ab xml:id="b.SAL.8.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">De la boca de los niños y de los que aún maman, fundaste la fortaleza a causa de tus <rs key="org18">enemigos</rs>, para hacer callar al <rs key="org18">enemigo</rs> y al <rs key="org18">vengativo</rs>.</q></ab>
-<ab xml:id="b.SAL.8.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer">Cuando veo tus cielos, obra de tus dedos, la luna y las estrellas que tú formaste,</q></ab>
-        <ab xml:id="b.SAL.8.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">digo: <q who="per35" corresp="per35" type="oral">«¿Qué es el hombre para que tengas de él memoria, y el hijo del hombre para que lo visites?».</q></q></ab>
-<ab xml:id="b.SAL.8.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">Lo has hecho poco menor que los <rs key="#org4">ángeles</rs> y lo coronaste de gloria y de honra.</q></ab>
-        <ab xml:id="b.SAL.8.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Lo hiciste señorear sobre las obras de tus manos; todo lo pusiste debajo de sus pies:,</q></ab>
-        <ab xml:id="b.SAL.8.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">ovejas y bueyes, todo ello, y asimismo las bestias del campo,</q></ab>
-        <ab xml:id="b.SAL.8.8" type="verse" n="8"><q who="per35" corresp="per14" type="prayer">las aves del <rs key="#pla18">cielo</rs> y los peces del mar; ¡todo cuanto pasa por los senderos del mar!</q></ab>
-<ab xml:id="b.SAL.8.9" type="verse" n="9"><q who="per35" corresp="per14" type="prayer">¡<rs key="per14">Jehová</rs>, <rs key="per14">Señor</rs> nuestro, cuán grande es tu nombre en toda la <rs key="#pla41">tierra</rs>!</q></ab>
-    </div>
+				</div>
+				<div xml:id="b.SAL.8" type="chapter" n="8" cert="high">
+					<div>
+						<head>La gloria de Dios y la honra del hombre</head>
+						<head>Al músico principal; sobre Gitit. Salmo de David</head>
+						<ab xml:id="b.SAL.8.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">¡<rs key="per14">Jehová</rs>, <rs key="per14">Señor</rs> nuestro, cuán grande es tu nombre en toda la <rs key="#pla41">tierra</rs>! ¡Has puesto tu gloria sobre los <rs key="pla18">cielos</rs>!</q></ab>
+						<ab xml:id="b.SAL.8.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">De la boca de los niños y de los que aún maman, fundaste la fortaleza a causa de tus <rs key="org18">enemigos</rs>, para hacer callar al <rs key="org18">enemigo</rs> y al <rs key="org18">vengativo</rs>.</q></ab>
+						<ab xml:id="b.SAL.8.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer">Cuando veo tus cielos, obra de tus dedos, la luna y las estrellas que tú formaste,</q></ab>
+						<ab xml:id="b.SAL.8.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">digo: <q who="per35" corresp="per35" type="oral">«¿Qué es el hombre para que tengas de él memoria, y el hijo del hombre para que lo visites?».</q></q></ab>
+						<ab xml:id="b.SAL.8.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">Lo has hecho poco menor que los <rs key="#org4">ángeles</rs> y lo coronaste de gloria y de honra.</q></ab>
+						<ab xml:id="b.SAL.8.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Lo hiciste señorear sobre las obras de tus manos; todo lo pusiste debajo de sus pies:,</q></ab>
+						<ab xml:id="b.SAL.8.7" type="verse" n="7"><q who="per35" corresp="per14" type="prayer">ovejas y bueyes, todo ello, y asimismo las bestias del campo,</q></ab>
+						<ab xml:id="b.SAL.8.8" type="verse" n="8"><q who="per35" corresp="per14" type="prayer">las aves del <rs key="#pla18">cielo</rs> y los peces del mar; ¡todo cuanto pasa por los senderos del mar!</q></ab>
+						<ab xml:id="b.SAL.8.9" type="verse" n="9"><q who="per35" corresp="per14" type="prayer">¡<rs key="per14">Jehová</rs>, <rs key="per14">Señor</rs> nuestro, cuán grande es tu nombre en toda la <rs key="#pla41">tierra</rs>!</q></ab>
+					</div>
 
-</div>
-<div xml:id="b.SAL.9" type="chapter" n="9">
-<ab xml:id="b.SAL.9.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">Te alabaré, <rs key="per14">Jehová</rs>, con todo mi corazón. Contaré todas tus maravillas.</q></ab>
-<ab xml:id="b.SAL.9.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">Me alegraré y me regocijaré en ti; cantaré a tu nombre, <rs key="per14">Altísimo</rs>.</q></ab>
-    <ab xml:id="b.SAL.9.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer">Mis <rs key="org101">enemigos</rs> se volvieron atrás; cayeron y perecieron delante de ti.</q></ab>
-<ab xml:id="b.SAL.9.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">Has mantenido mi derecho y mi causa; te has sentado en el trono juzgando con justicia.</q></ab>
-    <ab xml:id="b.SAL.9.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">Reprendiste a las <rs key="org0">naciones</rs>, destruiste al <rs key="org19">malo</rs>; ¡borraste el nombre de ellos eternamente y para siempre!</q></ab>
-    <ab xml:id="b.SAL.9.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Los <rs key="per101">enemigos</rs> han perecido; han quedado desolados para siempre; y las ciudades que derribaste, su memoria pereció con ellas.</q></ab>
-<ab xml:id="b.SAL.9.7" type="verse" n="7">Pero <rs key="per14">Jehová</rs> permanecerá para siempre; ha dispuesto su trono para juicio.</ab>
-<ab xml:id="b.SAL.9.8" type="verse" n="8">Él juzgará al <rs key="pla41">mundo</rs> con justicia y a los <rs key="org0">pueblos</rs> con rectitud.</ab>
-    <ab xml:id="b.SAL.9.9" type="verse" n="9"><rs key="per14">Jehová</rs> será <rs key="per14">refugio del <rs key="org102">pobre</rs></rs>, <rs key="per14">refugio para el tiempo de angustia</rs>.</ab>
-<ab xml:id="b.SAL.9.10" type="verse" n="10"><q who="per35" corresp="per14" type="prayer">En ti confiarán los que conocen tu nombre, por cuanto tú, <rs key="per14">Jehová</rs>, no desamparaste a los que te buscaron.</q></ab>
-    <ab xml:id="b.SAL.9.11" type="verse" n="11"><q who="per35" corresp="org0" type="prayer">Cantad a <rs key="per14">Jehová</rs>, que habita en <rs key="#pla72">Sión</rs>; publicad entre los <rs key="org0">pueblos</rs> sus obras.</q></ab>
-<ab xml:id="b.SAL.9.12" type="verse" n="12">El que demanda la sangre se acordó de ellos; no se olvidó del clamor de los afligidos.</ab>
-<ab xml:id="b.SAL.9.13" type="verse" n="13"><q who="per35" corresp="per14" type="prayer">Ten misericordia de mí, <rs key="per14">Jehová</rs>; mira la aflicción que padezco a causa de los que me aborrecen, tú, que me levantas de las puertas de la muerte</q></ab>
-<ab xml:id="b.SAL.9.14" type="verse" n="14"><q who="per35" corresp="per14" type="prayer">para que cuente todas tus alabanzas a las puertas de <rs key="#pla72">Sión</rs>, y me goce en tu salvación.</q></ab>
-    <ab xml:id="b.SAL.9.15" type="verse" n="15">Se hundieron las <rs key="org0">naciones</rs> en el hoyo que hicieron; en la red que escondieron fue atrapado su pie.</ab>
-<ab xml:id="b.SAL.9.16" type="verse" n="16"><rs key="per14">Jehová</rs> se ha hecho conocer en el juicio que ejecutó; en la obra de sus manos fue enlazado el malo. <hi rend="italic">{i Higaión. Selah}</hi></ab>
-    <ab xml:id="b.SAL.9.17" type="verse" n="17">Los <rs key="org19">malos</rs> serán trasladados al <rs key="pla15">seol</rs>, todas las <rs key="org0">naciones</rs> que se olvidan de <rs key="#per14">Dios</rs>.</ab>
-    <ab xml:id="b.SAL.9.18" type="verse" n="18">El <rs key="org102">menesteroso</rs> no para siempre será olvidado, ni la esperanza de los <rs key="org102">pobres</rs> perecerá perpetuamente.</ab>
-    <ab xml:id="b.SAL.9.19" type="verse" n="19"><q who="per35" corresp="per14" type="prayer">Levántate, <rs key="per14">Jehová</rs>; no se fortalezca el <rs key="org0">hombre</rs>; sean juzgadas las <rs key="org0">naciones</rs> delante de ti.</q></ab>
-    <ab xml:id="b.SAL.9.20" type="verse" n="20"><q who="per35" corresp="per14" type="prayer">Infunde, <rs key="per14">Jehová</rs>, tu temor en ellos; ¡conozcan las <rs key="org0">naciones</rs> que no son sino <rs key="org0">hombres</rs>! </q> <hi rend="italic">Selah</hi></ab>
+				</div>
+				<div xml:id="b.SAL.9" type="chapter" n="9" cert="high">
+					<div>
+						<head>Acción de gracias por la justicia de Dios</head>
+						<head>Al músico principal; sobre Mut-labén. Salmo de David</head>
+						<ab xml:id="b.SAL.9.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">Te alabaré, <rs key="per14">Jehová</rs>, con todo mi corazón. Contaré todas tus maravillas.</q></ab>
+						<ab xml:id="b.SAL.9.2" type="verse" n="2"><q who="per35" corresp="per14" type="prayer">Me alegraré y me regocijaré en ti; cantaré a tu nombre, <rs key="per14">Altísimo</rs>.</q></ab>
+						<ab xml:id="b.SAL.9.3" type="verse" n="3"><q who="per35" corresp="per14" type="prayer">Mis <rs key="org101">enemigos</rs> se volvieron atrás; cayeron y perecieron delante de ti.</q></ab>
+						<ab xml:id="b.SAL.9.4" type="verse" n="4"><q who="per35" corresp="per14" type="prayer">Has mantenido mi derecho y mi causa; te has sentado en el trono juzgando con justicia.</q></ab>
+						<ab xml:id="b.SAL.9.5" type="verse" n="5"><q who="per35" corresp="per14" type="prayer">Reprendiste a las <rs key="org0">naciones</rs>, destruiste al <rs key="org19">malo</rs>; ¡borraste el nombre de ellos eternamente y para siempre!</q></ab>
+						<ab xml:id="b.SAL.9.6" type="verse" n="6"><q who="per35" corresp="per14" type="prayer">Los <rs key="per101">enemigos</rs> han perecido; han quedado desolados para siempre; y las ciudades que derribaste, su memoria pereció con ellas.</q></ab>
+						<ab xml:id="b.SAL.9.7" type="verse" n="7">Pero <rs key="per14">Jehová</rs> permanecerá para siempre; ha dispuesto su trono para juicio.</ab>
+						<ab xml:id="b.SAL.9.8" type="verse" n="8">Él juzgará al <rs key="pla41">mundo</rs> con justicia y a los <rs key="org0">pueblos</rs> con rectitud.</ab>
+						<ab xml:id="b.SAL.9.9" type="verse" n="9"><rs key="per14">Jehová</rs> será <rs key="per14">refugio del <rs key="org102">pobre</rs></rs>, <rs key="per14">refugio para el tiempo de angustia</rs>.</ab>
+						<ab xml:id="b.SAL.9.10" type="verse" n="10"><q who="per35" corresp="per14" type="prayer">En ti confiarán los que conocen tu nombre, por cuanto tú, <rs key="per14">Jehová</rs>, no desamparaste a los que te buscaron.</q></ab>
+						<ab xml:id="b.SAL.9.11" type="verse" n="11"><q who="per35" corresp="org0" type="prayer">Cantad a <rs key="per14">Jehová</rs>, que habita en <rs key="#pla72">Sión</rs>; publicad entre los <rs key="org0">pueblos</rs> sus obras.</q></ab>
+						<ab xml:id="b.SAL.9.12" type="verse" n="12">El que demanda la sangre se acordó de ellos; no se olvidó del clamor de los afligidos.</ab>
+						<ab xml:id="b.SAL.9.13" type="verse" n="13"><q who="per35" corresp="per14" type="prayer">Ten misericordia de mí, <rs key="per14">Jehová</rs>; mira la aflicción que padezco a causa de los que me aborrecen, tú, que me levantas de las puertas de la muerte</q></ab>
+						<ab xml:id="b.SAL.9.14" type="verse" n="14"><q who="per35" corresp="per14" type="prayer">para que cuente todas tus alabanzas a las puertas de <rs key="#pla72">Sión</rs>, y me goce en tu salvación.</q></ab>
+						<ab xml:id="b.SAL.9.15" type="verse" n="15">Se hundieron las <rs key="org0">naciones</rs> en el hoyo que hicieron; en la red que escondieron fue atrapado su pie.</ab>
+						<ab xml:id="b.SAL.9.16" type="verse" n="16"><rs key="per14">Jehová</rs> se ha hecho conocer en el juicio que ejecutó; en la obra de sus manos fue enlazado el <rs key="org18">malo</rs>. <hi rend="italic">{i Higaión. Selah}</hi></ab>
+						<ab xml:id="b.SAL.9.17" type="verse" n="17">Los <rs key="org19">malos</rs> serán trasladados al <rs key="pla15">seol</rs>, todas las <rs key="org0">naciones</rs> que se olvidan de <rs key="#per14">Dios</rs>.</ab>
+						<ab xml:id="b.SAL.9.18" type="verse" n="18">El <rs key="org102">menesteroso</rs> no para siempre será olvidado, ni la esperanza de los <rs key="org102">pobres</rs> perecerá perpetuamente.</ab>
+						<ab xml:id="b.SAL.9.19" type="verse" n="19"><q who="per35" corresp="per14" type="prayer">Levántate, <rs key="per14">Jehová</rs>; no se fortalezca el <rs key="org0">hombre</rs>; sean juzgadas las <rs key="org0">naciones</rs> delante de ti.</q></ab>
+						<ab xml:id="b.SAL.9.20" type="verse" n="20"><q who="per35" corresp="per14" type="prayer">Infunde, <rs key="per14">Jehová</rs>, tu temor en ellos; ¡conozcan las <rs key="org0">naciones</rs> que no son sino <rs key="org0">hombres</rs>! </q> <hi rend="italic">Selah</hi></ab>
+					</div>
+				</div>
+				<div xml:id="b.SAL.10" type="chapter" n="10" cert="high">
+					<div>
+						<head>Plegaria pidiendo la destrucción de los malvados</head>
+						<ab xml:id="b.SAL.10.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">¿Por qué estás lejos, <rs key="per14">Jehová</rs>, y te escondes en el tiempo de la tribulación?</q></ab>
+						<ab xml:id="b.SAL.10.2" type="verse" n="2">Con arrogancia, el <rs key="org19">malo</rs> persigue al <rs key="org102">pobre</rs>; será atrapado en las trampas que ha preparado.</ab>
+						<ab xml:id="b.SAL.10.3" type="verse" n="3">El <rs key="org19">malo</rs> se jacta del deseo de su alma, bendice al <rs key="org19">codicioso</rs> y desprecia a <rs key="per14">Jehová</rs>;</ab>
+						<ab xml:id="b.SAL.10.4" type="verse" n="4">el <rs key="org19">malo</rs>, por la altivez de su rostro, no busca a <rs key="#per14">Dios</rs>; no hay <rs key="#per14">Dios</rs> en ninguno de sus pensamientos.</ab>
+						<ab xml:id="b.SAL.10.5" type="verse" n="5">Sus caminos son torcidos en todo tiempo; tus juicios los tiene muy lejos de su vista; a todos sus adversarios desprecia.</ab>
+						<ab xml:id="b.SAL.10.6" type="verse" n="6">Dice en su corazón: <q who="org19" corresp="org19" type="prayer">«No caeré jamás; nunca me alcanzará la desgracia».</q></ab>
+						<ab xml:id="b.SAL.10.7" type="verse" n="7">Llena está su boca de maldición y de engaños y fraude; debajo de su lengua hay insulto y maldad.</ab>
+						<ab xml:id="b.SAL.10.8" type="verse" n="8">Se sienta al acecho cerca de las aldeas; en escondrijos mata al <rs key="org0">inocente</rs>. Sus ojos están acechando al <rs key="org102">desvalido</rs>,</ab>
+						<ab xml:id="b.SAL.10.9" type="verse" n="9">acecha en oculto, como el <rs key="org19">león</rs> desde su cueva; acecha para atrapar al <rs key="org102">pobre</rs>; atrapa al <rs key="org102">pobre</rs> trayéndolo a su red.</ab>
+						<ab xml:id="b.SAL.10.10" type="verse" n="10">Se encoge, se agacha, y caen en sus fuertes garras muchos <rs key="org102">desdichados</rs>.</ab>
+						<ab xml:id="b.SAL.10.11" type="verse" n="11">Dice en su corazón: <q who="org19" corresp="org19" type="prayer">«<rs key="#per14">Dios</rs> lo olvida; cubre su rostro, nunca ve nada».</q></ab>
+						<ab xml:id="b.SAL.10.12" type="verse" n="12"><q who="per35" corresp="per14" type="prayer">¡Levántate, <rs key="per14">Jehová</rs> <rs key="#per14">Dios</rs>, alza tu mano! ¡No te olvides de los <rs key="org102">pobres</rs>!</q></ab>
+						<ab xml:id="b.SAL.10.13" type="verse" n="13">¿Por qué desprecia el <rs key="org19">malo</rs> a <rs key="#per14">Dios</rs>? En su corazón ha dicho: <q who="org19" corresp="per14" type="prayer">«Tú no habrás de pedir cuentas».</q></ab>
+						<ab xml:id="b.SAL.10.14" type="verse" n="14"><q who="per35" corresp="per14" type="prayer">Tú lo has visto, porque miras el trabajo y la vejación, para dar la recompensa con tu mano; a ti se acoge el <rs key="org102">desvalido</rs>; tú eres el <rs key="per14">amparo del <rs key="org102">huérfano</rs></rs>.</q></ab>
+						<ab xml:id="b.SAL.10.15" type="verse" n="15"><q who="per35" corresp="per14" type="prayer">¡Rompe el brazo del <rs key="org19">inicuo</rs> y castiga la maldad del <rs key="org19">malo</rs> hasta que no halles ninguna!</q></ab>
+						<ab xml:id="b.SAL.10.16" type="verse" n="16"><rs key="per14">Jehová</rs> es <rs key="per14">Rey</rs> eternamente y para siempre; de su <rs key="#pla4" cert="low">tierra</rs> desaparecerán las <rs key="org0"></rs>.</ab>
+						<ab xml:id="b.SAL.10.17" type="verse" n="17"><q who="per35" corresp="per14" type="prayer">El deseo de los <rs key="org102">humildes</rs> oíste, <rs key="per14">Jehová</rs>; tú los animas y les prestas atención.</q></ab>
+						<ab xml:id="b.SAL.10.18" type="verse" n="18"><q who="per35" corresp="per14" type="prayer">Tú haces justicia al <rs key="org102">huérfano</rs> y al <rs key="org102">oprimido</rs>, a fin de que no vuelva más a hacer violencia el <rs key="org0">hombre de la <rs key="#pla41">tierra</rs></rs>.</q></ab>
+					</div>
+				</div>
 
-</div>
-<div xml:id="b.SAL.10" type="chapter" n="10">
-<ab xml:id="b.SAL.10.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">¿Por qué estás lejos, <rs key="per14">Jehová</rs>, y te escondes en el tiempo de la tribulación?</q></ab>
-    <ab xml:id="b.SAL.10.2" type="verse" n="2">Con arrogancia, el <rs key="org19">malo</rs> persigue al <rs key="org102">pobre</rs>; será atrapado en las trampas que ha preparado.</ab>
-    <ab xml:id="b.SAL.10.3" type="verse" n="3">El <rs key="org19">malo</rs> se jacta del deseo de su alma, bendice al <rs key="org19">codicioso</rs> y desprecia a <rs key="per14">Jehová</rs>;</ab>
-    <ab xml:id="b.SAL.10.4" type="verse" n="4">el <rs key="org19">malo</rs>, por la altivez de su rostro, no busca a <rs key="#per14">Dios</rs>; no hay <rs key="#per14">Dios</rs> en ninguno de sus pensamientos.</ab>
-<ab xml:id="b.SAL.10.5" type="verse" n="5">Sus caminos son torcidos en todo tiempo; tus juicios los tiene muy lejos de su vista; a todos sus adversarios desprecia.</ab>
-    <ab xml:id="b.SAL.10.6" type="verse" n="6">Dice en su corazón: <q who="org19" corresp="org19" type="prayer">«No caeré jamás; nunca me alcanzará la desgracia».</q></ab>
-<ab xml:id="b.SAL.10.7" type="verse" n="7">Llena está su boca de maldición y de engaños y fraude; debajo de su lengua hay insulto y maldad.</ab>
-    <ab xml:id="b.SAL.10.8" type="verse" n="8">Se sienta al acecho cerca de las aldeas; en escondrijos mata al <rs key="org0">inocente</rs>. Sus ojos están acechando al <rs key="org102">desvalido</rs>,</ab>
-    <ab xml:id="b.SAL.10.9" type="verse" n="9">acecha en oculto, como el <rs key="org19">león</rs> desde su cueva; acecha para atrapar al <rs key="org102">pobre</rs>; atrapa al <rs key="org102">pobre</rs> trayéndolo a su red.</ab>
-    <ab xml:id="b.SAL.10.10" type="verse" n="10">Se encoge, se agacha, y caen en sus fuertes garras muchos <rs key="org102">desdichados</rs>.</ab>
-    <ab xml:id="b.SAL.10.11" type="verse" n="11">Dice en su corazón: <q who="org19" corresp="org19" type="prayer">«<rs key="#per14">Dios</rs> lo olvida; cubre su rostro, nunca ve nada».</q></ab>
-    <ab xml:id="b.SAL.10.12" type="verse" n="12"><q who="per35" corresp="per14" type="prayer">¡Levántate, <rs key="per14">Jehová</rs> <rs key="#per14">Dios</rs>, alza tu mano! ¡No te olvides de los <rs key="org102">pobres</rs>!</q></ab>
-    <ab xml:id="b.SAL.10.13" type="verse" n="13">¿Por qué desprecia el <rs key="org19">malo</rs> a <rs key="#per14">Dios</rs>? En su corazón ha dicho: <q who="org19" corresp="per14" type="prayer">«Tú no habrás de pedir cuentas».</q></ab>
-    <ab xml:id="b.SAL.10.14" type="verse" n="14"><q who="per35" corresp="per14" type="prayer">Tú lo has visto, porque miras el trabajo y la vejación, para dar la recompensa con tu mano; a ti se acoge el <rs key="org102">desvalido</rs>; tú eres el <rs key="per14">amparo del <rs key="org102">huérfano</rs></rs>.</q></ab>
-    <ab xml:id="b.SAL.10.15" type="verse" n="15"><q who="per35" corresp="per14" type="prayer">¡Rompe el brazo del <rs key="org19">inicuo</rs> y castiga la maldad del <rs key="org19">malo</rs> hasta que no halles ninguna!</q></ab>
-<ab xml:id="b.SAL.10.16" type="verse" n="16"><rs key="per14">Jehová</rs> es <rs key="per14">Rey</rs> eternamente y para siempre; de su <rs key="#pla4" cert="low">tierra</rs> desaparecerán las <rs key="org0"></rs>.</ab>
-    <ab xml:id="b.SAL.10.17" type="verse" n="17"><q who="per35" corresp="per14" type="prayer">El deseo de los <rs key="org102">humildes</rs> oíste, <rs key="per14">Jehová</rs>; tú los animas y les prestas atención.</q></ab>
-    <ab xml:id="b.SAL.10.18" type="verse" n="18"><q who="per35" corresp="per14" type="prayer">Tú haces justicia al <rs key="org102">huérfano</rs> y al <rs key="org102">oprimido</rs>, a fin de que no vuelva más a hacer violencia el <rs key="org0">hombre de la <rs key="#pla41">tierra</rs></rs>.</q></ab>
 
-</div>
-    </div>
-</body>
-        
-    </text>
-    </TEI>
+				<div xml:id="b.SAL.11" type="chapter" n="11" cert="high">
+					<div>
+						<head>El refugio del justo</head>
+							<head>Al músico principal. Salmo de David</head>
+					<ab xml:id="b.SAL.11.1" type="verse" n="1"><q who="per35" corresp="org0" type="oral">En <rs key="per14">Jehová</rs> he confiado; ¿cómo decís a mi alma que escape al monte cual ave?,</q></ab>
+					<ab xml:id="b.SAL.11.2" type="verse" n="2"><q who="per35" corresp="org0" type="oral">porque los <rs key="org19">malos</rs> tienden el arco, disponen sus saetas sobre la cuerda, para lanzarlas en oculto a los rectos de corazón.</q></ab>
+					<ab xml:id="b.SAL.11.3" type="verse" n="3">Si son destruidos los fundamentos, ¿qué puede hacer el <rs key="org18">justo</rs>?</ab>
+					<ab xml:id="b.SAL.11.4" type="verse" n="4"><rs key="per14">Jehová</rs> está en su <rs key="pla30" cert="medium">santo Templo</rs>; <rs key="per14">Jehová</rs> tiene en el <rs key="#pla18">cielo</rs> su trono; sus ojos observan, sus párpados examinan a los <rs key="org0">hijos de los <rs key="org0">hombres</rs></rs>.</ab>
+					<ab xml:id="b.SAL.11.5" type="verse" n="5"><rs key="per14">Jehová</rs> prueba al <rs key="org18">justo</rs>; pero al <rs key="org18">malo</rs> y al que ama la violencia los repudia su alma.</ab>
+					<ab xml:id="b.SAL.11.6" type="verse" n="6">Sobre los <rs key="org18">malos</rs> hará llover calamidades; fuego, azufre y viento abrasador serán la porción de su copa.</ab>
+					<ab xml:id="b.SAL.11.7" type="verse" n="7">Porque <rs key="per14">Jehová</rs> es <rs key="per14">justo</rs> y ama la justicia, el <rs key="org18">hombre recto</rs> verá su rostro.</ab>
+				</div>
+				</div>
+				<div xml:id="b.SAL.12" type="chapter" n="12" cert="high">
+					<div>
+					<head>Oración pidiendo ayuda contra los malos</head>
+					<head>Al músico principal; sobre Seminit. Salmo de David</head>
+						<ab xml:id="b.SAL.12.1" type="verse" n="1"><q who="per35" corresp="per14" type="prayer">Salva, <rs key="per14">Jehová</rs>, porque se acabaron los <rs key="org18">piadosos</rs>, porque han desaparecido los <rs key="org18">fieles</rs> de entre los <rs key="org0">hijos de los <rs key="org0">hombres</rs></rs>.</q></ab>
+					<ab xml:id="b.SAL.12.2" type="verse" n="2">Habla mentira cada cual con su prójimo; adulan con los labios, pero con doblez de corazón.</ab>
+					<ab xml:id="b.SAL.12.3" type="verse" n="3"><rs key="per14">Jehová</rs> destruirá todos los labios aduladores, y la lengua que habla con jactancia;</ab>
+					<ab xml:id="b.SAL.12.4" type="verse" n="4">a los que han dicho: <q who="org19" corresp="org19" type="soCalled">«Por nuestra lengua prevaleceremos, nuestros labios son nuestros, ¿quién es <rs key="per">señor</rs> de nosotros?».</q></ab>
+						<ab xml:id="b.SAL.12.5" type="verse" n="5"><q who="per14" corresp="org0" type="oral">«Por la opresión de los <rs key="#org102">pobres</rs>, por el gemido de los <rs key="#org102">necesitados</rs>, ahora me levantaré</q> dice <rs key="per14">Jehová</rs>, <q who="per14" corresp="org0" type="oral">pondré a salvo al que por ello suspira».</q></ab>
+					<ab xml:id="b.SAL.12.6" type="verse" n="6">Las palabras de <rs key="per14">Jehová</rs> son palabras limpias, como plata refinada en horno de barro, purificada siete veces.</ab>
+					<ab xml:id="b.SAL.12.7" type="verse" n="7">Tú, <rs key="per14">Jehová</rs>, los guardarás; de esta generación los preservarás para siempre.</ab>
+					<ab xml:id="b.SAL.12.8" type="verse" n="8">Rondando andan los <rs key="org18">malos</rs> cuando la infamia es enaltecida entre los <rs key="org0">hijos de los <rs key="org0">hombres</rs></rs>.</ab>
+					</div>
+				</div>
+				<div xml:id="b.SAL.13" type="chapter" n="13">
+					<ab xml:id="b.SAL.13.1" type="verse" n="1"><q who="per" corresp="per" type="oral">¿Hasta cuándo, <rs key="per14">Jehová</rs>? ¿Me olvidarás para siempre? ¿Hasta cuándo esconderás tu rostro de mí?</q></ab>
+					<ab xml:id="b.SAL.13.2" type="verse" n="2"><q who="per" corresp="per" type="oral">¿Hasta cuándo tendré conflictos en mi alma, con angustias en mi corazón cada día? ¿Hasta cuándo será enaltecido mi <rs key="org18">enemigo</rs> sobre mí?</q></ab>
+					<ab xml:id="b.SAL.13.3" type="verse" n="3">Mira, respóndeme, <rs key="per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío; alumbra mis ojos, para que no duerma de muerte,</ab>
+					<ab xml:id="b.SAL.13.4" type="verse" n="4"><q who="per" corresp="per" type="oral">para que no diga mi <rs key="org18">enemigo</rs>: «Lo vencí». Mis <rs key="#org101">enemigos</rs> se alegrarán si yo resbalo.</q></ab>
+					<ab xml:id="b.SAL.13.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Mas yo en tu misericordia he confiado; mi corazón se alegrará en tu salvación.</q></ab>
+					<ab xml:id="b.SAL.13.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Cantaré a <rs key="per14">Jehová</rs> porque me ha hecho bien.</q></ab>
+
+				</div>
+				<div xml:id="b.SAL.14" type="chapter" n="14">
+					<ab xml:id="b.SAL.14.1" type="verse" n="1">Dice el necio en su corazón: «No hay <rs key="#per14">Dios</rs>». Se han corrompido, hacen obras despreciables, no hay quien haga lo bueno.</ab>
+					<ab xml:id="b.SAL.14.2" type="verse" n="2"><rs key="per14">Jehová</rs> miró desde los cielos sobre los <rs key="org0">hijos de los <rs key="org0">hombres</rs></rs>, para ver si había algún entendido que buscara a <rs key="#per14">Dios</rs>.</ab>
+					<ab xml:id="b.SAL.14.3" type="verse" n="3">Todos se desviaron, a una se han corrompido; no hay quien haga lo bueno, no hay ni siquiera uno.</ab>
+					<ab xml:id="b.SAL.14.4" type="verse" n="4"><q who="per" corresp="per" type="oral">¿No tienen discernimiento todos los que cometen maldad, que devoran a mi <rs key="org">pueblo</rs> como si comieran pan y no invocan a <rs key="per14">Jehová</rs>?</q></ab>
+					<ab xml:id="b.SAL.14.5" type="verse" n="5">Ellos temblarán de espanto, porque <rs key="#per14">Dios</rs> está con la generación de los <rs key="org18">justos</rs>.</ab>
+					<ab xml:id="b.SAL.14.6" type="verse" n="6">De los planes del pobre se han burlado, pero <rs key="per14">Jehová</rs> es su esperanza.</ab>
+					<ab xml:id="b.SAL.14.7" type="verse" n="7">¡Ah, si de <rs key="#pla72">Sión</rs> viniera la salvación de <rs key="#pla4">Israel</rs>! Cuando <rs key="per14">Jehová</rs> haga volver a los cautivos de su <rs key="org">pueblo</rs>, se gozará <rs key="#per4">Jacob</rs>, se alegrará <rs key="#pla4">Israel</rs>.</ab>
+
+				</div>
+				<div xml:id="b.SAL.15" type="chapter" n="15">
+					<ab xml:id="b.SAL.15.1" type="verse" n="1"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs>, ¿quién habitará en tu <rs key="per">Tabernáculo</rs>?, ¿quién morará en tu monte santo?</q></ab>
+					<ab xml:id="b.SAL.15.2" type="verse" n="2">El que anda en integridad y hace justicia; el que habla verdad en su corazón;</ab>
+					<ab xml:id="b.SAL.15.3" type="verse" n="3">el que no calumnia con su lengua ni hace mal a su prójimo ni admite reproche alguno contra su vecino;</ab>
+					<ab xml:id="b.SAL.15.4" type="verse" n="4">aquel a cuyos ojos el indigno es menospreciado, pero honra a los que temen a <rs key="per14">Jehová</rs>; el que aun jurando en perjuicio propio, no por eso cambia;</ab>
+					<ab xml:id="b.SAL.15.5" type="verse" n="5">quien su dinero no dio a usura ni contra el inocente admitió soborno. El que hace estas cosas, no resbalará jamás.</ab>
+
+				</div>
+				<div xml:id="b.SAL.16" type="chapter" n="16">
+					<ab xml:id="b.SAL.16.1" type="verse" n="1"><q who="per" corresp="per" type="oral">Guárdame, <rs key="#per14">Dios</rs>, porque en ti he confiado.</q></ab>
+					<ab xml:id="b.SAL.16.2" type="verse" n="2">Alma mía, dijiste a <rs key="per14">Jehová</rs>:  <q who="per14" corresp="per" type="oral">«Tú eres mi <rs key="per">Señor</rs>; no hay para mí bien fuera de ti».</q></ab>
+					<ab xml:id="b.SAL.16.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Para los santos que están en la <rs key="#pla41">tierra</rs> y para los íntegros es toda mi complacencia.</q></ab>
+					<ab xml:id="b.SAL.16.4" type="verse" n="4"><q who="per" corresp="per" type="oral">Se multiplicarán los dolores de aquellos que sirven diligentes a otro dios., <rs key="per">No</rs> ofreceré yo sus libaciones de sangre ni en mis labios tomaré sus nombres.</q></ab>
+					<ab xml:id="b.SAL.16.5" type="verse" n="5"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs> es la porción de mi herencia y de mi copa; tú aseguras mi suerte.</q></ab>
+					<ab xml:id="b.SAL.16.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Las cuerdas me cayeron en <rs key="pla">lugares</rs> deleitosos y es hermosa la heredad que me ha tocado.</q></ab>
+					<ab xml:id="b.SAL.16.7" type="verse" n="7"><q who="per" corresp="per" type="oral">Bendeciré a <rs key="per14">Jehová</rs> que me aconseja; aun en las noches me enseña mi conciencia.</q></ab>
+					<ab xml:id="b.SAL.16.8" type="verse" n="8"><q who="per" corresp="per" type="oral">A <rs key="per14">Jehová</rs> he puesto siempre delante de mí; porque está a mi diestra, no seré conmovido.</q></ab>
+					<ab xml:id="b.SAL.16.9" type="verse" n="9"><q who="per" corresp="per" type="oral">Se alegró por tanto mi corazón y se gozó mi alma; mi carne también descansará confiadamente,</q></ab>
+					<ab xml:id="b.SAL.16.10" type="verse" n="10"><q who="per" corresp="per" type="oral">porque no dejarás mi alma en el seol, ni permitirás que tu santo vea corrupción.</q></ab>
+					<ab xml:id="b.SAL.16.11" type="verse" n="11"><q who="per" corresp="per" type="oral">Me mostrarás la senda de la vida; en tu presencia hay plenitud de gozo, delicias a tu diestra para siempre.,</q></ab>
+
+				</div>
+				<div xml:id="b.SAL.17" type="chapter" n="17">
+					<ab xml:id="b.SAL.17.1" type="verse" n="1"><q who="per" corresp="per" type="oral">Oye, <rs key="per14">Jehová</rs>, una causa justa; atiende a mi clamor. Escucha mi oración hecha de labios sin engaño.</q></ab>
+					<ab xml:id="b.SAL.17.2" type="verse" n="2"><q who="per" corresp="per" type="oral">De tu presencia proceda mi defensa; vean tus ojos la rectitud.</q></ab>
+					<ab xml:id="b.SAL.17.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Tú has probado mi corazón, me has visitado de noche; me has puesto a prueba y nada malo hallaste. He resuelto que mi boca no cometa delito.</q></ab>
+					<ab xml:id="b.SAL.17.4" type="verse" n="4"><q who="per" corresp="per" type="oral">En cuanto a las obras humanas, por la palabra de tus labios yo me he guardado de las sendas de los violentos.</q></ab>
+					<ab xml:id="b.SAL.17.5" type="verse" n="5">Afirma mis pasos en tus caminos, para que mis pies no resbalen.</ab>
+					<ab xml:id="b.SAL.17.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Yo te he invocado por cuanto tú, <rs key="#per14">Dios</rs>, me oirás; inclina a mí tu oído, escucha mi palabra.</q></ab>
+					<ab xml:id="b.SAL.17.7" type="verse" n="7"><q who="per" corresp="per" type="oral">Muestra tus maravillosas misericordias, tú que salvas a los que se refugian a tu diestra de los que se levantan contra ellos.</q></ab>
+					<ab xml:id="b.SAL.17.8" type="verse" n="8">Guárdame como a la niña de tus ojos; escóndeme bajo la sombra de tus alas,</ab>
+					<ab xml:id="b.SAL.17.9" type="verse" n="9"><q who="per" corresp="per" type="oral">de la vista de los <rs key="org18">malos</rs> que me oprimen, de mis <rs key="#org101">enemigos</rs> que buscan mi vida.</q></ab>
+					<ab xml:id="b.SAL.17.10" type="verse" n="10">Envueltos están en su gordura; con su boca hablan arrogantemente.</ab>
+					<ab xml:id="b.SAL.17.11" type="verse" n="11">Han cercado ahora nuestros pasos; tienen puestos sus ojos para echarnos por <rs key="#pla41">tierra</rs>.</ab>
+					<ab xml:id="b.SAL.17.12" type="verse" n="12">Son como león que ansía agarrar su presa y como leoncillo que está en su escondite.</ab>
+					<ab xml:id="b.SAL.17.13" type="verse" n="13"><q who="per" corresp="per" type="oral">Levántate, <rs key="per14">Jehová</rs>; sal a su encuentro, derríbalos; libra mi vida de los <rs key="org18">malos</rs> con tu espada,</q></ab>
+					<ab xml:id="b.SAL.17.14" type="verse" n="14"><q who="per" corresp="per" type="oral">de los <rs key="per">hombres</rs>, con tu mano, <rs key="per14">Jehová</rs>, de los <rs key="per">hombres</rs> de este mundo, para quienes lo mejor es esta vida, y cuyo vientre está lleno de tus bienes. Sacian a sus <rs key="org">hijos</rs> y aun les sobra para sus pequeños.</q></ab>
+					<ab xml:id="b.SAL.17.15" type="verse" n="15"><q who="per" corresp="per" type="oral">En cuanto a mí, veré tu rostro en justicia; estaré satisfecho cuando despierte a tu semejanza.</q></ab>
+
+				</div>
+				<div xml:id="b.SAL.18" type="chapter" n="18">
+					<ab xml:id="b.SAL.18.1" type="verse" n="1">Te <rs key="per">amo</rs>, <rs key="per14">Jehová</rs>, fortaleza mía.</ab>
+					<ab xml:id="b.SAL.18.2" type="verse" n="2"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs>, roca mía y castillo mío, mi libertador; <rs key="#per14">Dios</rs> mío, fortaleza mía, en él confiaré; mi escudo y la fuerza de mi salvación, mi alto refugio.</q></ab>
+					<ab xml:id="b.SAL.18.3" type="verse" n="3">Invocaré a <rs key="per14">Jehová</rs>, quien es digno de ser alabado, y seré salvo de mis <rs key="#org101">enemigos</rs>.</ab>
+					<ab xml:id="b.SAL.18.4" type="verse" n="4"><q who="per" corresp="per" type="oral">Me rodearon los lazos de la muerte y los torrentes de la destrucción me atemorizaron.</q></ab>
+					<ab xml:id="b.SAL.18.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Los lazos del seol me han rodeado, me tendieron redes de muerte.</q></ab>
+					<ab xml:id="b.SAL.18.6" type="verse" n="6"><q who="per" corresp="per" type="oral">En mi angustia invoqué a <rs key="per14">Jehová</rs> y clamé a mi <rs key="#per14">Dios</rs>. Él oyó mi voz desde su <rs key="per">Templo</rs> y mi clamor llegó hasta sus oídos.</q></ab>
+					<ab xml:id="b.SAL.18.7" type="verse" n="7">La <rs key="#pla41">tierra</rs> fue conmovida y tembló; se conmovieron los cimientos de los montes y se estremecieron, porque se indignó él.</ab>
+					<ab xml:id="b.SAL.18.8" type="verse" n="8">Humo subió de su nariz y de su boca fuego consumidor; carbones fueron por él encendidos.</ab>
+					<ab xml:id="b.SAL.18.9" type="verse" n="9">Inclinó los cielos y descendió, y había densas tinieblas debajo de sus pies.</ab>
+					<ab xml:id="b.SAL.18.10" type="verse" n="10">Cabalgó sobre un querubín y voló; voló sobre las alas del viento.</ab>
+					<ab xml:id="b.SAL.18.11" type="verse" n="11">Puso tinieblas por su escondite, por cortina suya alrededor de sí; oscuridad de aguas, nubes de los cielos.</ab>
+					<ab xml:id="b.SAL.18.12" type="verse" n="12">Por el resplandor de su presencia, pasaron sus nubes: granizo y carbones ardientes.</ab>
+					<ab xml:id="b.SAL.18.13" type="verse" n="13">Tronó en los cielos <rs key="per14">Jehová</rs>, el <rs key="per">Altísimo</rs> dio su voz: granizo y carbones de fuego.</ab>
+					<ab xml:id="b.SAL.18.14" type="verse" n="14">Envió sus saetas y los dispersó; lanzó relámpagos y los destruyó.</ab>
+					<ab xml:id="b.SAL.18.15" type="verse" n="15"><q who="per" corresp="per" type="oral">Entonces aparecieron los abismos de las aguas y quedaron al descubierto los cimientos del mundo: a tu reprensión, <rs key="per14">Jehová</rs>, por el soplo del aliento de tu nariz.</q></ab>
+					<ab xml:id="b.SAL.18.16" type="verse" n="16"><q who="per" corresp="per" type="oral">Envió desde lo alto y me tomó, me sacó de las muchas aguas.</q></ab>
+					<ab xml:id="b.SAL.18.17" type="verse" n="17"><q who="per" corresp="per" type="oral">Me libró de mi poderoso <rs key="org18">enemigo</rs> y de los que me aborrecían, pues eran más fuertes que yo.</q></ab>
+					<ab xml:id="b.SAL.18.18" type="verse" n="18"><q who="per" corresp="per" type="oral">Me asaltaron en el día de mi desgracia, pero <rs key="per14">Jehová</rs> fue mi apoyo.</q></ab>
+					<ab xml:id="b.SAL.18.19" type="verse" n="19"><q who="per" corresp="per" type="oral">Me sacó a <rs key="pla">lugar</rs> espacioso; me libró, porque se agradó de mí.</q></ab>
+					<ab xml:id="b.SAL.18.20" type="verse" n="20"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs> me ha premiado conforme a mi justicia; conforme a la limpieza de mis manos me ha recompensado,</q></ab>
+					<ab xml:id="b.SAL.18.21" type="verse" n="21"><q who="per" corresp="per" type="oral">porque yo he guardado los caminos de <rs key="per14">Jehová</rs>, y no me aparté impíamente de mi <rs key="#per14">Dios</rs>,</q></ab>
+					<ab xml:id="b.SAL.18.22" type="verse" n="22"><q who="per" corresp="per" type="oral">pues todos sus juicios estuvieron delante de mí y no me he apartado de sus estatutos.</q></ab>
+					<ab xml:id="b.SAL.18.23" type="verse" n="23"><q who="per" corresp="per" type="oral">Fui recto para con él y me he guardado de hacer lo malo,</q></ab>
+					<ab xml:id="b.SAL.18.24" type="verse" n="24"><q who="per" corresp="per" type="oral">por lo cual me ha recompensado <rs key="per14">Jehová</rs> conforme a mi justicia, conforme a la limpieza de mis manos delante de sus ojos.</q></ab>
+					<ab xml:id="b.SAL.18.25" type="verse" n="25"><q who="per" corresp="per" type="oral">Con el misericordioso te mostrarás misericordioso, y recto con el <rs key="per">hombre</rs> íntegro.</q></ab>
+					<ab xml:id="b.SAL.18.26" type="verse" n="26"><q who="per" corresp="per" type="oral">Limpio te mostrarás con el limpio y severo serás para con el tramposo,</q></ab>
+					<ab xml:id="b.SAL.18.27" type="verse" n="27"><q who="per" corresp="per" type="oral">porque tú salvarás al <rs key="org">pueblo</rs> afligido y humillarás los ojos altivos.</q></ab>
+					<ab xml:id="b.SAL.18.28" type="verse" n="28"><q who="per" corresp="per" type="oral">Tú encenderás mi lámpara; <rs key="per14">Jehová</rs>, mi <rs key="#per14">Dios</rs>, alumbrará mis tinieblas.</q></ab>
+					<ab xml:id="b.SAL.18.29" type="verse" n="29"><q who="per" corresp="per" type="oral">Contigo desbarataré ejércitos y con mi <rs key="#per14">Dios</rs> asaltaré <rs key="pla">ciudades</rs> amuralladas.</q></ab>
+					<ab xml:id="b.SAL.18.30" type="verse" n="30">En cuanto a <rs key="#per14">Dios</rs>, perfecto es su camino y acrisolada la palabra de <rs key="per14">Jehová</rs>; escudo es a todos los que en él esperan.</ab>
+					<ab xml:id="b.SAL.18.31" type="verse" n="31">¿Quién es <rs key="#per14">Dios</rs> sino sólo <rs key="per14">Jehová</rs>? ¿Y qué roca hay fuera de nuestro <rs key="#per14">Dios</rs>?</ab>
+					<ab xml:id="b.SAL.18.32" type="verse" n="32"><q who="per" corresp="per" type="oral"><rs key="#per14">Dios</rs> es el que me reviste de poder y quien hace perfecto mi camino;</q></ab>
+					<ab xml:id="b.SAL.18.33" type="verse" n="33"><q who="per" corresp="per" type="oral">quien hace mis pies como de venados y me hace estar firme sobre mis alturas;</q></ab>
+					<ab xml:id="b.SAL.18.34" type="verse" n="34">quien adiestra mis manos para la batalla, para tensar con mis brazos el arco de bronce.</ab>
+					<ab xml:id="b.SAL.18.35" type="verse" n="35"><q who="per" corresp="per" type="oral">Me diste asimismo el escudo de tu salvación; tu diestra me sustentó y tu benignidad me ha engrandecido.</q></ab>
+					<ab xml:id="b.SAL.18.36" type="verse" n="36"><q who="per" corresp="per" type="oral">Ensanchaste mis pasos debajo de mí y mis pies no han resbalado.</q></ab>
+					<ab xml:id="b.SAL.18.37" type="verse" n="37">Perseguí a mis <rs key="#org101">enemigos</rs> y los alcancé; no volví hasta acabarlos.</ab>
+					<ab xml:id="b.SAL.18.38" type="verse" n="38">Los herí de modo que no se levantaran; cayeron debajo de mis pies,</ab>
+					<ab xml:id="b.SAL.18.39" type="verse" n="39"><q who="per" corresp="per" type="oral">pues me has revestido de fuerzas para el combate; has humillado a mis <rs key="#org101">enemigos</rs> debajo de mí.</q></ab>
+					<ab xml:id="b.SAL.18.40" type="verse" n="40"><q who="per" corresp="per" type="oral">Has hecho que mis <rs key="#org101">enemigos</rs> me vuelvan las espaldas, para que yo destruya a los que me odian.</q></ab>
+					<ab xml:id="b.SAL.18.41" type="verse" n="41">Clamaron, y no hubo quien salvara; aun a <rs key="per14">Jehová</rs>, pero no los oyó.</ab>
+					<ab xml:id="b.SAL.18.42" type="verse" n="42">Los molí como polvo delante del viento; los lancé afuera como a lodo de las calles.</ab>
+					<ab xml:id="b.SAL.18.43" type="verse" n="43"><q who="per" corresp="per" type="oral">Me has librado de las contiendas del <rs key="org">pueblo</rs>; me has hecho cabeza de las naciones; <rs key="org">pueblo</rs> que yo no conocía me sirvió.</q></ab>
+					<ab xml:id="b.SAL.18.44" type="verse" n="44"><q who="per" corresp="per" type="oral">Al oir de mí, me obedecieron; los <rs key="org">hijos</rs> de extraños se sometieron a mí.</q></ab>
+					<ab xml:id="b.SAL.18.45" type="verse" n="45">Los extraños se debilitaron y salieron temblando de sus encierros.</ab>
+					<ab xml:id="b.SAL.18.46" type="verse" n="46"><q who="per" corresp="per" type="oral">¡Viva <rs key="per14">Jehová</rs> y bendita sea mi roca! Y enaltecido sea el <rs key="#per14">Dios</rs> de mi salvación,</q></ab>
+					<ab xml:id="b.SAL.18.47" type="verse" n="47">el <rs key="#per14">Dios</rs> que venga mis agravios y somete <rs key="org">pueblos</rs> debajo de mí,</ab>
+					<ab xml:id="b.SAL.18.48" type="verse" n="48"><q who="per" corresp="per" type="oral">el que me libra de mis <rs key="#org101">enemigos</rs> e incluso me eleva sobre los que se levantan contra mí. Me libraste de <rs key="per">hombre</rs> violento.</q></ab>
+					<ab xml:id="b.SAL.18.49" type="verse" n="49"><q who="per" corresp="per" type="oral">Por tanto yo te confesaré entre las naciones, <rs key="per14">Jehová</rs>, y cantaré a tu nombre.</q></ab>
+					<ab xml:id="b.SAL.18.50" type="verse" n="50">Grandes triunfos da a su <rs key="per">rey</rs> y hace misericordia a su ungido, a <rs key="#per35">David</rs> y a su <rs key="org">descendencia</rs> para siempre.</ab>
+
+				</div>
+				<div xml:id="b.SAL.19" type="chapter" n="19">
+					<ab xml:id="b.SAL.19.1" type="verse" n="1">Los cielos cuentan la gloria de <rs key="#per14">Dios</rs> y el firmamento anuncia la obra de sus manos.</ab>
+					<ab xml:id="b.SAL.19.2" type="verse" n="2">Un día emite palabra a otro día y una noche a otra noche declara sabiduría.</ab>
+					<ab xml:id="b.SAL.19.3" type="verse" n="3">No hay lenguaje ni palabras ni es oída su voz.</ab>
+					<ab xml:id="b.SAL.19.4" type="verse" n="4">Por toda la <rs key="#pla41">tierra</rs> salió su voz y hasta el extremo del mundo sus palabras. En ellos puso <rs key="#pla73">tabernáculo</rs> para el sol;</ab>
+					<ab xml:id="b.SAL.19.5" type="verse" n="5">y este, como esposo que sale de su alcoba, se alegra cual gigante para correr el camino.</ab>
+					<ab xml:id="b.SAL.19.6" type="verse" n="6">De un extremo de los cielos es su salida y su curso hasta el término de ellos. Nada hay que se esconda de su calor.</ab>
+					<ab xml:id="b.SAL.19.7" type="verse" n="7">La ley de <rs key="per14">Jehová</rs> es perfecta: convierte el alma; el testimonio de <rs key="per14">Jehová</rs> es fiel: hace sabio al sencillo.</ab>
+					<ab xml:id="b.SAL.19.8" type="verse" n="8">Los mandamientos de <rs key="per14">Jehová</rs> son rectos: alegran el corazón; el precepto de <rs key="per14">Jehová</rs> es puro: alumbra los ojos.</ab>
+					<ab xml:id="b.SAL.19.9" type="verse" n="9">El temor de <rs key="per14">Jehová</rs> es limpio: permanece para siempre; los juicios de <rs key="per14">Jehová</rs> son verdad: todos <rs key="org18">justos</rs>.</ab>
+					<ab xml:id="b.SAL.19.10" type="verse" n="10">Deseables son más que el oro, más que mucho oro refinado; y dulces más que la miel, la que destila del panal.</ab>
+					<ab xml:id="b.SAL.19.11" type="verse" n="11">Tu <rs key="per">siervo</rs> es, además, amonestado con ellos; en guardarlos hay gran recompensa.</ab>
+					<ab xml:id="b.SAL.19.12" type="verse" n="12"><q who="per" corresp="per" type="oral">¿Quién puede discernir sus propios errores? Líbrame de los que me son ocultos.</q></ab>
+					<ab xml:id="b.SAL.19.13" type="verse" n="13"><q who="per" corresp="per" type="oral">Preserva también a tu <rs key="per">siervo</rs> de las soberbias, que no se enseñoreen de mí. Entonces seré íntegro y estaré libre de gran rebelión.</q></ab>
+					<ab xml:id="b.SAL.19.14" type="verse" n="14"><q who="per" corresp="per" type="oral">¡Sean gratos los dichos de mi boca y la meditación de mi corazón delante de ti, <rs key="per14">Jehová</rs>, roca mía y redentor mío!</q></ab>
+
+				</div>
+				<div xml:id="b.SAL.20" type="chapter" n="20">
+					<ab xml:id="b.SAL.20.1" type="verse" n="1"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs> te escuche en el día de conflicto; el nombre del <rs key="#per14">Dios de <rs key="#per4">Jacob</rs></rs> te defienda.</q></ab>
+					<ab xml:id="b.SAL.20.2" type="verse" n="2"><q who="per" corresp="per" type="oral">Te envíe ayuda desde el santuario y desde <rs key="#pla72">Sión</rs> te sostenga.</q></ab>
+					<ab xml:id="b.SAL.20.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Traiga a la memoria todas tus ofrendas y acepte tu holocausto. Selah</q></ab>
+					<ab xml:id="b.SAL.20.4" type="verse" n="4"><q who="per" corresp="per" type="oral">Te dé conforme al deseo de tu corazón y cumpla todos tus planes.</q></ab>
+					<ab xml:id="b.SAL.20.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Nosotros nos alegraremos en tu salvación y alzaremos bandera en el nombre de nuestro <rs key="#per14">Dios</rs>. Conceda <rs key="per14">Jehová</rs> todas tus peticiones.</q></ab>
+					<ab xml:id="b.SAL.20.6" type="verse" n="6">Ahora conozco que <rs key="per14">Jehová</rs> salva a su ungido; lo atenderá desde sus santos cielos con la potencia salvadora de su diestra.</ab>
+					<ab xml:id="b.SAL.20.7" type="verse" n="7">Estos confían en carros, y aquellos en caballos; mas nosotros del nombre de <rs key="per14">Jehová</rs>, nuestro <rs key="#per14">Dios</rs>, haremos memoria.</ab>
+					<ab xml:id="b.SAL.20.8" type="verse" n="8">Ellos flaquean y caen, mas nosotros nos levantamos y resistimos a pie firme.</ab>
+					<ab xml:id="b.SAL.20.9" type="verse" n="9">Salva, <rs key="per14">Jehová</rs>; que el <rs key="per">Rey</rs> nos oiga en el día que lo invoquemos.</ab>
+
+				</div>
+				<div xml:id="b.SAL.21" type="chapter" n="21">
+					<ab xml:id="b.SAL.21.1" type="verse" n="1"><q who="per" corresp="per" type="oral">El <rs key="per">rey</rs> se alegra en tu poder, <rs key="per14">Jehová</rs>; y en tu salvación, ¡cómo se goza!</q></ab>
+					<ab xml:id="b.SAL.21.2" type="verse" n="2"><q who="per" corresp="per" type="oral">Le has concedido el deseo de su corazón y no le negaste la petición de sus labios, <rs key="per">Selah</rs></q></ab>
+					<ab xml:id="b.SAL.21.3" type="verse" n="3"><q who="per" corresp="per" type="oral">porque le has salido al encuentro con bendiciones de bien; corona de oro fino has puesto sobre su cabeza.</q></ab>
+					<ab xml:id="b.SAL.21.4" type="verse" n="4"><q who="per" corresp="per" type="oral">Vida te demandó y se la diste; largura de días eternamente y para siempre.</q></ab>
+					<ab xml:id="b.SAL.21.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Grande es su gloria por tu salvación; honra y majestad has puesto sobre él.</q></ab>
+					<ab xml:id="b.SAL.21.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Lo has bendecido para siempre; lo llenaste de alegría con tu presencia.</q></ab>
+					<ab xml:id="b.SAL.21.7" type="verse" n="7">Por cuanto el <rs key="per">rey</rs> confía en <rs key="per14">Jehová</rs>, y por la misericordia del <rs key="per">Altísimo</rs>, no será conmovido.</ab>
+					<ab xml:id="b.SAL.21.8" type="verse" n="8"><q who="per" corresp="per" type="oral">Alcanzará tu mano a todos tus <rs key="#org101">enemigos</rs>; tu diestra alcanzará a los que te aborrecen.</q></ab>
+					<ab xml:id="b.SAL.21.9" type="verse" n="9"><q who="per" corresp="per" type="oral">Los pondrás como horno de fuego en el tiempo de tu ira; <rs key="per14">Jehová</rs> los deshará en su ira y el fuego los consumirá.</q></ab>
+					<ab xml:id="b.SAL.21.10" type="verse" n="10">Su fruto destruirás de la <rs key="#pla41">tierra</rs> y su <rs key="org">descendencia</rs> de entre los <rs key="org0">hijos de los <rs key="org0">hombres</rs></rs>,</ab>
+					<ab xml:id="b.SAL.21.11" type="verse" n="11"><q who="per" corresp="per" type="oral">porque intentaron el mal contra ti, fraguaron maquinaciones, pero no prevalecerán,</q></ab>
+					<ab xml:id="b.SAL.21.12" type="verse" n="12"><q who="per" corresp="per" type="oral">pues tú los pondrás en fuga; en tus cuerdas dispondrás saetas contra sus rostros.</q></ab>
+					<ab xml:id="b.SAL.21.13" type="verse" n="13"><q who="per" corresp="per" type="oral">¡Engrandécete, <rs key="per14">Jehová</rs>, en tu poder! ¡Cantaremos y alabaremos tu poderío!</q></ab>
+
+				</div>
+				<div xml:id="b.SAL.22" type="chapter" n="22">
+					<ab xml:id="b.SAL.22.1" type="verse" n="1"><q who="per" corresp="per" type="oral"><rs key="#per14">Dios</rs> mío, <rs key="#per14">Dios</rs> mío, ¿por qué me has desamparado? ¿Por qué estás tan lejos de mi salvación y de las palabras de mi clamor?</q></ab>
+					<ab xml:id="b.SAL.22.2" type="verse" n="2"><q who="per" corresp="per" type="oral"><rs key="#per14">Dios</rs> mío, clamo de día y no respondes; y de noche no hay para mí descanso.</q></ab>
+					<ab xml:id="b.SAL.22.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Pero tú eres santo, tú que habitas entre las alabanzas de <rs key="#pla4">Israel</rs>.</q></ab>
+					<ab xml:id="b.SAL.22.4" type="verse" n="4"><q who="per" corresp="per" type="oral">En ti esperaron nuestros <rs key="per">padres</rs>; esperaron y tú los libraste.</q></ab>
+					<ab xml:id="b.SAL.22.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Clamaron a ti y fueron librados; confiaron en ti y no fueron avergonzados.</q></ab>
+					<ab xml:id="b.SAL.22.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Pero yo soy gusano y no <rs key="per">hombre</rs>; oprobio de los <rs key="per">hombres</rs> y despreciado del <rs key="org">pueblo</rs>.</q></ab>
+					<ab xml:id="b.SAL.22.7" type="verse" n="7"><q who="per" corresp="per" type="oral">Todos los que me ven se burlan de mí; tuercen la boca y menean la cabeza, diciendo:</q></ab>
+					<ab xml:id="b.SAL.22.8" type="verse" n="8">«Se encomendó a <rs key="per14">Jehová</rs>, líbrelo él; sálvelo, puesto que en él se complacía».</ab>
+					<ab xml:id="b.SAL.22.9" type="verse" n="9"><q who="per" corresp="per" type="oral">Pero tú eres el que me sacó del vientre, el que me hizo estar confiado desde que estaba en el regazo de mi <rs key="per">madre</rs>.</q></ab>
+					<ab xml:id="b.SAL.22.10" type="verse" n="10"><q who="per" corresp="per" type="oral">A ti fui encomendado desde antes de nacer; desde el vientre de mi <rs key="per">madre</rs>, tú eres mi <rs key="#per14">Dios</rs>.</q></ab>
+					<ab xml:id="b.SAL.22.11" type="verse" n="11"><q who="per" corresp="per" type="oral">No te alejes de mí, porque la angustia está cerca y no hay quien me ayude.</q></ab>
+					<ab xml:id="b.SAL.22.12" type="verse" n="12"><q who="per" corresp="per" type="oral">Me han rodeado muchos toros; fuertes toros de <rs key="per">Basán</rs> me han cercado.</q></ab>
+					<ab xml:id="b.SAL.22.13" type="verse" n="13"><q who="per" corresp="per" type="oral">Abrieron contra mí su boca como león rapaz y rugiente.</q></ab>
+					<ab xml:id="b.SAL.22.14" type="verse" n="14">He sido derramado como el agua y todos mis huesos se descoyuntaron. Mi corazón fue como cera, derritiéndose dentro de mí.</ab>
+					<ab xml:id="b.SAL.22.15" type="verse" n="15"><q who="per" corresp="per" type="oral">Como un tiesto se secó mi vigor y mi lengua se pegó a mi paladar. ¡Me has puesto en el polvo de la muerte!</q></ab>
+					<ab xml:id="b.SAL.22.16" type="verse" n="16"><q who="per" corresp="per" type="oral">Perros me han rodeado; me ha cercado una banda de malignos; desgarraron mis manos y mis pies.</q></ab>
+					<ab xml:id="b.SAL.22.17" type="verse" n="17"><q who="per" corresp="per" type="oral">¡Contar puedo todos mis huesos! Entre tanto, ellos me miran y me observan.</q></ab>
+					<ab xml:id="b.SAL.22.18" type="verse" n="18"><q who="per" corresp="per" type="oral">Repartieron entre sí mis vestidos y sobre mi ropa echaron suertes.</q></ab>
+					<ab xml:id="b.SAL.22.19" type="verse" n="19"><q who="per" corresp="per" type="oral">Mas tú, <rs key="per14">Jehová</rs>, ¡no te alejes! Fortaleza mía, ¡apresúrate a socorrerme!</q></ab>
+					<ab xml:id="b.SAL.22.20" type="verse" n="20"><q who="per" corresp="per" type="oral">Libra de la espada mi alma, del poder del perro mi vida.</q></ab>
+					<ab xml:id="b.SAL.22.21" type="verse" n="21">Sálvame de la boca del león y líbrame de los cuernos de los toros salvajes.</ab>
+					<ab xml:id="b.SAL.22.22" type="verse" n="22"><q who="per" corresp="per" type="oral">Anunciaré tu nombre a mis <rs key="per">hermanos</rs>; en medio de la congregación te alabaré.</q></ab>
+					<ab xml:id="b.SAL.22.23" type="verse" n="23">Los que teméis a <rs key="per14">Jehová</rs>, ¡alabadlo! ¡Glorificadlo, <rs key="org">descendencia</rs> toda de <rs key="#per4">Jacob</rs>! ¡Temedlo vosotros, <rs key="org">descendencia</rs> toda de <rs key="#pla4">Israel</rs>!,</ab>
+					<ab xml:id="b.SAL.22.24" type="verse" n="24">porque no menospreció ni rechazó el dolor del afligido, ni de él escondió su rostro, sino que cuando clamó a él, lo escuchó.</ab>
+					<ab xml:id="b.SAL.22.25" type="verse" n="25"><q who="per" corresp="per" type="oral">De ti será mi alabanza en la gran congregación; mis votos pagaré delante de los que lo temen.</q></ab>
+					<ab xml:id="b.SAL.22.26" type="verse" n="26">Comerán los humildes hasta quedar saciados; alabarán a <rs key="per14">Jehová</rs> los que lo buscan; vivirá vuestro corazón para siempre.</ab>
+					<ab xml:id="b.SAL.22.27" type="verse" n="27">Se acordarán y se volverán a <rs key="per14">Jehová</rs> todos los confines de la <rs key="#pla41">tierra</rs>, y todas las <rs key="org">familias</rs> de las naciones adorarán delante de ti,</ab>
+					<ab xml:id="b.SAL.22.28" type="verse" n="28">porque de <rs key="per14">Jehová</rs> es el reino y él regirá las naciones.</ab>
+					<ab xml:id="b.SAL.22.29" type="verse" n="29">Comerán y adorarán todos los poderosos de la <rs key="#pla41">tierra</rs>; se postrarán delante de él todos los que descienden al polvo, aun el que no puede conservar la vida a su propia alma.</ab>
+					<ab xml:id="b.SAL.22.30" type="verse" n="30">La posteridad lo servirá; esto será contado de <rs key="per14">Jehová</rs> hasta la postrera generación.</ab>
+					<ab xml:id="b.SAL.22.31" type="verse" n="31">Vendrán y anunciarán su justicia; a <rs key="org">pueblo</rs> no nacido aún, anunciarán que él hizo esto.</ab>
+
+				</div>
+				<div xml:id="b.SAL.23" type="chapter" n="23">
+					<ab xml:id="b.SAL.23.1" type="verse" n="1"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs> es mi <rs key="per">pastor</rs>, nada me faltará.</q></ab>
+					<ab xml:id="b.SAL.23.2" type="verse" n="2"><q who="per" corresp="per" type="oral">En <rs key="pla">lugares</rs> de delicados pastos me hará descansar; junto a aguas de reposo me pastoreará.</q></ab>
+					<ab xml:id="b.SAL.23.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Confortará mi alma. Me guiará por sendas de justicia por amor de su nombre.</q></ab>
+					<ab xml:id="b.SAL.23.4" type="verse" n="4"><q who="per" corresp="per" type="oral">Aunque ande en valle de sombra de muerte, no temeré mal alguno, porque tú estarás conmigo; tu vara y tu cayado me infundirán aliento.</q></ab>
+					<ab xml:id="b.SAL.23.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Aderezas mesa delante de mí en presencia de mis angustiadores; unges mi cabeza con aceite; mi copa está rebosando.</q></ab>
+					<ab xml:id="b.SAL.23.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Ciertamente, el bien y la misericordia me seguirán todos los días de mi vida, y en la <rs key="pla">casa de <rs key="per14">Jehová</rs></rs> moraré por largos días.</q></ab>
+
+				</div>
+				<div xml:id="b.SAL.24" type="chapter" n="24">
+					<ab xml:id="b.SAL.24.1" type="verse" n="1">De <rs key="per14">Jehová</rs> es la <rs key="#pla41">tierra</rs> y su plenitud, el mundo y los que en él habitan,</ab>
+					<ab xml:id="b.SAL.24.2" type="verse" n="2">porque él la fundó sobre los mares y la afirmó sobre los ríos.</ab>
+					<ab xml:id="b.SAL.24.3" type="verse" n="3">¿Quién subirá al monte de <rs key="per14">Jehová</rs>? ¿Y quién estará en su <rs key="pla">lugar</rs> santo?</ab>
+					<ab xml:id="b.SAL.24.4" type="verse" n="4">El limpio de manos y puro de corazón; el que no ha elevado su alma a cosas vanas ni ha jurado con engaño.</ab>
+					<ab xml:id="b.SAL.24.5" type="verse" n="5">Él recibirá bendición de <rs key="per14">Jehová</rs> y justicia del <rs key="#per14">Dios</rs> de salvación.</ab>
+					<ab xml:id="b.SAL.24.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Tal es la generación de los que lo buscan, de los que buscan tu rostro, <rs key="#per14">Dios de <rs key="#per4">Jacob</rs></rs>. Selah</q></ab>
+					<ab xml:id="b.SAL.24.7" type="verse" n="7">¡Alzad, puertas, vuestras cabezas! ¡Alzaos vosotras, puertas eternas, y entrará el <rs key="per">Rey</rs> de gloria!</ab>
+					<ab xml:id="b.SAL.24.8" type="verse" n="8">¿Quién es este <rs key="per">Rey</rs> de gloria? ¡<rs key="per14">Jehová</rs> el fuerte y valiente, <rs key="per14">Jehová</rs> el poderoso en batalla!</ab>
+					<ab xml:id="b.SAL.24.9" type="verse" n="9">¡Alzad, puertas, vuestras cabezas! ¡Alzaos vosotras, puertas eternas, y entrará el <rs key="per">Rey</rs> de gloria!</ab>
+					<ab xml:id="b.SAL.24.10" type="verse" n="10">¿Quién es este <rs key="per">Rey</rs> de gloria? ¡Es <rs key="per14">Jehová</rs> de los ejércitos! ¡Él es el <rs key="per">Rey</rs> de gloria! Selah</ab>
+
+				</div>
+				<div xml:id="b.SAL.25" type="chapter" n="25">
+					<ab xml:id="b.SAL.25.1" type="verse" n="1"><q who="per" corresp="per" type="oral">A ti, <rs key="per14">Jehová</rs>, levantaré mi alma.</q></ab>
+					<ab xml:id="b.SAL.25.2" type="verse" n="2"><q who="per" corresp="per" type="oral"><rs key="#per14">Dios</rs> mío, en ti confío; no sea yo avergonzado. ¡No se alegren de mí mis <rs key="#org101">enemigos</rs>!</q></ab>
+					<ab xml:id="b.SAL.25.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Ciertamente, ninguno de cuantos esperan en ti será confundido; serán avergonzados los que se rebelan sin causa.</q></ab>
+					<ab xml:id="b.SAL.25.4" type="verse" n="4">Muéstrame, <rs key="per14">Jehová</rs>, tus caminos; enséñame tus sendas.</ab>
+					<ab xml:id="b.SAL.25.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Encamíname en tu verdad y enséñame, porque tú eres el <rs key="#per14">Dios</rs> de mi salvación; en ti he esperado todo el día.</q></ab>
+					<ab xml:id="b.SAL.25.6" type="verse" n="6">Acuérdate, <rs key="per14">Jehová</rs>, de tus piedades y de tus misericordias, que son perpetuas.</ab>
+					<ab xml:id="b.SAL.25.7" type="verse" n="7"><q who="per" corresp="per" type="oral">De los pecados de mi juventud y de mis rebeliones no te acuerdes. Conforme a tu misericordia acuérdate, <rs key="per14">Jehová</rs>, de mí, por tu bondad.</q></ab>
+					<ab xml:id="b.SAL.25.8" type="verse" n="8">Bueno y recto es <rs key="per14">Jehová</rs>; por tanto, él enseñará a los pecadores el camino.</ab>
+					<ab xml:id="b.SAL.25.9" type="verse" n="9">Encaminará a los humildes en la justicia y enseñará a los mansos su carrera.</ab>
+					<ab xml:id="b.SAL.25.10" type="verse" n="10">Todas las sendas de <rs key="per14">Jehová</rs> son misericordia y verdad para los que guardan su pacto y sus testimonios.</ab>
+					<ab xml:id="b.SAL.25.11" type="verse" n="11"><q who="per" corresp="per" type="oral">Por amor de tu nombre, <rs key="per14">Jehová</rs>, perdonarás también mi pecado, que es grande.</q></ab>
+					<ab xml:id="b.SAL.25.12" type="verse" n="12">¿Quién es el <rs key="per">hombre</rs> que teme a <rs key="per14">Jehová</rs>? Él le enseñará el camino que ha de escoger.</ab>
+					<ab xml:id="b.SAL.25.13" type="verse" n="13">Gozará él de bienestar y su <rs key="org">descendencia</rs> heredará la <rs key="#pla41">tierra</rs>.</ab>
+					<ab xml:id="b.SAL.25.14" type="verse" n="14">La comunión íntima de <rs key="per14">Jehová</rs> es con los que lo temen, y a ellos hará conocer su pacto.</ab>
+					<ab xml:id="b.SAL.25.15" type="verse" n="15">Mis ojos siempre se dirigen hacia <rs key="per14">Jehová</rs>, porque él saca mis pies de la red.</ab>
+					<ab xml:id="b.SAL.25.16" type="verse" n="16"><q who="per" corresp="per" type="oral">Mírame y ten misericordia de mí, porque estoy solo y afligido.</q></ab>
+					<ab xml:id="b.SAL.25.17" type="verse" n="17"><q who="per" corresp="per" type="oral">Las angustias de mi corazón se han aumentado; sácame de mis congojas.</q></ab>
+					<ab xml:id="b.SAL.25.18" type="verse" n="18"><q who="per" corresp="per" type="oral">Mira mi aflicción y mi trabajo y perdona todos mis pecados.</q></ab>
+					<ab xml:id="b.SAL.25.19" type="verse" n="19"><q who="per" corresp="per" type="oral">Mira mis <rs key="#org101">enemigos</rs>, cómo se han multiplicado y con odio violento me aborrecen.</q></ab>
+					<ab xml:id="b.SAL.25.20" type="verse" n="20"><q who="per" corresp="per" type="oral">¡Guarda mi alma y líbrame! No sea yo avergonzado, porque en ti he confiado.</q></ab>
+					<ab xml:id="b.SAL.25.21" type="verse" n="21"><q who="per" corresp="per" type="oral">Integridad y rectitud me guarden, porque en ti he esperado.</q></ab>
+					<ab xml:id="b.SAL.25.22" type="verse" n="22">¡Redime, <rs key="#per14">Dios</rs>, a <rs key="#pla4">Israel</rs> de todas sus angustias!</ab>
+
+				</div>
+				<div xml:id="b.SAL.26" type="chapter" n="26">
+					<ab xml:id="b.SAL.26.1" type="verse" n="1"><q who="per" corresp="per" type="oral">Júzgame, <rs key="per14">Jehová</rs>, porque yo en integridad he andado; he confiado asimismo en <rs key="per14">Jehová</rs> sin titubear.</q></ab>
+					<ab xml:id="b.SAL.26.2" type="verse" n="2"><q who="per" corresp="per" type="oral">Escudríñame, <rs key="per14">Jehová</rs>, y pruébame; examina mis íntimos pensamientos y mi corazón,</q></ab>
+					<ab xml:id="b.SAL.26.3" type="verse" n="3"><q who="per" corresp="per" type="oral">porque tu misericordia está delante de mis ojos y ando en tu verdad.</q></ab>
+					<ab xml:id="b.SAL.26.4" type="verse" n="4"><q who="per" corresp="per" type="oral">No me he sentado con <rs key="per">hombres</rs> hipócritas, ni entré con los que andan simuladamente.</q></ab>
+					<ab xml:id="b.SAL.26.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Aborrecí la reunión de los malignos y con los impíos nunca me senté.</q></ab>
+					<ab xml:id="b.SAL.26.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Lavaré en inocencia mis manos, y así, <rs key="per14">Jehová</rs>, andaré alrededor de tu altar,</q></ab>
+					<ab xml:id="b.SAL.26.7" type="verse" n="7">para exclamar con voz de acción de gracias y para contar todas tus maravillas.</ab>
+					<ab xml:id="b.SAL.26.8" type="verse" n="8"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs>, la habitación de tu <rs key="per">Casa</rs> he amado, el <rs key="pla">lugar</rs> de la morada de tu gloria.</q></ab>
+					<ab xml:id="b.SAL.26.9" type="verse" n="9"><q who="per" corresp="per" type="oral">No arrebates con los pecadores mi alma ni mi vida con <rs key="per">hombres</rs> sanguinarios,</q></ab>
+					<ab xml:id="b.SAL.26.10" type="verse" n="10">en cuyas manos está el mal y cuya diestra está llena de sobornos.</ab>
+					<ab xml:id="b.SAL.26.11" type="verse" n="11"><q who="per" corresp="per" type="oral">Pero yo andaré en integridad; redímeme y ten misericordia de mí.</q></ab>
+					<ab xml:id="b.SAL.26.12" type="verse" n="12">Mi pie ha estado en rectitud; en las congregaciones bendeciré a <rs key="per14">Jehová</rs>.</ab>
+
+				</div>
+				<div xml:id="b.SAL.27" type="chapter" n="27">
+					<ab xml:id="b.SAL.27.1" type="verse" n="1"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs> es mi luz y mi salvación, ¿de quién temeré? <rs key="per14">Jehová</rs> es la fortaleza de mi vida, ¿de quién he de atemorizarme?</q></ab>
+					<ab xml:id="b.SAL.27.2" type="verse" n="2"><q who="per" corresp="per" type="oral">Cuando se juntaron contra mí los malignos, mis angustiadores y mis <rs key="#org101">enemigos</rs>, para comer mis carnes, ellos tropezaron y cayeron.</q></ab>
+					<ab xml:id="b.SAL.27.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Aunque un ejército acampe contra mí, no temerá mi corazón; aunque contra mí se levante guerra, yo estaré confiado.</q></ab>
+					<ab xml:id="b.SAL.27.4" type="verse" n="4"><q who="per" corresp="per" type="oral">Una cosa he demandado a <rs key="per14">Jehová</rs>, esta buscaré: que esté yo en la <rs key="pla">casa de <rs key="per14">Jehová</rs></rs> todos los días de mi vida, para contemplar la hermosura de <rs key="per14">Jehová</rs> y para buscarlo en su <rs key="per">Templo</rs>.</q></ab>
+					<ab xml:id="b.SAL.27.5" type="verse" n="5"><q who="per" corresp="per" type="oral">Él me esconderá en su <rs key="per">Tabernáculo</rs> en el día del mal; me ocultará en lo reservado de su morada; sobre una roca me pondrá en alto.</q></ab>
+					<ab xml:id="b.SAL.27.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Luego levantará mi cabeza sobre mis <rs key="#org101">enemigos</rs> que me rodean, y yo sacrificaré en su <rs key="per">Tabernáculo</rs> sacrificios de júbilo; cantaré y entonaré alabanzas a <rs key="per14">Jehová</rs>.</q></ab>
+					<ab xml:id="b.SAL.27.7" type="verse" n="7"><q who="per" corresp="per" type="oral">¡Oye, <rs key="per14">Jehová</rs>, mi voz con que a ti clamo! ¡Ten misericordia de mí y respóndeme!</q></ab>
+					<ab xml:id="b.SAL.27.8" type="verse" n="8"><q who="per" corresp="per" type="oral">Mi corazón ha dicho de ti: «Buscad mi rostro». Tu rostro buscaré, <rs key="per14">Jehová</rs>;</q></ab>
+					<ab xml:id="b.SAL.27.9" type="verse" n="9"><q who="per" corresp="per" type="oral">¡no escondas tu rostro de mí! ¡No apartes con ira a tu <rs key="per">siervo</rs>! ¡Mi ayuda has sido! No me dejes ni me desampares, <rs key="#per14">Dios</rs> de mi salvación.</q></ab>
+					<ab xml:id="b.SAL.27.10" type="verse" n="10"><q who="per" corresp="per" type="oral">Aunque mi <rs key="per">padre</rs> y mi <rs key="per">madre</rs> me dejen, con todo, <rs key="per14">Jehová</rs> me recogerá.</q></ab>
+					<ab xml:id="b.SAL.27.11" type="verse" n="11"><q who="per" corresp="per" type="oral">Enséñame, <rs key="per14">Jehová</rs>, tu camino y guíame por senda de rectitud a causa de mis <rs key="#org101">enemigos</rs>.</q></ab>
+					<ab xml:id="b.SAL.27.12" type="verse" n="12"><q who="per" corresp="per" type="oral">No me entregues a la voluntad de mis <rs key="#org101">enemigos</rs>, porque se han levantado contra mí testigos falsos y los que respiran crueldad.</q></ab>
+					<ab xml:id="b.SAL.27.13" type="verse" n="13"><q who="per" corresp="per" type="oral">Hubiera yo desmayado, si no creyera que he de ver la bondad de <rs key="per14">Jehová en la <rs key="#pla41">tierra</rs></rs> de los vivientes.</q></ab>
+					<ab xml:id="b.SAL.27.14" type="verse" n="14"><q who="per" corresp="per" type="oral">¡Espera en <rs key="per14">Jehová</rs>! ¡Esfuérzate y aliéntese tu corazón! ¡Sí, espera en <rs key="per14">Jehová</rs>!</q></ab>
+
+				</div>
+				<div xml:id="b.SAL.28" type="chapter" n="28">
+					<ab xml:id="b.SAL.28.1" type="verse" n="1"><q who="per" corresp="per" type="oral">A ti clamaré, <rs key="per14">Jehová</rs>. ¡Roca mía, no te desentiendas de mí, no sea que, dejándome tú, llegue a ser semejante a los que descienden al <rs key="#pla36">sepulcro</rs>!</q></ab>
+					<ab xml:id="b.SAL.28.2" type="verse" n="2"><q who="per" corresp="per" type="oral">Oye la voz de mis ruegos cuando clamo a ti, cuando alzo mis manos hacia tu santo <rs key="per">Templo</rs>.</q></ab>
+					<ab xml:id="b.SAL.28.3" type="verse" n="3"><q who="per" corresp="per" type="oral">No me arrebates juntamente con los <rs key="org18">malos</rs> y con los que hacen iniquidad. Ellos hablan paz con sus prójimos, pero la maldad está en su corazón.</q></ab>
+					<ab xml:id="b.SAL.28.4" type="verse" n="4">Dales conforme a su obra y conforme a la perversidad de sus hechos. Dales su merecido conforme a la obra de sus manos.</ab>
+					<ab xml:id="b.SAL.28.5" type="verse" n="5">Por cuanto no atendieron a los hechos de <rs key="per14">Jehová</rs> ni a la obra de sus manos, ¡él los derribará y no los edificará!</ab>
+					<ab xml:id="b.SAL.28.6" type="verse" n="6">¡Bendito sea <rs key="per14">Jehová</rs>, que oyó la voz de mis ruegos!</ab>
+					<ab xml:id="b.SAL.28.7" type="verse" n="7"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs> es mi fortaleza y mi escudo; en él confió mi corazón y fui ayudado, por lo que se gozó mi corazón. Con mi cántico lo alabaré.</q></ab>
+					<ab xml:id="b.SAL.28.8" type="verse" n="8"><rs key="per14">Jehová</rs> es la fortaleza de su <rs key="org">pueblo</rs> y el refugio salvador de su ungido.</ab>
+					<ab xml:id="b.SAL.28.9" type="verse" n="9"><q who="per" corresp="per" type="oral">Salva a tu <rs key="org">pueblo</rs> y bendice a tu heredad; pastoréalos y susténtalos para siempre.</q></ab>
+
+				</div>
+				<div xml:id="b.SAL.29" type="chapter" n="29">
+					<ab xml:id="b.SAL.29.1" type="verse" n="1">Tributad a <rs key="per14">Jehová</rs>, <rs key="org">hijos</rs> de los poderosos, dad a <rs key="per14">Jehová</rs> la gloria y el poder.</ab>
+					<ab xml:id="b.SAL.29.2" type="verse" n="2">Dad a <rs key="per14">Jehová</rs> la gloria debida a su nombre; adorad a <rs key="per14">Jehová</rs> en la hermosura de la santidad.,</ab>
+					<ab xml:id="b.SAL.29.3" type="verse" n="3">Voz de <rs key="per14">Jehová</rs> sobre las aguas. ¡Truena el <rs key="#per14">Dios</rs> de gloria: <rs key="per14">Jehová</rs> sobre las muchas aguas!</ab>
+					<ab xml:id="b.SAL.29.4" type="verse" n="4">Voz de <rs key="per14">Jehová</rs> con potencia; voz de <rs key="per14">Jehová</rs> con gloria.</ab>
+					<ab xml:id="b.SAL.29.5" type="verse" n="5">Voz de <rs key="per14">Jehová</rs> que quiebra los cedros; ¡quiebra <rs key="per14">Jehová</rs> los cedros del <rs key="per">Líbano</rs>!</ab>
+					<ab xml:id="b.SAL.29.6" type="verse" n="6">Los hace saltar como becerros; al <rs key="per">Líbano</rs> y al <rs key="per">Sirión</rs> como <rs key="org">hijos</rs> de toros salvajes.</ab>
+					<ab xml:id="b.SAL.29.7" type="verse" n="7">Voz de <rs key="per14">Jehová</rs> que derrama llamas de fuego;</ab>
+					<ab xml:id="b.SAL.29.8" type="verse" n="8">voz de <rs key="per14">Jehová</rs> que hace temblar el desierto; ¡hace temblar <rs key="per14">Jehová</rs> el desierto de <rs key="#pla127">Cades</rs>!</ab>
+					<ab xml:id="b.SAL.29.9" type="verse" n="9">Voz de <rs key="per14">Jehová</rs> que desgaja las encinas y desnuda los bosques. En su <rs key="per">Templo</rs> todo proclama su gloria.</ab>
+					<ab xml:id="b.SAL.29.10" type="verse" n="10"><rs key="per14">Jehová</rs> preside en el diluvio y se sienta <rs key="per14">Jehová</rs> como <rs key="per">rey</rs> para siempre.</ab>
+					<ab xml:id="b.SAL.29.11" type="verse" n="11"><rs key="per14">Jehová</rs> dará poder a su <rs key="org">pueblo</rs>; <rs key="per14">Jehová</rs> bendecirá a su <rs key="org">pueblo</rs> con paz.</ab>
+
+				</div>
+				<div xml:id="b.SAL.30" type="chapter" n="30">
+					<ab xml:id="b.SAL.30.1" type="verse" n="1"><q who="per" corresp="per" type="oral">Te glorificaré, <rs key="per14">Jehová</rs>, porque me has exaltado y no has permitido que mis <rs key="#org101">enemigos</rs> se alegren de mí.</q></ab>
+					<ab xml:id="b.SAL.30.2" type="verse" n="2"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío, a ti clamé y me sanaste.</q></ab>
+					<ab xml:id="b.SAL.30.3" type="verse" n="3"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs>, hiciste subir mi alma del seol. Me diste vida, para que no descendiera a la sepultura.</q></ab>
+					<ab xml:id="b.SAL.30.4" type="verse" n="4">¡Cantad a <rs key="per14">Jehová</rs>, vosotros sus santos, y celebrad la memoria de su santidad!,</ab>
+					<ab xml:id="b.SAL.30.5" type="verse" n="5">porque por un momento será su ira, pero su favor dura toda la vida. Por la noche durará el lloro y a la mañana vendrá la alegría.</ab>
+					<ab xml:id="b.SAL.30.6" type="verse" n="6"><q who="per" corresp="per" type="oral">En mi prosperidad dije yo: <q who="per" corresp="per" type="oral">«No seré jamás conmovido»,</q></q></ab>
+					<ab xml:id="b.SAL.30.7" type="verse" n="7"><q who="per" corresp="per" type="oral">porque tú, <rs key="per14">Jehová</rs>, con tu favor me afirmaste como a monte fuerte. Escondiste tu rostro, fui turbado.</q></ab>
+					<ab xml:id="b.SAL.30.8" type="verse" n="8"><q who="per" corresp="per" type="oral">A ti, <rs key="per14">Jehová</rs>, clamaré; al <rs key="per">Señor</rs> suplicaré.</q></ab>
+					<ab xml:id="b.SAL.30.9" type="verse" n="9"><q who="per" corresp="per" type="oral">¿Qué provecho hay en mi muerte cuando descienda a la sepultura? ¿Te alabará el polvo? ¿Anunciará tu verdad?</q></ab>
+					<ab xml:id="b.SAL.30.10" type="verse" n="10"><q who="per" corresp="per" type="oral">Oye, <rs key="per14">Jehová</rs>, y ten misericordia de mí; <rs key="per14">Jehová</rs>, ¡sé tú mi ayudador!</q></ab>
+					<ab xml:id="b.SAL.30.11" type="verse" n="11"><q who="per" corresp="per" type="oral">Has cambiado mi lamento en baile; me quitaste la ropa áspera y me vestiste de alegría.</q></ab>
+					<ab xml:id="b.SAL.30.12" type="verse" n="12"><q who="per" corresp="per" type="oral">Por tanto, a ti cantaré, gloria mía, y no estaré callado. <rs key="per14">Jehová</rs> <rs key="#per14">Dios</rs> mío, ¡te alabaré para siempre!</q></ab>
+
+				</div>
+			</div>
+		</body>
+
+	</text>
+</TEI>
