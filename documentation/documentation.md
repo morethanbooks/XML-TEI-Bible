@@ -27,9 +27,11 @@ At the moment following books are fully encoded in this chronological order:
 * Revelation
 * Genesis
 * Book of Ruth
+* Book of Jonah
+* 75 first Psalms
 
 At the moment, following book is being encoded:
-* Book of Jonah
+* Acts
 
 ## Original Text
 
