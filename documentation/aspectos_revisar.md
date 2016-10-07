@@ -1,6 +1,7 @@
 # Aspectos a revisar de un nuevo libro
 
 Antes de dar por terminado un nuevo libro de la Biblia, hay que revisar:
+* Revisar atributos con valores por defecto: (//*[@key="per"]|//*[@corresp="per"]|//*[@who="per"])
 * Colocar # antes en valores de atributos key, who y corresp: ("| )([a-z]) en //@key|//@who|//@corresp con  \1#\2
 * validar
 * revisar metadatos en teiHeader

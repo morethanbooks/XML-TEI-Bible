@@ -20,20 +20,20 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per18	Juan el Bautista				NT		male	Johannes der Täufer	João Batista	person	human	defined		MAT
 #per19	Isaías				AT		male	Jesaja	Isaías	person	human	defined	1	MAT
 #per20	diablo				AT		none	Teufel	Diabo	person	superior	defined	1	MAT
-#per21	Pedro	h. Zebedeo	Simón		NT		male	Simon Petrus	Simão Pedro	person	human	defined		MAT
-#per22	Andrés	h. Zebedeo			NT		male	Andreas	André	person	human	defined		MAT
-#per23	Jacobo	h. Zebedeo			NT		male	Jakobus	Tiago	person	human	defined		MAT
-#per24	Zebedeo				NT		male	Zebedäus	Zebedeu	person	human	defined		MAT
-#per25	Juan		discípulo  amado		NT		male	Johannes	João	person	human	defined		MAT
+#per21	Pedro	h. Zebedeo	Simón	discípulo	NT		male	Simon Petrus	Simão Pedro	person	human	defined		MAT
+#per22	Andrés	h. Zebedeo		discípulo	NT		male	Andreas	André	person	human	defined		MAT
+#per23	Jacobo	h. Zebedeo		discípulo	NT		male	Jakobus	Tiago	person	human	defined		MAT
+#per24	Zebedeo			discípulo	NT		male	Zebedäus	Zebedeu	person	human	defined		MAT
+#per25	Juan		discípulo  amado	discípulo	NT		male	Johannes	João	person	human	defined		MAT
 #per26	Moisés				AT		male	Mose	Moisés	person	human	defined	1	MAT
-#per27	Mateo				NT		male	Matthäus	Mateus	person	human	defined		MAT
-#per28	Felipe				NT		male	Philippus	Filipe	person	human	defined		MAT
-#per29	Bartolomé				NT		male	Batholomäus	Bartolomeu	person	human	defined		MAT
-#per30	Tomás				NT		male	Thomas	Tomé	person	human	defined		MAT
-#per31	Jacobo	h. Alfeo  h. María			NT		male	Jakobus	Tiago	person	human	defined		MAT
-#per32	Alfeo				NT		male	Alphäus	Alfeu	person	human	defined		MAT
-#per33	Tadeo				NT		male	Thaddäus	Tadeu	person	human	defined		MAT
-#per34	Judas Iscariote				NT		male	Judas Iskariot	Judas Iscariotes	person	human	defined		MAT
+#per27	Mateo			discípulo	NT		male	Matthäus	Mateus	person	human	defined		MAT
+#per28	Felipe			discípulo	NT		male	Philippus	Filipe	person	human	defined		MAT
+#per29	Bartolomé			discípulo	NT		male	Batholomäus	Bartolomeu	person	human	defined		MAT
+#per30	Tomás			discípulo	NT		male	Thomas	Tomé	person	human	defined		MAT
+#per31	Jacobo	h. Alfeo  h. María		discípulo	NT		male	Jakobus	Tiago	person	human	defined		MAT
+#per32	Alfeo			discípulo	NT		male	Alphäus	Alfeu	person	human	defined		MAT
+#per33	Tadeo			discípulo	NT		male	Thaddäus	Tadeu	person	human	defined		MAT
+#per34	Judas Iscariote			discípulo	NT		male	Judas Iskariot	Judas Iscariotes	person	human	defined		MAT
 #per35	David				AT		male	David	Davi	person	human	defined	1	MAT
 #per36	Jonás				AT		male	Jona	Jonas	person	human	defined	1	MAT
 #per37	Herodía				NT		male	Herodias	Herodias	person	human	defined		MAT
@@ -474,27 +474,101 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per472	Nitzevet	madre de David			AT		female			person	human	defined		SAL
 #per473	salmista				AT		male			person	human	undefined		SAL
 #per474	Asaf			???	AT		male			person	human	defined		SAL
-#per475	Leviatán				AT		male			person	monster	defined		SAL
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
+#per475	Leviatán				AT		male			person	superior	defined		SAL
+#per476	Teófilo				NT	medium	male			person	human	defined		ACT
+#per477	Simón				NT		male			person	human	defined		MAT
+#per478	José		Barsabás		NT		male			person	human	defined		ACT
+#per479	Matías	Discípulo desde Hechos 1			NT		male			person	human	defined		ACT
+#per480	Joel	profeta			AT		male			person	human	defined		ACT
+#per481	Samuel	profeta			AT		male			person	human	defined	1	ACT
+#per482	Alejandro	discípulo?			NT		male			person	human	defined		ACT
+#per483	Bernabé	José			NT		male			person	human	defined		ACT
+#per484	Ananías				NT		male			person	human	defined		ACT
+#per485	Safira				NT		female			person	human	defined		ACT
+#per486	Gamaliel	fariseo			NT		male			person	human	defined		ACT
+#per487	Teudas	falso profeta			NT		male			person	human	defined		ACT
+#per488	Judas	falso profeta			NT		male			person	human	defined		ACT
+#per489	Esteban				NT		male			person	human	defined		ACT
+#per490	Prócoro				NT		male			person	human	defined		ACT
+#per491	Nicanor				NT		male			person	human	defined		ACT
+#per492	Timón				NT		male			person	human	defined		ACT
+#per493	Parmenas				NT		male			person	human	defined		ACT
+#per494	Nicolás				NT		male			person	human	defined		ACT
+#per495	faraón	en tiempos de Moisés			AT		male			person	human	defined		ACT
+#per496	Amram	padre de Moisés			AT		male			person	human	defined		ACT
+#per497	hija del faraón				AT		male			person	human	defined		ACT
+#per498	Madián				AT		male			person	human	defined		ACT
+#per499	Gersón	hijo de Moisés			AT		male			person	human	defined		ACT
+#per500	Aarón				AT		male			person	human	defined		ACT
+#per501	Moloc				AT		male			person	superior	defined		ACT
+#per502	Refán				AT		male			person	superior	defined		ACT
+#per503	Josué				AT		male			person	human	defined		ACT
+#per504	Pablo		Saulo		AT		male			person	human	defined		ACT
+#per505	Simón	antiguo  mago			AT		male			person	human	defined		ACT
+#per506	Candace	reina de Etipoía			NT		female			person	human	defined		ACT
+#per507	Ananías	habla con Saulo			NT		male			person	human	defined		ACT
+#per508	Judas	dueño de la casa donde está Saulo			NT		male			person	human	defined		ACT
+#per509	Eneas	paralítico			NT		male			person	human	defined		ACT
+#per510	Tabita		Dorcas		NT		female			person	human	defined		ACT
+#per511	Simón	curtidor de Jope			NT		male			person	human	defined		ACT
+#per512	Cornelio				NT		male			person	human	defined		ACT
+#per513	Agabo	profeta			NT		male			person	human	defined		ACT
+#per514	Claudio	emperador romano			NT		male			person	human	defined		ACT
+#per515	Rode	niña creyente			NT		female			person	human	defined		ACT
+#per516	Blasto	camarero de Herodes			NT		male			person	human	defined		ACT
+#per517	Simón	Niger			NT		male			person	human	defined		ACT
+#per518	Lucio	de Cirene			NT		male			person	human	defined		ACT
+#per519	Manaén				NT		male			person	human	defined		ACT
+#per520	Barjesús	falso profeta			NT		male			person	human	defined		ACT
+#per521	Sergio Paulo				NT		male			person	human	defined		ACT
+#per522	Saúl	rey			NT		male			person	human	defined		ACT
+#per523	Cis	padre de Saúl			NT		male			person	human	defined		ACT
+#per524	Júpiter				NT		male			person	superior	defined		ACT
+#per525	Barsabás		Judas		NT		male			person	human	defined		ACT
+#per526	Silas				NT		male			person	human	defined		ACT
+#per527	Timoteo				NT		male			person	human	defined		ACT
+#per528	Lidia				NT		female			person	human	defined		ACT
+#per529	Jasón				NT		male			person	human	defined		ACT
+#per530	Dionisio				NT		male			person	human	defined		ACT
+#per531	Dámaris				NT		female			person	human	defined		ACT
+#per532	Aquila				NT		male			person	human	defined		ACT
+#per533	Priscila				NT		female			person	human	defined		ACT
+#per534	Claudio				NT		male			person	human	defined		ACT
+#per535	Justo				NT		male			person	human	defined		ACT
+#per536	Crispo				NT		male			person	human	defined		ACT
+#per537	Galión				NT		male			person	human	defined		ACT
+#per538	Sóstenes				NT		male			person	human	defined		ACT
+#per539	Apolos				NT		male			person	human	defined		ACT
+#per540	Tiranno				NT		male			person	human	defined		ACT
+#per541	Esceva				NT		male			person	human	defined		ACT
+#per542	Erasto				NT		male			person	human	defined		ACT
+#per543	Demetrio	platero			NT		male			person	human	defined		ACT
+#per544	Diana				NT		female			person	superior	defined		ACT
+#per545	Gayo	compañero éfeso de Pablo			NT		male			person	human	defined		ACT
+#per546	Aristarco	compañero éfeso de Pablo			NT		male			person	human	defined		ACT
+#per547	Sópater	compañero de Pablo			NT		male			person	human	defined		ACT
+#per548	Pirro	padre de Sópater			NT		male			person	human	defined		ACT
+#per549	Segundo	compañero de Pablo			NT		male			person	human	defined		ACT
+#per550	Tíquico				NT		male			person	human	defined		ACT
+#per551	Trófimo				NT		male			person	human	defined		ACT
+#per552	Eutico				NT		male			person	human	defined		ACT
+#per553	Agabo	profeta			NT		male			person	human	defined		ACT
+#per554	Mnasón				NT		male			person	human	defined		ACT
+#per555	Gamaliel				NT		male			person	human	defined		ACT
+#per556	sobrino de Pablo				NT		male			person	human	defined		ACT
+#per557	hermana de Pablo				NT		female			person	human	defined		ACT
+#per558	Félix	gobernador			NT		male			person	human	defined		ACT
+#per559	Claudio Lisias	comandante			NT		male			person	human	defined		ACT
+#per560	Ananías	sumo sacerdote en la época de Pablo			NT		male			person	human	defined		ACT
+#per561	Tértulo	orador			NT		male			person	human	defined		ACT
+#per562	Drusila	mujer de Félix			NT		male			person	human	defined		ACT
+#per563	Porcio Festo	gobernador			NT		male			person	human	defined		ACT
+#per564	Agripa	rey			NT		male			person	human	defined		ACT
+#per565	Berenice				NT		female			person	human	defined		ACT
+#per566	Julio	centurión que lleva a Pablo			NT		male			person	human	defined		ACT
+#per567	Publio				NT		male			person	human	defined		ACT
+#per568	Cástor				NT		male			person	superior	defined		ACT
+#per569	Pólux				NT		male			person	superior	defined		ACT
 														
 #org0	gente	grupo no definido						Leute	Pessoas	group	human	undefined		MAT
 #org1	Sanedrín							Sanhedrin	Sinédrio	group	human	defined		MAT
@@ -566,7 +640,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org67	refaítas									group	human	defined		GEN
 #org68	zuzitas									group	human	defined		GEN
 #org69	amalecitas									group	human	defined		GEN
-#org70	hebreos		Israel	Unificar con judíos org13?						group	human	defined		GEN
+#org70	hebreos		Israel							group	human	defined		GEN
 #org71	horeos									group	human	defined		GEN
 #org72	ceneos									group	human	defined		GEN
 #org73	cadmoneos									group	human	defined		GEN
@@ -598,7 +672,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org99	hombres de Nínive									group	human	defined		JON
 #org100	reyes y responsables en general									group	human	undefined		SAL
 #org101	enemigos									group	human	undefined		SAL
-#org102	pobres									group	human	undefined		SAL
+#org102	pobres	presos								group	human	undefined		SAL
 #org103	otros dioses									group	superior	undefined		SAL
 #org104	descendientes de David									group	human	defined		SAL
 #org105	aliados									group	human	undefined		SAL
@@ -606,6 +680,24 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org107	hermonitas									group	human	defined		SAL
 #org108	personas de Tiro									group	human	defined		SAL
 #org109	hijos de Isaí									group	human	defined		SAL
+#org110	apóstoles									group	human	defined		ACT
+#org111	mujeres	cercanas a los discípulos								group	human	defined		ACT
+#org112	partos									group	human	defined		ACT
+#org113	medos									group	human	defined		ACT
+#org114	elamitas									group	human	defined		ACT
+#org115	romanos									group	human	defined		ACT
+#org116	cretenses									group	human	defined		ACT
+#org117	árabes									group	human	defined		ACT
+#org118	griegos									group	human	defined		ACT
+#org119	etiopía									group	human	defined		ACT
+#org120	gente de Licaonia									group	human	defined		ACT
+#org121	macedonios									group	human	defined		ACT
+#org122	mujeres									group	human	defined		ACT
+#org123	efesios									group	human	defined		ACT
+#org124	malteses									group	human	defined		ACT
+														
+														
+														
 														
 #tim1	tercer día	tras la muerte de Jesús						Dritter Tag	Terceiro dia	time				MAT
 #tim2	Día del juicio							Tag des jüngsten Gerichtes	Dia do juízo	time				MAT
@@ -623,7 +715,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #tim14	antes del principio							Vor de Anfang	Antes do prinípio	time				MAT
 #tim15	diluvio							Sintflut	Dilúvio	time				REV
 #tim16	tiempo de los patriarcas									time				SAL
-														
+#tim17	Pentecostés									time				ACT
 														
 														
 														
@@ -632,8 +724,8 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #wor2	Evangelio de Juan							Evangelium des Johannes	Evangelho de João	work				
 #wor3	Libro de apocalipisis							Offenbarung	Apocalipse	work				
 #wor4	libro de la vida							Buch des Lebens	Livro da vida	work				
-														
-														
+#wor5	Evangelio de Lucas									work				
+#wor6	Salmos													
 														
 														
 #pla1	Belén							Bethlehem	Belem	place	human			MAT
@@ -794,8 +886,90 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla156	Líbano									place	human			SAL
 #pla157	Mizar									place	human			SAL
 #pla158	Ofir									place	human			SAL
-#pla159	Sinaí	desierto								place	human			SAL
+#pla159	Sinaí	montaña								place	human			SAL
 #pla160	Salmón									place	human			SAL
 #pla161	Etiopía									place	human			SAL
 #pla162	Sabá									place	human			SAL
 #pla163	Seba									place	human			SAL
+#pla164	Acéldama	lugar donde se suicida Judas								place	human			ACT
+#pla165	Capadocia									place	human			ACT
+#pla166	Ponto									place	human			ACT
+#pla167	Frigia									place	human			ACT
+#pla168	Panfilia									place	human			ACT
+#pla169	África									place	human			ACT
+#pla170	Chipre									place	human			ACT
+#pla171	Antioquía									place	human			ACT
+#pla172	Alejandría									place	human			ACT
+#pla173	Cilicia									place	human			ACT
+#pla174	Harán									place	human			ACT
+#pla175	Mar Rojo									place	human			ACT
+#pla176	Sinaí	desierto								place	human			ACT
+#pla177	Azoto									place	human			ACT
+#pla178	Tarso			mismo que Tarsis?		medium				place	human			ACT
+#pla179	Lida									place	human			ACT
+#pla180	Sarón									place	human			ACT
+#pla181	Fenicia									place	human			ACT
+#pla182	Chipre									place	human			ACT
+#pla183	Seleucia									place	human			ACT
+#pla184	Salamina									place	human			ACT
+#pla185	Pafos									place	human			ACT
+#pla186	Perge									place	human			ACT
+#pla187	Panfilia									place	human			ACT
+#pla188	Antioquía									place	human			ACT
+#pla189	Pisidia									place	human			ACT
+#pla190	Iconio									place	human			ACT
+#pla191	Listra									place	human			ACT
+#pla192	Derbe									place	human			ACT
+#pla193	Licaonia									place	human			ACT
+#pla194	Pisidia									place	human			ACT
+#pla195	Panfilia									place	human			ACT
+#pla196	Atalia									place	human			ACT
+#pla197	Frigia									place	human			ACT
+#pla198	Galacia									place	human			ACT
+#pla199	Macedonia									place	human			ACT
+#pla200	Tesalónica									place	human			ACT
+#pla201	Misia									place	human			ACT
+#pla202	Troas									place	human			ACT
+#pla203	Bitinia									place	human			ACT
+#pla204	Samotracia									place	human			ACT
+#pla205	Neápolis									place	human			ACT
+#pla206	Filipos									place	human			ACT
+#pla207	Anfípolis									place	human			ACT
+#pla208	Apolonia									place	human			ACT
+#pla209	Berea									place	human			ACT
+#pla210	Atenas									place	human			ACT
+#pla211	Areópago									place	human			ACT
+#pla212	Corinto									place	human			ACT
+#pla213	Italia									place	human			ACT
+#pla214	Roma									place	human			ACT
+#pla215	Erasto									place	human			ACT
+#pla216	Alejandría									place	human			ACT
+#pla217	Grecia									place	human			ACT
+#pla218	Asón									place	human			ACT
+#pla219	Mitilene									place	human			ACT
+#pla220	Quío									place	human			ACT
+#pla221	Samos									place	human			ACT
+#pla222	Trogilio									place	human			ACT
+#pla223	Mileto									place	human			ACT
+#pla224	Cos									place	human			ACT
+#pla225	Rodas									place	human			ACT
+#pla226	Pátara									place	human			ACT
+#pla227	Tolemaida									place	human			ACT
+#pla228	Antípatris									place	human			ACT
+#pla229	Panfilia									place	human			ACT
+#pla230	Mira									place	human			ACT
+#pla231	Licia									place	human			ACT
+#pla232	Gnido									place	human			ACT
+#pla233	Creta									place	human			ACT
+#pla234	Buenos Puertos									place	human			ACT
+#pla235	Lasea									place	human			ACT
+#pla236	Fenice									place	human			ACT
+#pla237	Clauda									place	human			ACT
+#pla238	Sirte									place	human			ACT
+#pla239	mar Adriático									place	human			ACT
+#pla240	Malta									place	human			ACT
+#pla241	Siracusa									place	human			ACT
+#pla242	Regio									place	human			ACT
+#pla243	Puteoli									place	human			ACT
+#pla244	Foro de Apio									place	human			ACT
+#pla245	Tres Tabernas									place	human			ACT
