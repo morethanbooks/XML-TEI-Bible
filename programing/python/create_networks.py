@@ -25,7 +25,7 @@ def create_networks(inputtei, output, border, book, subelements, attributes):
         inputtei = "/home/jose/Dropbox/biblia/tb/TEIBible.xml", 
         output = "//home/jose/Dropbox/biblia/tb/resulting data/",
         border = "ab",
-        book = "GEN",
+        book = "ACT",
         subelements = ["q","rs"],
         attributes = ["who","corresp","key"],
         )
