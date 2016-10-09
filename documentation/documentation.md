@@ -29,9 +29,10 @@ At the moment following books are fully encoded in this chronological order:
 * Book of Ruth
 * Book of Jonah
 * 75 first Psalms
+* Acts
 
 At the moment, following book is being encoded:
-* Acts
+* Malachi
 
 ## Original Text
 
@@ -65,7 +66,7 @@ It has been used the rs TEI element with the attribute key. It has been encoded 
 * Very clear time references, as tim + number
 * Written works and books, as wor + number
 
-The order of the number follow in the majority of the cases the order that I have been following encoding the Bible. So Jesus is per1 not because I think he is very important, but because he is the first person been mentioned in Matthew (the first book that I encoded).
+The order of the number follow in the majority of the cases the order that I have been following encoding the Bible. So Jesus is per1 not because I think he is very important, but because he is the first person been mentioned in Matthew (the first book that I encoded). Take in considerartion that God is per14.
 
 To know more about the information that is encoded about each of this entities, read the section about the ontology.
 
@@ -111,7 +112,7 @@ In the ontology file you find for each of this categories:
 
 There different projects that have helped to put together this idea. One incredible resource is http://www.openbible.info/, which have a similar orientation and offer a lot of interesting visualizations and data.
 
-Many of the things that I put in use in this project I have learnt from the CLiGS at the University of Würzburg, Germany, (http://cligs.hypotheses.org/) and many of my scripts look like a lot like the our toolbox.
+Many of the things that I put in use in this project I have learnt from the CLiGS at the University of Würzburg, Germany, (http://cligs.hypotheses.org/) and many of my scripts look a lot like the ones from the toolbox.
 
 # Aditional files
 

@@ -41,7 +41,7 @@ def finding_rs_from_ontology(content, df, book):
     # It goes row by row
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "person" and row["book"] == "NT") or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "person" and row["order-edition"] == book):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "person" and row["book"] == "AT") or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "person" and row["order-edition"] == book):
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         
     return content
@@ -101,7 +101,7 @@ def values_q(content):
     return(content)
 
 
-def finding_structure(inputcsv, inputtei, outputtei, book):
+def finding_structure(inputcsv, inputtei, outputtei, bookcode):
     """
     finding_structure = finding_structure("/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv","/home/jose/Dropbox/biblia/tb/programing/python/input/rut.xml", "/home/jose/Dropbox/TEIBibel/programacion/python/output/")
     """
@@ -121,7 +121,7 @@ def finding_structure(inputcsv, inputtei, outputtei, book):
             content = fin.read()
             
             # Buscamos las personas de la ontología
-            content = finding_rs_from_ontology(content, df, book)
+            content = finding_rs_from_ontology(content, df, bookcode)
             
             # Buscamos las personas genéricas
             content = finding_standard_rs(content)
@@ -147,7 +147,7 @@ def finding_structure(inputcsv, inputtei, outputtei, book):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/hechos.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/malachi.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "SAL"    
+    "MAL"    
     )
