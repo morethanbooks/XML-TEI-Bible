@@ -1,127 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
-<?xml-stylesheet type="text/css" href="styles/text2pic3.css" rel="stylesheet" title="Word2pic-3"?>
-<?xml-stylesheet type="text/css" href="styles/text2pic2.css" rel="stylesheet" title="Word2pic-2"?>
-<?xml-stylesheet type="text/css" href="styles/styles-q-type.css" rel="alternate stylesheet" title="q-type"?>
-<?xml-stylesheet type="text/css" href="styles/text2pic1.css" rel="stylesheet" title="Word2pic"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Malaquías</title>
-                <title type="idno">
-                    <idno type="string">MAL</idno>
-                    <idno type="viaf">192637637</idno>
-                </title>
-                <author>
-                    <name type="short"></name>
-                    <name type="full"></name>z
-                    <idno type="viaf"></idno>
-                </author>
-                <principal key="#jct">José Calvo Tello</principal>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>José Calvo Tello</publisher>
-                <availability status="free">
-                    <p>The text is freely available.</p>
-                </availability>
-                <date when="2016">2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
-                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
-                <bibl type="edition-first"><date when="1569">1569</date></bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p></p>
-        </encodingDesc>
-        <revisionDesc>
-            <change when="2016-10-09" who="#jct">First version of Malachi</change>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <front>
-            <div />
-        </front>
 <body>
 
 <div xml:id="b.MAL.1" type="chapter" n="1">
 <div type="pericope">
-    <head type="pericope">Profecía. Palabra de Jehová contra Israel, por medio de Malaquías:</head>
-    <ab xml:id="b.MAL.1.1" type="verse" n="1">Profecía. Palabra de <rs key="per14">Jehová</rs> contra <rs key="#pla4">Israel</rs>, por medio de <rs key="per573">Malaquías</rs>:</ab>
-    <ab xml:id="b.MAL.1.2" type="verse" n="2"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">«Yo os he amado,</q></q> dice <rs key="per14">Jehová</rs>. <q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">Pero vosotros dijisteis:  <q who="org70" corresp="per14" type="oral">¿En qué nos amaste?.</q> ¿No era <rs key="#per131">Esaú</rs> <rs key="per131">hermano de <rs key="#per4">Jacob</rs></rs>?, dice <rs key="per14">Jehová</rs>; sin embargo, amé a <rs key="#per4">Jacob</rs></q></q></ab>
-    <ab xml:id="b.MAL.1.3" type="verse" n="3"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">y a <rs key="#per131">Esaú</rs> aborrecí; convertí sus montes en desolación y abandoné su <rs key="org125">heredad</rs> a los chacales del desierto.</q></q></ab>
-    <ab xml:id="b.MAL.1.4" type="verse" n="4"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral"><rs key="pla246">Edom</rs> dice: <q who="org126" corresp="org0" type="oral">Nos hemos empobrecido, pero volveremos a edificar lo arruinado;</q> pero así ha dicho <rs key="per14">Jehová de los ejércitos</rs>: Ellos edificarán y yo destruiré; los llamarán <rs key="pla246">territorio de impiedad</rs> y <rs key="org126">pueblo</rs> contra el cual <rs key="per14">Jehová</rs> está indignado para siempre.</q></q></ab>
-    <ab xml:id="b.MAL.1.5" type="verse" n="5"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">Vuestros ojos lo verán, y diréis: <q who="org70" corresp="org0" type="oral">Sea <rs key="per14">Jehová</rs> engrandecido más allá de los límites de <rs key="#pla4">Israel</rs>.</q></q></q></ab>
-    <ab xml:id="b.MAL.1.6" type="verse" n="6"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70 per12" type="oral">»El hijo honra al padre y el siervo a su señor. Si, pues, yo soy <rs key="per14">padre</rs>, ¿dónde está mi honra?; y si soy <rs key="per14">señor</rs>, ¿dónde está mi temor?, dice <rs key="per14">Jehová de los ejércitos</rs> a vosotros, <rs key="#org12">sacerdotes</rs>, que menospreciáis mi nombre y decís: <q who="org12" corresp="per14" type="oral">¿En qué hemos menospreciado tu nombre?.</q></q></q></ab>
-    <ab xml:id="b.MAL.1.7" type="verse" n="7"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70 org12" type="oral">En que ofrecéis sobre mi altar pan inmundo. Y todavía decís: <q who="org12" corresp="per14" type="oral">¿En qué te hemos deshonrado?</q> En que pensáis que la mesa de <rs key="per14">Jehová</rs> es despreciable.</q></q></ab>
-<ab xml:id="b.MAL.1.8" type="verse" n="8"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">Cuando ofrecéis el animal ciego para el sacrificio, ¿acaso no es malo? Asimismo, cuando ofrecéis el cojo o el enfermo, ¿acaso no es malo? Preséntalo, pues, a tu <rs key="org100">príncipe</rs>; ¿acaso le serás grato o te acogerá benévolo?, dice <rs key="per14">Jehová de los ejércitos</rs>».</q></q></ab>
-<ab xml:id="b.MAL.1.9" type="verse" n="9"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">Ahora, pues, orad por el favor de <rs key="#per14">Dios</rs>, para que tenga piedad de nosotros. Pero, «¿cómo podéis agradarle, si hacéis estas cosas?, dice <rs key="per14">Jehová</rs> de los ejércitos.</q></q></ab>
-<ab xml:id="b.MAL.1.10" type="verse" n="10"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">¿Quién hay entre vosotros que cierre las puertas o alumbre de balde mi altar? Yo no me complazco en vosotros, dice <rs key="per14">Jehová de los ejércitos</rs>, ni de vuestra mano aceptaré ofrenda.</q></q></ab>
-    <ab xml:id="b.MAL.1.11" type="verse" n="11"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">Porque desde donde el sol nace hasta donde se pone, es grande mi nombre entre las <rs key="pla41">naciones</rs>, y en todo <rs key="pla41">lugar</rs> se ofrece a mi nombre incienso y ofrenda limpia. Grande es mi nombre entre las <rs key="pla41">naciones</rs>, dice <rs key="per14">Jehová de los ejércitos</rs>;</q></q></ab>
-    <ab xml:id="b.MAL.1.12" type="verse" n="12"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">pero vosotros lo profanáis cuando decís: <q who="org70" corresp="org0" type="oral">Inmunda es la mesa de <rs key="per14">Jehová</rs></q>, y cuando decís que su alimento es despreciable.</q></q></ab>
-    <ab xml:id="b.MAL.1.13" type="verse" n="13"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">Además, habéis dicho: <q who="org70" corresp="org0" type="oral">¡Qué fastidio es esto!</q>, y me despreciáis, dice <rs key="per14">Jehová</rs> de los ejércitos. Trajisteis lo robado, o cojo, o enfermo, y me lo presentasteis como ofrenda. ¿Aceptaré yo eso de vuestras manos?, dice <rs key="per14">Jehová</rs>.</q></q></ab>
-<ab xml:id="b.MAL.1.14" type="verse" n="14"><q who="per14" corresp="per573" type="oral"><q who="per573" corresp="org70" type="oral">Maldito el que engaña, el que teniendo machos en su rebaño promete y sacrifica a <rs key="per14">Jehová</rs> lo dañado. Porque yo soy <rs key="per14">Gran Rey</rs>, dice <rs key="per14">Jehová de los ejércitos</rs>, y mi nombre es temible entre las <rs key="pla41">naciones</rs>.</q></q></ab>
+<head type="pericope"></head><ab xml:id="b.MAL.1.1" type="verse" n="1">Profecía. Palabra de Jehová contra Israel, por medio de Malaquías:</ab>
+<ab xml:id="b.MAL.1.2" type="verse" n="2">«Yo os he amado, dice Jehová. Pero vosotros dijisteis: ¿En qué nos amaste?. ¿No era Esaú hermano de Jacob?, dice Jehová; sin embargo, amé a Jacob</ab>
+<ab xml:id="b.MAL.1.3" type="verse" n="3">y a Esaú aborrecí; convertí sus montes en desolación y abandoné su heredad a los chacales del desierto.</ab>
+<ab xml:id="b.MAL.1.4" type="verse" n="4">Edom dice: Nos hemos empobrecido, pero volveremos a edificar lo arruinado; pero así ha dicho Jehová de los ejércitos: Ellos edificarán y yo destruiré; los llamarán territorio de impiedad y pueblo contra el cual Jehová está indignado para siempre.</ab>
+<ab xml:id="b.MAL.1.5" type="verse" n="5">Vuestros ojos lo verán, y diréis: Sea Jehová engrandecido más allá de los límites de Israel.</ab>
+<ab xml:id="b.MAL.1.6" type="verse" n="6">»El hijo honra al padre y el siervo a su señor. Si, pues, yo soy padre, ¿dónde está mi honra?; y si soy señor, ¿dónde está mi temor?, dice Jehová de los ejércitos a vosotros, sacerdotes, que menospreciáis mi nombre y decís: ¿En qué hemos menospreciado tu nombre?.</ab>
+<ab xml:id="b.MAL.1.7" type="verse" n="7">En que ofrecéis sobre mi altar pan inmundo. Y todavía decís: ¿En qué te hemos deshonrado?. En que pensáis que la mesa de Jehová es despreciable.</ab>
+<ab xml:id="b.MAL.1.8" type="verse" n="8">Cuando ofrecéis el animal ciego para el sacrificio, ¿acaso no es malo? Asimismo, cuando ofrecéis el cojo o el enfermo, ¿acaso no es malo? Preséntalo, pues, a tu príncipe; ¿acaso le serás grato o te acogerá benévolo?, dice Jehová de los ejércitos».</ab>
+<ab xml:id="b.MAL.1.9" type="verse" n="9">Ahora, pues, orad por el favor de Dios, para que tenga piedad de nosotros. Pero, «¿cómo podéis agradarle, si hacéis estas cosas?, dice Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.1.10" type="verse" n="10">¿Quién hay entre vosotros que cierre las puertas o alumbre de balde mi altar? Yo no me complazco en vosotros, dice Jehová de los ejércitos, ni de vuestra mano aceptaré ofrenda.</ab>
+<ab xml:id="b.MAL.1.11" type="verse" n="11">Porque desde donde el sol nace hasta donde se pone, es grande mi nombre entre las naciones, y en todo lugar se ofrece a mi nombre incienso y ofrenda limpia. Grande es mi nombre entre las naciones, dice Jehová de los ejércitos;</ab>
+<ab xml:id="b.MAL.1.12" type="verse" n="12">pero vosotros lo profanáis cuando decís: Inmunda es la mesa de Jehová, y cuando decís que su alimento es despreciable.</ab>
+<ab xml:id="b.MAL.1.13" type="verse" n="13">Además, habéis dicho: ¡Qué fastidio es esto!, y me despreciáis, dice Jehová de los ejércitos. Trajisteis lo robado, o cojo, o enfermo, y me lo presentasteis como ofrenda. ¿Aceptaré yo eso de vuestras manos?, dice Jehová.</ab>
+<ab xml:id="b.MAL.1.14" type="verse" n="14">Maldito el que engaña, el que teniendo machos en su rebaño promete y sacrifica a Jehová lo dañado. Porque yo soy Gran Rey, dice Jehová de los ejércitos, y mi nombre es temible entre las naciones.</ab>
 
 </div>
 </div>
 <div xml:id="b.MAL.2" type="chapter" n="2">
 <div type="pericope">
-<head type="pericope"></head><ab xml:id="b.MAL.2.1" type="verse" n="1">»Ahora, pues, <rs key="#org12">sacerdotes</rs>, para vosotros es este mandamiento.</ab>
-<ab xml:id="b.MAL.2.2" type="verse" n="2"><q who="per" corresp="per" type="oral">Si no escucháis y si no decidís de corazón dar gloria a mi nombre, ha dicho <rs key="per14">Jehová</rs> de los ejércitos, enviaré maldición sobre vosotros y maldeciré vuestras bendiciones; y ya las he maldecido, porque no os habéis decidido de corazón.</q></ab>
-<ab xml:id="b.MAL.2.3" type="verse" n="3"><q who="per" corresp="per" type="oral">»Yo os dañaré la sementera, os echaré al rostro el estiércol, el estiércol de vuestros animales sacrificados, y seréis arrojados juntamente con él.</q></ab>
-<ab xml:id="b.MAL.2.4" type="verse" n="4"><q who="per" corresp="per" type="oral">Así sabréis que yo os envié este mandamiento, para que permanezca mi pacto con <rs key="#per125">Leví</rs>, ha dicho <rs key="per14">Jehová</rs> de los ejércitos.</q></ab>
-<ab xml:id="b.MAL.2.5" type="verse" n="5"><q who="per" corresp="per" type="oral">»Mi pacto con él fue de vida y de paz. Se las di para que me temiera, y él tuvo temor de mí y ante mi nombre guardaba reverencia.</q></ab>
+<head type="pericope"></head><ab xml:id="b.MAL.2.1" type="verse" n="1">»Ahora, pues, sacerdotes, para vosotros es este mandamiento.</ab>
+<ab xml:id="b.MAL.2.2" type="verse" n="2">Si no escucháis y si no decidís de corazón dar gloria a mi nombre, ha dicho Jehová de los ejércitos, enviaré maldición sobre vosotros y maldeciré vuestras bendiciones; y ya las he maldecido, porque no os habéis decidido de corazón.</ab>
+<ab xml:id="b.MAL.2.3" type="verse" n="3">»Yo os dañaré la sementera, os echaré al rostro el estiércol, el estiércol de vuestros animales sacrificados, y seréis arrojados juntamente con él.</ab>
+<ab xml:id="b.MAL.2.4" type="verse" n="4">Así sabréis que yo os envié este mandamiento, para que permanezca mi pacto con Leví, ha dicho Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.2.5" type="verse" n="5">»Mi pacto con él fue de vida y de paz. Se las di para que me temiera, y él tuvo temor de mí y ante mi nombre guardaba reverencia.</ab>
 <ab xml:id="b.MAL.2.6" type="verse" n="6">La ley de verdad estuvo en su boca, iniquidad no fue hallada en sus labios; en paz y en justicia anduvo conmigo, y a muchos hizo apartar de la maldad.</ab>
-<ab xml:id="b.MAL.2.7" type="verse" n="7">Porque los labios del sacerdote han de guardar la sabiduría, y de su boca el <rs key="org">pueblo</rs> buscará la <rs key="per">Ley</rs>; porque es mensajero de <rs key="per14">Jehová</rs> de los ejércitos.</ab>
-<ab xml:id="b.MAL.2.8" type="verse" n="8"><q who="per" corresp="per" type="oral">»<rs key="#per167"><rs key="#per278">Mas</rs></rs> vosotros os habéis apartado del camino; habéis hecho tropezar a muchos en la <rs key="per">Ley</rs>; habéis corrompido el pacto de <rs key="#per125">Leví</rs>, dice <rs key="per14">Jehová</rs> de los ejércitos.</q></ab>
-<ab xml:id="b.MAL.2.9" type="verse" n="9"><q who="per" corresp="per" type="oral">Por eso yo os he hecho despreciables, viles ante todo el <rs key="org">pueblo</rs>, porque no habéis guardado mis caminos y hacéis acepción de personas al aplicar la <rs key="per">Ley</rs>».</q></ab>
-<ab xml:id="b.MAL.2.10" type="verse" n="10">¿Acaso no tenemos todos un mismo <rs key="per">Padre</rs>? ¿No nos ha creado un mismo <rs key="#per14">Dios</rs>? ¿Por qué, pues, somos desleales los unos con los otros, profanando el pacto de nuestros <rs key="per">padres</rs>?</ab>
-<ab xml:id="b.MAL.2.11" type="verse" n="11">Prevaricó <rs key="#per5">Judá</rs>; en <rs key="#pla4">Israel</rs> y en <rs key="#pla3">Jerusalén</rs> se ha cometido abominación, porque <rs key="#per5">Judá</rs> ha profanado el santuario de <rs key="per14">Jehová</rs>, el que él amó, al casarse con la <rs key="per">hija</rs> de un dios extraño.</ab>
-<ab xml:id="b.MAL.2.12" type="verse" n="12"><rs key="per14">Jehová</rs> arrancará de las tiendas de <rs key="#per4">Jacob</rs> al <rs key="per">hombre</rs> que haga esto, al que vela, al que responde y al que ofrece ofrenda a <rs key="per14">Jehová</rs> de los ejércitos.</ab>
-<ab xml:id="b.MAL.2.13" type="verse" n="13">Pero aún hacéis más: Cubrís el altar de <rs key="per14">Jehová</rs> de lágrimas, de llanto y de clamor; así que no miraré más la ofrenda, ni la aceptaré con gusto de vuestras manos.</ab>
-<ab xml:id="b.MAL.2.14" type="verse" n="14"><q who="per" corresp="per" type="oral"><rs key="#per167"><rs key="#per278">Mas</rs></rs> diréis: «¿Por qué?». Porque <rs key="per14">Jehová</rs> es testigo entre ti y la <rs key="per">mujer</rs> de tu juventud, con la cual has sido desleal, aunque ella era tu compañera y la <rs key="per">mujer</rs> de tu pacto.</q></ab>
-<ab xml:id="b.MAL.2.15" type="verse" n="15">¿No hizo él un solo ser, en el cual hay abundancia de espíritu? ¿Y por qué uno? Porque buscaba una <rs key="org">descendencia</rs> para <rs key="#per14">Dios</rs>. Guardaos, pues, en vuestro espíritu y no seáis desleales para con la <rs key="per">mujer</rs> de vuestra juventud.</ab>
-<ab xml:id="b.MAL.2.16" type="verse" n="16">Porque dice <rs key="per14">Jehová</rs>, <rs key="#per14">Dios de <rs key="#pla4">Israel</rs></rs>, que él aborrece el repudio y al que mancha de maldad su vestido, dijo <rs key="per14">Jehová</rs> de los ejércitos. Guardaos, pues, en vuestro espíritu y no seáis desleales.</ab>
-<ab xml:id="b.MAL.2.17" type="verse" n="17">Habéis hecho cansar a <rs key="per14">Jehová</rs> con vuestras palabras. Y preguntáis:  <q who="per14" corresp="per" type="oral">«¿En qué lo hemos cansado?». En que decís: «Cualquiera que hace mal, agrada a <rs key="per14">Jehová</rs>; en los tales se complace»; o si no: «¿Dónde está el <rs key="#per14">Dios</rs> de justicia?».</q></ab>
+<ab xml:id="b.MAL.2.7" type="verse" n="7">Porque los labios del sacerdote han de guardar la sabiduría, y de su boca el pueblo buscará la Ley; porque es mensajero de Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.2.8" type="verse" n="8">»Mas vosotros os habéis apartado del camino; habéis hecho tropezar a muchos en la Ley; habéis corrompido el pacto de Leví, dice Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.2.9" type="verse" n="9">Por eso yo os he hecho despreciables, viles ante todo el pueblo, porque no habéis guardado mis caminos y hacéis acepción de personas al aplicar la Ley».</ab>
+<ab xml:id="b.MAL.2.10" type="verse" n="10">¿Acaso no tenemos todos un mismo Padre? ¿No nos ha creado un mismo Dios? ¿Por qué, pues, somos desleales los unos con los otros, profanando el pacto de nuestros padres?</ab>
+<ab xml:id="b.MAL.2.11" type="verse" n="11">Prevaricó Judá; en Israel y en Jerusalén se ha cometido abominación, porque Judá ha profanado el santuario de Jehová, el que él amó, al casarse con la hija de un dios extraño.</ab>
+<ab xml:id="b.MAL.2.12" type="verse" n="12">Jehová arrancará de las tiendas de Jacob al hombre que haga esto, al que vela, al que responde y al que ofrece ofrenda a Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.2.13" type="verse" n="13">Pero aún hacéis más: Cubrís el altar de Jehová de lágrimas, de llanto y de clamor; así que no miraré más la ofrenda, ni la aceptaré con gusto de vuestras manos.</ab>
+<ab xml:id="b.MAL.2.14" type="verse" n="14">Mas diréis: «¿Por qué?». Porque Jehová es testigo entre ti y la mujer de tu juventud, con la cual has sido desleal, aunque ella era tu compañera y la mujer de tu pacto.</ab>
+<ab xml:id="b.MAL.2.15" type="verse" n="15">¿No hizo él un solo ser, en el cual hay abundancia de espíritu? ¿Y por qué uno? Porque buscaba una descendencia para Dios. Guardaos, pues, en vuestro espíritu y no seáis desleales para con la mujer de vuestra juventud.</ab>
+<ab xml:id="b.MAL.2.16" type="verse" n="16">Porque dice Jehová, Dios de Israel, que él aborrece el repudio y al que mancha de maldad su vestido, dijo Jehová de los ejércitos. Guardaos, pues, en vuestro espíritu y no seáis desleales.</ab>
+<ab xml:id="b.MAL.2.17" type="verse" n="17">Habéis hecho cansar a Jehová con vuestras palabras. Y preguntáis: «¿En qué lo hemos cansado?». En que decís: «Cualquiera que hace mal, agrada a Jehová; en los tales se complace»; o si no: «¿Dónde está el Dios de justicia?».</ab>
 
 </div>
 </div>
 <div xml:id="b.MAL.3" type="chapter" n="3">
 <div type="pericope">
-<head type="pericope"></head><ab xml:id="b.MAL.3.1" type="verse" n="1"><q who="per" corresp="per" type="oral">«Yo envío mi mensajero para que prepare el camino delante de mí. Y vendrá súbitamente a su <rs key="per">Templo</rs> el <rs key="per">Señor</rs> a quien vosotros buscáis; y el <rs key="#org4">ángel</rs> del pacto, a quien deseáis vosotros, ya viene», ha dicho <rs key="per14">Jehová</rs> de los ejércitos.</q></ab>
+<head type="pericope"></head><ab xml:id="b.MAL.3.1" type="verse" n="1">«Yo envío mi mensajero para que prepare el camino delante de mí. Y vendrá súbitamente a su Templo el Señor a quien vosotros buscáis; y el ángel del pacto, a quien deseáis vosotros, ya viene», ha dicho Jehová de los ejércitos.</ab>
 <ab xml:id="b.MAL.3.2" type="verse" n="2">¿Pero quién podrá soportar el tiempo de su venida? o ¿quién podrá estar en pie cuando él se manifieste? Porque él es como fuego purificador y como jabón de lavadores.</ab>
-<ab xml:id="b.MAL.3.3" type="verse" n="3">Él se sentará para afinar y limpiar la plata: limpiará a los <rs key="org">hijos de <rs key="#per125">Leví</rs></rs>, los afinará como a oro y como a plata, y traerán a <rs key="per14">Jehová</rs> ofrenda en justicia.</ab>
-<ab xml:id="b.MAL.3.4" type="verse" n="4">Entonces será grata a <rs key="per14">Jehová</rs> la ofrenda de <rs key="#per5">Judá</rs> y de <rs key="#pla3">Jerusalén</rs>, como en los días pasados, como en los años antiguos.</ab>
-<ab xml:id="b.MAL.3.5" type="verse" n="5"><q who="per" corresp="per" type="oral">«Vendré a vosotros para juicio, y testificaré sin vacilar contra los hechiceros y adúlteros, contra los que juran falsamente; contra los que defraudan en su salario al jornalero, a la viuda y al huérfano, contra los que hacen injusticia al extranjero, sin tener temor de mí», dice <rs key="per14">Jehová</rs> de los ejércitos.</q></ab>
-<ab xml:id="b.MAL.3.6" type="verse" n="6"><q who="per" corresp="per" type="oral">«Porque yo, <rs key="per14">Jehová</rs>, no cambio; por esto, <rs key="org">hijos de <rs key="#per4">Jacob</rs></rs>, no habéis sido consumidos.</q></ab>
-<ab xml:id="b.MAL.3.7" type="verse" n="7"><q who="per" corresp="per" type="oral">Desde los días de vuestros <rs key="per">padres</rs> os apartáis de mis leyes y no las guardáis. ¡Volveos a mí y yo me volveré a vosotros!, ha dicho <rs key="per14">Jehová</rs> de los ejércitos. Pero vosotros decís: ¿En qué hemos de volvernos?.</q></ab>
-<ab xml:id="b.MAL.3.8" type="verse" n="8"><q who="per" corresp="per" type="oral">¿Robará el <rs key="per">hombre</rs> a <rs key="#per14">Dios</rs>? Pues vosotros me habéis robado. Y aún preguntáis:  <q who="#per14" corresp="per" type="oral">¿En qué te hemos robado?. En vuestros diezmos y ofrendas.</q></q></ab>
-<ab xml:id="b.MAL.3.9" type="verse" n="9"><q who="#per14" corresp="per" type="oral">Malditos sois con maldición, porque vosotros, la nación toda, me habéis robado.</q></ab>
-<ab xml:id="b.MAL.3.10" type="verse" n="10"><q who="per" corresp="per" type="oral">Traed todos los diezmos al alfolí y haya alimento en mi <rs key="per">Casa</rs>: Probadme ahora en esto, dice <rs key="per14">Jehová</rs> de los ejércitos, a ver si no os abro las ventanas de los cielos y derramo sobre vosotros bendición hasta que sobreabunde.</q></ab>
-<ab xml:id="b.MAL.3.11" type="verse" n="11"><q who="per" corresp="per" type="oral">Reprenderé también por vosotros al devorador, y no os destruirá el fruto de la <rs key="#pla41">tierra</rs>, ni vuestra vid en el <rs key="pla">campo</rs> será estéril, dice <rs key="per14">Jehová</rs> de los ejércitos.</q></ab>
-<ab xml:id="b.MAL.3.12" type="verse" n="12"><q who="per" corresp="per" type="oral">Todas las naciones os dirán bienaventurados, porque seréis <rs key="#pla41">tierra</rs> deseable, dice <rs key="per14">Jehová</rs> de los ejércitos.</q></ab>
-<ab xml:id="b.MAL.3.13" type="verse" n="13"><q who="per" corresp="per" type="oral">»Vuestras palabras contra mí han sido violentas, dice <rs key="per14">Jehová</rs>. Y todavía preguntáis:  <q who="per14" corresp="per" type="oral">¿Qué hemos hablado contra ti?.</q></q></ab>
-<ab xml:id="b.MAL.3.14" type="verse" n="14">Habéis dicho: Por demás es servir a <rs key="#per14">Dios</rs>. ¿Qué aprovecha que guardemos su <rs key="per">Ley</rs> y que andemos afligidos en presencia de <rs key="per14">Jehová</rs> de los ejércitos?</ab>
-<ab xml:id="b.MAL.3.15" type="verse" n="15">Hemos visto que los soberbios son felices, que los que hacen impiedad no solo prosperan, sino que tientan a <rs key="#per14">Dios</rs>, y no les pasa nada».</ab>
-<ab xml:id="b.MAL.3.16" type="verse" n="16">Entonces los que temían a <rs key="per14">Jehová</rs> hablaron entre sí. <rs key="per14">Jehová</rs> escuchó y oyó, y fue escrito ante él un memorial de los que temen a <rs key="per14">Jehová</rs> y honran su nombre.</ab>
-<ab xml:id="b.MAL.3.17" type="verse" n="17"><q who="per" corresp="per" type="oral">«Serán para mí especial tesoro, dice <rs key="per14">Jehová</rs> de los ejércitos, en el día en que yo actúe. Los perdonaré como un <rs key="per">hombre</rs> perdona al <rs key="per">hijo</rs> que lo sirve.</q></ab>
-<ab xml:id="b.MAL.3.18" type="verse" n="18"><q who="per" corresp="per" type="oral">Entonces os volveréis y discerniréis la diferencia entre el justo y el malo, entre el que sirve a <rs key="#per14">Dios</rs> y el que no le sirve».</q></ab>
+<ab xml:id="b.MAL.3.3" type="verse" n="3">Él se sentará para afinar y limpiar la plata: limpiará a los hijos de Leví, los afinará como a oro y como a plata, y traerán a Jehová ofrenda en justicia.</ab>
+<ab xml:id="b.MAL.3.4" type="verse" n="4">Entonces será grata a Jehová la ofrenda de Judá y de Jerusalén, como en los días pasados, como en los años antiguos.</ab>
+<ab xml:id="b.MAL.3.5" type="verse" n="5">«Vendré a vosotros para juicio, y testificaré sin vacilar contra los hechiceros y adúlteros, contra los que juran falsamente; contra los que defraudan en su salario al jornalero, a la viuda y al huérfano, contra los que hacen injusticia al extranjero, sin tener temor de mí», dice Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.3.6" type="verse" n="6">«Porque yo, Jehová, no cambio; por esto, hijos de Jacob, no habéis sido consumidos.</ab>
+<ab xml:id="b.MAL.3.7" type="verse" n="7">Desde los días de vuestros padres os apartáis de mis leyes y no las guardáis. ¡Volveos a mí y yo me volveré a vosotros!, ha dicho Jehová de los ejércitos. Pero vosotros decís: ¿En qué hemos de volvernos?.</ab>
+<ab xml:id="b.MAL.3.8" type="verse" n="8">¿Robará el hombre a Dios? Pues vosotros me habéis robado. Y aún preguntáis: ¿En qué te hemos robado?. En vuestros diezmos y ofrendas.</ab>
+<ab xml:id="b.MAL.3.9" type="verse" n="9">Malditos sois con maldición, porque vosotros, la nación toda, me habéis robado.</ab>
+<ab xml:id="b.MAL.3.10" type="verse" n="10">Traed todos los diezmos al alfolí y haya alimento en mi Casa: Probadme ahora en esto, dice Jehová de los ejércitos, a ver si no os abro las ventanas de los cielos y derramo sobre vosotros bendición hasta que sobreabunde.</ab>
+<ab xml:id="b.MAL.3.11" type="verse" n="11">Reprenderé también por vosotros al devorador, y no os destruirá el fruto de la tierra, ni vuestra vid en el campo será estéril, dice Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.3.12" type="verse" n="12">Todas las naciones os dirán bienaventurados, porque seréis tierra deseable, dice Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.3.13" type="verse" n="13">»Vuestras palabras contra mí han sido violentas, dice Jehová. Y todavía preguntáis: ¿Qué hemos hablado contra ti?.</ab>
+<ab xml:id="b.MAL.3.14" type="verse" n="14">Habéis dicho: Por demás es servir a Dios. ¿Qué aprovecha que guardemos su Ley y que andemos afligidos en presencia de Jehová de los ejércitos?</ab>
+<ab xml:id="b.MAL.3.15" type="verse" n="15">Hemos visto que los soberbios son felices, que los que hacen impiedad no solo prosperan, sino que tientan a Dios, y no les pasa nada».</ab>
+<ab xml:id="b.MAL.3.16" type="verse" n="16">Entonces los que temían a Jehová hablaron entre sí. Jehová escuchó y oyó, y fue escrito ante él un memorial de los que temen a Jehová y honran su nombre.</ab>
+<ab xml:id="b.MAL.3.17" type="verse" n="17">«Serán para mí especial tesoro, dice Jehová de los ejércitos, en el día en que yo actúe. Los perdonaré como un hombre perdona al hijo que lo sirve.</ab>
+<ab xml:id="b.MAL.3.18" type="verse" n="18">Entonces os volveréis y discerniréis la diferencia entre el justo y el malo, entre el que sirve a Dios y el que no le sirve».</ab>
 
 </div>
 </div>
 <div xml:id="b.MAL.4" type="chapter" n="4">
 <div type="pericope">
-<head type="pericope"></head><ab xml:id="b.MAL.4.1" type="verse" n="1">«Ciertamente viene el día, ardiente como un horno, y todos los soberbios y todos los que hacen maldad serán estopa. Aquel día que vendrá, los abrasará, dice <rs key="per14">Jehová</rs> de los ejércitos, y no les dejará ni raíz ni rama.</ab>
-<ab xml:id="b.MAL.4.2" type="verse" n="2"><q who="per" corresp="per" type="oral"><rs key="#per167"><rs key="#per278">Mas</rs></rs> para vosotros, los que teméis mi nombre, nacerá el sol de justicia y en sus alas traerá salvación. Saldréis y saltaréis como becerros de la manada.</q></ab>
-<ab xml:id="b.MAL.4.3" type="verse" n="3"><q who="per" corresp="per" type="oral">Pisotearéis a los malos, los cuales serán ceniza bajo las plantas de vuestros pies en el día en que yo actúe, dice <rs key="per14">Jehová</rs> de los ejércitos.</q></ab>
-    <ab xml:id="b.MAL.4.4" type="verse" n="4"><q who="per" corresp="per" type="oral">»Acordaos de la ley de <rs key="#per26">Moisés</rs>, mi <rs key="per">siervo</rs>, al cual encargué, en <rs key="pla159">Horeb</rs>, ordenanzas y leyes para todo <rs key="#pla4">Israel</rs>.</q></ab>
-<ab xml:id="b.MAL.4.5" type="verse" n="5"><q who="per" corresp="per" type="oral">»Yo os envío al profeta <rs key="#per13">Elías</rs> antes que venga el día de <rs key="per14">Jehová</rs>, grande y terrible.</q></ab>
-<ab xml:id="b.MAL.4.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Él hará volver el corazón de los <rs key="per">padres</rs> hacia los <rs key="org">hijos</rs>, y el corazón de los <rs key="org">hijos</rs> hacia los <rs key="per">padres</rs>, no sea que yo venga y castigue la <rs key="#pla41">tierra</rs> con maldición».</q></ab>
+<head type="pericope"></head><ab xml:id="b.MAL.4.1" type="verse" n="1">«Ciertamente viene el día, ardiente como un horno, y todos los soberbios y todos los que hacen maldad serán estopa. Aquel día que vendrá, los abrasará, dice Jehová de los ejércitos, y no les dejará ni raíz ni rama.</ab>
+<ab xml:id="b.MAL.4.2" type="verse" n="2">Mas para vosotros, los que teméis mi nombre, nacerá el sol de justicia y en sus alas traerá salvación. Saldréis y saltaréis como becerros de la manada.</ab>
+<ab xml:id="b.MAL.4.3" type="verse" n="3">Pisotearéis a los malos, los cuales serán ceniza bajo las plantas de vuestros pies en el día en que yo actúe, dice Jehová de los ejércitos.</ab>
+<ab xml:id="b.MAL.4.4" type="verse" n="4">»Acordaos de la ley de Moisés, mi siervo, al cual encargué, en Horeb, ordenanzas y leyes para todo Israel.</ab>
+<ab xml:id="b.MAL.4.5" type="verse" n="5">»Yo os envío al profeta Elías antes que venga el día de Jehová, grande y terrible.</ab>
+<ab xml:id="b.MAL.4.6" type="verse" n="6">Él hará volver el corazón de los padres hacia los hijos, y el corazón de los hijos hacia los padres, no sea que yo venga y castigue la tierra con maldición».</ab>
 
 </div>
 </div>
 </body>
-    </text>
-</TEI>

@@ -30,9 +30,11 @@ At the moment following books are fully encoded in this chronological order:
 * Book of Jonah
 * 75 first Psalms
 * Acts
+* Malachi
 
 At the moment, following book is being encoded:
-* Malachi
+* Haggai
+
 
 ## Original Text
 

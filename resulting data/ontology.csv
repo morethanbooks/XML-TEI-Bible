@@ -481,7 +481,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per479	Matías	Discípulo desde Hechos 1			NT		male			person	human	defined		ACT
 #per480	Joel	profeta			AT		male			person	human	defined		ACT
 #per481	Samuel	profeta			AT		male			person	human	defined	1	ACT
-#per482	Alejandro	discípulo?			NT		male			person	human	defined		ACT
+#per482	Alejandro	discípulo?		Separar en dos en capt. 4 y 19?	NT		male			person	human	defined		ACT
 #per483	Bernabé	José			NT		male			person	human	defined		ACT
 #per484	Ananías				NT		male			person	human	defined		ACT
 #per485	Safira				NT		female			person	human	defined		ACT
@@ -544,7 +544,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per542	Erasto				NT		male			person	human	defined		ACT
 #per543	Demetrio	platero			NT		male			person	human	defined		ACT
 #per544	Diana				NT		female			person	superior	defined		ACT
-#per545	Gayo	compañero éfeso de Pablo			NT		male			person	human	defined		ACT
+#per545	Gayo	compañero éfeso de Pablo		Menciones en ACT 19 y 20. Diferentes personas?	NT		male			person	human	defined		ACT
 #per546	Aristarco	compañero éfeso de Pablo			NT		male			person	human	defined		ACT
 #per547	Sópater	compañero de Pablo			NT		male			person	human	defined		ACT
 #per548	Pirro	padre de Sópater			NT		male			person	human	defined		ACT
@@ -564,11 +564,20 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per562	Drusila	mujer de Félix			NT		male			person	human	defined		ACT
 #per563	Porcio Festo	gobernador			NT		male			person	human	defined		ACT
 #per564	Agripa	rey			NT		male			person	human	defined		ACT
-#per565	Berenice				NT		female			person	human	defined		ACT
+#per565	Berenice				NT		female							
 #per566	Julio	centurión que lleva a Pablo			NT		male			person	human	defined		ACT
 #per567	Publio				NT		male			person	human	defined		ACT
 #per568	Cástor				NT		male			person	superior	defined		ACT
 #per569	Pólux				NT		male			person	superior	defined		ACT
+#per570	Herodes				NT		male			person	human	defined		ACT
+#per571	Marcos	evangelista, no discípulos	Juan		NT		male			person	human	defined		ACT
+#per572	María	madre de Marcos			NT		female			person	human	defined		ACT
+#per573	Malaquías				AT		male			person	human	defined		MAL
+#per574	Hageo	profeta			AT		male			person	human	defined		HAG
+#per575	Josué	sumo sacerdote			AT		male			person	human	defined		HAG
+#per576	Josadac				AT		male			person	human	defined		HAG
+#per577	Darío	rey de Persia			AT		male			person	human	defined		HAG
+														
 														
 #org0	gente	grupo no definido						Leute	Pessoas	group	human	undefined		MAT
 #org1	Sanedrín							Sanhedrin	Sinédrio	group	human	defined		MAT
@@ -695,8 +704,8 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org122	mujeres									group	human	defined		ACT
 #org123	efesios									group	human	defined		ACT
 #org124	malteses									group	human	defined		ACT
-														
-														
+#org125	descendientes de Esaú									group	human	defined		MAL
+#org126	edomitas									group	human	defined		MAL
 														
 														
 #tim1	tercer día	tras la muerte de Jesús						Dritter Tag	Terceiro dia	time				MAT
@@ -716,8 +725,8 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #tim15	diluvio							Sintflut	Dilúvio	time				REV
 #tim16	tiempo de los patriarcas									time				SAL
 #tim17	Pentecostés									time				ACT
-														
-														
+#tim18	nacimiento de Jesús									time				MAL
+#tim19	tiempo del rey Darío de Persia									time				HAG
 														
 														
 #wor1	antiguo testamento							Altes Testament	Antigo Testamento	work				
@@ -886,7 +895,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla156	Líbano									place	human			SAL
 #pla157	Mizar									place	human			SAL
 #pla158	Ofir									place	human			SAL
-#pla159	Sinaí	montaña								place	human			SAL
+#pla159	Sinaí	montaña	Horeb							place	human			SAL
 #pla160	Salmón									place	human			SAL
 #pla161	Etiopía									place	human			SAL
 #pla162	Sabá									place	human			SAL
@@ -973,3 +982,4 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla243	Puteoli									place	human			ACT
 #pla244	Foro de Apio									place	human			ACT
 #pla245	Tres Tabernas									place	human			ACT
+#pla246	Edom									place	human			MAL
