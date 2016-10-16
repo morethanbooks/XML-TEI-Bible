@@ -17,7 +17,7 @@ def finding_standard_rs(content):
     """
     nombres_comunes = {
         "pla" : ["campo", "casa","ciudad","ciudades","lugar","lugares",],
-        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","hermanos","hermano","hermanas","hermana","hombre","hombres","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","mujeres","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada"],
+        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","hermanos","hermano","hermanas","hermana","hombre","hombres","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","mujeres","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador"],
         "org" : ["descendencia","descendencias","familia","familias","hijos","hijas","pueblo","pueblos","siervos","siervas","tribu","tribus",],
     }
 
@@ -26,7 +26,7 @@ def finding_standard_rs(content):
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
     
     variaciones_comunes = {
-        "per14" : ["Jehová","Todopoderoso"],
+        "per14" : ["Jehová","Todopoderoso","Señor"],
     }
     for key,values in variaciones_comunes.items():
         for value in values:
@@ -41,7 +41,7 @@ def finding_rs_from_ontology(content, df, book):
     # It goes row by row
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "person" and row["book"] == "AT") or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "person" and row["order-edition"] == book):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["type"] == "person" and row["order-edition"] == book): #or (row["type"] == "person" and row["book"] == "AT") 
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         
     return content
@@ -100,6 +100,19 @@ def values_q(content):
     
     return(content)
 
+def find_people_without_id(content, outputtei,bookcode):
+    people_without_id = []
+    people_without_id = people_without_id + re.findall(r"<rs key=\"per\">([A-Z][^<]*?)</rs>", content)
+    people_without_id = list(set(people_without_id))
+    print(people_without_id, len(people_without_id))
+    people_without_id_df = pd.DataFrame(people_without_id)
+
+    people_without_id_df.to_csv(outputtei+bookcode+"people_without_id.csv", sep='\t', encoding='utf-8')
+
+
+    
+    #print(people_without_id_df)
+
 
 def finding_structure(inputcsv, inputtei, outputtei, bookcode):
     """
@@ -127,7 +140,9 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode):
             content = finding_standard_rs(content)
             
             # Intentamos mejorar la estructura de rss
-            content= improve_struccture(content)
+            content = improve_struccture(content)
+            
+            find_people_without_id(content, outputtei,bookcode)
             
             # Buscamos estructuras q
             content=findingq(content)
@@ -136,10 +151,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode):
             content = values_q(content)
         
             # it cleans the HTML from entities, etc        
-     
             
             # It writes the result in the output folder
-
     
             with open (os.path.join(outputtei, docFormatOut), "w", encoding="utf-8") as fout:
                 fout.write(content)
@@ -147,7 +160,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/hageo.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/exodus.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "MAL"    
+    "EXO"    
     )
