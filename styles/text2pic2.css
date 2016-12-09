@@ -41,21 +41,23 @@ ab[type="verse"]
 	height:20em;
 	padding:1em;
 }
-
+/*
 ab>q 
 {
 	display:block;
 	background-color:blue;
 }
 
-ab>q[who="per1"]
+
+ab>q:not([who="#per14"])
+{
+ 	border:red 1px solid;
+	background-color:red;
+}*/
+ab>q[who="#per14"]
  {
  	border:blue 1px solid;
 	background-color:blue;
 
  }
-ab>q:not([who="per1"])
-{
- 	border:red 1px solid;
-	background-color:red;
-}
+
