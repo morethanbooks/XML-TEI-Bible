@@ -49,7 +49,7 @@ def create_networks(inputtei, output, border, book, subelements, attributes):
 
     # Hacemos una lista de aquellas unidades que hemos seleccionado
     basic_unities = documento_root.xpath('//tei:'+border+'', namespaces=namespaces_concretos) 
-    #print(len(basic_unities))
+    print(len(basic_unities))
 
 
     # Creamos una cadena para usarla como xpath con los elementos que hemos pasado
@@ -118,9 +118,19 @@ def create_networks(inputtei, output, border, book, subelements, attributes):
     dfnetworks = dfnetworks.drop('entidades', 1)
     # Ordenamos la tabla para visualizarla
     dfnetworks = dfnetworks.sort(["weight"], ascending=True)
+    dfnetworks["Type"] = "Undirected"
     print(dfnetworks)
 
     # La ordenamos de nuevo para ponerla en el csv
     dfnetworks = dfnetworks.sort(["weight"], ascending=False)
     dfnetworks.to_csv(output+book+'-networks-id.csv', sep='\t', encoding='utf-8')
     print("print as: ", output+book+'-networks-id.csv')
+
+create_networks(
+        inputtei = "/home/jose/Dropbox/biblia/tb/TEIBible.xml", 
+        output = "//home/jose/Dropbox/biblia/tb/resulting data/",
+        border = "ab",
+        book = "EXO",
+        subelements = ["q","rs"],
+        attributes = ["who","corresp","key"],
+        )
