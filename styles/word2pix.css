@@ -1,0 +1,106 @@
+
+ TEI
+ {
+    font-size:1px;
+   width:75%;
+   margin:5rem auto 0;
+    clear:both;
+    
+ }
+TEI:first-of-type::before
+{
+content: "Move the mouse over the verse to read them. Legend: Orange = someone talking. Dark blue = God. Dark green = Israel. Light green = protagonist (Jacob, Moses, David, Paul...). Light blue = Jesus. Pink horizontal line: new pericope. Red one: new chapter.";
+font-size: 1rem;
+
+}
+
+author, publicationStmt, sourceDesc, encodingDesc,revisionDesc, idno, principal
+{
+    display:none;
+}
+
+title
+{
+
+     clear:both;
+     display:block;
+     font-size:2rem;
+}
+ 
+ head, ab[type="pericope"]
+ {
+     display:none;
+ }
+div [type="chapter"]{
+    /*display:block;
+    float:left;
+ 	margin:3em;
+	padding:3em;*/
+}
+ab[type="verse"]:last-child
+{
+    border-right: 5px solid pink;
+}
+div[type="pericope"]:last-child ab[type="verse"]:last-child
+{
+    border-right: 5px solid red ;
+}
+
+
+ab[type="verse"]
+{
+	display:block;
+ 	margin:1em;
+ 	border:black 1px solid;
+	float:left;
+	width:20em;
+	height:20em;
+	padding:1em;
+}
+/*ab[type="verse"]::before
+{
+    content:attr(n) " "
+}*/
+ab>q
+ {
+ 	border:orange 1px solid;
+	background-color:orange;
+	color:white;
+
+ }
+ 
+ab>q[who="#per14"]
+ {
+ 	border:Navy  1px solid;
+	background-color:Navy ;
+ }
+
+ab>q[who="#per1"]
+ {
+ 	border:CornflowerBlue 1px solid;
+	background-color:CornflowerBlue ;
+
+ }
+
+ab>q[who="#org70"], ab>q[who="#org88"], ab>q[who="#org2"], ab>q[who="#org1"], ab>q[who="#org5"], ab>q[who="#org12"]  
+ {
+ 	border:DarkGreen 1px solid;
+	background-color:DarkGreen  ;
+
+ }
+ab[type="verse"]:hover
+{
+	font-size:15px;
+	position:relative;
+	z-index:1;
+	background-color:white;
+}
+ab>q[who="#per4"],ab>q[who="#per26"], ab>q[who="#per35"],  ab>q[who="#per93"], ab>q[who="#per35"], ab>q[who="#per36"], ab>q[who="#per574"], ab>q[who="#per573"],  ab>q[who="#org2"], ab>q[who="#per504"],  ab>q[who="#per25"]
+ {
+ 	border:MediumSeaGreen   1px solid;
+	background-color:MediumSeaGreen;
+
+ }
+
+
+

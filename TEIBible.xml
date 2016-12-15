@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix.css" rel="stylesheet" title="Word2Pix"?>
 <?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
-<?xml-stylesheet type="text/css" href="styles/text2pic3.css" rel="stylesheet" title="Word2pic-3"?>
-<?xml-stylesheet type="text/css" href="styles/text2pic2.css" rel="stylesheet" title="Word2pic-2"?>
-<?xml-stylesheet type="text/css" href="styles/styles-q-type.css" rel="alternate stylesheet" title="q-type"?>
-<?xml-stylesheet type="text/css" href="styles/text2pic1.css" rel="stylesheet" title="Word2pic"?>
 <teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
@@ -20,7 +17,7 @@
 				<principal xml:id="jct">José Calvo Tello</principal>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>CLiGS</publisher>
+				<publisher></publisher>
 				<availability status="free">
 					<p>The text is freely available.</p>
 				</availability>
@@ -44,7 +41,6 @@
 			<change when="2016-12-31" who="#jct">Exodos corrected.</change>
 		</revisionDesc>
 	</teiHeader>
-	
 <TEI xmlns="http://www.tei-c.org/ns/1.0" cert="high">
 	<teiHeader>
 		<fileDesc>
@@ -88,7 +84,7 @@
 		</front>
 
 		<body>
-			<div xml:id="b.GEN" type="book" n="1">
+				<div xml:id="b.GEN" type="book" n="1">
 			<div xml:id="b.GEN.1" type="chapter" n="1">
 				<div type="pericope">
 					<head type="pericope">La creación</head>
@@ -5353,7 +5349,7 @@
 						Entonces <rs key="#per14">Jehová</rs> dijo a <rs key="#per26">Moisés</rs>:  <q who="#per14" corresp="#per26" type="oral">Extiende tu mano y tómala por la cola.</q> Él extendió su mano y la tomó, y volvió a ser vara en su mano.
 					</ab>
 					<ab xml:id="b.EXO.4.5" type="verse" n="5">
-						<q who="#per14" corresp="#per26" type="oral">Por esto creerán que se te ha aparecido <rs key="#per14">Jehová</rs>, el <rs key="#per14">Dios de tus <rs key="#per88">padres</rs></rs>, el <rs key="#per14">Dios de <rs key="#per2">Abraham</rs></rs>, el <rs key="#per14">Dios de <rs key="#per3">Isaac</rs></rs> y el <rs key="#per14">Dios de <rs key="#per4">Jacob</rs></rs>.</q>
+						<q who="#per14" corresp="#per26" type="oral">Por esto creerán que se te ha aparecido <rs key="#per14">Jehová</rs>, el <rs key="#per14">Dios de tus <rs key="#org88">padres</rs></rs>, el <rs key="#per14">Dios de <rs key="#per2">Abraham</rs></rs>, el <rs key="#per14">Dios de <rs key="#per3">Isaac</rs></rs> y el <rs key="#per14">Dios de <rs key="#per4">Jacob</rs></rs>.</q>
 					</ab>
 					<ab xml:id="b.EXO.4.6" type="verse" n="6">
 						Le dijo además <rs key="#per14">Jehová</rs>:  <q who="#per14" corresp="#per26" type="oral">Mete ahora tu mano en el seno.</q> Él metió la mano en su seno y, cuando la sacó, vio que su mano estaba leprosa como la nieve.
@@ -6044,7 +6040,7 @@
 						<q who="#per26" corresp="#per585 #org65" type="oral"><q who="#per14" corresp="#per26" type="oral">Pero contra todos los <rs key="#org70">hijos de <rs key="#org70">Israel</rs></rs>, desde el <rs key="#org70">hombre</rs> hasta la bestia, ni un perro moverá su lengua, para que sepáis que <rs key="#per14">Jehová</rs> hace diferencia entre los <rs key="#org65">egipcios</rs> y los <rs key="#org70">israelitas</rs>.</q></q>
 					</ab>
 					<ab xml:id="b.EXO.11.8" type="verse" n="8">
-						<q who="#per26" corresp="#per585 #org65" type="oral">Entonces vendrán a mí todos estos tus <rs key="#org65">siervos</rs>, e inclinados delante de mí dirán: <q who="#org65" corresp="#org26" type="idea">Vete, tú y todo el <rs key="#org70">pueblo</rs> que está bajo tus órdenes.</q> Y después de esto yo saldré.</q> Y salió muy enojado de la presencia del <rs key="#per585">faraón</rs>.
+						<q who="#per26" corresp="#per585 #org65" type="oral">Entonces vendrán a mí todos estos tus <rs key="#org65">siervos</rs>, e inclinados delante de mí dirán: <q who="#org65" corresp="#per26" type="idea">Vete, tú y todo el <rs key="#org70">pueblo</rs> que está bajo tus órdenes.</q> Y después de esto yo saldré.</q> Y salió muy enojado de la presencia del <rs key="#per585">faraón</rs>.
 					</ab>
 					<ab xml:id="b.EXO.11.9" type="verse" n="9">
 						Luego <rs key="#per14">Jehová</rs> dijo a <rs key="#per26">Moisés</rs>:  <q who="#per14" corresp="#per26" type="oral">El <rs key="#per585">faraón</rs> no os oirá, para que mis maravillas se multipliquen en la <rs key="#pla5">tierra de <rs key="#pla5">Egipto</rs></rs>.</q>
@@ -6239,37 +6235,37 @@
 						<q who="#per26" corresp="#org70" type="oral">Y cuando <rs key="#per14">Jehová</rs> te haya metido en la <rs key="#pla84">tierra del <rs key="#org63">cananeo</rs>, del <rs key="#org74">heteo</rs>, del <rs key="#org55">amorreo</rs>, del <rs key="#org57">heveo</rs> y del <rs key="#org54">jebuseo</rs></rs>, la cual juró a tus <rs key="#org88">padres</rs> que te daría, <rs key="#pla84">tierra</rs> que destila leche y miel, harás esta <rs key="#tim5">celebración</rs> en este <rs key="#tim20">mes</rs>.</q>
 					</ab>
 					<ab xml:id="b.EXO.13.6" type="verse" n="6">
-						<q who="#org26" corresp="#org70" type="oral">Siete días comerás pan sin leudar, pero el <rs key="#tim5">séptimo día</rs> será <rs key="#tim5">fiesta para <rs key="#per14">Jehová</rs></rs>.</q>
+						<q who="#per26" corresp="#org70" type="oral">Siete días comerás pan sin leudar, pero el <rs key="#tim5">séptimo día</rs> será <rs key="#tim5">fiesta para <rs key="#per14">Jehová</rs></rs>.</q>
 					</ab>
 					<ab xml:id="b.EXO.13.7" type="verse" n="7">
-						<q who="#org26" corresp="#org70" type="oral">Durante los siete días se comerán los panes sin levadura, y no tendrás contigo nada leudado, ni levadura, en todo tu territorio.</q>
+						<q who="#per26" corresp="#org70" type="oral">Durante los siete días se comerán los panes sin levadura, y no tendrás contigo nada leudado, ni levadura, en todo tu territorio.</q>
 					</ab>
 					<ab xml:id="b.EXO.13.8" type="verse" n="8">
-						<q who="#org26" corresp="#org70" type="oral">En aquel <rs key="#tim5">día</rs> lo explicarás a tu <rs key="#org70">hijo</rs> diciendo: <q who="#org70" corresp="#org70" type="idea">Se hace esto con motivo de lo que <rs key="#per14">Jehová</rs> hizo conmigo cuando me sacó de <rs key="#pla5">Egipto</rs>.</q></q>
+						<q who="#per26" corresp="#org70" type="oral">En aquel <rs key="#tim5">día</rs> lo explicarás a tu <rs key="#org70">hijo</rs> diciendo: <q who="#org70" corresp="#org70" type="idea">Se hace esto con motivo de lo que <rs key="#per14">Jehová</rs> hizo conmigo cuando me sacó de <rs key="#pla5">Egipto</rs>.</q></q>
 					</ab>
 					<ab xml:id="b.EXO.13.9" type="verse" n="9">
-						<q who="#org26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">Te será como una señal en la mano y como un memorial delante de tus ojos, para que la ley de <rs key="#per14">Jehová</rs> esté en tu boca, por cuanto con mano fuerte te sacó <rs key="#per14">Jehová de <rs key="#pla5">Egipto</rs></rs>.</q></q>
+						<q who="#per26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">Te será como una señal en la mano y como un memorial delante de tus ojos, para que la ley de <rs key="#per14">Jehová</rs> esté en tu boca, por cuanto con mano fuerte te sacó <rs key="#per14">Jehová de <rs key="#pla5">Egipto</rs></rs>.</q></q>
 					</ab>
 					<ab xml:id="b.EXO.13.10" type="verse" n="10">
-						<q who="#org26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">Por tanto, tú guardarás este rito de año en año, a su debido tiempo.</q></q>
+						<q who="#per26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">Por tanto, tú guardarás este rito de año en año, a su debido tiempo.</q></q>
 					</ab>
 					<ab xml:id="b.EXO.13.11" type="verse" n="11">
-						<q who="#org26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">»Cuando <rs key="#per14">Jehová</rs> te haya llevado a la <rs key="#pla84">tierra del <rs key="#org63">cananeo</rs></rs>, como lo ha jurado a ti y a tus <rs key="#org88">padres</rs>, y cuando te la haya dado,</q></q>
+						<q who="#per26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">»Cuando <rs key="#per14">Jehová</rs> te haya llevado a la <rs key="#pla84">tierra del <rs key="#org63">cananeo</rs></rs>, como lo ha jurado a ti y a tus <rs key="#org88">padres</rs>, y cuando te la haya dado,</q></q>
 					</ab>
 					<ab xml:id="b.EXO.13.12" type="verse" n="12">
-						<q who="#org26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">dedicarás a <rs key="#per14">Jehová</rs> a todo aquel que abre la matriz. Asimismo, todo primer nacido de tus animales, si es macho, será de <rs key="#per14">Jehová</rs>.</q></q>
+						<q who="#per26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">dedicarás a <rs key="#per14">Jehová</rs> a todo aquel que abre la matriz. Asimismo, todo primer nacido de tus animales, si es macho, será de <rs key="#per14">Jehová</rs>.</q></q>
 					</ab>
 					<ab xml:id="b.EXO.13.13" type="verse" n="13">
-						<q who="#org26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">Pero todo primogénito de asno lo redimirás con un cordero; y si no lo redimes, quebrarás su cuello. También redimirás al <rs key="#org130">primogénito de tus <rs key="#org70">hijos</rs></rs>.</q></q>
+						<q who="#per26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">Pero todo primogénito de asno lo redimirás con un cordero; y si no lo redimes, quebrarás su cuello. También redimirás al <rs key="#org130">primogénito de tus <rs key="#org70">hijos</rs></rs>.</q></q>
 					</ab>
 					<ab xml:id="b.EXO.13.14" type="verse" n="14">
-						<q who="#org26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">Y cuando el día de mañana te pregunte tu <rs key="#org70">hijo</rs>: <q who="#org70" corresp="#org70" type="idea">¿Qué es esto?, le dirás: <rs key="#per14">Jehová</rs> nos sacó con mano fuerte de <rs key="#pla5">Egipto</rs>, de <rs key="#pla">casa</rs> de servidumbre;</q></q></q>
+						<q who="#per26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea">Y cuando el día de mañana te pregunte tu <rs key="#org70">hijo</rs>: <q who="#org70" corresp="#org70" type="idea">¿Qué es esto?, le dirás: <rs key="#per14">Jehová</rs> nos sacó con mano fuerte de <rs key="#pla5">Egipto</rs>, de <rs key="#pla">casa</rs> de servidumbre;</q></q></q>
 					</ab>
 					<ab xml:id="b.EXO.13.15" type="verse" n="15">
-						<q who="#org26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea"><q who="#org70" corresp="#org70" type="idea">y cuando se endureció el <rs key="#per585">faraón</rs> para no dejarnos ir, <rs key="#per14">Jehová</rs> hizo morir en la <rs key="#pla5">tierra de <rs key="#pla5">Egipto</rs></rs> a todo <rs key="#org130">primogénito</rs>, desde el <rs key="#org0">primogénito humano</rs> hasta el primogénito de la bestia. Por esta causa yo sacrifico para <rs key="#per14">Jehová</rs> todo primogénito macho, y redimo al <rs key="#org70">primogénito de mis <rs key="#org70">hijos</rs></rs>.</q></q></q>
+						<q who="#per26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea"><q who="#org70" corresp="#org70" type="idea">y cuando se endureció el <rs key="#per585">faraón</rs> para no dejarnos ir, <rs key="#per14">Jehová</rs> hizo morir en la <rs key="#pla5">tierra de <rs key="#pla5">Egipto</rs></rs> a todo <rs key="#org130">primogénito</rs>, desde el <rs key="#org0">primogénito humano</rs> hasta el primogénito de la bestia. Por esta causa yo sacrifico para <rs key="#per14">Jehová</rs> todo primogénito macho, y redimo al <rs key="#org70">primogénito de mis <rs key="#org70">hijos</rs></rs>.</q></q></q>
 					</ab>
 					<ab xml:id="b.EXO.13.16" type="verse" n="16">
-						<q who="#org26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea"><q who="#org70" corresp="#org70" type="idea">Te será, pues, como una señal en la mano y como un memorial delante de tus ojos, por cuanto <rs key="#per14">Jehová</rs> nos sacó de <rs key="#pla5">Egipto</rs> con mano fuerte».</q></q></q>
+						<q who="#per26" corresp="#org70" type="oral"><q who="#org70" corresp="#org70" type="idea"><q who="#org70" corresp="#org70" type="idea">Te será, pues, como una señal en la mano y como un memorial delante de tus ojos, por cuanto <rs key="#per14">Jehová</rs> nos sacó de <rs key="#pla5">Egipto</rs> con mano fuerte».</q></q></q>
 					</ab>
 				</div>
 				<div type="pericope">
@@ -6281,7 +6277,7 @@
 						Por eso hizo <rs key="#per14">Dios</rs> que el <rs key="#org70">pueblo</rs> diera un rodeo por el camino del <rs key="#pla176">desierto</rs> del <rs key="#pla175">Mar Rojo</rs>. Los <rs key="#org70">hijos de <rs key="#org70">Israel</rs></rs> salieron de <rs key="#pla5">Egipto</rs> armados.
 					</ab>
 					<ab xml:id="b.EXO.13.19" type="verse" n="19">
-						<rs key="#per26">Moisés</rs> tomó también consigo los huesos de <rs key="#per104">José</rs>, el cual había hecho jurar a los <rs key="#org88">hijos de <rs key="#per4">Israel</rs></rs>, diciéndoles: <q who="#org104" corresp="#org88" type="oral">«<rs key="#per14">Dios</rs> ciertamente os visitará, y entonces os llevaréis mis huesos de aquí con vosotros».</q>
+						<rs key="#per26">Moisés</rs> tomó también consigo los huesos de <rs key="#per104">José</rs>, el cual había hecho jurar a los <rs key="#org88">hijos de <rs key="#per4">Israel</rs></rs>, diciéndoles: <q who="#per104" corresp="#org88" type="oral">«<rs key="#per14">Dios</rs> ciertamente os visitará, y entonces os llevaréis mis huesos de aquí con vosotros».</q>
 					</ab>
 					<ab xml:id="b.EXO.13.20" type="verse" n="20">
 						Partieron de <rs key="#pla140">Sucot</rs> y acamparon en <rs key="#pla252">Etam</rs>, a la entrada del <rs key="#pla176">desierto</rs>.
@@ -18578,7 +18574,7 @@
 
 						<ab type="pericope">Jesús y la mujer samaritana</ab>
 						<ab xml:id="b.JOH.4.1" type="verse" n="1">
-							Cuando, pues, el <rs key="#per1">Señor</rs> supo que los <rs key="#org2">fariseos</rs> habían oído decir <q who="#per14" type="oral" corresp="#org0"><rs key="#per1">Jesús</rs> hace y bautiza más <rs key="#org3">discípulos</rs> que <rs key="#per18">Juan</rs></q>
+							Cuando, pues, el <rs key="#per1">Señor</rs> supo que los <rs key="#org2">fariseos</rs> habían oído decir <q who="#org2" type="oral" corresp="#org0"><rs key="#per1">Jesús</rs> hace y bautiza más <rs key="#org3">discípulos</rs> que <rs key="#per18">Juan</rs></q>
 						</ab>
 						<ab xml:id="b.JOH.4.2" type="verse" n="2">
 							(aunque <rs key="#per1">Jesús</rs> no bautizaba, sino sus <rs key="#org3">discípulos</rs>),
