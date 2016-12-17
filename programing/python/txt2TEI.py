@@ -14,7 +14,7 @@ def txt2TEI(text, bookcode):
     """
         It decodes the HTML entities and it deletes some anoying characters
     """
-    text = re.sub(r'\A(.*?)\Z', r'<body>\n\1\n</body>', text, flags=re.IGNORECASE|re.MULTILINE|re.DOTALL)
+    text = re.sub(r'\A(.*?)\Z', r'<body>\n<ab xml:id="b.' + bookcode + r'" type="book">\n\1\n</div>\n</body>', text, flags=re.IGNORECASE|re.MULTILINE|re.DOTALL)
 
     text = re.sub(r'^\|(\d+)\|(\d+)\|(\d+)\|(.+?)\|\d+', r'<ab xml:id="b.' + bookcode + r'.\2.\3" type="verse" n="\3">\4</ab>', text, flags=re.IGNORECASE|re.MULTILINE)
     text = re.sub(r'(<ab xml:id="(b.' + bookcode + r'.(\d+)).[^>]*?n="1">)', r'\n<div xml:id="\2" type="chapter" n="\3">\n<div type="pericope">\n<head type="pericope"></head>\1', text, flags=re.IGNORECASE|re.MULTILINE)
@@ -50,4 +50,4 @@ def main(book, bookcode):
         print("Processed documents: ",i)
         i+=1
 
-main("exodus","EXO")
+main("ZEC","ZEC")
