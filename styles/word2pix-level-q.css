@@ -1,0 +1,31 @@
+@import url("word2pix-basic.css");
+
+TEI:first-of-type::before
+{
+content: "Word2Pix: Quotation-Nesting level. Legend: Pink = One level of quotations; Red = two levels of quotations. Dark Red = three levels of quotations. Black = Four levels of quotation. Move the mouse over the verse to read them. ";
+}
+
+
+ab>q
+ {
+ 	border:pink  1px solid;
+	background-color: pink;
+ }
+
+ab>q>q
+ {
+ 	border:red  1px solid;
+	background-color: red;
+ }
+
+ab>q>q>q
+ {
+ 	border: darkred 1px solid;
+	background-color: darkred;
+ }
+
+ab>q>q>q>q
+ {
+ 	border: black 1px solid;
+	background-color: black;
+ }

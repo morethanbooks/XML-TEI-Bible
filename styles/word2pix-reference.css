@@ -1,0 +1,81 @@
+@import url("word2pix-basic.css");
+
+TEI:first-of-type::before
+{
+content: "Word2pix: Who is Mentioned? Legend: Light green = someone. Green = protagonist (Jacob, Moses, David, Paul...). Yellow = Some group. Orange = Israel. Light Blue = God. Dark blue = Jesus. Navy = Holy Spirit. Purple = devil or demons. Move the mouse over the verse to read them. ";
+
+
+}
+
+q
+{
+    color:black;
+}
+rs[key*="#per"],rs[key*="#org"],rs[key*="#pla"]
+{
+    color:white;
+    padding:1.5em;
+}
+rs[key*="#per"]
+ {
+ 	border:lightgreen 1px solid;
+	background-color:lightgreen  ;
+ }
+
+rs[key="#per4"],rs[key="#per26"], rs[key="#per35"],  rs[key="#per93"], rs[key="#per35"], rs[key="#per36"], rs[key="#per574"], rs[key="#per573"],  rs[key="#org2"], rs[key="#per504"],  rs[key="#per25"]
+ {
+ 	border:green 1px solid;
+	background-color:green;
+ }
+
+
+rs[key*="#pla"]
+ {
+ 	border:pink 1px solid;
+	background-color:pink;
+ }
+rs[key*="#org"]
+ {
+ 	border:yellow 1px solid;
+	background-color:yellow;
+ }
+
+
+rs[key="#per14"]
+ {
+ 	border:lightblue  1px solid;
+	background-color:lightblue ;
+ }
+
+rs[key="#per1"]
+ {
+ 	border:blue 1px solid;
+	background-color:blue ;
+
+ }
+rs[key="#per17"]
+ {
+ 	border:blue 1px solid;
+	background-color:blue ;
+
+ }
+
+rs[key="#org70"], rs[key="#org88"], rs[key="#org2"], rs[key="#org1"], rs[key="#org5"], rs[key="#org12"]  
+ {
+ 	border:orange 1px solid;
+	background-color:orange;
+
+ }
+
+rs[key="#per20"], rs[key="#org6"]
+ {
+ 	border:purple 1px solid;
+	background-color:purple ;
+
+ }
+ 
+ab[type="verse"]:hover rs
+{
+    padding:0em;
+
+}
