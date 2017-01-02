@@ -44,7 +44,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per42	César				NT		male	Kaiser	César	person	human	defined		MAT
 #per43	Abel				AT		male	Abel	Abel	person	human	defined	1	MAT
 #per44	Zacarías				NT		male	Zacharias 	Zacarias	person	human	defined	1	MAT
-#per45	Berequías	padre de Zacarías			NT		male	Berechjas	Baraquias	person	human	defined		MAT
+#per45	Berequías				NT		male	Berechjas	Baraquias	person	human	defined		MAT
 #per46	Daniel				AT		male	Daniel	Daniel	person	human	defined	1	MAT
 #per47	Noé				AT		male	Noah	Noé	person	human	defined	1	MAT
 #per48	Caifás	sumo sacerdote			NT		male	Kaiphas	Caifás	person	human	defined		MAT
@@ -574,7 +574,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per572	María	madre de Marcos			NT		female			person	human	defined		ACT
 #per573	Malaquías				AT		male			person	human	defined	1	MAL
 #per574	Hageo	profeta			AT		male			person	human	defined	1	HAG
-#per575	Josué				AT		male			person	human	defined		HAG
+#per575	Josué	sacerdote en tiempo de Darío			AT		male			person	human	defined		HAG
 #per576	Josadac				AT		male			person	human	defined		HAG
 #per577	Darío	rey de Persia			AT		male			person	human	defined	1	HAG
 #per578	rey tras José	tras José			AT		male			person	human	defined		EXO
@@ -620,9 +620,20 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per618	Ahisamac				AT		male			person	human	defined		EXO
 #per619	Nun	padre de Josué			AT		male			person	human	defined		EXO
 #per620	Asera	dios cananeo			AT		male			person	superior	defined		EXO
-#per621	Iddo	abuelo de Zacarías												
-#per622														
-#per623														
+#per621	Iddo	abuelo de Zacarías			AT		male			person	human	defined		ZEC
+#per622	Josadac	padre de Josué el sacerdote			AT		male			person	human	defined		ZEC
+#per623	Heldai				AT		male			person	human	defined		ZEC
+#per624	Tobías				AT		male			person	human	defined		ZEC
+#per625	Jedaías				AT		male			person	human	defined		ZEC
+#per626	Josías				AT		male			person	human	defined		ZEC
+#per627	Sofonías				AT		male			person	human	defined		ZEC
+#per628	Helem				AT		male			person	human	defined		ZEC
+#per629	Hen				AT		male			person	human	defined		ZEC
+#per630	Sarezer				AT		male			person	human	defined		ZEC
+#per631	Regem-melec				AT		male			person	human	defined		ZEC
+#per632	Hadad-rimón				AT		male			person	human	defined		ZEC
+#per633	Natán				AT		male			person	human	defined		ZEC
+#per634	Uzías	Rey de Judá			AT		male			person	human	defined		ZEC
 														
 #org0	gente	grupo no definido						Leute	Pessoas	group	human	undefined		MAT
 #org1	Sanedrín							Sanhedrin	Sinédrio	group	human	defined		MAT
@@ -752,13 +763,13 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org125	descendientes de Esaú									group	human	defined		MAL
 #org126	edomitas									group	human	defined		MAL
 #org127	cuñadas de Moisés									group	human	defined		EXO
-#org128	hijos de Moisés									group	human	defined		
-#org129	coreítas	hijos de Coré								group	human	defined		
-#org130	primogénitos									group	human	defined		
-#org131	esclavos		siervos							group	human	defined		
-#org132	hijos de Aarón									group	human	defined		
-														
-														
+#org128	hijos de Moisés									group	human	defined		EXO
+#org129	coreítas	hijos de Coré								group	human	defined		EXO
+#org130	primogénitos									group	human	defined		EXO
+#org131	esclavos		siervos							group	human	defined		EXO
+#org132	hijos de Aarón									group	human	defined		EXO
+#org133	babilonios													ZEC
+#org134	hijos de Natán													ZEC
 														
 														
 #tim1	tercer día	tras la muerte de Jesús						Dritter Tag	Terceiro dia	time				MAT
@@ -783,7 +794,10 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #tim20	Abib	mes												EXO
 #tim21	fiesta de la cosecha													EXO
 #tim22	fiesta de las semanas													EXO
-#tim23	Sebat													
+#tim23	Sebat													EXO
+#tim24	Quisleu													EXO
+														
+														
 														
 #wor1	antiguo testamento		leyes					Altes Testament	Antigo Testamento	work				
 #wor2	Evangelio de Juan							Evangelium des Johannes	Evangelho de João	work				
@@ -1057,3 +1071,20 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla261	Jehová-nisi	altar								place	human			EXO
 #pla262	templo	móvil								place	human			EXO
 #pla263	tabernáculo									place	human			EXO
+#pla264	Sefela													ZEC
+#pla265	Hadrac													ZEC
+#pla266	Hamat													ZEC
+#pla267	Ascalón													ZEC
+#pla268	Ecrón													ZEC
+#pla269	Asdod													ZEC
+#pla270	lagares del rey	En Jerusalén												ZEC
+#pla271	Meguido													ZEC
+#pla272	Azal													ZEC
+#pla273	Mar Muerto													ZEC
+#pla274	Geba													ZEC
+#pla275	Rimón													ZEC
+#pla276	puerta de Benjamín	En Jerusalén												ZEC
+#pla277	puerta primera	En Jerusalén												ZEC
+#pla278	puerta del Ángulo	En Jerusalén												ZEC
+#pla279	torre de Hananeel	En Jerusalén												ZEC
+														ZEC

@@ -32,9 +32,11 @@ At the moment following books are fully encoded in this chronological order:
 * Acts
 * Malachi
 * Haggai
+* Exodus
+* Zechariah
 
 At the moment, following book is being encoded:
-* Exodus
+* 
 
 
 ## Original Text
