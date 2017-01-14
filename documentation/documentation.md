@@ -34,9 +34,9 @@ At the moment following books are fully encoded in this chronological order:
 * Haggai
 * Exodus
 * Zechariah
+* Micah
 
 At the moment, following book is being encoded:
-* Micah
 * Nahum
 * Habakkuk
 * Zephaniah
