@@ -1,26 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Habacuc</title>
+                <title type="idno">
+                    <idno type="string">HAB</idno>
+                    <idno type="viaf"></idno>
+                </title>
+                <author>
+                    <name type="short"></name>
+                    <name type="full"></name>z
+                    <idno type="viaf"></idno>
+                </author>
+                <principal key="#jct">José Calvo Tello</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>José Calvo Tello</publisher>
+                <availability status="free">
+                    <p>The text is freely available.</p>
+                </availability>
+                <date when="2017">2017</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+                <bibl type="edition-first"><date when="1569">1569</date></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p></p>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2017-01-21" who="#jct">First version of Habakkuk</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
 <body>
-<ab xml:id="b.HAB" type="book">
+<div xml:id="b.HAB" type="book">
 
 <div xml:id="b.HAB.1" type="chapter" n="1">
 <div type="pericope">
-<head type="pericope"></head><ab xml:id="b.HAB.1.1" type="verse" n="1">Profecía que el <rs key="per">profeta</rs> Habacuc recibió en una visión</ab>
-<ab xml:id="b.HAB.1.2" type="verse" n="2"><q who="per" corresp="per" type="oral">«¿Hasta cuándo, <rs key="per14">Jehová</rs>, gritaré sin que tú escuches, y clamaré a causa de la violencia sin que tú salves?</q></ab>
-<ab xml:id="b.HAB.1.3" type="verse" n="3"><q who="per" corresp="per" type="oral">¿Por qué me haces ver iniquidad y haces que vea tanta maldad? Ante mí solo hay destrucción y violencia; pleito y contienda se levantan.</q></ab>
-<ab xml:id="b.HAB.1.4" type="verse" n="4">Por eso la <rs key="per">Ley</rs> se debilita y el juicio no se ajusta a la verdad; el impío asedia al justo, y así se tuerce la justicia.</ab>
-<ab xml:id="b.HAB.1.5" type="verse" n="5"><q who="per" corresp="per" type="oral">»Mirad entre las naciones, ved y asombraos, porque haré una obra en vuestros días, que, aun cuando se os contara, no la creeríais.</q></ab>
-<ab xml:id="b.HAB.1.6" type="verse" n="6"><q who="per" corresp="per" type="oral">Porque yo levanto a los <rs key="#org64">caldeos</rs>, nación cruel y presurosa, que camina por la anchura de la <rs key="#pla41">tierra</rs> para poseer las moradas ajenas.</q></ab>
-<ab xml:id="b.HAB.1.7" type="verse" n="7">Formidable es y terrible; de ella misma proceden su justicia y su dignidad.</ab>
-<ab xml:id="b.HAB.1.8" type="verse" n="8">Sus caballos son más ligeros que leopardos, más feroces que lobos nocturnos, y sus jinetes se multiplicarán. Vienen de lejos sus jinetes, vuelan como águilas que se apresuran a devorar.</ab>
-<ab xml:id="b.HAB.1.9" type="verse" n="9">Toda ella acude a la violencia; el terror va delante de ella, y recoge cautivos como arena.</ab>
-<ab xml:id="b.HAB.1.10" type="verse" n="10">Se mofa de los <rs key="per">reyes</rs>, y de los príncipes hace burla; se ríe de las fortalezas, levanta terraplenes y las toma.</ab>
-<ab xml:id="b.HAB.1.11" type="verse" n="11">Luego pasa como el huracán, y peca porque hace de su fuerza su dios.</ab>
-<ab xml:id="b.HAB.1.12" type="verse" n="12"><q who="per" corresp="per" type="oral">»¿No eres tú desde el principio, <rs key="per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío, <rs key="per">Santo</rs> mío? No moriremos. <rs key="per14">Jehová</rs>, para juicio lo pusiste; y tú, <rs key="per">Roca</rs>, lo estableciste para castigar.</q></ab>
-<ab xml:id="b.HAB.1.13" type="verse" n="13"><q who="per" corresp="per" type="oral">Muy limpio eres de ojos para ver el mal, ni puedes ver el agravio; ¿por qué, pues, ves a los criminales y callas cuando destruye el impío al que es más justo que él?</q></ab>
-<ab xml:id="b.HAB.1.14" type="verse" n="14">Tratas a los <rs key="per">hombres</rs> como a peces del mar, como a reptiles que no tienen dueño.</ab>
-<ab xml:id="b.HAB.1.15" type="verse" n="15">A todos los pesca con anzuelo, los recoge con su red, los junta en sus mallas; por lo cual se alegra y se regocija.</ab>
-<ab xml:id="b.HAB.1.16" type="verse" n="16">Por eso ofrece sacrificios a su red y quema incienso a sus mallas, porque gracias a ellas su porción es abundante y sabrosa su comida.</ab>
-<ab xml:id="b.HAB.1.17" type="verse" n="17">¿Vaciará sin cesar su red y seguirá aniquilando sin piedad a las naciones?».</ab>
-
+    <ab xml:id="b.HAB.1.1" type="verse" n="1">Profecía que el <rs key="per644">profeta</rs> <rs key="per644">Habacuc</rs> recibió en una visión</ab>
+<ab xml:id="b.HAB.1.2" type="verse" n="2"><q who="per644" corresp="per14" type="prayer">«¿Hasta cuándo, <rs key="per14">Jehová</rs>, gritaré sin que tú escuches, y clamaré a causa de la violencia sin que tú salves?</q></ab>
+<ab xml:id="b.HAB.1.3" type="verse" n="3"><q who="per644" corresp="per14" type="prayer">¿Por qué me haces ver iniquidad y haces que vea tanta maldad? Ante mí solo hay destrucción y violencia; pleito y contienda se levantan.</q></ab>
+    <ab xml:id="b.HAB.1.4" type="verse" n="4"><q who="per644" corresp="per14" type="prayer">Por eso la <rs key="wor1" cert="low">Ley</rs> se debilita y el juicio no se ajusta a la verdad; el <rs key="org19">impío</rs> asedia al <rs key="org18">justo</rs>, y así se tuerce la justicia.</q></ab>
+<ab xml:id="b.HAB.1.5" type="verse" n="5"><q who="per14" corresp="per644 org70" type="oral">»Mirad entre las <rs key="org0">naciones</rs>, ved y asombraos, porque haré una obra en vuestros días, que, aun cuando se os contara, no la creeríais.</q></ab>
+    <ab xml:id="b.HAB.1.6" type="verse" n="6"><q who="per14" corresp="per644 org70" type="oral">Porque yo levanto a los <rs key="#org64">caldeos</rs>, <rs key="#org64">nación cruel y presurosa</rs>, que camina por la anchura de la <rs key="#pla41">tierra</rs> para poseer las moradas ajenas.</q></ab>
+<ab xml:id="b.HAB.1.7" type="verse" n="7"><q who="per14" corresp="per644 org70" type="oral">Formidable es y terrible; de ella misma proceden su justicia y su dignidad.</q></ab>
+    <ab xml:id="b.HAB.1.8" type="verse" n="8"><q who="per14" corresp="per644 org70" type="oral">Sus caballos son más ligeros que leopardos, más feroces que lobos nocturnos, y sus <rs key="org24">jinetes</rs> se multiplicarán. Vienen de lejos sus <rs key="org24">jinetes</rs>, vuelan como <rs key="org24">águilas</rs> que se apresuran a devorar.</q></ab>
+<ab xml:id="b.HAB.1.9" type="verse" n="9"><q who="per14" corresp="per644 org70" type="oral">Toda ella acude a la violencia; el terror va delante de ella, y recoge cautivos como arena.</q></ab>
+    <ab xml:id="b.HAB.1.10" type="verse" n="10"><q who="per14" corresp="per644 org70" type="oral">Se mofa de los <rs key="org100">reyes</rs>, y de los <rs key="org100">príncipes</rs> hace burla; se ríe de las fortalezas, levanta terraplenes y las toma.</q></ab>
+<ab xml:id="b.HAB.1.11" type="verse" n="11"><q who="per14" corresp="per644 org70" type="oral">Luego pasa como el <rs key="org64">huracán</rs>, y peca porque hace de su fuerza su dios.</q></ab>
+    <ab xml:id="b.HAB.1.12" type="verse" n="12"><q who="per644" corresp="per14" type="prayer">»¿No eres tú desde el <rs key="tim3">principio</rs>, <rs key="per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío, <rs key="per14">Santo</rs> mío? No moriremos. <rs key="per14">Jehová</rs>, para juicio lo pusiste; y tú, <rs key="per14">Roca</rs>, lo estableciste para castigar.</q></ab>
+    <ab xml:id="b.HAB.1.13" type="verse" n="13"><q who="per644" corresp="per14" type="prayer">Muy limpio eres de ojos para ver el mal, ni puedes ver el agravio; ¿por qué, pues, ves a los <rs key="org19">criminales</rs> y callas cuando destruye el <rs key="org19">impío</rs> al que es más justo que él?</q></ab>
+    <ab xml:id="b.HAB.1.14" type="verse" n="14"><q who="per644" corresp="per14" type="prayer">Tratas a los <rs key="org0">hombres</rs> como a <rs key="org0">peces del mar</rs>, como a <rs key="org0">reptiles</rs> que no tienen dueño.</q></ab>
+<ab xml:id="b.HAB.1.15" type="verse" n="15"><q who="per644" corresp="per14" type="prayer">A todos los pesca con anzuelo, los recoge con su red, los junta en sus mallas; por lo cual se alegra y se regocija.</q></ab>
+<ab xml:id="b.HAB.1.16" type="verse" n="16"><q who="per644" corresp="per14" type="prayer">Por eso ofrece sacrificios a su red y quema incienso a sus mallas, porque gracias a ellas su porción es abundante y sabrosa su comida.</q></ab>
+<ab xml:id="b.HAB.1.17" type="verse" n="17"><q who="per644" corresp="per14" type="prayer">¿Vaciará sin cesar su red y seguirá aniquilando sin piedad a las <rs key="org0">naciones</rs>?».</q></ab>
 </div>
 </div>
 <div xml:id="b.HAB.2" type="chapter" n="2">
@@ -69,6 +111,9 @@
 <ab xml:id="b.HAB.3.17" type="verse" n="17">»Aunque la higuera no florezca ni en las vides haya frutos, aunque falte el producto del olivo y los labrados no den mantenimiento, aunque las ovejas sean quitadas de la majada y no haya vacas en los corrales,</ab>
 <ab xml:id="b.HAB.3.18" type="verse" n="18"><q who="per" corresp="per" type="oral">con todo, yo me alegraré en <rs key="per14">Jehová</rs>, me gozaré en el <rs key="#per14">Dios</rs> de mi salvación.</q></ab>
 <ab xml:id="b.HAB.3.19" type="verse" n="19"><q who="per" corresp="per" type="oral"><rs key="per14">Jehová</rs>, el <rs key="per14">Señor</rs>, es mi fortaleza; él me da pies como de ciervas y me hace caminar por las alturas». {i <rs key="per">Al</rs> <rs key="per">jefe</rs> de los cantores. Para instrumentos de cuerdas. }</q></ab>
-
+</div>
+</div>
 </div>
 </body>
+    </text>
+</TEI>
