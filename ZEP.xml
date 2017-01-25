@@ -1,26 +1,69 @@
-<body>
-<ab xml:id="b.ZEP" type="book">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
 
-<div xml:id="b.ZEP.1" type="chapter" n="1">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sofonías</title>
+                <title type="idno">
+                    <idno type="string">ZEP</idno>
+                    <idno type="viaf"></idno>
+                </title>
+                <author>
+                    <name type="short"></name>
+                    <name type="full"></name>z
+                    <idno type="viaf"></idno>
+                </author>
+                <principal key="#jct">José Calvo Tello</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>José Calvo Tello</publisher>
+                <availability status="free">
+                    <p>The text is freely available.</p>
+                </availability>
+                <date when="2017">2017</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+                <bibl type="edition-first"><date when="1569">1569</date></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p></p>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2017-01-25" who="#jct">First version of Habakkuk</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+<div xml:id="b.ZEP" type="book">
+
+<div xml:id="b.ZEP.1" type="chapter" n="1" cert="high">
 <div type="pericope">
-<head type="pericope"></head><ab xml:id="b.ZEP.1.1" type="verse" n="1">Palabra que <rs key="per14">Jehová</rs> dirigió a <rs key="per">Sofonías</rs> <rs key="per">hijo de <rs key="per">Cusi</rs></rs> <rs key="per">hijo de <rs key="per">Gedalías</rs></rs>, <rs key="per">hijo de <rs key="per">Amarías</rs></rs>, <rs key="per">hijo de <rs key="per">Ezequías</rs></rs>, en días de <rs key="per">Josías</rs> <rs key="per">hijo de <rs key="per">Amón</rs></rs>, <rs key="per">rey de <rs key="#per5">Judá</rs></rs>:</ab>
-<ab xml:id="b.ZEP.1.2" type="verse" n="2">«Destruiré por completo todas las cosas de sobre la faz de la <rs key="#pla41">tierra</rs>, dice <rs key="per14">Jehová</rs>.</ab>
-<ab xml:id="b.ZEP.1.3" type="verse" n="3">Destruiré <rs key="per">hombres</rs> y bestias, destruiré las aves del <rs key="#pla18">cielo</rs> y los peces del mar, haré perecer a los malvados, y extirparé a los <rs key="per">hombres</rs> de sobre la faz de la <rs key="#pla41">tierra</rs>, dice <rs key="per14">Jehová</rs>.</ab>
-<ab xml:id="b.ZEP.1.4" type="verse" n="4"><q who="per" corresp="per" type="oral">»Extenderé mi mano contra <rs key="#per5">Judá</rs> y contra todos los habitantes de <rs key="#pla3">Jerusalén</rs>. Exterminaré de este <rs key="pla">lugar</rs> los restos de <rs key="per">Baal</rs> y el nombre de los ministros idólatras junto con sus <rs key="#org12">sacerdotes</rs>.</q></ab>
-<ab xml:id="b.ZEP.1.5" type="verse" n="5">Exterminaré a los que sobre los terrados se postran ante el ejército del <rs key="#pla18">cielo</rs>, a los que se postran jurando por <rs key="per14">Jehová</rs> y jurando por <rs key="per">Milcom</rs>,</ab>
-<ab xml:id="b.ZEP.1.6" type="verse" n="6">a los que se apartan de <rs key="per14">Jehová</rs>, a los que no buscaron a <rs key="per14">Jehová</rs> ni lo consultaron.</ab>
-<ab xml:id="b.ZEP.1.7" type="verse" n="7">»Calla en la presencia de <rs key="per14">Jehová</rs>, el <rs key="per14">Señor</rs>, porque el día de <rs key="per14">Jehová</rs> está cercano, porque <rs key="per14">Jehová</rs> ha preparado un sacrificio y ha consagrado a sus convidados.</ab>
-<ab xml:id="b.ZEP.1.8" type="verse" n="8">»En el día del sacrificio de <rs key="per14">Jehová</rs> castigaré a los príncipes, a los <rs key="org">hijos del <rs key="per">rey</rs></rs> y a todos los que visten como extranjeros.</ab>
-<ab xml:id="b.ZEP.1.9" type="verse" n="9">Asimismo castigaré en aquel día a todos los que saltan la puerta y a los que llenan las casas de sus <rs key="per">señores</rs> de robo y de engaño.</ab>
-<ab xml:id="b.ZEP.1.10" type="verse" n="10">»Así dice <rs key="per14">Jehová</rs>: Habrá en aquel día voz de clamor desde la puerta del <rs key="per">Pescado</rs>, aullido desde la segunda puerta y gran quebrantamiento desde los collados.</ab>
-<ab xml:id="b.ZEP.1.11" type="verse" n="11">Aullad, habitantes de <rs key="per">Mactes</rs>, porque todo el <rs key="org">pueblo</rs> mercader ha sido destruido; extirpados han sido todos los que trafican con dinero.</ab>
-<ab xml:id="b.ZEP.1.12" type="verse" n="12"><q who="per" corresp="per" type="oral">»Acontecerá en aquel tiempo que yo escudriñaré a <rs key="#pla3">Jerusalén</rs> con linterna y castigaré a los <rs key="per">hombres</rs> que reposan tranquilos como el vino asentado, los cuales dicen en su corazón: <rs key="per14">Jehová</rs> ni hará bien ni hará mal.</q></ab>
-<ab xml:id="b.ZEP.1.13" type="verse" n="13">Por tanto, serán saqueados sus bienes y sus casas asoladas; edificarán casas, mas no las habitarán, plantarán viñas, mas no beberán de su vino.</ab>
-<ab xml:id="b.ZEP.1.14" type="verse" n="14">»¡Cercano está el día grande de <rs key="per14">Jehová</rs>! ¡Cercano, muy próximo! Amargo será el clamor del día de <rs key="per14">Jehová</rs>; hasta el valiente allí gritará.</ab>
-<ab xml:id="b.ZEP.1.15" type="verse" n="15">Día de ira aquel día, día de angustia y de aprieto, día de alboroto y de asolamiento, día de tiniebla y de oscuridad, día de nublado y de entenebrecimiento,</ab>
-<ab xml:id="b.ZEP.1.16" type="verse" n="16">día de trompeta y de alarido sobre las <rs key="pla">ciudades</rs> fortificadas y sobre las altas torres.</ab>
-<ab xml:id="b.ZEP.1.17" type="verse" n="17">Llenaré de tribulación a los <rs key="per">hombres</rs>, y ellos andarán como ciegos, porque pecaron contra <rs key="per14">Jehová</rs>. Su sangre será derramada como polvo y su carne como estiércol.</ab>
-<ab xml:id="b.ZEP.1.18" type="verse" n="18">»Ni su plata ni su oro podrán librarlos en el día de la ira de <rs key="per14">Jehová</rs>, pues toda la <rs key="#pla41">tierra</rs> será consumida con el fuego de su celo, porque él exterminará repentinamente a todos los habitantes de la <rs key="#pla41">tierra</rs>».</ab>
+    <head type="pericope"></head><ab xml:id="b.ZEP.1.1" type="verse" n="1"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">Palabra que <rs key="per14">Jehová</rs> dirigió a <rs key="per627">Sofonías</rs> <rs key="per627">hijo de <rs key="per646">Cusi</rs></rs> <rs key="per646">hijo de <rs key="per647">Gedalías</rs></rs>, <rs key="per647">hijo de <rs key="per648">Amarías</rs></rs>, <rs key="per648">hijo de <rs key="per649">Ezequías</rs></rs>, en días de <rs key="per74">Josías</rs> <rs key="per74">hijo de <rs key="per73">Amón</rs></rs>, <rs key="per73">rey de <rs key="#pla2">Judá</rs></rs>:</q></q></q></ab>
+<ab xml:id="b.ZEP.1.2" type="verse" n="2"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">«Destruiré por completo todas las cosas de sobre la faz de la <rs key="#pla41">tierra</rs>, dice <rs key="per14">Jehová</rs>.</q></q></q></ab>
+<ab xml:id="b.ZEP.1.3" type="verse" n="3"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">Destruiré <rs key="org0">hombres</rs> y bestias, destruiré las aves del <rs key="#pla18">cielo</rs> y los peces del mar, haré perecer a los <rs key="org19">malvados</rs>, y extirparé a los <rs key="org0">hombres</rs> de sobre la faz de la <rs key="#pla41">tierra</rs>, dice <rs key="per14">Jehová</rs>.</q></q></q></ab>
+    <ab xml:id="b.ZEP.1.4" type="verse" n="4"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">»Extenderé mi mano contra <rs key="#org70">Judá</rs> y contra todos los <rs key="org39">habitantes de <rs key="#pla3">Jerusalén</rs></rs>. Exterminaré de este <rs key="pla2">lugar</rs> los restos de <rs key="per650">Baal</rs> y el nombre de los <rs key="org14">ministros idólatras</rs> junto con sus <rs key="#org14">sacerdotes</rs>.</q></q></q></ab>
+<ab xml:id="b.ZEP.1.5" type="verse" n="5"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">Exterminaré a los que sobre los terrados se postran ante el <rs key="org4" cert="low">ejército del <rs key="#pla18">cielo</rs></rs>, a los que se postran jurando por <rs key="per14">Jehová</rs> y jurando por <rs key="per651">Milcom</rs>,</q></q></q></ab>
+<ab xml:id="b.ZEP.1.6" type="verse" n="6"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">a los que se apartan de <rs key="per14">Jehová</rs>, a los que no buscaron a <rs key="per14">Jehová</rs> ni lo consultaron.</q></q></q></ab>
+<ab xml:id="b.ZEP.1.7" type="verse" n="7"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">»Calla en la presencia de <rs key="per14">Jehová</rs>, el <rs key="per14">Señor</rs>, porque el <rs key="tim18" cert="low">día de <rs key="per14">Jehová</rs></rs> está cercano, porque <rs key="per14">Jehová</rs> ha preparado un <rs key="per1" cert="low">sacrificio</rs> y ha consagrado a sus <rs key="org18">convidados</rs>.</q></q></q></ab>
+    <ab xml:id="b.ZEP.1.8" type="verse" n="8"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">»En el <rs key="tim13" cert="low">día del sacrificio de <rs key="per14">Jehová</rs></rs> castigaré a los <rs key="org100">príncipes</rs>, a los <rs key="org100">hijos del <rs key="org100">rey</rs></rs> y a todos los que visten como <rs key="org16">extranjeros</rs>.</q></q></q></ab>
+<ab xml:id="b.ZEP.1.9" type="verse" n="9"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">Asimismo castigaré en aquel día a todos los que saltan la puerta y a los que llenan las casas de sus <rs key="org100">señores</rs> de robo y de engaño.</q></q></q></ab>
+<ab xml:id="b.ZEP.1.10" type="verse" n="10"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">»Así dice <rs key="per14">Jehová</rs>: Habrá en aquel día voz de clamor desde la <rs key="pla300">puerta del Pescado</rs>, aullido desde la segunda <rs cert="low">puerta</rs> y gran quebrantamiento desde los collados.</q></q></q></ab>
+<ab xml:id="b.ZEP.1.11" type="verse" n="11"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">Aullad, <rs key="org0" cert="low">habitantes de <rs key="pla301">Mactes</rs></rs>, porque todo el <rs key="org0">pueblo mercader</rs> ha sido destruido; extirpados han sido todos los que trafican con dinero.</q></q></q></ab>
+    <ab xml:id="b.ZEP.1.12" type="verse" n="12"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">»Acontecerá en aquel tiempo que yo escudriñaré a <rs key="#pla3">Jerusalén</rs> con linterna y castigaré a los <rs key="org0">hombres</rs> que reposan tranquilos como el vino asentado, los cuales dicen en su corazón: <q who="org0" corresp="org0" type="oral"><rs key="per14">Jehová</rs> ni hará bien ni hará mal.</q></q></q></q></ab>
+<ab xml:id="b.ZEP.1.13" type="verse" n="13"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">Por tanto, serán saqueados sus bienes y sus casas asoladas; edificarán casas, mas no las habitarán, plantarán viñas, mas no beberán de su vino.</q></q></q></ab>
+    <ab xml:id="b.ZEP.1.14" type="verse" n="14"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">»¡Cercano está el <rs key="tim2" cert="medium">día grande de <rs key="per14">Jehová</rs></rs>! ¡Cercano, muy próximo! Amargo será el clamor del <rs key="tim2" cert="medium">día de <rs key="per14">Jehová</rs></rs>; hasta el <rs key="org18">valiente</rs> allí gritará.</q></q></q></ab>
+    <ab xml:id="b.ZEP.1.15" type="verse" n="15"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral"><rs key="tim2">Día de ira</rs> aquel <rs key="tim2">día</rs>, <rs key="tim2">día de angustia y de aprieto</rs>, <rs key="tim2">día de alboroto y de asolamiento</rs>, <rs key="tim2">día de tiniebla y de oscuridad</rs>, <rs key="tim2">día de nublado y de entenebrecimiento</rs>,</q></q></q></ab>
+    <ab xml:id="b.ZEP.1.16" type="verse" n="16"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral"><rs key="tim2">día de trompeta y de alarido sobre las <rs key="pla0">ciudades fortificadas</rs> y sobre las altas torres</rs>.</q></q></q></ab>
+    <ab xml:id="b.ZEP.1.17" type="verse" n="17"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">Llenaré de tribulación a los <rs key="org0">hombres</rs>, y ellos andarán como <rs key="org0">ciegos</rs>, porque pecaron contra <rs key="per14">Jehová</rs>. Su sangre será derramada como polvo y su carne como estiércol.</q></q></q></ab><!--Uauh!-->
+<ab xml:id="b.ZEP.1.18" type="verse" n="18"><q who="per627" corresp="org0" type="written"><q who="per14" corresp="per627" type="oral"><q who="per14" corresp="org0" type="oral">»Ni su plata ni su oro podrán librarlos en el <rs key="tim2">día de la ira de <rs key="per14">Jehová</rs></rs>, pues toda la <rs key="#pla41">tierra</rs> será consumida con el fuego de su celo, porque él exterminará repentinamente a todos los <rs key="org0">habitantes de la <rs key="#pla41">tierra</rs></rs>».</q></q></q></ab>
 
 </div>
 </div>
@@ -67,4 +110,8 @@
 <ab xml:id="b.ZEP.3.19" type="verse" n="19"><q who="per" corresp="per" type="oral">En aquel tiempo yo apremiaré a todos tus opresores; salvaré a la oveja que cojea y recogeré a la descarriada. Cambiaré su vergüenza en alabanza y renombre en toda la <rs key="#pla41">tierra</rs>.</q></ab>
 <ab xml:id="b.ZEP.3.20" type="verse" n="20"><q who="per" corresp="per" type="oral">En aquel tiempo yo os traeré; en aquel tiempo os reuniré, y os daré renombre y fama entre todos los <rs key="org">pueblos de la <rs key="#pla41">tierra</rs></rs>, cuando levante vuestro cautiverio ante vuestros propios ojos, dice <rs key="per14">Jehová</rs>».</q></ab>
 </div>
+</div>
+</div>
 </body>
+    </text>
+</TEI>
