@@ -18,20 +18,21 @@ div[type="pericope"]:last-child ab[type="verse"]:last-child
 
 ab>q
  {
- 	border:lightgreen 1px solid;
-	background-color:lightgreen;
+ 	border:yellow 1px solid;
+	background-color:yellow;
+	color:black;
  }
 
 ab q[who*="#org"]
  {
- 	border:yellow 1px solid;
-	background-color:yellow;
+ 	border:orange 1px solid;
+	background-color:orange;
  }
  
 ab q[who="#org70"], ab>q[who="#org88"], ab>q[who="#org2"], ab>q[who="#org1"], ab>q[who="#org5"], ab>q[who="#org12"]  
  {
- 	border:Orange 1px solid;
-	background-color:orange ;
+ 	border:lightgreen 1px solid;
+	background-color:lightgreen ;
 
  }
 ab[type="verse"]:hover
@@ -58,7 +59,7 @@ ab q[who="#per20"], ab q[who="#org6"]
 ab q[who="#per14"]
  {
  	border:lightblue  1px solid;
-	background-color:lightblue ;
+	background-color: lightblue ;
  }
 
 ab q[who="#per1"]
