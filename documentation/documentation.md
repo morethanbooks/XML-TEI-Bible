@@ -35,12 +35,12 @@ At the moment following books are fully encoded in this chronological order:
 * Exodus
 * Zechariah
 * Micah
-
-At the moment, following book is being encoded:
 * Nahum
 * Habakkuk
 * Zephaniah
 
+At the moment, following book is being encoded:
+* 1 and 2 Samuel
 
 ## Original Text
 

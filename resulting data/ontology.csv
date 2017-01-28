@@ -626,7 +626,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per624	Tobías				AT		male			person	human	defined		ZEC
 #per625	Jedaías				AT		male			person	human	defined		ZEC
 #per626	Josías				AT		male			person	human	defined		ZEC
-#per627	Sofonías				AT		male			person	human	defined		ZEC
+#per627	Sofonías			mismo que en Sofonías?	AT		male			person	human	defined		ZEC
 #per628	Helem				AT		male			person	human	defined		ZEC
 #per629	Hen				AT		male			person	human	defined		ZEC
 #per630	Sarezer				AT		male			person	human	defined		ZEC
@@ -642,6 +642,17 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per640	Beor				AT		male			person	human	defined		MIC
 #per641	Omri				AT		male			person	human	defined		MIC
 #per642	Acab	rey de Israel			AT		male			person	human	defined	1	MIC
+#per643	Nahúm	profeta			AT		male			person	human	defined	1	NAH
+#per644	Habacuc	profeta			AT		male			person	human	defined	1	HAB
+#per645	Sigionot				AT		male			person	human	defined		HAB
+#per646	Cusi	padre del profeta Sofonías			AT		male			person	human	defined		ZEP
+#per647	Gedalías				AT		male			person	human	defined		ZEP
+#per648	Amarías				AT		male			person	human	defined		ZEP
+#per649	Ezequías	ascendete del profeta Sofonías			AT		male			person	human	defined		ZEP
+#per650	Baal				AT		male			person	superior	defined	1	ZEP
+#per651	Milcom				AT	low	male			person	superior	defined		ZEP
+														
+														
 														
 #org0	gente	grupo no definido						Leute	Pessoas	group	human	undefined		MAT
 #org1	Sanedrín							Sanhedrin	Sinédrio	group	human	defined		MAT
@@ -779,6 +790,8 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org133	babilonios													ZEC
 #org134	hijos de Natán													ZEC
 #org135	asirios													MIC
+#org136	jefe de los músicos													HAB
+#org137	cereteos													ZEP
 														
 														
 														
@@ -804,20 +817,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 														
 														
 														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
+#pla0	lugares													
 #pla1	Belén							Bethlehem	Belem	place	human			MAT
 #pla2	Judea		Judá	Es lo mismo que Judá?				Judäa	Judeia	place	human			MAT
 #pla3	Jerusalén							Jerusalem	Jerusalem	place	human			MAT
@@ -1081,35 +1081,52 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla261	Jehová-nisi	altar								place	human			EXO
 #pla262	templo	móvil								place	human			EXO
 #pla263	tabernáculo									place	human			EXO
-#pla264	Sefela													ZEC
-#pla265	Hadrac													ZEC
-#pla266	Hamat													ZEC
-#pla267	Ascalón													ZEC
-#pla268	Ecrón													ZEC
-#pla269	Asdod													ZEC
-#pla270	lagares del rey	En Jerusalén												ZEC
-#pla271	Meguido													ZEC
-#pla272	Azal													ZEC
-#pla273	Mar Muerto													ZEC
-#pla274	Geba													ZEC
-#pla275	Rimón													ZEC
-#pla276	puerta de Benjamín	En Jerusalén												ZEC
-#pla277	puerta primera	En Jerusalén												ZEC
-#pla278	puerta del Ángulo	En Jerusalén												ZEC
-#pla279	torre de Hananeel	En Jerusalén												ZEC
-#pla280	Moreset													ZEC
-#pla281	Gat													MIC
-#pla282	Bet-le-afra													MIC
-#pla283	Safir													MIC
-#pla284	Zaanán													MIC
-#pla285	Betesel													MIC
-#pla286	Marot													MIC
-#pla287	Laquis													MIC
-#pla288	Moreset-gat													MIC
-#pla289	Adulam													MIC
-#pla290	Bosra													MIC
-#pla291	Sitim													MIC
-#pla292	Gilgal													MIC
+#pla264	Sefela									place	human			ZEC
+#pla265	Hadrac									place	human			ZEC
+#pla266	Hamat									place	human			ZEC
+#pla267	Ascalón									place	human			ZEC
+#pla268	Ecrón									place	human			ZEC
+#pla269	Asdod									place	human			ZEC
+#pla270	lagares del rey	En Jerusalén								place	human			ZEC
+#pla271	Meguido									place	human			ZEC
+#pla272	Azal									place	human			ZEC
+#pla273	Mar Muerto									place	human			ZEC
+#pla274	Geba									place	human			ZEC
+#pla275	Rimón									place	human			ZEC
+#pla276	puerta de Benjamín	En Jerusalén								place	human			ZEC
+#pla277	puerta primera	En Jerusalén								place	human			ZEC
+#pla278	puerta del Ángulo	En Jerusalén								place	human			ZEC
+#pla279	torre de Hananeel	En Jerusalén								place	human			ZEC
+#pla280	Moreset									place	human			ZEC
+#pla281	Gat									place	human			MIC
+#pla282	Bet-le-afra									place	human			MIC
+#pla283	Safir									place	human			MIC
+#pla284	Zaanán									place	human			MIC
+#pla285	Betesel									place	human			MIC
+#pla286	Marot									place	human			MIC
+#pla287	Laquis									place	human			MIC
+#pla288	Moreset-gat									place	human			MIC
+#pla289	Adulam									place	human			MIC
+#pla290	Bosra									place	human			MIC
+#pla291	Sitim									place	human			MIC
+#pla292	Gilgal									place	human			MIC
+#pla293	Elcos									place	human			NAH
+#pla294	Carmelo									place	human			NAH
+#pla295	Tebas									place	human			NAH
+#pla296	Fut									place	human			NAH
+#pla297	Libia									place	human			NAH
+#pla298	Temán									place	human			HAB
+#pla299	Cusán									place	human			HAB
+#pla300	puerta del Pescado	En Jerusalén				low				place	human			ZEP
+#pla301	Mactes									place	human			ZEP
+														
+														
+														
+														
+														
+														
+														
+														
 														
 #tim1	tercer día	tras la muerte de Jesús						Dritter Tag	Terceiro dia	time				MAT
 #tim2	Día del juicio							Tag des jüngsten Gerichtes	Dia do juízo	time				MAT
@@ -1145,3 +1162,4 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #wor5	Evangelio de Lucas									work				
 #wor6	Salmos													
 #wor7	tablas de la ley		mandamientos											EXO
+#wor8	libro de Habacuc													
