@@ -153,7 +153,6 @@ def create_edges(df_binary_matrix, edge = "character"):
     old_nodes = []
 
     # TODO: Pasar esto a List comprehension
-    # TODO: URGENTE!! Hacer que solo itere por cada unidad textual, por aquellas filas que tienen más de un 0
 
     # Vamos iterando por cada valor
     for node1 in list_nodes:
@@ -203,19 +202,16 @@ def create_edges2(df_binary_matrix, edge = "character"):
 
     #print(list_edges)
     for unit_edge in list_edges:
-        old_shit = []
+        old_entity = []
         #print(sorted(df_binary_matrix[unit_edge][df_binary_matrix[unit_edge] > 0].index))
-        for shit1 in sorted(df_binary_matrix[unit_edge][df_binary_matrix[unit_edge] > 0].index):
-            old_shit.append(shit1)
-            for shit2 in sorted(df_binary_matrix[unit_edge][df_binary_matrix[unit_edge] > 0].index):
-                #print(shit1,shit2)
-                if shit1 != shit2 and shit2 not in old_shit:
-                    edges.append((shit1,shit2))
+        for entity1 in sorted(df_binary_matrix[unit_edge][df_binary_matrix[unit_edge] > 0].index):
+            old_entity.append(entity1)
+            for entity2 in sorted(df_binary_matrix[unit_edge][df_binary_matrix[unit_edge] > 0].index):
+                #print(entity1,entity2)
+                if entity1 != entity2 and entity2 not in old_entity:
+                    edges.append((entity1,entity2))
     counter_edges = Counter(edges)
-    #print(counter_edges)
-    #for shit, shit2 in counter_edges.items():
-    #    print(shit, shit2)
-    #print ([[tuplecita[0], tuplecita[1], frequency] for tuplecita,frequency in counter_edges.items()])
+
     edges = [[tuplecita[0], tuplecita[1], frequency] for tuplecita,frequency in counter_edges.items()]
     df_edges = pd.DataFrame(edges, columns = ["Source","Target","Weight"])
     df_edges["Type"] = "Undirected"
@@ -323,15 +319,19 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
     nodes = nodes[nodes['id'].isin(entities_edges)]
     graph = nx.from_pandas_dataframe(df = edges, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:] )
 
+    d = nx.degree(graph)
 
 
     nx.set_node_attributes(graph, 'NormalizedName-sp', {k:v for (k,v) in zip(nodes["id"], nodes["NormalizedName-sp"])})
     nx.set_node_attributes(graph, 'Gender', {k:v for (k,v) in zip(nodes["id"], nodes["Gender"])})
     nx.set_node_attributes(graph, 'type', {k:v for (k,v) in zip(nodes["id"], nodes["type"])})
 
+    nx.set_node_attributes(graph, 'Degree', {k:(int(v)*100) for (k,v) in d.items()})
+
     graph = graph.subgraph( [n for n,attrdict in graph.node.items() if attrdict['type'] == 'person'] )
 
-    d = nx.degree(graph)
+    
+    print( graph.nodes(data=True), type(graph.nodes(data=True)),)
     
     #print( graph.nodes(data=True)[:3], type(graph.nodes(data=True)),)
     labels = nx.get_node_attributes(graph,'NormalizedName-sp')
@@ -340,6 +340,8 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
     mapping = dict(zip(sorted(groups),count()))
     nodes = graph.nodes()
     colors = [mapping[graph.node[n]['Gender']] for n in nodes]
+    
+    degree = [[graph.node[n]['Degree']] for n in nodes]
 
     print("cantidad nodos: ", len(graph.nodes()))
     plt.figure(figsize=((len(graph.nodes())/10)+10,(len(graph.nodes())/10)+10))
@@ -349,22 +351,20 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
 
     widths = [w['Weight'] for (u, v, w) in graph.edges(data=True)]
     
-    value_from_degree = [((v+5) * 50) for v in d.values()]
-    print(value_from_degree)
-
-    
-    nx.draw_networkx(graph, pos, labels = labels, width = widths, font_size=15+(len(graph.nodes())/25), alpha=0.4, edge_color='#87CEFA', node_color=colors, cmap=plt.cm.RdYlBu, style= "solid", node_size = value_from_degree)
+    nx.draw_networkx(graph, pos, labels = labels, width = widths, font_size=15+(len(graph.nodes())/25), alpha=0.4, edge_color='#87CEFA', node_color=colors, cmap=plt.cm.RdYlBu, style= "solid", node_size = degree)
 
     plt.savefig(output_folder+file_edges_name+'.png', dpi=50)
-    plt.show()
-"""    
-"""
+    #print(d)
+    #print(nx.nodes(graph))
+
+    #plt.show()
+    
 def create_networks_bible():
     xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
     
     string_xpath = xpath2string(xpaths)
-    books_bible = ['GEN','JON']
-    books_bible = ['GEN','EXO','RUT','SAL','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV']
+    books_bible = ['ACT']
+    books_bible = ['GEN','EXO','RUT','PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV']
     
     for different_book in books_bible:
 
@@ -378,11 +378,10 @@ def create_networks_bible():
                 characters_in = "text",
                 xpaths = xpaths
                 )
-
         graph = visualize_networks( input_folder = "/home/jose/Dropbox/biblia/tb/resulting data/",
                            file_edges = "TEIBible_"+different_book+string_xpath+"_edges_text-unit.csv",
                            file_nodes = "ontology.csv",
-                           output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/",
+                           output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/networks/",
                            columns_nodes = ""
                            )
     return
@@ -399,8 +398,9 @@ df_characters, edges_text_unit, df_text_parts = create_networks(
         characters_in = "text",
         xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
         )
+
 graph = visualize_networks( input_folder = "/home/jose/Dropbox/biblia/tb/resulting data/",
-                   file_edges = "TEIBible_JON_q-rs@corresp-@key-@who__edges_text-unit.csv",
+                   file_edges = "TEIBible_ACT_q-rs@corresp-@key-@who__edges_text-unit.csv",
                    file_nodes = "ontology.csv",
                    output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/",
                    columns_nodes = ""
