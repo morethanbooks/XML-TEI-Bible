@@ -10,7 +10,9 @@ from collections import Counter
 import os
 import glob
 import re
-
+import networkx as nx
+import matplotlib.pyplot as plt
+from itertools import count
 
 def create_matrix_caracters_castItem(documento_root, namespaces_concretos):
     """
@@ -20,6 +22,7 @@ def create_matrix_caracters_castItem(documento_root, namespaces_concretos):
     list_characters = []
     # Sacamos todos los castItems:
     castItems = documento_root.xpath('//tei:castItem', namespaces=namespaces_concretos)
+
     # Sacamos cada personaje:
     for castItem  in castItems:
         # Sacamos los metadatos
@@ -37,25 +40,20 @@ def create_matrix_caracters_castItem(documento_root, namespaces_concretos):
 
 def create_matrix_caracters_text(documento_root, namespaces_concretos, xpaths):
 
-    #print(etree.tostring(documento_root, pretty_print=True, encoding="unicode"))
 
-    list_characters = []
-    for element, attributes in xpaths.items():
-        for attribute in attributes:
-            print(element, attribute)
-            list_characters.append((list(set(documento_root.xpath("//tei:"+element+"/"+attribute, namespaces=namespaces_concretos)))))
+    list_characters = [
+    list(set(documento_root.xpath("//tei:"+element+"/"+attribute, namespaces=namespaces_concretos)))
+    for element, attributes in xpaths.items()
+    for attribute in attributes
+    ]
+    list_characters = list(set([character for sublist in list_characters for item in sublist for character in item.split(" ")]))
 
-    list_characters = [item for sublist in list_characters for item in sublist]
-
-    list_characters = [i.split(' ', 1) for i in list_characters]
-
-    list_characters = [item for sublist in list_characters for item in sublist]
-
-    list_characters = sorted(list(set(list_characters)))
 
     df_characters = pd.DataFrame(list_characters, columns=["id"])
+    print(sorted(df_characters["id"].tolist()))
+
     print(df_characters)
-    print("nodes from  text done")
+    print("nodes from text done: ", df_characters.shape)
     return df_characters
 
 
@@ -75,7 +73,7 @@ def create_matrix_text_parts(text_parts, namespaces_concretos):
     #Convertimos en dataframe
     df_text_parts = pd.DataFrame(list_text_parts, columns=["id","type"])
     print(df_text_parts)
-    print("text parts done")
+    print("text parts done: ", df_text_parts.shape)
     return df_text_parts
 
 
@@ -89,24 +87,57 @@ def create_binary_matrix(df_characters, df_text_parts, xpaths, documento_root, n
     
     # Iteramos por ambos
     for text_part in df_binary_matrix.columns.tolist():
+        #print(text_part)
         for character in df_binary_matrix.index.tolist():
-            amount_character = 0
-            for element, attributes in xpaths.items():
-                for attribute in attributes:
-                    # Miramos la cantidad de veces que ese personaje aparece en esa unidad
-                    amount_character = amount_character + len(documento_root.xpath('//tei:'+border+'[@xml:id="'+text_part+'"]//tei:'+element+'['+attribute+'="'+character+'"]', namespaces=namespaces_concretos))
+            #print(character)
+            
+            
+            amount_character = sum([
+            len(documento_root.xpath('//tei:'+border+'[@xml:id="'+text_part+'"]//tei:'+element+'['+attribute+'="'+character+'"]', namespaces=namespaces_concretos))
+            for element, attributes in xpaths.items()
+            for attribute in attributes
+            ])
+            
+            df_binary_matrix[text_part][character] = amount_character
             #print(text_part, character, amount_character)
             # Rellenamos la tabla con el valor
-            df_binary_matrix[text_part][character] = amount_character
     # Creamos una columna sumatorio, ordenamos por ese valor y borramos la columna
     df_binary_matrix["sum"] = df_binary_matrix.sum(axis="columns")
     df_binary_matrix = df_binary_matrix.sort_values(by=["sum"], ascending=False)
     del df_binary_matrix["sum"]
 
     print(df_binary_matrix)
-    print("binary matrix done")
+    print("binary matrix done: ", df_binary_matrix.shape)
     return df_binary_matrix
     
+
+def create_binary_matrix2(df_characters, df_text_parts, xpaths, text_parts, namespaces_concretos, border):
+    # Creamos dataframe vacía donde el índice son los personajes y las columnas las escenas
+    df_binary_matrix = pd.DataFrame(0, index = df_characters["id"].tolist(), columns = df_text_parts["id"].tolist())
+    #print(df_binary_matrix)
+    # Miramos cada verso
+    for text_part in text_parts:
+        id_text_part = text_part.xpath('@xml:id')
+        id_text_part = id_text_part[0]
+
+        # Para ser más eficientes, sacamos una lista de los personaes que aparecen en ese verso
+        list_characters = [
+        list((text_part.xpath('//tei:'+border+'[@xml:id="'+id_text_part+'"]//tei:'+element+"/"+attribute, namespaces=namespaces_concretos)))
+        for element, attributes in xpaths.items()
+        for attribute in attributes
+        ]
+        list_characters = (([character for sublist in list_characters for item in sublist for character in item.split(" ")]))
+        #print(id_text_part, etree.tostring(text_part, pretty_print=True, encoding="unicode"), list_characters)
+        
+        for character in list_characters:
+            #print(character, id_text_part)
+            #print("selecionando: ", df_binary_matrix[id_text_part][character])
+            df_binary_matrix[id_text_part][character] += 1
+
+    print(df_binary_matrix)
+    print("binary matrix done: ", df_binary_matrix.shape)
+    return df_binary_matrix
+
 
 def create_edges(df_binary_matrix, edge = "character"):
     """
@@ -120,6 +151,10 @@ def create_edges(df_binary_matrix, edge = "character"):
         
     edges = []
     old_nodes = []
+
+    # TODO: Pasar esto a List comprehension
+    # TODO: URGENTE!! Hacer que solo itere por cada unidad textual, por aquellas filas que tienen más de un 0
+
     # Vamos iterando por cada valor
     for node1 in list_nodes:
 
@@ -147,8 +182,45 @@ def create_edges(df_binary_matrix, edge = "character"):
     # Lo guardamos como dataframe
     df_edges = pd.DataFrame(edges, columns=["Source","Target","Weight","Type"])
     df_edges = df_edges.sort_values(by=["Weight"], ascending=False)
-    print(edge, "edges done")
+    print(edge, "edges done: ", df_edges.shape)
     
+    return df_edges
+
+
+def create_edges2(df_binary_matrix, edge = "character"):
+    """
+    Esta función crea la lista de cantos a partir de la matrix binaria
+    """
+    print("empezando edges: ")
+    edges = []
+    # Creamos la lista depediendo de qué queremos observar    
+    if edge == "text_unit":
+        list_nodes = df_binary_matrix.index.tolist()
+        list_edges = df_binary_matrix.columns.tolist()
+        
+    elif edge == "character":
+        list_nodes = df_binary_matrix.columns.tolist()
+
+    #print(list_edges)
+    for unit_edge in list_edges:
+        old_shit = []
+        #print(sorted(df_binary_matrix[unit_edge][df_binary_matrix[unit_edge] > 0].index))
+        for shit1 in sorted(df_binary_matrix[unit_edge][df_binary_matrix[unit_edge] > 0].index):
+            old_shit.append(shit1)
+            for shit2 in sorted(df_binary_matrix[unit_edge][df_binary_matrix[unit_edge] > 0].index):
+                #print(shit1,shit2)
+                if shit1 != shit2 and shit2 not in old_shit:
+                    edges.append((shit1,shit2))
+    counter_edges = Counter(edges)
+    #print(counter_edges)
+    #for shit, shit2 in counter_edges.items():
+    #    print(shit, shit2)
+    #print ([[tuplecita[0], tuplecita[1], frequency] for tuplecita,frequency in counter_edges.items()])
+    edges = [[tuplecita[0], tuplecita[1], frequency] for tuplecita,frequency in counter_edges.items()]
+    df_edges = pd.DataFrame(edges, columns = ["Source","Target","Weight"])
+    df_edges["Type"] = "Undirected"
+
+    print(df_edges, "edges done: ", df_edges.shape)
     return df_edges
 
 def delete_books(documento_root, book, namespaces_concretos):
@@ -169,10 +241,16 @@ def spliting_text(documento_root, border, namespaces_concretos, printing = False
 
     return text_parts
 
+def xpath2string(xpaths):
+    string_xpath = "_"+"-".join(sorted(list(xpaths.keys())))+"-".join(sorted([item for sublist in list(xpaths.values()) for item in sublist]))+"_"
+    return string_xpath
 
+    
 def create_networks(inputtei, file, output, border, book, deleting_books, characters_in, xpaths):
     
     for doc in glob.glob(inputtei+file+".xml"):
+
+
         inputtei_name  = os.path.splitext(os.path.split(doc)[1])[0]
         print(doc, inputtei_name, book)
 
@@ -207,29 +285,128 @@ def create_networks(inputtei, file, output, border, book, deleting_books, charac
                 namespaces_concretos = namespaces_concretos,
                 )
 
-        string_xpath = "_"+"-".join(xpaths.keys())+"-".join([item for sublist in list(xpaths.values()) for item in sublist])+"_"
+        string_xpath = xpath2string(xpaths)
         
-        df_binary_matrix = create_binary_matrix(df_characters, df_text_parts, xpaths, documento_root, namespaces_concretos, border)
+        df_binary_matrix = create_binary_matrix2(df_characters, df_text_parts, xpaths, text_parts, namespaces_concretos, border)
 
         df_binary_matrix.to_csv(output+inputtei_name+"_"+book+string_xpath+'_matrix.csv', sep='\t', encoding='utf-8')
 
-        edges_text_unit = create_edges(df_binary_matrix, edge = "text_unit")
-
-        edges_character = create_edges(df_binary_matrix, edge = "character")
+        edges_text_unit = create_edges2(df_binary_matrix, edge = "text_unit")
+ 
+        #edges_character = create_edges(df_binary_matrix, edge = "character")
 
         edges_text_unit.to_csv(output+inputtei_name+"_"+book+string_xpath+'_edges_text-unit.csv', sep='\t', encoding='utf-8')
-        edges_character.to_csv(output+inputtei_name+"_"+book+string_xpath+'_edges_character.csv', sep='\t', encoding='utf-8')
+        #edges_character.to_csv(output+inputtei_name+"_"+book+string_xpath+'_edges_character.csv', sep='\t', encoding='utf-8')
         df_characters.to_csv(output+inputtei_name+"_"+book+string_xpath+'_nodes_characters.csv', sep='\t', encoding='utf-8')
         df_text_parts.to_csv(output+inputtei_name+"_"+book+string_xpath+'_nodes_text-parts.csv', sep='\t', encoding='utf-8')
 
+        return df_characters, edges_text_unit, df_text_parts
 
-create_networks(
+
+def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, output_folder, columns_edges = ["Source","Target",'Weight','Type']):
+
+    # TODO: Pasar categorías que filtra
+    # TODO: Asignar colores usando género, tipo y naturaleza
+
+    edges = pd.read_csv(input_folder+file_edges, encoding="utf-8", sep="\t")
+    file_edges_name = os.path.splitext(file_edges)[0]
+  
+    entities_edges = sorted(list(set(edges["Target"].tolist() + edges["Source"].tolist())))
+    nodes = pd.read_csv(input_folder+file_nodes, encoding="utf-8", sep="\t")
+    #print(sorted(entities_edges))
+    wrong_entities = [entity for entity in entities_edges if entity not in nodes["id"].tolist() ]
+    if wrong_entities:
+        print("id erróneos: \n ===================\n", wrong_entities,"\n ===================\n")
+    else:
+        print("todos ids correctos!")
+
+    nodes = nodes[nodes['id'].isin(entities_edges)]
+    graph = nx.from_pandas_dataframe(df = edges, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:] )
+
+
+
+    nx.set_node_attributes(graph, 'NormalizedName-sp', {k:v for (k,v) in zip(nodes["id"], nodes["NormalizedName-sp"])})
+    nx.set_node_attributes(graph, 'Gender', {k:v for (k,v) in zip(nodes["id"], nodes["Gender"])})
+    nx.set_node_attributes(graph, 'type', {k:v for (k,v) in zip(nodes["id"], nodes["type"])})
+
+    graph = graph.subgraph( [n for n,attrdict in graph.node.items() if attrdict['type'] == 'person'] )
+
+    d = nx.degree(graph)
+    
+    #print( graph.nodes(data=True)[:3], type(graph.nodes(data=True)),)
+    labels = nx.get_node_attributes(graph,'NormalizedName-sp')
+    
+    groups = set(nx.get_node_attributes(graph,'Gender').values())
+    mapping = dict(zip(sorted(groups),count()))
+    nodes = graph.nodes()
+    colors = [mapping[graph.node[n]['Gender']] for n in nodes]
+
+    print("cantidad nodos: ", len(graph.nodes()))
+    plt.figure(figsize=((len(graph.nodes())/10)+10,(len(graph.nodes())/10)+10))
+    plt.axis('off')
+    pos = nx.spring_layout(graph, k = 0.9)
+
+
+    widths = [w['Weight'] for (u, v, w) in graph.edges(data=True)]
+    
+    value_from_degree = [((v+5) * 50) for v in d.values()]
+    print(value_from_degree)
+
+    
+    nx.draw_networkx(graph, pos, labels = labels, width = widths, font_size=15+(len(graph.nodes())/25), alpha=0.4, edge_color='#87CEFA', node_color=colors, cmap=plt.cm.RdYlBu, style= "solid", node_size = value_from_degree)
+
+    plt.savefig(output_folder+file_edges_name+'.png', dpi=50)
+    plt.show()
+"""    
+"""
+def create_networks_bible():
+    xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
+    
+    string_xpath = xpath2string(xpaths)
+    books_bible = ['GEN','JON']
+    books_bible = ['GEN','EXO','RUT','SAL','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV']
+    
+    for different_book in books_bible:
+
+        df_characters, edges_text_unit, df_text_parts = create_networks(
+                inputtei = "/home/jose/Dropbox/biblia/tb/",
+                file = "TEIBible", # "*.xml"
+                output = "/home/jose/Dropbox/biblia/tb/resulting data/",
+                border = "ab[@type='verse']",
+                book = different_book,
+                deleting_books = True,
+                characters_in = "text",
+                xpaths = xpaths
+                )
+
+        graph = visualize_networks( input_folder = "/home/jose/Dropbox/biblia/tb/resulting data/",
+                           file_edges = "TEIBible_"+different_book+string_xpath+"_edges_text-unit.csv",
+                           file_nodes = "ontology.csv",
+                           output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/",
+                           columns_nodes = ""
+                           )
+    return
+
+create_networks_bible()
+"""
+df_characters, edges_text_unit, df_text_parts = create_networks(
         inputtei = "/home/jose/Dropbox/biblia/tb/",
         file = "TEIBible", # "*.xml"
         output = "/home/jose/Dropbox/biblia/tb/resulting data/",
         border = "ab[@type='verse']",
-        book = "MAL",
+        book = "JON", #GEN EXO RUT PSA JON MIC NAH HAB ZEP HAG ZEC MAL MAT JOH ACT REV 
         deleting_books = True,
         characters_in = "text",
         xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
         )
+graph = visualize_networks( input_folder = "/home/jose/Dropbox/biblia/tb/resulting data/",
+                   file_edges = "TEIBible_JON_q-rs@corresp-@key-@who__edges_text-unit.csv",
+                   file_nodes = "ontology.csv",
+                   output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/",
+                   columns_nodes = ""
+                   )
+"""
+# TODO: Crear una función para hacer varios tipos de grafos (filtrando lugares, organizaciones, seres superiores...)
+
+# TODO: Crear función para hacer varios tipos de grafos de todos los libros que ya tengo
+
