@@ -38,7 +38,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per36	Jonás				AT		male	Jona	Jonas	person	human	defined	1	MAT
 #per37	Herodía				NT		male	Herodias	Herodias	person	human	defined		MAT
 #per38	hija de Herodias	Salomé	Salomé		NT		female	Tochter der Herodias	Filha de Herodias	person	human	defined		MAT
-#per39	Salomón				NT		male	Salomo	Salomão	person	human	defined		MAT
+#per39	Salomón				NT		male	Salomo	Salomão	person	human	defined	1	MAT
 #per40	Jonás	p. Simón Pedro			NT		male	Jona	Jonas	person	human	defined		MAT
 #per41	madre de hijos de Zebedeo			En Mat.27: 56 aparece una María madre de Jacobo ¿?	NT		female	Mutter der Söhne des Zebedäus	Mãe dos filhos de Zebedeu	person	human	defined		MAT
 #per42	César				NT		male	Kaiser	César	person	human	defined		MAT
@@ -72,7 +72,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per70	Acaz				AT		male	Ahas	Acaz	person	human	defined		MAT
 #per71	Ezequías				AT		male	Hiskia	Ezequias	person	human	defined		MAT
 #per72	Manasés	hijo de José			AT		male	Manasse	Manassés	person	human	defined	1	MAT
-#per73	Amón				AT		male	Amon	Amom	person	human	defined		MAT
+#per73	Amón				AT		male	Amon	Amom	person	human	defined	1	MAT
 #per74	Josías				AT		male	Josia	Josias	person	human	defined		MAT
 #per75	Jeconías				AT		male	Jojachin	Jeconias	person	human	defined		MAT
 #per76	Salatiel				AT		male	Schealtiël	Salatiel	person	human	defined		MAT
@@ -80,7 +80,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per78	Abiud				AT		male	Abihud	Abiúde	person	human	defined		MAT
 #per79	Eliaquim				AT		male	Eljakim	Eliaquim	person	human	defined		MAT
 #per80	Azor				AT		male	Asor	Azor	person	human	defined		MAT
-#per81	Sadoc				AT		male	Zadok	Sadoque	person	human	defined		MAT
+#per81	Sadoc				AT		male	Zadok	Sadoque	person	human	defined	1	MAT
 #per82	Aquim				AT		male	Achim	Aquim	person	human	defined		MAT
 #per83	Eliud				AT		male	Eliud	Eliúde	person	human	defined		MAT
 #per84	Eleazar				AT		male	Eleasar	Eleazar	person	human	defined		MAT
@@ -95,7 +95,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per93	Rut	mu. Boaz  ma. Obed		?	AT		female	Rut	Rute	person	human	defined	1	MAT
 #per94	Obed				AT		male	Obed	Obede	person	human	defined		MAT
 #per95	Isaí	padre de David			AT		male	Isai	Jessé	person	human	defined	1	MAT
-#per96	Urías				AT		male	Uria	Urias	person	human	defined		MAT
+#per96	Urías				AT		male	Uria	Urias	person	human	defined	1	MAT
 #per97	suegra de Pedro				NT		female	Petrus´ Schwiegermutter	Sogra de Pedro	person	human	defined		MAT
 #per98	Jacobo	he. Jesús			NT		male	Jakobus	Tiago	person	human	defined		MAT
 #per99	José	he. Jesús			NT		male	Joses	José	person	human	defined		MAT
@@ -714,6 +714,69 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per712	Lais				AT		male			person	human	defined		1SA
 #per713	Sarvia	padre de Abisai			AT		male			person	human	defined		1SA
 #per714	Joab	hermano de Abisai			AT		male			person	human	defined		1SA
+#per715	Absalón	hijo de David			AT		male			person	human	defined		2SA
+#per716	Amnón	hijo de David			AT		male			person	human	defined		2SA
+#per717	Ahitofel				AT		male			person	human	defined		2SA
+#per718	Mefi				AT		male			person	human	defined		2SA
+#per719	Siba				AT		male			person	human	defined		2SA
+#per720	Hadad				AT		male			person	human	defined		2SA
+#per721	Husai				AT		male			person	human	defined		2SA
+#per722	Asael				AT		male			person	human	defined		2SA
+#per723	Amasa				AT		male			person	human	defined		2SA
+#per724	Bicri				AT		male			person	human	defined		2SA
+#per725	Natán	parecen varios			AT	low	male			person	human	defined		2SA
+#per726	Tamar				AT		female			person	human	defined		2SA
+#per727	Barzilai				AT		male			person	human	defined		2SA
+#per728	Arauna				AT		male			person	human	defined		2SA
+#per729	Itai				AT		male			person	human	defined		2SA
+#per730	Gabaón				AT		male			person	human	defined		2SA
+#per731	Simei				AT		male			person	human	defined		2SA
+#per732	Obed				AT		male			person	human	defined		2SA
+#per733	Is				AT		male			person	human	defined		2SA
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
 														
 														
 														
@@ -1253,8 +1316,8 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla368	Atac									place	human			1SA
 #pla369	Sifmot									place	human			1SA
 #pla370	Bet-Sán									place	human			1SA
-														
-														
+#pla371	Rabá									place	human			2SA
+#pla372	Gesur									place	human			2SA
 														
 														
 														

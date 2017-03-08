@@ -7,6 +7,7 @@ import pandas as pd
 import re
 import glob
 import os
+from collections import Counter
 
 
 communication_verbs = "()"
@@ -16,9 +17,9 @@ def finding_standard_rs(content):
         It searchs for textual patterns that matchs things like names
     """
     nombres_comunes = {
-        "pla" : ["campo", "casa","ciudad","ciudades","lugar","lugares",],
-        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","hermanos","hermano","hermanas","hermana","hombre","hombres","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","mujeres","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador"],
-        "org" : ["descendencia","descendencias","familia","familias","hijos","hijas","pueblo","pueblos","siervos","siervas","tribu","tribus",],
+        "pla" : ["ciudad","ciudades","lugar","lugares",],
+        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","hermanos","hermano","hermanas","hermana","hombre","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","mujeres","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador"],
+        "org" : ["descendencia","descendencias","familia","familias","hijos","hijas","pueblo","pueblos","siervos","siervas","tribu","tribus","soldados","hombres","ejército"],
     }
 
     for key,values in nombres_comunes.items():
@@ -42,7 +43,7 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["type"] == "person" and row["order-edition"] == book) or (row["order-edition"] == book): #or (row["type"] == "person" and row["book"] == "AT") 
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["type"] == "person" and row["order-edition"] == book) or (row["order-edition"] == book) or (row["type"] == "person" and row["order-edition"] == "1SA"):
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         
     return content
@@ -73,11 +74,12 @@ def findingq(text):
         )
 
     """
-    text = re.sub(r'((dij|insist|pregunt|respond|exclam).*?: )(((?!<q).)*)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\3</q>\5', text)
+    text = re.sub(r'((dij|insist|pregunt|respond|exclam|diciendo|decir|decía|diciéndo|Dijo).*?: )(((?!<q).)*)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\3</q>\5', text)
 
     text = re.sub(r'xml:id', r'xml_id', text)
     text = re.sub(r'http:', r'http_', text)
 
+    text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)(»|«).+?)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\2</q>\6', text)
 
     text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os)[^\w].+?)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\2</q>\6', text)
 
@@ -89,30 +91,36 @@ def values_q(content):
 
     # Intentamos recoger cosas como "Rut dijo a Noemí: "
     # No sé si funciona!
-    content= re.sub(r'(<rs key="(#?per\d+|#?org\d)>[^<]*?</rs>[^<]*?)((dij|insist|pregunt|respond|exclam)[^<]*?<rs key="(#?per\d+|#?org\d)>[^<]*?</rs>[^<]*?[^<]*?)(<q who="per" corresp="per" type="oral">)', r'\1\3<q who="\2" corresp="\5" type="oral">', content, flags=re.MULTILINE)
+    content= re.sub(r'(<rs key="(#?(?:per|org)\d+)">.*?</rs>[^<]*?<rs key="(#?(?:per|org)\d+)">.*?</rs>.*?)<q who="per" corresp="per" type="oral">', r'\1<q who="\2" corresp="\3" type="oral">', content, flags=re.MULTILINE)
 
     # Buscamos el rs con identificador completo antes del q y se lo colocamos como valor del atributo who:
     content = re.sub(r'(<rs key="(#?(per|org)\d+)">(((?!<rs key="(#?(per|org)\d+)">).)*))<q who="per" corresp="per" type="oral">', r'\1\5<q who="\2" corresp="per" type="oral">', content)
-    
-
 
     # Colocamos el mismo q del versículo anterior en caso de 
     content = re.sub(r'((<q who="#per\d+" corresp=".*?" type="oral">).*?</q></ab>\s+<ab [^>]*?>)<q who="per" corresp="per" type="oral">', r'\1\2', content)
+
+
+    content = re.sub(r'(<q who=".*?" corresp="per14") type="oral">', r'\1 type="prayer">', content)
     
     return(content)
 
 def find_people_without_id(content, outputtei,bookcode):
     people_without_id = []
     people_without_id = people_without_id + re.findall(r"<rs key=\"per\">([A-Z][^<]*?)</rs>", content)
-    people_without_id = list(set(people_without_id))
+    print(type(people_without_id))
+    people_without_id = Counter(people_without_id)
     print(people_without_id, len(people_without_id))
-    people_without_id_df = pd.DataFrame(people_without_id)
+    people_without_id_df = pd.DataFrame(list(people_without_id.items()), columns=['entity','frequency'])
 
+    people_without_id_df = people_without_id_df.sort_values(by='frequency', ascending=False)
     people_without_id_df.to_csv(outputtei+bookcode+"people_without_id.csv", sep='\t', encoding='utf-8')
 
-
-    
     #print(people_without_id_df)
+
+def deleting_wrong_entities(content):
+    content = re.sub(r'<rs key="#pla230">Mira</rs>', r'Mira', content)
+    content = re.sub(r'<rs key="#pla258">Sin</rs>', r'Sin', content)
+    return(content)
 
 
 def finding_structure(inputcsv, inputtei, outputtei, bookcode):
@@ -150,6 +158,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode):
                 
             # Intentamos dar valores a los atributos de q
             content = values_q(content)
+            
+            content = deleting_wrong_entities(content)
         
             # it cleans the HTML from entities, etc        
             
@@ -161,7 +171,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/1SA.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/2SA.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "1SA"    
+    "2SA"    
     )
