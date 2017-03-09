@@ -1,35 +1,81 @@
-<body>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>2 Samuel</title>
+                <title type="idno">
+                    <idno type="string">2SA</idno>
+                    <idno type="viaf"></idno>
+                </title>
+                <author>
+                    <name type="short"></name>
+                    <name type="full"></name>
+                    <idno type="viaf"></idno>
+                </author>
+                <principal key="#jct">José Calvo Tello</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>José Calvo Tello</publisher>
+                <availability status="free">
+                    <p>The text is freely available.</p>
+                </availability>
+                <date when="2017">2017</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+                <bibl type="edition-first"><date when="1569">1569</date></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p></p>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2017-03-09" who="#jct">First version of 2 Samuel.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        
+        <body>
 <div xml:id="b.2SA" type="book">
-
-<div xml:id="b.2SA.1" type="chapter" n="1">
+<div xml:id="b.2SA.1" type="chapter" n="1" cert="high">
 <div type="pericope">
-<head type="pericope"></head><ab xml:id="b.2SA.1.1" type="verse" n="1">Aconteció después de la muerte de <rs key="#per522">Saúl</rs>, que vuelto <rs key="#per35">David</rs> de derrotar a los <rs key="#org69">amalecitas</rs>, estuvo dos días en <rs key="#pla308">Siclag</rs>.</ab>
-<ab xml:id="b.2SA.1.2" type="verse" n="2">Al <rs key="#tim1">tercer día</rs>, llegó uno del campamento de <rs key="#per522">Saúl</rs>, con los vestidos rotos y la cabeza cubierta de <rs key="#pla41">tierra</rs>. Cuando se presentó ante <rs key="#per35">David</rs>, se postró en <rs key="#pla41">tierra</rs> e hizo una reverencia.</ab>
-<ab xml:id="b.2SA.1.3" type="verse" n="3"><rs key="#per35">David</rs> le preguntó:  <q who="#per35" corresp="per" type="oral">¿De dónde vienes? Me he escapado del campamento de <rs key="#pla4">Israel</rs> le respondió él.</q></ab>
-<ab xml:id="b.2SA.1.4" type="verse" n="4"><q who="#per35" corresp="per" type="oral">¿Qué ha acontecido? Te ruego que me lo digas le preguntó <rs key="#per35">David</rs>. El <rs key="org">pueblo</rs> huyó de la batalla; han caído muchos del <rs key="org">pueblo</rs> y murieron. También <rs key="#per522">Saúl</rs> y su <rs key="#per659">hijo</rs> <rs key="#per659">Jonatán</rs> murieron respondió él.</q></ab>
-<ab xml:id="b.2SA.1.5" type="verse" n="5">Dijo <rs key="#per35">David</rs> a aquel <rs key="per">joven</rs> que le daba la noticia:  <q who="#per35" corresp="per" type="oral">¿Cómo sabes que han muerto <rs key="#per522">Saúl</rs> y su <rs key="#per659">hijo</rs> <rs key="#per659">Jonatán</rs>?</q></ab>
-<ab xml:id="b.2SA.1.6" type="verse" n="6">El <rs key="per">joven</rs> que le daba la noticia respondió: <q who="per" corresp="per" type="oral">Casualmente fui al monte <rs key="#pla358">Gilboa</rs>, y hallé a <rs key="#per522">Saúl</rs> que se apoyaba sobre su lanza; tras él venían carros y <rs key="#org0">gente</rs> de a caballo.</q></ab>
-<ab xml:id="b.2SA.1.7" type="verse" n="7"><q who="per" corresp="per" type="oral">Se volvió y al verme me llamó; yo respondí: <q who="per" corresp="per" type="oral">Heme aquí.</q></q></ab>
-<ab xml:id="b.2SA.1.8" type="verse" n="8">Me preguntó: <q who="per" corresp="per" type="oral">¿Quién eres tú?. Yo le respondí: Soy amalecita.</q></ab>
-<ab xml:id="b.2SA.1.9" type="verse" n="9"><q who="per" corresp="per" type="oral">Luego me dijo: <q who="per" corresp="per" type="oral">Te ruego que te acerques y me mates, porque se ha apoderado de mí la angustia; pues aún sigo vivo.</q></q></ab>
-<ab xml:id="b.2SA.1.10" type="verse" n="10"><q who="per" corresp="per" type="oral">Yo entonces me acerqué y lo maté, porque sabía que no podía vivir después de su caída. Tomé la corona que llevaba sobre su cabeza y el brazalete que tenía en su brazo, y se los he traído aquí a mi <rs key="per">señor</rs>.</q></ab>
-<ab xml:id="b.2SA.1.11" type="verse" n="11">Entonces <rs key="#per35">David</rs>, tirando de sus vestidos, los rasgó, y lo mismo hicieron los <rs key="org">hombres</rs> que estaban con él.</ab>
-<ab xml:id="b.2SA.1.12" type="verse" n="12">Lloraron, se lamentaron y ayunaron hasta la noche, por <rs key="#per522">Saúl</rs> y por su <rs key="#per659">hijo</rs> <rs key="#per659">Jonatán</rs>, por el <rs key="org">pueblo de <rs key="per14">Jehová</rs></rs> y por la casa de <rs key="#pla4">Israel</rs>, pues habían caído al filo de la espada.</ab>
-<ab xml:id="b.2SA.1.13" type="verse" n="13"><rs key="#per35">David</rs> preguntó luego a aquel <rs key="per">joven</rs> que le había traído la noticia:  <q who="#per35" corresp="per" type="oral">¿De dónde eres tú? Soy <rs key="per">hijo</rs> de un extranjero, amalecita respondió él.</q></ab>
-<ab xml:id="b.2SA.1.14" type="verse" n="14"><q who="#per35" corresp="per" type="oral">¿Cómo no tuviste temor de extender tu mano para matar al ungido de <rs key="per14">Jehová</rs>? le dijo <rs key="#per35">David</rs>.</q></ab>
-<ab xml:id="b.2SA.1.15" type="verse" n="15">Entonces llamó <rs key="#per35">David</rs> a uno de sus <rs key="org">hombres</rs>, y le dijo:  <q who="#per35" corresp="per" type="oral">Ve y mátalo. Él lo hirió, y murió,</q></ab>
-<ab xml:id="b.2SA.1.16" type="verse" n="16">mientras <rs key="#per35">David</rs> decía:  <q who="#per35" corresp="per" type="oral">Tu sangre sea sobre tu cabeza, pues tu misma boca atestiguó contra ti, al decir: Yo maté al ungido de <rs key="per14">Jehová</rs>.</q></ab>
-<ab xml:id="b.2SA.1.17" type="verse" n="17"><rs key="#per35">David</rs> entonó este lamento por <rs key="#per522">Saúl</rs> y <rs key="#per659">Jonatán</rs>, su <rs key="per">hijo</rs>,</ab>
-<ab xml:id="b.2SA.1.18" type="verse" n="18">y dijo que debía enseñarse a los <rs key="org">hijos de <rs key="#per5">Judá</rs></rs>. Así está escrito en el libro de <rs key="per">Jaser</rs>:</ab>
-<ab xml:id="b.2SA.1.19" type="verse" n="19"><q who="per" corresp="per" type="oral">«¡Ha perecido la gloria de <rs key="#pla4">Israel</rs> sobre tus alturas! ¡Cómo han caído los valientes!</q></ab>
-<ab xml:id="b.2SA.1.20" type="verse" n="20">No lo anunciéis en <rs key="#pla281">Gat</rs>, ni deis las nuevas en las plazas de <rs key="#pla267">Ascalón</rs>; para que no se alegren las <rs key="org">hijas</rs> de los <rs key="#org53">filisteos</rs>, para que no salten de gozo las <rs key="org">hijas</rs> de los incircuncisos.</ab>
-<ab xml:id="b.2SA.1.21" type="verse" n="21"><q who="per" corresp="per" type="oral">»Montes de <rs key="#pla358">Gilboa</rs>, ni rocío ni lluvia caiga sobre vosotros, ni seáis tierras de ofrendas; porque allí fue desechado el escudo de los valientes, el escudo de <rs key="#per522">Saúl</rs>, como si no hubiera sido ungido con aceite.</q></ab>
-<ab xml:id="b.2SA.1.22" type="verse" n="22"><q who="per" corresp="per" type="oral">»Sin sangre de los muertos, sin grasa de los valientes, el arco de <rs key="#per659">Jonatán</rs> jamás retrocedía, ni la espada de <rs key="#per522">Saúl</rs> volvió vacía.</q></ab>
-<ab xml:id="b.2SA.1.23" type="verse" n="23"><q who="per" corresp="per" type="oral">»<rs key="#per522">Saúl</rs> y <rs key="#per659">Jonatán</rs>, amados y queridos; inseparables en la vida, tampoco en su muerte fueron separados; más ligeros eran que águilas, más fuertes que leones.</q></ab>
-<ab xml:id="b.2SA.1.24" type="verse" n="24"><q who="per" corresp="per" type="oral">»Hijas de <rs key="#pla4">Israel</rs>, llorad por <rs key="#per522">Saúl</rs>, quien os vestía de escarlata y lino fino, quien adornaba vuestras ropas con ornamentos de oro.</q></ab>
-<ab xml:id="b.2SA.1.25" type="verse" n="25">¡Cómo han caído los valientes en medio de la batalla! ¡<rs key="#per659">Jonatán</rs>, muerto en tus alturas!</ab>
-<ab xml:id="b.2SA.1.26" type="verse" n="26"><q who="per" corresp="per" type="oral">Angustia tengo por ti, <rs key="#per659">Jonatán</rs>, <rs key="#per659">hermano</rs> mío, cuán dulce fuiste conmigo. Más maravilloso me fue tu amor que el amor de las <rs key="#org111"><rs key="#org122"><rs key="per">mujeres</rs></rs></rs>.</q></ab>
-<ab xml:id="b.2SA.1.27" type="verse" n="27"><q who="per" corresp="per" type="oral">¡Cómo han caído los valientes, cómo han perecido las armas de guerra!».</q></ab>
+    <head type="pericope">David se entera de la muerte de Saúl</head>
+    <ab xml:id="b.2SA.1.1" type="verse" n="1">Aconteció después de la muerte de <rs key="#per522">Saúl</rs>, que vuelto <rs key="#per35">David</rs> de derrotar a los <rs key="#org69">amalecitas</rs>, estuvo dos días en <rs key="#pla308">Siclag</rs>.</ab>
+<ab xml:id="b.2SA.1.2" type="verse" n="2">Al tercer día, llegó uno del campamento de <rs key="#per522">Saúl</rs>, con los vestidos rotos y la cabeza cubierta de tierra. Cuando se presentó ante <rs key="#per35">David</rs>, se postró en tierra e hizo una reverencia.</ab>
+    <ab xml:id="b.2SA.1.3" type="verse" n="3"><rs key="#per35">David</rs> le preguntó:  <q who="#per35" corresp="per734" type="oral">¿De dónde vienes?</q> <q who="per734" corresp="#per35" type="oral">Me he escapado del campamento de <rs key="#pla4">Israel</rs></q> le respondió él.</ab>
+    <ab xml:id="b.2SA.1.4" type="verse" n="4"><q who="#per35" corresp="per734" type="oral">¿Qué ha acontecido? Te ruego que me lo digas</q> le preguntó <rs key="#per35">David</rs>. <q who="per734" corresp="#per35" type="oral">El <rs key="org70">pueblo</rs> huyó de la batalla; han caído muchos del <rs key="org70">pueblo</rs> y murieron. También <rs key="#per522">Saúl</rs> y su <rs key="#per659">hijo</rs> <rs key="#per659">Jonatán</rs> murieron respondió él.</q></ab>
+    <ab xml:id="b.2SA.1.5" type="verse" n="5">Dijo <rs key="#per35">David</rs> a aquel <rs key="per734">joven</rs> que le daba la noticia:  <q who="#per35" corresp="per734" type="oral">¿Cómo sabes que han muerto <rs key="#per522">Saúl</rs> y su <rs key="#per659">hijo</rs> <rs key="#per659">Jonatán</rs>?</q></ab>
+    <ab xml:id="b.2SA.1.6" type="verse" n="6">El <rs key="per734">joven</rs> que le daba la noticia respondió: <q who="per734" corresp="per35" type="oral">Casualmente fui al monte <rs key="#pla358">Gilboa</rs>, y hallé a <rs key="#per522">Saúl</rs> que se apoyaba sobre su lanza; tras él venían carros y <rs key="#org144">gente de a caballo</rs>.</q></ab>
+    <ab xml:id="b.2SA.1.7" type="verse" n="7"><q who="per734" corresp="per35" type="oral">Se volvió y al verme me llamó; yo respondí: <q who="per734" corresp="per522" type="oral">Heme aquí.</q></q></ab>
+    <ab xml:id="b.2SA.1.8" type="verse" n="8"><q who="per734" corresp="per35" type="oral">Me preguntó: <q who="per522" corresp="per734" type="oral">¿Quién eres tú?.</q> Yo le respondí: <q who="per522" corresp="per734" type="oral">Soy <rs key="per734">amalecita</rs>.</q></q></ab>
+    <ab xml:id="b.2SA.1.9" type="verse" n="9"><q who="per734" corresp="per35" type="oral">Luego me dijo: <q who="per522" corresp="per734" type="oral">Te ruego que te acerques y me mates, porque se ha apoderado de mí la angustia; pues aún sigo vivo.</q></q></ab>
+    <ab xml:id="b.2SA.1.10" type="verse" n="10"><q who="per734" corresp="per35" type="oral">Yo entonces me acerqué y lo maté, porque sabía que no podía vivir después de su caída. Tomé la corona que llevaba sobre su cabeza y el brazalete que tenía en su brazo, y se los he traído aquí a mi <rs key="per35">señor</rs>.</q></ab>
+<ab xml:id="b.2SA.1.11" type="verse" n="11">Entonces <rs key="#per35">David</rs>, tirando de sus vestidos, los rasgó, y lo mismo hicieron los <rs key="org147">hombres</rs> que estaban con él.</ab>
+<ab xml:id="b.2SA.1.12" type="verse" n="12">Lloraron, se lamentaron y ayunaron hasta la noche, por <rs key="#per522">Saúl</rs> y por su <rs key="#per659">hijo</rs> <rs key="#per659">Jonatán</rs>, por el <rs key="org70">pueblo de <rs key="per14">Jehová</rs></rs> y por la casa de <rs key="#pla4">Israel</rs>, pues habían caído al filo de la espada.</ab>
+    <ab xml:id="b.2SA.1.13" type="verse" n="13"><rs key="#per35">David</rs> preguntó luego a aquel <rs key="per734">joven</rs> que le había traído la noticia:  <q who="#per35" corresp="per734" type="oral">¿De dónde eres tú?</q> <q who="#per35" corresp="per734" type="oral">Soy <rs key="per734">hijo de un extranjero</rs>, <rs key="per734">amalecita</rs></q> respondió él.</ab>
+    <ab xml:id="b.2SA.1.14" type="verse" n="14"><q who="#per35" corresp="per734" type="oral">¿Cómo no tuviste temor de extender tu mano para matar al <rs key="per522">ungido de <rs key="per14">Jehová</rs></rs>?</q> le dijo <rs key="#per35">David</rs>.</ab>
+    <ab xml:id="b.2SA.1.15" type="verse" n="15">Entonces llamó <rs key="#per35">David</rs> a uno de sus <rs key="org147">hombres</rs>, y le dijo:  <q who="#per35" corresp="org147" type="oral">Ve y mátalo.</q> Él lo hirió, y murió,</ab>
+    <ab xml:id="b.2SA.1.16" type="verse" n="16">mientras <rs key="#per35">David</rs> decía:  <q who="#per35" corresp="per734" type="oral">Tu sangre sea sobre tu cabeza, pues tu misma boca atestiguó contra ti, al decir: <q who="per734" corresp="#per35" type="oral">Yo maté al <rs key="per522">ungido de <rs key="per14">Jehová</rs></rs>.</q></q></ab>
+</div>
+    <div>
+        <head>Lamento de David por Saúl y Jonatán</head>
+        <ab xml:id="b.2SA.1.17" type="verse" n="17"><rs key="#per35">David</rs> entonó este lamento por <rs key="#per522">Saúl</rs> y <rs key="#per659">Jonatán</rs>, su <rs key="per659">hijo</rs>,</ab>
+        <ab xml:id="b.2SA.1.18" type="verse" n="18">y dijo que debía enseñarse a los <rs key="org39">hijos de <rs key="#org39">Judá</rs></rs>. Así está escrito en el libro de <rs key="per735">Jaser</rs>:</ab>
+        <ab xml:id="b.2SA.1.19" type="verse" n="19"><q who="per35" corresp="org0" type="song">«¡Ha perecido la <rs key="per522 per659">gloria de <rs key="#pla4">Israel</rs></rs> sobre tus alturas! ¡Cómo han caído los <rs key="per522 per659">valientes</rs>!</q></ab>
+        <ab xml:id="b.2SA.1.20" type="verse" n="20"><q who="per35" corresp="org0" type="song">No lo anunciéis en <rs key="#pla281">Gat</rs>, ni deis las nuevas en las plazas de <rs key="#pla267">Ascalón</rs>; para que no se alegren las <rs key="org122">hijas de los <rs key="#org53">filisteos</rs></rs>, para que no salten de gozo las <rs key="org122">hijas de los <rs key="#org53">incircuncisos</rs></rs>.</q></ab>
+        <ab xml:id="b.2SA.1.21" type="verse" n="21"><q who="per35" corresp="org0" type="song">»<rs key="#pla358">Montes de <rs key="#pla358">Gilboa</rs></rs>, ni rocío ni lluvia caiga sobre vosotros, ni seáis <rs key="#pla358">tierras de ofrendas</rs>; porque allí fue desechado el escudo de los <rs key="per522 per659">valientes</rs>, el escudo de <rs key="#per522">Saúl</rs>, como si no hubiera sido ungido con aceite.</q></ab>
+        <ab xml:id="b.2SA.1.22" type="verse" n="22"><q who="per35" corresp="org0" type="song">»Sin sangre de los muertos, sin grasa de los <rs key="org24">valientes</rs>, el arco de <rs key="#per659">Jonatán</rs> jamás retrocedía, ni la espada de <rs key="#per522">Saúl</rs> volvió vacía.</q></ab>
+        <ab xml:id="b.2SA.1.23" type="verse" n="23"><q who="per35" corresp="org0" type="song">»<rs key="#per522">Saúl</rs> y <rs key="#per659">Jonatán</rs>, <rs key="per522 per659">amados</rs> y <rs key="per522 per659">queridos</rs>; inseparables en la vida, tampoco en su muerte fueron separados; más ligeros eran que águilas, más fuertes que leones.</q></ab>
+        <ab xml:id="b.2SA.1.24" type="verse" n="24"><q who="per35" corresp="org0" type="song">»<rs key="org122">Hijas de <rs key="#pla4">Israel</rs></rs>, llorad por <rs key="#per522">Saúl</rs>, quien os vestía de escarlata y lino fino, quien adornaba vuestras ropas con ornamentos de oro.</q></ab>
+        <ab xml:id="b.2SA.1.25" type="verse" n="25"><q who="per35" corresp="org0" type="song">¡Cómo han caído los <rs key="per522 per659">valientes</rs> en medio de la batalla! ¡<rs key="#per659">Jonatán</rs>, <rs key="#per659">muerto</rs> en tus alturas!</q></ab>
+<ab xml:id="b.2SA.1.26" type="verse" n="26"><q who="per35" corresp="org0" type="song">Angustia tengo por ti, <rs key="#per659">Jonatán</rs>, <rs key="#per659">hermano</rs> mío, cuán dulce fuiste conmigo. Más maravilloso me fue tu amor que el amor de las <rs key="#org122">mujeres</rs>.</q></ab>
+        <ab xml:id="b.2SA.1.27" type="verse" n="27"><q who="per35" corresp="org0" type="song">¡Cómo han caído los <rs key="per522 per659">valientes</rs>, cómo han perecido las armas de guerra!».</q></ab>
 
 </div>
 </div>
@@ -817,3 +863,5 @@
 </div>
 </div>
 </body>
+    </text>
+</TEI>
