@@ -19,6 +19,7 @@ Antes de dar por terminado un nuevo libro de la Biblia, hay que revisar:
 * Eliminar  cert="high" de divs: (<div [^>]*? type="chapter" [^>]*?) cert="high"> with \1>
 
 ## Pasos finales
+* Volver a validar
 * Integrar archivo en TEI principal
 * Hacer network
 * Modificar documentación

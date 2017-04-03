@@ -363,8 +363,8 @@ def create_networks_bible():
     xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
     
     string_xpath = xpath2string(xpaths)
-    books_bible = ['ACT']
     books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV']
+    books_bible = ['2SA']
     
     for different_book in books_bible:
 
