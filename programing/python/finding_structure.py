@@ -43,7 +43,7 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["type"] == "person" and row["order-edition"] == book) or (row["order-edition"] == book) or (row["type"] == "person" and row["order-edition"] == "1SA"):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["type"] == "person" and row["order-edition"] == book) or (row["order-edition"] == book) or (row["type"] == "person" and row["book"] == "NT"):
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         
     return content
@@ -74,6 +74,7 @@ def findingq(text):
         )
 
     """
+    print("i am here")
     text = re.sub(r'((dij|insist|pregunt|respond|exclam|diciendo|decir|decía|diciéndo|Dijo).*?: )(((?!<q).)*)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\3</q>\5', text)
 
     text = re.sub(r'xml:id', r'xml_id', text)
@@ -123,7 +124,7 @@ def deleting_wrong_entities(content):
     return(content)
 
 
-def finding_structure(inputcsv, inputtei, outputtei, bookcode):
+def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-letter"):
     """
     finding_structure = finding_structure("/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv","/home/jose/Dropbox/biblia/tb/programing/python/input/rut.xml", "/home/jose/Dropbox/TEIBibel/programacion/python/output/")
     """
@@ -153,11 +154,14 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode):
             
             find_people_without_id(content, outputtei,bookcode)
             
-            # Buscamos estructuras q
-            content=findingq(content)
+            if genre == "not-letter":
+                print(genre)
                 
-            # Intentamos dar valores a los atributos de q
-            content = values_q(content)
+                # Buscamos estructuras q
+                content = findingq(content)
+                    
+                # Intentamos dar valores a los atributos de q
+                content = values_q(content)
             
             content = deleting_wrong_entities(content)
         
@@ -171,7 +175,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/2SA.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/1JO.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "2SA"    
+    "1JO",
+    genre = "letter"
     )
