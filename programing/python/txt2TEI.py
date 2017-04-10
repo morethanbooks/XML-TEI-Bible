@@ -50,5 +50,6 @@ def main(book, bookcode):
         print("Processed documents: ",i)
         i+=1
 
-main("1JO","1JO")
-#main("2SA","2SA")
+main("2JO","2JO")
+main("3JO","3JO")
+main("JUD","JUD")

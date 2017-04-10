@@ -27,7 +27,8 @@ def finding_standard_rs(content):
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
     
     variaciones_comunes = {
-        "per14" : ["Jehová","Todopoderoso","Señor"],
+        "per14" : ["Jehová","Todopoderoso","Señor","Padre"],
+        "per1" : ["Cristo","Jesucristo","Hijo"],
     }
     for key,values in variaciones_comunes.items():
         for value in values:
@@ -173,10 +174,11 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
                 fout.write(content)
             print(i)
 
+
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/1JO.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/2JO.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "1JO",
+    "2JO",
     genre = "letter"
     )
