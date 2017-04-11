@@ -1,35 +1,88 @@
-<body>
-<div xml:id="b.JUD" type="book">
-
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Epístola de Judas</title>
+                <title type="idno">
+                    <idno type="string">JUD</idno>
+                    <idno type="viaf">181851752</idno>
+                </title>
+                <author>
+                    <name type="short"></name>
+                    <name type="full"></name>z
+                    <idno type="viaf"></idno>
+                </author>
+                <principal key="#jct">José Calvo Tello</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>José Calvo Tello</publisher>
+                <availability status="free">
+                    <p>The text is freely available.</p>
+                </availability>
+                <date when="2017">2017</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+                <bibl type="edition-first"><date when="1569">1569</date></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p></p>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2017-04-11" who="#jct">First version of JUD</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+<div xml:id="b.JUD" type="book" cert="high">
 <div xml:id="b.JUD.1" type="chapter" n="1">
 <div type="pericope">
-<head type="pericope"></head><ab xml:id="b.JUD.1.1" type="verse" n="1"><rs key="#per101"><rs key="#per110"><rs key="#per488"><rs key="#per508">Judas</rs></rs></rs></rs>, <rs key="per">siervo de <rs key="per1">Jesucristo</rs></rs> y <rs key="per">hermano de <rs key="#per23"><rs key="#per31"><rs key="#per98">Jacobo</rs></rs></rs></rs>, a los llamados, santificados en <rs key="#per14">Dios</rs> <rs key="per14">Padre</rs> y guardados en <rs key="per1">Jesucristo</rs>:</ab>
+    <head type="pericope">Salutación</head>
+    <ab xml:id="b.JUD.1.1" type="verse" n="1"><rs key="#per110" cert="low">Judas</rs>, <rs key="per110">siervo de <rs key="per1">Jesucristo</rs></rs> y <rs key="per110">hermano de <rs key="#per31" cert="low">Jacobo</rs></rs>, a los <rs key="org37">llamados</rs>, <rs key="org37">santificados en <rs key="#per14">Dios</rs></rs> <rs key="per14">Padre</rs> y guardados en <rs key="per1">Jesucristo</rs>:</ab>
 <ab xml:id="b.JUD.1.2" type="verse" n="2">Misericordia, paz y amor os sean multiplicados.</ab>
-<ab xml:id="b.JUD.1.3" type="verse" n="3">Amados, por el gran deseo que tenía de escribiros acerca de nuestra común salvación, me ha sido necesario escribiros para exhortaros a que contendáis ardientemente por la fe que ha sido una vez dada a los santos,</ab>
-<ab xml:id="b.JUD.1.4" type="verse" n="4">porque algunos <rs key="org">hombres</rs> han entrado encubiertamente, los que desde antes habían sido destinados para esta condenación, <rs key="org">hombres</rs> impíos, que convierten en libertinaje la gracia de nuestro <rs key="#per14">Dios</rs> y niegan a <rs key="#per14">Dios</rs>, el único soberano, y a nuestro <rs key="per14">Señor</rs> <rs key="per1">Jesucristo</rs>.,</ab>
-<ab xml:id="b.JUD.1.5" type="verse" n="5">Quiero recordaros, ya que una vez lo habéis sabido, que el <rs key="per14">Señor</rs>, habiendo salvado al <rs key="org">pueblo</rs> sacándolo de <rs key="#pla5">Egipto</rs>, después destruyó a los que no creyeron.</ab>
-<ab xml:id="b.JUD.1.6" type="verse" n="6">Y a los ángeles que no guardaron su dignidad, sino que abandonaron su propio hogar, los ha guardado bajo oscuridad, en prisiones eternas, para el juicio del gran día.</ab>
-<ab xml:id="b.JUD.1.7" type="verse" n="7">También <rs key="#pla16">Sodoma</rs> y <rs key="#pla17">Gomorra</rs> y las <rs key="pla">ciudades</rs> vecinas, las cuales de la misma manera que aquellos, habiendo fornicado e ido en pos de vicios contra la naturaleza, fueron puestas por ejemplo, sufriendo el castigo del fuego eterno.</ab>
-<ab xml:id="b.JUD.1.8" type="verse" n="8">No obstante, de la misma manera también estos soñadores mancillan la carne, rechazan la autoridad y blasfeman de los poderes superiores.</ab>
-<ab xml:id="b.JUD.1.9" type="verse" n="9">Pero cuando el arcángel <rs key="#per130">Miguel</rs> luchaba con el <rs key="#per20">diablo</rs> disputándole el cuerpo de <rs key="#per26">Moisés</rs>, no se atrevió a proferir juicio de maldición contra él, sino que dijo: «El <rs key="per14">Señor</rs> te reprenda».</ab>
-<ab xml:id="b.JUD.1.10" type="verse" n="10">Pero estos blasfeman de cuantas cosas no conocen; y en las que por naturaleza conocen, se corrompen como animales irracionales.</ab>
-<ab xml:id="b.JUD.1.11" type="verse" n="11">¡Ay de ellos!, porque han seguido el camino de <rs key="#per142">Caín</rs>, se lanzaron por lucro en el error de <rs key="#per117">Balaam</rs> y perecieron en la contradicción de <rs key="per">Coré</rs>.</ab>
-<ab xml:id="b.JUD.1.12" type="verse" n="12">Estos son manchas en vuestros ágapes, que comiendo sin vergüenza alguna con vosotros, se apacientan a sí mismos; nubes sin agua, llevadas de acá para allá por los vientos; árboles otoñales, sin fruto, dos veces muertos y desarraigados.</ab>
-<ab xml:id="b.JUD.1.13" type="verse" n="13">Son fieras ondas del mar, que espuman su propia vergüenza; estrellas errantes, para las cuales está reservada eternamente la oscuridad de las tinieblas.</ab>
-<ab xml:id="b.JUD.1.14" type="verse" n="14">De estos también profetizó <rs key="#pla92">Enoc</rs>, séptimo desde <rs key="#per145">Adán</rs>, diciendo: «Vino el <rs key="per14">Señor</rs> con sus santas decenas de millares,</ab>
-<ab xml:id="b.JUD.1.15" type="verse" n="15">para hacer juicio contra todos y dejar convictos a todos los impíos de todas sus obras impías que han hecho impíamente, y de todas las cosas duras que los pecadores impíos han hablado contra él».</ab>
-<ab xml:id="b.JUD.1.16" type="verse" n="16">Estos son murmuradores, quejumbrosos, que andan según sus propios deseos, cuya boca habla cosas infladas, adulando a las personas para sacar provecho.</ab>
-<ab xml:id="b.JUD.1.17" type="verse" n="17">Pero vosotros, amados, tened memoria de las palabras que antes fueron dichas por los <rs key="#org110">apóstoles</rs> de nuestro <rs key="per14">Señor</rs> <rs key="per1">Jesucristo</rs>;</ab>
-<ab xml:id="b.JUD.1.18" type="verse" n="18">los que os decían: «En el último tiempo habrá burladores que andarán según sus malvados deseos».</ab>
-<ab xml:id="b.JUD.1.19" type="verse" n="19">Estos son los que causan divisiones, viven sensualmente y no tienen al <rs key="per">Espíritu</rs>.</ab>
-<ab xml:id="b.JUD.1.20" type="verse" n="20">Pero vosotros, amados, edificándoos sobre vuestra santísima fe, orando en el <rs key="#per17">Espíritu <rs key="per">Santo</rs></rs>,</ab>
-<ab xml:id="b.JUD.1.21" type="verse" n="21">conservaos en el amor de <rs key="#per14">Dios</rs>, esperando la misericordia de nuestro <rs key="per14">Señor</rs> <rs key="per1">Jesucristo</rs> para vida eterna.</ab>
+</div>
+    <div>
+        <head>Falsas doctrinas y falsos maestros</head>
+        <ab xml:id="b.JUD.1.3" type="verse" n="3"><rs key="org37">Amados</rs>, por el gran deseo que tenía de escribiros acerca de nuestra común salvación, me ha sido necesario escribiros para exhortaros a que contendáis ardientemente por la fe que ha sido una vez dada a los <rs key="org18">santos</rs>,</ab>
+        <ab xml:id="b.JUD.1.4" type="verse" n="4">porque algunos <rs key="org19">hombres</rs> han entrado encubiertamente, los que desde antes habían sido destinados para esta condenación, <rs key="org19">hombres impíos</rs>, que convierten en libertinaje la gracia de nuestro <rs key="#per14">Dios</rs> y niegan a <rs key="#per14">Dios</rs>, el <rs key="#per14">único soberano</rs>, y a nuestro <rs key="per1">Señor</rs> <rs key="per1">Jesucristo</rs>.,</ab>
+<ab xml:id="b.JUD.1.5" type="verse" n="5">Quiero recordaros, ya que una vez lo habéis sabido, que el <rs key="per14">Señor</rs>, habiendo salvado al <rs key="org70">pueblo</rs> sacándolo de <rs key="#pla5">Egipto</rs>, después destruyó a los que no creyeron.</ab>
+        <ab xml:id="b.JUD.1.6" type="verse" n="6">Y a los <rs key="org6">ángeles</rs> que no guardaron su dignidad, sino que abandonaron su propio hogar, los ha guardado bajo <rs key="pla15">oscuridad</rs>, en <rs key="pla15">prisiones eternas</rs>, para el juicio del <rs key="tim2">gran día</rs>.</ab>
+        <ab xml:id="b.JUD.1.7" type="verse" n="7">También <rs key="#pla16">Sodoma</rs> y <rs key="#pla17">Gomorra</rs> y las ciudades vecinas, las cuales de la misma manera que aquellos, habiendo fornicado e ido en pos de vicios contra la naturaleza, fueron puestas por ejemplo, sufriendo el castigo del <rs key="pla15">fuego eterno</rs>.</ab>
+        <ab xml:id="b.JUD.1.8" type="verse" n="8">No obstante, de la misma manera también estos <rs key="org19">soñadores</rs> mancillan la carne, rechazan la autoridad y blasfeman de los <rs key="per14">poderes superiores</rs>.</ab>
+        <ab xml:id="b.JUD.1.9" type="verse" n="9">Pero cuando el <rs key="#per130">arcángel</rs> <rs key="#per130">Miguel</rs> luchaba con el <rs key="#per20">diablo</rs> disputándole el cuerpo de <rs key="#per26">Moisés</rs>, no se atrevió a proferir juicio de maldición contra él, sino que dijo: <q who="per130" corresp="per20" type="oral">«El <rs key="per14">Señor</rs> te reprenda»</q>.</ab><!--JCT: parece bastante apocrífo... Algunas otra mención en la Biblia de este pasaje?-->
+        <ab xml:id="b.JUD.1.10" type="verse" n="10">Pero estos blasfeman de cuantas cosas no conocen; y en las que por naturaleza conocen, se corrompen como <rs key="#org19">animales irracionales</rs>.</ab>
+<ab xml:id="b.JUD.1.11" type="verse" n="11">¡Ay de ellos!, porque han seguido el camino de <rs key="#per142">Caín</rs>, se lanzaron por lucro en el error de <rs key="#per117">Balaam</rs> y perecieron en la contradicción de <rs key="per593">Coré</rs>.</ab>
+        <ab xml:id="b.JUD.1.12" type="verse" n="12">Estos son <rs key="#org19">manchas en vuestros ágapes</rs>, que comiendo sin vergüenza alguna con vosotros, se apacientan a sí mismos; <rs key="#org19">nubes sin agua, llevadas de acá para allá por los vientos</rs>; <rs key="#org19">árboles otoñales, sin fruto, dos veces muertos y desarraigados</rs>.</ab>
+        <ab xml:id="b.JUD.1.13" type="verse" n="13">Son <rs key="#org19">fieras ondas del mar</rs>, que espuman su propia vergüenza; <rs key="#org19">estrellas errantes</rs>, para las cuales está reservada eternamente la <rs key="#pla15">oscuridad de las tinieblas</rs>.</ab>
+        <ab xml:id="b.JUD.1.14" type="verse" n="14">De estos también profetizó <rs key="#per206">Enoc</rs>, <rs key="#per206">séptimo desde <rs key="#per145">Adán</rs></rs>, diciendo: <q who="per206" corresp="org0" type="written">«Vino el <rs key="per14">Señor</rs> con sus <rs key="org18" cert="low">santas decenas de millares</rs>,</q></ab>
+        <ab xml:id="b.JUD.1.15" type="verse" n="15"><q who="per206" corresp="org0" type="written">para hacer juicio contra todos y dejar convictos a todos los <rs key="#org19">impíos</rs> de todas sus obras impías que han hecho impíamente, y de todas las cosas duras que los <rs key="#org19">pecadores impíos</rs> han hablado contra él».</q></ab>
+        <ab xml:id="b.JUD.1.16" type="verse" n="16">Estos son <rs key="#org19">murmuradores, quejumbrosos</rs>, que andan según sus propios deseos, cuya boca habla cosas infladas, adulando a las <rs key="#org0">personas</rs> para sacar provecho.</ab>
+    </div>
+    <div>
+        <head>Amonestaciones y exhortaciones</head>
+        <ab xml:id="b.JUD.1.17" type="verse" n="17">Pero vosotros, <rs key="#org37">amados</rs>, tened memoria de las palabras que antes fueron dichas por los <rs key="#org110">apóstoles de nuestro <rs key="per1">Señor</rs> <rs key="per1">Jesucristo</rs></rs>;</ab>
+        <ab xml:id="b.JUD.1.18" type="verse" n="18">los que os decían: <q who="org110" corresp="org37" type="written">«En el último tiempo habrá <rs key="#org19">burladores</rs> que andarán según sus malvados deseos»</q>.</ab>
+<ab xml:id="b.JUD.1.19" type="verse" n="19">Estos son los que causan divisiones, viven sensualmente y no tienen al <rs key="per17">Espíritu</rs>.</ab>
+        <ab xml:id="b.JUD.1.20" type="verse" n="20">Pero vosotros, <rs key="#org37">amados</rs>, edificándoos sobre vuestra santísima fe, orando en el <rs key="#per17">Espíritu Santo</rs>,</ab>
+<ab xml:id="b.JUD.1.21" type="verse" n="21">conservaos en el amor de <rs key="#per14">Dios</rs>, esperando la misericordia de nuestro <rs key="per1">Señor</rs> <rs key="per1">Jesucristo</rs> para vida eterna.</ab>
 <ab xml:id="b.JUD.1.22" type="verse" n="22">A algunos que dudan, convencedlos.</ab>
 <ab xml:id="b.JUD.1.23" type="verse" n="23">A otros, salvadlos arrebatándolos del fuego; y de otros, tened misericordia con temor, desechando aun la ropa contaminada por su carne.</ab>
-<ab xml:id="b.JUD.1.24" type="verse" n="24">A aquel que es poderoso para guardaros sin caída y presentaros sin mancha delante de su gloria con gran alegría,</ab>
-<ab xml:id="b.JUD.1.25" type="verse" n="25">al único y sabio <rs key="#per14">Dios</rs>, nuestro <rs key="per">Salvador</rs>, sea gloria y majestad, imperio y poder, ahora y por todos los siglos. Amén.</ab>
+    </div>
+    <div>
+        <head>Doxología</head>
+        <ab xml:id="b.JUD.1.24" type="verse" n="24">A aquel que es poderoso para guardaros sin caída y presentaros sin mancha delante de su gloria con gran alegría,</ab>
+<ab xml:id="b.JUD.1.25" type="verse" n="25">al <rs key="#per14">único y sabio Dios</rs>, nuestro <rs key="per14">Salvador</rs>, sea gloria y majestad, imperio y poder, ahora y por todos los siglos. Amén.</ab>
 
 </div>
 </div>
 </div>
 </body>
+    </text>
+</TEI>
