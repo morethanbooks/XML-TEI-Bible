@@ -39,9 +39,13 @@ At the moment following books are fully encoded in this chronological order:
 * Habakkuk
 * Zephaniah
 * 1 Samuel
+* 2 Samuel
+* 1 John
+* 2 John
+* 3 John
+* Jude
 
 At the moment, following book is being encoded:
-* 2 Samuel
 
 ## Original Text
 

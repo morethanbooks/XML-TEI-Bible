@@ -45,6 +45,7 @@
 			<change when="2017-03-06" who="#jct">Small but numerous corrections made.</change>
 			<change when="2017-03-07" who="#jct">1 Book of Samuel finished.</change>
 			<change when="2017-04-05" who="#jct">2 Book of Samuel finished.</change>
+			<change when="2017-04-12" who="#jct">1-3 of John and Jude finished.</change>
 		</revisionDesc>
 	</teiHeader>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -31421,7 +31422,745 @@
 		</back>
 	</text>
 </TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>1 epístola de Juan</title>
+				<title type="idno">
+					<idno type="string">1JO</idno>
+					<idno type="viaf">180630929</idno>
+				</title>
+				<author>
+					<name type="short">Juan</name>
+					<name type="full">San Juan</name>
+					<idno type="viaf"></idno>
+				</author>
+				<principal key="#jct">José Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>José Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2017">2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2017-04-04" who="#jct">First version of 1JO</change>
+			<change when="2017-04-12" who="#jct">Book manually checked.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div xml:id="b.1JO" type="book">
+				<div xml:id="b.1JO.1" type="chapter" n="1">
+					<div type="pericope">
+						<ab xml:id="b.1JO.1.1" type="verse" n="1">
+							Lo que era desde el <rs key="#tim3">principio</rs>, lo que hemos oído, lo que hemos visto con nuestros ojos, lo que hemos contemplado y palparon nuestras manos tocante al <rs key="#per1">Verbo de vida</rs>
+						</ab>
+						<ab xml:id="b.1JO.1.2" type="verse" n="2">
+							pues la vida fue manifestada y la hemos visto, y testificamos y os anunciamos la vida eterna, la cual estaba con el <rs key="#per14">Padre</rs> y se nos manifestó,
+						</ab>
+						<ab xml:id="b.1JO.1.3" type="verse" n="3">
+							lo que hemos visto y oído, eso os anunciamos, para que también vosotros tengáis comunión con nosotros; y nuestra comunión verdaderamente es con el <rs key="#per14">Padre</rs> y con su <rs key="#per1">Hijo</rs> <rs key="#per1">Jesucristo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.1.4" type="verse" n="4">
+							Estas cosas os escribimos para que vuestro gozo sea completo.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Dios es luz</head>
+						<ab xml:id="b.1JO.1.5" type="verse" n="5">
+							Este es el mensaje que hemos oído de él y os anunciamos: <rs key="#per14">Dios</rs> es <rs key="#per14">luz</rs> y no hay ningunas tinieblas en él.
+						</ab>
+						<ab xml:id="b.1JO.1.6" type="verse" n="6">
+							Si decimos que tenemos comunión con él y andamos en tinieblas, mentimos y no practicamos la verdad.
+						</ab>
+						<ab xml:id="b.1JO.1.7" type="verse" n="7">
+							Pero si andamos en luz, como él está en luz, tenemos comunión unos con otros y la sangre de <rs key="#per1">Jesucristo</rs>, su <rs key="#per1">Hijo</rs>, nos limpia de todo pecado.
+						</ab>
+						<ab xml:id="b.1JO.1.8" type="verse" n="8">
+							Si decimos que no tenemos pecado, nos engañamos a nosotros mismos y la verdad no está en nosotros.
+						</ab>
+						<ab xml:id="b.1JO.1.9" type="verse" n="9">
+							Si confesamos nuestros pecados, él es fiel y justo para perdonar nuestros pecados y limpiarnos de toda maldad.
+						</ab>
+						<ab xml:id="b.1JO.1.10" type="verse" n="10">
+							Si decimos que no hemos pecado, lo hacemos a él mentiroso y su palabra no está en nosotros.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.1JO.2" type="chapter" n="2">
+					<div type="pericope">
+						<head type="pericope">Cristo, nuestro abogado</head>
+						<ab xml:id="b.1JO.2.1" type="verse" n="1">
+							<rs key="#org164">Hijitos</rs> míos, estas cosas os escribo para que no pequéis. Pero si alguno ha pecado, <rs key="#per1">abogado</rs> tenemos para con el <rs key="#per14">Padre</rs>, a <rs key="#per1">Jesucristo</rs>, el <rs key="#per1">justo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.2" type="verse" n="2">
+							Él es la <rs key="#per1">propiciación por nuestros pecados</rs>, y no solamente por los nuestros, sino también por los de todo el <rs key="#org0">mundo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.3" type="verse" n="3">
+							En esto sabemos que nosotros lo conocemos, si guardamos sus mandamientos.
+						</ab>
+						<ab xml:id="b.1JO.2.4" type="verse" n="4">
+							El que dice: <q who="#org0" corresp="#org0" type="oral">«Yo lo conozco»</q>, pero no guarda sus mandamientos, el tal es <rs key="#org19">mentiroso</rs> y la verdad no está en él.
+						</ab>
+						<ab xml:id="b.1JO.2.5" type="verse" n="5">
+							Pero el que guarda su <rs key="#wor1">palabra</rs>, en ese verdaderamente el amor de <rs key="#per14">Dios</rs> se ha perfeccionado; por esto sabemos que estamos en él.
+						</ab>
+						<ab xml:id="b.1JO.2.6" type="verse" n="6">
+							El que dice que permanece en él, debe andar como él anduvo.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El nuevo mandamiento</head>
+						<ab xml:id="b.1JO.2.7" type="verse" n="7">
+							<rs key="#org164">Hermanos</rs>, no os escribo un mandamiento nuevo, sino el mandamiento antiguo que habéis tenido desde el <rs key="#tim3">principio</rs>. Este mandamiento antiguo es la <rs key="#wor1">palabra</rs> que habéis oído desde el <rs key="#tim3">principio</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.8" type="verse" n="8">
+							Y, sin embargo, os escribo un mandamiento nuevo, que es verdadero en él y en vosotros, porque las tinieblas van pasando y la luz verdadera ya alumbra.
+						</ab>
+						<ab xml:id="b.1JO.2.9" type="verse" n="9">
+							El que dice que está en la luz y odia a su <rs key="#org0">hermano</rs>, está todavía en tinieblas.
+						</ab>
+						<ab xml:id="b.1JO.2.10" type="verse" n="10">
+							El que ama a su <rs key="#org0">hermano</rs>, permanece en la luz y en él no hay tropiezo.
+						</ab>
+						<ab xml:id="b.1JO.2.11" type="verse" n="11">
+							Pero el que odia a su <rs key="#org0">hermano</rs> está en tinieblas y anda en tinieblas, y no sabe a dónde va, porque las tinieblas le han cegado los ojos.
+						</ab>
+						<ab xml:id="b.1JO.2.12" type="verse" n="12">
+							Os escribo a vosotros, <rs key="#org164">hijitos</rs>, porque vuestros pecados os han sido perdonados por su nombre.
+						</ab>
+						<ab xml:id="b.1JO.2.13" type="verse" n="13">
+							Os escribo a vosotros, <rs key="#org164">padres</rs>, porque conocéis al que es desde el <rs key="#tim3">principio</rs>. Os escribo a vosotros, <rs key="#org164">jóvenes</rs>, porque habéis vencido al <rs key="#per4">maligno</rs>. Os escribo a vosotros, <rs key="#org164">hijitos</rs>, porque habéis conocido al <rs key="#per14">Padre</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.14" type="verse" n="14">
+							Os he escrito a vosotros, <rs key="#org164">padres</rs>, porque habéis conocido al que es desde el <rs key="#tim3">principio</rs>. Os he escrito a vosotros, <rs key="#org164">jóvenes</rs>, porque sois fuertes y la <rs key="#wor1">palabra de <rs key="#per14">Dios</rs></rs> permanece en vosotros, y habéis vencido al <rs key="#per20">maligno</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.15" type="verse" n="15">
+							No améis al <rs key="#org0">mundo</rs> ni las cosas que están en el <rs key="#org0">mundo</rs>. Si alguno ama al <rs key="#org0">mundo</rs>, el amor del <rs key="#per14">Padre</rs> no está en él,
+						</ab>
+						<ab xml:id="b.1JO.2.16" type="verse" n="16">
+							porque nada de lo que hay en el <rs key="#org0">mundo</rs> los deseos de la carne, los deseos de los ojos y la vanagloria de la vida proviene del <rs key="#per14">Padre</rs>, sino del <rs key="#org0">mundo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.17" type="verse" n="17">
+							Y el <rs key="#org0">mundo</rs> pasa, y sus deseos, pero el que hace la voluntad de <rs key="#per14">Dios</rs> permanece para siempre.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El anticristo</head>
+						<ab xml:id="b.1JO.2.18" type="verse" n="18">
+							<rs key="#org164">Hijitos</rs>, ya es el <rs key="#tim2">último tiempo</rs>. Según vosotros oísteis que el <rs key="#per20">Anticristo</rs> viene, así ahora han surgido muchos <rs key="#org14">anticristos</rs>; por esto conocemos que es el <rs key="#tim2">último tiempo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.19" type="verse" n="19">
+							Salieron de nosotros, pero no eran de nosotros, porque si hubieran sido de nosotros, habrían permanecido con nosotros; pero salieron para que se manifestara que no todos son de nosotros.
+						</ab>
+						<ab xml:id="b.1JO.2.20" type="verse" n="20">
+							Vosotros tenéis la unción del <rs key="#per1" cert="low">Santo</rs> y conocéis todas las cosas.
+						</ab>
+						<ab xml:id="b.1JO.2.21" type="verse" n="21">
+							Os he escrito, no porque seáis ignorantes de la verdad, sino porque la conocéis, y porque ninguna mentira procede de la verdad.
+						</ab>
+						<ab xml:id="b.1JO.2.22" type="verse" n="22">
+							¿Quién es el <rs key="#org19">mentiroso</rs>, sino el que niega que <rs key="#per1">Jesús</rs> es el <rs key="#per1">Cristo</rs>? Este es el <rs key="#per20">anticristo</rs>, pues niega al <rs key="#per14">Padre</rs> y al <rs key="#per1">Hijo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.23" type="verse" n="23">
+							Todo aquel que niega al <rs key="#per1">Hijo</rs>, tampoco tiene al <rs key="#per14">Padre</rs>. El que confiesa al <rs key="#per1">Hijo</rs> tiene también al <rs key="#per14">Padre</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.24" type="verse" n="24">
+							Lo que habéis oído desde el <rs key="#tim3">principio</rs>, permanezca en vosotros. Si lo que habéis oído desde el <rs key="#tim3">principio</rs> permanece en vosotros, también vosotros permaneceréis en el <rs key="#per1">Hijo</rs> y en el <rs key="#per14">Padre</rs>.
+						</ab>
+						<ab xml:id="b.1JO.2.25" type="verse" n="25">
+							Y esta es la promesa que él nos hizo: la vida eterna.
+						</ab>
+						<ab xml:id="b.1JO.2.26" type="verse" n="26">
+							Os he escrito esto sobre los que os engañan.
+						</ab>
+						<ab xml:id="b.1JO.2.27" type="verse" n="27">
+							Pero la unción que vosotros recibisteis de él permanece en vosotros y no tenéis necesidad de que nadie os enseñe; así como la unción misma os enseña todas las cosas, y es verdadera, y no es mentira, según ella os ha enseñado, permaneced en él.
+						</ab>
+						<ab xml:id="b.1JO.2.28" type="verse" n="28">
+							Ahora, <rs key="#org164">hijitos</rs>, permaneced en él, para que cuando se manifieste, tengamos confianza, para que en su venida no nos alejemos de él avergonzados.
+						</ab>
+						<ab xml:id="b.1JO.2.29" type="verse" n="29">
+							Si sabéis que él es <rs key="#per1">justo</rs>, sabed también que todo el que hace justicia es nacido de él.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.1JO.3" type="chapter" n="3">
+					<div type="pericope">
+						<head type="pericope">Hijos de Dios</head>
+						<ab xml:id="b.1JO.3.1" type="verse" n="1">
+							Mirad cuál amor nos ha dado el <rs key="#per14">Padre</rs>, para que seamos llamados <rs key="#org19">hijos de <rs key="#per14">Dios</rs></rs>; por esto el <rs key="#org0">mundo</rs> no nos conoce, porque no lo conoció a él.
+						</ab>
+						<ab xml:id="b.1JO.3.2" type="verse" n="2">
+							<rs key="#org164">Amados</rs>, ahora somos <rs key="#org19">hijos de <rs key="#per14">Dios</rs></rs> y aún no se ha manifestado lo que hemos de ser; pero sabemos que cuando él se manifieste, seremos semejantes a él, porque lo veremos tal como él es.
+						</ab>
+						<ab xml:id="b.1JO.3.3" type="verse" n="3">
+							Y todo aquel que tiene esta esperanza en él, se purifica a sí mismo, así como él es puro.
+						</ab>
+						<ab xml:id="b.1JO.3.4" type="verse" n="4">
+							Todo aquel que comete pecado, infringe también la <rs key="#wor1">Ley</rs>, pues el pecado es infracción de la <rs key="#wor1">Ley</rs>.
+						</ab>
+						<ab xml:id="b.1JO.3.5" type="verse" n="5">
+							Y sabéis que él apareció para quitar nuestros pecados, y no hay pecado en él.
+						</ab>
+						<ab xml:id="b.1JO.3.6" type="verse" n="6">
+							Todo aquel que permanece en él, no peca. Todo aquel que peca, no lo ha visto ni lo ha conocido.
+						</ab>
+						<ab xml:id="b.1JO.3.7" type="verse" n="7">
+							<rs key="#org164">Hijitos</rs>, nadie os engañe; el que hace justicia es justo, como él es justo.
+						</ab>
+						<ab xml:id="b.1JO.3.8" type="verse" n="8">
+							El que practica el pecado es del <rs key="#per20">diablo</rs>, porque el <rs key="#per20">diablo</rs> peca desde el <rs key="#tim3">principio</rs>. Para esto apareció el <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, para deshacer las obras del <rs key="#per20">diablo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.3.9" type="verse" n="9">
+							Todo aquel que es nacido de <rs key="#per14">Dios</rs> no practica el pecado, porque la simiente de <rs key="#per14">Dios</rs> permanece en él; y no puede pecar, porque es nacido de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.1JO.3.10" type="verse" n="10">
+							En esto se manifiestan los <rs key="#org19">hijos de <rs key="#per14">Dios</rs></rs> y los <rs key="#org18">hijos del <rs key="#per20">diablo</rs></rs>: todo aquel que no hace justicia y que no ama a su <rs key="#org0">hermano</rs>, no es de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.1JO.3.11" type="verse" n="11">
+							Este es el mensaje que habéis oído desde el <rs key="#tim3">principio</rs>: que nos amemos unos a otros.
+						</ab>
+						<ab xml:id="b.1JO.3.12" type="verse" n="12">
+							No como <rs key="#per142">Caín</rs>, que era del <rs key="#per20">maligno</rs> y mató a su <rs key="#per43">hermano</rs>. ¿Y por qué causa lo mató? Porque sus obras eran malas y las de su <rs key="#per43">hermano</rs>, justas.
+						</ab>
+						<ab xml:id="b.1JO.3.13" type="verse" n="13">
+							<rs key="#org164">Hermanos</rs> míos, no os extrañéis si el <rs key="#org0">mundo</rs> os odia.
+						</ab>
+						<ab xml:id="b.1JO.3.14" type="verse" n="14">
+							Nosotros sabemos que hemos pasado de muerte a vida, porque amamos a los <rs key="#org0">hermanos</rs>. El que no ama a su <rs key="#org0">hermano</rs> permanece en muerte.
+						</ab>
+						<ab xml:id="b.1JO.3.15" type="verse" n="15">
+							Todo aquel que odia a su <rs key="#org0">hermano</rs> es <rs key="#org19">homicida</rs> y sabéis que ningún <rs key="#org164">homicida</rs> tiene vida eterna permanente en él.
+						</ab>
+						<ab xml:id="b.1JO.3.16" type="verse" n="16">
+							En esto hemos conocido el amor, en que él puso su vida por nosotros; también nosotros debemos poner nuestras vidas por los <rs key="#org0">hermanos</rs>.
+						</ab>
+						<ab xml:id="b.1JO.3.17" type="verse" n="17">
+							Pero el que tiene bienes de este <rs key="#org0">mundo</rs> y ve a su <rs key="#org0">hermano</rs> tener necesidad y cierra contra él su corazón, ¿cómo mora el amor de <rs key="#per14">Dios</rs> en él?
+						</ab>
+						<ab xml:id="b.1JO.3.18" type="verse" n="18">
+							<rs key="#org164">Hijitos</rs> míos, no amemos de palabra ni de lengua, sino de hecho y en verdad.
+						</ab>
+						<ab xml:id="b.1JO.3.19" type="verse" n="19">
+							En esto conocemos que somos de la verdad, y aseguraremos nuestros corazones delante de él,
+						</ab>
+						<ab xml:id="b.1JO.3.20" type="verse" n="20">
+							pues si nuestro corazón nos reprende, mayor que nuestro corazón es <rs key="#per14">Dios</rs>, y él sabe todas las cosas.
+						</ab>
+						<ab xml:id="b.1JO.3.21" type="verse" n="21">
+							<rs key="#org164">Amados</rs>, si nuestro corazón no nos reprende, confianza tenemos en <rs key="#per14">Dios</rs>;
+						</ab>
+						<ab xml:id="b.1JO.3.22" type="verse" n="22">
+							y cualquiera cosa que pidamos la recibiremos de él, porque guardamos sus mandamientos y hacemos las cosas que son agradables delante de él.
+						</ab>
+						<ab xml:id="b.1JO.3.23" type="verse" n="23">
+							Y este es su mandamiento: que creamos en el nombre de su <rs key="#per1">Hijo</rs> <rs key="#per1">Jesucristo</rs> y nos amemos unos a otros como nos lo ha mandado.
+						</ab>
+						<ab xml:id="b.1JO.3.24" type="verse" n="24">
+							El que guarda sus mandamientos permanece en <rs key="#per14">Dios</rs>, y <rs key="#per14">Dios</rs> en él. Y en esto sabemos que él permanece en nosotros, por el <rs key="#per17">Espíritu</rs> que nos ha dado.
+						</ab>
 
+					</div>
+				</div>
+				<div xml:id="b.1JO.4" type="chapter" n="4">
+					<div type="pericope">
+						<head type="pericope">El Espíritu de Dios y el espíritu del anticristo</head>
+						<ab xml:id="b.1JO.4.1" type="verse" n="1">
+							<rs key="#org164">Amados</rs>, no creáis a todo <rs key="#org0">espíritu</rs>, sino probad los <rs key="#org0">espíritus</rs> si son de <rs key="#per14">Dios</rs>, porque muchos <rs key="#org14">falsos profetas</rs> han salido por el <rs key="#org0">mundo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.2" type="verse" n="2">
+							En esto conoced el <rs key="#per17">Espíritu de <rs key="#per14">Dios</rs></rs>: todo <rs key="#org18">espíritu</rs> que confiesa que <rs key="#per1">Jesucristo</rs> ha venido en carne, es de <rs key="#per14">Dios</rs>;
+						</ab>
+						<ab xml:id="b.1JO.4.3" type="verse" n="3">
+							y todo <rs key="#org19">espíritu</rs> que no confiesa que <rs key="#per1">Jesucristo</rs> ha venido en carne, no es de <rs key="#per14">Dios</rs>; y este es el <rs key="#per20">espíritu del <rs key="#per20">Anticristo</rs></rs>, el cual vosotros habéis oído que viene, y que ahora ya está en el <rs key="#org0">mundo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.4" type="verse" n="4">
+							<rs key="#org164">Hijitos</rs>, vosotros sois de <rs key="#per14">Dios</rs> y los habéis vencido, porque mayor es el que está en vosotros que el que está en el <rs key="#org0">mundo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.5" type="verse" n="5">
+							Ellos son del <rs key="#org0">mundo</rs>; por eso hablan de las cosas del <rs key="#org0">mundo</rs> y el <rs key="#org0">mundo</rs> los oye.
+						</ab>
+						<ab xml:id="b.1JO.4.6" type="verse" n="6">
+							Nosotros somos de <rs key="#per14">Dios</rs>. El que conoce a <rs key="#per14">Dios</rs>, nos oye; el que no es de <rs key="#per14">Dios</rs>, no nos oye. En esto conocemos el espíritu de verdad y el espíritu de error.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Dios es amor</head>
+						<ab xml:id="b.1JO.4.7" type="verse" n="7">
+							<rs key="#org164">Amados</rs>, amémonos unos a otros, porque el amor es de <rs key="#per14">Dios</rs>. Todo aquel que ama es nacido de <rs key="#per14">Dios</rs> y conoce a <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.8" type="verse" n="8">
+							El que no ama no ha conocido a <rs key="#per14">Dios</rs>, porque <rs key="#per14">Dios</rs> es <rs key="#per14">amor</rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.9" type="verse" n="9">
+							En esto se mostró el amor de <rs key="#per14">Dios</rs> para con nosotros: en que <rs key="#per14">Dios</rs> envió a su <rs key="#per1">Hijo unigénito</rs> al <rs key="#org0">mundo</rs> para que vivamos por él.
+						</ab>
+						<ab xml:id="b.1JO.4.10" type="verse" n="10">
+							En esto consiste el amor: no en que nosotros hayamos amado a <rs key="#per14">Dios</rs>, sino en que él nos amó a nosotros y envió a su <rs key="#per1">Hijo</rs> en propiciación por nuestros pecados.
+						</ab>
+						<ab xml:id="b.1JO.4.11" type="verse" n="11">
+							<rs key="#org164">Amados</rs>, si <rs key="#per14">Dios</rs> así nos ha amado, también debemos amarnos unos a otros.
+						</ab>
+						<ab xml:id="b.1JO.4.12" type="verse" n="12">
+							Nadie ha visto jamás a <rs key="#per14">Dios</rs>. Si nos amamos unos a otros, <rs key="#per14">Dios</rs> permanece en nosotros y su amor se ha perfeccionado en nosotros.
+						</ab>
+						<ab xml:id="b.1JO.4.13" type="verse" n="13">
+							En esto conocemos que permanecemos en él y él en nosotros, en que nos ha dado de su <rs key="#per17">Espíritu</rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.14" type="verse" n="14">
+							Y nosotros hemos visto y testificamos que el <rs key="#per14">Padre</rs> ha enviado al <rs key="#per1">Hijo</rs>, el <rs key="#per1">Salvador del <rs key="#org0">mundo</rs></rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.15" type="verse" n="15">
+							Todo aquel que confiese que <rs key="#per1">Jesús</rs> es el <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, <rs key="#per14">Dios</rs> permanece en él y él en <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.16" type="verse" n="16">
+							Y nosotros hemos conocido y creído el amor que <rs key="#per14">Dios</rs> tiene para con nosotros. <rs key="#per14">Dios</rs> es amor, y el que permanece en amor permanece en <rs key="#per14">Dios</rs> y <rs key="#per14">Dios</rs> en él.
+						</ab>
+						<ab xml:id="b.1JO.4.17" type="verse" n="17">
+							En esto se ha perfeccionado el amor en nosotros, para que tengamos confianza en el <rs key="#tim2">día del juicio</rs>, pues como él es, así somos nosotros en este <rs key="#org0">mundo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.4.18" type="verse" n="18">
+							En el amor no hay temor, sino que el perfecto amor echa fuera el temor, porque el temor lleva en sí castigo. De donde el que teme, no ha sido perfeccionado en el amor.
+						</ab>
+						<ab xml:id="b.1JO.4.19" type="verse" n="19">
+							Nosotros lo amamos a él porque él nos amó primero.
+						</ab>
+						<ab xml:id="b.1JO.4.20" type="verse" n="20">
+							Si alguno dice: <q who="#org19" corresp="#org0" type="oral">«Yo amo a <rs key="#per14">Dios</rs>»</q>, pero odia a su <rs key="#org0">hermano</rs>, es <rs key="#org19">mentiroso</rs>, pues el que no ama a su <rs key="#org0">hermano</rs> a quien ha visto, ¿cómo puede amar a <rs key="#per14">Dios</rs> a quien no ha visto?
+						</ab>
+						<ab xml:id="b.1JO.4.21" type="verse" n="21">
+							Y nosotros tenemos este mandamiento de él: <q who="#per1" corresp="#org0" type="oral">«El que ama a <rs key="#per14">Dios</rs>, ame también a su <rs key="#org0">hermano</rs>»</q>.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.1JO.5" type="chapter" n="5">
+					<div type="pericope">
+						<head type="pericope">La fe que vence al mundo</head>
+						<ab xml:id="b.1JO.5.1" type="verse" n="1">
+							Todo aquel que cree que <rs key="#per1">Jesús</rs> es el <rs key="#per1">Cristo</rs> es nacido de <rs key="#per14">Dios</rs>; y todo aquel que ama al que engendró ama también al que ha sido engendrado por él.
+						</ab>
+						<ab xml:id="b.1JO.5.2" type="verse" n="2">
+							En esto conocemos que amamos a los <rs key="#org19">hijos de <rs key="#per14">Dios</rs></rs>, cuando amamos a <rs key="#per14">Dios</rs> y guardamos sus mandamientos,
+						</ab>
+						<ab xml:id="b.1JO.5.3" type="verse" n="3">
+							pues este es el amor a <rs key="#per14">Dios</rs>: que guardemos sus mandamientos; y sus mandamientos no son gravosos,
+						</ab>
+						<ab xml:id="b.1JO.5.4" type="verse" n="4">
+							porque todo lo que es nacido de <rs key="#per14">Dios</rs> vence al <rs key="#org0">mundo</rs>; y esta es la victoria que ha vencido al <rs key="#org0">mundo</rs>, nuestra fe.
+						</ab>
+						<ab xml:id="b.1JO.5.5" type="verse" n="5">
+							¿Quién es el que vence al <rs key="#org0">mundo</rs>, sino el que cree que <rs key="#per1">Jesús</rs> es el <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>?
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El testimonio del Espíritu</head>
+						<ab xml:id="b.1JO.5.6" type="verse" n="6">
+							Este es <rs key="#per1">Jesucristo</rs>, que vino mediante agua y sangre; no mediante agua solamente, sino mediante agua y sangre. Y el <rs key="#per17">Espíritu</rs> es el que da testimonio, porque el <rs key="#per17">Espíritu</rs> es la <rs key="#per17">verdad</rs>.
+						</ab>
+						<ab xml:id="b.1JO.5.7" type="verse" n="7">
+							<rs key="#per1 #per17 #per14">Tres</rs> son los que dan testimonio en el <rs key="#pla18">cielo</rs>: el <rs key="#per14">Padre</rs>, el <rs key="#per1">Verbo</rs> y el <rs key="#per17">Espíritu Santo</rs>; y estos <rs key="#per1 #per17 #per14">tres</rs> son <rs key="#per1 #per17 #per14">uno</rs>.
+						</ab>
+						<ab xml:id="b.1JO.5.8" type="verse" n="8">
+							Y <rs key="#per17">tres</rs> son los que dan testimonio en la <rs key="#pla41">tierra</rs>: el <rs key="#per17">Espíritu</rs>, el agua y la sangre; y estos <rs key="#per17">tres</rs> concuerdan.
+						</ab>
+						<ab xml:id="b.1JO.5.9" type="verse" n="9">
+							Si recibimos el testimonio de los <rs key="#org0">hombres</rs>, mayor es el testimonio de <rs key="#per14">Dios</rs>, porque este es el testimonio con que <rs key="#per14">Dios</rs> ha testificado acerca de su <rs key="#per1">Hijo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.5.10" type="verse" n="10">
+							El que cree en el <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs> tiene el testimonio en sí mismo; el que no cree a <rs key="#per14">Dios</rs>, lo ha hecho <rs key="#per14">mentiroso</rs>, porque no ha creído en el testimonio que <rs key="#per14">Dios</rs> ha dado acerca de su <rs key="#per1">Hijo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.5.11" type="verse" n="11">
+							Y este es el testimonio: que <rs key="#per14">Dios</rs> nos ha dado vida eterna y esta vida está en su <rs key="#per1">Hijo</rs>.
+						</ab>
+						<ab xml:id="b.1JO.5.12" type="verse" n="12">
+							El que tiene al <rs key="#per1">Hijo</rs> tiene la vida; el que no tiene al <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs> no tiene la vida.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">EPÍLOGO: EL CONOCIMIENTO DE LA VIDA ETERNA</head>
+						<ab xml:id="b.1JO.5.13" type="verse" n="13">
+							Estas cosas os he escrito a vosotros que creéis en el nombre del <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, para que sepáis que tenéis vida eterna y para que creáis en el nombre del <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>.,
+						</ab>
+						<ab xml:id="b.1JO.5.14" type="verse" n="14">
+							Esta es la confianza que tenemos en él, que si pedimos alguna cosa conforme a su voluntad, él nos oye.
+						</ab>
+						<ab xml:id="b.1JO.5.15" type="verse" n="15">
+							Y si sabemos que él nos oye en cualquiera cosa que pidamos, sabemos que tenemos las peticiones que le hayamos hecho.
+						</ab>
+						<ab xml:id="b.1JO.5.16" type="verse" n="16">
+							Si alguno ve a su <rs key="#org0">hermano</rs> cometer pecado que no sea de muerte, pedirá, y <rs key="#per14">Dios</rs> le dará vida; esto es para los que cometen pecado que no sea de muerte. Hay pecado de muerte, por el cual yo no digo que se pida.
+						</ab>
+						<ab xml:id="b.1JO.5.17" type="verse" n="17">
+							Toda injusticia es pecado, pero hay pecado no de muerte.
+						</ab>
+						<ab xml:id="b.1JO.5.18" type="verse" n="18">
+							Sabemos que todo aquel que ha nacido de <rs key="#per14">Dios</rs> no practica el pecado, pues Aquel que fue engendrado por <rs key="#per14">Dios</rs> lo guarda y el <rs key="#per20">maligno</rs> no lo toca.
+						</ab>
+						<ab xml:id="b.1JO.5.19" type="verse" n="19">
+							Sabemos que somos de <rs key="#per14">Dios</rs>, y el <rs key="#org0">mundo entero</rs> está bajo el <rs key="#per20">maligno</rs>.
+						</ab>
+						<ab xml:id="b.1JO.5.20" type="verse" n="20">
+							Pero sabemos que el <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs> ha venido y nos ha dado entendimiento para conocer al que es verdadero; y estamos en el verdadero, en su <rs key="#per1">Hijo</rs> <rs key="#per1">Jesucristo</rs>. Este es el verdadero <rs key="#per14">Dios</rs> y la vida eterna.
+						</ab>
+						<ab xml:id="b.1JO.5.21" type="verse" n="21">
+							<rs key="#org164">Hijitos</rs>, guardaos de los <rs key="#org103">ídolos</rs>. Amén.,
+						</ab>
+
+					</div>
+				</div>
+			</div>
+		</body>
+		<back>
+			<div />
+		</back>
+	</text>
+</TEI>
+	<TEI xmlns="http://www.tei-c.org/ns/1.0">
+		<teiHeader>
+			<fileDesc>
+				<titleStmt>
+					<title>2 epístola de Juan</title>
+					<title type="idno">
+						<idno type="string">2JO</idno>
+						<idno type="viaf">180630929</idno>
+					</title>
+					<author>
+						<name type="short">Juan</name>
+						<name type="full">San Juan</name>
+						<idno type="viaf"></idno>
+					</author>
+					<principal key="#jct">José Calvo Tello</principal>
+				</titleStmt>
+				<publicationStmt>
+					<publisher>José Calvo Tello</publisher>
+					<availability status="free">
+						<p>The text is freely available.</p>
+					</availability>
+					<date when="2017">2017</date>
+				</publicationStmt>
+				<sourceDesc>
+					<bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+					<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+					<bibl type="edition-first"><date when="1569">1569</date></bibl>
+				</sourceDesc>
+			</fileDesc>
+			<encodingDesc>
+				<p></p>
+			</encodingDesc>
+			<revisionDesc>
+				<change when="2017-04-09" who="#jct">First version of 2JO</change>
+				<change when="2017-04-12" who="#jct">Book manually checked.</change>
+			</revisionDesc>
+		</teiHeader>
+		<text>
+			<body>
+				<div xml:id="b.2JO" type="book" cert="high">
+					
+					<div xml:id="b.2JO.1" type="chapter" n="1">
+						<div type="pericope">
+							<head type="pericope">Salutación</head>
+							<ab xml:id="b.2JO.1.1" type="verse" n="1">
+								El <rs key="#per25" cert="low">Anciano</rs>, a la <rs key="#org37" cert="low">señora elegida</rs> y a sus <rs  key="#org18" cert="low">hijos</rs>, a quienes yo amo en la verdad; y no solo yo, sino también todos los que han conocido la verdad,
+							</ab>
+							<ab xml:id="b.2JO.1.2" type="verse" n="2">
+								a causa de la verdad que permanece en nosotros y estará para siempre con nosotros:
+							</ab>
+							<ab xml:id="b.2JO.1.3" type="verse" n="3">
+								Sea con vosotros gracia, misericordia y paz, de <rs key="#per14">Dios</rs> <rs key="#per14">Padre</rs> y del <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>, <rs key="#per1">Hijo del <rs key="#per14">Padre</rs></rs>, en verdad y en amor.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">Permaneced en la doctrina de Cristo</head>
+							<ab xml:id="b.2JO.1.4" type="verse" n="4">
+								Mucho me regocijé porque he hallado a algunos de tus <rs key="#org37">hijos</rs> andando en la verdad, conforme al mandamiento que recibimos del <rs key="#per14">Padre</rs>.
+							</ab>
+							<ab xml:id="b.2JO.1.5" type="verse" n="5">
+								Y ahora te ruego, <rs key="#org37">señora</rs>, no como escribiéndote un nuevo mandamiento, sino el que hemos tenido desde el <rs key="#tim3">principio</rs>, que nos amemos unos a otros.
+							</ab>
+							<ab xml:id="b.2JO.1.6" type="verse" n="6">
+								Y este es el amor: que andemos según sus mandamientos. Este es el mandamiento: que andéis en amor, como vosotros habéis oído desde el <rs key="#tim3">principio</rs>.
+							</ab>
+							<ab xml:id="b.2JO.1.7" type="verse" n="7">
+								Muchos <rs key="#org19">engañadores</rs> han salido por el mundo, que no confiesan que <rs key="#per1">Jesucristo</rs> ha venido en carne. Quien esto hace es el <rs key="#org19">engañador</rs> y el <rs key="#per20">anticristo</rs>.
+							</ab>
+							<ab xml:id="b.2JO.1.8" type="verse" n="8">
+								Mirad por vosotros mismos, para que no perdáis el fruto de vuestro trabajo, sino que recibáis la recompensa completa.
+							</ab>
+							<ab xml:id="b.2JO.1.9" type="verse" n="9">
+								Cualquiera que se extravía y no persevera en la doctrina de <rs key="#per1">Cristo</rs>, no tiene a <rs key="#per14">Dios</rs>; el que persevera en la doctrina de <rs key="#per1">Cristo</rs>, ese sí tiene al <rs key="#per14">Padre</rs> y al <rs key="#per1">Hijo</rs>.
+							</ab>
+							<ab xml:id="b.2JO.1.10" type="verse" n="10">
+								Si alguno viene a vosotros y no trae esta doctrina, no lo recibáis en casa ni le digáis: <q who="#org37" corresp="#org19" type="oral">«¡Bienvenido!»</q>,
+							</ab>
+							<ab xml:id="b.2JO.1.11" type="verse" n="11">
+								porque el que le dice: <q who="#org37" corresp="#org19" type="oral">«¡Bienvenido!»</q> participa en sus malas obras.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">Espero ir a vosotros</head>
+							<ab xml:id="b.2JO.1.12" type="verse" n="12">
+								Tengo muchas cosas que escribiros, pero no he querido hacerlo por medio de papel y tinta, pues espero ir a vosotros y hablar cara a cara, para que nuestro gozo sea completo.
+							</ab>
+							<ab xml:id="b.2JO.1.13" type="verse" n="13">
+								Los <rs key="#org18">hijos de tu <rs key="#org37">hermana</rs></rs>, la <rs key="#org37">elegida</rs>, te saludan. Amén.
+							</ab>
+							
+						</div>
+					</div>
+				</div>
+			</body>
+		</text>
+	</TEI>
+	<TEI xmlns="http://www.tei-c.org/ns/1.0">
+		<teiHeader>
+			<fileDesc>
+				<titleStmt>
+					<title>3 epístola de Juan</title>
+					<title type="idno">
+						<idno type="string">3JO</idno>
+						<idno type="viaf">180630929</idno>
+					</title>
+					<author>
+						<name type="short">Juan</name>
+						<name type="full">San Juan</name>
+						<idno type="viaf"></idno>
+					</author>
+					<principal key="#jct">José Calvo Tello</principal>
+				</titleStmt>
+				<publicationStmt>
+					<publisher>José Calvo Tello</publisher>
+					<availability status="free">
+						<p>The text is freely available.</p>
+					</availability>
+					<date when="2017">2017</date>
+				</publicationStmt>
+				<sourceDesc>
+					<bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+					<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+					<bibl type="edition-first"><date when="1569">1569</date></bibl>
+				</sourceDesc>
+			</fileDesc>
+			<encodingDesc>
+				<p></p>
+			</encodingDesc>
+			<revisionDesc>
+				<change when="2017-04-10" who="#jct">First version of 3JO</change>
+				<change when="2017-04-12" who="#jct">Book manually checked.</change>
+			</revisionDesc>
+		</teiHeader>
+		<text>
+			<body>
+				<div xml:id="b.3JO" type="book" cert="high">
+					<div xml:id="b.3JO.1" type="chapter" n="1">
+						<div type="pericope">
+							<head type="pericope">Salutación</head>
+							<ab xml:id="b.3JO.1.1" type="verse" n="1">
+								El <rs key="#per25">Anciano</rs> a <rs key="#per843">Gayo</rs>, el <rs key="#per843">amado</rs>, a quien amo en la verdad.
+							</ab>
+							<ab xml:id="b.3JO.1.2" type="verse" n="2">
+								<rs key="#per843">Amado</rs>, yo deseo que tú seas prosperado en todas las cosas y que tengas salud, así como prospera tu alma.
+							</ab>
+							<ab xml:id="b.3JO.1.3" type="verse" n="3">
+								Mucho me regocijé cuando vinieron los <rs key="#org18">hermanos</rs> y dieron testimonio de tu verdad, de cómo andas en la verdad.
+							</ab>
+							<ab xml:id="b.3JO.1.4" type="verse" n="4">
+								No tengo yo mayor gozo que oir que mis <rs key="#org18">hijos</rs> andan en la verdad.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">Elogio de la hospitalidad de Gayo</head>
+							<ab xml:id="b.3JO.1.5" type="verse" n="5">
+								<rs key="#per843">Amado</rs>, fielmente te conduces cuando prestas algún servicio a los <rs key="#org18">hermanos</rs>, especialmente a los desconocidos,
+							</ab>
+							<ab xml:id="b.3JO.1.6" type="verse" n="6">
+								los cuales han dado ante la <rs key="#org37">iglesia</rs> testimonio de tu amor; y harás bien en encaminarlos como es digno de su servicio a <rs key="#per14">Dios</rs>, para que continúen su viaje,
+							</ab>
+							<ab xml:id="b.3JO.1.7" type="verse" n="7">
+								pues ellos salieron por amor del nombre de Él, sin aceptar nada de los <rs key="#org16">gentiles</rs>.
+							</ab>
+							<ab xml:id="b.3JO.1.8" type="verse" n="8">
+								Nosotros, pues, debemos acoger a tales personas, para que cooperemos con la verdad.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">La oposición de Diótrefes</head>
+							<ab xml:id="b.3JO.1.9" type="verse" n="9">
+								Yo he escrito a la <rs key="#org37">iglesia</rs>; pero <rs key="#per844">Diótrefes</rs>, al cual le gusta tener el primer lugar entre ellos, no nos recibe.
+							</ab>
+							<ab xml:id="b.3JO.1.10" type="verse" n="10">
+								Por esta causa, si yo voy, recordaré las obras que hace profiriendo palabras malignas contra nosotros; y no contento con estas cosas, no recibe a los <rs key="#org18">hermanos</rs>, y a los que quieren recibirlos se lo prohíbe y los expulsa de la <rs key="#org37">iglesia</rs>.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">Buen testimonio acerca de Demetrio</head>
+							<ab xml:id="b.3JO.1.11" type="verse" n="11">
+								<rs key="#per843">Amado</rs>, no imites lo malo, sino lo bueno. El que hace lo bueno es de <rs key="#per14">Dios</rs>, pero el que hace lo malo no ha visto a <rs key="#per14">Dios</rs>.
+							</ab>
+							<ab xml:id="b.3JO.1.12" type="verse" n="12">
+								Todos dan buen testimonio de <rs key="#per543">Demetrio</rs>, y aun la verdad misma; y también nosotros damos testimonio, y vosotros sabéis que nuestro testimonio es verdadero.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">Salutaciones finales</head>
+							<ab xml:id="b.3JO.1.13" type="verse" n="13">
+								Yo tenía muchas cosas que escribirte, pero no quiero escribírtelas con tinta y pluma,
+							</ab>
+							<ab xml:id="b.3JO.1.14" type="verse" n="14">
+								porque espero verte en breve y hablaremos cara a cara. La paz sea contigo. Los <rs key="#org18">amigos</rs> te saludan. Saluda tú a los <rs key="#org18">amigos</rs>, a cada uno en particular.
+							</ab>
+						</div>
+					</div>
+				</div>
+			</body>
+		</text>
+	</TEI>
+	<TEI xmlns="http://www.tei-c.org/ns/1.0">
+		<teiHeader>
+			<fileDesc>
+				<titleStmt>
+					<title>Epístola de Judas</title>
+					<title type="idno">
+						<idno type="string">JUD</idno>
+						<idno type="viaf">181851752</idno>
+					</title>
+					<author>
+						<name type="short"></name>
+						<name type="full"></name>z
+						<idno type="viaf"></idno>
+					</author>
+					<principal key="#jct">José Calvo Tello</principal>
+				</titleStmt>
+				<publicationStmt>
+					<publisher>José Calvo Tello</publisher>
+					<availability status="free">
+						<p>The text is freely available.</p>
+					</availability>
+					<date when="2017">2017</date>
+				</publicationStmt>
+				<sourceDesc>
+					<bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+					<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+					<bibl type="edition-first"><date when="1569">1569</date></bibl>
+				</sourceDesc>
+			</fileDesc>
+			<encodingDesc>
+				<p></p>
+			</encodingDesc>
+			<revisionDesc>
+				<change when="2017-04-11" who="#jct">First version of JUD</change>
+				<change when="2017-04-12" who="#jct">Book manually checked.</change>
+			</revisionDesc>
+		</teiHeader>
+		<text>
+			<body>
+				<div xml:id="b.JUD" type="book" cert="high">
+					<div xml:id="b.JUD.1" type="chapter" n="1">
+						<div type="pericope">
+							<head type="pericope">Salutación</head>
+							<ab xml:id="b.JUD.1.1" type="verse" n="1">
+								<rs key="#per110" cert="low">Judas</rs>, <rs key="#per110">siervo de <rs key="#per1">Jesucristo</rs></rs> y <rs key="#per110">hermano de <rs key="#per31" cert="low">Jacobo</rs></rs>, a los <rs key="#org37">llamados</rs>, <rs key="#org37">santificados en <rs key="#per14">Dios</rs></rs> <rs key="#per14">Padre</rs> y guardados en <rs key="#per1">Jesucristo</rs>:
+							</ab>
+							<ab xml:id="b.JUD.1.2" type="verse" n="2">
+								Misericordia, paz y amor os sean multiplicados.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">Falsas doctrinas y falsos maestros</head>
+							<ab xml:id="b.JUD.1.3" type="verse" n="3">
+								<rs key="#org37">Amados</rs>, por el gran deseo que tenía de escribiros acerca de nuestra común salvación, me ha sido necesario escribiros para exhortaros a que contendáis ardientemente por la fe que ha sido una vez dada a los <rs key="#org18">santos</rs>,
+							</ab>
+							<ab xml:id="b.JUD.1.4" type="verse" n="4">
+								porque algunos <rs key="#org19">hombres</rs> han entrado encubiertamente, los que desde antes habían sido destinados para esta condenación, <rs key="#org19">hombres impíos</rs>, que convierten en libertinaje la gracia de nuestro <rs key="#per14">Dios</rs> y niegan a <rs key="#per14">Dios</rs>, el <rs key="#per14">único soberano</rs>, y a nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>.,
+							</ab>
+							<ab xml:id="b.JUD.1.5" type="verse" n="5">
+								Quiero recordaros, ya que una vez lo habéis sabido, que el <rs key="#per14">Señor</rs>, habiendo salvado al <rs key="#org70">pueblo</rs> sacándolo de <rs key="#pla5">Egipto</rs>, después destruyó a los que no creyeron.
+							</ab>
+							<ab xml:id="b.JUD.1.6" type="verse" n="6">
+								Y a los <rs key="#org6">ángeles</rs> que no guardaron su dignidad, sino que abandonaron su propio hogar, los ha guardado bajo <rs key="#pla15">oscuridad</rs>, en <rs key="#pla15">prisiones eternas</rs>, para el juicio del <rs key="#tim2">gran día</rs>.
+							</ab>
+							<ab xml:id="b.JUD.1.7" type="verse" n="7">
+								También <rs key="#pla16">Sodoma</rs> y <rs key="#pla17">Gomorra</rs> y las ciudades vecinas, las cuales de la misma manera que aquellos, habiendo fornicado e ido en pos de vicios contra la naturaleza, fueron puestas por ejemplo, sufriendo el castigo del <rs key="#pla15">fuego eterno</rs>.
+							</ab>
+							<ab xml:id="b.JUD.1.8" type="verse" n="8">
+								No obstante, de la misma manera también estos <rs key="#org19">soñadores</rs> mancillan la carne, rechazan la autoridad y blasfeman de los <rs key="#per14">poderes superiores</rs>.
+							</ab>
+							<ab xml:id="b.JUD.1.9" type="verse" n="9">
+								Pero cuando el <rs key="#per130">arcángel</rs> <rs key="#per130">Miguel</rs> luchaba con el <rs key="#per20">diablo</rs> disputándole el cuerpo de <rs key="#per26">Moisés</rs>, no se atrevió a proferir juicio de maldición contra él, sino que dijo: <q who="#per130" corresp="#per20" type="oral">«El <rs key="#per14">Señor</rs> te reprenda»</q>.
+							</ab><!--JCT: parece bastante apocrífo... Algunas otra mención en la Biblia de este pasaje?-->
+							<ab xml:id="b.JUD.1.10" type="verse" n="10">
+								Pero estos blasfeman de cuantas cosas no conocen; y en las que por naturaleza conocen, se corrompen como <rs key="#org19">animales irracionales</rs>.
+							</ab>
+							<ab xml:id="b.JUD.1.11" type="verse" n="11">
+								¡Ay de ellos!, porque han seguido el camino de <rs key="#per142">Caín</rs>, se lanzaron por lucro en el error de <rs key="#per117">Balaam</rs> y perecieron en la contradicción de <rs key="#per593">Coré</rs>.
+							</ab>
+							<ab xml:id="b.JUD.1.12" type="verse" n="12">
+								Estos son <rs key="#org19">manchas en vuestros ágapes</rs>, que comiendo sin vergüenza alguna con vosotros, se apacientan a sí mismos; <rs key="#org19">nubes sin agua, llevadas de acá para allá por los vientos</rs>; <rs key="#org19">árboles otoñales, sin fruto, dos veces muertos y desarraigados</rs>.
+							</ab>
+							<ab xml:id="b.JUD.1.13" type="verse" n="13">
+								Son <rs key="#org19">fieras ondas del mar</rs>, que espuman su propia vergüenza; <rs key="#org19">estrellas errantes</rs>, para las cuales está reservada eternamente la <rs key="#pla15">oscuridad de las tinieblas</rs>.
+							</ab>
+							<ab xml:id="b.JUD.1.14" type="verse" n="14">
+								De estos también profetizó <rs key="#per206">Enoc</rs>, <rs key="#per206">séptimo desde <rs key="#per145">Adán</rs></rs>, diciendo: <q who="#per206" corresp="#org0" type="written">«Vino el <rs key="#per14">Señor</rs> con sus <rs key="#org18" cert="low">santas decenas de millares</rs>,</q>
+							</ab>
+							<ab xml:id="b.JUD.1.15" type="verse" n="15">
+								<q who="#per206" corresp="#org0" type="written">para hacer juicio contra todos y dejar convictos a todos los <rs key="#org19">impíos</rs> de todas sus obras impías que han hecho impíamente, y de todas las cosas duras que los <rs key="#org19">pecadores impíos</rs> han hablado contra él».</q>
+							</ab>
+							<ab xml:id="b.JUD.1.16" type="verse" n="16">
+								Estos son <rs key="#org19">murmuradores, quejumbrosos</rs>, que andan según sus propios deseos, cuya boca habla cosas infladas, adulando a las <rs key="#org0">personas</rs> para sacar provecho.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">Amonestaciones y exhortaciones</head>
+							<ab xml:id="b.JUD.1.17" type="verse" n="17">
+								Pero vosotros, <rs key="#org37">amados</rs>, tened memoria de las palabras que antes fueron dichas por los <rs key="#org110">apóstoles de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs></rs>;
+							</ab>
+							<ab xml:id="b.JUD.1.18" type="verse" n="18">
+								los que os decían: <q who="#org110" corresp="#org37" type="written">«En el último tiempo habrá <rs key="#org19">burladores</rs> que andarán según sus malvados deseos»</q>.
+							</ab>
+							<ab xml:id="b.JUD.1.19" type="verse" n="19">
+								Estos son los que causan divisiones, viven sensualmente y no tienen al <rs key="#per17">Espíritu</rs>.
+							</ab>
+							<ab xml:id="b.JUD.1.20" type="verse" n="20">
+								Pero vosotros, <rs key="#org37">amados</rs>, edificándoos sobre vuestra santísima fe, orando en el <rs key="#per17">Espíritu Santo</rs>,
+							</ab>
+							<ab xml:id="b.JUD.1.21" type="verse" n="21">
+								conservaos en el amor de <rs key="#per14">Dios</rs>, esperando la misericordia de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs> para vida eterna.
+							</ab>
+							<ab xml:id="b.JUD.1.22" type="verse" n="22">
+								A algunos que dudan, convencedlos.
+							</ab>
+							<ab xml:id="b.JUD.1.23" type="verse" n="23">
+								A otros, salvadlos arrebatándolos del fuego; y de otros, tened misericordia con temor, desechando aun la ropa contaminada por su carne.
+							</ab>
+						</div>
+						<div type="pericope">
+							<head type="pericope">Doxología</head>
+							<ab xml:id="b.JUD.1.24" type="verse" n="24">
+								A aquel que es poderoso para guardaros sin caída y presentaros sin mancha delante de su gloria con gran alegría,
+							</ab>
+							<ab xml:id="b.JUD.1.25" type="verse" n="25">
+								al <rs key="#per14">único y sabio Dios</rs>, nuestro <rs key="#per14">Salvador</rs>, sea gloria y majestad, imperio y poder, ahora y por todos los siglos. Amén.
+							</ab>
+							
+						</div>
+					</div>
+				</div>
+			</body>
+		</text>
+	</TEI>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
