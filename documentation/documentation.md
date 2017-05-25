@@ -44,6 +44,7 @@ At the moment following books are fully encoded in this chronological order:
 * 2 John
 * 3 John
 * Jude
+* Job
 
 At the moment, following book is being encoded:
 

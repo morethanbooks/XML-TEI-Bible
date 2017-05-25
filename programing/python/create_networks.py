@@ -363,8 +363,8 @@ def create_networks_bible():
     xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
     
     string_xpath = xpath2string(xpaths)
-    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV']
-    books_bible = ['1JO','2JO','3JO','JUD']
+    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD']
+    books_bible = ["JOB"]
     
     for different_book in books_bible:
 
@@ -393,7 +393,7 @@ df_characters, edges_text_unit, df_text_parts = create_networks(
         file = "TEIBible", # "*.xml"
         output = "/home/jose/Dropbox/biblia/tb/resulting data/",
         border = "ab[@type='verse']",
-        book = "JON", #GEN EXO RUT PSA JON MIC NAH HAB ZEP HAG ZEC MAL MAT JOH ACT REV 
+        book = "JOB", #JOB JON GEN EXO RUT PSA JON MIC NAH HAB ZEP HAG ZEC MAL MAT JOH ACT REV 
         deleting_books = True,
         characters_in = "text",
         xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
