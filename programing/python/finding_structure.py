@@ -27,9 +27,10 @@ def finding_standard_rs(content):
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
     
     variaciones_comunes = {
-        "per14" : ["Jehová","Todopoderoso","Señor","Padre","Omnipotente","Hacedor","Redentor"],
-        #"per1" : ["Cristo","Jesucristo","Hijo"],
+        "per14" : ["Jehová","Todopoderoso","Señor","Padre","Omnipotente","Hacedor","Redentor","Creador"],
+        "per1" : ["Cristo","Jesucristo","Hijo"],
         "per20" : ["Satanás"],
+        "per17" : ["Espíritu"],
     }
     for key,values in variaciones_comunes.items():
         for value in values:
@@ -45,7 +46,7 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["type"] == "person" and row["order-edition"] == book) or (row["order-edition"] == book) or (row["type"] == "person" and row["order-edition"] == "JOB"):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["type"] == "person" and row["order-edition"] == book) or (row["order-edition"] == book) or (row["type"] == "person" and row["book"] == "NT"):
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         
     return content
@@ -182,8 +183,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/JOB.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/JAM.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "JOB",
-    genre = "book"
+    "JAM",
+    genre = "letter"
     )
