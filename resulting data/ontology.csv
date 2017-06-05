@@ -116,8 +116,8 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per114	Cleofas				NT		male	Kleopas	Cleofas	person	human	defined		JOH
 #per115	María	Mujer de Cleofas			NT		female	Maria	Maria	person	human	defined		JOH
 #per116	Antipas				NT		male	Antipas	Antipas	person	human	defined		JOH
-#per117	Balaam				NT		male	Bileam	Balaão	person	human	defined		REV
-#per118	Balac				NT		male	Balack	Balaque	person	human	defined		REV
+#per117	Silvano			antes Balaam	NT		male			person	human	defined		1PE
+#per118	Marcos	hijo de Pedro		antes Balac	NT		male			person	human	defined		1PE
 #per119	Jezabel				NT		female			person	human	defined		REV
 #per120	Gad	jefe de tribu			AT		male	Gad		person	human	defined	1	REV
 #per121	Aser	jefe de tribu			AT		male	Aser		person	human	defined	1	REV
@@ -637,9 +637,9 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per635	Miqueas	profeta			AT		male			person	human	defined		MIC
 #per636	Moreset-gat				AT		male			person	human	defined		MIC
 #per637	Aczib				AT		male			person	human	defined		MIC
-#per638	Balac	rey de Moab			AT	medium	male			person	human	defined		MIC
-#per639	Balaam				AT		male			person	human	defined		MIC
-#per640	Beor				AT		male			person	human	defined		MIC
+#per638	Balac	rey de Moab			AT	medium	male			person	human	defined	1	MIC
+#per639	Balaam				AT		male			person	human	defined	1	MIC
+#per640	Beor				AT		male			person	human	defined	1	MIC
 #per641	Omri				AT		male			person	human	defined		MIC
 #per642	Acab	rey de Israel			AT		male			person	human	defined	1	MIC
 #per643	Nahúm	profeta			AT		male			person	human	defined	1	NAH
@@ -852,11 +852,11 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per850	Jemima	hija de Job			AT		female			person	human	defined		JOB
 #per851	Elifaz	amigo de Job			AT		male			person	human	defined		JOB
 #per852	padre de Job				AT		male			person	human	defined		JOB
-#per853	madre de Job				AT		male			person	human	defined		JOB
+#per853	madre de Job				AT		female			person	human	defined		JOB
 #per854	Eliú				AT		male			person	human	defined		JOB
 #per855	Cesia	hija de Job			AT		female			person	human	defined		JOB
 #per856	Baraquel	padre de Eliú			AT		male			person	human	defined		JOB
-														
+#per857	Rahab	prostituta en tiempos de Josué			AT		female			person	human	defined		JAM
 														
 														
 														
@@ -1064,7 +1064,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org167	familia de Job									group	human	defined		JOB
 #org168	criados de Job									group	human	defined		JOB
 #org169	amigos de Job									group	human	defined		JOB
-														
+#org170	ancianos de iglesia									group	human	defined		1PE
 														
 														
 														
@@ -1484,7 +1484,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla412	Hodsi									place	human			2SA
 #pla413	Danjaán									place	human			2SA
 #pla414	Uz									place	human			JOB
-#pla415	Ram													
+#pla415	Ram									place	human			JOB
 														
 														
 														
@@ -1560,3 +1560,4 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #wor6	Salmos									work				
 #wor7	tablas de la ley		mandamientos							work				EXO
 #wor8	libro de Habacuc									work				
+#wor9	cartas de Pablo									work				2PE

@@ -4,147 +4,290 @@
 <?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Santiago</title>
-                <title type="idno">
-                    <idno type="string">JAM</idno>
-                    <idno type="viaf"></idno>
-                </title>
-                <author>
-                    <name type="short"></name>
-                    <name type="full"></name>
-                    <idno type="viaf"></idno>
-                </author>
-                <principal key="#jct">José Calvo Tello</principal>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>José Calvo Tello</publisher>
-                <availability status="free">
-                    <p>The text is freely available.</p>
-                </availability>
-                <date when="2017">2017</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
-                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
-                <bibl type="edition-first"><date when="1569">1569</date></bibl>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p></p>
-        </encodingDesc>
-        <revisionDesc>
-            <change when="2017-05-26" who="#jct">First version of James</change>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-    <body>
-<div xml:id="b.JAM" type="book">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Santiago</title>
+				<title type="idno">
+					<idno type="string">JAM</idno>
+					<idno type="viaf">182251478</idno>
+				</title>
+				<author>
+					<name type="short"></name>
+					<name type="full"></name>
+					<idno type="viaf"></idno>
+				</author>
+				<principal key="#jct">José Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>José Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2017">2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2017-05-26" who="#jct">First version of James</change>
+			<change when="2017-06-05" who="#jct">Manuel correction finished. Metadata added.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div xml:id="b.JAM" type="book" cert="high">
 
-<div xml:id="b.JAM.1" type="chapter" n="1" cert="high">
-<div type="pericope">
-    <ab xml:id="b.JAM.1.1" type="verse" n="1"><rs key="per31">Santiago</rs>, <rs key="per31">siervo de <rs key="#per14">Dios</rs> y del <rs key="per1">Señor</rs> <rs key="per1">Jesucristo</rs></rs>, a las <rs key="org22" cert="medium">doce tribus</rs> que están en la dispersión: Salud.</ab>
-</div>
-    <div type="pericope">
-        <head type="pericope">La sabiduría que viene de Dios</head>
-        <ab xml:id="b.JAM.1.2" type="verse" n="2"><rs key="org22" cert="medium">Hermanos</rs> míos, gozaos profundamente cuando os halléis en diversas pruebas,</ab>
-<ab xml:id="b.JAM.1.3" type="verse" n="3">sabiendo que la prueba de vuestra fe produce paciencia.</ab>
-<ab xml:id="b.JAM.1.4" type="verse" n="4">Pero tenga la paciencia su obra completa, para que seáis perfectos y cabales, sin que os falte cosa alguna.</ab>
-<ab xml:id="b.JAM.1.5" type="verse" n="5">Si alguno de vosotros tiene falta de sabiduría, pídala a <rs key="#per14">Dios</rs>, el cual da a todos abundantemente y sin reproche, y le será dada.</ab>
-<ab xml:id="b.JAM.1.6" type="verse" n="6">Pero pida con fe, no dudando nada, porque el que duda es semejante a la <rs key="org19">onda del mar</rs>, que es arrastrada por el viento y echada de una parte a otra.</ab>
-        <ab xml:id="b.JAM.1.7" type="verse" n="7">No piense, pues, quien tal haga, que recibirá cosa alguna del <rs key="per1">Señor</rs>,</ab>
-        <ab xml:id="b.JAM.1.8" type="verse" n="8">ya que es <rs key="org19">persona de doble ánimo e inconstante en todos sus caminos</rs>.</ab>
-<ab xml:id="b.JAM.1.9" type="verse" n="9">El <rs key="org18">hermano</rs> que es de humilde condición, gloríese en su exaltación;</ab>
-        <ab xml:id="b.JAM.1.10" type="verse" n="10">pero el que es <rs key="org100">rico</rs>, en su humillación, porque él pasará como la <rs key="org100">flor de la hierba</rs>.</ab>
-        <ab xml:id="b.JAM.1.11" type="verse" n="11">Cuando sale el sol con calor abrasador, la hierba se seca, su flor se cae y perece su hermosa apariencia. Así también se marchitará el <rs key="org100">rico</rs> en todas sus empresas.</ab>
-    </div>
-    <div type="pericope">
-        <head type="pericope">Victoria en la prueba</head>
-        <ab xml:id="b.JAM.1.12" type="verse" n="12">Bienaventurado el <rs key="org18">hombre</rs> que soporta la tentación, porque cuando haya resistido la prueba, recibirá la corona de vida que <rs key="#per14">Dios</rs> ha prometido a los que lo aman.</ab>
-<ab xml:id="b.JAM.1.13" type="verse" n="13">Cuando alguno es tentado no diga que es tentado de parte de <rs key="#per14">Dios</rs>, porque <rs key="#per14">Dios</rs> no puede ser tentado por el mal ni él tienta a nadie;</ab>
-<ab xml:id="b.JAM.1.14" type="verse" n="14">sino que cada uno es tentado, cuando de su propia pasión es atraído y seducido.</ab>
-<ab xml:id="b.JAM.1.15" type="verse" n="15">Entonces la pasión, después que ha concebido, da a luz el pecado; y el pecado, siendo consumado, da a luz la muerte.</ab>
-<ab xml:id="b.JAM.1.16" type="verse" n="16"><rs key="org22">hermanos Amados </rs> míos, no erréis.</ab>
-<ab xml:id="b.JAM.1.17" type="verse" n="17">Toda buena dádiva y todo don perfecto desciende de lo alto, del <rs key="per14">Padre de las luces</rs>, en el cual no hay mudanza ni sombra de variación.</ab>
-<ab xml:id="b.JAM.1.18" type="verse" n="18">Él, de su voluntad, nos hizo nacer por la palabra de verdad, para que seamos <rs key="org18">primicias de sus criaturas</rs>.</ab>
-    </div>
-    <div type="pericope">
-        <head type="pericope">Hacedores de la palabra</head>
-        <ab xml:id="b.JAM.1.19" type="verse" n="19">Por esto, mis <rs key="org22">amados hermanos</rs>, todo <rs key="org0">hombre</rs> sea pronto para oir, tardo para hablar, tardo para airarse,</ab>
-        <ab xml:id="b.JAM.1.20" type="verse" n="20">porque la ira del <rs key="org0">hombre</rs> no obra la justicia de <rs key="#per14">Dios</rs>.</ab>
-<ab xml:id="b.JAM.1.21" type="verse" n="21">Por lo cual, desechando toda inmundicia y abundancia de malicia, recibid con mansedumbre la palabra implantada, la cual puede salvar vuestras almas.</ab>
-        <ab xml:id="b.JAM.1.22" type="verse" n="22">Sed <rs key="org18">hacedores de la palabra</rs> y no tan solamente <rs key="org18">oidores</rs>, engañándoos a vosotros mismos.</ab>
-        <ab xml:id="b.JAM.1.23" type="verse" n="23">Si alguno es <rs key="org18">oidor de la palabra</rs> pero no <rs key="org18">hacedor</rs> de ella, ese es semejante al <rs key="org18">hombre</rs> que considera en un espejo su rostro natural;</ab>
-<ab xml:id="b.JAM.1.24" type="verse" n="24">él se considera a sí mismo y se va, y pronto olvida cómo era.</ab>
-        <ab xml:id="b.JAM.1.25" type="verse" n="25">Pero el que mira atentamente en la perfecta ley, la de la libertad, y persevera en ella, no siendo oidor olvidadizo sino <rs key="org18">hacedor de la obra</rs>, este será bienaventurado en lo que hace.</ab>
-<ab xml:id="b.JAM.1.26" type="verse" n="26">Si alguno se cree religioso entre vosotros, pero no refrena su lengua, sino que engaña su corazón, la religión del tal es vana.</ab>
-        <ab xml:id="b.JAM.1.27" type="verse" n="27">La religión pura y sin mancha delante de <rs key="#per14">Dios</rs> el <rs key="per14">Padre</rs> es esta: visitar a los <rs key="org102">huérfanos</rs> y a las <rs key="org102">viudas</rs> en sus tribulaciones y guardarse sin mancha del <rs key="org0">mundo</rs>.</ab>
-</div>
-</div>
-<div xml:id="b.JAM.2" type="chapter" n="2" cert="high">
-<div type="pericope">
-    <head type="pericope">Amonestación contra la parcialidad</head>
-    <ab xml:id="b.JAM.2.1" type="verse" n="1"><rs key="org22">Hermanos</rs> míos, que vuestra fe en nuestro <rs key="per1">glorioso Señor</rs> <rs key="per1">Jesucristo</rs> sea sin acepción de <rs key="org0">personas</rs>.</ab>
-    <ab xml:id="b.JAM.2.2" type="verse" n="2">Si en vuestra <rs key="org37">congregación</rs> entra un <rs key="org100">hombre con anillo de oro y ropa espléndida</rs>, y también entra un <rs key="org102">pobre con vestido andrajoso</rs>,</ab>
-    <ab xml:id="b.JAM.2.3" type="verse" n="3">y miráis con agrado al que trae la ropa espléndida y le decís: <q who="org22" corresp="org100" type="soCalled">«Siéntate tú aquí, en buen lugar»</q>, y decís al <rs key="org102">pobre</rs>: <q who="org22" corresp="org102" type="soCalled">«Quédate tú allí de pie»</q>, o <q who="org22" corresp="org102" type="soCalled">«Siéntate aquí en el suelo»</q>,</ab>
-<ab xml:id="b.JAM.2.4" type="verse" n="4">¿no hacéis distinciones entre vosotros mismos y venís a ser <rs key="#org22">jueces con malos pensamientos</rs>?</ab>
-    <ab xml:id="b.JAM.2.5" type="verse" n="5"><rs key="org22">Hermanos</rs> míos amados, oíd: ¿No ha elegido <rs key="#per14">Dios</rs> a los <rs key="#org102">pobres de este mundo</rs>, para que sean <rs key="#org102">ricos en fe</rs> y <rs key="#org102">herederos del reino</rs> que ha prometido a los que lo aman?</ab>
-    <ab xml:id="b.JAM.2.6" type="verse" n="6">Pero vosotros habéis afrentado al <rs key="#org102">pobre</rs>. ¿No os oprimen los <rs key="#org100">ricos</rs> y no son ellos los mismos que os arrastran a los tribunales?</ab>
-<ab xml:id="b.JAM.2.7" type="verse" n="7">¿No blasfeman ellos el buen nombre que fue invocado sobre vosotros?</ab>
-    <ab xml:id="b.JAM.2.8" type="verse" n="8">Si en verdad cumplís la <rs key="wor1">Ley suprema</rs>, conforme a la <rs key="wor1">Escritura</rs>: <q who="org14" corresp="org0" type="written" source="wor1">«Amarás a tu prójimo como a ti mismo»</q>, bien hacéis;</ab>
-<ab xml:id="b.JAM.2.9" type="verse" n="9">pero si hacéis acepción de <rs key="org0">personas</rs>, cometéis pecado y quedáis convictos por la <rs key="wor1">Ley</rs> como <rs key="org22">transgresores</rs>,</ab>
-    <ab xml:id="b.JAM.2.10" type="verse" n="10">porque cualquiera que guarde toda la <rs key="wor1">Ley</rs>, pero ofenda en un punto, se hace culpable de todos,</ab>
-    <ab xml:id="b.JAM.2.11" type="verse" n="11">pues el que dijo: <q who="org14" corresp="org0" type="written" source="wor1">«No cometerás adulterio»</q>, también ha dicho: <q who="org14" corresp="org0" type="written" source="wor1">«No matarás»</q>. Ahora bien, si no cometes adulterio, pero matas, ya te has hecho <rs key="org22">transgresor de la <rs key="wor1">Ley</rs></rs>.</ab>
-<ab xml:id="b.JAM.2.12" type="verse" n="12">Así hablad y así haced, como los que habéis de ser juzgados por la ley de la libertad,</ab>
-<ab xml:id="b.JAM.2.13" type="verse" n="13">porque juicio sin misericordia se hará con aquel que no haga misericordia; y la misericordia triunfa sobre el juicio.</ab>
-</div>
-    <div>
-        <head>La fe sin obras está muerta</head>
-    <ab xml:id="b.JAM.2.14" type="verse" n="14"><rs key="org22">Hermanos</rs> míos, ¿de qué aprovechará si alguno dice que tiene fe y no tiene obras? ¿Podrá la fe salvarlo?</ab>
-        <ab xml:id="b.JAM.2.15" type="verse" n="15">Y si un <rs key="org18">hermano</rs> o una <rs key="org18">hermana</rs> están desnudos y tienen necesidad del mantenimiento de cada día,</ab>
-        <ab xml:id="b.JAM.2.16" type="verse" n="16">y alguno de vosotros les dice: <q who="org22" corresp="org18" type="soCalled">«Id en paz, calentaos y saciaos»</q>, pero no les dais las cosas que son necesarias para el cuerpo, ¿de qué aprovecha?</ab>
-<ab xml:id="b.JAM.2.17" type="verse" n="17">Así también la fe, si no tiene obras, está completamente muerta.</ab>
-        <ab xml:id="b.JAM.2.18" type="verse" n="18">Pero alguno dirá: <q who="org22" corresp="org18" type="soCalled">«Tú tienes fe y yo tengo obras. Muéstrame tu fe sin tus obras y yo te mostraré mi fe por mis obras»</q>.</ab>
-<ab xml:id="b.JAM.2.19" type="verse" n="19">Tú crees que <rs key="#per14">Dios</rs> es uno; bien haces. También los <rs key="#org6">demonios</rs> creen, y tiemblan.</ab>
-<ab xml:id="b.JAM.2.20" type="verse" n="20">¿Pero quieres saber, <rs key="org22">hombre vano</rs>, que la fe sin obras está muerta?</ab>
-        <ab xml:id="b.JAM.2.21" type="verse" n="21">¿No fue justificado por las obras <rs key="#per2">Abraham</rs> nuestro <rs key="per2">padre</rs>, cuando ofreció a su <rs key="#per3">hijo</rs> <rs key="#per3">Isaac</rs> sobre el altar?</ab>
-<ab xml:id="b.JAM.2.22" type="verse" n="22">¿No ves que la fe actuó juntamente con sus obras y que la fe se perfeccionó por las obras?</ab>
-        <ab xml:id="b.JAM.2.23" type="verse" n="23">Y se cumplió la <rs key="wor1">Escritura</rs> que dice: <q who="org0" corresp="org0" type="written" source="work1">«<rs key="#per2">Abraham</rs> creyó a <rs key="#per14">Dios</rs> y le fue contado por justicia»</q>, y fue llamado <rs key="#per2">amigo de <rs key="#per14">Dios</rs></rs>.</ab>
-<ab xml:id="b.JAM.2.24" type="verse" n="24">Vosotros veis, pues, que el <rs key="org0">hombre</rs> es justificado por las obras y no solamente por la fe.</ab>
-        <ab xml:id="b.JAM.2.25" type="verse" n="25">Asimismo, <rs key="per857">Rahab</rs>, la <rs key="per857">ramera</rs>, ¿no fue acaso justificada por obras, cuando recibió a los <rs key="per503">mensajeros</rs> y los envió por otro camino?</ab>
-<ab xml:id="b.JAM.2.26" type="verse" n="26">Así como el cuerpo sin espíritu está muerto, también la fe sin obras está muerta.</ab>
+				<div xml:id="b.JAM.1" type="chapter" n="1">
+					<div type="pericope">
+						<ab xml:id="b.JAM.1.1" type="verse" n="1">
+							<rs key="#per31">Santiago</rs>, <rs key="#per31">siervo de <rs key="#per14">Dios</rs> y del <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs></rs>, a las <rs key="#org22" cert="medium">doce tribus</rs> que están en la dispersión: Salud.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La sabiduría que viene de Dios</head>
+						<ab xml:id="b.JAM.1.2" type="verse" n="2">
+							<rs key="#org22" cert="medium">Hermanos</rs> míos, gozaos profundamente cuando os halléis en diversas pruebas,
+						</ab>
+						<ab xml:id="b.JAM.1.3" type="verse" n="3">
+							sabiendo que la prueba de vuestra fe produce paciencia.
+						</ab>
+						<ab xml:id="b.JAM.1.4" type="verse" n="4">
+							Pero tenga la paciencia su obra completa, para que seáis perfectos y cabales, sin que os falte cosa alguna.
+						</ab>
+						<ab xml:id="b.JAM.1.5" type="verse" n="5">
+							Si alguno de vosotros tiene falta de sabiduría, pídala a <rs key="#per14">Dios</rs>, el cual da a todos abundantemente y sin reproche, y le será dada.
+						</ab>
+						<ab xml:id="b.JAM.1.6" type="verse" n="6">
+							Pero pida con fe, no dudando nada, porque el que duda es semejante a la <rs key="#org19">onda del mar</rs>, que es arrastrada por el viento y echada de una parte a otra.
+						</ab>
+						<ab xml:id="b.JAM.1.7" type="verse" n="7">
+							No piense, pues, quien tal haga, que recibirá cosa alguna del <rs key="#per1">Señor</rs>,
+						</ab>
+						<ab xml:id="b.JAM.1.8" type="verse" n="8">
+							ya que es <rs key="#org19">persona de doble ánimo e inconstante en todos sus caminos</rs>.
+						</ab>
+						<ab xml:id="b.JAM.1.9" type="verse" n="9">
+							El <rs key="#org18">hermano</rs> que es de humilde condición, gloríese en su exaltación;
+						</ab>
+						<ab xml:id="b.JAM.1.10" type="verse" n="10">
+							pero el que es <rs key="#org100">rico</rs>, en su humillación, porque él pasará como la <rs key="#org100">flor de la hierba</rs>.
+						</ab>
+						<ab xml:id="b.JAM.1.11" type="verse" n="11">
+							Cuando sale el sol con calor abrasador, la hierba se seca, su flor se cae y perece su hermosa apariencia. Así también se marchitará el <rs key="#org100">rico</rs> en todas sus empresas.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Victoria en la prueba</head>
+						<ab xml:id="b.JAM.1.12" type="verse" n="12">
+							Bienaventurado el <rs key="#org18">hombre</rs> que soporta la tentación, porque cuando haya resistido la prueba, recibirá la corona de vida que <rs key="#per14">Dios</rs> ha prometido a los que lo aman.
+						</ab>
+						<ab xml:id="b.JAM.1.13" type="verse" n="13">
+							Cuando alguno es tentado no diga que es tentado de parte de <rs key="#per14">Dios</rs>, porque <rs key="#per14">Dios</rs> no puede ser tentado por el mal ni él tienta a nadie;
+						</ab>
+						<ab xml:id="b.JAM.1.14" type="verse" n="14">
+							sino que cada uno es tentado, cuando de su propia pasión es atraído y seducido.
+						</ab>
+						<ab xml:id="b.JAM.1.15" type="verse" n="15">
+							Entonces la pasión, después que ha concebido, da a luz el pecado; y el pecado, siendo consumado, da a luz la muerte.
+						</ab>
+						<ab xml:id="b.JAM.1.16" type="verse" n="16">
+							<rs key="#org22">hermanos Amados </rs> míos, no erréis.
+						</ab>
+						<ab xml:id="b.JAM.1.17" type="verse" n="17">
+							Toda buena dádiva y todo don perfecto desciende de lo alto, del <rs key="#per14">Padre de las luces</rs>, en el cual no hay mudanza ni sombra de variación.
+						</ab>
+						<ab xml:id="b.JAM.1.18" type="verse" n="18">
+							Él, de su voluntad, nos hizo nacer por la palabra de verdad, para que seamos <rs key="#org18">primicias de sus criaturas</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Hacedores de la palabra</head>
+						<ab xml:id="b.JAM.1.19" type="verse" n="19">
+							Por esto, mis <rs key="#org22">amados hermanos</rs>, todo <rs key="#org0">hombre</rs> sea pronto para oir, tardo para hablar, tardo para airarse,
+						</ab>
+						<ab xml:id="b.JAM.1.20" type="verse" n="20">
+							porque la ira del <rs key="#org0">hombre</rs> no obra la justicia de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.JAM.1.21" type="verse" n="21">
+							Por lo cual, desechando toda inmundicia y abundancia de malicia, recibid con mansedumbre la palabra implantada, la cual puede salvar vuestras almas.
+						</ab>
+						<ab xml:id="b.JAM.1.22" type="verse" n="22">
+							Sed <rs key="#org18">hacedores de la palabra</rs> y no tan solamente <rs key="#org18">oidores</rs>, engañándoos a vosotros mismos.
+						</ab>
+						<ab xml:id="b.JAM.1.23" type="verse" n="23">
+							Si alguno es <rs key="#org18">oidor de la palabra</rs> pero no <rs key="#org18">hacedor</rs> de ella, ese es semejante al <rs key="#org18">hombre</rs> que considera en un espejo su rostro natural;
+						</ab>
+						<ab xml:id="b.JAM.1.24" type="verse" n="24">
+							él se considera a sí mismo y se va, y pronto olvida cómo era.
+						</ab>
+						<ab xml:id="b.JAM.1.25" type="verse" n="25">
+							Pero el que mira atentamente en la perfecta ley, la de la libertad, y persevera en ella, no siendo oidor olvidadizo sino <rs key="#org18">hacedor de la obra</rs>, este será bienaventurado en lo que hace.
+						</ab>
+						<ab xml:id="b.JAM.1.26" type="verse" n="26">
+							Si alguno se cree religioso entre vosotros, pero no refrena su lengua, sino que engaña su corazón, la religión del tal es vana.
+						</ab>
+						<ab xml:id="b.JAM.1.27" type="verse" n="27">
+							La religión pura y sin mancha delante de <rs key="#per14">Dios</rs> el <rs key="#per14">Padre</rs> es esta: visitar a los <rs key="#org102">huérfanos</rs> y a las <rs key="#org102">viudas</rs> en sus tribulaciones y guardarse sin mancha del <rs key="#org0">mundo</rs>.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.JAM.2" type="chapter" n="2">
+					<div type="pericope">
+						<head type="pericope">Amonestación contra la parcialidad</head>
+						<ab xml:id="b.JAM.2.1" type="verse" n="1">
+							<rs key="#org22">Hermanos</rs> míos, que vuestra fe en nuestro <rs key="#per1">glorioso Señor</rs> <rs key="#per1">Jesucristo</rs> sea sin acepción de <rs key="#org0">personas</rs>.
+						</ab>
+						<ab xml:id="b.JAM.2.2" type="verse" n="2">
+							Si en vuestra <rs key="#org37">congregación</rs> entra un <rs key="#org100">hombre con anillo de oro y ropa espléndida</rs>, y también entra un <rs key="#org102">pobre con vestido andrajoso</rs>,
+						</ab>
+						<ab xml:id="b.JAM.2.3" type="verse" n="3">
+							y miráis con agrado al que trae la ropa espléndida y le decís: <q who="#org22" corresp="#org100" type="soCalled">«Siéntate tú aquí, en buen lugar»</q>, y decís al <rs key="#org102">pobre</rs>: <q who="#org22" corresp="#org102" type="soCalled">«Quédate tú allí de pie»</q>, o <q who="#org22" corresp="#org102" type="soCalled">«Siéntate aquí en el suelo»</q>,
+						</ab>
+						<ab xml:id="b.JAM.2.4" type="verse" n="4">
+							¿no hacéis distinciones entre vosotros mismos y venís a ser <rs key="#org22">jueces con malos pensamientos</rs>?
+						</ab>
+						<ab xml:id="b.JAM.2.5" type="verse" n="5">
+							<rs key="#org22">Hermanos</rs> míos amados, oíd: ¿No ha elegido <rs key="#per14">Dios</rs> a los <rs key="#org102">pobres de este mundo</rs>, para que sean <rs key="#org102">ricos en fe</rs> y <rs key="#org102">herederos del reino</rs> que ha prometido a los que lo aman?
+						</ab>
+						<ab xml:id="b.JAM.2.6" type="verse" n="6">
+							Pero vosotros habéis afrentado al <rs key="#org102">pobre</rs>. ¿No os oprimen los <rs key="#org100">ricos</rs> y no son ellos los mismos que os arrastran a los tribunales?
+						</ab>
+						<ab xml:id="b.JAM.2.7" type="verse" n="7">
+							¿No blasfeman ellos el buen nombre que fue invocado sobre vosotros?
+						</ab>
+						<ab xml:id="b.JAM.2.8" type="verse" n="8">
+							Si en verdad cumplís la <rs key="#wor1">Ley suprema</rs>, conforme a la <rs key="#wor1">Escritura</rs>: <q who="#org14" corresp="#org0" type="written" source="wor1">«Amarás a tu prójimo como a ti mismo»</q>, bien hacéis;
+						</ab>
+						<ab xml:id="b.JAM.2.9" type="verse" n="9">
+							pero si hacéis acepción de <rs key="#org0">personas</rs>, cometéis pecado y quedáis convictos por la <rs key="#wor1">Ley</rs> como <rs key="#org22">transgresores</rs>,
+						</ab>
+						<ab xml:id="b.JAM.2.10" type="verse" n="10">
+							porque cualquiera que guarde toda la <rs key="#wor1">Ley</rs>, pero ofenda en un punto, se hace culpable de todos,
+						</ab>
+						<ab xml:id="b.JAM.2.11" type="verse" n="11">
+							pues el que dijo: <q who="#org14" corresp="#org0" type="written" source="wor1">«No cometerás adulterio»</q>, también ha dicho: <q who="#org14" corresp="#org0" type="written" source="wor1">«No matarás»</q>. Ahora bien, si no cometes adulterio, pero matas, ya te has hecho <rs key="#org22">transgresor de la <rs key="#wor1">Ley</rs></rs>.
+						</ab>
+						<ab xml:id="b.JAM.2.12" type="verse" n="12">
+							Así hablad y así haced, como los que habéis de ser juzgados por la ley de la libertad,
+						</ab>
+						<ab xml:id="b.JAM.2.13" type="verse" n="13">
+							porque juicio sin misericordia se hará con aquel que no haga misericordia; y la misericordia triunfa sobre el juicio.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La fe sin obras está muerta</head>
+						<ab xml:id="b.JAM.2.14" type="verse" n="14">
+							<rs key="#org22">Hermanos</rs> míos, ¿de qué aprovechará si alguno dice que tiene fe y no tiene obras? ¿Podrá la fe salvarlo?
+						</ab>
+						<ab xml:id="b.JAM.2.15" type="verse" n="15">
+							Y si un <rs key="#org18">hermano</rs> o una <rs key="#org18">hermana</rs> están desnudos y tienen necesidad del mantenimiento de cada día,
+						</ab>
+						<ab xml:id="b.JAM.2.16" type="verse" n="16">
+							y alguno de vosotros les dice: <q who="#org22" corresp="#org18" type="soCalled">«Id en paz, calentaos y saciaos»</q>, pero no les dais las cosas que son necesarias para el cuerpo, ¿de qué aprovecha?
+						</ab>
+						<ab xml:id="b.JAM.2.17" type="verse" n="17">
+							Así también la fe, si no tiene obras, está completamente muerta.
+						</ab>
+						<ab xml:id="b.JAM.2.18" type="verse" n="18">
+							Pero alguno dirá: <q who="#org22" corresp="#org18" type="soCalled">«Tú tienes fe y yo tengo obras. Muéstrame tu fe sin tus obras y yo te mostraré mi fe por mis obras»</q>.
+						</ab>
+						<ab xml:id="b.JAM.2.19" type="verse" n="19">
+							Tú crees que <rs key="#per14">Dios</rs> es uno; bien haces. También los <rs key="#org6">demonios</rs> creen, y tiemblan.
+						</ab>
+						<ab xml:id="b.JAM.2.20" type="verse" n="20">
+							¿Pero quieres saber, <rs key="#org22">hombre vano</rs>, que la fe sin obras está muerta?
+						</ab>
+						<ab xml:id="b.JAM.2.21" type="verse" n="21">
+							¿No fue justificado por las obras <rs key="#per2">Abraham</rs> nuestro <rs key="#per2">padre</rs>, cuando ofreció a su <rs key="#per3">hijo</rs> <rs key="#per3">Isaac</rs> sobre el altar?
+						</ab>
+						<ab xml:id="b.JAM.2.22" type="verse" n="22">
+							¿No ves que la fe actuó juntamente con sus obras y que la fe se perfeccionó por las obras?
+						</ab>
+						<ab xml:id="b.JAM.2.23" type="verse" n="23">
+							Y se cumplió la <rs key="#wor1">Escritura</rs> que dice: <q who="#org0" corresp="#org0" type="written" source="work1">«<rs key="#per2">Abraham</rs> creyó a <rs key="#per14">Dios</rs> y le fue contado por justicia»</q>, y fue llamado <rs key="#per2">amigo de <rs key="#per14">Dios</rs></rs>.
+						</ab>
+						<ab xml:id="b.JAM.2.24" type="verse" n="24">
+							Vosotros veis, pues, que el <rs key="#org0">hombre</rs> es justificado por las obras y no solamente por la fe.
+						</ab>
+						<ab xml:id="b.JAM.2.25" type="verse" n="25">
+							Asimismo, <rs key="#per857">Rahab</rs>, la <rs key="#per857">ramera</rs>, ¿no fue acaso justificada por obras, cuando recibió a los <rs key="#per503">mensajeros</rs> y los envió por otro camino?
+						</ab>
+						<ab xml:id="b.JAM.2.26" type="verse" n="26">
+							Así como el cuerpo sin espíritu está muerto, también la fe sin obras está muerta.
+						</ab>
 
-</div>
-</div>
-<div xml:id="b.JAM.3" type="chapter" n="3" cert="high">
-<div type="pericope">
-    <head type="pericope">La lengua</head>
-    <ab xml:id="b.JAM.3.1" type="verse" n="1"><rs key="org22">Hermanos</rs> míos, no os hagáis <rs key="org22">maestros</rs> muchos de vosotros, sabiendo que recibiremos mayor condenación.</ab>
-    <ab xml:id="b.JAM.3.2" type="verse" n="2">Todos ofendemos muchas veces. Si alguno no ofende de palabra, es una <rs key="org18">persona perfecta</rs>, capaz también de refrenar todo el cuerpo.</ab>
-<ab xml:id="b.JAM.3.3" type="verse" n="3">He aquí nosotros ponemos freno en la boca de los caballos para que nos obedezcan y dirigimos así todo su cuerpo.</ab>
-<ab xml:id="b.JAM.3.4" type="verse" n="4">Mirad también las naves: aunque tan grandes y llevadas de impetuosos vientos, son gobernadas con un muy pequeño timón por donde el que las gobierna quiere.</ab>
-<ab xml:id="b.JAM.3.5" type="verse" n="5">Así también la lengua es un miembro pequeño, pero se jacta de grandes cosas. He aquí, ¡cuán grande bosque enciende un pequeño fuego!</ab>
-<ab xml:id="b.JAM.3.6" type="verse" n="6">Y la lengua es un fuego, un mundo de maldad. La lengua está puesta entre nuestros miembros, y contamina todo el cuerpo e inflama la rueda de la creación, y ella misma es inflamada por el <rs key="#pla15">infierno</rs>.</ab>
-<ab xml:id="b.JAM.3.7" type="verse" n="7">Toda naturaleza de bestias, de aves, de serpientes y de seres del mar, se doma y ha sido domada por la naturaleza humana;</ab>
-<ab xml:id="b.JAM.3.8" type="verse" n="8">pero ningún <rs key="org0">hombre</rs> puede domar la lengua, que es un mal que no puede ser refrenado, llena de veneno mortal.</ab>
-<ab xml:id="b.JAM.3.9" type="verse" n="9">Con ella bendecimos al <rs key="#per14">Dios</rs> y <rs key="per14">Padre</rs> y con ella maldecimos a los <rs key="org0">hombres</rs>, que están hechos a la semejanza de <rs key="#per14">Dios</rs>.</ab>
-<ab xml:id="b.JAM.3.10" type="verse" n="10">De una misma boca proceden bendición y maldición. <rs key="org22">Hermanos</rs> míos, esto no debe ser así.</ab>
-<ab xml:id="b.JAM.3.11" type="verse" n="11">¿Acaso alguna fuente echa por una misma abertura agua dulce y amarga?</ab>
-    <ab xml:id="b.JAM.3.12" type="verse" n="12"><rs key="org22">Hermanos</rs> míos, ¿puede acaso la higuera producir aceitunas, o la vid higos? Del mismo modo, ninguna fuente puede dar agua salada y dulce.,</ab>
-</div>
-    <div>
-        <head>La sabiduría de lo alto</head>
-    <ab xml:id="b.JAM.3.13" type="verse" n="13">¿Quién es sabio y entendido entre vosotros? Muestre por la buena conducta sus obras en sabia mansedumbre.</ab>
-<ab xml:id="b.JAM.3.14" type="verse" n="14">Pero si tenéis celos amargos y rivalidad en vuestro corazón, no os jactéis ni mintáis contra la verdad.</ab>
-<ab xml:id="b.JAM.3.15" type="verse" n="15">No es esta la sabiduría que desciende de lo alto, sino que es terrenal, animal, diabólica,</ab>
-<ab xml:id="b.JAM.3.16" type="verse" n="16">pues donde hay celos y rivalidad, allí hay perturbación y toda obra perversa.</ab>
-<ab xml:id="b.JAM.3.17" type="verse" n="17">Pero la sabiduría que es de lo alto es primeramente pura, después pacífica, amable, benigna, llena de misericordia y de buenos frutos, sin incertidumbre ni hipocresía.</ab>
-<ab xml:id="b.JAM.3.18" type="verse" n="18">Y el fruto de justicia se siembra en paz para aquellos que hacen la paz.</ab>
-</div>
-</div>
-</div>
-</body>
-    </text>
+					</div>
+				</div>
+				<div xml:id="b.JAM.3" type="chapter" n="3">
+					<div type="pericope">
+						<head type="pericope">La lengua</head>
+						<ab xml:id="b.JAM.3.1" type="verse" n="1">
+							<rs key="#org22">Hermanos</rs> míos, no os hagáis <rs key="#org22">maestros</rs> muchos de vosotros, sabiendo que recibiremos mayor condenación.
+						</ab>
+						<ab xml:id="b.JAM.3.2" type="verse" n="2">
+							Todos ofendemos muchas veces. Si alguno no ofende de palabra, es una <rs key="#org18">persona perfecta</rs>, capaz también de refrenar todo el cuerpo.
+						</ab>
+						<ab xml:id="b.JAM.3.3" type="verse" n="3">
+							He aquí nosotros ponemos freno en la boca de los caballos para que nos obedezcan y dirigimos así todo su cuerpo.
+						</ab>
+						<ab xml:id="b.JAM.3.4" type="verse" n="4">
+							Mirad también las naves: aunque tan grandes y llevadas de impetuosos vientos, son gobernadas con un muy pequeño timón por donde el que las gobierna quiere.
+						</ab>
+						<ab xml:id="b.JAM.3.5" type="verse" n="5">
+							Así también la lengua es un miembro pequeño, pero se jacta de grandes cosas. He aquí, ¡cuán grande bosque enciende un pequeño fuego!
+						</ab>
+						<ab xml:id="b.JAM.3.6" type="verse" n="6">
+							Y la lengua es un fuego, un mundo de maldad. La lengua está puesta entre nuestros miembros, y contamina todo el cuerpo e inflama la rueda de la creación, y ella misma es inflamada por el <rs key="#pla15">infierno</rs>.
+						</ab>
+						<ab xml:id="b.JAM.3.7" type="verse" n="7">
+							Toda naturaleza de bestias, de aves, de serpientes y de seres del mar, se doma y ha sido domada por la naturaleza humana;
+						</ab>
+						<ab xml:id="b.JAM.3.8" type="verse" n="8">
+							pero ningún <rs key="#org0">hombre</rs> puede domar la lengua, que es un mal que no puede ser refrenado, llena de veneno mortal.
+						</ab>
+						<ab xml:id="b.JAM.3.9" type="verse" n="9">
+							Con ella bendecimos al <rs key="#per14">Dios</rs> y <rs key="#per14">Padre</rs> y con ella maldecimos a los <rs key="#org0">hombres</rs>, que están hechos a la semejanza de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.JAM.3.10" type="verse" n="10">
+							De una misma boca proceden bendición y maldición. <rs key="#org22">Hermanos</rs> míos, esto no debe ser así.
+						</ab>
+						<ab xml:id="b.JAM.3.11" type="verse" n="11">
+							¿Acaso alguna fuente echa por una misma abertura agua dulce y amarga?
+						</ab>
+						<ab xml:id="b.JAM.3.12" type="verse" n="12">
+							<rs key="#org22">Hermanos</rs> míos, ¿puede acaso la higuera producir aceitunas, o la vid higos? Del mismo modo, ninguna fuente puede dar agua salada y dulce.,
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La sabiduría de lo alto</head>
+						<ab xml:id="b.JAM.3.13" type="verse" n="13">
+							¿Quién es sabio y entendido entre vosotros? Muestre por la buena conducta sus obras en sabia mansedumbre.
+						</ab>
+						<ab xml:id="b.JAM.3.14" type="verse" n="14">
+							Pero si tenéis celos amargos y rivalidad en vuestro corazón, no os jactéis ni mintáis contra la verdad.
+						</ab>
+						<ab xml:id="b.JAM.3.15" type="verse" n="15">
+							No es esta la sabiduría que desciende de lo alto, sino que es terrenal, animal, diabólica,
+						</ab>
+						<ab xml:id="b.JAM.3.16" type="verse" n="16">
+							pues donde hay celos y rivalidad, allí hay perturbación y toda obra perversa.
+						</ab>
+						<ab xml:id="b.JAM.3.17" type="verse" n="17">
+							Pero la sabiduría que es de lo alto es primeramente pura, después pacífica, amable, benigna, llena de misericordia y de buenos frutos, sin incertidumbre ni hipocresía.
+						</ab>
+						<ab xml:id="b.JAM.3.18" type="verse" n="18">
+							Y el fruto de justicia se siembra en paz para aquellos que hacen la paz.
+						</ab>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
 </TEI>
