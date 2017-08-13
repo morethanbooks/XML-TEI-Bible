@@ -48,9 +48,11 @@ At the moment following books are fully encoded in this chronological order:
 * 1 James
 * 1 Peter
 * 2 Peter
+* Ezekiel
 
 At the moment, following book is being encoded:
-* Ezekiel
+
+* Ecclesiastes
 
 ## Original Text
 
