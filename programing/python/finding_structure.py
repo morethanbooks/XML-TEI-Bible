@@ -17,7 +17,7 @@ def finding_standard_rs(content):
         It searchs for textual patterns that matchs things like names
     """
     nombres_comunes = {
-        "pla" : ["ciudad","ciudades","lugar","lugares",],
+        "pla" : ["ciudad","ciudades","lugares","mar"],
         "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","hermanos","hermano","hermanas","hermana","hombre","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","mujeres","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador"],
         "org" : ["descendencia","descendencias","familia","familias","hijos","hijas","pueblo","pueblos","siervos","siervas","tribu","tribus","soldados","hombres","ejército"],
     }
@@ -31,6 +31,12 @@ def finding_standard_rs(content):
         "per1" : ["Cristo","Jesucristo","Hijo"],
         "per20" : ["Satanás"],
         "per17" : ["Espíritu"],
+        "org0" : ["hombres", "hombre"],
+        "org70" : ["pueblo"],
+        "org131" : ["pueblo"],
+        "org19" : ["necio"],
+        "org18" : ["sabio"],
+
     }
     for key,values in variaciones_comunes.items():
         for value in values:
@@ -68,7 +74,7 @@ def improve_struccture(content):
     
     return content
     
-def findingq(text):
+def findingq(text, genre):
     """
         It decodes the HTML entities and it deletes some anoying characters
         finq = finq(
@@ -78,14 +84,15 @@ def findingq(text):
 
     """
 
-    text = re.sub(r'((dij|insist|pregunt|respond|exclam|diciendo|decir|decía|diciéndo|Dijo).*?: )(((?!<q).)*)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\3</q>\5', text)
+    text = re.sub(r'((dij|insist|pregunt|respond|exclam|diciendo|decir|decía|diciéndo|Dijo|dije|Dije).*?: )(((?!<q).)*)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\3</q>\5', text)
 
     text = re.sub(r'xml:id', r'xml_id', text)
     text = re.sub(r'http:', r'http_', text)
 
     text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)(»|«).+?)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\2</q>\6', text)
 
-    text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os)[^\w].+?)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\2</q>\6', text)
+    if genre != "letter":
+        text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os)[^\w].+?)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\2</q>\6', text)
 
     text = re.sub(r'_', r':', text, flags=re.MULTILINE)
 
@@ -160,15 +167,12 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             
             find_people_without_id(content, outputtei,bookcode)
             
-            if genre == "letter":
-                print(genre)
-            else:
+            
+            # Buscamos estructuras q
+            content = findingq(content, genre)
                 
-                # Buscamos estructuras q
-                content = findingq(content)
-                    
-                # Intentamos dar valores a los atributos de q
-                content = values_q(content)
+            # Intentamos dar valores a los atributos de q
+            content = values_q(content)
             
             content = deleting_wrong_entities(content)
         
@@ -183,8 +187,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/EZE.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/ECC.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "EZE",
-    genre = "book"
+    "ECC",
+    genre = "letter"
     )
