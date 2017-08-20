@@ -34,7 +34,7 @@ def analyse_refs(inputtei, file, output):
         # Definimos el namespace del TEI con el que trabajamos
         namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
 
-        print((documento_root.xpath('//tei:rs', namespaces=namespaces_concretos)))
+        #print((documento_root.xpath('//tei:rs', namespaces=namespaces_concretos)))
 
         refs = []
         for ref in documento_root.xpath('//tei:rs', namespaces=namespaces_concretos, with_tail=False):
@@ -48,11 +48,28 @@ def analyse_refs(inputtei, file, output):
                 refs.append((key[0],text))
         #print(etree.tostring(documento_root))
         refs_ct = Counter(refs)
-        print(refs_ct)
-        #refs_df = pd.DataFrame(list(refs_ct.items()), columns=['value1','value2'])
-        return refs_ct
+
+        refs_ct = [[items[0], items[1], value] for items, value in refs_ct.items()]# for item1, item2 in items]        
+        refs_df = pd.DataFrame(refs_ct, columns=['id','string','freq'])
+        refs_df = refs_df.sort_values(by='freq', ascending=False)
+
+
+        refs_df["number"] = 1
+
+        refs_df.loc[ refs_df["id"].str.contains(" ", na=False),  "number"] = "2"
+
+        refs_df["type"] = ""
+
+        types = ["org","per","tim","pla","ani","wor"]
+        for type_ in types:
+            refs_df.loc[ refs_df["id"].str.contains(type_, na=False) & refs_df["number"]==1,  "type"] = type_        
+        
+        print(refs_df)
+
+        refs_df.to_csv(output+file+"refs.csv", sep='\t', encoding='utf-8', index=False)
+        return refs_df
     
-refs_ct = analyse_refs(
+refs_df = analyse_refs(
         inputtei = "/home/jose/Dropbox/biblia/tb/",
         file = "TEIBible", # "*.xml"
         output = "/home/jose/Dropbox/biblia/tb/resulting data/",
