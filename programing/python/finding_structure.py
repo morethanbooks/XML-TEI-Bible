@@ -18,8 +18,8 @@ def finding_standard_rs(content):
     """
     nombres_comunes = {
         "pla" : ["ciudad","ciudades","lugares","mar"],
-        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","hermanos","hermano","hermanas","hermana","hombre","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","mujeres","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador"],
-        "org" : ["descendencia","descendencias","familia","familias","hijos","hijas","pueblo","pueblos","siervos","siervas","tribu","tribus","soldados","hombres","ejército"],
+        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
+        "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblo","pueblos","siervos","siervas","tribu","tribus","soldados","hombres"],
     }
 
     for key,values in nombres_comunes.items():
@@ -31,11 +31,15 @@ def finding_standard_rs(content):
         "per1" : ["Cristo","Jesucristo","Hijo"],
         "per20" : ["Satanás"],
         "per17" : ["Espíritu"],
-        "org0" : ["hombres", "hombre"],
-        "org70" : ["pueblo"],
-        "org131" : ["pueblo"],
-        "org19" : ["necio"],
-        "org18" : ["sabio"],
+        "org0" : ["hombres", "hombre", "naciones", "pueblos","gente","mundo","hijos de los hombres"],
+        "org70" : ["pueblo", "hijos de Israel", "cas de Israel"],
+        "org131" : ["siervos"],
+        "org19" : ["necio", "impío","impíos"],
+        "org18" : ["sabio", "justo","justos"],
+        "org24" : ["ejército",],
+        "org37" : ["hermanos","hermano"],
+        "org4" : ["ángeles",],
+        "org101" : ["enemigo",],
 
     }
     for key,values in variaciones_comunes.items():
@@ -187,8 +191,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/ECC.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/ROM.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "ECC",
+    "ROM",
     genre = "letter"
     )
