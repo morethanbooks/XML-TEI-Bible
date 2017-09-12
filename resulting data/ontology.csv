@@ -503,7 +503,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per501	Moloc				AT		male			person	superior	defined		ACT
 #per502	Refán				AT		male			person	superior	defined		ACT
 #per503	Josué				AT		male			person	human	defined	1	ACT
-#per504	Pablo		Saulo		AT		male			person	human	defined	1	ACT
+#per504	Pablo		Saulo		NT		male			person	human	defined	1	ACT
 #per505	Simón	antiguo  mago			AT		male			person	human	defined		ACT
 #per506	Candace	reina de Etipoía			NT		female			person	human	defined		ACT
 #per507	Ananías	habla con Saulo			NT		male			person	human	defined		ACT
@@ -871,36 +871,36 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per869	mujer de Ezekiel				AT		female			person	human	defined		EZE
 #per870	Jaazanías	hijo de Safán			AT		male			person	human	defined		EZE
 #per871	Pelatías				AT		male			person	human	defined		EZE
-#per872	Oseas				AT	medium	male			person	human	defined		ROM
-#per873	Narciso				AT	medium	male			person	human	defined		ROM
-#per874	Estaquis				AT	medium	male			person	human	defined		ROM
-#per875	Febe				AT	medium	male			person	human	defined		ROM
-#per876	Olimpas				AT	medium	male			person	human	defined		ROM
-#per877	Libertador				AT	medium	male			person	human	defined		ROM
-#per878	Urbano				AT	medium	male			person	human	defined		ROM
-#per879	Asíncrito				AT	medium	male			person	human	defined		ROM
-#per880	Rufo				AT	medium	male			person	human	defined		ROM
-#per881	Trifena				AT	medium	male			person	human	defined		ROM
-#per882	Junias				AT	medium	male			person	human	defined		ROM
-#per883	Apeles				AT	medium	male			person	human	defined		ROM
-#per884	Herodión				AT	medium	male			person	human	defined		ROM
-#per885	Julia				AT	medium	male			person	human	defined		ROM
-#per886	Trifosa				AT	medium	male			person	human	defined		ROM
-#per887	Nereo				AT	medium	male			person	human	defined		ROM
-#per888	Aristóbulo				AT	medium	male			person	human	defined		ROM
-#per889	Amplias				AT	medium	male			person	human	defined		ROM
-#per890	Tercio				AT	medium	male			person	human	defined		ROM
-#per891	Filólogo				AT	medium	male			person	human	defined		ROM
-#per892	Hermes				AT	medium	male			person	human	defined		ROM
-#per893	Andrónico				AT	medium	male			person	human	defined		ROM
-#per894	Patrobas				AT	medium	male			person	human	defined		ROM
-#per895	Flegonte				AT	medium	male			person	human	defined		ROM
-#per896	Ilírico				AT	medium	male			person	human	defined		ROM
-#per897	Hermas				AT	medium	male			person	human	defined		ROM
-#per898	Epeneto				AT	medium	male			person	human	defined		ROM
-#per899	Sosípater				AT	medium	male			person	human	defined		ROM
-#per900	Pérsida				AT	medium	male			person	human	defined		ROM
-														
+#per872	Oseas				NT		male			person	human	defined		ROM
+#per873	Narciso				NT		male			person	human	defined		ROM
+#per874	Estaquis				NT		male			person	human	defined		ROM
+#per875	Febe				NT		male			person	human	defined		ROM
+#per876	Olimpas				NT		male			person	human	defined		ROM
+#per877	Libertador				NT		male			person	human	defined		ROM
+#per878	Urbano				NT		male			person	human	defined		ROM
+#per879	Asíncrito				NT		male			person	human	defined		ROM
+#per880	Rufo				NT		male			person	human	defined		ROM
+#per881	Trifena				NT		male			person	human	defined		ROM
+#per882	Junias				NT		male			person	human	defined		ROM
+#per883	Apeles				NT		male			person	human	defined		ROM
+#per884	Herodión				NT		male			person	human	defined		ROM
+#per885	Julia				NT		female			person	human	defined		ROM
+#per886	Trifosa				NT		male			person	human	defined		ROM
+#per887	Nereo				NT		male			person	human	defined		ROM
+#per888	Aristóbulo				NT		male			person	human	defined		ROM
+#per889	Amplias				NT		male			person	human	defined		ROM
+#per890	Tercio				NT		male			person	human	defined		ROM
+#per891	Filólogo				NT		male			person	human	defined		ROM
+#per892	Hermes				NT		male			person	human	defined		ROM
+#per893	Andrónico				NT		male			person	human	defined		ROM
+#per894	Patrobas				NT		male			person	human	defined		ROM
+#per895	Flegonte				NT		male			person	human	defined		ROM
+#per896	María	Saludada por Pablo			NT		female			person	human	defined		ROM
+#per897	Hermas				NT		male			person	human	defined		ROM
+#per898	Epeneto				NT		male			person	human	defined		ROM
+#per899	Sosípater				NT		male			person	human	defined		ROM
+#per900	Pérsida				NT		female			person	human	defined		ROM
+#per901	Cuarto				NT		male			person	human	defined		ROM
 														
 														
 														
@@ -1150,6 +1150,9 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org179	sidonios									group	human	defined		EZE
 #org180	hijos de Sadoc	sacerdotes								group	human	defined		EZE
 #org181	siervos de sacerdotes									group	human	defined		EZE
+#org182	iglesia en Roma									group	human	defined		ROM
+#org183	hombres en exclusiva									group	human	defined		ROM
+#org184	jueces		magistrados							group	human	defined		ROM
 														
 #pla0	lugares													
 #pla1	Belén							Bethlehem	Belem	place	human			MAT
@@ -1625,8 +1628,8 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla471	Isacar									place	human			EZE
 #pla472	Acaya									place	human			ROM
 #pla473	Cencrea									place	human			ROM
-														
-														
+#pla474	Ilírico									place	human			ROM
+#pla475	España									place	human			ROM
 														
 														
 														

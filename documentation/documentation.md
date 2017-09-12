@@ -50,10 +50,13 @@ At the moment following books are fully encoded in this chronological order:
 * 2 Peter
 * Ezekiel
 * Ecclesiastes
+* Romans
 
 At the moment, following book is being encoded:
 
-* Romans
+* 1 Corinthians
+* 2 Corinthians
+
 
 ## Original Text
 
