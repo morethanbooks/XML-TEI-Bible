@@ -31,7 +31,7 @@ def finding_standard_rs(content):
         "per1" : ["Cristo","Jesucristo","Hijo"],
         "per20" : ["Satanás"],
         "per17" : ["Espíritu"],
-        "org0" : ["hombres", "hombre", "naciones", "pueblos","gente","mundo","hijos de los hombres"],
+        "org0" : ["hombres", "hombre", "naciones", "pueblos","gente","mundo","hijos de los hombres", "persona"],
         "org70" : ["pueblo", "hijos de Israel", "cas de Israel"],
         "org131" : ["siervos"],
         "org19" : ["necio", "impío","impíos"],
@@ -40,6 +40,7 @@ def finding_standard_rs(content):
         "org37" : ["hermanos","hermano"],
         "org4" : ["ángeles",],
         "org101" : ["enemigo",],
+        "org18" : ["santos",],
 
     }
     for key,values in variaciones_comunes.items():
