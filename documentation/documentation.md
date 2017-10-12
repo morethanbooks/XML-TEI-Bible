@@ -52,10 +52,10 @@ At the moment following books are fully encoded in this chronological order:
 * Ecclesiastes
 * Romans
 * 1 Corinthians
+* 2 Corinthians
 
 At the moment, following book is being encoded:
 
-* 2 Corinthians
 
 
 ## Original Text
