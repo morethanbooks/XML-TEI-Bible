@@ -19,7 +19,7 @@ def finding_standard_rs(content):
     nombres_comunes = {
         "pla" : ["ciudad","ciudades","lugares","mar"],
         "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
-        "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblo","pueblos","siervos","siervas","tribu","tribus","soldados","hombres"],
+        "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervos","siervas","tribu","tribus","soldados"],
     }
 
     for key,values in nombres_comunes.items():
@@ -31,7 +31,7 @@ def finding_standard_rs(content):
         "per1" : ["Cristo","Jesucristo","Hijo"],
         "per20" : ["Satanás"],
         "per17" : ["Espíritu"],
-        "org0" : ["hombres", "hombre", "naciones", "pueblos","gente","mundo","hijos de los hombres", "persona"],
+        "org0" : ["hombres", "hombre", "naciones", "pueblos","mundo","hijos de los hombres", "persona"],
         "org70" : ["pueblo", "hijos de Israel", "cas de Israel"],
         "org131" : ["siervos"],
         "org19" : ["necio", "impío","impíos"],
@@ -41,6 +41,7 @@ def finding_standard_rs(content):
         "org4" : ["ángeles",],
         "org101" : ["enemigo",],
         "org18" : ["santos",],
+        "org100" : ["reyes","rey"],
 
     }
     for key,values in variaciones_comunes.items():
@@ -57,7 +58,7 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["type"] == "person" and row["order-edition"] == book) or (row["order-edition"] == book) or (row["type"] == "person" and row["book"] == "NT"):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or (row["order-edition"] == "EXO"):
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         
     return content
@@ -120,7 +121,7 @@ def values_q(content):
     
     return(content)
 
-def find_people_without_id(content, outputtei,bookcode):
+def find_people_without_id(content, outputtei, bookcode):
     people_without_id = []
     people_without_id = people_without_id + re.findall(r"<rs key=\"per\">([A-Z][^<]*?)</rs>", content)
     print(type(people_without_id))
@@ -135,6 +136,8 @@ def find_people_without_id(content, outputtei,bookcode):
     people_without_id_df.to_csv(outputtei+bookcode+"people_without_id.csv", sep='\t', encoding='utf-8')
 
     #print(people_without_id_df)
+
+    
 
 def deleting_wrong_entities(content):
     content = re.sub(r'<rs key="#pla230">Mira</rs>', r'Mira', content)
@@ -192,8 +195,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/1CO.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/JOS.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "1CO",
-    genre = "letter"
+    "JOS",
+    genre = "history"
     )
