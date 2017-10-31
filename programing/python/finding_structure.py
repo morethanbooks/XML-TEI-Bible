@@ -48,7 +48,7 @@ def finding_standard_rs(content):
         for value in values:
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
 
-    content = re.sub(r'([a-zá-úñüç,;] )([A-ZÁ-ÚÜÑ][a-zá-úñüç]+)([^a-zá-úñüç])', r'\1<rs key="per">\2</rs>\3', content)
+    content = re.sub(r'([a-zá-úñüç,;>] )([A-ZÁ-ÚÜÑ][a-zá-úñüç]+)([^a-zá-úñüç])', r'\1<rs key="per">\2</rs>\3', content)
     
     return content
 
