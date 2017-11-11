@@ -53,10 +53,10 @@ At the moment following books are fully encoded in this chronological order:
 * Romans
 * 1 Corinthians
 * 2 Corinthians
+* Joshua
 
 At the moment, following book is being encoded:
-Joshua
-
+* Mark
 
 
 ## Original Text
