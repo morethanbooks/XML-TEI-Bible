@@ -17,7 +17,7 @@ def finding_standard_rs(content):
         It searchs for textual patterns that matchs things like names
     """
     nombres_comunes = {
-        "pla" : ["ciudad","ciudades","lugares","mar"],
+        "pla" : ["ciudad","ciudades","lugares","mar", "río"],
         "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
         "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervos","siervas","tribu","tribus","soldados"],
     }
@@ -58,7 +58,7 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or (row["order-edition"] == "EXO"):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or (row["order-edition"] == "MAT")  or (row["order-edition"] == "JOH"):
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         
     return content
@@ -142,6 +142,8 @@ def find_people_without_id(content, outputtei, bookcode):
 def deleting_wrong_entities(content):
     content = re.sub(r'<rs key="#pla230">Mira</rs>', r'Mira', content)
     content = re.sub(r'<rs key="#pla258">Sin</rs>', r'Sin', content)
+    content = re.sub(r'<rs key="#per17"><rs key="per17">Espíritu</rs> <rs key="per">Santo</rs></rs>', r'<rs key="#per17"><rs key="per17">Espíritu Santo</rs>', content)
+    
     return(content)
 
 
@@ -195,8 +197,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/JOS.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/MAR.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "JOS",
+    "MAR",
     genre = "history"
     )
