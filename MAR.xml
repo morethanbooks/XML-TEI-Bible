@@ -362,8 +362,8 @@
 					</div>
 					<div>
 						<head>Muerte de Juan el Bautista</head>
-						<ab xml:id="b.MAR.6.14" type="verse" n="14">Oyó el <rs key="per10">rey</rs> <rs key="#per10">Herodes</rs> la fama de <rs key="#per1">Jesús</rs>, porque su nombre se había hecho notorio, y dijo: <q who="per10" corresp="#org0" type="oral"><rs key="#per1">Juan el Bautista</rs> ha resucitado de los muertos, y por eso actúan en él estos poderes.</q></ab>
-						<ab xml:id="b.MAR.6.15" type="verse" n="15">Otros decían: <q who="org0" corresp="org0" type="oral">«Es <rs key="#per1">Elías</rs></q>». Y otros:  <q who="org0" corresp="org0" type="oral">«Es un <rs key="per1">profeta</rs>, como los <rs key="#org8">profetas antiguos</rs>».</q></ab><!--interesantes relaciones entre personas-->
+						<ab xml:id="b.MAR.6.14" type="verse" n="14">Oyó el <rs key="per10">rey</rs> <rs key="#per10">Herodes</rs> la fama de <rs key="#per1">Jesús</rs>, porque su nombre se había hecho notorio, y dijo: <q who="per10" corresp="#org0" type="oral"><rs key="#per1 per18">Juan el Bautista</rs> ha resucitado de los muertos, y por eso actúan en él estos poderes.</q></ab>
+						<ab xml:id="b.MAR.6.15" type="verse" n="15">Otros decían: <q who="org0" corresp="org0" type="oral">«Es <rs key="#per1 per13">Elías</rs></q>». Y otros:  <q who="org0" corresp="org0" type="oral">«Es un <rs key="per1">profeta</rs>, como los <rs key="#org8">profetas antiguos</rs>».</q></ab><!--interesantes relaciones entre personas-->
 						<ab xml:id="b.MAR.6.16" type="verse" n="16">Al oir esto, <rs key="#per10">Herodes</rs> dijo:  <q who="#per10" corresp="org0" type="oral">Este es <rs key="#per1">Juan</rs>, el que yo decapité, que ha resucitado de los muertos.</q></ab>
 						<ab xml:id="b.MAR.6.17" type="verse" n="17">El mismo <rs key="#per10">Herodes</rs> había enviado a prender a <rs key="#per18">Juan</rs>, y lo había encadenado en la cárcel por causa de <rs key="per951">Herodías</rs>, <rs key="per951">mujer de <rs key="#per102">Felipe</rs></rs>, su <rs key="per102">hermano</rs>, pues la había tomado por <rs key="per951">mujer</rs>,</ab>
 						<ab xml:id="b.MAR.6.18" type="verse" n="18">porque <rs key="#per18">Juan</rs> había dicho a <rs key="#per10">Herodes</rs>: <q who="per18" corresp="per10" type="oral">«No te está permitido tener la <rs key="per951">mujer de tu <rs key="per102">hermano</rs></rs>».</q></ab>
@@ -465,48 +465,62 @@
 
 					</div>
 				</div>
-				<div xml:id="b.MAR.8" type="chapter" n="8">
+				<div xml:id="b.MAR.8" type="chapter" n="8" cert="high">
 					<div type="pericope">
-						<head type="pericope"></head>
-
+						<head type="pericope">Alimentación de los cuatro mil</head>
 						<ab xml:id="b.MAR.8.1" type="verse" n="1">En aquellos días, como había una <rs key="org0">gran multitud</rs> y no tenían qué comer, <rs key="#per1">Jesús</rs> llamó a sus <rs key="#org3">discípulos</rs> y les dijo:</ab>
-						<ab xml:id="b.MAR.8.2" type="verse" n="2">Tengo compasión de la <rs key="#org0">gente</rs>, porque ya hace tres días que están conmigo y no tienen qué comer;</ab>
-						<ab xml:id="b.MAR.8.3" type="verse" n="3">y si los envío en ayunas a sus casas, se desmayarán en el camino, pues algunos de ellos han venido de lejos.</ab>
-						<ab xml:id="b.MAR.8.4" type="verse" n="4">Sus <rs key="#org3">discípulos</rs> le respondieron:  <q who="#org27" corresp="per" type="oral">¿De dónde podrá alguien saciar de pan a estos aquí en el desierto?</q></ab>
-						<ab xml:id="b.MAR.8.5" type="verse" n="5">Él les preguntó: <q who="per" corresp="per" type="oral">¿Cuántos panes tenéis? Ellos dijeron: Siete.</q></ab>
-						<ab xml:id="b.MAR.8.6" type="verse" n="6">Entonces mandó a la <rs key="org0">multitud</rs> que se recostara en <rs key="#pla41">tierra</rs>, tomó los siete panes y, habiendo dado gracias, los partió y dio a sus <rs key="#org3">discípulos</rs> para que los pusieran delante; y los pusieron delante de la <rs key="org0">multitud</rs>.</ab>
+						<ab xml:id="b.MAR.8.2" type="verse" n="2"><q who="per1" corresp="org3" type="oral">Tengo compasión de la <rs key="#org0">gente</rs>, porque ya hace tres días que están conmigo y no tienen qué comer;</q></ab>
+						<ab xml:id="b.MAR.8.3" type="verse" n="3"><q who="per1" corresp="org3" type="oral">y si los envío en ayunas a sus casas, se desmayarán en el camino, pues algunos de ellos han venido de lejos.</q></ab>
+						<ab xml:id="b.MAR.8.4" type="verse" n="4">Sus <rs key="#org3">discípulos</rs> le respondieron:  <q who="#org3" corresp="per1" type="oral">¿De dónde podrá alguien saciar de pan a estos aquí en el desierto?</q></ab>
+						<ab xml:id="b.MAR.8.5" type="verse" n="5">Él les preguntó: <q who="per1" corresp="org3" type="oral">¿Cuántos panes tenéis?</q> Ellos dijeron: <q who="#org3" corresp="per1" type="oral">Siete.</q></ab>
+						<ab xml:id="b.MAR.8.6" type="verse" n="6">Entonces mandó a la <rs key="org0">multitud</rs> que se recostara en tierra, tomó los siete panes y, habiendo dado gracias, los partió y dio a sus <rs key="#org3">discípulos</rs> para que los pusieran delante; y los pusieron delante de la <rs key="org0">multitud</rs>.</ab>
 						<ab xml:id="b.MAR.8.7" type="verse" n="7">Tenían además unos pocos pececillos; los bendijo y mandó que también los pusieran delante.</ab>
 						<ab xml:id="b.MAR.8.8" type="verse" n="8">Comieron y se saciaron; y recogieron, de los pedazos que habían sobrado, siete canastas.</ab>
-						<ab xml:id="b.MAR.8.9" type="verse" n="9">Los que comieron eran como cuatro mil; y los despidió.</ab>
-						<ab xml:id="b.MAR.8.10" type="verse" n="10">Luego, entrando en la barca con sus <rs key="#org3">discípulos</rs>, vino a la región de <rs key="per">Dalmanuta</rs>.</ab>
+						<ab xml:id="b.MAR.8.9" type="verse" n="9">Los que comieron eran como <rs key="org0">cuatro mil</rs>; y los despidió.</ab>
+						<ab xml:id="b.MAR.8.10" type="verse" n="10">Luego, entrando en la barca con sus <rs key="#org3">discípulos</rs>, vino a la región de <rs key="pla737">Dalmanuta</rs>.</ab>
+					</div>
+					<div>
+						<head>La demanda de una señal</head>
 						<ab xml:id="b.MAR.8.11" type="verse" n="11">Vinieron entonces los <rs key="#org2">fariseos</rs> y comenzaron a discutir con él, pidiéndole señal del <rs key="#pla18">cielo</rs> para tentarlo.</ab>
-						<ab xml:id="b.MAR.8.12" type="verse" n="12">Él, gimiendo en su espíritu, dijo: <q who="per" corresp="per" type="oral">¿Por qué pide señal esta generación? De cierto os digo que no se dará señal a esta generación.</q></ab>
+						<ab xml:id="b.MAR.8.12" type="verse" n="12">Él, gimiendo en su espíritu, dijo: <q who="per1" corresp="org2" type="oral">¿Por qué pide señal esta generación? De cierto os digo que no se dará señal a esta generación.</q></ab>
 						<ab xml:id="b.MAR.8.13" type="verse" n="13">Y dejándolos, volvió a entrar en la barca y se fue a la otra ribera.</ab>
+					</div>
+					<div>
+						<head>La levadura de los fariseos</head>
 						<ab xml:id="b.MAR.8.14" type="verse" n="14">Se olvidaron de llevar pan, y no tenían sino un pan consigo en la barca.</ab>
-						<ab xml:id="b.MAR.8.15" type="verse" n="15">Y él les mandó, diciendo: <q who="per" corresp="per" type="oral">Mirad, guardaos de la levadura de los <rs key="#org2">fariseos</rs> y de la levadura de <rs key="#per10">Herodes</rs>.</q></ab>
-						<ab xml:id="b.MAR.8.16" type="verse" n="16">Discutían entre sí, diciendo: <q who="per" corresp="per" type="oral">Es porque no trajimos pan.</q></ab>
-						<ab xml:id="b.MAR.8.17" type="verse" n="17">Entendiéndolo <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" corresp="per" type="oral">¿Qué discutís?, ¿porque no tenéis pan? ¿No entendéis ni comprendéis? ¿Aún tenéis endurecido vuestro corazón?</q></ab>
-						<ab xml:id="b.MAR.8.18" type="verse" n="18">¿Teniendo ojos no veis, y teniendo oídos no oís? ¿No recordáis?</ab>
-						<ab xml:id="b.MAR.8.19" type="verse" n="19">Cuando partí los cinco panes entre cinco mil, ¿cuántas cestas llenas de los pedazos recogisteis? Y ellos dijeron: <q who="per" corresp="per" type="oral">Doce.</q></ab>
-						<ab xml:id="b.MAR.8.20" type="verse" n="20">Y cuando repartí los siete panes entre cuatro mil, ¿cuántas canastas llenas de los pedazos recogisteis? Y ellos dijeron: <q who="per" corresp="per" type="oral">Siete.</q></ab>
-						<ab xml:id="b.MAR.8.21" type="verse" n="21">Y les dijo: <q who="per" corresp="per" type="oral">¿Cómo es que aún no entendéis?</q></ab>
-						<ab xml:id="b.MAR.8.22" type="verse" n="22">Vino luego a <rs key="#pla45">Betsaida</rs>, y le trajeron un ciego, y le rogaron que lo tocara.</ab>
+						<ab xml:id="b.MAR.8.15" type="verse" n="15">Y él les mandó, diciendo: <q who="per1" corresp="org3" type="oral">Mirad, guardaos de la levadura de los <rs key="#org2">fariseos</rs> y de la levadura de <rs key="#per10">Herodes</rs>.</q></ab>
+						<ab xml:id="b.MAR.8.16" type="verse" n="16">Discutían entre sí, diciendo: <q who="org3" corresp="org3" type="oral">Es porque no trajimos pan.</q></ab>
+						<ab xml:id="b.MAR.8.17" type="verse" n="17">Entendiéndolo <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" corresp="org3" type="oral">¿Qué discutís?, ¿porque no tenéis pan? ¿No entendéis ni comprendéis? ¿Aún tenéis endurecido vuestro corazón?</q></ab>
+						<ab xml:id="b.MAR.8.18" type="verse" n="18"><q who="#per1" corresp="org3" type="oral">¿Teniendo ojos no veis, y teniendo oídos no oís? ¿No recordáis?</q></ab>
+						<ab xml:id="b.MAR.8.19" type="verse" n="19"><q who="#per1" corresp="org3" type="oral">Cuando partí los cinco panes entre <rs key="org0">cinco mil</rs>, ¿cuántas cestas llenas de los pedazos recogisteis?</q> Y ellos dijeron: <q who="org3" corresp="per1" type="oral">Doce.</q></ab>
+						<ab xml:id="b.MAR.8.20" type="verse" n="20"><q who="#per1" corresp="org3" type="oral">Y cuando repartí los siete panes entre <rs key="org0">cuatro mil</rs>, ¿cuántas canastas llenas de los pedazos recogisteis?</q> Y ellos dijeron: <q who="org3" corresp="per1" type="oral">Siete.</q></ab>
+						<ab xml:id="b.MAR.8.21" type="verse" n="21">Y les dijo: <q who="per1" corresp="org0" type="oral">¿Cómo es que aún no entendéis?</q></ab>
+					</div>
+					<div>
+						<head>Un ciego sanado en Betsaida</head>
+						<ab xml:id="b.MAR.8.22" type="verse" n="22">Vino luego a <rs key="#pla45">Betsaida</rs>, y le trajeron un <rs key="org15">ciego</rs>, y le rogaron que lo tocara.</ab>
 						<ab xml:id="b.MAR.8.23" type="verse" n="23">Entonces, tomando la mano del ciego, lo sacó fuera de la aldea; escupió en sus ojos, puso sus manos sobre él y le preguntó si veía algo.</ab>
-						<ab xml:id="b.MAR.8.24" type="verse" n="24">Él, mirando, dijo: <q who="per" corresp="per" type="oral">Veo los <rs key="org0">hombres</rs> como árboles, pero los veo que andan.</q></ab>
+						<ab xml:id="b.MAR.8.24" type="verse" n="24">Él, mirando, dijo: <q who="org15" corresp="per1" type="oral">Veo los <rs key="org0">hombres</rs> como árboles, pero los veo que andan.</q></ab>
 						<ab xml:id="b.MAR.8.25" type="verse" n="25">Luego le puso otra vez las manos sobre los ojos, y le hizo que mirara; y fue restablecido, y vio de lejos y claramente a todos.</ab>
-						<ab xml:id="b.MAR.8.26" type="verse" n="26"><rs key="#per1">Jesús</rs> lo envió a su casa, diciendo:  <q who="#per1" corresp="per" type="oral">No entres en la aldea, ni lo digas a nadie en la aldea.,</q></ab>
-						<ab xml:id="b.MAR.8.27" type="verse" n="27">Salieron <rs key="#per1">Jesús</rs> y sus <rs key="#org3">discípulos</rs> por las aldeas de <rs key="#pla24">Cesarea de <rs key="#pla25">Filipo</rs></rs>. Y en el camino preguntó a sus <rs key="#org3">discípulos</rs>, diciéndoles: <q who="#per1" corresp="#org3" type="oral">¿Quién dicen los <rs key="org0">hombres</rs> que soy yo?</q></ab>
-						<ab xml:id="b.MAR.8.28" type="verse" n="28">Ellos respondieron: <q who="per" corresp="per" type="oral">Unos, <rs key="#per18"><rs key="#per18">Juan</rs> el <rs key="per">Bautista</rs></rs>; otros, <rs key="#per13">Elías</rs>; y otros, alguno de los <rs key="#org8">profetas</rs>.</q></ab>
-						<ab xml:id="b.MAR.8.29" type="verse" n="29">Entonces él les dijo: <q who="per" corresp="per" type="oral">Y vosotros, ¿quién decís que soy? Respondiendo <rs key="#per21">Pedro</rs>, le dijo: Tú eres el <rs key="per1">Cristo</rs>.</q></ab>
+						<ab xml:id="b.MAR.8.26" type="verse" n="26"><rs key="#per1">Jesús</rs> lo envió a su casa, diciendo:  <q who="#per1" corresp="org15" type="oral">No entres en la aldea, ni lo digas a nadie en la aldea.,</q></ab>
+					</div>
+					<div>
+						<head>La confesión de Pedro</head>
+						<ab xml:id="b.MAR.8.27" type="verse" n="27">Salieron <rs key="#per1">Jesús</rs> y sus <rs key="#org3">discípulos</rs> por las <rs key="#pla24">aldeas de <rs key="#pla24">Cesarea de <rs key="#pla25">Filipo</rs></rs></rs>. Y en el camino preguntó a sus <rs key="#org3">discípulos</rs>, diciéndoles: <q who="#per1" corresp="#org3" type="oral">¿Quién dicen los <rs key="org0">hombres</rs> que soy yo?</q></ab>
+						<ab xml:id="b.MAR.8.28" type="verse" n="28">Ellos respondieron: <q who="org3" corresp="per1" type="oral">Unos, <rs key="#per1 per18">Juan el Bautista</rs>; otros, <rs key="per1 per13">Elías</rs>; y otros, alguno de los <rs key="#per1">profetas</rs>.</q></ab>
+						<ab xml:id="b.MAR.8.29" type="verse" n="29">Entonces él les dijo: <q who="per1" corresp="org3" type="oral">Y vosotros, ¿quién decís que soy?</q> Respondiendo <rs key="#per21">Pedro</rs>, le dijo: <q who="per21" corresp="per1" type="oral">Tú eres el <rs key="per1">Cristo</rs>.</q></ab>
 						<ab xml:id="b.MAR.8.30" type="verse" n="30">Pero él les mandó que no dijeran esto de él a nadie.</ab>
-						<ab xml:id="b.MAR.8.31" type="verse" n="31">Comenzó a enseñarles que le era necesario al <rs key="per1">Hijo del <rs key="org0">hombre</rs></rs> padecer mucho, ser desechado por los <rs key="#org25">ancianos</rs>, por los principales <rs key="#org12">sacerdotes</rs> y por los <rs key="#org5">escribas</rs>, ser muerto y resucitar después de tres días.</ab>
+					</div>
+					<div>
+						<head>Jesús anuncia su muerte</head>
+						<ab xml:id="b.MAR.8.31" type="verse" n="31">Comenzó a enseñarles que le era necesario al <rs key="per1">Hijo del <rs key="org0">hombre</rs></rs> padecer mucho, ser desechado por los <rs key="#org25">ancianos</rs>, por los <rs key="#org12">principales sacerdotes</rs> y por los <rs key="#org5">escribas</rs>, ser muerto y resucitar después de tres días.</ab>
 						<ab xml:id="b.MAR.8.32" type="verse" n="32">Esto les decía claramente. Entonces <rs key="#per21">Pedro</rs> lo tomó aparte y comenzó a reconvenirlo.</ab>
-						<ab xml:id="b.MAR.8.33" type="verse" n="33">Pero él, volviéndose y mirando a los <rs key="#org3">discípulos</rs>, reprendió a <rs key="#per21">Pedro</rs>, diciendo: <q who="#org3" corresp="#per21" type="oral">¡Quítate de delante de mí, <rs key="per20">Satanás</rs>!, porque no pones la mira en las cosas de <rs key="#per14">Dios</rs>, sino en las de los <rs key="org0">hombres</rs>.</q></ab>
-						<ab xml:id="b.MAR.8.34" type="verse" n="34">Y llamando a la <rs key="#org0">gente</rs> y a sus <rs key="#org3">discípulos</rs>, les dijo: <q who="#org0" corresp="#org3" type="oral">Si alguno quiere venir en pos de mí, niéguese a sí mismo, tome su cruz y sígame.</q></ab>
-						<ab xml:id="b.MAR.8.35" type="verse" n="35"><q who="per" corresp="per" type="oral">Todo el que quiera salvar su vida, la perderá; y todo el que pierda su vida por causa de mí y del evangelio, la salvará,</q></ab>
-						<ab xml:id="b.MAR.8.36" type="verse" n="36">porque ¿de qué le aprovechará al <rs key="org0">hombre</rs> ganar todo el <rs key="org0">mundo</rs>, si pierde su alma?</ab>
-						<ab xml:id="b.MAR.8.37" type="verse" n="37">¿O qué recompensa dará el <rs key="org0">hombre</rs> por su alma?</ab>
-						<ab xml:id="b.MAR.8.38" type="verse" n="38"><q who="per" corresp="per" type="oral">Por tanto, el que se avergüence de mí y de mis palabras en esta generación adúltera y pecadora, también el <rs key="per1">Hijo del <rs key="org0">hombre</rs></rs> se avergonzará de él cuando venga en la gloria de su <rs key="per14">Padre</rs> con los <rs key="org18">santos</rs> <rs key="org4">ángeles</rs>.</q></ab>
+						<ab xml:id="b.MAR.8.33" type="verse" n="33">Pero él, volviéndose y mirando a los <rs key="#org3">discípulos</rs>, reprendió a <rs key="#per21">Pedro</rs>, diciendo: <q who="#per1" corresp="#per21 per20" type="oral">¡Quítate de delante de mí, <rs key="per20">Satanás</rs>!, porque no pones la mira en las cosas de <rs key="#per14">Dios</rs>, sino en las de los <rs key="org0">hombres</rs>.</q></ab>
+						<ab xml:id="b.MAR.8.34" type="verse" n="34">Y llamando a la <rs key="#org0">gente</rs> y a sus <rs key="#org3">discípulos</rs>, les dijo: <q who="#per1" corresp="#org3 org0" type="oral">Si alguno quiere venir en pos de mí, niéguese a sí mismo, tome su cruz y sígame.</q></ab>
+						<ab xml:id="b.MAR.8.35" type="verse" n="35"><q who="#per1" corresp="#org3 org0" type="oral">Todo el que quiera salvar su vida, la perderá; y todo el que pierda su vida por causa de mí y del evangelio, la salvará,</q></ab>
+						<ab xml:id="b.MAR.8.36" type="verse" n="36"><q who="#per1" corresp="#org3 org0" type="oral">porque ¿de qué le aprovechará al <rs key="org0">hombre</rs> ganar todo el mundo, si pierde su alma?</q></ab>
+						<ab xml:id="b.MAR.8.37" type="verse" n="37"><q who="#per1" corresp="#org3 org0" type="oral">¿O qué recompensa dará el <rs key="org0">hombre</rs> por su alma?</q></ab>
+						<ab xml:id="b.MAR.8.38" type="verse" n="38"><q who="#per1" corresp="#org3 org0" type="oral">Por tanto, el que se avergüence de mí y de mis palabras en esta generación adúltera y pecadora, también el <rs key="per1">Hijo del <rs key="org0">hombre</rs></rs> se avergonzará de él cuando venga en la gloria de su <rs key="per14">Padre</rs> con los <rs key="org4">santos ángeles</rs>.</q></ab>
 
 					</div>
 				</div>
