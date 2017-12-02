@@ -197,8 +197,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/MAR.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/LUK.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "MAR",
+    "LUK",
     genre = "history"
     )
