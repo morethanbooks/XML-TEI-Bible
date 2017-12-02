@@ -54,9 +54,10 @@ At the moment following books are fully encoded in this chronological order:
 * 1 Corinthians
 * 2 Corinthians
 * Joshua
+* Mark
 
 At the moment, following book is being encoded:
-* Mark
+* Daniel
 
 
 ## Original Text

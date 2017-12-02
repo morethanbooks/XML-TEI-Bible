@@ -306,7 +306,6 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
 
     edges = pd.read_csv(input_folder+file_edges, encoding="utf-8", sep="\t")
     file_edges_name = os.path.splitext(file_edges)[0]
-  
     entities_edges = sorted(list(set(edges["Target"].tolist() + edges["Source"].tolist())))
     nodes = pd.read_csv(input_folder+file_nodes, encoding="utf-8", sep="\t")
     #print(sorted(entities_edges))
@@ -363,8 +362,8 @@ def create_networks_bible():
     xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
     
     string_xpath = xpath2string(xpaths)
-    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS"]
-    books_bible = ["JOS"]
+    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR"]
+    books_bible = ["MAR"]
     
     for different_book in books_bible:
 

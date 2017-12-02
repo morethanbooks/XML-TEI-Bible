@@ -30,7 +30,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per28	Felipe			discípulo	NT		male	Philippus	Filipe	person	human	defined		MAT
 #per29	Bartolomé			discípulo	NT		male	Batholomäus	Bartolomeu	person	human	defined		MAT
 #per30	Tomás			discípulo	NT		male	Thomas	Tomé	person	human	defined		MAT
-#per31	Jacobo	h. Alfeo  h. María		discípulo	NT		male	Jakobus	Tiago	person	human	defined		MAT
+#per31	Jacobo	h. Alfeo  h. María	Leví?	discípulo; en MAR 2:14 es Leví?	NT	medium	male	Jakobus	Tiago	person	human	defined		MAT
 #per32	Alfeo			discípulo	NT		male	Alphäus	Alfeu	person	human	defined		MAT
 #per33	Tadeo			discípulo	NT		male	Thaddäus	Tadeu	person	human	defined		MAT
 #per34	Judas Iscariote			discípulo	NT		male	Judas Iskariot	Judas Iscariotes	person	human	defined		MAT
@@ -476,7 +476,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per474	Asaf			???	AT		male			person	human	defined		SAL
 #per475	Leviatán				AT		male			person	superior	defined		SAL
 #per476	Teófilo				NT	medium	male			person	human	defined		ACT
-#per477	Simón				NT		male			person	human	defined		MAT
+#per477	Simón			discípulo? en MAT 3:18	NT		male			person	human	defined		MAT
 #per478	José		Barsabás		NT		male			person	human	defined		ACT
 #per479	Matías	Discípulo desde Hechos 1			NT		male			person	human	defined		ACT
 #per480	Joel	profeta			AT		male			person	human	defined		ACT
@@ -949,14 +949,14 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per947	Jabín	rey de Hazor			AT		male			person	human	defined		JOS
 #per948	Horam	rey de Gezer			AT		male			person	human	defined		JOS
 #per949	Jafía	rey de Laquis			AT		male			person	human	defined		JOS
-														
-														
-														
-														
-														
-														
-														
-														
+#per950	Jairo	alto dignatorio en sinagoga			NT		male			person	human	defined		MAR
+#per951	Herodías				NT		female			person	human	defined		MAR
+#per952	mujer sirofenicia				NT		female			person	human	defined		MAR
+#per953	Bartimeo	ciego			NT		male			person	human	defined		MAR
+#per954	Timeo	padre de Bartimeo			NT		male			person	human	defined		MAR
+#per955	Alejandro	hijo de Simón de Cerene		hay otras personas mencionadas con estos nombres	NT	medium	male			person	human	defined		MAR
+#per956	Rufo	hijo de Simón de Cerene		hay otras personas mencionadas con estos nombres	NT	medium	male			person	human	defined		MAR
+#per957	Salomé	mujer que está presente en la crucifixión de Jesús			NT		female			person	human	defined		MAR
 														
 														
 														
@@ -1240,7 +1240,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org1	Sanedrín							Sanhedrin	Sinédrio	group	human	defined		MAT
 #org2	fariseos							Pharisäer	Fariseus	group	human	defined		MAT
 #org3	discípulos	de Jesús						Jünger	Discípulos	group	human	defined		MAT
-#org4	ángel							Engel	Anjo	group	superior	defined		MAT
+#org4	ángeles							Engel	Anjo	group	superior	defined		MAT
 #org5	escribas							Schriftgelehrte	Escribas	group	human	defined		MAT
 #org6	demonios							Dämon	Demônio	group	superior	defined		MAT
 #org7	saduceos							Saduzäer	Saduceus	group	human	defined		MAT
@@ -1455,7 +1455,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org216	hijos de Gersón		gersonitas							group	human	defined		JOS
 #org217	hijos de Merari									group	human	defined		JOS
 #org218	hijos de Hamor									group	human	defined		JOS
-														
+#org219	gadarenos									group	human	defined		MAR
 														
 														
 														
@@ -2340,9 +2340,9 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla732	ciudades refugio									place	human			JOS
 #pla733	Ramot									place	human			JOS
 #pla734	Golán									place	human			JOS
-														
-														
-														
+#pla735	Idumea													MAR
+#pla736	región de los gadarenos													MAR
+#pla737	Dalmanuta													MAR
 														
 														
 														
@@ -2392,3 +2392,5 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 														
 														
 #ani0	animales													
+														
+#thin0	cosa													
