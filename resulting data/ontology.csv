@@ -19,7 +19,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per17	Espíritu Santo			Tb debería integrar en este id cuando se hace referencia al Espíritu de Dios?	AT		none	Heiliger Geist	Espírito Santo	person	superior	defined	1	MAT
 #per18	Juan el Bautista				NT		male	Johannes der Täufer	João Batista	person	human	defined		MAT
 #per19	Isaías				AT		male	Jesaja	Isaías	person	human	defined	1	MAT
-#per20	diablo				AT		none	Teufel	Diabo	person	superior	defined	1	MAT
+#per20	diablo	demonio			AT		none	Teufel	Diabo	person	superior	defined	1	MAT
 #per21	Pedro	h. Zebedeo	Simón	discípulo	NT		male	Simon Petrus	Simão Pedro	person	human	defined		MAT
 #per22	Andrés	h. Zebedeo		discípulo	NT		male	Andreas	André	person	human	defined		MAT
 #per23	Jacobo	h. Zebedeo		discípulo	NT		male	Jakobus	Tiago	person	human	defined		MAT
@@ -41,7 +41,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per39	Salomón				NT		male	Salomo	Salomão	person	human	defined	1	MAT
 #per40	Jonás	p. Simón Pedro			NT		male	Jona	Jonas	person	human	defined		MAT
 #per41	madre de hijos de Zebedeo			En Mat.27: 56 aparece una María madre de Jacobo ¿?	NT		female	Mutter der Söhne des Zebedäus	Mãe dos filhos de Zebedeu	person	human	defined		MAT
-#per42	César				NT		male	Kaiser	César	person	human	defined		MAT
+#per42	César	Augusto			NT		male	Kaiser	César	person	human	defined		MAT
 #per43	Abel				AT		male	Abel	Abel	person	human	defined	1	MAT
 #per44	Zacarías				NT		male	Zacharias 	Zacarias	person	human	defined	1	MAT
 #per45	Berequías				NT		male	Berechjas	Baraquias	person	human	defined		MAT
@@ -957,25 +957,25 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per955	Alejandro	hijo de Simón de Cerene		hay otras personas mencionadas con estos nombres	NT	medium	male			person	human	defined		MAR
 #per956	Rufo	hijo de Simón de Cerene		hay otras personas mencionadas con estos nombres	NT	medium	male			person	human	defined		MAR
 #per957	Salomé	mujer que está presente en la crucifixión de Jesús			NT		female			person	human	defined		MAR
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
-														
+#per958	Lucas				NT		male			person	human	defined		LUK
+#per959	Elisabet	madre de Juan el bautista			NT		female			person	human	defined		LUK
+#per960	Zacarías	padre de Juan el bautista			NT		male			person	human	defined		LUK
+#per961	Gabriel	ángel			NT		male			person	superior	defined		LUK
+#per962	Cirenio	gobernador de Siria			NT		male			person	human	defined		LUK
+#per963	Simeón				NT		male			person	human	defined		LUK
+#per964	Ana				NT		female			person	human	defined		LUK
+#per965	Fanuel				NT		male			person	superior	defined		LUK
+#per966	Abed-nego				NT	low	male			person	superior	defined		DAN
+#per967	Sadrac				NT	low	male			person	superior	defined		DAN
+#per968	Belsasar				NT	low	male			person	superior	defined		DAN
+#per969	Beltsasar				NT	low	male			person	superior	defined		DAN
+#per970	Arioc				NT	low	male			person	superior	defined		DAN
+#per971	Azarías				NT	low	male			person	superior	defined		DAN
+#per972	Mesac				NT	low	male			person	superior	defined		DAN
+#per973	Ciro				NT	low	male			person	superior	defined		DAN
+#per974	Melsar				NT	low	male			person	superior	defined		DAN
+#per975	Joacim				NT	low	male			person	superior	defined		DAN
+#per976	Ananías				NT	low	male			person	superior	defined		DAN
 														
 														
 														
@@ -1247,7 +1247,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org8	profetas							Propheten	Profétas	group	human	defined		MAT
 #org9	herodianos							Horadianer	Herodianos	group	human	defined		MAT
 #org10	reyes magos							Weisen aus dem Morgenland	Reis Magos	group	human	defined		MAT
-#org11	hermanos de Jesús							Brüder Jesu	Irmãos de Jesus	group	human	defined		MAT
+#org11	hermanos de Jesús	también el resto de su familia						Brüder Jesu	Irmãos de Jesus	group	human	defined		MAT
 #org12	sacerdotes							Priester	Sacerdotes	group	human	undefined		MAT
 #org13	judíos							Juden	Judeus	group	human	undefined		MAT
 #org14	falsos profetas	hechiceros, magos, adivinos						Falsche Propheten	Falsos Profétas	group	human	undefined		MAT
@@ -1456,7 +1456,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org217	hijos de Merari									group	human	defined		JOS
 #org218	hijos de Hamor									group	human	defined		JOS
 #org219	gadarenos									group	human	defined		MAR
-														
+#org220	familia de Elisabet y Zacarías									group	human	defined		LUK
 														
 														
 														
@@ -2340,11 +2340,11 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla732	ciudades refugio									place	human			JOS
 #pla733	Ramot									place	human			JOS
 #pla734	Golán									place	human			JOS
-#pla735	Idumea													MAR
-#pla736	región de los gadarenos													MAR
-#pla737	Dalmanuta													MAR
-														
-														
+#pla735	Idumea									place	human			MAR
+#pla736	región de los gadarenos									place	human			MAR
+#pla737	Dalmanuta									place	human			MAR
+#pla738	Media									place	human			DAN
+#pla739	Ulai									place	human			DAN
 														
 														
 														

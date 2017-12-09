@@ -27,8 +27,8 @@ def finding_standard_rs(content):
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
     
     variaciones_comunes = {
-        "per14" : ["Jehová","Todopoderoso","Señor","Padre","Omnipotente","Hacedor","Redentor","Creador"],
-        "per1" : ["Cristo","Jesucristo","Hijo"],
+        "per14" : ["Jehová","Todopoderoso","Señor","Padre","Omnipotente","Hacedor","Redentor","Creador","Altísimo"],
+        "per1" : ["Cristo","Jesucristo","Hijo","Mesías"],
         "per20" : ["Satanás"],
         "per17" : ["Espíritu"],
         "org0" : ["hombres", "hombre", "naciones", "pueblos","mundo","hijos de los hombres", "persona"],
@@ -197,8 +197,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/LUK.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/DAN.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "LUK",
+    "DAN",
     genre = "history"
     )

@@ -322,6 +322,7 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
 
 
     nx.set_node_attributes(graph, 'NormalizedName-sp', {k:v for (k,v) in zip(nodes["id"], nodes["NormalizedName-sp"])})
+    nx.set_node_attributes(graph, 'NormalizedName-ge', {k:v for (k,v) in zip(nodes["id"], nodes["NormalizedName-ge"])})
     nx.set_node_attributes(graph, 'Gender', {k:v for (k,v) in zip(nodes["id"], nodes["Gender"])})
     nx.set_node_attributes(graph, 'type', {k:v for (k,v) in zip(nodes["id"], nodes["type"])})
 
@@ -333,7 +334,7 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
     print( graph.nodes(data=True), type(graph.nodes(data=True)),)
     
     #print( graph.nodes(data=True)[:3], type(graph.nodes(data=True)),)
-    labels = nx.get_node_attributes(graph,'NormalizedName-sp')
+    labels = nx.get_node_attributes(graph,'NormalizedName-ge')
     
     groups = set(nx.get_node_attributes(graph,'Gender').values())
     mapping = dict(zip(sorted(groups),count()))
@@ -362,8 +363,8 @@ def create_networks_bible():
     xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
     
     string_xpath = xpath2string(xpaths)
-    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR"]
-    books_bible = ["MAR"]
+    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK"]
+    books_bible = ["LUK"]
     
     for different_book in books_bible:
 
