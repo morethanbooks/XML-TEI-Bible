@@ -334,7 +334,7 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
     print( graph.nodes(data=True), type(graph.nodes(data=True)),)
     
     #print( graph.nodes(data=True)[:3], type(graph.nodes(data=True)),)
-    labels = nx.get_node_attributes(graph,'NormalizedName-ge')
+    labels = nx.get_node_attributes(graph,'NormalizedName-sp')
     
     groups = set(nx.get_node_attributes(graph,'Gender').values())
     mapping = dict(zip(sorted(groups),count()))
@@ -363,8 +363,9 @@ def create_networks_bible():
     xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
     
     string_xpath = xpath2string(xpaths)
-    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK"]
-    books_bible = ["LUK"]
+    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN"]
+    books_bible = ["MAR"]
+    books_bible = ["DAN"]
     
     for different_book in books_bible:
 

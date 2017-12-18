@@ -45,7 +45,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per43	Abel				AT		male	Abel	Abel	person	human	defined	1	MAT
 #per44	Zacarías				NT		male	Zacharias 	Zacarias	person	human	defined	1	MAT
 #per45	Berequías				NT		male	Berechjas	Baraquias	person	human	defined		MAT
-#per46	Daniel	profeta			AT		male	Daniel	Daniel	person	human	defined	1	MAT
+#per46	Daniel	profeta	Beltsasar		AT		male	Daniel	Daniel	person	human	defined	1	MAT
 #per47	Noé				AT		male	Noah	Noé	person	human	defined	1	MAT
 #per48	Caifás	sumo sacerdote			NT		male	Kaiphas	Caifás	person	human	defined		MAT
 #per49	Simón	Simón el leproso			NT		male	Simon	Simão	person	human	defined		MAT
@@ -960,23 +960,23 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per958	Lucas				NT		male			person	human	defined		LUK
 #per959	Elisabet	madre de Juan el bautista			NT		female			person	human	defined		LUK
 #per960	Zacarías	padre de Juan el bautista			NT		male			person	human	defined		LUK
-#per961	Gabriel	ángel			NT		male			person	superior	defined		LUK
+#per961	Gabriel	ángel			NT		male			person	superior	defined	1	LUK
 #per962	Cirenio	gobernador de Siria			NT		male			person	human	defined		LUK
 #per963	Simeón				NT		male			person	human	defined		LUK
 #per964	Ana				NT		female			person	human	defined		LUK
 #per965	Fanuel				NT		male			person	superior	defined		LUK
-#per966	Abed-nego				NT	low	male			person	superior	defined		DAN
-#per967	Sadrac				NT	low	male			person	superior	defined		DAN
-#per968	Belsasar				NT	low	male			person	superior	defined		DAN
-#per969	Beltsasar				NT	low	male			person	superior	defined		DAN
-#per970	Arioc				NT	low	male			person	superior	defined		DAN
-#per971	Azarías				NT	low	male			person	superior	defined		DAN
-#per972	Mesac				NT	low	male			person	superior	defined		DAN
-#per973	Ciro				NT	low	male			person	superior	defined		DAN
-#per974	Melsar				NT	low	male			person	superior	defined		DAN
-#per975	Joacim				NT	low	male			person	superior	defined		DAN
-#per976	Ananías				NT	low	male			person	superior	defined		DAN
-														
+#per966	Beltsasar				NT		male			person	human	defined		DAN
+#per967	mujer de Belsasar				NT		female			person	human	defined		DAN
+#per968	Belsasar	hijo de Nabucodonosor			NT		male			person	superior	defined		DAN
+#per969	Asuero	rey			NT		male			person	human	defined		DAN
+#per970	Arioc				NT		male			person	human	defined		DAN
+#per971	Azarías	Abed-nego			NT		male			person	human	defined		DAN
+#per972	Misael	Mesac			NT		male			person	human	defined		DAN
+#per973	Ciro				NT		male			person	human	defined		DAN
+#per974	Melsar				NT		male			person	human	defined		DAN
+#per975	Joacim				NT		male			person	human	defined		DAN
+#per976	Ananías	Sadrac			NT		male			person	human	defined		DAN
+#per977	Aspenaz	jefe de los eunucos de Nucodonosor			NT		male			person	human	defined		DAN
 														
 														
 														
@@ -1457,13 +1457,13 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org218	hijos de Hamor									group	human	defined		JOS
 #org219	gadarenos									group	human	defined		MAR
 #org220	familia de Elisabet y Zacarías									group	human	defined		LUK
-														
-														
-														
-														
-														
-														
-														
+#org221	deportados		familias de los principales de Israel							group	human	defined		DAN
+#org222	astrólogos									group	human	defined		DAN
+#org223	siervos del rey	de Babilonia								group	human	defined		DAN
+#org224	familia de Belsasar									group	human	defined		DAN
+#org225	reyes de Persia									group	human	defined		DAN
+#org226	reyes de Media									group	human	defined		DAN
+#org227	reyes de Grecia									group	human	defined		DAN
 														
 														
 														
@@ -2345,9 +2345,9 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla737	Dalmanuta									place	human			MAR
 #pla738	Media									place	human			DAN
 #pla739	Ulai									place	human			DAN
-														
-														
-														
+#pla740	Dura									place	human			DAN
+#pla741	Susa									place	human			DAN
+#pla742	Ufaz									place	human			DAN
 														
 														
 														
