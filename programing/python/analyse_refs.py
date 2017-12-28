@@ -54,23 +54,63 @@ def analyse_refs(inputtei, file, output):
         refs_df = refs_df.sort_values(by='freq', ascending=False)
 
 
-        refs_df["number"] = 1
+        refs_df["number"] = refs_df["id"].str.count(" ")
 
-        refs_df.loc[ refs_df["id"].str.contains(" ", na=False),  "number"] = "2"
+        #refs_df.loc[ refs_df["id"].str.count(" ", na=False),  "number"] = ">1"
+
+
+        refs_df["low_string"] = refs_df["string"].str.lower()        
+        refs_df["string_len"] = refs_df["string"].apply(lambda x: len(x))
 
         refs_df["type"] = ""
-
-        types = ["org","per","tim","pla","ani","wor"]
-        for type_ in types:
-            refs_df.loc[ refs_df["id"].str.contains(type_, na=False) & refs_df["number"]==1,  "type"] = type_        
-        
+        refs_df['type'] = refs_df["id"].str[1:4]
+                
         print(refs_df)
 
         refs_df.to_csv(output+file+"refs.csv", sep='\t', encoding='utf-8', index=False)
+        refs_df["freq"].plot.hist(bins=100)
+        plt.show()
+        refs_df["number"].plot.hist(bins=50)
+        plt.show()
+        refs_df["string_len"].plot.hist(bins=20)
+        plt.show()
+
         return refs_df
+
+def create_edges_coaparence_attribute(refs_df):
+    refs_df2 = refs_df.loc[refs_df["number"] == 1]
+    list_coaparences = sorted(refs_df2["id"].values.tolist())
+    list_coaparences = [i.split(' ', 1) for i in list_coaparences]
+    edges = []
+
+    for coaparences in list_coaparences:
+        old_nodes = []
+        for coaparence1 in (coaparences):
+            old_nodes.append(coaparence1)
+            for coaparence2 in (coaparences):
+                print(coaparence1 ,coaparence2)
+                if coaparence1 != coaparence2 and coaparence2 not in old_nodes:
+                    edges.append((coaparence1,coaparence2))
+    edges_counter = Counter(edges)
     
+    edges_df = pd.DataFrame([ [tuple_[0], tuple_[1], value] for tuple_,value in list(edges_counter.items())], columns=["Source","Target","Weight"])
+    edges_df = edges_df.sort_values(by='Weight')
+    edges_df.to_csv("/home/jose/Dropbox/biblia/tb/resulting data/edges_coaparence_in_attribute_rs.csv", sep='\t', encoding='utf-8', index=True)
+    
+    return edges_df
+
+def create_edges_shared_string(refs_df):
+    grouped = refs_df.groupby(["low_string","id"])["low_string"].count().unstack("id")
+    print(grouped)
+    return grouped
+    
+# TODO: hacerlo por cada libro de la Biblia
+"""
 refs_df = analyse_refs(
         inputtei = "/home/jose/Dropbox/biblia/tb/",
         file = "TEIBible", # "*.xml"
         output = "/home/jose/Dropbox/biblia/tb/resulting data/",
 )
+"""
+#edges_df = create_edges_coaparence_attribute(refs_df)
+grouped = create_edges_shared_string(refs_df)
