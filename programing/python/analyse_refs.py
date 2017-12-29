@@ -12,7 +12,7 @@ import os
 import glob
 import re
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 
 def analyse_refs(inputtei, file, output):
@@ -99,10 +99,50 @@ def create_edges_coaparence_attribute(refs_df):
     
     return edges_df
 
+    
 def create_edges_shared_string(refs_df):
-    grouped = refs_df.groupby(["low_string","id"])["low_string"].count().unstack("id")
-    print(grouped)
-    return grouped
+    refs_df2 = refs_df.copy()
+    edges = []
+    #refs_df2["id"] = refs_df2["id"].apply(lambda x: x.split(' '))
+    duplicated_low_strings = refs_df2[refs_df2.duplicated(subset=["low_string"], keep="first")].groupby(('low_string')).min().index
+    for duplicated_low_string in duplicated_low_strings:
+        print("\n")
+        print(duplicated_low_string)
+        entities_column = refs_df2.loc[refs_df2["low_string"] == duplicated_low_string, ["id"]]
+        plain_entities = []
+        for multiple_entities in entities_column.items():
+            #i=0
+            for entities in multiple_entities[1]:
+                for entity in entities.split(" "):
+                    plain_entities.append(entity)
+        plain_entities = list(set(plain_entities))
+        old_entities = []
+        if len(plain_entities) > 1:
+            for entity1 in plain_entities:
+                old_entities.append(entity1)
+                for entity2 in plain_entities:
+                    if entity1 != entity2 and entity2 not in old_entities:
+                        print(entity1,entity2)
+                        edges.append((entity1,entity2))
+    edges_counter = Counter(edges)
+    edges_df = pd.DataFrame([ [tuple_[0], tuple_[1], value] for tuple_,value in list(edges_counter.items())], columns=["Source","Target","Weight"])
+    edges_df = edges_df.sort_values(by='Weight')
+    edges_df["Type"] = "Undirected"
+    edges_df.to_csv("/home/jose/Dropbox/biblia/tb/resulting data/edges_shared_type_string.csv", sep='\t', encoding='utf-8', index=True)
+    print(edges)
+    #print(duplicated_low_strings["low_string"])
+    """
+    print(len(duplicated_strings))
+    duplicated_strings = duplicated_strings[duplicated_strings== True]
+    print(len(duplicated_strings))
+    print(duplicated_strings)
+    refs_df2
+    #for duplicated_string in duplicated_strings.items():
+        #print(duplicated_string[0])
+        #print(refs_df2.iloc[duplicated_string[0]])
+    #print(refs_df2)
+    """
+    return edges
     
 # TODO: hacerlo por cada libro de la Biblia
 """
@@ -113,4 +153,4 @@ refs_df = analyse_refs(
 )
 """
 #edges_df = create_edges_coaparence_attribute(refs_df)
-grouped = create_edges_shared_string(refs_df)
+edges = create_edges_shared_string(refs_df)
