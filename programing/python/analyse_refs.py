@@ -123,7 +123,7 @@ def create_edges_shared_string(refs_df):
                 for entity2 in plain_entities:
                     if entity1 != entity2 and entity2 not in old_entities:
                         print(entity1,entity2)
-                        edges.append((entity1,entity2))
+                        edges.append(tuple(sorted([entity1,entity2])))
     edges_counter = Counter(edges)
     edges_df = pd.DataFrame([ [tuple_[0], tuple_[1], value] for tuple_,value in list(edges_counter.items())], columns=["Source","Target","Weight"])
     edges_df = edges_df.sort_values(by='Weight')
@@ -145,12 +145,11 @@ def create_edges_shared_string(refs_df):
     return edges
     
 # TODO: hacerlo por cada libro de la Biblia
-"""
+
 refs_df = analyse_refs(
         inputtei = "/home/jose/Dropbox/biblia/tb/",
         file = "TEIBible", # "*.xml"
         output = "/home/jose/Dropbox/biblia/tb/resulting data/",
 )
-"""
 #edges_df = create_edges_coaparence_attribute(refs_df)
 edges = create_edges_shared_string(refs_df)

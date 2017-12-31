@@ -299,7 +299,7 @@ def create_networks(inputtei, file, output, border, book, deleting_books, charac
         return df_characters, edges_text_unit, df_text_parts
 
 
-def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, output_folder, columns_edges = ["Source","Target",'Weight','Type']):
+def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, output_folder, different_book, columns_edges = ["Source","Target",'Weight','Type']):
 
     # TODO: Pasar categorías que filtra
     # TODO: Asignar colores usando género, tipo y naturaleza
@@ -353,6 +353,8 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
     
     nx.draw_networkx(graph, pos, labels = labels, width = widths, font_size=15+(len(graph.nodes())/25), alpha=0.4, edge_color='#87CEFA', node_color=colors, cmap=plt.cm.RdYlBu, style= "solid", node_size = degree)
 
+    nx.write_gexf(graph, path=output_folder+different_book+".gexf")
+
     plt.savefig(output_folder+file_edges_name+'.png', dpi=50)
     #print(d)
     #print(nx.nodes(graph))
@@ -363,9 +365,9 @@ def create_networks_bible():
     xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
     
     string_xpath = xpath2string(xpaths)
-    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN"]
     books_bible = ["MAR"]
-    books_bible = ["DAN"]
+    books_bible = ["HOS"]
+    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS"]
     
     for different_book in books_bible:
 
@@ -383,7 +385,8 @@ def create_networks_bible():
                            file_edges = "TEIBible_"+different_book+string_xpath+"_edges_text-unit.csv",
                            file_nodes = "ontology.csv",
                            output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/networks/",
-                           columns_nodes = ""
+                           columns_nodes = "",
+                           different_book = different_book,
                            )
     return
 
