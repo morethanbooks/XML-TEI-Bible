@@ -151,5 +151,5 @@ refs_df = analyse_refs(
         file = "TEIBible", # "*.xml"
         output = "/home/jose/Dropbox/biblia/tb/resulting data/",
 )
-#edges_df = create_edges_coaparence_attribute(refs_df)
+edges_df = create_edges_coaparence_attribute(refs_df)
 edges = create_edges_shared_string(refs_df)
