@@ -17,8 +17,8 @@ def finding_standard_rs(content):
         It searchs for textual patterns that matchs things like names
     """
     nombres_comunes = {
-        "pla" : ["ciudad","ciudades","lugares","mar", "río"],
-        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","rey","reyes","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
+        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas"],
+        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
         "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervos","siervas","tribu","tribus","soldados"],
     }
 
@@ -187,7 +187,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             content = deleting_wrong_entities(content)
         
             # it cleans the HTML from entities, etc        
-            
+            # TODO: introducir función que arregle algunos valores como "<rs key="org">hijos de <rs key="#pla4">Israel</rs></rs>", "<rs key="org">hijos de <rs key="#pla2">Judá</rs></rs>",
             # It writes the result in the output folder
     
             with open (os.path.join(outputtei, docFormatOut), "w", encoding="utf-8") as fout:
@@ -197,8 +197,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/HOS.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/JDG.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "HOS",
+    "JDG",
     genre = "history"
     )
