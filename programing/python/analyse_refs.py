@@ -78,9 +78,9 @@ def analyse_refs(inputtei, file, output):
         return refs_df
 
 def create_edges_coaparence_attribute(refs_df):
-    refs_df2 = refs_df.loc[refs_df["number"] == 1]
+    refs_df2 = refs_df.loc[refs_df["number"] > 0]
     list_coaparences = sorted(refs_df2["id"].values.tolist())
-    list_coaparences = [i.split(' ', 1) for i in list_coaparences]
+    list_coaparences = [i.split(' ') for i in list_coaparences]
     edges = []
 
     for coaparences in list_coaparences:
