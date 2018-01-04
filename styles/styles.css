@@ -52,9 +52,12 @@ rs[key*="tim"]
 	{
 		color:darkgreen;
 	}
-rs[key*="per14"],
-rs[key*="per1"],
-rs[key*="per17"]
+rs[key="per14"],
+rs[key="#per14"],
+rs[key="per1"],
+rs[key="#per1"],
+rs[key="per17"]
+rs[key="#per17"]
 	{
 		color:white;
 		background-color:CornflowerBlue ;
@@ -75,14 +78,19 @@ q[who*="pla"]
 	{
 		border:ForestGreen solid 2px;
 	}
-q[who*="per14"],
-q[who*="per1"],
-q[who*="per17"]
+q[who="per14"],
+q[who="per1"],
+q[who="per17"],
+q[who="#per14"],
+q[who="#per1"],
+q[who="#per17"],
 	{
 		border-color:CornflowerBlue ;
 	}
-q[who*="per14"],
-q[who*="per17"]
+q[who="per14"],
+q[who="per17"],
+q[who="#per14"],
+q[who="#per17"],
     {
         font-weight:bold;
         font-variant: small-caps;
@@ -177,7 +185,8 @@ ab[type="pericope"]
 
 /**/
 
-q[corresp*="per1"]
+q[corresp="#per1"],
+q[corresp="per1"],
 	{
 		border: red solid 2px;
 	}
@@ -192,11 +201,12 @@ q[corresp*="org7"]
 	{
 		border:green solid 2px;
 	}
-q[corresp*="per14"]
+q[corresp="per14"],
+q[corresp="#per14"],
 	{
 		border: orange solid 2px;
 	}
-q[corresp*="general"]
+q[corresp*="org0"]
 	{
 		border: yellow solid 2px;
 	}
