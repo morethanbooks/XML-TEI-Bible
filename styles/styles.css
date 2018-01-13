@@ -78,24 +78,6 @@ q[who*="pla"]
 	{
 		border:ForestGreen solid 2px;
 	}
-q[who="per14"],
-q[who="per1"],
-q[who="per17"],
-q[who="#per14"],
-q[who="#per1"],
-q[who="#per17"],
-	{
-		border-color:CornflowerBlue ;
-	}
-q[who="per14"],
-q[who="per17"],
-q[who="#per14"],
-q[who="#per17"],
-    {
-        font-weight:bold;
-        font-variant: small-caps;
-        font-size:1.2rem;
-    }
 
 ab[type="verse"]
 	{
@@ -210,3 +192,22 @@ q[corresp*="org0"]
 	{
 		border: yellow solid 2px;
 	}
+q[who="per14"],
+q[who="per1"],
+q[who="per17"],
+q[who="#per14"],
+q[who="#per1"],
+q[who="#per17"],
+	{
+		border-color:CornflowerBlue ;
+	}
+q[who="per14"],
+q[who="per17"],
+q[who="#per14"],
+q[who="#per17"],
+    {
+        font-weight:bold;
+        font-variant: small-caps;
+        font-size:1.2rem;
+    }
+
