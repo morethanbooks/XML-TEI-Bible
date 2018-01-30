@@ -56,9 +56,12 @@ At the moment following books are fully encoded in this chronological order:
 * Joshua
 * Mark
 * Daniel
+* Hosea
+* Judges
 
 At the moment, following book is being encoded:
-* Hosea
+
+* Nehemiah
 
 
 ## Original Text
