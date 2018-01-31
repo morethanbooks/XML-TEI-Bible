@@ -17,9 +17,9 @@ def finding_standard_rs(content):
         It searchs for textual patterns that matchs things like names
     """
     nombres_comunes = {
-        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas"],
+        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región",],
         "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
-        "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervos","siervas","tribu","tribus","soldados"],
+        "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervas","tribu","tribus","soldados"],
     }
 
     for key,values in nombres_comunes.items():
@@ -42,13 +42,15 @@ def finding_standard_rs(content):
         "org101" : ["enemigo",],
         "org18" : ["santos",],
         "org100" : ["reyes","rey"],
+        "pla30" : ["Templo"],
+        "wor1" : ["Ley"],
 
     }
     for key,values in variaciones_comunes.items():
         for value in values:
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
 
-    content = re.sub(r'([a-zá-úñüç,;>] )([A-ZÁ-ÚÜÑ][a-zá-úñüç]+)([^a-zá-úñüç])', r'\1<rs key="per">\2</rs>\3', content)
+    content = re.sub(r'([a-zá-úñüç,;>] )([A-ZÁ-ÚÜÑ][a-zá-úñüç-]+)([^a-zá-úñüç])', r'\1<rs key="per">\2</rs>\3', content)
     
     return content
 
@@ -58,9 +60,10 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or (row["order-edition"] == "MAT")  or (row["order-edition"] == "JOH"):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book):
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
-        
+        if (row["type"] == "group") & (row["variants"] != ""):
+            content = re.sub(r'(\W)('+ re.escape(row["variants"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
     return content
         
 def improve_struccture(content):
@@ -143,6 +146,12 @@ def deleting_wrong_entities(content):
     content = re.sub(r'<rs key="#pla230">Mira</rs>', r'Mira', content)
     content = re.sub(r'<rs key="#pla258">Sin</rs>', r'Sin', content)
     content = re.sub(r'<rs key="#per17"><rs key="per17">Espíritu</rs> <rs key="per">Santo</rs></rs>', r'<rs key="#per17"><rs key="per17">Espíritu Santo</rs>', content)
+
+    content = re.sub(r'"#per5"', r'"#pla2"', content)
+    content = re.sub(r'<rs key="org\d*">((hombres|hijos) de <rs key="#pla2">Judá</rs>)</rs>', r'<rs key="#org39">\1</rs>', content)
+    content = re.sub(r'<rs key="org\d*">((hombres|hijos) de <rs key="#pla4">Israel</rs>)</rs>', r'<rs key="#org70">\1</rs>', content)
+    content = re.sub(r'<rs key="#pla(\d*)">([^ ]*? de )<rs key="(#?pla\d+)"', r'<rs key="\1">\1<rs key="\2"', content)
+    
     
     return(content)
 
@@ -176,7 +185,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             content = improve_struccture(content)
             
             find_people_without_id(content, outputtei,bookcode)
-            
+
+            content = deleting_wrong_entities(content)
             
             # Buscamos estructuras q
             content = findingq(content, genre)
@@ -184,7 +194,6 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             # Intentamos dar valores a los atributos de q
             content = values_q(content)
             
-            content = deleting_wrong_entities(content)
         
             # it cleans the HTML from entities, etc        
             # TODO: introducir función que arregle algunos valores como "<rs key="org">hijos de <rs key="#pla4">Israel</rs></rs>", "<rs key="org">hijos de <rs key="#pla2">Judá</rs></rs>",
@@ -197,8 +206,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/JDG.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/OBA.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "JDG",
+    "OBA",
     genre = "history"
     )
