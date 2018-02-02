@@ -58,6 +58,7 @@ At the moment following books are fully encoded in this chronological order:
 * Daniel
 * Hosea
 * Judges
+* Obadaih
 
 At the moment, following book is being encoded:
 

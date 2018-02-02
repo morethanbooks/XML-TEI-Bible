@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="edge" mode="static">
+      <attribute id="5" title="Weight" type="long" />
+      <attribute id="6" title="Type" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="NormalizedName-ge" type="string" />
+      <attribute id="1" title="type" type="string" />
+      <attribute id="2" title="NormalizedName-sp" type="string" />
+      <attribute id="3" title="Gender" type="string" />
+      <attribute id="4" title="Degree" type="long" />
+    </attributes>
+    <nodes>
+      <node id="#per104" label="#per104">
+        <attvalues>
+          <attvalue for="0" value="Josef" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="José" />
+          <attvalue for="3" value="male" />
+          <attvalue for="4" value="600" />
+        </attvalues>
+      </node>
+      <node id="#per4" label="#per4">
+        <attvalues>
+          <attvalue for="0" value="Jakob" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Jacob" />
+          <attvalue for="3" value="male" />
+          <attvalue for="4" value="700" />
+        </attvalues>
+      </node>
+      <node id="#per131" label="#per131">
+        <attvalues>
+          <attvalue for="0" value="Esau" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Esaú" />
+          <attvalue for="3" value="male" />
+          <attvalue for="4" value="1600" />
+        </attvalues>
+      </node>
+      <node id="#per14" label="#per14">
+        <attvalues>
+          <attvalue for="0" value="Gott" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Dios" />
+          <attvalue for="3" value="none" />
+          <attvalue for="4" value="1800" />
+        </attvalues>
+      </node>
+      <node id="#per1044" label="#per1044">
+        <attvalues>
+          <attvalue for="0" value="nan" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Abdías" />
+          <attvalue for="3" value="male" />
+          <attvalue for="4" value="400" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="#per104" target="#per131">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="Undirected" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="#per104" target="#per4">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="Undirected" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="#per104" target="#per14">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="Undirected" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="#per4" target="#per14">
+        <attvalues>
+          <attvalue for="5" value="3" />
+          <attvalue for="6" value="Undirected" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="#per4" target="#per131">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="Undirected" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="#per1044" target="#per14">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="Undirected" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="#per14" target="#per131">
+        <attvalues>
+          <attvalue for="5" value="5" />
+          <attvalue for="6" value="Undirected" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
