@@ -17,7 +17,7 @@ def finding_standard_rs(content):
         It searchs for textual patterns that matchs things like names
     """
     nombres_comunes = {
-        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región",],
+        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región","monte","territorio","valle"],
         "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
         "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervas","tribu","tribus","soldados"],
     }
