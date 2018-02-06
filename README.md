@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1163526.svg)](https://doi.org/10.5281/zenodo.1163526)
+
 # XML-TEI Bible
 
 This project encodes the Bible in TEI, starting with the books (all of them in Spanish): John and Mathew Gospels, Apocalypse, Genesis, Ruth, Jonah, 75 Psalms, Acts, Malachi, Haggai, Exodus, Zechariah, Micah, Habakkuk, Nahum, Zephaniah, 1 and 2 Samuel, 1-3 of John, Jude, Job, James, 1 Peter, 2 Peter, Ezekiel, Ecclesiastes, Romans, 1 Corinthians, 2 Corinthians, Joshua, Mark, Daniel, Hosea, Judges, Obadiah, Philemon. José Calvo Tello started this project because the Bible is a interesting text that speaks to everyone, and XML-TEI makes possible to listen the text in new ways. 
