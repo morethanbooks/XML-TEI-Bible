@@ -59,6 +59,7 @@ At the moment following books are fully encoded in this chronological order:
 * Hosea
 * Judges
 * Obadaih
+* Philemon
 
 At the moment, following book is being encoded:
 
