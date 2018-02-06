@@ -17,7 +17,7 @@ def finding_standard_rs(content):
         It searchs for textual patterns that matchs things like names
     """
     nombres_comunes = {
-        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región",],
+        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región","monte","territorio","valle"],
         "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
         "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervas","tribu","tribus","soldados"],
     }
@@ -142,7 +142,7 @@ def find_people_without_id(content, outputtei, bookcode):
 
     
 
-def deleting_wrong_entities(content):
+def deleting_wrong_entities(content, bookcode):
     content = re.sub(r'<rs key="#pla230">Mira</rs>', r'Mira', content)
     content = re.sub(r'<rs key="#pla258">Sin</rs>', r'Sin', content)
     content = re.sub(r'<rs key="#per17"><rs key="per17">Espíritu</rs> <rs key="per">Santo</rs></rs>', r'<rs key="#per17"><rs key="per17">Espíritu Santo</rs>', content)
@@ -152,7 +152,7 @@ def deleting_wrong_entities(content):
     content = re.sub(r'<rs key="org\d*">((hombres|hijos) de <rs key="#pla4">Israel</rs>)</rs>', r'<rs key="#org70">\1</rs>', content)
     content = re.sub(r'<rs key="#pla(\d*)">([^ ]*? de )<rs key="(#?pla\d+)"', r'<rs key="\1">\1<rs key="\2"', content)
     
-    content = re.sub(r'\A.*?</teiHeader>', r'<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?><TEI xmlns="http://www.tei-c.org/ns/1.0">\n	<teiHeader>\n		<fileDesc>\n			<titleStmt>\n				<title>Génesis</title>\n				<title type="idno">\n					<idno type="string">GEN</idno>\n					<idno type="viaf">174582712</idno>\n				</title>\n				<author>\n					<name type="short"></name>\n					<name type="full"></name>\n					<idno type="viaf"></idno>\n				</author>\n				<principal key="#jct">José Calvo Tello</principal>\n			</titleStmt>\n			<publicationStmt>\n				<publisher>José Calvo Tello</publisher>\n				<availability status="free">\n					<p>The text is freely available.</p>\n				</availability>\n				<date when="2017">2017</date>\n			</publicationStmt>\n			<sourceDesc>\n				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>\n				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>\n				<bibl type="edition-first"><date when="1569">1569</date></bibl>\n			</sourceDesc>\n		</fileDesc>\n		<encodingDesc>\n			<p></p>\n		</encodingDesc>\n		<revisionDesc>\n			<change when="2016-04-01" who="#jct">First version of Genesis</change>\n			<change when="2016-05-16" who="#jct" status="checked">Text and markup fully checked personally.</change>\n		</revisionDesc>\n	</teiHeader>\n', content, flags=re.IGNORECASE|re.MULTILINE|re.DOTALL)
+    content = re.sub(r'\A.*?</teiHeader>', r'<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?><TEI xmlns="http://www.tei-c.org/ns/1.0">\n	<teiHeader>\n		<fileDesc>\n			<titleStmt>\n				<title></title>\n				<title type="idno">\n					<idno type="string">'+bookcode+'</idno>\n					<idno type="viaf"></idno>\n				</title>\n				<author>\n					<name type="short"></name>\n					<name type="full"></name>\n					<idno type="viaf"></idno>\n				</author>\n				<principal key="#jct">José Calvo Tello</principal>\n			</titleStmt>\n			<publicationStmt>\n				<publisher>José Calvo Tello</publisher>\n				<availability status="free">\n					<p>The text is freely available.</p>\n				</availability>\n				<date when="2018">2018</date>\n			</publicationStmt>\n			<sourceDesc>\n				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>\n				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>\n				<bibl type="edition-first"><date when="1569">1569</date></bibl>\n			</sourceDesc>\n		</fileDesc>\n		<encodingDesc>\n			<p></p>\n		</encodingDesc>\n		<revisionDesc>\n			<change when="2018-02-02" who="#jct">First version of </change>\n		</revisionDesc>\n	</teiHeader>\n', content, flags=re.IGNORECASE|re.MULTILINE|re.DOTALL)
 
     return(content)
 
@@ -187,7 +187,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             
             find_people_without_id(content, outputtei,bookcode)
 
-            content = deleting_wrong_entities(content)
+            content = deleting_wrong_entities(content, bookcode)
             
             # Buscamos estructuras q
             content = findingq(content, genre)
@@ -207,8 +207,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/OBA.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/JOE.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "OBA",
+    "JOE",
     genre = "history"
     )
