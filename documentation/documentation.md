@@ -28,7 +28,7 @@ At the moment following books are fully encoded in this chronological order:
 * Genesis
 * Book of Ruth
 * Book of Jonah
-* 75 first Psalms
+* first 75 Psalms
 * Acts
 * Malachi
 * Haggai
@@ -60,10 +60,11 @@ At the moment following books are fully encoded in this chronological order:
 * Judges
 * Obadaih
 * Philemon
+* Nehemiah
 
 At the moment, following book is being encoded:
 
-* Nehemiah
+* last 75 Psalms
 
 
 ## Original Text
