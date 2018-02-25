@@ -31,7 +31,7 @@ def finding_structure(inputcsv, inputtei, outputtei):
         with open(doc, "r", errors="replace", encoding="utf-8") as fin:
             content = fin.read()
             
-            content = re.sub(r'( (key|corresp|who)(="| ))([a-z])', r'\1#\4', content)
+            content = re.sub(r'(="| )([a-z]{3}\d+)', r'\1#\2', content)
 
             if len(re.findall(r'( (key|corresp|who)(="| ))([a-z])', content)) > 0:
                 print("encontrados algunos problemas")
@@ -49,6 +49,6 @@ def finding_structure(inputcsv, inputtei, outputtei):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/PHM.xml",
+    "/home/jose/Dropbox/biblia/tb/NEH.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
