@@ -110,13 +110,13 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per108	Marta	he. Lázaro y María			NT		female	Martha	Marta	person	human	defined		JOH
 #per109	Rubén	jefe de tribu			NT		male	Ruben	Ruben	person	human	defined	1	JOH
 #per110	Judas	no Iscariote			NT		male	Judas	Judas	person	human	defined		JOH
-#per111	Malco				NT		male			person	human	defined		JOH
-#per112	Anás	suegro Caifas			NT		male			person	human	defined		JOH
+#per111	Malco			check translation	NT		male	Malco		person	human	defined		JOH
+#per112	Anás	suegro Caifas		check translation	NT		male	Anas		person	human	defined		JOH
 #per113	tía de Jesús				NT		female	Tante von Jesus	Tia de Jesus	person	human	defined		JOH
 #per114	Cleofas				NT		male	Kleopas	Cleofas	person	human	defined		JOH
 #per115	María	Mujer de Cleofas			NT		female	Maria	Maria	person	human	defined		JOH
 #per116	Antipas				NT		male	Antipas	Antipas	person	human	defined		JOH
-#per117	Silvano			antes Balaam	NT		male			person	human	defined		1PE
+#per117	Silvano			antes Balaam	NT		male	Silvanus		person	human	defined		1PE
 #per118	Marcos	hijo de Pedro		antes Balac	NT		male			person	human	defined		1PE
 #per119	Jezabel				NT		female			person	human	defined		REV
 #per120	Gad	jefe de tribu			AT		male	Gad		person	human	defined	1	REV
@@ -1325,10 +1325,10 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #per1323	Natanael				AT		male			person	human	defined		NEH
 #per1324	Obadías				AT		male			person	human	defined		NEH
 #per1325	Azarael				AT		male			person	human	defined		NEH
-														
-														
-														
-														
+#per1326	Etán													
+#per1327	Hemán													
+#per1328														
+#per1329														
 														
 														
 														
@@ -1546,7 +1546,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org168	criados de Job									group	human	defined		JOB
 #org169	amigos de Job									group	human	defined		JOB
 #org170	ancianos de iglesia									group	human	defined		1PE
-#org171	cautivos		cautivo							group	human	defined		EZE
+#org171	cautivos	de Israa	cautivo	A partir de qué época (y libro) puede haber cautivos? En los salmos?						group	human	defined		EZE
 #org172	población de Jerusalén									group	human	defined		EZE
 #org173	rey de Babilonia									group	human	defined		EZE
 #org174	faraones de Egipto									group	human	defined		EZE
@@ -1630,7 +1630,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #org252	porteros									group	human	defined		NEH
 #org253	netofatitas									group	human	defined		NEH
 #org254	tirios									group	human	defined		NEH
-														
+#org255	agarenos													
 														
 														
 														
@@ -1762,7 +1762,7 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla15	infierno		Seol, seol					Hölle	Inferno	place	superior			MAT
 #pla16	Sodoma							Sodom	Sodoma	place	human			MAT
 #pla17	Gomorra							Gomorra	Gomorra	place	human			MAT
-#pla18	cielo							Himmel	Céu	place	superior			MAT
+#pla18	Patmos							Himmel	Céu	place	superior			MAT
 #pla19	reino de los cielos		reino de Dios			low		Himmelreich	Reino dos céus	place	superior			MAT
 #pla20	Nínive							Ninive	Ninive	place	human			MAT
 #pla21	Genesaret							Genezareth	Genezaré	place	human			MAT
@@ -2555,7 +2555,12 @@ id	NormalizedName-sp	aclaration	variants	comments	book	cert	Gender	NormalizedNam
 #pla808	Nebalat									place	human			NEH
 #pla809	Lod									place	human			NEH
 #pla810	Azmavet									place	human			NEH
-														
+#pla811	Cam													
+#pla812	Meriba													
+#pla813	Amón													
+#pla814	Sísara													
+#pla815	Rahab													
+#pla816														
 														
 #tim1	tercer día	tras la muerte de Jesús						Dritter Tag	Terceiro dia	time				MAT
 #tim2	Día del juicio							Tag des jüngsten Gerichtes	Dia do juízo	time				MAT
