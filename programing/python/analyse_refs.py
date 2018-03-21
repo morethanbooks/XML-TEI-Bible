@@ -161,9 +161,9 @@ refs_df = analyse_refs(
 * how much (raw and proportions)?
 * who talks more?
 * how much (raw and proportions)?
-* how many degrees of embbed is the book (average and std)?
+* how many degrees of embbed is the book (max, min, average and std)?
 * who are the people or groups most talked to?
-* how long is the book (in verses and chapters)?
+* how long is the book (in verses, pericopes and chapters)?
 * how much dialogue is there (in proportions to verses?)
 
 
