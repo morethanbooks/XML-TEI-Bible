@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lucas</title>
+                <title type="idno">
+                    <idno type="string">LUK</idno>
+                    <idno type="viaf">175769882</idno>
+                </title>
+                <author>
+                    <name type="short">Lucas</name>
+                    <name type="full">Lucas</name>
+                    <idno type="viaf">128165029</idno>
+                </author>
+                <principal key="#jct">José Calvo Tello</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>José Calvo Tello</publisher>
+                <availability status="free">
+                    <p>The text is freely available.</p>
+                </availability>
+                <date when="2017">2017</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+                <bibl type="edition-first"><date when="1569">1569</date></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p></p>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2017-12-04" who="#jct">First version of Luke</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div />
+        </front><body>
+            <div xml:id="b.LUK" type="book">
+                <div xml:id="b.LUK.1" type="chapter" n="1" cert="high">
+                    <div type="pericope">
+                        <ab xml:id="b.LUK.1.1" type="verse" n="1">Puesto que ya muchos han tratado de poner en orden la historia de las cosas que entre nosotros han sido ciertísimas,</ab>
+                        <ab xml:id="b.LUK.1.2" type="verse" n="2">tal como nos las enseñaron los que desde el principio las vieron con sus ojos y fueron ministros de la palabra,</ab>
+                        <ab xml:id="b.LUK.1.3" type="verse" n="3"><q who="#per958" corresp="#per476" type="oral"><q who="#per958" corresp="#per476" type="oral">me ha parecido también a mí, después de haber investigado con diligencia todas las cosas desde su origen, escribírtelas por orden, <rs key="#per476">excelentísimo Teófilo</rs>,</q></q></ab>
+                        <ab xml:id="b.LUK.1.4" type="verse" n="4"><q who="#per958" corresp="#per476" type="oral">para que conozcas bien la verdad de las cosas en las cuales has sido instruido.</q></ab>
+                        <ab xml:id="b.LUK.1.5" type="verse" n="1">Puesto que ya muchos han tratado de poner en orden la historia de las cosas que entre nosotros han sido ciertísimas,</ab>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <back />
+    </text>
+</TEI>
