@@ -30,8 +30,10 @@ namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.
 books_names = [title for book in documento_root.xpath('//tei:TEI', namespaces=namespaces_concretos, with_tail=True) for title in book.xpath('.//tei:title[1]/text()', namespaces=namespaces_concretos, with_tail=True) ]
 
 dict_bible = {}
-for book in documento_root.xpath('//tei:TEI', namespaces=namespaces_concretos, with_tail=True):
+for i, book in enumerate(documento_root.xpath('//tei:TEI', namespaces=namespaces_concretos, with_tail=True)):
+    
     dict_book = {}
+    dict_book["i"] = i+1
     book_code = book.xpath('.//tei:title/tei:idno[@type="string"]/text()', namespaces=namespaces_concretos, with_tail=True)[0]
     dict_book["code"] = book_code
     title = book.xpath('.//tei:title[1]/text()', namespaces=namespaces_concretos, with_tail=True)[0]
@@ -114,5 +116,26 @@ for book in documento_root.xpath('//tei:TEI', namespaces=namespaces_concretos, w
     
     
 dataframe_bible = pd.DataFrame(dict_bible).T
-dataframe_bible = dataframe_bible["title","verses","viaf", "100th percentile q","100th percentile rs","1st percentile q","1st percentile rs","1st-lev-q","2nd-lev-q","3rd-lev-q","4th-lev-q","5th-lev-q","amount of dif toWhom ent","amount of dif who ent","amount of diff org","amount of diff pers","amount of diff pla","amount of diff tim","amount of diff wor","amount of dream","amount of oath","amount of oral","amount of org","amount of pers","amount of pla","amount of prayer","amount of q","amount of rs","amount of song","amount of tim","amount of toWhom ent","amount of who ent","amount of wor","amount of written","chapters","code","entities referenced","mean of q","mean of rs","median of q","median of rs","mq-ent-freq-1","mq-ent-freq-2","mq-ent-freq-org","mq-ent-freq-pers","mq-ent-freq-pla","mq-ent-freq-tim","mq-ent-freq-wor","mq-ent-id-1","mq-ent-id-2","mq-ent-id-org","mq-ent-id-pers","mq-ent-id-pla","mq-ent-id-tim","mq-ent-id-wor","pericopes","std of q","std of rs",]
+dataframe_bible = dataframe_bible[['code', 'i', 'title','viaf', 'verses', 'chapters', 'pericopes', 
+       'entities referenced',
+       'mq-ent-id-1', 'mq-ent-freq-1',        'mq-ent-id-2',  'mq-ent-freq-2', 
+       'pers', 'pla','org','wor', 'tim',
+       'diff org', 'diff pers', 'diff pla',
+       'diff tim', 'diff toWhom ent', 'diff who ent', 'diff wor',
+       'rs', 
+       'mean of rs', 'median of rs',       'std of rs',
+       '1st percentile rs', '100th percentile rs', 
+       'q',
+       'mean of q',  'median of q','std of q',
+       '1st percentile q', '100th percentile q',
+       '1st-lev-q', '2nd-lev-q', '3rd-lev-q', '4th-lev-q', '5th-lev-q',
+       'mf-ent-freq-org', 'mf-ent-freq-pers',
+       'mf-ent-freq-pla', 'mf-ent-freq-tim', 'mf-ent-freq-wor',
+       'mf-ent-id-org', 'mf-ent-id-pers', 'mf-ent-id-pla', 'mf-ent-id-tim',
+       'mf-ent-id-wor',    'q-dream',
+       'q-oath', 'q-oral', 'q-prayer', 'q-song', 'q-written', 
+       'toWhom ent',  'who ent',
+]]
+dataframe_bible = dataframe_bible.sort_values(by=["i"])
 dataframe_bible.to_csv("/home/jose/Dropbox/biblia/tb/resulting data/metadata_structuve.csv", sep="\t")
+
