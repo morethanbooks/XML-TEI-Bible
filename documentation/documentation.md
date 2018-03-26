@@ -157,10 +157,49 @@ This project also includes some other files:
 * The resulting data and visualizations
 * CSV file (ontology.csv) to control the ids used
 
+# Quantitative data
+
+In the resulting data table there is a table called "quantitative_data.csv" that can be open with a sheet program such as Calc or Excel (CSV with tabs).
+
+In it there is many information about different quantitative aspects about the Bible, many of them based on the qualitative data marked manually. This table tries to answer questions like:
+
+* how many verses does each book have?
+* how many people is referenced in each book?
+* how many different people is referenced in each book?
+* who is the most commont person? and how often is this person mentioned?
+* which is the most common place?
+* etcetera
+
+Each column of the table "quantitative_data.csv" represents a different kind of information. I tried to make the name of the columns as obvious as possible, without having too long name of columns, therefor I have used some contractions. Here you find an explanation about them:
+
+* n: number (Genesis is number 1)
+* viaf: unique identifier for the book
+* ent: entity (people, places, organizations/groups, works or times/moments)
+* ref: referenced
+* pers: person/people
+* plas: places
+* orgs: organizations/groups
+* wors: works ("el libro de la ley")
+* tims: time/moments (fin del mundo, comienzo del mundo, resurrección de Jesús)
+* diff: different (for example, Exodus referes 1429 times to people, but only 80 different people: many people are mentioned many times; in compare, Nehemias mentions 962 times to people and referes to 284 different people: many people come just once).
+* mq: most common
+* id: identifier of the identity. Identifiers and names are made explicit in the ontology
+* freq: frequency
+* rss: element rs in TEI, which is used to encode entities. The difference between this column and "ent ref" is that rss can contain several people mentioned, while "ent ref" contains always single entities. The difference between these two values can point out if a book referes many times to a group of entities within the same noun (for example like Job)
+* qs: element q in TEI, used for quotationss and in general for communication
+* mean, median and std: average, value in the middle and standard deviation calculated in each verse
+* 1st perc and 100th perc: minimum and maximum value of something
+* who: TEI attribute used for the entity who is communicating (talking, writting...)
+* toWhom: future TEI attribute used for the entity to whom some is communicating (listening, reading...)
+
+
+Take in consideration that the values are raw, so beware of raw of comparition: For example 1 and 2 of Samuel referes to people almost the same amount of times (2104 and 2206), but because 2 of Samuel is 115 verses shorter than 1 of Samuel, relative to the length of the book there is actually much more references to people in 2 of Samuel (3.2 per chapter) than in 1 of Samuel (2.6). Probably the most logica way of relative the data would be per verse, but other options are possible (chapters, words, entities...). In a program like Calc or Excel you can divide the values of a column with another column easily; for example, if you want to get the relative values of "ent ref" by verses, you add in the row 2 of a new column following formulae: "=i2/f2" and then copy his in the rest of the rows.
+
+If you are interested in knowing what information exactly is been extracted, check the Python script: /programing/python/structure2table.py
 
 # Thanks to
 
-Thanks to Maria Calvo for many data, patiente and knowledge. The way I work owes you more than I normally recognize.
+Thanks to Maria Calvo for many data, patiente and knowledge. The way I work owes you more than I usually recognize.
 Thanks to Tabea for listening and support.
 Thanks to Matthias Ziegler for thinking that this project is worth of his time.
 
@@ -171,12 +210,12 @@ There is a lot that one can do with this text. My main tasks for the next future
 * improve the scripts that prepare the data for the personal correction in order to spare time and work
 * improve the scripts that take the data and visualize it in different ways
 
-And with this purposes I have work for a couple of years. Besides it, there a lot of ideas or possibilities. I am very open to work together with other people if they want to help. Here I list some ideas (of course there is a lot more to be done) sorted more or less by stimated difficulty:
+And with these purposes I have work for a couple of years. Besides it, there are a lot of ideas or possibilities. I am very open to work together with other people if they want to help. Here I list some ideas (of course there is a lot more to be done) sorted more or less by stimated difficulty:
 * add geolocalization coordinates of places
 * translate the ids of the entities to other languages in order to get visualizations in this languages aswell
 * encode the pass of the time at the chapter level
 * encode reference between verses in the Bible
-* map the entities of the ontology with other resources like DB-Pedia, Strong concordances,
+* map the entities of the ontology with other resources like DB-Pedia, Strong concordances...
 * speacilly the verse that are parallel to other very similar in other Gospels
 * encode abstract actions like someone dying, someone getting married...
 * mix linguistic annotation in the TEI structure
