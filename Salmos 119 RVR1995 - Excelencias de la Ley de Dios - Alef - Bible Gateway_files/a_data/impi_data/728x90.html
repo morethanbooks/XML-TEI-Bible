@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>728x90</title>
+    
+    <!--DEFINE YOUR AD SIZE HERE-->
+	<meta name="ad.size" content="width=728,height=90">
+    
+    <!--PLACE A GLOBAL CLICKTAG VARIABLE HERE-->
+    <script src="728x90_data/728x90_edge.js"></script><script src="728x90_data/Enabler.js"></script>
+    
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="728x90_data/edge.js"></script>
+    <style>
+        .edgeLoad-EDGE-180375994 { visibility:hidden; }
+    </style>
+<script>
+   AdobeEdge.loadComposition('728x90', 'EDGE-180375994', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "728px",
+    height: "90px"
+}, {"dom":{}}, {"dom":{}});
+</script>
+<!--Adobe Edge Runtime End-->
+
+<script type="text/javascript"> var clickTag = 'https://www.etihad.com/'</script> 
+
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+<body style="margin:0;padding:0;">
+	<div id="Stage" class="EDGE-180375994" style="position: relative; height: 90px; width: 728px; z-index: 0; right: auto; bottom: auto; background-color: rgba(39, 0, 20, 0); overflow: hidden; text-overflow: clip; background-size: 100% 100%;">
+	<div id="Stage_bg" style="position: absolute; margin: 0px; opacity: 1; left: 0px; top: 0px; width: 728px; height: 90px; right: auto; bottom: auto; background-color: rgb(39, 0, 20); background-size: 100% 100%; border-width: 0px; border-color: rgb(0, 0, 0); border-style: none; transform: translateZ(0px);" class="Stage_bg_id"></div><div id="Stage_kv2" style="position: absolute; margin: 0px; left: 0px; top: 0px; width: 728px; height: 90px; right: auto; bottom: auto; background-image: url(&quot;images/kv2.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-size: 100% 100%; background-position: 0px 0px; transform: translateZ(0px);" class="Stage_kv2_id"></div><div id="Stage_kv" style="position: absolute; margin: 0px; opacity: 0; left: -75px; top: -9px; width: 877px; height: 108px; right: auto; bottom: auto; background-image: url(&quot;images/kv.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-size: 100% 100%; background-position: 0px 0px; transform: translate(0px, 0px) rotate(0deg) scale(0.83, 0.83);" class="Stage_kv_id"></div><div id="Stage_txt1" style="position: absolute; margin: 0px; opacity: 0; left: 0px; top: 0px; width: 728px; height: 90px; right: auto; bottom: auto; background-image: url(&quot;images/txt1.png&quot;); background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-size: 100% 100%; background-position: 0px 0px; transform: translateZ(0px);" class="Stage_txt1_id"></div><div id="Stage_txt2" style="position: absolute; margin: 0px; opacity: 1; left: 0px; top: 0px; width: 728px; height: 90px; right: auto; bottom: auto; background-image: url(&quot;images/txt2.png&quot;); background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-size: 100% 100%; background-position: 0px 0px; transform: translateZ(0px);" class="Stage_txt2_id"></div><div id="Stage_cta" style="position: absolute; margin: 0px; opacity: 1; left: 0px; top: 0px; width: 728px; height: 90px; right: auto; bottom: auto; background-image: url(&quot;images/cta.png&quot;); background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-size: 100% 100%; background-position: 0px 0px; transform: translateZ(0px);" class="Stage_cta_id"></div><div id="Stage_arrow" style="position: absolute; margin: 0px; opacity: 0.770666; left: 0px; top: 0px; width: 728px; height: 90px; right: auto; bottom: auto; background-image: url(&quot;images/arrow.png&quot;); background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-size: 100% 100%; background-position: 0px 0px; transform: translate(-2.29335px, 0px) rotate(0deg) scale(1, 1);" class="Stage_arrow_id"></div><div id="Stage_logo" style="position: absolute; margin: 0px; opacity: 1; left: 0px; top: 0px; width: 728px; height: 90px; right: auto; bottom: auto; background-image: url(&quot;images/logo.png&quot;); background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-size: 100% 100%; background-position: 0px 0px; transform: translateZ(0px);" class="Stage_logo_id"></div><div id="Stage_clickTag" style="position: absolute; margin: 0px; opacity: 1; left: 0px; top: 0px; width: 726px; height: 88px; right: auto; bottom: auto; background-color: rgba(192, 192, 192, 0); background-size: 100% 100%; border-width: 1px; border-color: rgb(178, 130, 25); border-style: solid; cursor: pointer; transform: translateZ(0px);" class="Stage_clickTag_id"></div></div>
+
+</body></html>
