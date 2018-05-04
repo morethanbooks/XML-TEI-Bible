@@ -54,7 +54,7 @@ def analyse_refs(inputtei, file, output):
         refs_df = refs_df.sort_values(by='freq', ascending=False)
 
 
-        refs_df["number"] = refs_df["id"].str.count(" ")
+        refs_df["number_entities"] = refs_df["id"].str.count(" ")
 
         #refs_df.loc[ refs_df["id"].str.count(" ", na=False),  "number"] = ">1"
 
@@ -70,7 +70,7 @@ def analyse_refs(inputtei, file, output):
         refs_df.to_csv(output+file+"refs.csv", sep='\t', encoding='utf-8', index=False)
         refs_df["freq"].plot.hist(bins=100)
         plt.show()
-        refs_df["number"].plot.hist(bins=50)
+        refs_df["number_entities"].plot.hist(bins=50)
         plt.show()
         refs_df["string_len"].plot.hist(bins=20)
         plt.show()
@@ -151,5 +151,22 @@ refs_df = analyse_refs(
         file = "TEIBible", # "*.xml"
         output = "/home/jose/Dropbox/biblia/tb/resulting data/",
 )
-edges_df = create_edges_coaparence_attribute(refs_df)
-edges = create_edges_shared_string(refs_df)
+#edges_df = create_edges_coaparence_attribute(refs_df)
+#edges = create_edges_shared_string(refs_df)
+
+"""
+# TODO:
+* how many people is mentioned?
+* who appears more?
+* how much (raw and proportions)?
+* who talks more?
+* how much (raw and proportions)?
+* how many degrees of embbed is the book (max, min, average and std)?
+* who are the people or groups most talked to?
+* how long is the book (in verses, pericopes and chapters)?
+* how much dialogue is there (in proportions to verses?)
+
+
+* which place?
+
+"""

@@ -299,7 +299,7 @@ def create_networks(inputtei, file, output, border, book, deleting_books, charac
         return df_characters, edges_text_unit, df_text_parts
 
 
-def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, output_folder, different_book, columns_edges = ["Source","Target",'Weight','Type']):
+def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, output_folder, different_book, columns_edges = ["Source","Target",'Weight','Type'], language = "sp"):
 
     # TODO: Pasar categorías que filtra
     # TODO: Asignar colores usando género, tipo y naturaleza
@@ -334,7 +334,7 @@ def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, outp
     print( graph.nodes(data=True), type(graph.nodes(data=True)),)
     
     #print( graph.nodes(data=True)[:3], type(graph.nodes(data=True)),)
-    labels = nx.get_node_attributes(graph,'NormalizedName-sp')
+    labels = nx.get_node_attributes(graph,'NormalizedName-'+language)
     
     groups = set(nx.get_node_attributes(graph,'Gender').values())
     mapping = dict(zip(sorted(groups),count()))
@@ -367,7 +367,7 @@ def create_networks_bible():
     string_xpath = xpath2string(xpaths)
     books_bible = ["MAR"]
     books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH"]
-    books_bible = ["NEH"]
+    books_bible = ["PSA"]
     
     for different_book in books_bible:
 
@@ -387,6 +387,7 @@ def create_networks_bible():
                            output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/networks/",
                            columns_nodes = "",
                            different_book = different_book,
+                           language = "sp",
                            )
     return
 
