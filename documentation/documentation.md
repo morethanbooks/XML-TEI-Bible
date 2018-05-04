@@ -61,11 +61,11 @@ At the moment following books are fully encoded in this chronological order:
 * Obadaih
 * Philemon
 * Nehemiah
+* Psalms
 
 At the moment, following book is being encoded:
 
-* last 75 Psalms
-
+* Ezra
 
 ## Original Text
 
