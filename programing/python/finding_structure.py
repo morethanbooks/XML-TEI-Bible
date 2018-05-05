@@ -60,7 +60,7 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) :
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or (row["order-edition"] == "NEH") :
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         if (row["type"] == "group") & (row["variants"] != ""):
             content = re.sub(r'(\W)('+ re.escape(row["variants"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
@@ -207,8 +207,8 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/PSA.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/EZR.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "PSA",
+    "EZR",
     genre = "prophetical"
     )
