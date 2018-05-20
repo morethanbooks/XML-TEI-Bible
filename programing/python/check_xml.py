@@ -35,7 +35,7 @@ def finding_structure(inputcsv, inputtei, outputtei):
 
             if len(re.findall(r'( (key|corresp|who)(="| ))([a-z])', content)) > 0:
                 print("encontrados algunos problemas")
-                print(re.findall(r'( (key|corresp|who)(="| ))([a-z])', content))
+                print(re.findall(r'(?: (?:key|corresp|who)(?:="| ))([a-z]+)', content))
             content = re.sub(r'\n\n+', r'\n', content)
             content = re.sub(r'<(div|head)>', r'<\1 type="pericope">', content)
             content = re.sub(r'^\t*(<ab.*?>)', r'\t\t\t\t\t\t\1\n\t\t\t\t\t\t\t', content, flags=re.MULTILINE)
@@ -49,6 +49,6 @@ def finding_structure(inputcsv, inputtei, outputtei):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/PSA.xml",
+    "/home/jose/Dropbox/biblia/tb/EZR.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
