@@ -49,6 +49,6 @@ def finding_structure(inputcsv, inputtei, outputtei):
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/EZR.xml",
+    "/home/jose/Dropbox/biblia/tb/2TI.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
