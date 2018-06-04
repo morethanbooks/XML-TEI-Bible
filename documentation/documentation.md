@@ -63,12 +63,14 @@ At the moment following books are fully encoded in this chronological order:
 * Nehemiah
 * Psalms
 * Ezra
-
-At the moment, following book is being encoded:
-
 * 1 Timothy
 * 2 Timothy
 * Titus
+
+At the moment, following book is being encoded:
+
+* Jeremiah
+
 
 
 ## Original Text

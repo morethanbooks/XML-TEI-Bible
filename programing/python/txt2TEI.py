@@ -55,6 +55,4 @@ def main(book, bookcode):
         print("Processed documents: ",i)
         i+=1
 
-main("1TI","1TI")
-main("2TI","2TI")
-main("TIT","TIT")
+main("JER","JER")
