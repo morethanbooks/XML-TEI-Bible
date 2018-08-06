@@ -215,6 +215,9 @@ There is a lot that one can do with this text. My main tasks for the next future
 * encode books of the Bible with the structured here presented
 * improve the scripts that prepare the data for the personal correction in order to spare time and work
 * improve the scripts that take the data and visualize it in different ways
+* get frequency of each entity (raw, chapters and amount of books)
+* get geolocalization of the most common places
+
 
 And with these purposes I have work for a couple of years. Besides it, there are a lot of ideas or possibilities. I am very open to work together with other people if they want to help. Here I list some ideas (of course there is a lot more to be done) sorted more or less by stimated difficulty:
 * add geolocalization coordinates of places
