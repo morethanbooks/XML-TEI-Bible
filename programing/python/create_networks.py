@@ -299,15 +299,16 @@ def create_networks(inputtei, file, output, border, book, deleting_books, charac
         return df_characters, edges_text_unit, df_text_parts
 
 
-def visualize_networks(input_folder, file_edges, file_nodes, columns_nodes, output_folder, different_book, columns_edges = ["Source","Target",'Weight','Type'], language = "sp"):
+def visualize_networks(input_folder, input_sfolder, file_edges, file_nodes, columns_nodes, output_folder, different_book, columns_edges = ["Source","Target",'Weight','Type'], language = "sp"):
 
     # TODO: Pasar categorías que filtra
     # TODO: Asignar colores usando género, tipo y naturaleza
 
-    edges = pd.read_csv(input_folder+file_edges, encoding="utf-8", sep="\t")
+    edges = pd.read_csv(input_sfolder + file_edges, encoding="utf-8", sep="\t")
     file_edges_name = os.path.splitext(file_edges)[0]
     entities_edges = sorted(list(set(edges["Target"].tolist() + edges["Source"].tolist())))
-    nodes = pd.read_csv(input_folder+file_nodes, encoding="utf-8", sep="\t")
+    nodes = pd.ExcelFile(input_folder + file_nodes,  index_col=0)
+    nodes = nodes.parse('Sheet1').fillna("")
     #print(sorted(entities_edges))
     wrong_entities = [entity for entity in entities_edges if entity not in nodes["id"].tolist() ]
     if wrong_entities:
@@ -366,8 +367,8 @@ def create_networks_bible():
     
     string_xpath = xpath2string(xpaths)
     books_bible = ["MAR"]
-    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR"]
-    books_bible = ["1TI", "2TI", "TIT"]
+    books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER"]
+    books_bible = ["JER"]
     
     for different_book in books_bible:
 
@@ -381,9 +382,11 @@ def create_networks_bible():
                 characters_in = "text",
                 xpaths = xpaths
                 )
-        graph = visualize_networks( input_folder = "/home/jose/Dropbox/biblia/tb/resulting data/",
+        graph = visualize_networks(
+                           input_folder = "/home/jose/Dropbox/biblia/tb/",
                            file_edges = "TEIBible_"+different_book+string_xpath+"_edges_text-unit.csv",
-                           file_nodes = "ontology.csv",
+                           input_sfolder = "/home/jose/Dropbox/biblia/tb/resulting data/",
+                           file_nodes = "entities.xls",
                            output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/networks/",
                            columns_nodes = "",
                            different_book = different_book,

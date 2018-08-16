@@ -66,11 +66,11 @@ At the moment following books are fully encoded in this chronological order:
 * 1 Timothy
 * 2 Timothy
 * Titus
+* Jeremiah
 
 At the moment, following book is being encoded:
 
-* Jeremiah
-
+* 
 
 
 ## Original Text

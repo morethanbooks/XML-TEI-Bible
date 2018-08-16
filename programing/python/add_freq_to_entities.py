@@ -23,10 +23,11 @@ import matplotlib.pyplot as plt
 
 wdir = "/home/jose/Dropbox/biblia/tb/"
 file = "TEIBible" # "*.xml"
-outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
 
-xls = pd.ExcelFile(wdir+"ontology.xls",  index_col=0)
-entities = xls.parse('Sheet1').fillna("")
+xls = pd.ExcelFile(wdir+"entities.xls",  index_col=0)
+entities_orig = xls.parse('Sheet1').fillna("")
+
+entities = entities_orig.copy()
 
 parser = etree.XMLParser(encoding='utf-8')
 documento_xml = etree.parse(wdir+file+".xml", parser)
@@ -45,9 +46,13 @@ df_freq_entities = pd.DataFrame(list(entities_dict.items()), columns=["id", "fre
 
 entities = pd.merge(entities,df_freq_entities, on="id", how="outer")
 
-writer = pd.ExcelWriter(wdir+"catalogue_references.xls")
-entities.to_excel(writer,'Sheet1')
-writer.save()
+if entities.shape[0] == entities_orig.shape[0]:
+    print("all good")
+    writer = pd.ExcelWriter(wdir+"entities2.xls")
+    entities.to_excel(writer,'Sheet1')
+    writer.save()
+else:
+    print("not all good!", entities.head(), entities_orig.head())
 
 print("done")
 

@@ -17,7 +17,9 @@ def finding_structure(inputcsv, inputtei, outputtei):
     finding_structure = finding_structure("/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv","/home/jose/Dropbox/biblia/tb/programing/python/input/rut.xml", "/home/jose/Dropbox/TEIBibel/programacion/python/output/")
     """
     #Lets open the csv file
-    df = pd.read_csv(inputcsv, encoding = "utf-8", sep = "\t")
+    df = pd.ExcelFile(inputcsv,  index_col=0)
+    df = df.parse('Sheet1')
+
     # NaN is sustitued with zeros
     df = df.fillna(value="0")
     #print(df)
@@ -48,7 +50,7 @@ def finding_structure(inputcsv, inputtei, outputtei):
 
 
 finding_structure = finding_structure(
-    "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/2TI.xml",
+    "/home/jose/Dropbox/biblia/tb/entities.xls",
+    "/home/jose/Dropbox/biblia/tb/JER.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
