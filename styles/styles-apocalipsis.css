@@ -132,7 +132,7 @@ q[type]
 
 q:before
 	{
-		content:'who: 'attr(who)' | 2who: 'attr(corresp) ' | type: 'attr(type) ' ';
+		content:'who: 'attr(who)' | 2who: 'attr(toWhom) ' | type: 'attr(type) ' ';
 		color:grey;
 	}
 

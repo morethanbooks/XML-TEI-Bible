@@ -123,7 +123,7 @@ q[type]
 
 q:before
 	{
-		content:'who: 'attr(who)' | 2who: 'attr(corresp) ' | type: 'attr(type) ' ';
+		content:'who: 'attr(who)' | 2who: 'attr(toWhom) ' | type: 'attr(type) ' ';
 		color:grey;
 	}
 
@@ -167,28 +167,28 @@ ab[type="pericope"]
 
 /**/
 
-q[corresp="#per1"],
-q[corresp="per1"],
+q[toWhom="#per1"],
+q[toWhom="per1"],
 	{
 		border: red solid 2px;
 	}
-q[corresp*="org3"]
+q[toWhom*="org3"]
 	{
 		border:blue solid 2px;
 	}
-q[corresp*="org2"],
-q[corresp*="org5"],
-q[corresp*="org7"]
+q[toWhom*="org2"],
+q[toWhom*="org5"],
+q[toWhom*="org7"]
 
 	{
 		border:green solid 2px;
 	}
-q[corresp="per14"],
-q[corresp="#per14"],
+q[toWhom="per14"],
+q[toWhom="#per14"],
 	{
 		border: orange solid 2px;
 	}
-q[corresp*="org0"]
+q[toWhom*="org0"]
 	{
 		border: yellow solid 2px;
 	}
