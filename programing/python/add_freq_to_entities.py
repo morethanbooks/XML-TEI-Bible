@@ -34,17 +34,24 @@ documento_xml = etree.parse(wdir+file+".xml", parser)
 documento_root = documento_xml.getroot()
 namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
 
-books_names = [title for book in documento_root.xpath('//tei:TEI', namespaces=namespaces_concretos, with_tail=True) for title in book.xpath('.//tei:title[1]/text()', namespaces=namespaces_concretos, with_tail=True) ]
+#book_names = [title for book in documento_root.xpath('//tei:TEI', namespaces=namespaces_concretos, with_tail=True) for title in book.xpath('.//tei:title[2]/tei:idno[@type="string"]/text()', namespaces=namespaces_concretos, with_tail=True) ]
+print(book_names)
 
-referecend_entities = documento_root.xpath('.//tei:rs/@key', namespaces=namespaces_concretos, with_tail=True)
+books = documento_root.xpath('//tei:TEI', namespaces=namespaces_concretos, with_tail=True)
 
-referecend_unique_entities = [character for sublist in referecend_entities for character in sublist.split(" ")]
-
-entities_dict = dict(Counter(referecend_unique_entities).most_common())
-
-df_freq_entities = pd.DataFrame(list(entities_dict.items()), columns=["id", "freq"]).sort_values(by="freq", ascending=False)
-
-entities = pd.merge(entities,df_freq_entities, on="id", how="outer")
+for book in books:
+    title = book.xpath('.//tei:title[2]/tei:idno[@type="string"]/text()', namespaces=namespaces_concretos, with_tail=True)[0]
+    print(title)
+    if title not in entities.columns.tolist():
+        referecend_entities = book.xpath('.//tei:rs/@key', namespaces=namespaces_concretos, with_tail=True)
+    
+        referecend_unique_entities = [character for sublist in referecend_entities for character in sublist.split(" ")]
+        
+        entities_dict = dict(Counter(referecend_unique_entities).most_common())
+        
+        df_freq_entities = pd.DataFrame(list(entities_dict.items()), columns=["id", title]).sort_values(by=title, ascending=False).fillna(0)
+        
+        entities = pd.merge(entities,df_freq_entities, on="id", how="outer").fillna(0)
 
 if entities.shape[0] == entities_orig.shape[0]:
     print("all good")
