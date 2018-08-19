@@ -33,7 +33,7 @@ def txt2TEI(text, bookcode):
 
 def main(book, bookcode):
     i=1
-    for doc in glob.glob('/home/jose/Dropbox/biblia/tb/programing/python/input/' + book + '.txt'):
+    for doc in glob.glob('/home/jose/Dropbox/biblia/tb/' + book + '.txt'):
     
         # It takes the base name of the html file, it cuts its ending and keeps a new xml name
         basenamedoc = os.path.basename(doc)[:-3]  
@@ -55,4 +55,4 @@ def main(book, bookcode):
         print("Processed documents: ",i)
         i+=1
 
-main("JER","JER")
+main("HEB","HEB")

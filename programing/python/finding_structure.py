@@ -60,7 +60,7 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or (row["order-edition"] in ["DAN","NEH","ZEC","ZEP"]):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or (row["book"] in ["NT"]):
             content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         if (row["type"] == "group") & (row["variants"] != ""):
             content = re.sub(r'(\W)('+ re.escape(row["variants"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
@@ -93,15 +93,15 @@ def findingq(text, genre):
 
     """
 
-    text = re.sub(r'((dij|insist|pregunt|respond|exclam|diciendo|decir|decía|diciéndo|Dijo|dije|Dije).*?: )(((?!<q).)*)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\3</q>\5', text)
+    text = re.sub(r'((dij|insist|pregunt|respond|exclam|diciendo|decir|decía|diciéndo|Dijo|dije|Dije).*?: )(((?!<q).)*)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\3</q>\5', text)
 
     text = re.sub(r'xml:id', r'xml_id', text)
     text = re.sub(r'http:', r'http_', text)
 
-    text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)(»|«).+?)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\2</q>\6', text)
+    text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)(»|«).+?)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\2</q>\6', text)
 
     if genre != "letter":
-        text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os)[^\w].+?)(</ab>)', r'\1<q who="per" corresp="per" type="oral">\2</q>\6', text)
+        text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os)[^\w].+?)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\2</q>\6', text)
 
     text = re.sub(r'_', r':', text, flags=re.MULTILINE)
 
@@ -111,16 +111,16 @@ def values_q(content):
 
     # Intentamos recoger cosas como "Rut dijo a Noemí: "
     # No sé si funciona!
-    content= re.sub(r'(<rs key="(#?(?:per|org)\d+)">.*?</rs>[^<]*?<rs key="(#?(?:per|org)\d+)">.*?</rs>.*?)<q who="per" corresp="per" type="oral">', r'\1<q who="\2" corresp="\3" type="oral">', content, flags=re.MULTILINE)
+    content= re.sub(r'(<rs key="(#?(?:per|org)\d+)">.*?</rs>[^<]*?<rs key="(#?(?:per|org)\d+)">.*?</rs>.*?)<q who="per" toWhom="per" type="oral">', r'\1<q who="\2" toWhom="\3" type="oral">', content, flags=re.MULTILINE)
 
     # Buscamos el rs con identificador completo antes del q y se lo colocamos como valor del atributo who:
-    content = re.sub(r'(<rs key="(#?(per|org)\d+)">(((?!<rs key="(#?(per|org)\d+)">).)*))<q who="per" corresp="per" type="oral">', r'\1\5<q who="\2" corresp="per" type="oral">', content)
+    content = re.sub(r'(<rs key="(#?(per|org)\d+)">(((?!<rs key="(#?(per|org)\d+)">).)*))<q who="per" toWhom="per" type="oral">', r'\1\5<q who="\2" toWhom="per" type="oral">', content)
 
     # Colocamos el mismo q del versículo anterior en caso de 
-    content = re.sub(r'((<q who="#per\d+" corresp=".*?" type="oral">).*?</q></ab>\s+<ab [^>]*?>)<q who="per" corresp="per" type="oral">', r'\1\2', content)
+    content = re.sub(r'((<q who="#per\d+" toWhom=".*?" type="oral">).*?</q></ab>\s+<ab [^>]*?>)<q who="per" toWhom="per" type="oral">', r'\1\2', content)
 
 
-    content = re.sub(r'(<q who=".*?" corresp="per14") type="oral">', r'\1 type="prayer">', content)
+    content = re.sub(r'(<q who=".*?" toWhom="per14") type="oral">', r'\1 type="prayer">', content)
     
     return(content)
 
@@ -145,7 +145,7 @@ def find_people_without_id(content, outputtei, bookcode):
 def deleting_wrong_entities(content, bookcode):
     content = re.sub(r'<rs key="#pla230">Mira</rs>', r'Mira', content)
     content = re.sub(r'<rs key="#pla258">Sin</rs>', r'Sin', content)
-    content = re.sub(r'<rs key="#per17"><rs key="per17">Espíritu</rs> <rs key="per">Santo</rs></rs>', r'<rs key="#per17"><rs key="per17">Espíritu Santo</rs>', content)
+    content = re.sub(r'<rs key="#per17"><rs key="per17">Espíritu</rs> <rs key="per">Santo</rs></rs>', r'<rs key="#per17">Espíritu Santo</rs>', content)
 
     content = re.sub(r'"#per5"', r'"#pla2"', content)
     content = re.sub(r'<rs key="org\d*">((hombres|hijos) de <rs key="#pla2">Judá</rs>)</rs>', r'<rs key="#org39">\1</rs>', content)
@@ -162,7 +162,9 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
     finding_structure = finding_structure("/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv","/home/jose/Dropbox/biblia/tb/programing/python/input/rut.xml", "/home/jose/Dropbox/TEIBibel/programacion/python/output/")
     """
     #Lets open the csv file
-    df = pd.read_csv(inputcsv, encoding = "utf-8", sep = "\t")
+    df = pd.ExcelFile(inputcsv,  index_col=0)
+    df = df.parse('Sheet1')
+
     # NaN is sustitued with zeros
     df = df.fillna(value="0")
     #print(df)
@@ -207,9 +209,9 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 
 finding_structure = finding_structure(
-    "/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/JER.xml",
+    "/home/jose/Dropbox/biblia/tb/entities.xls",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/HEB.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "JER",
+    "HEB",
     genre = "prophetical"
     )
