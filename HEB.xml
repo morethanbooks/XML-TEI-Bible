@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
 <?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
@@ -71,7 +70,7 @@
 
 </div>
 </div>
-<div xml:id="b.HEB.2" type="chapter" n="2">
+<div xml:id="b.HEB.2" type="chapter" n="2" cert="high">
 <div type="pericope">
 	<head type="pericope">Una salvación tan grande</head>
 
@@ -82,19 +81,19 @@
 </div>
 	<div>
 		<head>El autor de la salvación</head>
-	<ab xml:id="b.HEB.2.5" type="verse" n="5"><rs key="#per14">Dios</rs> no sujetó a los <rs key="org4">ángeles</rs> el <rs key="pla41">mundo venidero</rs>, acerca del cual estamos hablando.</ab>
-<ab xml:id="b.HEB.2.6" type="verse" n="6">Al contrario, alguien testificó en cierto lugar, diciendo: <q who="per" toWhom="per" type="oral">«¿Qué es el <rs key="org0">hombre</rs> para que te acuerdes de él, el ser humano para que lo visites?</q></ab>
-<ab xml:id="b.HEB.2.7" type="verse" n="7">Lo hiciste un poco menor que los <rs key="org4">ángeles</rs>, lo coronaste de gloria y de honra y lo pusiste sobre las obras de tus manos.</ab>
-<ab xml:id="b.HEB.2.8" type="verse" n="8"><q who="per" toWhom="per" type="oral">Todo lo sujetaste bajo sus pies». En cuanto le sujetó todas las cosas, nada dejó que no le sea sujeto, aunque todavía no vemos que todas las cosas le sean sujetas.</q></ab>
+	<ab xml:id="b.HEB.2.5" type="verse" n="5"><rs key="#per14">Dios</rs> no sujetó a los <rs key="org4">ángeles</rs> el <rs key="org0">mundo venidero</rs>, acerca del cual estamos hablando.</ab>
+<ab xml:id="b.HEB.2.6" type="verse" n="6">Al contrario, alguien testificó en cierto lugar, diciendo: <q who="org0" toWhom="per14" type="oral" cert="low">«¿Qué es el <rs key="org0">hombre</rs> para que te acuerdes de él, el <rs key="org0">ser humano</rs> para que lo visites?</q></ab>
+		<ab xml:id="b.HEB.2.7" type="verse" n="7"><q who="org0" toWhom="per14" type="oral" cert="low">Lo hiciste un poco menor que los <rs key="org4">ángeles</rs>, lo coronaste de gloria y de honra y lo pusiste sobre las obras de tus manos.</q></ab>
+		<ab xml:id="b.HEB.2.8" type="verse" n="8"><q who="org0" toWhom="per14" type="oral" cert="low">Todo lo sujetaste bajo sus pies».</q> En cuanto le sujetó todas las cosas, nada dejó que no le sea sujeto, aunque todavía no vemos que todas las cosas le sean sujetas.</ab>
 <ab xml:id="b.HEB.2.9" type="verse" n="9">Pero vemos a aquel que fue hecho un poco menor que los <rs key="org4">ángeles</rs>, a <rs key="#per1">Jesús</rs>, coronado de gloria y de honra a causa del padecimiento de la muerte, para que por la gracia de <rs key="#per14">Dios</rs> experimentara la muerte por todos.</ab>
-<ab xml:id="b.HEB.2.10" type="verse" n="10">Convenía a aquel por cuya causa existen todas las cosas y por quien todas las cosas subsisten que, habiendo de llevar muchos <rs key="org">hijos</rs> a la gloria, perfeccionara por medio de las aflicciones al autor de la salvación de ellos,</ab>
-<ab xml:id="b.HEB.2.11" type="verse" n="11">porque el que santifica y los que son santificados, de uno son todos; por lo cual no se avergüenza de llamarlos <rs key="org37">hermanos</rs>,</ab>
-<ab xml:id="b.HEB.2.12" type="verse" n="12">diciendo: <q who="per" toWhom="per" type="oral">«Anunciaré a mis <rs key="org37">hermanos</rs> tu nombre, en medio de la congregación te alabaré».</q></ab>
-<ab xml:id="b.HEB.2.13" type="verse" n="13"><q who="per" toWhom="per" type="oral">Y otra vez dice: «Yo confiaré en él». Y de nuevo: «Aquí estoy yo con los <rs key="org">hijos</rs> que <rs key="#per14">Dios</rs> me dio».</q></ab>
-<ab xml:id="b.HEB.2.14" type="verse" n="14">Así que, por cuanto los <rs key="org">hijos</rs> participaron de carne y sangre, él también participó de lo mismo para destruir por medio de la muerte al que tenía el imperio de la muerte, esto es, al <rs key="#per20">diablo</rs>,</ab>
+		<ab xml:id="b.HEB.2.10" type="verse" n="10">Convenía a aquel por cuya causa existen todas las cosas y por quien todas las cosas subsisten que, habiendo de llevar muchos <rs key="org0">hijos</rs> a la gloria, perfeccionara por medio de las aflicciones al <rs key="per1">autor de la salvación</rs> de ellos,</ab>
+<ab xml:id="b.HEB.2.11" type="verse" n="11">porque el que santifica y los que son santificados, de uno son todos; por lo cual no se avergüenza de llamarlos <rs key="org18">hermanos</rs>,</ab>
+		<ab xml:id="b.HEB.2.12" type="verse" n="12">diciendo: <q who="org37" toWhom="per1" type="prayer" cert="medium">«Anunciaré a mis <rs key="org37">hermanos</rs> tu nombre, en medio de la <rs key="org37">congregación</rs> te alabaré».</q></ab>
+		<ab xml:id="b.HEB.2.13" type="verse" n="13">Y otra vez dice: <q who="org37" toWhom="per1" type="prayer">«Yo confiaré en él»</q>. Y de nuevo: <q who="org37" toWhom="per1" type="prayer">«Aquí estoy yo con los <rs key="org0">hijos</rs> que <rs key="#per14">Dios</rs> me dio».</q></ab>
+<ab xml:id="b.HEB.2.14" type="verse" n="14">Así que, por cuanto los <rs key="org0">hijos</rs> participaron de carne y sangre, él también participó de lo mismo para destruir por medio de la muerte al que tenía el imperio de la muerte, esto es, al <rs key="#per20">diablo</rs>,</ab>
 <ab xml:id="b.HEB.2.15" type="verse" n="15">y librar a todos los que por el temor de la muerte estaban durante toda la vida sujetos a servidumbre.</ab>
-<ab xml:id="b.HEB.2.16" type="verse" n="16">Ciertamente no socorrió a los <rs key="org4">ángeles</rs>, sino que socorrió a la <rs key="org">descendencia de <rs key="#per2">Abraham</rs></rs>.</ab>
-<ab xml:id="b.HEB.2.17" type="verse" n="17">Por lo cual debía ser en todo semejante a sus <rs key="org37">hermanos</rs>, para venir a ser misericordioso y fiel sumo <rs key="#org12">sacerdote</rs> en lo que a <rs key="#per14">Dios</rs> se refiere, para expiar los pecados del <rs key="org70">pueblo</rs>.</ab>
+<ab xml:id="b.HEB.2.16" type="verse" n="16">Ciertamente no socorrió a los <rs key="org4">ángeles</rs>, sino que socorrió a la <rs key="org0" cert="medium">descendencia de <rs key="#per2">Abraham</rs></rs>.</ab>
+<ab xml:id="b.HEB.2.17" type="verse" n="17">Por lo cual debía ser en todo semejante a sus <rs key="org0">hermanos</rs>, para venir a ser misericordioso y <rs key="per1">fiel sumo sacerdote</rs> en lo que a <rs key="#per14">Dios</rs> se refiere, para expiar los pecados del <rs key="org70">pueblo</rs>.</ab>
 <ab xml:id="b.HEB.2.18" type="verse" n="18">Pues en cuanto él mismo padeció siendo tentado, es poderoso para socorrer a los que son tentados.</ab>
 
 </div>
