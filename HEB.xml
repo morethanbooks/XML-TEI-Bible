@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
-<?xml-model href=/home/jose/Dropbox/biblia/tb/scheme/201808_tei_lite.rnc" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href=https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/201808_tei_lite.rnc" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
@@ -72,13 +72,16 @@
 </div>
 <div xml:id="b.HEB.2" type="chapter" n="2">
 <div type="pericope">
-<head type="pericope"></head>
+	<head type="pericope">Una salvación tan grande</head>
 
 <ab xml:id="b.HEB.2.1" type="verse" n="1">Por tanto, es necesario que con más diligencia atendamos a las cosas que hemos oído, no sea que nos deslicemos.</ab>
 <ab xml:id="b.HEB.2.2" type="verse" n="2">Porque si la palabra dicha por medio de los <rs key="org4">ángeles</rs> fue firme y toda transgresión y desobediencia recibió justa retribución,</ab>
-<ab xml:id="b.HEB.2.3" type="verse" n="3">¿cómo escaparemos nosotros, si descuidamos una salvación tan grande? La cual, habiendo sido anunciada primeramente por el <rs key="per14">Señor</rs>, nos fue confirmada por los que oyeron,</ab>
+<ab xml:id="b.HEB.2.3" type="verse" n="3">¿cómo escaparemos nosotros, si descuidamos una salvación tan grande? La cual, habiendo sido anunciada primeramente por el <rs key="per1">Señor</rs>, nos fue confirmada por los que oyeron,</ab>
 <ab xml:id="b.HEB.2.4" type="verse" n="4">testificando <rs key="#per14">Dios</rs> juntamente con ellos, con señales, prodigios, diversos milagros y repartimientos del <rs key="#per17">Espíritu Santo</rs> según su voluntad.</ab>
-<ab xml:id="b.HEB.2.5" type="verse" n="5"><rs key="#per14">Dios</rs> no sujetó a los <rs key="org4">ángeles</rs> el <rs key="org0">mundo</rs> venidero, acerca del cual estamos hablando.</ab>
+</div>
+	<div>
+		<head>El autor de la salvación</head>
+	<ab xml:id="b.HEB.2.5" type="verse" n="5"><rs key="#per14">Dios</rs> no sujetó a los <rs key="org4">ángeles</rs> el <rs key="pla41">mundo venidero</rs>, acerca del cual estamos hablando.</ab>
 <ab xml:id="b.HEB.2.6" type="verse" n="6">Al contrario, alguien testificó en cierto lugar, diciendo: <q who="per" toWhom="per" type="oral">«¿Qué es el <rs key="org0">hombre</rs> para que te acuerdes de él, el ser humano para que lo visites?</q></ab>
 <ab xml:id="b.HEB.2.7" type="verse" n="7">Lo hiciste un poco menor que los <rs key="org4">ángeles</rs>, lo coronaste de gloria y de honra y lo pusiste sobre las obras de tus manos.</ab>
 <ab xml:id="b.HEB.2.8" type="verse" n="8"><q who="per" toWhom="per" type="oral">Todo lo sujetaste bajo sus pies». En cuanto le sujetó todas las cosas, nada dejó que no le sea sujeto, aunque todavía no vemos que todas las cosas le sean sujetas.</q></ab>
