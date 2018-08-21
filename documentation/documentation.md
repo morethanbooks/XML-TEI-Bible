@@ -4,7 +4,7 @@ This file gives some general information of how this project is being built.
 
 # Overview
 
-The main file of this project is the TEIBible.xml file, which is in the root of the folder. This projects encodes the books of the Bible one by one not in any previsable order. That explain the fact that only some of the books are (and will be) inside the TEIBible.xml. The other most important file is the ontology.xsl; there you will find the basic information about the people, groups, places, times and books that are encoded in the TEIBible.
+The main file of this project is the TEIBible.xml file, which is in the root of the folder. This projects encodes the books of the Bible one by one not in any previsable order. That explain the fact that only some of the books are (and will be) inside the TEIBible.xml. The other most important file is the entities.xslx; there you will find the basic information about the people, groups, places, times and books that are encoded in the TEIBible.
 
 All the other files and folders are documentation, extra files or work-in-process files.
 
@@ -107,7 +107,7 @@ It has been used the rs TEI element with the attribute key. It has been encoded 
 
 The order of the number follow in the majority of the cases the order that I have been following encoding the Bible. So Jesus is per1 not because I think he is very important, but because he is the first person been mentioned in Matthew (the first book that I encoded). Take in considerartion that God is per14.
 
-To know more about the information that is encoded about each of this entities, read the section about the ontology.
+To know more about the information that is encoded about each of this entities, read the section about the entities.
 
 #### Grammatical details
 Proper (_Raquel_) and common names (_mujer_) have been disambiguated manually (future work: resolution of pronouns, verbs...). The phrase referenced to a entity might contain adjectives (_hija menor_), preposition followed by determinants or other names (_hija de Labán_). Neither subordinate adjective phrases (_hija que tuvo en Canaán_) nor determinants (_la mujer_) or possesive pronouns (_hija mío_) are part of the reference to the entity. Numbers are part of the resolution because in many cases they create a lexicalized phrase (_24 ancianos_, _12 tribus_). In case two proper names are mentioned one after the other referenced to the same person (_dijo a su mujer Rebeca_) both are encoded individually. In  general, adjectives not followed by a noun have been not resoluted (_ella era joven_); only in case and adjective was been used as a noun (_el menor_) it has been encoded.
@@ -134,9 +134,9 @@ In case the person quotes some text, this is encoded in the attribute source.
 
 Of course in case that someone tells that other person said, this are encoded as nested q. There are many example of very complex structures of this kind.
 
-# Ontology
+# Entities
 
-In the ontology file you find for each of this categories:
+In the Entities file you find for each of this categories:
 * id
 * normalized name in Spanish (most natural name for this person)
 * aclaration (if needed, speacilly assigning some familiar relations)
@@ -161,7 +161,7 @@ This project also includes some other files:
 * Some files of documentation
 * XSLT and Python scripts to extract some interesting information
 * The resulting data and visualizations
-* CSV file (ontology.csv) to control the ids used
+* CSV file (entities.xlsx) to control the ids used
 
 # Quantitative data
 
@@ -189,7 +189,7 @@ Each column of the table "quantitative_data.csv" represents a different kind of 
 * tims: time/moments (fin del mundo, comienzo del mundo, resurrección de Jesús)
 * diff: different (for example, Exodus referes 1429 times to people, but only 80 different people: many people are mentioned many times; in compare, Nehemias mentions 962 times to people and referes to 284 different people: many people come just once).
 * mq: most common
-* id: identifier of the identity. Identifiers and names are made explicit in the ontology
+* id: identifier of the identity. Identifiers and names are made explicit in the Entities
 * freq: frequency
 * rss: element rs in TEI, which is used to encode entities. The difference between this column and "ent ref" is that rss can contain several people mentioned, while "ent ref" contains always single entities. The difference between these two values can point out if a book referes many times to a group of entities within the same noun (for example like Job)
 * qs: element q in TEI, used for quotationss and in general for communication
@@ -224,7 +224,7 @@ And with these purposes I have work for a couple of years. Besides it, there are
 * translate the ids of the entities to other languages in order to get visualizations in this languages aswell
 * encode the pass of the time at the chapter level
 * encode reference between verses in the Bible
-* map the entities of the ontology with other resources like DB-Pedia, Strong concordances... 
+* map the entities with other resources like DB-Pedia, Strong concordances... 
 * speacilly the verse that are parallel to other very similar in other Gospels
 * encode abstract actions like someone dying, someone getting married...
 * mix linguistic annotation in the TEI structure
