@@ -70,7 +70,7 @@ At the moment following books are fully encoded in this chronological order:
 
 At the moment, following book is being encoded:
 
-* 
+* Hebrews
 
 
 ## Original Text
