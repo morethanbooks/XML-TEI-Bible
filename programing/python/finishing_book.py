@@ -9,7 +9,8 @@ import glob
 import os
 from collections import Counter
 from lxml import etree
-
+from lxml.etree import tostring
+from itertools import chain
 
 communication_verbs = "()"
 
@@ -104,7 +105,7 @@ def add_freq_of_entities(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file = "T
     return entities
 
 
-entities = add_freq_of_entities(do_overwrite=True)
+#entities = add_freq_of_entities(do_overwrite=True)
 
 
 def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file = "TEIBible", outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"):
@@ -118,11 +119,16 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
     referenced_reference = []
     for reference in refereces:
         referenceds = reference.xpath('./@key', namespaces=namespaces_concretos, with_tail=True)[0]
-        referer = reference.xpath('.//text()', namespaces=namespaces_concretos, with_tail=True)
+        referer = ([reference.text] + list(chain(*([c.text] for c in reference.getchildren()))) )
+        referer = ''.join(filter(None, referer))
+        print(referer)
+        #referer = reference.xpath('.//text()', namespaces=namespaces_concretos, with_tail=True)
+        """
         if len(referer) > 0:
             referer = referer[0]
         else:
             referer = ""
+        """
         referenceds = referenceds.split(" ")
         #print(reference)
         #print(referenceds)
@@ -142,12 +148,17 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
         referenced_reference = []
         for reference in refereces:
             referenceds = reference.xpath('./@key', namespaces=namespaces_concretos, with_tail=True)[0]
-            referer = reference.xpath('.//text()', namespaces=namespaces_concretos, with_tail=True)
+            referer = ([reference.text] + list(chain(*([c.text] for c in reference.getchildren()))) )
+            referer = ''.join(filter(None, referer))
+            #referer = reference.xpath('.//text()', namespaces=namespaces_concretos, with_tail=True)
+            """
             if len(referer) > 0:
                 referer = referer[0]
             else:
                 referer = ""
+            """
             referenceds = referenceds.split(" ")
+            
             #print(reference)
             #print(referenceds)
             #print(reference.text)
@@ -158,4 +169,5 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
             df.loc[(df["id"] == tuple_[0][0]) & (df["referer"] == tuple_[0][1]), title] = tuple_[1]
     
     df.to_csv(outdir+"referer_refered.csv", sep="\t")
-#get_referers_and_refereds()
+get_referers_and_refereds()
+    
