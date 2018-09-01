@@ -17,7 +17,7 @@ def finding_standard_rs(content):
         It searchs for textual patterns that matchs things like names
     """
     nombres_comunes = {
-        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región","monte","territorio","valle"],
+        "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región","monte","territorio","valle","regiones"],
         "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
         "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervas","tribu","tribus","soldados"],
     }
@@ -25,7 +25,7 @@ def finding_standard_rs(content):
     for key,values in nombres_comunes.items():
         for value in values:
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
-    
+    """
     variaciones_comunes = {
         "per14" : ["Jehová","Todopoderoso","Señor","Padre","Omnipotente","Hacedor","Redentor","Creador","Altísimo","Soberano"],
         "per1" : ["Cristo","Jesucristo","Hijo","Mesías","Salvador"],
@@ -49,7 +49,7 @@ def finding_standard_rs(content):
     for key,values in variaciones_comunes.items():
         for value in values:
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
-
+    """
     content = re.sub(r'([a-zá-úñüç,;>] )([A-ZÁ-ÚÜÑ][a-zá-úñüç-]+)([^a-zá-úñüç])', r'\1<rs key="per">\2</rs>\3', content)
     
     return content
@@ -156,6 +156,45 @@ def deleting_wrong_entities(content, bookcode):
 
     return(content)
 
+def find_rs_from_referer_refered(content):
+    referer_refered = pd.read_csv("/home/jose/Dropbox/biblia/tb/resulting data/referer_refered.csv",sep="\t", index_col=0).fillna("")
+    
+    entities = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/entities.xls",  index_col=0)
+    entities = entities.parse('Sheet1').fillna("")
+    entities.index = entities["id"]
+    
+    books = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/documentation/books.xlsx",  index_col=0)
+    books = books.parse('Sheet1').fillna("")
+    
+    print(books.loc[books["testamento"] == "nuevo"]["codebook"].tolist())
+    
+    books_list = [book for book in books.loc[books["testamento"] == "nuevo"]["codebook"].tolist() if book in entities.columns.tolist()]
+    print(books_list)
+    
+    entities["sum_books"] = entities[books_list].sum(axis=1).replace("",0)
+    
+    entities = entities.loc[(entities["sum_books"] > 0)  ].copy()
+    
+    referer_refered = referer_refered.loc[(referer_refered["id"].isin(entities.index.tolist()) ) & (referer_refered["referer"] != "")]
+    #referer_refered.index = referer_refered["id"]
+    columns = books_list.copy()
+    columns.append("referer")
+    columns.append("id")
+    
+    referer_refered = referer_refered[columns]
+    
+    referer_refered["sum"] = referer_refered.sum(axis=1)
+    
+    referer_refered = referer_refered.sort_values(by="sum", ascending = False).groupby("referer").head(1)
+
+    referer_refered["len"] = referer_refered["referer"].str.len()
+    referer_refered = referer_refered.sort_values(by = "len", ascending = False)
+
+    for id_, row in referer_refered[["referer","id"]].iterrows():
+        print(row["referer"], row["id"])
+        content = re.sub(r'(\W)('+ re.escape(row["referer"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
+
+    return content
 
 def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-letter"):
     """
@@ -179,11 +218,15 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             content = fin.read()
             
             # Buscamos las personas de la ontología
-            content = finding_rs_from_ontology(content, df, bookcode)
+            #content = finding_rs_from_ontology(content, df, bookcode)
             
             # Buscamos las personas genéricas
-            content = finding_standard_rs(content)
             
+            content = find_rs_from_referer_refered(content)
+
+            #content = finding_standard_rs(content)
+            
+            print("done with referer")
             # Intentamos mejorar la estructura de rss
             content = improve_struccture(content)
             
@@ -196,7 +239,6 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
                 
             # Intentamos dar valores a los atributos de q
             content = values_q(content)
-            
         
             # it cleans the HTML from entities, etc        
             # TODO: introducir función que arregle algunos valores como "<rs key="org">hijos de <rs key="#pla4">Israel</rs></rs>", "<rs key="org">hijos de <rs key="#pla2">Judá</rs></rs>",
@@ -207,11 +249,10 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             print(i)
 
 
-
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/HEB.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/GAL.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "HEB",
-    genre = "prophetical"
+    "GAL",
+    genre = "letter"
     )

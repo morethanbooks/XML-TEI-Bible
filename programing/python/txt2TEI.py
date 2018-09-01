@@ -55,4 +55,4 @@ def main(book, bookcode):
         print("Processed documents: ",i)
         i+=1
 
-main("HEB","HEB")
+main("GAL","GAL")
