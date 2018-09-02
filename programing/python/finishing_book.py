@@ -39,11 +39,17 @@ def finishing_xml(inputcsv, inputtei, outputtei):
 
             if len(re.findall(r'( (key|corresp|who)(="| ))([a-z])', content)) > 0:
                 print("encontrados algunos problemas")
-                print(re.findall(r'(?: (?:key|corresp|who)(?:="| ))([a-z]+)', content))
+                print(re.findall(r'(<ab.*?(?: (?:key|corresp|who)(?:="| ))([a-z]+).*?</ab>)', content))
             content = re.sub(r'\n\n+', r'\n', content)
             content = re.sub(r'<(div|head)>', r'<\1 type="pericope">', content)
-            content = re.sub(r'^\t*(<ab.*?>)', r'\t\t\t\t\t\t\1\n\t\t\t\t\t\t\t', content, flags=re.MULTILINE)
-            content = re.sub(r'(</ab>)', r'\n\t\t\t\t\t\t\1', content)
+            content = re.sub(r'^\t*(<ab.*?>)', r'\t\t\t\t\t\t\1\t\t\t\t\t\t\t', content, flags=re.MULTILINE)
+            content = re.sub(r'^\t*(</div>)', r'\t\t\t\t\t\1', content, flags=re.MULTILINE)
+            content = re.sub(r'^\t*(<div .*? type="book">)', r'\t\t\t\1', content, flags=re.MULTILINE)
+            content = re.sub(r'^\t*(<div .*? type="chapter".*?>)', r'\t\t\t\t\1', content, flags=re.MULTILINE)
+            content = re.sub(r'^\t*(<div type="pericope".*?>)', r'\t\t\t\t\t\1', content, flags=re.MULTILINE)
+            content = re.sub(r'^\t*(<head type="pericope">)', r'\t\t\t\t\t\t\1', content, flags=re.MULTILINE)
+            
+            content = re.sub(r'^\t*(</ab>)', r'\t\t\t\t\t\t\1', content,  flags=re.MULTILINE)
             content = re.sub(r'(<div [^>]*? type="chapter" [^>]*?) cert="high">', r'\1>', content)
     
             with open (os.path.join(outputtei, docFormatOut), "w", encoding="utf-8") as fout:
@@ -53,16 +59,19 @@ def finishing_xml(inputcsv, inputtei, outputtei):
 """
 finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/JER.xml",
+    "/home/jose/Dropbox/biblia/tb/HEB.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
 """
+
 def add_freq_of_entities(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file = "TEIBible", do_overwrite = False):
+    print("adding freq of entities to entities.xls")
     xls = pd.ExcelFile(wdir+"entities.xls",  index_col=0)
     entities_orig = xls.parse('Sheet1').fillna("")
     
     entities = entities_orig.copy()
     
+    entities.index = entities["id"]
     parser = etree.XMLParser(encoding='utf-8')
     documento_xml = etree.parse(wdir+bible_file+".xml", parser)
     documento_root = documento_xml.getroot()
@@ -75,7 +84,7 @@ def add_freq_of_entities(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file = "T
         title = book.xpath('.//tei:title[2]/tei:idno[@type="string"]/text()', namespaces=namespaces_concretos, with_tail=True)[0]
         titles.append(title)
         print(title)
-        if do_overwrite == True:
+        if title in entities.columns.tolist() and do_overwrite == True:
             del entities[title]
         if title not in entities.columns.tolist():
             referecend_entities = book.xpath('.//tei:rs/@key', namespaces=namespaces_concretos, with_tail=True)

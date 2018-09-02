@@ -67,10 +67,12 @@ At the moment following books are fully encoded in this chronological order:
 * 2 Timothy
 * Titus
 * Jeremiah
+* Hebrews
 
 At the moment, following book is being encoded:
 
-* Hebrews
+* Philippians
+
 
 
 ## Original Text

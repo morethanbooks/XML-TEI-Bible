@@ -5,7 +5,7 @@ Antes de dar por terminado un nuevo libro de la Biblia, hay que revisar:
 * Revisar metadatos en teiHeader
 * Validar
 * Que las q dentro de q tengan también valores soCalled e idea
-* Revisar campos secundarios de nuevos registros en ontología y guardarlo como CSV
+* Revisar campos secundarios de nuevos registros en entities y guardarlo como CSV
 * reordenar los ids para que los ids nuevos de un libro sean consecutivos y no haya huecos
 
 
