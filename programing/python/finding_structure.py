@@ -12,7 +12,7 @@ from collections import Counter
 
 communication_verbs = "()"
 
-def finding_standard_rs(content):
+def finding_common_rs(content):
     """
         It searchs for textual patterns that matchs things like names
     """
@@ -50,6 +50,10 @@ def finding_standard_rs(content):
         for value in values:
             content = re.sub(r'(\W)(' + re.escape(value)+r')(\W)', r'\1<rs key="' + re.escape(key)+r'">\2</rs>\3', content)
     """
+    return content
+
+def finding_proper_rs(content):
+
     content = re.sub(r'([a-zá-úñüç,;>] )([A-ZÁ-ÚÜÑ][a-zá-úñüç-]+)([^a-zá-úñüç])', r'\1<rs key="per">\2</rs>\3', content)
     
     return content
@@ -60,13 +64,15 @@ def finding_rs_from_ontology(content, df, book):
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or (row["book"] in ["NT"]):
-            content = re.sub(r'(\W)('+ re.escape(row["NormalizedName-sp"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book):# or (row["book"] in ["NT"]):
+            content = re.sub(r'<rs key="per">('+ re.escape(row["NormalizedName-sp"]) +r')</rs>', r'<rs key="'+row["id"]+r'">\1</rs>', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
+        """
         if (row["type"] == "group") & (row["variants"] != ""):
             content = re.sub(r'(\W)('+ re.escape(row["variants"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
+        """
     return content
         
-def improve_struccture(content):
+def improve_structure(content):
     
     # Intentamos encontrar el identificador de cosas como su "mujer Noemí":
     content = re.sub(r'(<rs key=")per(">[^<]*?</rs> <rs key=\"([^\"]*?)\">)', r'\1\3\2', content)
@@ -137,15 +143,21 @@ def find_people_without_id(content, outputtei, bookcode):
 
     people_without_id_df = people_without_id_df.sort_values(by='frequency', ascending=False)
     people_without_id_df.to_csv(outputtei+bookcode+"people_without_id.csv", sep='\t', encoding='utf-8')
-
+    
     #print(people_without_id_df)
 
     
 
 def deleting_wrong_entities(content, bookcode):
-    content = re.sub(r'<rs key="#pla230">Mira</rs>', r'Mira', content)
-    content = re.sub(r'<rs key="#pla258">Sin</rs>', r'Sin', content)
+    uncommon_entities_list = ["justicia","Mira","Sin","paz","justo"]
+    for uncommon_entity in uncommon_entities_list:
+        
+        content = re.sub(r'<rs key="#.*?">' + uncommon_entity + '</rs>', uncommon_entity, content)
+
     content = re.sub(r'<rs key="#per17"><rs key="per17">Espíritu</rs> <rs key="per">Santo</rs></rs>', r'<rs key="#per17">Espíritu Santo</rs>', content)
+    content = re.sub(r'<rs key="#per1"><rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs></rs>', r'<rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>', content)
+    
+    
 
     content = re.sub(r'"#per5"', r'"#pla2"', content)
     content = re.sub(r'<rs key="org\d*">((hombres|hijos) de <rs key="#pla2">Judá</rs>)</rs>', r'<rs key="#org39">\1</rs>', content)
@@ -156,7 +168,7 @@ def deleting_wrong_entities(content, bookcode):
 
     return(content)
 
-def find_rs_from_referer_refered(content):
+def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 2):
     referer_refered = pd.read_csv("/home/jose/Dropbox/biblia/tb/resulting data/referer_refered.csv",sep="\t", index_col=0).fillna("")
     
     entities = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/entities.xls",  index_col=0)
@@ -166,16 +178,17 @@ def find_rs_from_referer_refered(content):
     books = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/documentation/books.xlsx",  index_col=0)
     books = books.parse('Sheet1').fillna("")
     
-    print(books.loc[books["testamento"] == "nuevo"]["codebook"].tolist())
     
-    books_list = [book for book in books.loc[books["testamento"] == "nuevo"]["codebook"].tolist() if book in entities.columns.tolist()]
-    print(books_list)
+    books_list = [book for book in books.loc[books["testamento"].isin([testament])]["codebook"].tolist() if book in entities.columns.tolist()]
     
-    entities["sum_books"] = entities[books_list].sum(axis=1).replace("",0)
+    entities["sum_books"] = entities[books_list].sum(axis=1)
     
-    entities = entities.loc[(entities["sum_books"] > 0)  ].copy()
+    print(entities)
+    entities = entities.loc[ ((entities["sum_books"] > 1) & (entities["importance"] == 1)) | ( (entities["type"].isin(["group","place","work"]))) ].copy()
     
-    referer_refered = referer_refered.loc[(referer_refered["id"].isin(entities.index.tolist()) ) & (referer_refered["referer"] != "")]
+    print(entities)
+    referer_refered["sum_books"] = referer_refered[books_list].sum(axis=1)
+    referer_refered = referer_refered.loc[(referer_refered["id"].isin(entities.index.tolist()) ) & (referer_refered["referer"] != "") & (referer_refered["sum_books"] > 0)]
     #referer_refered.index = referer_refered["id"]
     columns = books_list.copy()
     columns.append("referer")
@@ -184,19 +197,23 @@ def find_rs_from_referer_refered(content):
     referer_refered = referer_refered[columns]
     
     referer_refered["sum"] = referer_refered.sum(axis=1)
-    
-    referer_refered = referer_refered.sort_values(by="sum", ascending = False).groupby("referer").head(1)
 
+    referer_refered["type"] = referer_refered["id"].str.extract("#(...)\d+")
+
+    referer_refered = referer_refered.sort_values(by="sum", ascending=False)
+    
+    referer_refered = referer_refered.loc[ (referer_refered["sum"] > minimal_freq ) | (referer_refered["type"].isin(["pla","org"] )) ].sort_values(by="sum", ascending = False).groupby("referer").head(1)
+    
     referer_refered["len"] = referer_refered["referer"].str.len()
     referer_refered = referer_refered.sort_values(by = "len", ascending = False)
-
+    
     for id_, row in referer_refered[["referer","id"]].iterrows():
         print(row["referer"], row["id"])
         content = re.sub(r'(\W)('+ re.escape(row["referer"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
 
     return content
 
-def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-letter"):
+def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-letter", testament = "antiguo"):
     """
     finding_structure = finding_structure("/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv","/home/jose/Dropbox/biblia/tb/programing/python/input/rut.xml", "/home/jose/Dropbox/TEIBibel/programacion/python/output/")
     """
@@ -218,17 +235,18 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             content = fin.read()
             
             # Buscamos las personas de la ontología
-            #content = finding_rs_from_ontology(content, df, bookcode)
             
             # Buscamos las personas genéricas
             
-            content = find_rs_from_referer_refered(content)
+            content = find_rs_from_referer_refered(content, testament = testament)
 
-            #content = finding_standard_rs(content)
+            content = finding_proper_rs(content)
+
+            content = finding_rs_from_ontology(content, df, bookcode)
             
             print("done with referer")
             # Intentamos mejorar la estructura de rss
-            content = improve_struccture(content)
+            content = improve_structure(content)
             
             find_people_without_id(content, outputtei,bookcode)
 
@@ -251,8 +269,9 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/GAL.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/PHI.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "GAL",
-    genre = "letter"
+    "PHI",
+    genre = "letter",
+    testament = "nuevo",
     )
