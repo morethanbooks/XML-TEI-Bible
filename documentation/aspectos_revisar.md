@@ -21,6 +21,8 @@ Antes de dar por terminado un nuevo libro de la Biblia, hay que revisar:
 ## Pasos finales
 * Volver a validar
 * Integrar archivo en TEI principal
+* Extraer referencias y referenciadores
+* Extraer y añadir frecuencias a entities.xls
 * Hacer network
 * Modificar documentación
 
