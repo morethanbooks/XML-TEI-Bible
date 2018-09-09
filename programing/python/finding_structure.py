@@ -162,13 +162,13 @@ def deleting_wrong_entities(content, bookcode):
     content = re.sub(r'"#per5"', r'"#pla2"', content)
     content = re.sub(r'<rs key="org\d*">((hombres|hijos) de <rs key="#pla2">Judá</rs>)</rs>', r'<rs key="#org39">\1</rs>', content)
     content = re.sub(r'<rs key="org\d*">((hombres|hijos) de <rs key="#pla4">Israel</rs>)</rs>', r'<rs key="#org70">\1</rs>', content)
-    content = re.sub(r'<rs key="#pla(\d*)">([^ ]*? de )<rs key="(#?pla\d+)"', r'<rs key="\1">\1<rs key="\2"', content)
+    content = re.sub(r'<rs key="#pla(\d*)">([^ ]*? de )<rs key="(#?pla\d+)"', r'<rs key="\3">\2<rs key="\3"', content)
     
     content = re.sub(r'\A.*?</teiHeader>', r'<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?><TEI xmlns="http://www.tei-c.org/ns/1.0">\n	<teiHeader>\n		<fileDesc>\n			<titleStmt>\n				<title></title>\n				<title type="idno">\n					<idno type="string">'+bookcode+'</idno>\n					<idno type="viaf"></idno>\n				</title>\n				<author>\n					<name type="short"></name>\n					<name type="full"></name>\n					<idno type="viaf"></idno>\n				</author>\n				<principal key="#jct">José Calvo Tello</principal>\n			</titleStmt>\n			<publicationStmt>\n				<publisher>José Calvo Tello</publisher>\n				<availability status="free">\n					<p>The text is freely available.</p>\n				</availability>\n				<date when="2018">2018</date>\n			</publicationStmt>\n			<sourceDesc>\n				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>\n				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>\n				<bibl type="edition-first"><date when="1569">1569</date></bibl>\n			</sourceDesc>\n		</fileDesc>\n		<encodingDesc>\n			<p></p>\n		</encodingDesc>\n		<revisionDesc>\n			<change when="2018-02-02" who="#jct">First version of </change>\n		</revisionDesc>\n	</teiHeader>\n', content, flags=re.IGNORECASE|re.MULTILINE|re.DOTALL)
 
     return(content)
 
-def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 2):
+def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 4) :
     referer_refered = pd.read_csv("/home/jose/Dropbox/biblia/tb/resulting data/referer_refered.csv",sep="\t", index_col=0).fillna("")
     
     entities = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/entities.xls",  index_col=0)
@@ -184,7 +184,7 @@ def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 
     entities["sum_books"] = entities[books_list].sum(axis=1)
     
     print(entities)
-    entities = entities.loc[ ((entities["sum_books"] > 1) & (entities["importance"] == 1)) | ( (entities["type"].isin(["group","place","work"]))) ].copy()
+    entities = entities.loc[ ((entities["sum_books"] > 1) & (entities["importance"] == 1)) |  ((entities["sum_books"] > 3) ) | ( (entities["type"].isin(["group","place","work"]))) ].copy()
     
     print(entities)
     referer_refered["sum_books"] = referer_refered[books_list].sum(axis=1)
@@ -202,7 +202,7 @@ def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 
 
     referer_refered = referer_refered.sort_values(by="sum", ascending=False)
     
-    referer_refered = referer_refered.loc[ (referer_refered["sum"] > minimal_freq ) | (referer_refered["type"].isin(["pla","org"] )) ].sort_values(by="sum", ascending = False).groupby("referer").head(1)
+    referer_refered = referer_refered.loc[ (referer_refered["sum"] > minimal_freq ) | (referer_refered["type"].isin(["pla"] )) ].sort_values(by="sum", ascending = False).groupby("referer").head(1)
     
     referer_refered["len"] = referer_refered["referer"].str.len()
     referer_refered = referer_refered.sort_values(by = "len", ascending = False)
@@ -269,9 +269,9 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/PHI.xml",
-    "/home/jose/Dropbox/biblia/tb/programing/python/output/",
-    "PHI",
-    genre = "letter",
-    testament = "nuevo",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/AMO.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/output/", 
+    "AMO",
+    genre = "prophetical", # "letter","prophetical",
+    testament = "antiguo",
     )
