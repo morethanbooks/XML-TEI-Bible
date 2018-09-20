@@ -69,10 +69,11 @@ At the moment following books are fully encoded in this chronological order:
 * Jeremiah
 * Hebrews
 * Philippians
+* Amos
 
 At the moment, following book is being encoded:
 
-* Amos
+* 1 Kings
 
 
 ## Original Text
