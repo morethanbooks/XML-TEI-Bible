@@ -70,10 +70,11 @@ At the moment following books are fully encoded in this chronological order:
 * Hebrews
 * Philippians
 * Amos
+* Leviticus
 
 At the moment, following book is being encoded:
 
-* 1 Kings
+* Lamentations
 
 
 ## Original Text

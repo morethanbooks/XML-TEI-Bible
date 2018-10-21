@@ -177,13 +177,13 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
             df.loc[(df["id"] == tuple_[0][0]) & (df["referer"] == tuple_[0][1]), title] = tuple_[1]
     
     df.to_csv(outdir+"referer_refered.csv", sep="\t")
-get_referers_and_refereds()
+#get_referers_and_refereds()
 
 """finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/AMO.xml",
+    "/home/jose/Dropbox/biblia/tb/LEV.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
 """
-#entities = add_freq_of_entities(do_overwrite=True)
+entities = add_freq_of_entities(do_overwrite=True)
     
