@@ -271,9 +271,9 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/LEV.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/LAM.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/", 
-    "LEV",
-    genre = "prophetical", # "letter","prophetical",
+    "LAM",
+    genre = "lyrical", # "letter","prophetical",
     testament = "antiguo",
     )
