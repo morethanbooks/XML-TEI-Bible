@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="edge" mode="static">
+      <attribute id="5" title="Type" type="string" />
+      <attribute id="6" title="Weight" type="long" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="NormalizedName-ge" type="string" />
+      <attribute id="1" title="Degree" type="long" />
+      <attribute id="2" title="NormalizedName-sp" type="string" />
+      <attribute id="3" title="Gender" type="string" />
+      <attribute id="4" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="#per14" label="#per14">
+        <attvalues>
+          <attvalue for="0" value="Gott" />
+          <attvalue for="1" value="1800" />
+          <attvalue for="2" value="Dios" />
+          <attvalue for="3" value="none" />
+          <attvalue for="4" value="person" />
+        </attvalues>
+      </node>
+      <node id="#per473" label="#per473">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="2300" />
+          <attvalue for="2" value="salmista" />
+          <attvalue for="3" value="male" />
+          <attvalue for="4" value="person" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="#per14" target="#per473">
+        <attvalues>
+          <attvalue for="5" value="Undirected" />
+          <attvalue for="6" value="20" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
