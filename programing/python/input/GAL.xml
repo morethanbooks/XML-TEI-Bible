@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
@@ -6,10 +7,10 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Génesis</title>
+				<title></title>
 				<title type="idno">
-					<idno type="string">GEN</idno>
-					<idno type="viaf">174582712</idno>
+					<idno type="string">GAL</idno>
+					<idno type="viaf"></idno>
 				</title>
 				<author>
 					<name type="short"></name>
@@ -23,7 +24,7 @@
 				<availability status="free">
 					<p>The text is freely available.</p>
 				</availability>
-				<date when="2017">2017</date>
+				<date when="2018">2018</date>
 			</publicationStmt>
 			<sourceDesc>
 				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>
@@ -35,8 +36,7 @@
 			<p></p>
 		</encodingDesc>
 		<revisionDesc>
-			<change when="2016-04-01" who="#jct">First version of Genesis</change>
-			<change when="2016-05-16" who="#jct" status="checked">Text and markup fully checked personally.</change>
+			<change when="2018-09-09" who="#jct">First version of </change>
 		</revisionDesc>
 	</teiHeader>
 	<text>

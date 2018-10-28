@@ -3,11 +3,12 @@
 <?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
-<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title></title>
+				<title>Gálatas</title>
 				<title type="idno">
 					<idno type="string">GAL</idno>
 					<idno type="viaf"></idno>
@@ -36,7 +37,7 @@
 			<p></p>
 		</encodingDesc>
 		<revisionDesc>
-			<change when="2018-02-02" who="#jct">First version of </change>
+			<change when="2018-10-28" who="#jct">First version of Galatians.</change>
 		</revisionDesc>
 	</teiHeader>
 
@@ -45,22 +46,25 @@
 			<div />
 		</front><body>
 <div xml:id="b.GAL" type="book">
-
-
 <div xml:id="b.GAL.1" type="chapter" n="1">
 <div type="pericope">
-<head type="pericope"></head>
-
+	<head type="pericope">Salutación</head>
 <ab xml:id="b.GAL.1.1" type="verse" n="1"><rs key="#per504">Pablo</rs>, <rs key="#per504">apóstol</rs> (no por disposición de <rs key="#org0">hombres</rs> ni por <rs key="#org0">hombre</rs>, sino por <rs key="#per1">Jesucristo</rs> y por <rs key="#per14">Dios</rs> <rs key="#per14">Padre</rs> que lo resucitó de los muertos),</ab>
 <ab xml:id="b.GAL.1.2" type="verse" n="2">y todos los <rs key="#org37">hermanos</rs> que están conmigo, a las <rs key="#org37">iglesias de <rs key="#pla198">Galacia</rs></rs>:</ab>
 <ab xml:id="b.GAL.1.3" type="verse" n="3">Gracia y paz sean a vosotros, de <rs key="#per14">Dios</rs> <rs key="#per14">Padre</rs> y de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>,</ab>
 <ab xml:id="b.GAL.1.4" type="verse" n="4">el cual se dio a sí mismo por nuestros pecados para librarnos del presente siglo malo,, conforme a la voluntad de nuestro <rs key="#per14">Dios</rs> y <rs key="#per14">Padre</rs>,</ab>
 <ab xml:id="b.GAL.1.5" type="verse" n="5">a quien sea la gloria por los siglos de los siglos. Amén.</ab>
-<ab xml:id="b.GAL.1.6" type="verse" n="6">Estoy asombrado de que tan pronto os hayáis alejado del que os llamó por la gracia de <rs key="#per1">Cristo</rs>, para seguir un evangelio diferente.</ab>
+</div>
+	<div>
+		<head>No hay otro evangelio</head>
+	<ab xml:id="b.GAL.1.6" type="verse" n="6">Estoy asombrado de que tan pronto os hayáis alejado del que os llamó por la gracia de <rs key="#per1">Cristo</rs>, para seguir un evangelio diferente.</ab>
 <ab xml:id="b.GAL.1.7" type="verse" n="7">No que haya otro, sino que hay algunos que os perturban y quieren alterar el evangelio de <rs key="#per1">Cristo</rs>.</ab>
 <ab xml:id="b.GAL.1.8" type="verse" n="8">Pero si aun nosotros, o un <rs key="#org4">ángel del <rs key="#pla18">cielo</rs></rs>, os anuncia un evangelio diferente del que os hemos anunciado, sea anatema.</ab>
 <ab xml:id="b.GAL.1.9" type="verse" n="9">Como antes hemos dicho, también ahora lo repito: Si alguien os predica un evangelio diferente del que habéis recibido, sea anatema.</ab>
-<ab xml:id="b.GAL.1.10" type="verse" n="10">¿Acaso busco ahora la aprobación de los <rs key="#org0">hombres</rs> o la de <rs key="#per14">Dios</rs>? ¿O trato de agradar a los <rs key="#org0">hombres</rs>? Si todavía agradara a los <rs key="#org0">hombres</rs>, no sería siervo de <rs key="#per1">Cristo</rs>.</ab>
+	</div>
+	<div>
+		<head>El ministerio de Pablo</head>
+		<ab xml:id="b.GAL.1.10" type="verse" n="10">¿Acaso busco ahora la aprobación de los <rs key="#org0">hombres</rs> o la de <rs key="#per14">Dios</rs>? ¿O trato de agradar a los <rs key="#org0">hombres</rs>? Si todavía agradara a los <rs key="#org0">hombres</rs>, no sería siervo de <rs key="#per1">Cristo</rs>.</ab>
 <ab xml:id="b.GAL.1.11" type="verse" n="11">Pero os hago saber, <rs key="#org37">hermanos</rs>, que el evangelio anunciado por mí no es invención humana,</ab>
 <ab xml:id="b.GAL.1.12" type="verse" n="12">pues yo ni lo recibí ni lo aprendí de <rs key="#org0">hombre</rs> alguno, sino por revelación de <rs key="#per1">Jesucristo</rs>.</ab>
 <ab xml:id="b.GAL.1.13" type="verse" n="13">Ya habéis oído acerca de mi conducta en otro tiempo en el judaísmo, que perseguía sobremanera a la <rs key="#org37">iglesia de <rs key="#per14">Dios</rs></rs> y la asolaba.</ab>
