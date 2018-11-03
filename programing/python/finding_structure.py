@@ -152,7 +152,7 @@ def deleting_wrong_entities(content, bookcode):
     uncommon_entities_list = ["justicia","Mira","Sin","paz","justo"]
     for uncommon_entity in uncommon_entities_list:
         
-        content = re.sub(r'<rs key="#.*?">' + uncommon_entity + '</rs>', uncommon_entity, content)
+        content = re.sub(r'<rs key="[^"]*?">' + uncommon_entity + '</rs>', uncommon_entity, content)
 
     content = re.sub(r'<rs key="#per17"><rs key="per17">Espíritu</rs> <rs key="per">Santo</rs></rs>', r'<rs key="#per17">Espíritu Santo</rs>', content)
     content = re.sub(r'<rs key="#per1"><rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs></rs>', r'<rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>', content)
@@ -186,7 +186,11 @@ def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 
     entities["sum_books"] = entities[books_list].sum(axis=1)
     
     print(entities)
-    entities = entities.loc[ ((entities["sum_books"] > 1) & (entities["importance"] == 1)) |  ((entities["sum_books"] > 3) ) | ( (entities["type"].isin(["group","place","work"]))) ].copy()
+    print(entities["sum_books"].head()[0])
+    print(entities["sum_books"].dtype)
+    entities = entities.loc[ ((entities["sum_freq"] > 1) & (entities["importance"] == 1)) |  ((entities["sum_freq"] > 3) ) | ( (entities["type"].isin(["group","place","work"]))) ].copy()
+
+    #entities = entities.loc[  (entities["importance"] == 1) ].copy()
     
     print(entities)
     referer_refered["sum_books"] = referer_refered[books_list].sum(axis=1)
@@ -243,9 +247,9 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             content = find_rs_from_referer_refered(content, testament = testament)
 
             content = finding_proper_rs(content)
-
             content = finding_rs_from_ontology(content, df, bookcode)
             
+
             print("done with referer")
             # Intentamos mejorar la estructura de rss
             content = improve_structure(content)
@@ -263,7 +267,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             # it cleans the HTML from entities, etc        
             # TODO: introducir función que arregle algunos valores como "<rs key="org">hijos de <rs key="#pla4">Israel</rs></rs>", "<rs key="org">hijos de <rs key="#pla2">Judá</rs></rs>",
             # It writes the result in the output folder
-    
+
             with open (os.path.join(outputtei, docFormatOut), "w", encoding="utf-8") as fout:
                 fout.write(content)
             print(i)

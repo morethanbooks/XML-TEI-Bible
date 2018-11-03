@@ -72,10 +72,11 @@ At the moment following books are fully encoded in this chronological order:
 * Amos
 * Leviticus
 * Lamentations
+* Galatians
 
 At the moment, following book is being encoded:
 
-* Galatians
+* 1 Kings
 
 
 ## Original Text
