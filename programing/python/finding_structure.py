@@ -59,12 +59,12 @@ def finding_proper_rs(content):
     return content
 
 
-def finding_rs_from_ontology(content, df, book):
+def finding_rs_from_ontology(content, df, book, books_list):
     # It goes row by row
     #print(book)
     for index, row in df.iterrows():
         #print(row["NormalizedName-sp"])
-        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book):# or (row["book"] in ["NT"]):
+        if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or ((row["order-edition"] in books_list)):# or (row["book"] in ["NT"]):
             content = re.sub(r'<rs key="per">('+ re.escape(row["NormalizedName-sp"]) +r')</rs>', r'<rs key="'+row["id"]+r'">\1</rs>', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
         """
         if (row["type"] == "group") & (row["variants"] != ""):
@@ -180,8 +180,9 @@ def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 
     books = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/documentation/books.xlsx",  index_col=0)
     books = books.parse('Sheet1').fillna("")
     
-    
+        
     books_list = [book for book in books.loc[books["testamento"].isin([testament])]["codebook"].tolist() if book in entities.columns.tolist()]
+        
     
     entities["sum_books"] = entities[books_list].sum(axis=1)
     
@@ -190,6 +191,7 @@ def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 
     print(entities["sum_books"].dtype)
     entities = entities.loc[ ((entities["sum_freq"] > 1) & (entities["importance"] == 1)) |  ((entities["sum_freq"] > 3) ) | ( (entities["type"].isin(["group","place","work"]))) ].copy()
 
+    print(entities.head())
     #entities = entities.loc[  (entities["importance"] == 1) ].copy()
     
     print(entities)
@@ -219,7 +221,7 @@ def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 
 
     return content
 
-def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-letter", testament = "antiguo"):
+def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-letter", testament = "antiguo", books_list=[]):
     """
     finding_structure = finding_structure("/home/jose/Dropbox/biblia/tb/resulting data/ontology.csv","/home/jose/Dropbox/biblia/tb/programing/python/input/rut.xml", "/home/jose/Dropbox/TEIBibel/programacion/python/output/")
     """
@@ -247,7 +249,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             content = find_rs_from_referer_refered(content, testament = testament)
 
             content = finding_proper_rs(content)
-            content = finding_rs_from_ontology(content, df, bookcode)
+            content = finding_rs_from_ontology(content, df, bookcode, books_list = books_list)
             
 
             print("done with referer")
@@ -275,9 +277,10 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/GAL.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/1KI.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/", 
-    "GAL",
+    "1KI",
     genre = "letter", # "letter","prophetical",
-    testament = "nuevo",
+    testament = "antiguo",
+    books_list = ["GEN","EXO","LEV","JOS","JDG","RUT","1SA","2SA","MAT"],
     )

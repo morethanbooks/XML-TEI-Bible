@@ -147,10 +147,11 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
     df = pd.DataFrame(list(set(referenced_reference)), columns=["id","referer"])
     
     books = documento_root.xpath('//tei:TEI', namespaces=namespaces_concretos, with_tail=True)
-
+    titles = []
     for book in books:
         title = book.xpath('.//tei:title[2]/tei:idno[@type="string"]/text()', namespaces=namespaces_concretos, with_tail=True)[0]
         print(title)
+        titles.append(title)
         df[title] = 0
         refereces = book.xpath('.//tei:rs[@key]', namespaces=namespaces_concretos, with_tail=True)
         referenced_reference = []
@@ -175,14 +176,16 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
                 referenced_reference.append((referenced, referer))
         for tuple_ in Counter(referenced_reference).most_common():
             df.loc[(df["id"] == tuple_[0][0]) & (df["referer"] == tuple_[0][1]), title] = tuple_[1]
-    
+    df["sum"] = df[titles].sum(axis=1)
     df.to_csv(outdir+"referer_refered.csv", sep="\t")
-#get_referers_and_refereds()
+    return df
+df = get_referers_and_refereds()
+
 """finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
     "/home/jose/Dropbox/biblia/tb/GAL.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
     """
-entities = add_freq_of_entities(do_overwrite=True)
+#entities = add_freq_of_entities(do_overwrite=True)
     
