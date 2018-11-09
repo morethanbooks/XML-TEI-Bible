@@ -35,3 +35,56 @@ For now we only have the information in Spanish, we could already think about op
 # Further development
 
 * Semantic annotation: dictionaries or topic modelling, showing the highest value related to each place or entities (books, people, groups...)
+
+# Extraction of information
+
+This part is just pseudo-code for the extraction of the information for the different layers:
+
+
+## Places:
+
+open the entities files and get the places
+
+For each book:
+	for each different place in the entities file
+		check how many times it appears in the book
+
+sum the references of the new testament and old testament
+save the (places are rows, columns are books)
+
+### Location
+This information is already in entities.xls
+
+## Books:
+Open the entities
+Open the file of books
+For each book
+	get all the references to places in the book
+	make a set of the references
+	filter out the references that have an exceptable certainty
+	get the geolocation
+	calculate the mean (median?) of the latitude and the longitude
+save this information in the file of books
+
+## Genres
+Open the file of books
+for each genre
+	Calculate the mean (median?) of the books that are part of the books
+
+## People
+
+Open the entities
+for each person
+	for each book in the bible
+		for each pericope
+			get the places that are mentioned
+		calculate the mean-median latitude and longitude of the places of each person and save it
+	calculate the longitude and latitude of the Old and New Testament
+	calculate the longitude and latitude of the Bible
+
+## Groups
+
+The same as with people
+
+## 
+
