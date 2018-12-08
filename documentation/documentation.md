@@ -73,11 +73,12 @@ At the moment following books are fully encoded in this chronological order:
 * Leviticus
 * Lamentations
 * Galatians
+* 1 Kings
 
 At the moment, following book is being encoded:
 
-* 1 Kings
-
+* 1 Thessalonians
+* 2 Thessalonians
 
 ## Original Text
 

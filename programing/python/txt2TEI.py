@@ -51,8 +51,11 @@ def main(bookcode):
     
         with open (os.path.join("/home/jose/Dropbox/biblia/tb/programing/python/output/", docFormatOut), "w", encoding="utf-8") as fout:
                 fout.write(content)
+        with open (os.path.join("/home/jose/Dropbox/biblia/tb/programing/python/input/", docFormatOut), "w", encoding="utf-8") as fout:
+                fout.write(content)
         print(doc)
         print("Processed documents: ",i)
         i+=1
 
-main("1KI")
+main("1TH")
+main("2TH")
