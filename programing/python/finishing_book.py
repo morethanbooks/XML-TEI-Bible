@@ -55,11 +55,10 @@ def finishing_xml(inputcsv, inputtei, outputtei):
             with open (os.path.join(outputtei, docFormatOut), "w", encoding="utf-8") as fout:
                 fout.write(content)
             print(i)
-
 """
 finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/PHI.xml",
+    "/home/jose/Dropbox/biblia/tb/1KI.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
 """
@@ -180,12 +179,12 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
     df.to_csv(outdir+"referer_refered.csv", sep="\t")
     return df
 df = get_referers_and_refereds()
-
-"""finishing_xml(
+"""
+finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/GAL.xml",
+    "/home/jose/Dropbox/biblia/tb/1KI.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/",
     )
-    """
-#entities = add_freq_of_entities(do_overwrite=True)
+"""
+entities = add_freq_of_entities(do_overwrite=True)
     
