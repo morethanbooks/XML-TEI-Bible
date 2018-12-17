@@ -86,5 +86,8 @@ for each person
 
 The same as with people
 
-## 
+# Prototype
+
+http://informatik.uni-leipzig.de:8080/BiblePlaces2.0/
+
 

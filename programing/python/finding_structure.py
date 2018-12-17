@@ -174,7 +174,7 @@ def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 
     referer_refered = pd.read_csv("/home/jose/Dropbox/biblia/tb/resulting data/referer_refered.csv",sep="\t", index_col=0).fillna("")
     
     entities = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/entities.xls",  index_col=0)
-    entities = entities.parse('Sheet1').fillna("")
+    entities = entities.parse('Sheet1').fillna(0)
     entities.index = entities["id"]
     
     books = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/documentation/books.xlsx",  index_col=0)
@@ -277,10 +277,10 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programing/python/input/2TH.xml",
+    "/home/jose/Dropbox/biblia/tb/programing/python/input/ISA.xml",
     "/home/jose/Dropbox/biblia/tb/programing/python/output/", 
-    "2TH",
-    genre = "letter", # "letter","prophetical",
-    testament = "nuevo",
+    "ISA",
+    genre = "prophetical", # "letter","prophetical",
+    testament = "antiguo",
     books_list = []#"GEN","EXO","LEV","JOS","JDG","RUT","1SA","2SA","MAT"],
     )

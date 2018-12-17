@@ -57,5 +57,4 @@ def main(bookcode):
         print("Processed documents: ",i)
         i+=1
 
-main("1TH")
-main("2TH")
+main("ISA")
