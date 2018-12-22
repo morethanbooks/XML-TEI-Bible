@@ -14,13 +14,14 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from itertools import count
 
+namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
 
 
-def create_matrix_caracters_text(documento_root, namespaces_concretos, xpaths):
+def create_matrix_caracters_text(document_root, namespaces_concretos, xpaths):
 
 
     list_characters = [
-    list(set(documento_root.xpath("//tei:"+element+"/"+attribute, namespaces=namespaces_concretos)))
+    list(set(document_root.xpath("//tei:"+element+"/"+attribute, namespaces=namespaces_concretos)))
     for element, attributes in xpaths.items()
     for attribute in attributes
     ]
@@ -139,33 +140,78 @@ def xpath2string(xpaths):
     string_xpath = "_"+"-".join(sorted(list(xpaths.keys())))+"-".join(sorted([item for sublist in list(xpaths.values()) for item in sublist]))+"_"
     return string_xpath
 
-    
-def create_networks(inputtei, file, output, border, book, deleting_books, characters_in, xpaths, directed = False):
-    
+
+def open_and_clean_tei(inputtei, file, deleting_books, book):
+
     doc = glob.glob(inputtei+file+".xml")[0]
-    print(doc)
-
-
     inputtei_name  = os.path.splitext(os.path.split(doc)[1])[0]
-    print(doc, inputtei_name, book)
+    print(doc, inputtei_name)
 
     # Parseamos el archivo xml-tei
-    documento_xml = etree.parse(doc)
+    document_xml = etree.parse(doc)
 
     # Y lo convertimos en un tipo element
-    documento_root = documento_xml.getroot()
-    #print(type(documento_root))
+    document_root = document_xml.getroot()
 
     # Definimos el namespace del TEI con el que trabajamos
-    namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
 
     if deleting_books == True:
-        documento_root = delete_books(documento_root, book, namespaces_concretos)
+        document_root = delete_books(document_root, book, namespaces_concretos)
 
-    text_parts = spliting_text(documento_root, border, namespaces_concretos)
+    return document_root, inputtei_name
+
+    
+ 
+def create_directed_network(inputtei, file, deleting_books, output, book, xpaths):
+    
+    document_root, inputtei_name = open_and_clean_tei(inputtei, file, deleting_books, book)
+
+
+    xpath_element = list(xpaths.keys())[0]
+    
+    xpath_source = list(xpaths.values())[0][0]
+    xpath_target = list(xpaths.values())[0][1]
+    xpath_type = list(xpaths.values())[0][2]
+    
+    print(xpath_source,xpath_target,xpath_type)
+
+    communication_list = []    
+
+    for element in document_root.xpath('.//tei:div[@type="book"][@xml:id="b.' + book + '"]//tei:' + xpath_element +"[@type]", namespaces=namespaces_concretos):
+        #print(element.text)
+        #print(element.xpath("//"+xpath_source))
+        sources = element.xpath(".//"+xpath_source)[0].split(" ")
+        targets = element.xpath(".//"+xpath_target)[0].split(" ")
+        type_communication = element.xpath(".//"+xpath_type)[0]
+        seen_sources = []
+        seen_targets = []
+        for source in sources:
+            for target in targets:
+                if target not in seen_targets and source not in seen_sources:
+                    communication_list.append((source,target,type_communication))
+                    seen_sources.append(source)
+                    seen_targets.append(target)
+
+    communication_ct = Counter(communication_list)
+    
+    edges_df = pd.DataFrame([[edge[0][0], edge[0][1], edge[0][2], edge[1]] for edge in list(communication_ct.items())], columns=["Source","Target","Via","Weight"])
+    edges_df["Type"] = "Directed"
+    edges_df = edges_df.sort_values(by="Weight", ascending=False)
+    print()
+
+    return edges_df
+
+
+
+
+def create_undirected_network(inputtei, file, output, border, book, deleting_books, characters_in, xpaths):
+    
+    document_root, inputtei_name = open_and_clean_tei(inputtei, file, deleting_books, book)
+
+    text_parts = spliting_text(document_root, border, namespaces_concretos)
             
     df_characters = create_matrix_caracters_text(
-            documento_root = documento_root,
+            document_root = document_root,
             namespaces_concretos = namespaces_concretos,
             xpaths = xpaths,
             )
@@ -192,14 +238,16 @@ def create_networks(inputtei, file, output, border, book, deleting_books, charac
     return df_characters, edges_text_unit, df_text_parts
 
 
-def visualize_networks(input_folder, input_sfolder, file_edges, file_nodes, columns_nodes, output_folder, different_book, columns_edges = ["Source","Target",'Weight','Type'], language = "sp"):
+def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes, columns_nodes, output_folder, book,  mode, columns_edges = ["Source","Target",'Weight','Type'], language = "sp"):
 
+    print(edges_df)
     # TODO: Pasar categorías que filtra
     # TODO: Asignar colores usando género, tipo y naturaleza
+    string_xpath = xpath2string(xpaths)
 
-    edges = pd.read_csv(input_sfolder + file_edges, encoding="utf-8", sep="\t")
-    file_edges_name = os.path.splitext(file_edges)[0]
-    entities_edges = sorted(list(set(edges["Target"].tolist() + edges["Source"].tolist())))
+    file_edges_name = os.path.splitext(output_folder+book+string_xpath+'.csv')[0]
+
+    entities_edges = sorted(list(set(edges_df["Target"].tolist() + edges_df["Source"].tolist())))
     nodes = pd.ExcelFile(input_folder + file_nodes,  index_col=0)
     nodes = nodes.parse('Sheet1').fillna("")
     #print(sorted(entities_edges))
@@ -210,7 +258,7 @@ def visualize_networks(input_folder, input_sfolder, file_edges, file_nodes, colu
         print("todos ids correctos!")
 
     nodes = nodes[nodes['id'].isin(entities_edges)]
-    graph = nx.from_pandas_edgelist(df = edges, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:] )
+    graph = nx.from_pandas_edgelist(df = edges_df, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:] , create_using = nx.MultiDiGraph())
 
     d = dict(nx.degree(graph))
 
@@ -245,11 +293,14 @@ def visualize_networks(input_folder, input_sfolder, file_edges, file_nodes, colu
 
     widths = [w['Weight'] for (u, v, w) in graph.edges(data=True)]
     
-    nx.draw_networkx(graph, pos, labels = labels, width = widths, font_size=15+(len(graph.nodes())/25), alpha=0.55, edge_color='#87CEFA', node_color=colors, cmap=plt.cm.RdYlBu, style= "solid", node_size = degree)
+    #nx.draw(graph, pos)
+    nx.draw_networkx_labels(graph,pos,labels = labels,font_size=15+(len(graph.nodes())/25),arrows= True )
+    nx.draw_networkx_edges(graph, pos, edge_color='#87CEFA', width = widths, )
+    nx.draw_networkx_nodes(graph, pos, 
+                           alpha=0.55, node_color=colors, cmap=plt.cm.RdYlBu,  style= "solid",node_size = degree)
+    nx.write_gexf(graph, path = output_folder + book + ".gexf")
 
-    nx.write_gexf(graph, path=output_folder+different_book+".gexf")
-
-    plt.savefig(output_folder+file_edges_name+'.png', dpi=50)
+    plt.savefig( file_edges_name + '.png', dpi=50)
     #print(d)
     #print(nx.nodes(graph))
 
@@ -257,13 +308,13 @@ def visualize_networks(input_folder, input_sfolder, file_edges, file_nodes, colu
 
 
   
-def create_networks_bible():
-    xpaths = {"q" : ["@who", "@toWhom"]}
+def create_networks_bible(mode = "directed"):
     xpaths = {"rs" : ["@key"], "q" : ["@who", "@toWhom"]}
+    xpaths = {"q" : ["@who", "@toWhom", "@type"]}
     
     string_xpath = xpath2string(xpaths)
     books_bible = ['GEN','EXO','RUT','1SA', 'PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER","PHI","AMO","LEV","LAM","GAL","1KI","1TH","2TH"]
-    books_bible = ["1TH","2TH"]
+    books_bible = ["EXO"]
     
     # seleccionamos si trabajamos con la biblia o libros
     # seleccionamos si trabajamos direccional o no
@@ -271,26 +322,40 @@ def create_networks_bible():
             # creamos un dataframe dependiendo del tipo
             # sacamos los edges
     
-    for different_book in books_bible:
+    for book in books_bible:
 
-        df_characters, edges_text_unit, df_text_parts = create_networks(
-                inputtei = "/home/jose/Dropbox/biblia/tb/",
-                file = "TEIBible", # "*.xml"
-                output = "/home/jose/Dropbox/biblia/tb/resulting data/",
-                border = "ab[@type='verse']",
-                book = different_book,
-                deleting_books = True,
-                characters_in = "text",
-                xpaths = xpaths
-                )
+        if mode == "undirected":
+            df_characters, edges_text_unit, df_text_parts = create_undirected_network(
+                    inputtei = "/home/jose/Dropbox/biblia/tb/",
+                    file = "TEIBible", # "*.xml"
+                    output = "/home/jose/Dropbox/biblia/tb/resulting data/",
+                    border = "ab[@type='verse']",
+                    book = book,
+                    deleting_books = True,
+                    characters_in = "text",
+                    xpaths = xpaths
+                    )
+            edges_df = edges_text_unit
+        elif mode == "directed":
+             edges_directed = create_directed_network(
+                    inputtei = "/home/jose/Dropbox/biblia/tb/",
+                    file = "TEIBible", # "*.xml"
+                    output = "/home/jose/Dropbox/biblia/tb/resulting data/",
+                    book = book,
+                    deleting_books = True,
+                    xpaths = xpaths
+                    )
+             edges_df = edges_directed            
         graph = visualize_networks(
                            input_folder = "/home/jose/Dropbox/biblia/tb/",
-                           file_edges = "TEIBible_"+different_book+string_xpath+"_edges_text-unit.csv",
+                           edges_df = edges_df,
                            input_sfolder = "/home/jose/Dropbox/biblia/tb/resulting data/",
                            file_nodes = "entities.xls",
                            output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/networks/",
                            columns_nodes = "",
-                           different_book = different_book,
+                           book = book,
+                           mode = mode,
+                           xpaths = xpaths,
                            language = "sp",
                            )
     return graph
