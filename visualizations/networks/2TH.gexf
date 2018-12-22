@@ -6,164 +6,164 @@
       <attribute id="6" title="Weight" type="long" />
     </attributes>
     <attributes class="node" mode="static">
-      <attribute id="0" title="Gender" type="string" />
-      <attribute id="1" title="NormalizedName-sp" type="string" />
-      <attribute id="2" title="NormalizedName-ge" type="string" />
-      <attribute id="3" title="Degree" type="long" />
-      <attribute id="4" title="type" type="string" />
+      <attribute id="0" title="Degree" type="long" />
+      <attribute id="1" title="type" type="string" />
+      <attribute id="2" title="Gender" type="string" />
+      <attribute id="3" title="NormalizedName-sp" type="string" />
+      <attribute id="4" title="NormalizedName-ge" type="string" />
     </attributes>
     <meta>
       <creator>NetworkX 2.2</creator>
-      <lastmodified>16/12/2018</lastmodified>
+      <lastmodified>21/12/2018</lastmodified>
     </meta>
     <nodes>
-      <node id="#per527" label="#per527">
-        <attvalues>
-          <attvalue for="0" value="male" />
-          <attvalue for="1" value="Timoteo" />
-          <attvalue for="2" value="" />
-          <attvalue for="3" value="600" />
-          <attvalue for="4" value="person" />
-        </attvalues>
-      </node>
-      <node id="#per1" label="#per1">
-        <attvalues>
-          <attvalue for="0" value="male" />
-          <attvalue for="1" value="Jesús" />
-          <attvalue for="2" value="Jesus" />
-          <attvalue for="3" value="1200" />
-          <attvalue for="4" value="person" />
-        </attvalues>
-      </node>
       <node id="#per504" label="#per504">
         <attvalues>
-          <attvalue for="0" value="male" />
-          <attvalue for="1" value="Pablo" />
-          <attvalue for="2" value="" />
-          <attvalue for="3" value="600" />
-          <attvalue for="4" value="person" />
-        </attvalues>
-      </node>
-      <node id="#per17" label="#per17">
-        <attvalues>
-          <attvalue for="0" value="none" />
-          <attvalue for="1" value="Espíritu Santo" />
-          <attvalue for="2" value="Heiliger Geist" />
-          <attvalue for="3" value="400" />
-          <attvalue for="4" value="person" />
-        </attvalues>
-      </node>
-      <node id="#per117" label="#per117">
-        <attvalues>
-          <attvalue for="0" value="male" />
-          <attvalue for="1" value="Silvano" />
-          <attvalue for="2" value="Silvanus" />
-          <attvalue for="3" value="600" />
-          <attvalue for="4" value="person" />
+          <attvalue for="0" value="600" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="male" />
+          <attvalue for="3" value="Pablo" />
+          <attvalue for="4" value="" />
         </attvalues>
       </node>
       <node id="#per20" label="#per20">
         <attvalues>
-          <attvalue for="0" value="none" />
-          <attvalue for="1" value="diablo" />
-          <attvalue for="2" value="Teufel" />
-          <attvalue for="3" value="300" />
-          <attvalue for="4" value="person" />
+          <attvalue for="0" value="300" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="none" />
+          <attvalue for="3" value="diablo" />
+          <attvalue for="4" value="Teufel" />
+        </attvalues>
+      </node>
+      <node id="#per17" label="#per17">
+        <attvalues>
+          <attvalue for="0" value="400" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="none" />
+          <attvalue for="3" value="Espíritu Santo" />
+          <attvalue for="4" value="Heiliger Geist" />
+        </attvalues>
+      </node>
+      <node id="#per117" label="#per117">
+        <attvalues>
+          <attvalue for="0" value="600" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="male" />
+          <attvalue for="3" value="Silvano" />
+          <attvalue for="4" value="Silvanus" />
+        </attvalues>
+      </node>
+      <node id="#per527" label="#per527">
+        <attvalues>
+          <attvalue for="0" value="600" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="male" />
+          <attvalue for="3" value="Timoteo" />
+          <attvalue for="4" value="" />
         </attvalues>
       </node>
       <node id="#per14" label="#per14">
         <attvalues>
-          <attvalue for="0" value="none" />
-          <attvalue for="1" value="Dios" />
-          <attvalue for="2" value="Gott" />
-          <attvalue for="3" value="1200" />
-          <attvalue for="4" value="person" />
+          <attvalue for="0" value="1200" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="none" />
+          <attvalue for="3" value="Dios" />
+          <attvalue for="4" value="Gott" />
+        </attvalues>
+      </node>
+      <node id="#per1" label="#per1">
+        <attvalues>
+          <attvalue for="0" value="1200" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="male" />
+          <attvalue for="3" value="Jesús" />
+          <attvalue for="4" value="Jesus" />
         </attvalues>
       </node>
     </nodes>
     <edges>
-      <edge id="0" source="#per527" target="#per1">
-        <attvalues>
-          <attvalue for="5" value="Undirected" />
-          <attvalue for="6" value="1" />
-        </attvalues>
-      </edge>
-      <edge id="1" source="#per527" target="#per504">
+      <edge id="0" source="#per504" target="#per117">
         <attvalues>
           <attvalue for="5" value="Undirected" />
           <attvalue for="6" value="2" />
         </attvalues>
       </edge>
-      <edge id="2" source="#per527" target="#per14">
-        <attvalues>
-          <attvalue for="5" value="Undirected" />
-          <attvalue for="6" value="1" />
-        </attvalues>
-      </edge>
-      <edge id="3" source="#per527" target="#per117">
+      <edge id="1" source="#per504" target="#per527">
         <attvalues>
           <attvalue for="5" value="Undirected" />
           <attvalue for="6" value="2" />
         </attvalues>
       </edge>
-      <edge id="4" source="#per1" target="#per504">
+      <edge id="2" source="#per504" target="#per14">
         <attvalues>
           <attvalue for="5" value="Undirected" />
           <attvalue for="6" value="1" />
         </attvalues>
       </edge>
-      <edge id="5" source="#per1" target="#per17">
+      <edge id="3" source="#per504" target="#per1">
         <attvalues>
           <attvalue for="5" value="Undirected" />
           <attvalue for="6" value="1" />
         </attvalues>
       </edge>
-      <edge id="6" source="#per1" target="#per117">
+      <edge id="4" source="#per20" target="#per14">
         <attvalues>
           <attvalue for="5" value="Undirected" />
           <attvalue for="6" value="1" />
         </attvalues>
       </edge>
-      <edge id="7" source="#per1" target="#per20">
+      <edge id="5" source="#per20" target="#per1">
         <attvalues>
           <attvalue for="5" value="Undirected" />
           <attvalue for="6" value="1" />
         </attvalues>
       </edge>
-      <edge id="8" source="#per1" target="#per14">
+      <edge id="6" source="#per17" target="#per14">
+        <attvalues>
+          <attvalue for="5" value="Undirected" />
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="#per17" target="#per1">
+        <attvalues>
+          <attvalue for="5" value="Undirected" />
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="#per117" target="#per527">
+        <attvalues>
+          <attvalue for="5" value="Undirected" />
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="#per117" target="#per14">
+        <attvalues>
+          <attvalue for="5" value="Undirected" />
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="#per117" target="#per1">
+        <attvalues>
+          <attvalue for="5" value="Undirected" />
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="#per527" target="#per14">
+        <attvalues>
+          <attvalue for="5" value="Undirected" />
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="#per527" target="#per1">
+        <attvalues>
+          <attvalue for="5" value="Undirected" />
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="#per14" target="#per1">
         <attvalues>
           <attvalue for="5" value="Undirected" />
           <attvalue for="6" value="7" />
-        </attvalues>
-      </edge>
-      <edge id="9" source="#per504" target="#per14">
-        <attvalues>
-          <attvalue for="5" value="Undirected" />
-          <attvalue for="6" value="1" />
-        </attvalues>
-      </edge>
-      <edge id="10" source="#per504" target="#per117">
-        <attvalues>
-          <attvalue for="5" value="Undirected" />
-          <attvalue for="6" value="2" />
-        </attvalues>
-      </edge>
-      <edge id="11" source="#per17" target="#per14">
-        <attvalues>
-          <attvalue for="5" value="Undirected" />
-          <attvalue for="6" value="1" />
-        </attvalues>
-      </edge>
-      <edge id="12" source="#per117" target="#per14">
-        <attvalues>
-          <attvalue for="5" value="Undirected" />
-          <attvalue for="6" value="1" />
-        </attvalues>
-      </edge>
-      <edge id="13" source="#per20" target="#per14">
-        <attvalues>
-          <attvalue for="5" value="Undirected" />
-          <attvalue for="6" value="1" />
         </attvalues>
       </edge>
     </edges>
