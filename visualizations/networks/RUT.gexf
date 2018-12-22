@@ -1,64 +1,65 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
-  <graph defaultedgetype="undirected" mode="static" name="">
+  <graph defaultedgetype="directed" mode="static" name="">
     <attributes class="edge" mode="static">
-      <attribute id="5" title="Weight" type="long" />
+      <attribute id="5" title="Weight" type="double" />
       <attribute id="6" title="Type" type="string" />
+      <attribute id="7" title="networkx_key" type="long" />
     </attributes>
     <attributes class="node" mode="static">
-      <attribute id="0" title="Degree" type="long" />
-      <attribute id="1" title="NormalizedName-sp" type="string" />
-      <attribute id="2" title="type" type="string" />
-      <attribute id="3" title="NormalizedName-ge" type="string" />
+      <attribute id="0" title="NormalizedName-sp" type="string" />
+      <attribute id="1" title="type" type="string" />
+      <attribute id="2" title="NormalizedName-ge" type="string" />
+      <attribute id="3" title="Degree" type="long" />
       <attribute id="4" title="Gender" type="string" />
     </attributes>
     <meta>
       <creator>NetworkX 2.2</creator>
-      <lastmodified>21/12/2018</lastmodified>
+      <lastmodified>22/12/2018</lastmodified>
     </meta>
     <nodes>
       <node id="#per467" label="#per467">
         <attvalues>
-          <attvalue for="0" value="100" />
-          <attvalue for="1" value="pariente de Rut y Boaz" />
-          <attvalue for="2" value="person" />
-          <attvalue for="3" value="" />
-          <attvalue for="4" value="male" />
-        </attvalues>
-      </node>
-      <node id="#per462" label="#per462">
-        <attvalues>
-          <attvalue for="0" value="400" />
-          <attvalue for="1" value="Booz" />
-          <attvalue for="2" value="person" />
-          <attvalue for="3" value="" />
+          <attvalue for="0" value="pariente de Rut y Boaz" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="200" />
           <attvalue for="4" value="male" />
         </attvalues>
       </node>
       <node id="#per464" label="#per464">
         <attvalues>
-          <attvalue for="0" value="100" />
-          <attvalue for="1" value="Orfa" />
-          <attvalue for="2" value="person" />
-          <attvalue for="3" value="" />
+          <attvalue for="0" value="Orfa" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="200" />
+          <attvalue for="4" value="male" />
+        </attvalues>
+      </node>
+      <node id="#per462" label="#per462">
+        <attvalues>
+          <attvalue for="0" value="Booz" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="800" />
           <attvalue for="4" value="male" />
         </attvalues>
       </node>
       <node id="#per93" label="#per93">
         <attvalues>
-          <attvalue for="0" value="300" />
-          <attvalue for="1" value="Rut" />
-          <attvalue for="2" value="person" />
-          <attvalue for="3" value="Rut" />
+          <attvalue for="0" value="Rut" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Rut" />
+          <attvalue for="3" value="500" />
           <attvalue for="4" value="female" />
         </attvalues>
       </node>
       <node id="#per463" label="#per463">
         <attvalues>
-          <attvalue for="0" value="600" />
-          <attvalue for="1" value="Noemí" />
-          <attvalue for="2" value="person" />
-          <attvalue for="3" value="" />
+          <attvalue for="0" value="Noemí" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="800" />
           <attvalue for="4" value="female" />
         </attvalues>
       </node>
@@ -66,32 +67,65 @@
     <edges>
       <edge id="0" source="#per467" target="#per462">
         <attvalues>
-          <attvalue for="5" value="3" />
+          <attvalue for="5" value="2.1972245773362196" />
           <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
         </attvalues>
       </edge>
-      <edge id="1" source="#per462" target="#per93">
+      <edge id="1" source="#per464" target="#per463">
         <attvalues>
-          <attvalue for="5" value="3" />
+          <attvalue for="5" value="0.0" />
           <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
         </attvalues>
       </edge>
-      <edge id="2" source="#per464" target="#per463">
+      <edge id="2" source="#per462" target="#per467">
         <attvalues>
-          <attvalue for="5" value="1" />
+          <attvalue for="5" value="2.772588722239781" />
           <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
         </attvalues>
       </edge>
-      <edge id="3" source="#per93" target="#per463">
+      <edge id="3" source="#per462" target="#per93">
         <attvalues>
-          <attvalue for="5" value="7" />
+          <attvalue for="5" value="5.278114659230517" />
           <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
         </attvalues>
       </edge>
-      <edge id="4" source="#per463" target="#per463">
+      <edge id="4" source="#per93" target="#per462">
         <attvalues>
-          <attvalue for="5" value="1" />
+          <attvalue for="5" value="2.1972245773362196" />
           <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="#per93" target="#per463">
+        <attvalues>
+          <attvalue for="5" value="3.8918202981106265" />
+          <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="#per463" target="#per464">
+        <attvalues>
+          <attvalue for="5" value="3.2188758248682006" />
+          <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="#per463" target="#per93">
+        <attvalues>
+          <attvalue for="5" value="4.795790545596741" />
+          <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="#per463" target="#per463">
+        <attvalues>
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="Directed" />
+          <attvalue for="7" value="0" />
         </attvalues>
       </edge>
     </edges>
