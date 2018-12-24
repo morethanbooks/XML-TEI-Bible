@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="6" title="networkx_key" type="long" />
+      <attribute id="7" title="Weight" type="double" />
+      <attribute id="8" title="Type" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="Gender" type="string" />
+      <attribute id="1" title="type" type="string" />
+      <attribute id="2" title="NormalizedName-ge" type="string" />
+      <attribute id="3" title="color" type="long" />
+      <attribute id="4" title="Degree" type="long" />
+      <attribute id="5" title="NormalizedName-sp" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.2</creator>
+      <lastmodified>23/12/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="#org4" label="#org4">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Engel" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="1000" />
+          <attvalue for="5" value="ángeles" />
+        </attvalues>
+      </node>
+      <node id="#org31" label="#org31">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Gemeinde von Smyrna" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="200" />
+          <attvalue for="5" value="iglesia de Esmirna" />
+        </attvalues>
+      </node>
+      <node id="#org52" label="#org52">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="400" />
+          <attvalue for="5" value="24 ancianos" />
+        </attvalues>
+      </node>
+      <node id="#org30" label="#org30">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Gemeinde von Ephesus" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="iglesia de Éfeso" />
+        </attvalues>
+      </node>
+      <node id="#per17" label="#per17">
+        <attvalues>
+          <attvalue for="0" value="none" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Heiliger Geist" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="200" />
+          <attvalue for="5" value="Espíritu Santo" />
+        </attvalues>
+      </node>
+      <node id="#org36" label="#org36">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Gemeinde von Laodicea" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="200" />
+          <attvalue for="5" value="iglesia de Laodicea" />
+        </attvalues>
+      </node>
+      <node id="#pla69" label="#pla69">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="place" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="6" />
+          <attvalue for="4" value="200" />
+          <attvalue for="5" value="Babilonia" />
+        </attvalues>
+      </node>
+      <node id="#org51" label="#org51">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="300" />
+          <attvalue for="5" value="4 seres vivientes" />
+        </attvalues>
+      </node>
+      <node id="#per14" label="#per14">
+        <attvalues>
+          <attvalue for="0" value="none" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Gott" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="700" />
+          <attvalue for="5" value="Dios" />
+        </attvalues>
+      </node>
+      <node id="#org32" label="#org32">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Gemeinde von Pergamon" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="200" />
+          <attvalue for="5" value="iglesia de Pérgamo" />
+        </attvalues>
+      </node>
+      <node id="#org34" label="#org34">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Gemeinde von Sardes" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="iglesia de Sardis" />
+        </attvalues>
+      </node>
+      <node id="#org0" label="#org0">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Leute" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="1200" />
+          <attvalue for="5" value="gente" />
+        </attvalues>
+      </node>
+      <node id="#org35" label="#org35">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Gemeinde von Philadelphia" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="iglesia de Filadelfia" />
+        </attvalues>
+      </node>
+      <node id="#org33" label="#org33">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Gemeinde von Thiatira" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="iglesia de Tiatira" />
+        </attvalues>
+      </node>
+      <node id="#per25" label="#per25">
+        <attvalues>
+          <attvalue for="0" value="male" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Johannes" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="1400" />
+          <attvalue for="5" value="Juan" />
+        </attvalues>
+      </node>
+      <node id="#per1" label="#per1">
+        <attvalues>
+          <attvalue for="0" value="male" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Jesus" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="700" />
+          <attvalue for="5" value="Jesús" />
+        </attvalues>
+      </node>
+      <node id="#org37" label="#org37">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Gemeinde" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="iglesia" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="#org4" target="#org4">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="3.295836866004329" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="#org4" target="#org32">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="#org4" target="#org0">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="8.987196820661973" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="#org4" target="#org0">
+        <attvalues>
+          <attvalue for="6" value="1" />
+          <attvalue for="7" value="5.8377304471659395" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="#org4" target="#per25">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="9.656627474604601" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="#org4" target="#per1">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="#org4" target="#per1">
+        <attvalues>
+          <attvalue for="6" value="1" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="#org4" target="#per14">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="4.828313737302301" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="#org52" target="#per25">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="5.375278407684165" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="#org52" target="#per14">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="#org52" target="#per17">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2.0794415416798357" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="#org36" target="#org0">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="#pla69" target="#pla69">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="#org51" target="#per1">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2.0794415416798357" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="14" source="#org51" target="#per25">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="4.1588830833596715" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="15" source="#org51" target="#per14">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2.0794415416798357" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="16" source="#per14" target="#org4">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="17" source="#per14" target="#org0">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="8.987196820661973" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="18" source="#per14" target="#per25">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="9.406482647787449" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="19" source="#org0" target="#per1">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2.0794415416798357" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="20" source="#org0" target="#org0">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="6.591673732008658" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="21" source="#org0" target="#org0">
+        <attvalues>
+          <attvalue for="6" value="1" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="22" source="#org0" target="#per17">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="23" source="#org0" target="#per14">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2.0794415416798357" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="24" source="#per25" target="#org32">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="4.828313737302301" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="25" source="#per25" target="#org31">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="3.295836866004329" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="26" source="#per25" target="#org52">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="27" source="#per25" target="#org34">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="6.907755278982138" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="28" source="#per25" target="#org30">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="5.8377304471659395" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="29" source="#per25" target="#org33">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="7.4547199493640015" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="30" source="#per25" target="#org36">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="6.591673732008658" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="31" source="#per25" target="#org0">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2.0794415416798357" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="32" source="#per25" target="#org35">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="3.295836866004329" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="33" source="#per1" target="#org31">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="34" source="#per1" target="#per25">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="12.429404179174597" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="35" source="#org37" target="#per1">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

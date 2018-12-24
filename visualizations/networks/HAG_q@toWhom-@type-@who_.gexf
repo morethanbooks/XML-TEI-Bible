@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="6" title="networkx_key" type="long" />
+      <attribute id="7" title="Weight" type="double" />
+      <attribute id="8" title="Type" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="Gender" type="string" />
+      <attribute id="1" title="type" type="string" />
+      <attribute id="2" title="NormalizedName-ge" type="string" />
+      <attribute id="3" title="color" type="long" />
+      <attribute id="4" title="Degree" type="long" />
+      <attribute id="5" title="NormalizedName-sp" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.2</creator>
+      <lastmodified>23/12/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="#org12" label="#org12">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Priester" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="sacerdotes" />
+        </attvalues>
+      </node>
+      <node id="#org0" label="#org0">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="Leute" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="gente" />
+        </attvalues>
+      </node>
+      <node id="#per574" label="#per574">
+        <attvalues>
+          <attvalue for="0" value="male" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="400" />
+          <attvalue for="5" value="Hageo" />
+        </attvalues>
+      </node>
+      <node id="#org70" label="#org70">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="group" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="200" />
+          <attvalue for="5" value="hebreos" />
+        </attvalues>
+      </node>
+      <node id="#per14" label="#per14">
+        <attvalues>
+          <attvalue for="0" value="none" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Gott" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="Dios" />
+        </attvalues>
+      </node>
+      <node id="#per77" label="#per77">
+        <attvalues>
+          <attvalue for="0" value="male" />
+          <attvalue for="1" value="person" />
+          <attvalue for="2" value="Serubbabel" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="100" />
+          <attvalue for="5" value="Zorobabel" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="#org12" target="#per574">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="#per574" target="#org70">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="9.996613530525611" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="#per574" target="#per77">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="3.295836866004329" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="#org70" target="#org0">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0.0" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="#per14" target="#per574">
+        <attvalues>
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="10.30196161345544" />
+          <attvalue for="8" value="Directed" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

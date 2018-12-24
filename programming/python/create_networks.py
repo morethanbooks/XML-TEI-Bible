@@ -155,11 +155,6 @@ def open_and_clean_tei(inputtei, file, deleting_books, book):
     # Y lo convertimos en un tipo element
     document_root = document_xml.getroot()
 
-    # Definimos el namespace del TEI con el que trabajamos
-
-    if deleting_books == True:
-        document_root = delete_books(document_root, book, namespaces_concretos)
-
     return document_root, inputtei_name
 
     
@@ -167,6 +162,7 @@ def open_and_clean_tei(inputtei, file, deleting_books, book):
 def create_directed_network(inputtei, file, deleting_books, output, book, xpaths):
     
     document_root, inputtei_name = open_and_clean_tei(inputtei, file, deleting_books, book)
+    string_xpath = xpath2string(xpaths)
 
 
     xpath_element = list(xpaths.keys())[0]
@@ -179,7 +175,14 @@ def create_directed_network(inputtei, file, deleting_books, output, book, xpaths
 
     communication_list = []    
 
-    for element in document_root.xpath('.//tei:div[@type="book"][@xml:id="b.' + book + '"]//tei:' + xpath_element +"["+xpath_source+"]["+xpath_target+"]["+xpath_type+"]", namespaces=namespaces_concretos):
+    if book in [""," ", "Bible"]:
+        xpath_root = '//tei:teiCorpus'
+    else:
+        xpath_root = './/tei:div[@type="book"][@xml:id="b.' + book + '"]'
+
+    complete_xpath = xpath_root + '//tei:' + xpath_element + "[" + xpath_source + "][" + xpath_target+"]["+xpath_type + "]"
+    print(complete_xpath)
+    for element in document_root.xpath(complete_xpath, namespaces=namespaces_concretos):
         #print(element.text)
         #print(element.xpath("//"+xpath_source))
         sources = element.xpath(".//"+xpath_source)[0].split(" ")
@@ -199,7 +202,8 @@ def create_directed_network(inputtei, file, deleting_books, output, book, xpaths
     edges_df = pd.DataFrame([[edge[0][0], edge[0][1], edge[0][2], edge[1]] for edge in list(communication_ct.items())], columns=["Source","Target","Via","Weight"])
     edges_df["Type"] = "Directed"
     edges_df = edges_df.sort_values(by="Weight", ascending=False)
-    print()
+
+    edges_df.to_csv(output+inputtei_name+"_"+book+string_xpath+'_edges_text-unit.csv', sep='\t', encoding='utf-8')
 
     return edges_df
 
@@ -240,21 +244,33 @@ def create_undirected_network(inputtei, file, output, border, book, deleting_boo
     return df_characters, edges_text_unit, df_text_parts
 
 
-def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes, columns_nodes, output_folder, book,  mode, columns_edges = ["Source","Target",'Weight','Type'], language = "sp"):
+def convert_attributes_to_colors(nodes):
+    nodes["color"] = 1
+    nodes.loc[nodes["Gender"] == "none", "color"] = 1
+    nodes.loc[nodes["Gender"] == "male", "color"] = 2
+    nodes.loc[nodes["Gender"] == "female", "color"] = 3
+    nodes.loc[nodes["id"].isin(["#per1","#per14","#per17"]), "color"] = 4
+    nodes.loc[nodes["type"] == "group", "color"] = 5
+    nodes.loc[nodes["type"] == "place", "color"] = 6
+    return nodes
+
+def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes, columns_nodes, output_folder, book,  mode, columns_edges = ["Source","Target",'Weight','Type'], language = "sp", entities_type = ["person","group","place"], dpi = 300):
 
     print(edges_df)
     # TODO: Pasar categorías que filtra
     # TODO: Asignar colores usando género, tipo y naturaleza
     string_xpath = xpath2string(xpaths)
 
-    file_edges_name = os.path.splitext(output_folder+book+string_xpath+'.csv')[0]
+    file_edges_name = output_folder + book + string_xpath
 
-    edges_df["Weight"] = np.log(edges_df["Weight"])*2
+    edges_df["Weight"] = np.log(edges_df["Weight"])*3
 
     entities_edges = sorted(list(set(edges_df["Target"].tolist() + edges_df["Source"].tolist())))
     nodes = pd.ExcelFile(input_folder + file_nodes,  index_col=0)
     nodes = nodes.parse('Sheet1').fillna("")
-    #print(sorted(entities_edges))
+    
+    nodes = convert_attributes_to_colors(nodes)
+
     wrong_entities = [entity for entity in entities_edges if entity not in nodes["id"].tolist() ]
     if wrong_entities:
         print("id erróneos: \n ===================\n", wrong_entities,"\n ===================\n")
@@ -262,68 +278,72 @@ def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes
         print("todos ids correctos!")
 
     nodes = nodes[nodes['id'].isin(entities_edges)]
+    print(nodes.head())
     if mode == "directed":
         graph = nx.from_pandas_edgelist(df = edges_df, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:] , create_using = nx.MultiDiGraph())
     else:
         graph = nx.from_pandas_edgelist(df = edges_df, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:])
         
-
-    d = dict(nx.degree(graph))
-
+    degree_dc = dict(nx.degree(graph))
 
     nx.set_node_attributes(G = graph, name = 'NormalizedName-sp', values = {k:v for (k,v) in zip(nodes["id"], nodes["NormalizedName-sp"])})
     nx.set_node_attributes(G = graph, name =  'NormalizedName-ge', values =  {k:v for (k,v) in zip(nodes["id"], nodes["NormalizedName-ge"])})
     nx.set_node_attributes(G = graph, name =  'Gender', values =  {k:v for (k,v) in zip(nodes["id"], nodes["Gender"])})
     nx.set_node_attributes(G = graph, name =  'type', values =  {k:v for (k,v) in zip(nodes["id"], nodes["type"])})
 
-    nx.set_node_attributes(G = graph,  name = 'Degree', values =  {k:(int(v)*100) for (k,v) in d.items()})
+    nx.set_node_attributes(G = graph, name =  'color', values =  {k:v for (k,v) in zip(nodes["id"], nodes["color"])})
 
-    graph = graph.subgraph( [n for n,attrdict in graph.node.items() if attrdict['type'] == 'person'] )
+    nx.set_node_attributes(G = graph,  name = 'Degree', values =  {k:(int(v)*100) for (k,v) in degree_dc.items()})
 
-    
+    graph = graph.subgraph( [n for n,attrdict in graph.node.items() if attrdict['type']in(entities_type)] )
+
     print( graph.nodes(data=True), type(graph.nodes(data=True)),)
     
     #print( graph.nodes(data=True)[:3], type(graph.nodes(data=True)),)
     labels = nx.get_node_attributes(graph,'NormalizedName-'+language)
     
-    groups = set(nx.get_node_attributes(graph,'Gender').values())
-    mapping = dict(zip(sorted(groups),count()))
     nodes = graph.nodes()
-    colors = [mapping[graph.node[n]['Gender']] for n in nodes]
+
+    colors = [color for n in nodes for color in [graph.node[n]['color']] ]
+    
+    print(colors[0:20])
+    
     
     degree = [[graph.node[n]['Degree']] for n in nodes]
 
     print("cantidad nodos: ", len(graph.nodes()))
     plt.figure(figsize=((len(graph.nodes())/10)+10,(len(graph.nodes())/10)+10))
     plt.axis('off')
-    pos = nx.spring_layout(graph, k = 0.9)
+    pos = nx.spring_layout(graph, k=2, iterations=200)
 
 
     widths = [w['Weight'] for (u, v, w) in graph.edges(data=True)]
     
-    #nx.draw(graph, pos)
     if mode == "directed":
-        nx.draw_networkx_labels(graph,pos,labels = labels, font_size=15+(len(graph.nodes())/25),arrows= True, alpha=0.6)
+        nx.draw_networkx_labels(graph, pos, labels = labels, font_size = 15+(len(graph.nodes())/25), arrows= True, alpha = 0.6)
     else:
-        nx.draw_networkx_labels(graph,pos,labels = labels, font_size=15+(len(graph.nodes())/25), alpha=0.6)
+        nx.draw_networkx_labels(graph, pos, labels = labels, font_size = 15+(len(graph.nodes())/25), alpha=0.6)
 
-    nx.draw_networkx_edges(graph, pos, edge_color='#87CEFA', width = widths, alpha=0.4)
-    nx.draw_networkx_nodes(graph, pos, 
-                           alpha=0.55, node_color=colors, cmap=plt.cm.RdYlBu,  style= "solid",node_size = degree)
-    nx.write_gexf(graph, path = output_folder + book + ".gexf")
+    nx.draw_networkx_edges(graph, pos, edge_color = '#87CEFA', width = widths, alpha = 0.4)
+    
+    nx.draw_networkx_nodes(graph, pos, alpha = 0.55, node_color = colors, cmap = plt.cm.tab10,  style = "solid", node_size = degree)
+
+    if book in ["Bible"]:
+        dpi = 100
+
+    nx.write_gexf(graph, path = output_folder + book + string_xpath+ ".gexf")
+
 
     plt.title("Network of " + book)
     
-    plt.savefig( file_edges_name + '.png', dpi=300)
-    #print(d)
-    #print(nx.nodes(graph))
+    plt.savefig( file_edges_name + '.png', dpi = dpi)
 
-    #plt.show()
+    plt.show()
 
 
   
 def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom", "@type"]},
-                          books_bible = ['RUT','1SA', 'GEN','EXO','PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER","PHI","AMO","LEV","LAM","GAL","1KI","1TH","2TH"]):
+                          books_bible = ['RUT','1SA', 'GEN','EXO','PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER","PHI","AMO","LEV","LAM","GAL","1KI","1TH","2TH","Bible"]):
     
     # seleccionamos si trabajamos con la biblia o libros
     
@@ -368,7 +388,7 @@ def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom",
 
 #create_networks_bible(mode = "undirected", xpaths = {"rs" : ["@key"], "q" : ["@who", "@toWhom"]})
 
-create_networks_bible()
+create_networks_bible(  )
 
 
 """
