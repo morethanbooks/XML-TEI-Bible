@@ -128,9 +128,9 @@ def delete_books(documento_root, book, namespaces_concretos):
 
     return documento_root
 
-def spliting_text(documento_root, border, namespaces_concretos, printing = False):
+def spliting_text(documento_root, border, namespaces_concretos, printing = True):
     # Sacamos todos los números de escenas
-    text_parts = documento_root.xpath('//tei:'+border+'', namespaces=namespaces_concretos)
+    text_parts = documento_root.xpath('.//tei:'+border+'', namespaces=namespaces_concretos)
 
     if printing == True:
         for text_part in text_parts:
@@ -143,7 +143,7 @@ def xpath2string(xpaths):
     return string_xpath
 
 
-def open_and_clean_tei(inputtei, file, deleting_books, book):
+def open_and_clean_tei(inputtei, file,  book):
 
     doc = glob.glob(inputtei+file+".xml")[0]
     inputtei_name  = os.path.splitext(os.path.split(doc)[1])[0]
@@ -159,9 +159,9 @@ def open_and_clean_tei(inputtei, file, deleting_books, book):
 
     
  
-def create_directed_network(inputtei, file, deleting_books, output, book, xpaths):
+def create_directed_network(inputtei, file,  output, book, xpaths):
     
-    document_root, inputtei_name = open_and_clean_tei(inputtei, file, deleting_books, book)
+    document_root, inputtei_name = open_and_clean_tei(inputtei, file,  book)
     string_xpath = xpath2string(xpaths)
 
 
@@ -210,14 +210,19 @@ def create_directed_network(inputtei, file, deleting_books, output, book, xpaths
 
 
 
-def create_undirected_network(inputtei, file, output, border, book, deleting_books, characters_in, xpaths):
+def create_undirected_network(inputtei, file, output, border, book, characters_in, xpaths):
     
-    document_root, inputtei_name = open_and_clean_tei(inputtei, file, deleting_books, book)
+    document_root, inputtei_name = open_and_clean_tei(inputtei, file, book)
 
-    text_parts = spliting_text(document_root, border, namespaces_concretos)
+    xpath_root = './/tei:div[@type="book"][@xml:id="b.' + book + '"]'
+
+    book_xml =  document_root.xpath(xpath_root, namespaces=namespaces_concretos)[0]
+
+    print(len(book_xml))
+    text_parts = spliting_text(book_xml, border, namespaces_concretos)
             
     df_characters = create_matrix_caracters_text(
-            document_root = document_root,
+            document_root = book_xml,
             namespaces_concretos = namespaces_concretos,
             xpaths = xpaths,
             )
@@ -254,7 +259,7 @@ def convert_attributes_to_colors(nodes):
     nodes.loc[nodes["type"] == "place", "color"] = 6
     return nodes
 
-def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes, columns_nodes, output_folder, book,  mode, columns_edges = ["Source","Target",'Weight','Type'], language = "sp", entities_type = ["person","group","place"], dpi = 300):
+def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes, columns_nodes, output_folder, book,  mode, columns_edges = ["Source","Target",'Weight','Type'], language = "sp", entities_type = ["person","group"], dpi = 300):
 
     print(edges_df)
     # TODO: Pasar categorías que filtra
@@ -331,21 +336,21 @@ def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes
     if book in ["Bible"]:
         dpi = 100
 
-    nx.write_gexf(graph, path = output_folder + book + string_xpath+ ".gexf")
+    nx.write_gexf(graph, path = output_folder + book + string_xpath + "-".join(entities_type) + ".gexf")
 
 
-    plt.title("Network of " + book)
+    plt.title(mode[0].upper()+mode[1:] +  " Network of " + book + (" (" +  ",".join(entities_type) +")"))
     
-    plt.savefig( file_edges_name + '.png', dpi = dpi)
+    plt.savefig( file_edges_name + "-".join(entities_type) + '.png', dpi = dpi)
 
     plt.show()
 
 
   
 def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom", "@type"]},
-                          books_bible = ['RUT','1SA', 'GEN','EXO','PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER","PHI","AMO","LEV","LAM","GAL","1KI","1TH","2TH","Bible"]):
+                          books_bible = ['RUT','1SA', 'GEN','EXO','PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER","PHI","AMO","LEV","LAM","GAL","1KI","1TH","2TH","Bible"],
+                          border = "ab[@type='verse']"):
     
-    # seleccionamos si trabajamos con la biblia o libros
     
     for book in books_bible:
         print(book)
@@ -354,9 +359,8 @@ def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom",
                     inputtei = "/home/jose/Dropbox/biblia/tb/",
                     file = "TEIBible", # "*.xml"
                     output = "/home/jose/Dropbox/biblia/tb/resulting data/",
-                    border = "ab[@type='verse']",
+                    border = border,
                     book = book,
-                    deleting_books = True,
                     characters_in = "text",
                     xpaths = xpaths
                     )
@@ -367,7 +371,6 @@ def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom",
                     file = "TEIBible", # "*.xml"
                     output = "/home/jose/Dropbox/biblia/tb/resulting data/",
                     book = book,
-                    deleting_books = True,
                     xpaths = xpaths
                     )
              edges_df = edges_directed            
@@ -386,31 +389,13 @@ def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom",
     return graph
 
 
-#create_networks_bible(mode = "undirected", xpaths = {"rs" : ["@key"], "q" : ["@who", "@toWhom"]})
+create_networks_bible(mode = "undirected", xpaths = {"rs" : ["@key"], "q" : ["@who", "@toWhom"]},
+                      books_bible = ['GEN'], 
+                      )
 
-create_networks_bible(  )
+#create_networks_bible(  )
 
-
-"""
-df_characters, edges_text_unit, df_text_parts = create_networks(
-        inputtei = "/home/jose/Dropbox/biblia/tb/",
-        file = "TEIBible", # "*.xml"
-        output = "/home/jose/Dropbox/biblia/tb/resulting data/",
-        border = "ab[@type='verse']",
-        book = "JOB", #JOB JON GEN EXO RUT PSA JON MIC NAH HAB ZEP HAG ZEC MAL MAT JOH ACT REV 
-        deleting_books = True,
-        characters_in = "text",
-        xpaths = {"rs" : ["@key"], "q" : ["@who", "@corresp"]}
-        )
-
-graph = visualize_networks( input_folder = "/home/jose/Dropbox/biblia/tb/resulting data/",
-                   file_edges = "TEIBible_ACT_q-rs@corresp-@key-@who__edges_text-unit.csv",
-                   file_nodes = "ontology.csv",
-                   output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/",
-                   columns_nodes = ""
-                   )
-"""
+# TODO: Generalizar la función de undirected para que también se puedan crear networks de coaparición en un mismo sustantivo
 # TODO: Crear una función para hacer varios tipos de grafos (filtrando lugares, organizaciones, seres superiores...)
 
-# TODO: Crear función para hacer varios tipos de grafos de todos los libros que ya tengo
 

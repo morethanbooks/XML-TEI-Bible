@@ -65,3 +65,10 @@ file = "TEIBible" # "*.xml"
 outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
 
 books = get_locations_books(wdir, file, outdir)
+
+#def get_locations_people:
+
+# abrimos la tabla de los libros
+# iteramos por los libros
+# abrimos la matriz
+# por cada     
