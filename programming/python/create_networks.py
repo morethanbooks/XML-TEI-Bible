@@ -261,16 +261,17 @@ def convert_attributes_to_colors(nodes):
 
 def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes, columns_nodes, output_folder, book,  mode, columns_edges = ["Source","Target",'Weight','Type'], language = "sp", entities_type = ["person","group"], dpi = 300):
 
-    print(edges_df)
+    print(edges_df.head())
     # TODO: Pasar categorías que filtra
     # TODO: Asignar colores usando género, tipo y naturaleza
     string_xpath = xpath2string(xpaths)
 
     file_edges_name = output_folder + book + string_xpath
 
-    edges_df["Weight"] = np.log(edges_df["Weight"])*3
+    edges_df2 = edges_df.copy()
+    edges_df2["Weight"] = (np.log(edges_df2["Weight"])*3)+1
 
-    entities_edges = sorted(list(set(edges_df["Target"].tolist() + edges_df["Source"].tolist())))
+    entities_edges = sorted(list(set(edges_df2["Target"].tolist() + edges_df2["Source"].tolist())))
     nodes = pd.ExcelFile(input_folder + file_nodes,  index_col=0)
     nodes = nodes.parse('Sheet1').fillna("")
     
@@ -285,9 +286,9 @@ def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes
     nodes = nodes[nodes['id'].isin(entities_edges)]
     print(nodes.head())
     if mode == "directed":
-        graph = nx.from_pandas_edgelist(df = edges_df, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:] , create_using = nx.MultiDiGraph())
+        graph = nx.from_pandas_edgelist(df = edges_df2, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:] , create_using = nx.MultiDiGraph())
     else:
-        graph = nx.from_pandas_edgelist(df = edges_df, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:])
+        graph = nx.from_pandas_edgelist(df = edges_df2, source = columns_edges[0], target = columns_edges[1], edge_attr = columns_edges[2:])
         
     degree_dc = dict(nx.degree(graph))
 
@@ -347,11 +348,11 @@ def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes
 
 
   
-def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom", "@type"]},
+def create_networks_bible( mode = "directed", xpaths = {"q" : ["@who", "@toWhom", "@type"]},
                           books_bible = ['RUT','1SA', 'GEN','EXO','PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER","PHI","AMO","LEV","LAM","GAL","1KI","1TH","2TH","Bible"],
-                          border = "ab[@type='verse']"):
+                          border = "ab[@type='verse']" , concatenate = False):
     
-    
+        
     for book in books_bible:
         print(book)
         if mode == "undirected":
@@ -365,6 +366,7 @@ def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom",
                     xpaths = xpaths
                     )
             edges_df = edges_text_unit
+                
         elif mode == "directed":
              edges_directed = create_directed_network(
                     inputtei = "/home/jose/Dropbox/biblia/tb/",
@@ -386,14 +388,37 @@ def create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom",
                            xpaths = xpaths,
                            language = "sp",
                            )
+        if 'edges_concatente' not in locals() and concatenate == True:
+            edges_concatente = edges_df.copy()
+            edges_concatente["book"] = book
+        elif  'edges_concatente' in locals() and  concatenate == True:
+            edges_df["book"] = book
+            edges_concatente = pd.concat([edges_concatente,edges_df])
+        else:
+            pass
+    if  concatenate == True:
+        edges_concatente = edges_concatente.sort_values(by="Weight", ascending=False)
+        edges_concatente.to_csv("/home/jose/Dropbox/biblia/tb/resulting data/"+"-".join(books_bible)+".csv", sep="\t")
+
+        graph = visualize_networks(
+                           input_folder = "/home/jose/Dropbox/biblia/tb/",
+                           edges_df = edges_concatente,
+                           input_sfolder = "",
+                           file_nodes = "entities.xls",
+                           output_folder = "/home/jose/Dropbox/biblia/tb/visualizations/networks/",
+                           columns_nodes = "",
+                           book = ", ".join(books_bible),
+                           mode = mode,
+                           xpaths = xpaths,
+                           language = "sp",
+                           )
+
     return graph
 
 
-create_networks_bible(mode = "undirected", xpaths = {"rs" : ["@key"], "q" : ["@who", "@toWhom"]},
-                      books_bible = ['GEN'], 
-                      )
+#create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom","@type"]})
 
-#create_networks_bible(  )
+create_networks_bible(mode = "undirected", xpaths = {"q" : ["@who", "@toWhom"], "rs" : ["@key"]}  )
 
 # TODO: Generalizar la función de undirected para que también se puedan crear networks de coaparición en un mismo sustantivo
 # TODO: Crear una función para hacer varios tipos de grafos (filtrando lugares, organizaciones, seres superiores...)
