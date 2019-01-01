@@ -68,7 +68,13 @@ books = get_locations_books(wdir, file, outdir)
 
 #def get_locations_people:
 
-# abrimos la tabla de los libros
-# iteramos por los libros
-# abrimos la matriz
-# por cada     
+# abrimos tabla de libros
+# iteramos por libros
+#   abrimos la matriz versículos-entidades
+#   creamos matriz de coaparición entidad-entidad (columnas y filas entidades)
+#   vemos con qué lugares coaparece la entidad
+#   guardamos una tabla (por cada libro)
+#   mapeamos los lugares con sus coordenadas
+#   calculamos la media de longitud y latitud
+#   calculamos la mediana de longitud y latitud
+#   guardamos la tabla, siendo cada libro una columna y cada fila una entidad
