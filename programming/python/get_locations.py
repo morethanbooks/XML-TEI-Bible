@@ -18,6 +18,7 @@ import numpy as np
 from collections import Counter
 from numpy import array
 import numpy as np
+import math
 
 
 def get_locations_books(wdir, file, outdir):
@@ -64,11 +65,61 @@ wdir = "/home/jose/Dropbox/biblia/tb/"
 file = "TEIBible" # "*.xml"
 outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
 
-books = get_locations_books(wdir, file, outdir)
+#books = get_locations_books(wdir, file, outdir)
 
-#def get_locations_people:
+def get_locations_people(wdir = "/home/jose/Dropbox/biblia/tb/", outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"):
+    # abrimos tabla de libros
+    books_df = pd.ExcelFile(wdir+"/documentation/books.xlsx").parse('Sheet1').fillna("")
+    
+    metadata = pd.ExcelFile(wdir+"entities.xls").parse('Sheet1').fillna("")
+    metadata.index = metadata["id"]
 
-# abrimos tabla de libros
+
+    books_people_df = pd.DataFrame(columns=books_df.loc[books_df["encoded"]==1]["codebook"].tolist(), index=metadata.loc[metadata["type"]!="place"].index.tolist()).fillna("")
+
+    for book in books_df.loc[books_df["encoded"]==1]["codebook"]:
+        print(book)
+    
+        matrix_units_entities = pd.read_csv(wdir + "/resulting data/TEIBible_"+book+"_q-rs@key-@toWhom-@who__matrix.csv", sep="\t", index_col=0)
+            
+        places = sorted([entity for entity in matrix_units_entities.index.tolist() if "pla" in entity])
+        
+        other_entities = sorted([entity for entity in matrix_units_entities.index.tolist() if "pla" not in entity])
+        
+        matrix_entities_places = pd.DataFrame([], index=other_entities, columns=places).fillna(0)
+        
+        
+        for textual_unit in matrix_units_entities.columns.tolist():
+            entities_in_textual_unit_lt = sorted(matrix_units_entities[textual_unit][matrix_units_entities[textual_unit] > 0].index)
+            
+            if any("pla" in entity for entity in entities_in_textual_unit_lt):
+                places_in_textual_unit_lt = [entity for entity in entities_in_textual_unit_lt if "pla" in entity]
+                other_entities_in_textual_unit_lt = [entity for entity in entities_in_textual_unit_lt if "pla" not in entity]
+                
+                for entity in other_entities_in_textual_unit_lt:
+                    for place in places_in_textual_unit_lt:
+                        matrix_entities_places.loc[entity][place] += 1
+
+        matrix_entities_places.to_csv(outdir+"entities_places_"+book+".csv",sep="\t")
+        
+        matrix_long = matrix_entities_places.copy()
+        for place in matrix_entities_places.columns.tolist():
+            if len(metadata.loc[[place]].loc[metadata.loc[[place]]["geo_cert"].isin(["high","medium"])]) > 0:
+                matrix_long.loc[ matrix_long[place] >= 1  , place] = str(metadata.loc[place]["latitude"]) +","+ str(metadata.loc[place]["longitude"])
+        
+        
+
+        for entity in matrix_entities_places.index.tolist():
+            latitude = np.array([float(item.split(",")[0]) for item in matrix_long.loc[entity].tolist() if type(item) is str ]).mean()
+            longitude = np.array([float(item.split(",")[1]) for item in matrix_long.loc[entity].tolist() if type(item) is str ]).mean()
+            if math.isnan(longitude):
+                pass
+            else:
+                books_people_df.loc[entity,book] = str(round(latitude,5)) + "," + str(round(longitude,5))
+        print(books_people_df.head())
+    books_people_df.to_csv(outdir+"books_entities_latitude_longitude_mean.csv",sep="\t")
+
+get_locations_people()        
 # iteramos por libros
 #   abrimos la matriz versículos-entidades
 #   creamos matriz de coaparición entidad-entidad (columnas y filas entidades)
