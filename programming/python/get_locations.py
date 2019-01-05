@@ -21,8 +21,8 @@ import numpy as np
 import math
 
 
-def get_locations_books(wdir, file, outdir):
 
+def open_entities_document(wdir,file):
     entities = pd.ExcelFile(wdir + "entities.xls",  index_col=0).parse('Sheet1').fillna("")
     
     secure_places = entities.loc[ (entities["type"]== "place" ) & (entities["latitude"]!="" ) & (entities["longitude"]!="") & (entities["geo_cert"].isin(["high","medium"]))]
@@ -37,6 +37,58 @@ def get_locations_books(wdir, file, outdir):
     documento_root = documento_xml.getroot()
     
     namespaces_concretos = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
+
+    return entities, secure_places, books, documento_root, namespaces_concretos
+
+
+def get_locations_genres(wdir, file, outdir):
+    entities, secure_places, books, documento_root, namespaces_concretos = open_entities_document(wdir,file)
+    
+    genres_list = list(set(books.loc[books["codebook"]!=""]["genre"]))
+    genres_df = pd.DataFrame(index=genres_list, columns=["latitude","longitude"]).fillna(0.0)
+    print(genres_df)
+
+    for genre in sorted(genres_list):
+        print(genre)
+        books_of_genre = list(set(books.loc[ (books["encoded"].isin([1,"1"]) ) & (books["genre"] == genre) ]["codebook"]))
+        rss_genre = []
+        for book in sorted(books_of_genre):
+            print(book)
+                        
+            rss = documento_root.xpath('//tei:div[@xml:id="b.'+book+'"]//tei:rs[not(@cert)]/@key|//tei:div[@xml:id="b.'+book+'"]//tei:rs[@cert="medium"]/@key', namespaces=namespaces_concretos, with_tail=True)
+            print(rss[0:5])
+            rss_genre = rss_genre + list(set(rss))
+            #rss_genre.append(rss)
+            print(len(rss_genre))
+
+        set_entities = list(set([entity for reference in rss_genre for entity in reference.split(" ")]))
+
+        print(len(set_entities), set_entities[0:5])
+        
+        longitude = secure_places.loc[secure_places["id"].isin(set_entities)]["longitude"].mean()
+        latitude = secure_places.loc[secure_places["id"].isin(set_entities)]["latitude"].mean()
+            
+        genres_df.loc[genre]["longitude"] = longitude
+        genres_df.loc[genre]["latitude"] = latitude
+            
+        print(latitude,longitude)
+        print(genres_df)
+    
+    genres_df.to_excel(wdir+"documentation/genres_location_mean.xlsx", encoding="utf-8")
+    genres_df.to_csv(wdir+"documentation/genres_location_mean.csv", sep="\t")
+
+    return genres_df
+
+wdir = "/home/jose/Dropbox/biblia/tb/"
+file = "TEIBible" # "*.xml"
+outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
+
+#books = get_locations_genres(wdir, file, outdir)
+
+def get_locations_books(wdir, file, outdir):
+
+    
+    entities, secure_places, books, documento_root, namespaces_concretos = open_entities_document(wdir,file)
     
     books["latitude"] = ""
     books["longitude"] = ""
@@ -119,13 +171,6 @@ def get_locations_people(wdir = "/home/jose/Dropbox/biblia/tb/", outdir = "/home
         print(books_people_df.head())
     books_people_df.to_csv(outdir+"books_entities_latitude_longitude_mean.csv",sep="\t")
 
-get_locations_people()        
-# iteramos por libros
-#   abrimos la matriz versículos-entidades
-#   creamos matriz de coaparición entidad-entidad (columnas y filas entidades)
-#   vemos con qué lugares coaparece la entidad
-#   guardamos una tabla (por cada libro)
-#   mapeamos los lugares con sus coordenadas
-#   calculamos la media de longitud y latitud
-#   calculamos la mediana de longitud y latitud
-#   guardamos la tabla, siendo cada libro una columna y cada fila una entidad
+#get_locations_people()        
+
+
