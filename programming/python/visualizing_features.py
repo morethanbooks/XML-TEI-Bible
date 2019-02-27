@@ -53,7 +53,7 @@ def make_viz_diff_entities(relative_quantitative_data):
 
 quantitative_data = read_features_table(wdir)
 
-#make_bars_verses(quantitative_data, outdir, format_)
+make_bars_verses(quantitative_data, outdir, format_)
 
 relative_quantitative_data = make_features_relative(quantitative_data)
 

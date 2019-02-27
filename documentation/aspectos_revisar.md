@@ -21,8 +21,10 @@ Antes de dar por terminado un nuevo libro de la Biblia, hay que revisar:
 ## Pasos finales
 * Volver a validar
 * Integrar archivo en TEI principal
-* Extraer referencias y referenciadores
-* Extraer y añadir frecuencias a entities.xls
-* Hacer network
+* Extraer referencias y referenciadores (finishing_book.py get_referers_and_refereds())
+* Extraer y añadir frecuencias a entities.xls (finishing_book add_freq_of_entities())
+* Hacer network (directed y undirected, en create_networks)
+* Extraer rasgos de libros (quantify_features_bible.py)
+* Utilizar funciones de get_locations.py
 * Modificar documentación
 

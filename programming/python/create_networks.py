@@ -301,7 +301,7 @@ def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes
 
     nx.set_node_attributes(G = graph,  name = 'Degree', values =  {k:(int(v)*100) for (k,v) in degree_dc.items()})
 
-    graph = graph.subgraph( [n for n,attrdict in graph.node.items() if attrdict['type']in(entities_type)] )
+    graph = graph.subgraph( [n for n,attrdict in graph.node.items() if attrdict['type'] in (entities_type)] )
 
     print( graph.nodes(data=True), type(graph.nodes(data=True)),)
     
@@ -349,7 +349,7 @@ def visualize_networks(input_folder, input_sfolder, edges_df, xpaths, file_nodes
 
   
 def create_networks_bible( mode = "directed", xpaths = {"q" : ["@who", "@toWhom", "@type"]},
-                          books_bible = ['HEB','RUT','1SA', '2SA','GEN','EXO','PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER","PHI","AMO","LEV","LAM","GAL","1KI","1TH","2TH","Bible"],
+                          books_bible = ['HEB','RUT','1SA', '2SA','GEN','EXO','PSA','JON','MIC','NAH','HAB','ZEP','HAG','ZEC','MAL','MAT','JOH','ACT','REV','1JO','2JO','3JO','JUD', "JOB", "JAM", "1PE", "2PE", "EZE", "ECC","ROM","1CO","2CO","JOS","MAR","LUK","DAN","HOS","JDG","OBA","JOE","PHM","NEH","EZR","1TI", "2TI", "TIT","JER","PHI","AMO","LEV","LAM","GAL","1KI","1TH","2TH","ISA","Bible"],
                           border = "ab[@type='verse']" , concatenate = False):
     
         
@@ -416,10 +416,11 @@ def create_networks_bible( mode = "directed", xpaths = {"q" : ["@who", "@toWhom"
     return graph
 
 
-#create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom","@type"]})
+#create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom","@type"]}, books_bible = ['ISA'])
 
-create_networks_bible(mode = "undirected", xpaths = {"q" : ["@who", "@toWhom"], "rs" : ["@key"]} , books_bible = ['HEB'])
+#create_networks_bible(mode = "undirected", xpaths = {"q" : ["@who", "@toWhom"], "rs" : ["@key"]} , books_bible = ['ISA'])
 
+create_networks_bible(books_bible = ['Bible'])
 # TODO: Generalizar la función de undirected para que también se puedan crear networks de coaparición en un mismo sustantivo
 # TODO: Crear una función para hacer varios tipos de grafos (filtrando lugares, organizaciones, seres superiores...)
 
