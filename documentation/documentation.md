@@ -76,10 +76,11 @@ At the moment following books are fully encoded in this chronological order:
 * 1 Kings
 * 1 Thessalonians
 * 2 Thessalonians
+* Isaiah
 
 At the moment, following book is being encoded:
 
-* Isaiah
+* Ephesians
 
 ## Original Text
 
