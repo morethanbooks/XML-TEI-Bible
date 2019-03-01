@@ -187,5 +187,5 @@ finishing_xml(
     )
 """
 #df = get_referers_and_refereds()
-#entities = add_freq_of_entities(do_overwrite=True)
+entities = add_freq_of_entities(do_overwrite=True)
     
