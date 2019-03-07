@@ -178,11 +178,10 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
     df["sum"] = df[titles].sum(axis=1)
     df.to_csv(outdir+"referer_refered.csv", sep="\t")
     return df
-
 """
 finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/ISA.xml",
+    "/home/jose/Dropbox/biblia/tb/EPH.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/",
     )
 """

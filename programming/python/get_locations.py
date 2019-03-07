@@ -171,6 +171,6 @@ def get_locations_people(wdir = "/home/jose/Dropbox/biblia/tb/", outdir = "/home
         print(books_people_df.head())
     books_people_df.to_csv(outdir+"books_entities_latitude_longitude_mean.csv",sep="\t")
 
-#get_locations_people()        
+get_locations_people()        
 
 
