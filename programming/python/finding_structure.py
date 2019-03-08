@@ -130,21 +130,31 @@ def values_q(content):
     
     return(content)
 
-def find_people_without_id(content, outputtei, bookcode):
+def find_people_without_id(content, outputtei, bookcode, df):
     people_without_id = []
     people_without_id = people_without_id + re.findall(r"<rs key=\"per\">([A-Z][^<]*?)</rs>", content)
     print(type(people_without_id))
-    people_without_id = Counter(people_without_id)
+    people_without_id = dict(Counter(people_without_id))
+    
+    wrong_people = ["Calvo","Valera"]
+    for wrong_person in wrong_people:
+        del people_without_id[wrong_person]
     for people in people_without_id:
         print((people))
 
     print(people_without_id, len(people_without_id))
     people_without_id_df = pd.DataFrame(list(people_without_id.items()), columns=['entity','frequency'])
 
+    for person in people_without_id_df['entity'].tolist():
+        print(person)
+        if df.loc[df["NormalizedName-sp"]==person].shape[0] > 0: 
+            people_without_id_df.loc[people_without_id_df['entity'] == person, 'recheck'] = df.loc[df["NormalizedName-sp"]==person].sort_values(by="sum_freq", ascending=False).iloc[0]["id"]
+            people_without_id_df.loc[people_without_id_df['entity'] == person, 'recheck-in'] = df.loc[df["NormalizedName-sp"]==person].sort_values(by="sum_freq", ascending=False).iloc[0]["order-edition"]
+    people_without_id_df.fillna("")
     people_without_id_df = people_without_id_df.sort_values(by='frequency', ascending=False)
     people_without_id_df.to_csv(outputtei+bookcode+"people_without_id.csv", sep='\t', encoding='utf-8')
     
-    #print(people_without_id_df)
+    print(people_without_id_df)
 
     
 
@@ -256,7 +266,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             # Intentamos mejorar la estructura de rss
             content = improve_structure(content)
             
-            find_people_without_id(content, outputtei,bookcode)
+            find_people_without_id(content, outputtei,bookcode, df)
 
             content = deleting_wrong_entities(content, bookcode)
             
@@ -277,10 +287,21 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programming/python/input/EPH.xml",
+    "/home/jose/Dropbox/biblia/tb/programming/python/input/2KI.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/", 
-    "EPH",
-    genre = "letter", # "letter","prophetical",
-    testament = "nuevo",
-    books_list = []#"GEN","EXO","LEV","JOS","JDG","RUT","1SA","2SA","MAT"],
+    "2KI",
+    genre = "historical", # "letter","prophetical",
+    testament = "antiguo",
+    books_list = ["GEN",
+"EXO",
+"LEV",
+"NUM",
+"DEU",
+"JOS",
+"JDG",
+"RUT",
+"1SA",
+"2SA",
+"1KI","MAT"
+]#"GEN","EXO","LEV","JOS","JDG","RUT","1SA","2SA","MAT"],
     )
