@@ -88,10 +88,32 @@ The same as with people
 
 # Prototype
 
+## Place
+
 http://informatik.uni-leipzig.de:8080/BiblePlaces2.0/
 
-# Feedback from the first Review Process
 
+## Source of Information 
+
+- All the data should come from the folder "/Bible in a map", from the different csv and xls documents
+
+## To-dos:
+
+Stefan:
+
+1. Re-load the layers that are already in the prototype (books and places), with the information from the books that have been encoded in the last months
+2. In the button "animate" of the prototype, add function to change over book automatically after a couple of seconds
+3. The color grading of the books is great, BUT the difference between Old Testament and New Testament should be clearer, for example using different tones (like cold  colors for Old Testament, warm ones for New Testament). The information about the 
+4. Add information about genres. In comparison to the rest of the information, this layer does not change depending on the chosen books, it is always the same for the entire Bible (regardless of the chosen books by the user on the horizontal top menu of the prototype).
+5. Add information about groups and people. This information is in the table "people-groups.csv". There, the mean longitude and latitude for each book are encoded as as single column. @Stefan, if you want the information in another format, let me know! (Actually, maybe we should try to make the information about the longitude and latitude from the different entities [places, books, genres, people and groups] more homogenous, with identical formats and columns' names).
+
+José:
+1. Think about how and what do we present in the non-terrenal axis
+2. Extract information for non-terrenal axis, probably following the same strategy as with people-groups.csv
+2. Finish encoding (I think it will be done around september 2019)
+
+
+# Feedback from the first Review Process
 
 - What is the quality of the georeferences?
 - What is the novelty of the project? Why is it interesting? What is new? 
