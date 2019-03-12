@@ -95,7 +95,7 @@ http://informatik.uni-leipzig.de:8080/BiblePlaces2.0/
 
 ## Source of Information 
 
-- All the data should come from the folder "/Bible in a map", from the different csv and xls documents
+- All the data should come from the folder "/bible_map", from the different csv and xls documents
 
 ## To-dos:
 
