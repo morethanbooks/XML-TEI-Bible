@@ -114,6 +114,8 @@ José:
 2. Extract information for non-terrenal axis, probably following the same strategy as with people-groups.csv
 3. Finish encoding (I think it will be done around september 2019)
 4. Translate all names (places, people, groups, books, genres) to German and English
+5. Use the regional groups (philistines, greeks, syrian...) to learn how the best correlations with the places could work. Test them and evaluate them. After that, apply to not geographical entities (other groups, other people).
+6. Use the same with the non-terrenal axis (that is a very good idea!).
 
 # Feedback from the first Review Process
 
