@@ -209,7 +209,7 @@ Each column of the table "quantitative_data.csv" represents a different kind of 
 - toWhom: future TEI attribute used for the entity to whom some is communicating (listening, reading...)
 
 
-Take in consideration that the values are raw, so beware of raw of comparition: For example 1 and 2 of Samuel referes to people almost the same amount of times (2104 and 2206), but because 2 of Samuel is 115 verses shorter than 1 of Samuel, relative to the length of the book there is actually much more references to people in 2 of Samuel (3.2 per chapter) than in 1 of Samuel (2.6). Probably the most logica way of relative the data would be per verse, but other options are possible (chapters, words, entities...). In a program like Calc or Excel you can divide the values of a column with another column easily; for example, if you want to get the relative values of "ent ref" by verses, you add in the row 2 of a new column following formulae: "=i2/f2" and then copy his in the rest of the rows.
+Take in consideration that the values are raw, so beware of raw comparition: For example 1 and 2 of Samuel referes to people almost the same amount of times (2104 and 2206), but because 2 of Samuel is 115 verses shorter than 1 of Samuel, relative to the length of the book there is actually much more references to people in 2 of Samuel (3.2 per chapter) than in 1 of Samuel (2.6). Probably the most logica way of relative the data would be per verse, but other options are possible (chapters, words, entities...). In a program like Calc or Excel you can divide the values of a column with another column easily; for example, if you want to get the relative values of "ent ref" by verses, you add in the row 2 of a new column following formulae: "=i2/f2" and then copy his in the rest of the rows.
 
 If you are interested in knowing what information exactly is been extracted, check the Python script: /programing/python/structure2table.py
 
@@ -217,7 +217,7 @@ If you are interested in knowing what information exactly is been extracted, che
 
 Thanks to Maria Calvo for many data, patiente and knowledge. The way I work owes you more than I usually recognize.
 Thanks to Tabea for listening and support.
-Thanks to Matthias Ziegler for thinking that this project is worth of his time.
+Thanks to Matthias Ziegler for the translations into German and Portuguese about some of the names.
 
 # Future Work and colaboration
 
@@ -243,3 +243,17 @@ And with these purposes I have work for a couple of years. Besides it, there are
 - add different information about the entities: subtypes, relations between people (wife-husband, parent-child, boss-servant) or between people and groups
 - extract information about the relations between the entities from the text using structures like _mujer de Noe_.  <rs key=”per16”>mujer de <rs key=”per4”>Jacob</rs></rs> o <q who=”per16” corresp=”per14” type=”prayer”>Mi <rs key=”per109”>hijo</rs></q>; o <rs key=”per14 per15”>hijos de <rs key=”per4”>Jacob</rs></rs>
 - export the structure of the markup to other languages (speacilly the original languages of the Bible) with some kind of Machine Learning method
+Codificar:
+    • temas, como dinero, ayuda a los pobres, perdón, etcétera.
+    • referencias a otros pasajes de la Biblia
+    • el paralelismo entre bloques de los evangelios
+    • el paso del tiempo
+    • acciones: aspectos básicos de personajes, como si habla con Dios, si alguien muere, si está embarazado, milagros, etcétera
+    • colocar en q a quién se habla (por lo menos cuando se esté muy claro). Hay atributo who, pero no hay atributo towho :(
+    • geolocalización, aunque esto se puede colocar directamente en el documento de ontology
+    • Intentar sacar relaciones entre personas a través de la información que hay codificada. Es decir, las relaciones más importantes como las familiares (marido-mujer, progenitor-hijo) deben estar marcadas por cosas como <rs key=”per16”>mujer de <rs key=”per4”>Jacob</rs></rs> o <q who=”per16” corresp=”per14” type=”prayer”>Mi <rs key=”per109”>hijo</rs></q>; o <rs key=”per14 per15”>hijos de <rs key=”per4”>Jacob</rs></rs>
+    • cambiar @corresp a @ana
+    • cambiar <ab type=”pericope”> a <head>
+    • Buscar persona más frecuente del libro y colocar su id como por defecto en who aunque con un caracter al final o algo así para poder distinguir cosas no revisadas y cosas revisadas
+    • cambiar #org a #gro
+	
