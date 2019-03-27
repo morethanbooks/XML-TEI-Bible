@@ -243,6 +243,8 @@ And with these purposes I have work for a couple of years. Besides it, there are
 - add different information about the entities: subtypes, relations between people (wife-husband, parent-child, boss-servant) or between people and groups
 - extract information about the relations between the entities from the text using structures like _mujer de Noe_.  <rs key=”per16”>mujer de <rs key=”per4”>Jacob</rs></rs> o <q who=”per16” corresp=”per14” type=”prayer”>Mi <rs key=”per109”>hijo</rs></q>; o <rs key=”per14 per15”>hijos de <rs key=”per4”>Jacob</rs></rs>
 - export the structure of the markup to other languages (speacilly the original languages of the Bible) with some kind of Machine Learning method
+- make version in USX: https://ubsicap.github.io/usx/index.html
+
 Codificar:
     • temas, como dinero, ayuda a los pobres, perdón, etcétera.
     • referencias a otros pasajes de la Biblia
