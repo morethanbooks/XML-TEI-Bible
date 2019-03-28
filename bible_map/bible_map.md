@@ -125,4 +125,8 @@ José:
 - What exactly is already implemented? 
 
 
+# Steps for the future
+- Show comunication in chronological order (more specific, order of the chapters), following example from Vauth, *Netzwerkanalyse narrativer Informationsvermittlung in Dramen*, 2019.
+- Use and show sentiment analysis score for the different regions
+- 
 
