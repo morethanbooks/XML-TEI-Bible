@@ -9,7 +9,6 @@ Antes de dar por terminado un nuevo libro de la Biblia, hay que revisar:
 - Revisar campos secundarios de nuevos registros en entities y guardarlo como CSV
 - Reordenar los ids para que los ids nuevos de un libro sean consecutivos y no haya huecos
 
-
 ## Script revisión y conversión (finishing_book.py)
 - Prettyprint en Notepad++
 - Revisar atributos con valores por defecto: //*[@key="per"]|//*[@corresp="per"]|//*[@who="per"]
@@ -26,6 +25,6 @@ Antes de dar por terminado un nuevo libro de la Biblia, hay que revisar:
 - Extraer y añadir frecuencias a entities.xls (finishing_book add_freq_of_entities())
 - Hacer network (directed y undirected, en create_networks)
 - Extraer rasgos de libros (quantify_features_bible.py)
-- Utilizar funciones de get_locations.py
+- Utilizar script de get_locations.py
 - Modificar documentación
 

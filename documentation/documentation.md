@@ -77,11 +77,11 @@ At the moment following books are fully encoded in this chronological order:
 - 2 Thessalonians
 - Isaiah
 - Ephesians
+- 2 Kings
 
 At the moment, following book is being encoded:
 
-- 2 Kings
-
+- Esther
 
 ## Original Text
 

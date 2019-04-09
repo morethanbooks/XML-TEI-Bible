@@ -416,9 +416,9 @@ def create_networks_bible( mode = "directed", xpaths = {"q" : ["@who", "@toWhom"
     return graph
 
 
-#create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom","@type"]}, books_bible = ['EPH'])
+#create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom","@type"]}, books_bible = ['2KI'])
 
-#create_networks_bible(mode = "undirected", xpaths = {"q" : ["@who", "@toWhom"], "rs" : ["@key"]} , books_bible = ['EPH'])
+#create_networks_bible(mode = "undirected", xpaths = {"q" : ["@who", "@toWhom"], "rs" : ["@key"]} , books_bible = ['2KI'])
 
 #create_networks_bible(books_bible = ['Bible'])
 # TODO: Generalizar la función de undirected para que también se puedan crear networks de coaparición en un mismo sustantivo
