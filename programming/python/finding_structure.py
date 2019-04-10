@@ -18,7 +18,7 @@ def finding_common_rs(content):
     """
     nombres_comunes = {
         "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región","monte","territorio","valle","regiones"],
-        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","padre","padres","pastor","pastores","primogénito","primogénitos","reina","reinas","señor","señores","varón","varones","hijo","hija","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
+        "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","pastor","pastores","primogénito","primogénitos","reina","reinas","señores","varón","varones","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
         "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervas","tribu","tribus","soldados"],
     }
 
@@ -190,8 +190,7 @@ def find_rs_from_referer_refered(content, testament = "antiguo", minimal_freq = 
     books = pd.ExcelFile("/home/jose/Dropbox/biblia/tb/documentation/books.xlsx",  index_col=0)
     books = books.parse('Sheet1').fillna("")
     
-        
-    books_list = [book for book in books.loc[books["testamento"].isin([testament])]["codebook"].tolist() if book in entities.columns.tolist()]
+    books_list = [book for book in books.loc[books["testament"].isin([testament])]["codebook"].tolist() if book in entities.columns.tolist()]
         
     
     entities["sum_books"] = entities[books_list].sum(axis=1)
@@ -287,21 +286,10 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programming/python/input/2KI.xml",
+    "/home/jose/Dropbox/biblia/tb/programming/python/input/EST.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/", 
-    "2KI",
+    "EST",
     genre = "historical", # "letter","prophetical",
-    testament = "antiguo",
-    books_list = ["GEN",
-"EXO",
-"LEV",
-"NUM",
-"DEU",
-"JOS",
-"JDG",
-"RUT",
-"1SA",
-"2SA",
-"1KI","MAT"
-]#"GEN","EXO","LEV","JOS","JDG","RUT","1SA","2SA","MAT"],
+    testament = "old",
+    books_list = []#"GEN","EXO","LEV","JOS","JDG","RUT","1SA","2SA","MAT"],
     )
