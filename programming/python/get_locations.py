@@ -79,11 +79,6 @@ def get_locations_genres(wdir, file, outdir):
 
     return genres_df
 
-wdir = "/home/jose/Dropbox/biblia/tb/"
-file = "TEIBible" # "*.xml"
-outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
-
-books = get_locations_genres(wdir, file, outdir)
 
 def get_locations_books(wdir, file, outdir):
 
@@ -113,11 +108,6 @@ def get_locations_books(wdir, file, outdir):
     books.to_excel(wdir+"documentation/books_2.xlsx", encoding="utf-8")
     return books
 
-wdir = "/home/jose/Dropbox/biblia/tb/"
-file = "TEIBible" # "*.xml"
-outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
-
-books = get_locations_books(wdir, file, outdir)
 
 def get_locations_people(wdir = "/home/jose/Dropbox/biblia/tb/", outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"):
     # abrimos tabla de libros
@@ -171,6 +161,20 @@ def get_locations_people(wdir = "/home/jose/Dropbox/biblia/tb/", outdir = "/home
         print(books_people_df.head())
     books_people_df.to_csv(outdir+"books_entities_latitude_longitude_mean.csv",sep="\t")
 
-#get_locations_people()        
 
 
+get_locations_people()        
+
+
+
+wdir = "/home/jose/Dropbox/biblia/tb/"
+file = "TEIBible" # "*.xml"
+outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
+books = get_locations_books(wdir, file, outdir)
+
+
+
+wdir = "/home/jose/Dropbox/biblia/tb/"
+file = "TEIBible" # "*.xml"
+outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
+genres = get_locations_genres(wdir, file, outdir)

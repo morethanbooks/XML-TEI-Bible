@@ -9,7 +9,7 @@ Antes de dar por terminado un nuevo libro de la Biblia, hay que revisar:
 - Revisar campos secundarios de nuevos registros en entities y guardarlo como CSV
 - Reordenar los ids para que los ids nuevos de un libro sean consecutivos y no haya huecos
 
-## Script revisión y conversión (finishing_book.py)
+## Script revisión y conversión (finishing_book.py finishing_xml())
 - Prettyprint en Notepad++
 - Revisar atributos con valores por defecto: //*[@key="per"]|//*[@corresp="per"]|//*[@who="per"]
 - Colocar # antes en valores de atributos key, who y corresp: ("| )([a-z])	 en //@key|//@who|//@corresp con \1#\2
