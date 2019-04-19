@@ -19,7 +19,7 @@ def finding_common_rs(content):
     nombres_comunes = {
         "pla" : ["ciudad","ciudades","lugares","mar", "río", "aldeas","provincia","región","monte","territorio","valle","regiones"],
         "per" : ["amo","amos","capitán","capitanes","esclavo","esclavos","esclava","esclavas","espías?","espía","faraón","huesped","huespedes","jefe","jefes","joven","jovenes","juez","madre","madres","mujer","niño","niños","pastor","pastores","primogénito","primogénitos","reina","reinas","señores","varón","varones","siervo","sierva","marido","maridos","nuera","nueras","pariente","criado","criados","suegra","criadas","criada","profeta","gobernador","apóstol"],
-        "org" : ["autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervas","tribu","tribus","soldados"],
+        "org" : ["hijos","descendientes","autoridad","descendencia","descendencias","familia","familias","hijos","hijas","pueblos","siervas","tribu","tribus","soldados"],
     }
 
     for key,values in nombres_comunes.items():
@@ -81,11 +81,12 @@ def improve_structure(content):
     # Colocamos los numeradores dentro del rs
     content = re.sub(r'(\W)(dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce)(\W)(<rs [^>]*?>)', r'\1\4\2\3', content)
 
-    # Intentamos encontrar el identificador de cosas como su mujer Noemí:
+    # 
     content = re.sub(r'(</rs>)( de | de la | del | en | en el | en la | de su )(<rs .*?>.*?</rs>)', r'\2\3\1', content)
     content = re.sub(r'(</rs>)( de | de la | del | en | en el | en la | de su )(<rs .*?>.*?</rs>)', r'\2\3\1', content)
     content = re.sub(r'(</rs>)( de | de la | del | en | en el | en la | de su )(<rs .*?>.*?</rs>)', r'\2\3\1', content)
 
+    content = re.sub(r'<rs key="(#per[^"]*?)">([^>]*?)</rs> <rs key="#per3">hijo', r'<rs key="\1">\2</rs> <rs key="\1">hijo', content)
     
     return content
     
@@ -107,7 +108,7 @@ def findingq(text, genre):
     text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)(»|«).+?)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\2</q>\6', text)
 
     if genre != "letter":
-        text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os)[^\w].+?)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\2</q>\6', text)
+        text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os|vosotros|haced|tú)[^\w].+?)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\2</q>\6', text)
 
     text = re.sub(r'_', r':', text, flags=re.MULTILINE)
 
@@ -251,19 +252,21 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
         with open(doc, "r", errors="replace", encoding="utf-8") as fin:
             content = fin.read()
             
-            # Buscamos las personas de la ontología
             
             # Buscamos las personas genéricas
-            
             content = find_rs_from_referer_refered(content, testament = testament)
 
             content = finding_proper_rs(content)
+
+            content = finding_proper_rs(content)
+
+            # Buscamos las personas de la ontología
             content = finding_rs_from_ontology(content, df, bookcode, books_list = books_list)
-            
 
             print("done with referer")
             # Intentamos mejorar la estructura de rss
             content = improve_structure(content)
+
             
             find_people_without_id(content, outputtei,bookcode, df)
 
@@ -286,10 +289,10 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/programming/python/input/EST.xml",
+    "/home/jose/Dropbox/biblia/tb/programming/python/input/NUM.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/", 
-    "EST",
+    "NUM",
     genre = "historical", # "letter","prophetical",
     testament = "old",
-    books_list = []#"GEN","EXO","LEV","JOS","JDG","RUT","1SA","2SA","MAT"],
+    books_list = ["GEN","EXO","LEV","JOS"]#,"JOS","JDG","RUT","1SA","2SA","MAT"],
     )

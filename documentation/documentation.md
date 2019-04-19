@@ -78,10 +78,11 @@ At the moment following books are fully encoded in this chronological order:
 - Isaiah
 - Ephesians
 - 2 Kings
+- Esther
 
 At the moment, following book is being encoded:
 
-- Esther
+- Numbers
 
 ## Original Text
 
