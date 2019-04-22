@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Spyder Editor
 
@@ -63,31 +62,62 @@ def finding_rs_from_ontology(content, df, book, books_list):
     # It goes row by row
     #print(book)
     for index, row in df.iterrows():
-        #print(row["NormalizedName-sp"])
+        print(row["NormalizedName-sp"])
         if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or ((row["order-edition"] in books_list)):# or (row["book"] in ["NT"]):
             content = re.sub(r'<rs key="per">('+ re.escape(row["NormalizedName-sp"]) +r')</rs>', r'<rs key="'+row["id"]+r'">\1</rs>', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
-        """
+
         if (row["type"] == "group") & (row["variants"] != ""):
             content = re.sub(r'(\W)('+ re.escape(row["variants"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
-        """
+
+    
     return content
         
 def improve_structure(content):
     
     # Intentamos encontrar el identificador de cosas como su "mujer Noemí":
-    content = re.sub(r'(<rs key=")per(">[^<]*?</rs> <rs key=\"([^\"]*?)\">)', r'\1\3\2', content)
-    content = re.sub(r'(<rs key=\"([^\"]*?)\">[^>]*</rs>)(, <rs key=")per', r'\1\3\2', content)
+    #content = re.sub(r'(<rs key=")per(">[^<]*?</rs> <rs key=\"([^\"]*?)\">)', r'\1\3\2', content)
+    #content = re.sub(r'(<rs key=\"([^\"]*?)\">[^>]*</rs>)(, <rs key=")per', r'\1\3\2', content)
     
     # Colocamos los numeradores dentro del rs
-    content = re.sub(r'(\W)(dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce)(\W)(<rs [^>]*?>)', r'\1\4\2\3', content)
+    content = re.sub(r'(\W)(dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dicieseis|diecisiete|dicieocho|diecinueve|veinte|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|cien|ciento|quinientos|mil|miles|\d+\.?\d*)+(\W)(<rs [^>]*?>)', r'\1\4\2\3', content)
+
+    content = re.sub(r': (\d+\.?\d*)+\.', r': <rs key="#org70">\1</rs>.', content)
 
     # 
     content = re.sub(r'(</rs>)( de | de la | del | en | en el | en la | de su )(<rs .*?>.*?</rs>)', r'\2\3\1', content)
     content = re.sub(r'(</rs>)( de | de la | del | en | en el | en la | de su )(<rs .*?>.*?</rs>)', r'\2\3\1', content)
     content = re.sub(r'(</rs>)( de | de la | del | en | en el | en la | de su )(<rs .*?>.*?</rs>)', r'\2\3\1', content)
 
-    content = re.sub(r'<rs key="(#per[^"]*?)">([^>]*?)</rs> <rs key="#per3">hijo', r'<rs key="\1">\2</rs> <rs key="\1">hijo', content)
+    content = re.sub(r'<rs key="(#per[^"]*?)">([^>]*?)</rs> <rs key="#per\d*">([a-z])', r'<rs key="\1">\2</rs> <rs key="\1">\3', content)
     
+    """
+    para números
+    """
+
+    content = re.sub(r'<rs key="#org22">(tribu de.*?)</rs>', r'\1', content)
+
+    content = re.sub(r'<rs key="#pla4">', r'<rs key="#org70">', content)
+
+    content = re.sub(r'<rs key="#org0">', r'<rs key="#org70">', content)
+
+    content = re.sub(r'<rs key="#(per|pla)\d*"><rs key="(#org\d+)">([^<]+?)</rs></rs>', r'<rs key="\2">\3</rs>', content)
+            
+    content = re.sub(r'<rs key="#org(.*?)">tribu de <rs key="(#org\d+)">', r'<rs key="\2">tribu de <rs key="\2">', content)
+    
+    content = re.sub(r'<rs key="#org44">tribu de <rs key="#org44">Manasés</rs></rs></rs>', r'<rs key="#org44">tribu de <rs key="#org44">Manasés</rs></rs>', content)
+     
+    content = re.sub(r'Hijos y descendientes de <rs key="(#org\d+)">(.*?)</rs>', r'<rs key="\1">Hijos</rs> y <rs key="\1">descendientes de <rs key="\1">\2</rs></rs>', content)
+
+    content = re.sub(r' tribu de <rs key="(#org\d+)">(.*?)</rs>', r' <rs key="\1">tribu de <rs key="\1">\2</rs></rs>', content)
+
+    content = re.sub(r' jefe ', r' <rs key="#org25">jefe</rs>', content)
+
+    content = re.sub(r' varones ', r' <rs key="#org70">varones</rs> ', content)
+     
+    content = re.sub(r' casas ', r' <rs key="#org22">casa</rs> ', content)
+     
+    content = re.sub(r'<rs key="(#org\d+)"><rs key="#org70">hijos de <rs key=".*?">(.*?)</rs></rs></rs>', r'<rs key="\1">hijos de <rs key="\1">\2</rs></rs>', content)
+
     return content
     
 def findingq(text, genre):
@@ -108,9 +138,11 @@ def findingq(text, genre):
     text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)(»|«).+?)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\2</q>\6', text)
 
     if genre != "letter":
-        text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os|vosotros|haced|tú)[^\w].+?)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\2</q>\6', text)
+        text = re.sub(r'(<ab [^>]*?>)((((?!<q).)*)[^\w](yo|tú|me|soy|te|estoy|he|tengo|tienes|eres|estás|has|ti|mí|mi|tu|os|vosotros|haced|tú|[^ ]*?eréis)[^\w].+?)(</ab>)', r'\1<q who="per" toWhom="per" type="oral">\2</q>\6', text)
 
     text = re.sub(r'_', r':', text, flags=re.MULTILINE)
+
+    text = re.sub(r'<q who="per" toWhom="per" type="oral">', r'<q who="#per14" toWhom="#per26" type="oral">', text)
 
     return text
     
@@ -139,20 +171,36 @@ def find_people_without_id(content, outputtei, bookcode, df):
     
     wrong_people = ["Calvo","Valera"]
     for wrong_person in wrong_people:
-        del people_without_id[wrong_person]
+        try:
+            del people_without_id[wrong_person]
+        except:
+            pass
     for people in people_without_id:
         print((people))
 
     print(people_without_id, len(people_without_id))
     people_without_id_df = pd.DataFrame(list(people_without_id.items()), columns=['entity','frequency'])
 
-    for person in people_without_id_df['entity'].tolist():
-        print(person)
+    people_without_id_df["type"] = "person"
+    people_without_id_df["place?"] = 0
+
+    for index, row in people_without_id_df.iterrows():
+        person = row["entity"]
+
+        results = len(re.findall(r"(en) <rs key=\"per\">"+person+r"</rs>", content))
+        
+        people_without_id_df.loc[index,"place?"] = results
+        
         if df.loc[df["NormalizedName-sp"]==person].shape[0] > 0: 
-            people_without_id_df.loc[people_without_id_df['entity'] == person, 'recheck'] = df.loc[df["NormalizedName-sp"]==person].sort_values(by="sum_freq", ascending=False).iloc[0]["id"]
-            people_without_id_df.loc[people_without_id_df['entity'] == person, 'recheck-in'] = df.loc[df["NormalizedName-sp"]==person].sort_values(by="sum_freq", ascending=False).iloc[0]["order-edition"]
+            people_without_id_df.loc[index,"recheck"] = df.loc[df["NormalizedName-sp"]==person].sort_values(by="sum_freq", ascending=False).iloc[0]["id"]
+            people_without_id_df.loc[index, 'recheck-in'] = df.loc[df["NormalizedName-sp"]==person].sort_values(by="sum_freq", ascending=False).iloc[0]["order-edition"]
+
+    for index, row in people_without_id_df.iterrows():
+        if row["place?"] / row["frequency"] > 0.2:
+            people_without_id_df.loc[index,"type"] = "place"
+
     people_without_id_df.fillna("")
-    people_without_id_df = people_without_id_df.sort_values(by='frequency', ascending=False)
+    people_without_id_df = people_without_id_df.sort_values(by=['type','frequency'], ascending=False)
     people_without_id_df.to_csv(outputtei+bookcode+"people_without_id.csv", sep='\t', encoding='utf-8')
     
     print(people_without_id_df)
@@ -177,7 +225,7 @@ def deleting_wrong_entities(content, bookcode):
 
     content = re.sub(r'<rs key="(.*?)"><rs key="\1">(.*?)</rs>(.*?)</rs>', r'<rs key="\1">\2\3</rs>', content)
     
-    content = re.sub(r'\A.*?</teiHeader>', r'<?xml version="1.0" encoding="UTF-8"?>\n<?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>\n<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?><TEI xmlns="http://www.tei-c.org/ns/1.0">\n	<teiHeader>\n		<fileDesc>\n			<titleStmt>\n				<title></title>\n				<title type="idno">\n					<idno type="string">'+bookcode+'</idno>\n					<idno type="viaf"></idno>\n				</title>\n				<author>\n					<name type="short"></name>\n					<name type="full"></name>\n					<idno type="viaf"></idno>\n				</author>\n				<principal key="#jct">José Calvo Tello</principal>\n			</titleStmt>\n			<publicationStmt>\n				<publisher>José Calvo Tello</publisher>\n				<availability status="free">\n					<p>The text is freely available.</p>\n				</availability>\n				<date when="2018">2018</date>\n			</publicationStmt>\n			<sourceDesc>\n				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>\n				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>\n				<bibl type="edition-first"><date when="1569">1569</date></bibl>\n			</sourceDesc>\n		</fileDesc>\n		<encodingDesc>\n			<p></p>\n		</encodingDesc>\n		<revisionDesc>\n			<change when="2018-02-02" who="#jct">First version of </change>\n		</revisionDesc>\n	</teiHeader>\n', content, flags=re.IGNORECASE|re.MULTILINE|re.DOTALL)
+    content = re.sub(r'\A.*?</teiHeader>', r'<?xml version="1.0" encoding="UTF-8"?>\n<?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>\n<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>\n<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?><TEI xmlns="http://www.tei-c.org/ns/1.0">\n	<teiHeader>\n		<fileDesc>\n			<titleStmt>\n				<title></title>\n				<title type="idno">\n					<idno type="string">'+bookcode+'</idno>\n					<idno type="viaf"></idno>\n				</title>\n				<author>\n					<name type="short"></name>\n					<name type="full"></name>\n					<idno type="viaf"></idno>\n				</author>\n				<principal key="#jct">José Calvo Tello</principal>\n			</titleStmt>\n			<publicationStmt>\n				<publisher>José Calvo Tello</publisher>\n				<availability status="free">\n					<p>The text is freely available.</p>\n				</availability>\n				<date when="2019">2019</date>\n			</publicationStmt>\n			<sourceDesc>\n				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>\n				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>\n				<bibl type="edition-first"><date when="1569">1569</date></bibl>\n			</sourceDesc>\n		</fileDesc>\n		<encodingDesc>\n			<p></p>\n		</encodingDesc>\n		<revisionDesc>\n			<change when="2019-02-02" who="#jct">First version of </change>\n		</revisionDesc>\n	</teiHeader>\n', content, flags=re.IGNORECASE|re.MULTILINE|re.DOTALL)
 
     return(content)
 
@@ -255,6 +303,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             
             # Buscamos las personas genéricas
             content = find_rs_from_referer_refered(content, testament = testament)
+            print("done with referer")
 
             content = finding_proper_rs(content)
 
@@ -263,7 +312,6 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             # Buscamos las personas de la ontología
             content = finding_rs_from_ontology(content, df, bookcode, books_list = books_list)
 
-            print("done with referer")
             # Intentamos mejorar la estructura de rss
             content = improve_structure(content)
 
