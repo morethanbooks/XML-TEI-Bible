@@ -79,10 +79,11 @@ At the moment following books are fully encoded in this chronological order:
 - Ephesians
 - 2 Kings
 - Esther
+- Numbers
 
 At the moment, following book is being encoded:
 
-- Numbers
+- Proverbs
 
 ## Original Text
 

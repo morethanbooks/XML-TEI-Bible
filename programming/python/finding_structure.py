@@ -63,13 +63,12 @@ def finding_rs_from_ontology(content, df, book, books_list):
     #print(book)
     for index, row in df.iterrows():
         print(row["NormalizedName-sp"])
-        """
+
         if (row["type"] == "person" and row["importance"] == 1) or (row["type"] == "group") or (row["type"] == "place") or (row["type"] == "time") or (row["order-edition"] == book) or ((row["order-edition"] in books_list)):# or (row["book"] in ["NT"]):
             content = re.sub(r'<rs key="per">('+ re.escape(row["NormalizedName-sp"]) +r')</rs>', r'<rs key="'+row["id"]+r'">\1</rs>', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
 
         if (row["type"] == "group") & (row["variants"] != ""):
             content = re.sub(r'(\W)('+ re.escape(row["variants"]) +r')(\W)', r'\1<rs key="'+row["id"]+r'">\2</rs>\3', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
-        """
 
         if (row["type"] == "group") :
             content = re.sub(r'<rs key="#org">('+ re.escape(row["NormalizedName-sp"]) +r')</rs>', r'<rs key="'+row["id"]+r'">\1</rs>', content, flags=re.DOTALL|re.MULTILINE|re.UNICODE)
@@ -82,10 +81,11 @@ def improve_structure(content):
     #content = re.sub(r'(<rs key=")per(">[^<]*?</rs> <rs key=\"([^\"]*?)\">)', r'\1\3\2', content)
     #content = re.sub(r'(<rs key=\"([^\"]*?)\">[^>]*</rs>)(, <rs key=")per', r'\1\3\2', content)
     
+    content = re.sub(r'Jehová', r': <rs key="#per14">Jehová</rs>.', content)
+    content = re.sub(r'Ley', r': <rs key="#wor1">Ley</rs>.', content)
     # Colocamos los numeradores dentro del rs
     content = re.sub(r'(\W)(dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dicieseis|diecisiete|dicieocho|diecinueve|veinte|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|cien|ciento|quinientos|mil|miles|\d+\.?\d*)+(\W)(<rs [^>]*?>)', r'\1\4\2\3', content)
 
-    content = re.sub(r': (\d+\.?\d*)+\.', r': <rs key="#org70">\1</rs>.', content)
 
     # 
     content = re.sub(r'(</rs>)( de | de la | del | en | en el | en la | de su )(<rs .*?>.*?</rs>)', r'\2\3\1', content)
@@ -95,8 +95,10 @@ def improve_structure(content):
     content = re.sub(r'<rs key="(#per[^"]*?)">([^>]*?)</rs> <rs key="#per\d*">([a-z])', r'<rs key="\1">\2</rs> <rs key="\1">\3', content)
     
     """
+
     para números
-    """
+
+    content = re.sub(r': (\d+\.?\d*)+\.', r': <rs key="#org70">\1</rs>.', content)
     
     content = re.sub(r'<rs key="#org">familia de los <rs key="(.*?)">(.*?)</rs></rs>', r'<rs key="\1">familia de los <rs key="\1">\2</rs></rs>', content)
     
@@ -124,6 +126,7 @@ def improve_structure(content):
     content = re.sub(r' casas ', r' <rs key="#org22">casa</rs> ', content)
      
     content = re.sub(r'<rs key="(#org\d+)"><rs key="#org70">hijos de <rs key=".*?">(.*?)</rs></rs></rs>', r'<rs key="\1">hijos de <rs key="\1">\2</rs></rs>', content)
+    """
 
     return content
     
@@ -149,7 +152,7 @@ def findingq(text, genre):
 
     text = re.sub(r'_', r':', text, flags=re.MULTILINE)
 
-    text = re.sub(r'<q who="per" toWhom="per" type="oral">', r'<q who="#per14" toWhom="#per26" type="oral">', text)
+    text = re.sub(r'<q who="per" toWhom="per" type="oral">', r'<q who="#per39" toWhom="#org0" type="oral">', text)
 
     return text
     
@@ -309,12 +312,12 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             
             
             # Buscamos las personas genéricas
-            #content = find_rs_from_referer_refered(content, testament = testament)
+            content = find_rs_from_referer_refered(content, testament = testament)
             print("done with referer")
 
-            #content = finding_proper_rs(content)
+            content = finding_proper_rs(content)
 
-            #content = finding_proper_rs(content)
+            content = finding_proper_rs(content)
 
             # Buscamos las personas de la ontología
             content = finding_rs_from_ontology(content, df, bookcode, books_list = books_list)
@@ -323,15 +326,15 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
             content = improve_structure(content)
 
             
-            #find_people_without_id(content, outputtei,bookcode, df)
+            find_people_without_id(content, outputtei,bookcode, df)
 
-            #content = deleting_wrong_entities(content, bookcode)
+            content = deleting_wrong_entities(content, bookcode)
             
             # Buscamos estructuras q
-            #content = findingq(content, genre)
+            content = findingq(content, genre)
                 
             # Intentamos dar valores a los atributos de q
-            #content = values_q(content)
+            content = values_q(content)
         
             # it cleans the HTML from entities, etc        
             # TODO: introducir función que arregle algunos valores como "<rs key="org">hijos de <rs key="#pla4">Israel</rs></rs>", "<rs key="org">hijos de <rs key="#pla2">Judá</rs></rs>",
@@ -344,10 +347,10 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/NUM.xml",
+    "/home/jose/Dropbox/biblia/tb/PRO.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/", 
-    "NUM",
-    genre = "historical", # "letter","prophetical",
+    "PRO",
+    genre = "lyrical", # "letter","prophetical",
     testament = "old",
-    books_list = ["GEN","EXO","LEV","JOS"]#,"JOS","JDG","RUT","1SA","2SA","MAT"],
+    books_list = [ ]#,"JOS","JDG","RUT","1SA","2SA","MAT"],
     )
