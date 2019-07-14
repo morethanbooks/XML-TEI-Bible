@@ -3,100 +3,100 @@
   <graph defaultedgetype="directed" mode="static" name="">
     <attributes class="edge" mode="static">
       <attribute id="6" title="Weight" type="double" />
-      <attribute id="7" title="networkx_key" type="long" />
-      <attribute id="8" title="Type" type="string" />
+      <attribute id="7" title="Type" type="string" />
+      <attribute id="8" title="networkx_key" type="long" />
     </attributes>
     <attributes class="node" mode="static">
-      <attribute id="0" title="color" type="long" />
-      <attribute id="1" title="Degree" type="long" />
-      <attribute id="2" title="NormalizedName-ge" type="string" />
-      <attribute id="3" title="NormalizedName-sp" type="string" />
-      <attribute id="4" title="type" type="string" />
-      <attribute id="5" title="Gender" type="string" />
+      <attribute id="0" title="NormalizedName-sp" type="string" />
+      <attribute id="1" title="NormalizedName-ge" type="string" />
+      <attribute id="2" title="Gender" type="string" />
+      <attribute id="3" title="type" type="string" />
+      <attribute id="4" title="color" type="long" />
+      <attribute id="5" title="Degree" type="long" />
     </attributes>
     <meta>
       <creator>NetworkX 2.2</creator>
-      <lastmodified>29/12/2018</lastmodified>
+      <lastmodified>14/07/2019</lastmodified>
     </meta>
     <nodes>
-      <node id="#org0" label="#org0">
+      <node id="#per14" label="#per14">
         <attvalues>
-          <attvalue for="0" value="5" />
-          <attvalue for="1" value="300" />
-          <attvalue for="2" value="Leute" />
-          <attvalue for="3" value="gente" />
-          <attvalue for="4" value="group" />
-          <attvalue for="5" value="" />
-        </attvalues>
-      </node>
-      <node id="#org133" label="#org133">
-        <attvalues>
-          <attvalue for="0" value="5" />
-          <attvalue for="1" value="100" />
-          <attvalue for="2" value="" />
-          <attvalue for="3" value="babilonios" />
-          <attvalue for="4" value="group" />
-          <attvalue for="5" value="" />
+          <attvalue for="0" value="Dios" />
+          <attvalue for="1" value="Gott" />
+          <attvalue for="2" value="none" />
+          <attvalue for="3" value="person" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="300" />
         </attvalues>
       </node>
       <node id="#org70" label="#org70">
         <attvalues>
-          <attvalue for="0" value="5" />
-          <attvalue for="1" value="100" />
+          <attvalue for="0" value="hebreos" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="" />
-          <attvalue for="3" value="hebreos" />
-          <attvalue for="4" value="group" />
-          <attvalue for="5" value="" />
+          <attvalue for="3" value="group" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="100" />
         </attvalues>
       </node>
       <node id="#per643" label="#per643">
         <attvalues>
-          <attvalue for="0" value="2" />
-          <attvalue for="1" value="100" />
-          <attvalue for="2" value="" />
-          <attvalue for="3" value="Nahúm" />
-          <attvalue for="4" value="person" />
-          <attvalue for="5" value="male" />
+          <attvalue for="0" value="Nahúm" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="male" />
+          <attvalue for="3" value="person" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="100" />
         </attvalues>
       </node>
-      <node id="#per14" label="#per14">
+      <node id="#org133" label="#org133">
         <attvalues>
-          <attvalue for="0" value="4" />
-          <attvalue for="1" value="300" />
-          <attvalue for="2" value="Gott" />
-          <attvalue for="3" value="Dios" />
-          <attvalue for="4" value="person" />
-          <attvalue for="5" value="none" />
+          <attvalue for="0" value="babilonios" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="group" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="100" />
+        </attvalues>
+      </node>
+      <node id="#org0" label="#org0">
+        <attvalues>
+          <attvalue for="0" value="gente" />
+          <attvalue for="1" value="Leute" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="group" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="300" />
         </attvalues>
       </node>
     </nodes>
     <edges>
-      <edge id="0" source="#org0" target="#org0">
+      <edge id="0" source="#per14" target="#org70">
         <attvalues>
-          <attvalue for="6" value="1.0" />
-          <attvalue for="7" value="0" />
-          <attvalue for="8" value="Directed" />
+          <attvalue for="6" value="12.966952139692824" />
+          <attvalue for="7" value="Directed" />
+          <attvalue for="8" value="0" />
         </attvalues>
       </edge>
       <edge id="1" source="#per14" target="#per643">
         <attvalues>
           <attvalue for="6" value="12.485924189467285" />
-          <attvalue for="7" value="0" />
-          <attvalue for="8" value="Directed" />
+          <attvalue for="7" value="Directed" />
+          <attvalue for="8" value="0" />
         </attvalues>
       </edge>
       <edge id="2" source="#per14" target="#org133">
         <attvalues>
           <attvalue for="6" value="11.912758479179157" />
-          <attvalue for="7" value="0" />
-          <attvalue for="8" value="Directed" />
+          <attvalue for="7" value="Directed" />
+          <attvalue for="8" value="0" />
         </attvalues>
       </edge>
-      <edge id="3" source="#per14" target="#org70">
+      <edge id="3" source="#org0" target="#org0">
         <attvalues>
-          <attvalue for="6" value="12.966952139692824" />
-          <attvalue for="7" value="0" />
-          <attvalue for="8" value="Directed" />
+          <attvalue for="6" value="1.0" />
+          <attvalue for="7" value="Directed" />
+          <attvalue for="8" value="0" />
         </attvalues>
       </edge>
     </edges>

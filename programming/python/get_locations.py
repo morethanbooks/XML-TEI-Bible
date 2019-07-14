@@ -177,4 +177,4 @@ outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
 wdir = "/home/jose/Dropbox/biblia/tb/"
 file = "TEIBible" # "*.xml"
 outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
-genres = get_locations_genres(wdir, file, outdir)
+#genres = get_locations_genres(wdir, file, outdir)

@@ -3,14 +3,15 @@
 <?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
 <?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
-<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title></title>
 				<title type="idno">
 					<idno type="string">PRO</idno>
-					<idno type="viaf"></idno>
+					<idno type="viaf">177805643</idno>
 				</title>
 				<author>
 					<name type="short"></name>
@@ -36,17 +37,15 @@
 			<p></p>
 		</encodingDesc>
 		<revisionDesc>
-			<change when="2019-06-09" who="#jct">First version of Proverbs</change>
+			<change when="2019-06-09" who="#jct">First version of Proverbs.</change>
+			<change when="2019-07-14" who="#jct">Proverbs finished.</change>
 		</revisionDesc>
 	</teiHeader>
-
 	<text>
 		<front>
 			<div />
 		</front><body>
 <div xml:id="b.PRO" type="book">
-
-
 <div xml:id="b.PRO.1" type="chapter" n="1" cert="high">
 <div type="pericope">
 	<head type="pericope">Finalidad de los proverbios</head>
@@ -297,7 +296,7 @@
 <div type="pericope">
 	<head type="pericope">Excelencia de la Sabiduría</head>
 
-<ab xml:id="b.PRO.8.1" type="verse" n="1"><q who="#per39" toWhom="#org0" type="written">¿Acaso no clama la <rs key="thin0">Sabiduría</rs> y alza su voz la inteligencia?</q></ab>
+<ab xml:id="b.PRO.8.1" type="verse" n="1"><q who="#per39" toWhom="#org0" type="written">¿Acaso no clama la <rs key="#thin0">Sabiduría</rs> y alza su voz la inteligencia?</q></ab>
 <ab xml:id="b.PRO.8.2" type="verse" n="2"><q who="#per39" toWhom="#org0" type="written">Apostada en las alturas junto al camino, en las encrucijadas de las veredas,</q></ab>
 <ab xml:id="b.PRO.8.3" type="verse" n="3"><q who="#per39" toWhom="#org0" type="written">junto a las puertas, a la entrada de la ciudad, a la entrada de las puertas da voces:</q></ab>
 	<ab xml:id="b.PRO.8.4" type="verse" n="4"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">¡A vosotros, <rs key="#org0">hombres</rs>, llamo; mi voz dirijo a los <rs key="#org0">hijos de los <rs key="#org0">hombres</rs></rs>!</q></q></ab>
@@ -311,9 +310,9 @@
 </div>
 	<div>
 		<head>Discurso de la Sabiduría</head>
-	<ab xml:id="b.PRO.8.12" type="verse" n="12"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">«Yo, la <rs key="thin0">Sabiduría</rs>, habito con la cordura y tengo la ciencia de los consejos.</q></q></ab>
+	<ab xml:id="b.PRO.8.12" type="verse" n="12"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">«Yo, la <rs key="#thin0">Sabiduría</rs>, habito con la cordura y tengo la ciencia de los consejos.</q></q></ab>
 		<ab xml:id="b.PRO.8.13" type="verse" n="13"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">El temor de <rs key="#per14">Jehová</rs> es aborrecer el mal: yo aborrezco la soberbia, la arrogancia, el mal camino y la boca perversa.</q></q></ab>
-<ab xml:id="b.PRO.8.14" type="verse" n="14"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">Conmigo están el consejo y el buen juicio. Yo soy la <rs key="thin0">inteligencia</rs>, y mío es el poder.</q></q></ab>
+<ab xml:id="b.PRO.8.14" type="verse" n="14"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">Conmigo están el consejo y el buen juicio. Yo soy la <rs key="#thin0">inteligencia</rs>, y mío es el poder.</q></q></ab>
 <ab xml:id="b.PRO.8.15" type="verse" n="15"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">Por mí reinan los <rs key="#org100">reyes</rs>, y los <rs key="#org25">príncipes</rs> ejercen la justicia.</q></q></ab>
 <ab xml:id="b.PRO.8.16" type="verse" n="16"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">Por mí dominan los <rs key="#org25">príncipes</rs>, y los <rs key="#org100">gobernadores</rs> juzgan la tierra.</q></q></ab>
 <ab xml:id="b.PRO.8.17" type="verse" n="17"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">Yo amo a los que me aman, y me hallan los que temprano me buscan.</q></q></ab>
@@ -329,7 +328,7 @@
 <ab xml:id="b.PRO.8.27" type="verse" n="27"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">Cuando formaba los cielos, allí estaba yo; cuando trazaba el círculo sobre la faz del abismo,</q></q></ab>
 <ab xml:id="b.PRO.8.28" type="verse" n="28"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">cuando afirmaba los cielos arriba, cuando afirmaba las fuentes del abismo,</q></q></ab>
 <ab xml:id="b.PRO.8.29" type="verse" n="29"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">cuando fijaba los límites al mar para que las aguas no transgredieran su mandato, cuando establecía los fundamentos de la tierra,</q></q></ab>
-<ab xml:id="b.PRO.8.30" type="verse" n="30"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">con él estaba yo ordenándolo todo. Yo era su <rs key="thin0">delicia</rs> cada día y me recreaba delante de él en todo tiempo.</q></q></ab>
+<ab xml:id="b.PRO.8.30" type="verse" n="30"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">con él estaba yo ordenándolo todo. Yo era su <rs key="#thin0">delicia</rs> cada día y me recreaba delante de él en todo tiempo.</q></q></ab>
 <ab xml:id="b.PRO.8.31" type="verse" n="31"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">Me regocijaba con la parte habitada de su tierra, pues mis delicias están con los <rs key="#org0">hijos de los <rs key="#org0">hombres</rs></rs>.</q></q></ab>
 <ab xml:id="b.PRO.8.32" type="verse" n="32"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">»Ahora pues, <rs key="#org0">hijos</rs>, escuchadme: ¡Bienaventurados los que guardan mis caminos!</q></q></ab>
 <ab xml:id="b.PRO.8.33" type="verse" n="33"><q who="#per39" toWhom="#org0" type="written"><q who="#thin0" toWhom="#org0" type="oral">Atended el consejo, sed sabios y no lo menospreciéis.</q></q></ab>
@@ -341,7 +340,7 @@
 <div xml:id="b.PRO.9" type="chapter" n="9" cert="high">
 <div type="pericope">
 	<head type="pericope">La sabiduría y la insensatez</head>
-<ab xml:id="b.PRO.9.1" type="verse" n="1"><q who="#per39" toWhom="#org0" type="written">La <rs key="thin0">Sabiduría</rs> edificó su casa, labró sus siete columnas,</q></ab>
+<ab xml:id="b.PRO.9.1" type="verse" n="1"><q who="#per39" toWhom="#org0" type="written">La <rs key="#thin0">Sabiduría</rs> edificó su casa, labró sus siete columnas,</q></ab>
 <ab xml:id="b.PRO.9.2" type="verse" n="2"><q who="#per39" toWhom="#org0" type="written">mató sus víctimas, mezcló su vino y puso su mesa.</q></ab>
 <ab xml:id="b.PRO.9.3" type="verse" n="3"><q who="#per39" toWhom="#org0" type="written">Envió a sus criadas, y sobre lo más alto de la ciudad clamó,</q></ab>
 	<ab xml:id="b.PRO.9.4" type="verse" n="4"><q who="#per39" toWhom="#org0" type="written">diciendo a todo <rs key="org19">ingenuo</rs>: <q who="#thin0" toWhom="#org19" type="soCalled">«Ven acá»</q>, y a los <rs key="org19">insensatos</rs>:</q></ab>
@@ -612,7 +611,7 @@
 </div>
 </div>
 <div xml:id="b.PRO.17" type="chapter" n="17" cert="high">
-<div type="pericope">
+<div type="pericope" part="Y">
 <ab xml:id="b.PRO.17.1" type="verse" n="1">Mejor es un bocado seco y en paz que una casa de contiendas llena de provisiones.</ab>
 	<ab xml:id="b.PRO.17.2" type="verse" n="2">El <rs key="#org18">siervo prudente</rs> se impondrá al <rs key="#org19">hijo indigno</rs>, y con los <rs key="#org18">hermanos</rs> compartirá la herencia.</ab>
 <ab xml:id="b.PRO.17.3" type="verse" n="3">El crisol es para la plata y el horno para el oro, pero <rs key="#per14">Jehová</rs> es quien prueba los corazones.</ab>
@@ -674,7 +673,7 @@
 </div>
 </div>
 <div xml:id="b.PRO.19" type="chapter" n="19" cert="high">
-<div type="pericope">
+<div type="pericope" part="Y">
 <ab xml:id="b.PRO.19.1" type="verse" n="1">Mejor es el <rs key="#org102">pobre</rs> que camina en integridad que el <rs key="org18">fatuo de labios perversos</rs>.</ab>
 <ab xml:id="b.PRO.19.2" type="verse" n="2">El alma sin ciencia no es buena, y aquel que se precipita, peca.</ab><!--jct: interesante versículo, me pregunto cómo se ha traducido en otras versiones-->
 <ab xml:id="b.PRO.19.3" type="verse" n="3">La insensatez del <rs key="#org0">hombre</rs> tuerce su camino y luego se irrita su corazón contra <rs key="#per14">Jehová</rs>.</ab>
@@ -707,7 +706,7 @@
 </div>
 </div>
 <div xml:id="b.PRO.20" type="chapter" n="20" cert="high">
-<div type="pericope">
+<div type="pericope" part="Y">
 <ab xml:id="b.PRO.20.1" type="verse" n="1">El vino es escarnecedor, la sidra alborotadora; ninguno que por su causa yerre es <rs key="#org18">sabio</rs>.</ab>
 	<ab xml:id="b.PRO.20.2" type="verse" n="2">Como rugido de cachorro de <rs key="#org100">león</rs> es la ira del <rs key="#org100">rey</rs>; el que lo enfurece peca contra sí mismo.</ab>
 	<ab xml:id="b.PRO.20.3" type="verse" n="3">Honra es del <rs key="#org0">hombre</rs> abandonar la contienda, pero cualquier <rs key="#org19">insensato</rs> se enreda en ella.</ab>
@@ -741,7 +740,7 @@
 </div>
 </div>
 <div xml:id="b.PRO.21" type="chapter" n="21" cert="high">
-<div type="pericope">
+<div type="pericope" part="Y">
 <ab xml:id="b.PRO.21.1" type="verse" n="1">Como aguas que se reparten es el corazón del <rs key="#org100">rey</rs> en la mano de <rs key="#per14">Jehová</rs>: él lo inclina hacia todo lo que quiere.</ab>
 <ab xml:id="b.PRO.21.2" type="verse" n="2">Todo camino del <rs key="#org0">hombre</rs> es recto en su propia opinión, pero <rs key="#per14">Jehová</rs> pesa los corazones.</ab>
 <ab xml:id="b.PRO.21.3" type="verse" n="3">Hacer justicia y juicio es para <rs key="#per14">Jehová</rs> más agradable que el sacrificio.</ab>
@@ -776,7 +775,7 @@
 </div>
 </div>
 <div xml:id="b.PRO.22" type="chapter" n="22" cert="high">
-<div type="pericope">
+<div type="pericope" part="Y">
 <ab xml:id="b.PRO.22.1" type="verse" n="1">Más vale el buen nombre que las muchas riquezas, y la buena fama vale más que la plata y el oro.</ab>
 <ab xml:id="b.PRO.22.2" type="verse" n="2">El <rs key="#org100">rico</rs> y el <rs key="#org102">pobre</rs> tienen en común que a ambos los hizo <rs key="#per14">Jehová</rs>.</ab>
 <ab xml:id="b.PRO.22.3" type="verse" n="3">El <rs key="org18">prudente</rs> ve el mal y se esconde, pero los <rs key="org19">ingenuos</rs> pasan y reciben el daño.</ab>
@@ -928,8 +927,8 @@
 </div>
 </div>
 <div xml:id="b.PRO.26" type="chapter" n="26" cert="high">
-<div type="pericope">
-	<ab xml:id="b.PRO.26.1" type="verse" n="1"><q who="per39" toWhom="org0" type="written">Como no le sienta la nieve al <rs key="#org19">verano</rs> ni la lluvia a la <rs key="#org19">siega</rs>, tampoco le sientan los honores al <rs key="#org19">necio</rs>.</q></ab>
+<div type="pericope" part="Y">
+<ab xml:id="b.PRO.26.1" type="verse" n="1"><q who="per39" toWhom="org0" type="written">Como no le sienta la nieve al <rs key="#org19">verano</rs> ni la lluvia a la <rs key="#org19">siega</rs>, tampoco le sientan los honores al <rs key="#org19">necio</rs>.</q></ab>
 <ab xml:id="b.PRO.26.2" type="verse" n="2"><q who="per39" toWhom="org0" type="written">Como gorrión que vaga o golondrina en vuelo, así la maldición nunca viene sin causa.</q></ab>
 	<ab xml:id="b.PRO.26.3" type="verse" n="3"><q who="per39" toWhom="org0" type="written">El látigo para el <rs key="#org19">caballo</rs>, el cabestro para el <rs key="#org19">asno</rs> y la vara para la espalda del <rs key="#org19">necio</rs>.</q></ab>
 <ab xml:id="b.PRO.26.4" type="verse" n="4"><q who="per39" toWhom="org0" type="written">Nunca respondas al <rs key="#org19">necio</rs> de acuerdo con su necedad, para que no seas tú también como él;</q></ab>
@@ -960,7 +959,7 @@
 </div>
 </div>
 <div xml:id="b.PRO.27" type="chapter" n="27" cert="high">
-<div type="pericope">
+<div type="pericope" part="Y">
 <ab xml:id="b.PRO.27.1" type="verse" n="1"><q who="per39" toWhom="org0" type="written">No te jactes del día de mañana porque no sabes qué dará de sí el día.</q></ab>
 	<ab xml:id="b.PRO.27.2" type="verse" n="2"><q who="per39" toWhom="org0" type="written">Alábete el <rs key="#org0">extraño</rs> y no tu propia boca; el <rs key="#org0">ajeno</rs>, y no los labios tuyos.</q></ab>
 <ab xml:id="b.PRO.27.3" type="verse" n="3"><q who="per39" toWhom="org0" type="written">Pesada es la piedra y la arena pesa, pero más pesada que ambas es la ira del <rs key="#org19">necio</rs>.</q></ab>
@@ -1025,7 +1024,7 @@
 </div>
 </div>
 <div xml:id="b.PRO.29" type="chapter" n="29" cert="high">
-<div type="pericope">
+<div type="pericope" part="Y">
 <ab xml:id="b.PRO.29.1" type="verse" n="1"><q who="per39" toWhom="org0" type="written">El <rs key="#org0">hombre</rs> que, al ser reprendido, se vuelve terco, de repente y sin remedio será quebrantado.</q></ab>
 <ab xml:id="b.PRO.29.2" type="verse" n="2"><q who="per39" toWhom="org0" type="written">Cuando los <rs key="#org18">justos</rs> dominan, el <rs key="#org0">pueblo</rs> se alegra; cuando domina el <rs key="#org19">malvado</rs>, el <rs key="#org0">pueblo</rs> gime.</q></ab>
 <ab xml:id="b.PRO.29.3" type="verse" n="3"><q who="per39" toWhom="org0" type="written">El <rs key="#org18">hombre</rs> que ama la sabiduría alegra a su <rs key="#org0">padre</rs>; el que frecuenta <rs key="org21">rameras</rs> perderá los bienes.</q></ab>

@@ -3,40 +3,40 @@
   <graph defaultedgetype="directed" mode="static" name="">
     <attributes class="edge" mode="static">
       <attribute id="6" title="Weight" type="double" />
-      <attribute id="7" title="networkx_key" type="long" />
-      <attribute id="8" title="Type" type="string" />
+      <attribute id="7" title="Type" type="string" />
+      <attribute id="8" title="networkx_key" type="long" />
     </attributes>
     <attributes class="node" mode="static">
-      <attribute id="0" title="color" type="long" />
-      <attribute id="1" title="Degree" type="long" />
-      <attribute id="2" title="NormalizedName-ge" type="string" />
-      <attribute id="3" title="NormalizedName-sp" type="string" />
-      <attribute id="4" title="type" type="string" />
-      <attribute id="5" title="Gender" type="string" />
+      <attribute id="0" title="NormalizedName-sp" type="string" />
+      <attribute id="1" title="NormalizedName-ge" type="string" />
+      <attribute id="2" title="Gender" type="string" />
+      <attribute id="3" title="type" type="string" />
+      <attribute id="4" title="color" type="long" />
+      <attribute id="5" title="Degree" type="long" />
     </attributes>
     <meta>
       <creator>NetworkX 2.2</creator>
-      <lastmodified>29/12/2018</lastmodified>
+      <lastmodified>14/07/2019</lastmodified>
     </meta>
     <nodes>
-      <node id="#org0" label="#org0">
-        <attvalues>
-          <attvalue for="0" value="5" />
-          <attvalue for="1" value="100" />
-          <attvalue for="2" value="Leute" />
-          <attvalue for="3" value="gente" />
-          <attvalue for="4" value="group" />
-          <attvalue for="5" value="" />
-        </attvalues>
-      </node>
       <node id="#org14" label="#org14">
         <attvalues>
-          <attvalue for="0" value="5" />
-          <attvalue for="1" value="100" />
-          <attvalue for="2" value="Falsche Propheten" />
-          <attvalue for="3" value="falsos profetas" />
-          <attvalue for="4" value="group" />
-          <attvalue for="5" value="" />
+          <attvalue for="0" value="falsos profetas" />
+          <attvalue for="1" value="Falsche Propheten" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="group" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="100" />
+        </attvalues>
+      </node>
+      <node id="#org0" label="#org0">
+        <attvalues>
+          <attvalue for="0" value="gente" />
+          <attvalue for="1" value="Leute" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="group" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="100" />
         </attvalues>
       </node>
     </nodes>
@@ -44,8 +44,8 @@
       <edge id="0" source="#org14" target="#org0">
         <attvalues>
           <attvalue for="6" value="1.0" />
-          <attvalue for="7" value="0" />
-          <attvalue for="8" value="Directed" />
+          <attvalue for="7" value="Directed" />
+          <attvalue for="8" value="0" />
         </attvalues>
       </edge>
     </edges>
