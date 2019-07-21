@@ -175,10 +175,10 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
 """
 finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/PRO.xml",
+    "/home/jose/Dropbox/biblia/tb/COL.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/",
     )
 """
 #df = get_referers_and_refereds()
-entities = add_freq_of_entities(do_overwrite=True)
+#entities = add_freq_of_entities(do_overwrite=True)
     

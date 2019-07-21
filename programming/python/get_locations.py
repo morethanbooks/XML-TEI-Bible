@@ -165,16 +165,15 @@ def get_locations_people(wdir = "/home/jose/Dropbox/biblia/tb/", outdir = "/home
 
 #get_locations_people()        
 
-
-
+"""
 wdir = "/home/jose/Dropbox/biblia/tb/"
 file = "TEIBible" # "*.xml"
 outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
-#books = get_locations_books(wdir, file, outdir)
-
-
-
+books = get_locations_books(wdir, file, outdir)
+"""
+"""
 wdir = "/home/jose/Dropbox/biblia/tb/"
 file = "TEIBible" # "*.xml"
 outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
-#genres = get_locations_genres(wdir, file, outdir)
+genres = get_locations_genres(wdir, file, outdir)
+"""
