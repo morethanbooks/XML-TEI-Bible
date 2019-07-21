@@ -57,4 +57,4 @@ def main(bookcode):
         print("Processed documents: ",i)
         i+=1
 
-main("COL")
+main("DEU")
