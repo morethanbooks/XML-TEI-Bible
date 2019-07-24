@@ -81,8 +81,8 @@ def improve_structure(content):
     #content = re.sub(r'(<rs key=")per(">[^<]*?</rs> <rs key=\"([^\"]*?)\">)', r'\1\3\2', content)
     #content = re.sub(r'(<rs key=\"([^\"]*?)\">[^>]*</rs>)(, <rs key=")per', r'\1\3\2', content)
     
-    content = re.sub(r'Jehová', r': <rs key="#per14">Jehová</rs>.', content)
-    content = re.sub(r'Ley', r': <rs key="#wor1">Ley</rs>.', content)
+    #content = re.sub(r'Jehová', r': <rs key="#per14">Jehová</rs>.', content)
+    #content = re.sub(r'Ley', r': <rs key="#wor1">Ley</rs>.', content)
     # Colocamos los numeradores dentro del rs
     content = re.sub(r'(\W)(dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dicieseis|diecisiete|dicieocho|diecinueve|veinte|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|cien|ciento|quinientos|mil|miles|\d+\.?\d*)+(\W)(<rs [^>]*?>)', r'\1\4\2\3', content)
 
@@ -317,7 +317,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
             content = finding_proper_rs(content)
 
-            content = finding_proper_rs(content)
+            #content = finding_proper_rs(content)
 
             # Buscamos las personas de la ontología
             content = finding_rs_from_ontology(content, df, bookcode, books_list = books_list)
@@ -347,7 +347,7 @@ def finding_structure(inputcsv, inputtei, outputtei, bookcode, genre = "not-lett
 
 finding_structure = finding_structure(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/DEU.xml",
+    "/home/jose/Dropbox/biblia/tb/programming/python/input/DEU.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/", 
     "DEU",
     genre = "law", # "letter","prophetical",
