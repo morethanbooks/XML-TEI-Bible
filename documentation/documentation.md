@@ -82,11 +82,11 @@ At the moment following books are fully encoded in this chronological order:
 - Numbers
 - Proverbs
 - Colossians
+- Deuteronomy
 
 At the moment, following book is being encoded:
 
-- Deuteronomy
-
+- Song of songs
 
 ## Original Text
 
