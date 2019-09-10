@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei:lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title></title>
+				<title type="idno">
+					<idno type="string">SON</idno>
+					<idno type="viaf"></idno>
+				</title>
+				<author>
+					<name type="short"></name>
+					<name type="full"></name>
+					<idno type="viaf"></idno>
+				</author>
+				<principal key="#jct">José Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>José Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2019">2019</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2019-02-02" who="#jct">First version of </change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text>
+		<front>
+			<div />
+		</front><body>
+<div xml:id="b.SON" type="book">
+
+
+<div xml:id="b.SON.1" type="chapter" n="1" cert="high">
+<div type="pericope">
+	<head type="pericope">Canto de la esposa</head>
+
+<ab xml:id="b.SON.1.1" type="verse" n="1">El <rs key="#wor16">«Cantar de los cantares», de <rs key="#per39">Salomón</rs></rs>.</ab>
+	<ab xml:id="b.SON.1.2" type="verse" n="2"><q who="#per1876" toWhom="#per39" type="oral">¡Ah, si me besaras con besos de tu boca!, porque mejores son tus amores que el vino.</q></ab>
+	<ab xml:id="b.SON.1.3" type="verse" n="3"><q who="#per1876" toWhom="#per39" type="oral">Delicioso es el aroma de tus perfumes, y tu nombre, perfume derramado. ¡Por eso las <rs key="#org0">jóvenes</rs> te aman!</q></ab>
+	<ab xml:id="b.SON.1.4" type="verse" n="4"><q who="#per1876" toWhom="#per39" type="oral">¡Llévame en pos de ti!... ¡Corramos!... ¡El <rs key="#per35" cert="medium">rey</rs> me ha llevado a sus habitaciones!</q> {i <rs key="org391">Coro</rs>} <q who="#org391" toWhom="#per1876" type="oral">Nos gozaremos y alegraremos contigo, nos acordaremos de tus amores más que del vino. ¡Con razón te aman!</q></ab>
+	<ab xml:id="b.SON.1.5" type="verse" n="5">{i La <rs key="#per1876">esposa</rs>} <q who="#per1876" toWhom="#per39" type="oral">Morena soy, <rs key="#org70">hijas de <rs key="#pla3">Jerusalén</rs></rs>, pero hermosa como las <rs key="#per1876">tiendas de <rs key="#pla442">Cedar</rs></rs>, como las <rs key="#per1876">cortinas de <rs key="#per39">Salomón</rs></rs>.</q></ab>
+	<ab xml:id="b.SON.1.6" type="verse" n="6"><q who="#per1876" toWhom="#per39" type="oral">No reparéis en que soy morena, pues el sol me miró. Los <rs cert="low">hijos de mi <rs cert="low">madre</rs></rs> se enojaron contra mí; me pusieron a cuidar las viñas, mas mi viña, que era mía, no guardé.</q></ab>
+	<ab xml:id="b.SON.1.7" type="verse" n="7"><q who="#per1876" toWhom="#per39" type="oral">Dime tú, <rs key="per39">amado de mi alma</rs>, dónde apacientas tu rebaño, dónde descansas al mediodía; pues ¿por qué he de andar como errante junto a los rebaños de tus compañeros?</q></ab>
+	<ab xml:id="b.SON.1.8" type="verse" n="8">{i <rs key="org391">Coro</rs>} <q who="#org391" toWhom="#per1876" type="oral">Si no lo sabes, <rs key="#per1876">hermosa entre las <rs key="#org122">mujeres</rs></rs>, sigue las huellas del rebaño, y apacienta tus cabritas junto a las cabañas de los <rs key="#org12">pastores</rs></q>.</ab>
+	<ab xml:id="b.SON.1.9" type="verse" n="9">{i El <rs key="#per39">esposo</rs>} <q who="#per39" toWhom="#per1876" type="oral">A la yegua del carro del <rs key="#org174">faraón</rs> te he comparado, <rs key="#per1876">amada</rs> mía.</q></ab>
+<ab xml:id="b.SON.1.10" type="verse" n="10"><q who="#per39" toWhom="#per1876" type="oral">¡Qué hermosas son tus mejillas entre los pendientes y tu cuello entre los collares!</q></ab>
+<ab xml:id="b.SON.1.11" type="verse" n="11"><q who="#per39" toWhom="#per1876" type="oral">Zarcillos de oro te haremos, con incrustaciones de plata.</q></ab>
+	<ab xml:id="b.SON.1.12" type="verse" n="12">{i La <rs key="#per1876">esposa</rs>} <q who="#per1876" toWhom="#per39" type="oral">Mientras el <rs key="#per35">rey</rs> está en su reclinatorio, mi nardo esparce su fragancia.</q></ab>
+	<ab xml:id="b.SON.1.13" type="verse" n="13"><q who="#per1876" toWhom="#per39" type="oral">Mi <rs key="per39">amado</rs> es para mí un <rs key="per39">saquito de mirra</rs> que reposa entre mis pechos.</q></ab>
+	<ab xml:id="b.SON.1.14" type="verse" n="14"><q who="#per1876" toWhom="#per39" type="oral"><rs key="per39">Ramo de flores de alheña en las viñas de <rs key="#pla355">En-gadi</rs></rs> es mi <rs key="per39">amado</rs> para mí.</q></ab>
+<ab xml:id="b.SON.1.15" type="verse" n="15">{i El <rs key="#per39">esposo</rs>} <q who="#per39" toWhom="#per1876" type="oral">¡Qué hermosa eres, <rs key="per1876">amada</rs> mía, qué hermosa eres! ¡Tus ojos son como palomas!</q></ab>
+	<ab xml:id="b.SON.1.16" type="verse" n="16"><q who="#per1876" toWhom="#per39" type="oral">{i La <rs key="#per1876">esposa</rs>} ¡Qué hermoso eres, <rs key="per39">amado</rs> mío, qué dulce eres!</q> {i El <rs key="#per39">esposo</rs>} <q who="#per39" toWhom="#per1876" type="oral">Frondoso es nuestro lecho;</q></ab>
+	<ab xml:id="b.SON.1.17" type="verse" n="17"><q who="#per39" toWhom="#per1876" type="oral">las vigas de nuestra casa, cedro; nuestro artesonado, ciprés.</q></ab>
+
+</div>
+</div>
+<div xml:id="b.SON.2" type="chapter" n="2" cert="high">
+<div type="pericope" part="Y">
+	<ab xml:id="b.SON.2.1" type="verse" n="1">{i La <rs key="#per1876">esposa</rs>} <q who="#per1876" toWhom="#per39" type="oral">Yo soy la <rs key="#per1876">rosa de <rs key="#pla180">Sarón</rs></rs>, el <rs key="#per1876">lirio de los valles</rs>.</q></ab>
+	<ab xml:id="b.SON.2.2" type="verse" n="2">{i El <rs key="#per39">esposo</rs>} <q who="#per39" toWhom="#per1876" type="oral">Como el <rs key="#per1876">lirio entre los espinos</rs> es mi <rs key="#per1876">amada entre las <rs key="#org122">jóvenes</rs></rs>.</q></ab>
+	<ab xml:id="b.SON.2.3" type="verse" n="3">{i La <rs key="#per1876">esposa</rs>} <q who="#per1876" toWhom="per39" type="oral">Como un <rs key="#per39">manzano entre árboles silvestres</rs> es mi <rs key="#per39">amado entre los <rs key="#org183">jóvenes</rs></rs>. A su sombra deseada me senté y su fruto fue dulce a mi paladar.</q></ab>
+	<ab xml:id="b.SON.2.4" type="verse" n="4"><q who="#per1876" toWhom="#per39" type="oral">Me llevó a la sala de banquetes y tendió sobre mí la bandera de su amor.</q></ab>
+	<ab xml:id="b.SON.2.5" type="verse" n="5"><q who="#per1876" toWhom="#per39" type="oral">Sustentadme con pasas, confortadme con manzanas, porque estoy enferma de amor.</q></ab>
+	<ab xml:id="b.SON.2.6" type="verse" n="6"><q who="per1876" toWhom="#per39" type="oral">Su izquierda esté debajo de mi cabeza; con su derecha me abrace.</q></ab>
+	<ab xml:id="b.SON.2.7" type="verse" n="7">{i El <rs key="#per39">esposo</rs>} <q who="#per39" toWhom="#per1876" type="oral">¡Yo os conjuro, <rs key="#org122">hijas de <rs key="#pla3">Jerusalén</rs></rs>, por las gacelas y las ciervas del campo, que no despertéis a mi <rs key="#per1876">amor</rs>! ¡Dejadla dormir mientras quiera!</q></ab>
+	<ab xml:id="b.SON.2.8" type="verse" n="8">{i La <rs key="#per1876">esposa</rs>} <q who="#per1876" toWhom="#per39" type="oral">¡La voz de mi <rs key="#per39">amado</rs>! ¡Ya viene, saltando sobre los montes, brincando por los collados!</q></ab>
+	<ab xml:id="b.SON.2.9" type="verse" n="9"><q who="#per1876" toWhom="#per39" type="oral">Semejante a una <rs key="#per39">gacela</rs> es mi <rs key="#per39">amado</rs>; como un <rs key="#per39">joven cervatillo</rs>. Helo aquí, está tras nuestra pared, mirando por las ventanas, atisbando por las celosías.</q></ab>
+	<ab xml:id="b.SON.2.10" type="verse" n="10"><q who="#per1876" toWhom="#per39" type="oral">Habló mi amado, y me dijo: <q who="#per39" toWhom="#per1876" type="oral">«<rs key="per1876">Amada</rs> mía, hermosa mía, levántate y ven.</q></q></ab>
+	<ab xml:id="b.SON.2.11" type="verse" n="11"><q who="#per1876" toWhom="#per39" type="oral"><q who="#per39" toWhom="#per1876" type="oral">Ya ha pasado el invierno, la lluvia ha cesado y se fue;</q></q></ab>
+	<ab xml:id="b.SON.2.12" type="verse" n="12"><q who="#per1876" toWhom="#per39" type="oral"><q who="#per39" toWhom="#per1876" type="oral">han brotado las flores en la tierra, ha venido el tiempo de la canción y se oye el arrullo de la tórtola en nuestro <rs key="#pla4">país</rs>.</q></q></ab>
+	<ab xml:id="b.SON.2.13" type="verse" n="13"><q who="#per1876" toWhom="#per39" type="oral"><q who="#per39" toWhom="#per1876" type="oral">Ya la higuera ha dado sus higos y las vides en cierne, su olor. »¡<rs key="per1876">Amada</rs> mía, hermosa mía, levántate y ven!</q></q></ab>
+	<ab xml:id="b.SON.2.14" type="verse" n="14"><q who="#per1876" toWhom="#per39" type="oral"><q who="#per39" toWhom="#per1876" type="oral"><rs key="per1876">Paloma</rs> mía, que anidas en lo oculto de la roca, en lo escondido de escarpados parajes, muéstrame tu rostro, hazme oir tu voz, porque tu voz es dulce y hermoso tu aspecto».</q></q></ab>
+	<ab xml:id="b.SON.2.15" type="verse" n="15">{i La <rs key="#per1876">esposa</rs> y el <rs key="per39">esposo</rs>} <q who="#per1876 per39" toWhom="#org0" type="oral">¡Cazadnos las zorras, esas zorras pequeñas que destruyen las viñas, nuestras viñas en cierne!</q></ab>
+	<ab xml:id="b.SON.2.16" type="verse" n="16">{i La <rs key="#per1876">esposa</rs>} <q who="#per39" toWhom="#per1876" type="oral">¡Mi <rs key="#per39">amado</rs> es mío y yo soy suya! Él apacienta entre los lirios.</q></ab>
+	<ab xml:id="b.SON.2.17" type="verse" n="17"><q who="#per39" toWhom="#per1876" type="oral">Mientras despunta el día y huyen las sombras, vuelve, <rs key="per39">amado</rs> mío, como una <rs key="per39">gacela</rs> o un <rs key="per39">cervatillo</rs> por los montes de <rs key="pla984">Beter</rs>.</q></ab>
+
+</div>
+</div>
+<div xml:id="b.SON.3" type="chapter" n="3">
+<div type="pericope">
+<head type="pericope"></head>
+
+<ab xml:id="b.SON.3.1" type="verse" n="1"><q who="#per39" toWhom="#per1876" type="oral">Por las noches busqué en mi lecho al amado de mi alma; lo busqué, mas no lo hallé.</q></ab>
+<ab xml:id="b.SON.3.2" type="verse" n="2"><q who="#per39" toWhom="#per1876" type="oral">Pensé entonces: «Me levantaré, recorreré la <rs key="#pla3">ciudad</rs>, y por calles y plazas buscaré al amado de mi alma». Lo busqué, mas no lo hallé.</q></ab>
+<ab xml:id="b.SON.3.3" type="verse" n="3">Me hallaron los guardias que rondan la <rs key="#pla3">ciudad</rs>, y les pregunté: <q who="#per39" toWhom="#per1876" type="oral">«¿Habéis visto al amado de mi alma?».</q></ab>
+<ab xml:id="b.SON.3.4" type="verse" n="4"><q who="#per39" toWhom="#per1876" type="oral">Apenas me aparté de ellos un poco, hallé al amado de mi alma; me así a él, y no lo dejé hasta llevarlo a <rs key="#pla30">casa</rs> de mi <rs key="#org122">madre</rs>, a la <rs key="#pla84">habitación</rs> de quien me dio a luz.</q></ab>
+<ab xml:id="b.SON.3.5" type="verse" n="5"><q who="#per39" toWhom="#per1876" type="oral">{i El <rs key="#per39">esposo</rs>} ¡Yo os conjuro, <rs key="#org70">hijas de <rs key="#pla3">Jerusalén</rs></rs>, por las gacelas y las ciervas del <rs key="#pla84">campo</rs>, que no despertéis a mi amor! ¡Dejadla dormir mientras quiera!</q></ab>
+<ab xml:id="b.SON.3.6" type="verse" n="6">¿Qué es eso que sube del <rs key="#pla176">desierto</rs> cual columna de <rs key="#pla57">humo</rs>, perfumado de mirra e incienso, y de todo polvo aromático?</ab>
+<ab xml:id="b.SON.3.7" type="verse" n="7">¡Ved, es la litera de <rs key="#per39">Salomón</rs>! Sesenta <rs key="#org24">valientes</rs> la rodean, de entre los <rs key="#org100">fuertes de <rs key="#pla4">Israel</rs></rs>.</ab>
+<ab xml:id="b.SON.3.8" type="verse" n="8">Todos ciñen espada y son diestros en la guerra; cada uno lleva su espada al cinto, por los peligros de la noche.</ab>
+<ab xml:id="b.SON.3.9" type="verse" n="9">El <rs key="#per35">rey</rs> <rs key="#per39">Salomón</rs> se hizo una carroza de madera del <rs key="#pla156">Líbano</rs>,</ab>
+<ab xml:id="b.SON.3.10" type="verse" n="10">con columnas de plata, respaldo de oro y asiento de grana; su interior, recamado de amor por las <rs key="#org70">hijas de <rs key="#pla3">Jerusalén</rs></rs>.</ab>
+<ab xml:id="b.SON.3.11" type="verse" n="11">¡Hijas de <rs key="#pla72">Sión</rs>, salid! Ved al <rs key="#per35">rey</rs> <rs key="#per39">Salomón</rs> con la corona que le ciñó su <rs key="#org122">madre</rs> el día de su boda, el día del gozo de su corazón.</ab>
+
+</div>
+</div>
+<div xml:id="b.SON.4" type="chapter" n="4">
+<div type="pericope">
+<head type="pericope"></head>
+
+<ab xml:id="b.SON.4.1" type="verse" n="1"><q who="#per39" toWhom="#per1876" type="oral">¡Qué hermosa eres, amada mía, que hermosa eres! ¡Tus ojos son como palomas en medio de tus guedejas! Tus cabellos, como manada de cabras que bajan retozando las laderas de <rs key="#pla137">Galaad</rs>.</q></ab>
+<ab xml:id="b.SON.4.2" type="verse" n="2">Tus dientes, como manada de <rs key="#org70">ovejas</rs> que suben del baño recién trasquiladas, todas con crías gemelas, ninguna entre ellas estéril.</ab>
+<ab xml:id="b.SON.4.3" type="verse" n="3"><q who="#per39" toWhom="#per1876" type="oral">Tus labios son como un hilo de grana; tu hablar, cadencioso; tus mejillas, como gajos de granada detrás de tu velo.</q></ab>
+<ab xml:id="b.SON.4.4" type="verse" n="4">Tu cuello, como la torre de <rs key="#per35">David</rs>, edificada para armería: de ella cuelgan mil escudos, escudos todos de <rs key="#org24">valientes</rs>.</ab>
+<ab xml:id="b.SON.4.5" type="verse" n="5">Tus dos pechos, como gemelos de gacela que se apacientan entre lirios.</ab>
+<ab xml:id="b.SON.4.6" type="verse" n="6"><q who="#per39" toWhom="#per1876" type="oral">Mientras despunta el día y huyen las sombras, me iré al <rs key="#pla159">monte</rs> de la mirra, a la colina del incienso.</q></ab>
+<ab xml:id="b.SON.4.7" type="verse" n="7"><q who="#per39" toWhom="#per1876" type="oral">¡Qué hermosa eres, amada mía! No hay defecto en ti.</q></ab>
+<ab xml:id="b.SON.4.8" type="verse" n="8">Ven conmigo del <rs key="#pla156">Líbano</rs>, <rs key="#pla72">esposa</rs> mía; baja del <rs key="#pla156">Líbano</rs> conmigo. Mira desde la cumbre del <rs key="per">Amana</rs>, desde la cumbre del <rs key="#pla155">Senir</rs> y del <rs key="#pla504">Hermón</rs>, desde las guaridas de los leones, desde los <rs key="#pla4">montes</rs> de los leopardos.</ab>
+<ab xml:id="b.SON.4.9" type="verse" n="9"><q who="#per39" toWhom="#per1876" type="oral">Me robaste el corazón, <rs key="#per726">hermana</rs>, <rs key="#pla72">esposa</rs> mía; me robaste el corazón con una mirada tuya, con una gargantilla de tu cuello.</q></ab>
+<ab xml:id="b.SON.4.10" type="verse" n="10">¡Cuán hermosos son tus amores, <rs key="#per726">hermana</rs>, <rs key="#pla72">esposa</rs> mía! ¡Cuánto mejores que el vino tus amores, y la fragancia de tus perfumes más que toda especia aromática!</ab>
+<ab xml:id="b.SON.4.11" type="verse" n="11"><q who="#per39" toWhom="#per1876" type="oral">¡Esposa mía! Tus labios, como un panal, destilan miel; miel y leche hay debajo de tu lengua, y el aroma de tus vestidos es como la fragancia del <rs key="#pla156">Líbano</rs>.</q></ab>
+<ab xml:id="b.SON.4.12" type="verse" n="12"><q who="#per39" toWhom="#per1876" type="oral">Jardín cerrado eres, <rs key="#per726">hermana</rs> mía, <rs key="#pla72">esposa</rs> mía; <rs key="#pla3">fuente</rs> cerrada, sellado manantial,</q></ab>
+<ab xml:id="b.SON.4.13" type="verse" n="13">vergel de renuevos de granado, de frutos suaves, de flores de alheña y de nardos,</ab>
+<ab xml:id="b.SON.4.14" type="verse" n="14">nardo y azafrán, caña aromática y canela, árboles de incienso y de mirra, áloes y las más aromáticas especias.</ab>
+<ab xml:id="b.SON.4.15" type="verse" n="15">Manantial de los jardines, <rs key="#pla772">pozo</rs> de aguas vivas que descienden del <rs key="#pla156">Líbano</rs>.</ab>
+<ab xml:id="b.SON.4.16" type="verse" n="16"><q who="#per39" toWhom="#per1876" type="oral">{i La <rs key="#per1876">esposa</rs>} ¡Levántate, <rs key="per">Aquilón</rs>, y ven, <rs key="per">Austro</rs>! ¡Soplad, y mi jardín desprenda sus aromas! ¡Venga mi amado a su jardín y coma de sus dulces frutos!</q></ab>
+
+</div>
+</div>
+<div xml:id="b.SON.5" type="chapter" n="5">
+<div type="pericope">
+<head type="pericope"></head>
+
+<ab xml:id="b.SON.5.1" type="verse" n="1"><q who="#per39" toWhom="#per1876" type="oral">{i El <rs key="#per39">esposo</rs>} He venido a mi jardín, <rs key="#per726">hermana</rs>, <rs key="#pla72">esposa</rs> mía; he recogido mi mirra y mis aromas, he comido mi panal y mi miel, mi vino y mi leche he bebido. {i <rs key="org391">Coro</rs>} Comed, amados <rs key="#org0">amigos</rs>; bebed en abundancia.</q></ab>
+<ab xml:id="b.SON.5.2" type="verse" n="2"><q who="#per39" toWhom="#per1876" type="oral">Yo dormía, pero mi corazón velaba. La voz de mi amado que llama: «¡Ábreme, <rs key="#per726">hermana</rs> mía, amada mía, paloma mía, perfecta mía, pues mi cabeza está cubierta de rocío, mis cabellos, de la humedad de la noche!</q></ab>
+<ab xml:id="b.SON.5.3" type="verse" n="3"><q who="#per39" toWhom="#per1876" type="oral">»Me he quitado la ropa, ¿cómo vestirme otra vez? Ya me he lavado los pies, ¿cómo ensuciarlos de nuevo?».</q></ab>
+<ab xml:id="b.SON.5.4" type="verse" n="4"><q who="#per39" toWhom="#per1876" type="oral">Mi amado metió su mano por el resquicio de la <rs key="#pla316">puerta</rs> y mi corazón se conmovió dentro de mí.</q></ab>
+<ab xml:id="b.SON.5.5" type="verse" n="5"><q who="#per39" toWhom="#per1876" type="oral">Me levanté para abrir a mi amado y mis manos gotearon mirra: ¡de mis dedos corría la mirra sobre el pestillo de la cerradura!</q></ab>
+<ab xml:id="b.SON.5.6" type="verse" n="6"><q who="#per39" toWhom="#per1876" type="oral">Abrí a mi amado, pero mi amado se había ido, ya había pasado, y tras su voz se me salió el alma. Lo busqué, mas no lo hallé; lo llamé, y no me respondió.</q></ab>
+<ab xml:id="b.SON.5.7" type="verse" n="7"><q who="#per39" toWhom="#per1876" type="oral">Me encontraron los guardias que rondan la <rs key="#pla3">ciudad</rs>; me golpearon, me hirieron, me arrebataron el manto los guardias de las murallas.</q></ab>
+<ab xml:id="b.SON.5.8" type="verse" n="8"><q who="#per39" toWhom="#per1876" type="oral">Yo os conjuro, <rs key="#org70">hijas de <rs key="#pla3">Jerusalén</rs></rs>, si halláis a mi amado, hacedle saber que estoy enferma de amor.</q></ab>
+<ab xml:id="b.SON.5.9" type="verse" n="9"><q who="#per39" toWhom="#per1876" type="oral">¿Qué es tu amado más que otro amado, tú, la más hermosa entre las <rs key="#org122">mujeres</rs>? ¿Qué es tu amado más que otro amado, para que así nos conjures?</q></ab>
+<ab xml:id="b.SON.5.10" type="verse" n="10">{i La <rs key="#per1876">esposa</rs>} Mi amado es blanco y sonrosado, distinguido entre diez mil;</ab>
+<ab xml:id="b.SON.5.11" type="verse" n="11">su cabeza es oro fino; sus cabellos crespos, negros como el cuervo.</ab>
+<ab xml:id="b.SON.5.12" type="verse" n="12">Sus ojos, palomas que junto a <rs key="#pla4">arroyos</rs> de aguas se bañan en leche, están a la perfección colocados.</ab>
+<ab xml:id="b.SON.5.13" type="verse" n="13">Sus mejillas, eras perfumadas con especias aromáticas, son como fragantes flores; sus labios, lirios que destilan mirra.</ab>
+<ab xml:id="b.SON.5.14" type="verse" n="14">Sus manos, anillos de oro engastados de jacintos; su cuerpo, claro marfil cubierto de zafiros.</ab>
+<ab xml:id="b.SON.5.15" type="verse" n="15">Sus piernas, columnas de mármol fundadas sobre basas de oro fino; su aspecto, como el <rs key="#pla156">Líbano</rs>; esbelto cual los cedros.</ab>
+<ab xml:id="b.SON.5.16" type="verse" n="16"><q who="#per39" toWhom="#per1876" type="oral">Su paladar, dulcísimo, y todo en él codiciable. ¡Tal es mi amado, tal es mi <rs key="#org0">amigo</rs>, <rs key="#org70">hijas de <rs key="#pla3">Jerusalén</rs></rs>!</q></ab>
+
+</div>
+</div>
+<div xml:id="b.SON.6" type="chapter" n="6">
+<div type="pericope">
+<head type="pericope"></head>
+
+<ab xml:id="b.SON.6.1" type="verse" n="1"><q who="#per39" toWhom="#per1876" type="oral">¿A dónde se ha ido tu amado, tú, la más hermosa entre las <rs key="#org122">mujeres</rs>? ¿A dónde se dirigió tu amado, y lo buscaremos contigo?</q></ab>
+<ab xml:id="b.SON.6.2" type="verse" n="2">{i La <rs key="#per1876">esposa</rs>} Mi amado ha bajado a su jardín, a las eras de las especias, a apacentar en los huertos y recoger los lirios.</ab>
+<ab xml:id="b.SON.6.3" type="verse" n="3"><q who="#per39" toWhom="#per1876" type="oral">¡Yo soy de mi amado, y mi amado es mío! Él apacienta entre los lirios.</q></ab>
+<ab xml:id="b.SON.6.4" type="verse" n="4"><q who="#per39" toWhom="#per1876" type="oral">{i El <rs key="#per39">esposo</rs>} Amada mía, eres bella como <rs key="#pla521">Tirsa</rs>, deseable como <rs key="#pla3">Jerusalén</rs>, imponente como <rs key="#org24">ejércitos</rs> en orden de batalla.</q></ab>
+<ab xml:id="b.SON.6.5" type="verse" n="5"><q who="#per39" toWhom="#per1876" type="oral">¡Aparta tus ojos de mí, pues me subyugan! Tu cabello es como manada de cabras que bajan retozando las laderas de <rs key="#pla137">Galaad</rs>.</q></ab>
+<ab xml:id="b.SON.6.6" type="verse" n="6">Tus dientes, como manada de <rs key="#org70">ovejas</rs> que suben del baño, ninguna estéril, todas con crías gemelas.</ab>
+<ab xml:id="b.SON.6.7" type="verse" n="7"><q who="#per39" toWhom="#per1876" type="oral">Tus mejillas, como gajos de granada detrás de tu velo.</q></ab>
+<ab xml:id="b.SON.6.8" type="verse" n="8">Sesenta son las reinas, ochenta las <rs key="#org21">concubinas</rs>, y las <rs key="#org70">jóvenes</rs>, sin número;</ab>
+<ab xml:id="b.SON.6.9" type="verse" n="9"><q who="#per39" toWhom="#per1876" type="oral">mas única y perfecta es la paloma mía, la única de su <rs key="#org122">madre</rs>, la escogida de quien la dio a luz. Las <rs key="#org70">jóvenes</rs> la vieron y la llamaron «bienaventurada»; la alabaron las reinas y las <rs key="#org21">concubinas</rs>.</q></ab>
+<ab xml:id="b.SON.6.10" type="verse" n="10"><q who="#per39" toWhom="#per1876" type="oral">{i <rs key="org391">Coro</rs>} «¿Quién es esta, que se muestra como el alba, hermosa como la luna, radiante como el sol, imponente como <rs key="#org24">ejércitos</rs> en orden de batalla?».</q></ab>
+<ab xml:id="b.SON.6.11" type="verse" n="11">{i La <rs key="#per1876">esposa</rs>} Bajé al <rs key="#pla77">huerto</rs> de los nogales a ver los frutos del <rs key="#pla84">valle</rs>, a ver si brotaban las vides y florecían los granados.</ab>
+<ab xml:id="b.SON.6.12" type="verse" n="12"><q who="#per39" toWhom="#per1876" type="oral">Luego, antes de darme cuenta, mi alma me puso entre los carros de <rs key="#per600">Aminadab</rs>.</q></ab>
+<ab xml:id="b.SON.6.13" type="verse" n="13"><q who="#per39" toWhom="#per1876" type="oral">{i <rs key="org391">Coro</rs>} ¡Vuelve, vuelve, sulamita! ¡Vuelve, vuelve, que te veamos! {i La <rs key="#per1876">esposa</rs>} ¿Qué miráis en la sulamita? {i <rs key="org391">Coro</rs>} Que danza, como en los campamentos.</q></ab>
+
+</div>
+</div>
+<div xml:id="b.SON.7" type="chapter" n="7">
+<div type="pericope">
+<head type="pericope"></head>
+
+<ab xml:id="b.SON.7.1" type="verse" n="1">{i El <rs key="#per39">esposo</rs>} ¡Qué bellos son tus pies en las sandalias, <rs key="#org122">hija de <rs key="#org100">príncipe</rs></rs>! Los <rs key="#pla149">contornos</rs> de tus caderas son como joyas, <rs key="#pla263">obra</rs> de excelente artífice.</ab>
+<ab xml:id="b.SON.7.2" type="verse" n="2">Tu ombligo, como una taza redonda donde no falta el buen vino. Tu vientre, como <rs key="#pla4">montón de <rs key="#pla4">trigo</rs></rs> de lirios rodeado.</ab>
+<ab xml:id="b.SON.7.3" type="verse" n="3">Tus dos pechos, como gemelos de gacela.</ab>
+<ab xml:id="b.SON.7.4" type="verse" n="4"><q who="#per39" toWhom="#per1876" type="oral">Tu cuello, como torre de marfil; tus ojos, como los estanques de <rs key="#pla488">Hesbón</rs> junto a la <rs key="#pla316">puerta de <rs key="per">Bat-rabim</rs></rs>; tu nariz, como la torre del <rs key="#pla156">Líbano</rs>, que mira hacia <rs key="#pla80">Damasco</rs>.</q></ab>
+<ab xml:id="b.SON.7.5" type="verse" n="5">Tu cabeza erguida, como el <rs key="#pla294">Carmelo</rs>; como púrpura, tus guedejas: en ellas, un <rs key="#per35">rey</rs> está <rs key="#org171">cautivo</rs>.</ab>
+<ab xml:id="b.SON.7.6" type="verse" n="6"><q who="#per39" toWhom="#per1876" type="oral">¡Qué hermosa eres y cuán suave, oh amor deleitoso!</q></ab>
+<ab xml:id="b.SON.7.7" type="verse" n="7">Tu talle, como la palmera; tus pechos, como sus racimos.</ab>
+<ab xml:id="b.SON.7.8" type="verse" n="8">Yo dije: <q who="#per39" toWhom="#per1876" type="oral">«Subiré a la palmera y asiré sus frutos». Deja que sean tus pechos como racimos de <rs key="#pla4">vid</rs>, y como de manzanas la fragancia de tu aliento.</q></ab>
+<ab xml:id="b.SON.7.9" type="verse" n="9">Tu paladar, como el buen vino, que entra al amado suavemente y corre por los labios de los <rs key="#org70">viejos</rs>.</ab>
+<ab xml:id="b.SON.7.10" type="verse" n="10"><q who="#per39" toWhom="#per1876" type="oral">{i La <rs key="#per1876">esposa</rs>} Yo soy de mi amado, y en mí tiene su contentamiento.</q></ab>
+<ab xml:id="b.SON.7.11" type="verse" n="11">Ven, amado mío, salgamos al <rs key="#pla84">campo</rs>, pasemos la noche en las <rs key="#pla3">aldeas</rs>.</ab>
+<ab xml:id="b.SON.7.12" type="verse" n="12"><q who="#per39" toWhom="#per1876" type="oral">Vayamos de mañana a las viñas, a ver si brotan las vides, si ya están en cierne, si han florecido los granados. ¡Allí te daré mis amores!</q></ab>
+<ab xml:id="b.SON.7.13" type="verse" n="13"><q who="#per39" toWhom="#per1876" type="oral">Las mandrágoras exhalan su aroma, y a nuestras puertas hay toda suerte de deliciosas frutas, frescas y secas, que para ti, amado mío, he guardado.</q></ab>
+
+</div>
+</div>
+<div xml:id="b.SON.8" type="chapter" n="8">
+<div type="pericope">
+<head type="pericope"></head>
+
+<ab xml:id="b.SON.8.1" type="verse" n="1"><q who="#per39" toWhom="#per1876" type="oral">¡Ah, si fueras tú un <rs key="#org70">hermano</rs> mío, <rs key="#org131">criado</rs> a los pechos de mi <rs key="#org122">madre</rs>! Cuando te hallara fuera de la <rs key="#pla30">casa</rs>, te besaría, y no me menospreciarían.</q></ab>
+<ab xml:id="b.SON.8.2" type="verse" n="2"><q who="#per39" toWhom="#per1876" type="oral">Te llevaría y te haría entrar en <rs key="#pla30">casa</rs> de mi <rs key="#org122">madre</rs>; tú me enseñarías. Yo te daría a beber vino aromado con licor de mis granadas.</q></ab>
+<ab xml:id="b.SON.8.3" type="verse" n="3"><q who="#per39" toWhom="#per1876" type="oral">Su izquierda esté debajo de mi cabeza; con su derecha me abrace.</q></ab>
+<ab xml:id="b.SON.8.4" type="verse" n="4"><q who="#per39" toWhom="#per1876" type="oral">{i El <rs key="#per39">esposo</rs>} ¡Yo os conjuro, <rs key="#org70">hijas de <rs key="#pla3">Jerusalén</rs></rs>, que no despertéis a mi amor! ¡Dejadla dormir mientras quiera!</q></ab>
+<ab xml:id="b.SON.8.5" type="verse" n="5"><q who="#per39" toWhom="#per1876" type="oral">Debajo de un manzano te desperté; donde tuvo tu <rs key="#org122">madre</rs> los dolores, donde tuvo los dolores quien te dio a luz.</q></ab>
+<ab xml:id="b.SON.8.6" type="verse" n="6"><q who="#per39" toWhom="#per1876" type="oral">{i La <rs key="#per1876">esposa</rs>} Ponme como un sello sobre tu corazón, como una marca sobre tu brazo; porque <rs key="#org100">fuerte</rs> como la muerte es el amor y duros como el <rs key="#pla15">seol</rs> los celos. Sus brasas son brasas de fuego, potente llama.</q></ab>
+<ab xml:id="b.SON.8.7" type="verse" n="7">Las muchas aguas no podrán apagar el amor ni lo ahogarán los <rs key="#pla131">ríos</rs>. Y si un <rs key="#org0">hombre</rs> ofreciera todos los bienes de su <rs key="#pla30">casa</rs> a cambio del amor, de cierto sería despreciado.</ab>
+<ab xml:id="b.SON.8.8" type="verse" n="8">{i <rs key="per">Epílogo</rs>} Tenemos una pequeña <rs key="#per726">hermana</rs>, que no tiene pechos; ¿Qué haremos con nuestra <rs key="#per726">hermana</rs> cuando de ella se hable?</ab>
+<ab xml:id="b.SON.8.9" type="verse" n="9">Si fuera una muralla, edificaríamos sobre ella un <rs key="#pla917">palacio</rs> de plata; si fuera una <rs key="#pla316">puerta</rs>, la recubriríamos con tablas de cedro.</ab>
+<ab xml:id="b.SON.8.10" type="verse" n="10"><q who="#per39" toWhom="#per1876" type="oral">Yo soy como una muralla, y mis pechos, como torres. Ante sus ojos he sido como quien ha hallado la paz.</q></ab>
+<ab xml:id="b.SON.8.11" type="verse" n="11"><rs key="#per39">Salomón</rs> tuvo una <rs key="#org70">viña en <rs key="#per650">Baal</rs></rs>-hamón, y la encomendó a unos guardas, y cada uno le llevaba por su fruto mil monedas de plata.</ab>
+<ab xml:id="b.SON.8.12" type="verse" n="12"><q who="#per39" toWhom="#per1876" type="oral">¡Mi <rs key="#org70">viña</rs>, la mía, está delante de mí! ¡Que las mil monedas sean para ti, <rs key="#per39">Salomón</rs>, y doscientas para los que guardan el fruto!</q></ab>
+<ab xml:id="b.SON.8.13" type="verse" n="13"><q who="#per39" toWhom="#per1876" type="oral">Tú, que habitas en los huertos, los <rs key="#org262">compañeros</rs> escuchan tu voz. ¡Házmela oir!</q></ab>
+<ab xml:id="b.SON.8.14" type="verse" n="14">¡Corre, amado mío, como la gacela o el cervatillo, por las montañas llenas de aromas!</ab>
+</div>
+</div>
+</div>
+</body>
+<back />
+</text>
+</TEI>
