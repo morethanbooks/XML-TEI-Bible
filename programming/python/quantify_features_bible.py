@@ -15,13 +15,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 from collections import Counter
 from numpy import array
-import numpy as np
 
 
 wdir = "/home/jose/Dropbox/biblia/tb/"
 file = "TEIBible" # "*.xml"
 outdir = "/home/jose/Dropbox/biblia/tb/resulting data/"
-import pandas as pd
+
+books_df = pd.ExcelFile(wdir + "documentation/books.xlsx",  index_col=0).parse('Sheet1').iloc[0:66,:]
 
 parser = etree.XMLParser(encoding='utf-8')
 documento_xml = etree.parse(wdir+file+".xml", parser)
@@ -139,5 +139,11 @@ dataframe_bible = dataframe_bible[['code', 'n', 'title','viaf', 'verses', 'chapt
        'toWhom ent',  'who ent',
 ]]
 dataframe_bible = dataframe_bible.sort_values(by=["n"])
+
+dataframe_bible["genre"] = dataframe_bible["code"].map(books_df.set_index('codebook')['genre']).fillna("")
+
+dataframe_bible = dataframe_bible[dataframe_bible.columns.tolist()[-1:] + dataframe_bible.columns.tolist()[:-1]]
+
 dataframe_bible.to_csv("/home/jose/Dropbox/biblia/tb/resulting data/quantitative_data.csv", sep="\t")
+
 
