@@ -57,5 +57,4 @@ def main(bookcode):
         print("Processed documents: ",i)
         i+=1
 
-main("1CH")
-main("2CH")
+main("LUK")
