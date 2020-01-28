@@ -419,9 +419,9 @@ def create_networks_bible( mode = "directed", xpaths = {"q" : ["@who", "@toWhom"
     return graph
 
 
-#create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom","@type"]}, books_bible = ['SON'])
+#create_networks_bible(mode = "directed", xpaths = {"q" : ["@who", "@toWhom","@type"]}, books_bible = ['LUK'])
 
-#create_networks_bible(mode = "undirected", xpaths = {"q" : ["@who", "@toWhom"], "rs" : ["@key"]} , books_bible = ['SON'])
+#create_networks_bible(mode = "undirected", xpaths = {"q" : ["@who", "@toWhom"], "rs" : ["@key"]} , books_bible = ['LUK'])
 
 create_networks_bible(books_bible = ['Bible'])
 ###create_networks_bible()
