@@ -84,10 +84,11 @@ At the moment following books are fully encoded in this chronological order:
 - Colossians
 - Deuteronomy
 - Song of songs
+- Luke
+- 1 and 2 Chronicles
 
 At the moment, following book is being encoded:
 
-- 1 Chronicles
 
 ## Original Text
 

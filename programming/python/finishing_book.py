@@ -179,6 +179,6 @@ finishing_xml(
     "/home/jose/Dropbox/biblia/tb/programming/python/output/",
     )
 """
-df = get_referers_and_refereds()
+#df = get_referers_and_refereds()
 #entities = add_freq_of_entities(do_overwrite=True)
     

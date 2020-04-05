@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-wdir = "../../resulting data/quantitative_data.csv"
+wdir = "../../resulting data/quantitative_data_books.csv"
 outdir = "../../visualizations/features/"
 format_ = "png"
 
@@ -22,7 +22,7 @@ def read_features_table(wdir):
 
 def make_bars_verses(quantitative_data, outdir, format_):
     fig, ax = plt.subplots()
-    ax = quantitative_data.plot(kind="bar", x="code", y="verses", color="green",figsize=(10,5), legend= False)
+    ax = quantitative_data.plot(kind="bar", x="id", y="verses", color="green", figsize=(10,5), legend= False)
     ax.set_ylabel('amount verses')
     ax.set_xlabel('books')
     ax.get_figure().savefig(outdir+"bar_verses."+format_, dpi=300, format=format_)
@@ -39,20 +39,24 @@ def make_features_relative(quantitative_data):
     return relative_quantitative_data
                 
 def make_viz_diff_entities(relative_quantitative_data):
-    relative_quantitative_data["different people"] = relative_quantitative_data["diff pers"]
-    relative_quantitative_data["different groups"] = relative_quantitative_data["diff orgs"]
-    relative_quantitative_data["different places"] = relative_quantitative_data["diff plas"]
+
     fig, ax = plt.subplots()
-    ax = relative_quantitative_data.plot(kind="barh", x="code", y=["different people","diff orgs", "diff plas"], figsize=(5,18), title="Amount of different entities in each book of the Bible\n(relative to amount of verses)")
+    ax = relative_quantitative_data.reset_index().sort_index(ascending=False).plot(kind = "barh", x = "id",
+                                               y = ["number of different people","number of different groups", "number of different places"],
+                                               figsize = (5,18),
+                                               title = "Number of different entities in each book of the Bible\n(relative to amount of verses)",
+                                               )
     ax.set_ylabel('different entities')
     ax.set_xlabel('books')
+    ax.grid(b=True, axis="x")
+    ax.set_axisbelow(True)
+    ax.set_xlim(left=0,right=1.1)
     ax.get_figure().savefig(outdir+"bar_diff_ent."+format_, dpi=300, format=format_)
     plt.show(fig)
 
     
 
 quantitative_data = read_features_table(wdir)
-
 make_bars_verses(quantitative_data, outdir, format_)
 
 relative_quantitative_data = make_features_relative(quantitative_data)
