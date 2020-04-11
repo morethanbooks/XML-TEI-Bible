@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication information</p>        
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <classDecl>
+           <taxonomy xml:id="theme">
+                <category xml:id="relation">
+                   <catDesc>types of relations between people</catDesc>
+                   <category xml:id="monogamy">
+                      <catDesc>monogamic relation (relation between two people)</catDesc>
+                   </category>
+                   <category xml:id="poligamy">
+                      <catDesc>poligamic relation (relation between more than two people)</catDesc>
+                   </category>
+                   <category xml:id="marital-relation">
+                      <catDesc>relation between people that are married</catDesc>
+                   </category>
+                   <category xml:id="non-marital-relation">
+                      <catDesc>relation between people that are not married</catDesc>
+                   </category>
+                </category>
+                   <category xml:id="act">
+                      <catDesc>acts about relations and sex</catDesc>
+                      <category xml:id="wedding">
+                         <catDesc>wedding</catDesc>
+                      </category>
+                      <category xml:id="birth">
+                         <catDesc>birth</catDesc>
+                      </category>
+                      <category xml:id="misscarriage">
+                         <catDesc>misscarriage</catDesc>
+                      </category>
+                      <category xml:id="fertilization">
+                         <catDesc>fertilization</catDesc>
+                      </category>
+                      <category xml:id="sexual-act">
+                         <catDesc>sexual-act</catDesc>
+                      </category>
+                      <category xml:id="sections-sexual-act">
+                         <catDesc>section of a sexual or intimate encounter</catDesc>
+                         <category xml:id="erotic-time">
+                            <catDesc>erotic time between several people (foreplay)</catDesc>
+                         </category>
+                         <category xml:id="initation-sexual-act">
+                            <catDesc>initiation of sexual act</catDesc>
+                         </category>
+                         <category xml:id="orgasm">
+                            <catDesc>orgasm</catDesc>
+                         </category>
+                         <category xml:id="eyaculation">
+                            <catDesc>eyaculation</catDesc>
+                         </category>
+                         <category xml:id="time-after-sex">
+                            <catDesc>time between several people after having sex</catDesc>
+                         </category>
+                      <category xml:id="type-sexual-act">
+                           <catDesc>types of sexual acts</catDesc>
+                           <category xml:id="coitus">
+                              <catDesc>vaginal penetrative sexual act (coitus)</catDesc>
+                           </category>
+                         <category xml:id="first-sexual-act">
+                            <catDesc>first sexual act of a person (in which the person looses their virginity)</catDesc>
+                         </category>
+                         <category xml:id="coitus-interruptus">
+                            <catDesc>vaginal penetrative sexual act, eyaculating outside the vagina</catDesc>
+                         </category>
+                         <category xml:id="self-masturbation">
+                            <catDesc>sexual act involving a single person touching their own genital for erotic purposes</catDesc>
+                         </category>
+                         <category xml:id="masturbation">
+                            <catDesc>masturbation between several people, mutual or not, i.e. stimulation of genitals through hands</catDesc>
+                         </category>
+                         <category xml:id="oral-sex">
+                            <catDesc>oral sex, i.e. the stimuation of genitals through any part of the mouth (tonge, lips, teeths)</catDesc>
+                         </category>
+                         <category xml:id="anal-sex">
+                            <catDesc>anal sex, i.e. any penetration of the anus</catDesc>
+                         </category>
+                         <category xml:id="non-penetrative-sex">
+                            <catDesc>non penetrative sex involving other parts of the body other than the hands (petting, frottage, outercourse)</catDesc>
+                         </category>
+                         <category xml:id="female-rape">
+                            <catDesc>sexual assault with penetration against a woman</catDesc>
+                         </category>
+                         <category xml:id="male-rape">
+                            <catDesc>sexual assault with penetration against a man</catDesc>
+                         </category>
+                         <category xml:id="female-sexual-assault">
+                            <catDesc>sexual assault (with or without penetration) to a woman</catDesc>
+                         </category>
+                         <category xml:id="male-sexual-assault">
+                            <catDesc>sexual assault (with or without penetration) to a man</catDesc>
+                         </category>
+                         <category xml:id="sexual-drive">
+                            <catDesc>general sexual desire</catDesc>
+                         </category>
+                         <category xml:id="sexual-desire">
+                            <catDesc>sexual desire for a specific person</catDesc>
+                         </category>
+                         <category xml:id="other-sexual-act">
+                            <catDesc>other sexual acts</catDesc>
+                         </category>
+                      </category>
+                         <category xml:id="sexual-act-situation">
+                            <catDesc>types of sexual acts by their situation</catDesc>
+                            <category xml:id="sex-in-marriage">
+                               <catDesc>sexual act between married people</catDesc>
+                            </category>
+                            <category xml:id="sex-before-marriage">
+                               <catDesc>sexual act between two people with a relationship but not yet married</catDesc>
+                            </category>
+                            <category xml:id="sex-outside-marriage">
+                               <catDesc>sexual act between two people that do not have a stable relaitonship (they can be married or not)</catDesc>
+                            </category>
+                            <category xml:id="sex-outside">
+                               <catDesc>sexual act outisde</catDesc>
+                            </category>                            
+                         </category>
+                         <category xml:id="sexual-act-participants">
+                            <catDesc>types of sexual acts by their participants</catDesc>
+                            <category xml:id="heterosexual-sex">
+                               <catDesc>sex between a man and a woman</catDesc>
+                            </category>
+                            <category xml:id="gay-sex">
+                               <catDesc>sex between men</catDesc>
+                            </category>
+                            <category xml:id="lesbian-sex">
+                               <catDesc>sex between women</catDesc>
+                            </category>
+                            <category xml:id="prostitution-sex">
+                               <catDesc>sex with a prostitute</catDesc>
+                            </category>
+                            <category xml:id="religous-sex">
+                               <catDesc>sex with a religious personnel</catDesc>
+                            </category>
+                            <category xml:id="parents-children-sex">
+                               <catDesc>sex between one parent and one of their children</catDesc>
+                            </category>
+                            <category xml:id="sibling-sex">
+                               <catDesc>sex between two siblings</catDesc>
+                            </category>
+                            <category xml:id="greater-family-sex">
+                               <catDesc>sex between two other members of the family (grand-parents, cousins, aunts or uncles, nieces and nephews)</catDesc>
+                            </category>
+                            <category xml:id="angel-human-sex">
+                               <catDesc>sex between people and angels</catDesc>
+                            </category>
+                            <category xml:id="animal-human-sex">
+                               <catDesc>sex between people and animals</catDesc>
+                            </category>
+                            <category xml:id="animal-sex">
+                               <catDesc>sex between animals</catDesc>
+                            </category>
+                            <category xml:id="groupal-sex">
+                               <catDesc>sex between more than two people (threesome, orgies)</catDesc>
+                            </category>
+                         </category>
+                      </category>
+                      <category xml:id="states">
+                         <catDesc>states defined by sexuality</catDesc>
+                         <category xml:id="virginity">
+                            <catDesc>has not had sex before</catDesc>
+                         </category>
+                         <category xml:id="infertility">
+                            <catDesc>cannot get pregnant</catDesc>
+                         </category>
+                         <category xml:id="nudity">
+                            <catDesc>has no clothes (or barely)</catDesc>
+                         </category>
+                         <category xml:id="semi-nudity">
+                            <catDesc>is partially nude (for example, topless)</catDesc>
+                         </category>
+                         <category xml:id="pregnancy">
+                            <catDesc>is pregnant</catDesc>
+                         </category>
+                      </category>
+                      <category xml:id="sexual-parts-functions">
+                         <catDesc>sexual parts and functions</catDesc>
+                         <category xml:id="female-genitalia">
+                            <catDesc>female genitals (vagina and vulva)</catDesc>
+                         </category>
+                         <category xml:id="male-genitalia">
+                            <catDesc>male genitals (penis and testicles)</catDesc>
+                         </category>
+                         <category xml:id="gluteus-anus">
+                            <catDesc>anus and gluteus</catDesc>
+                         </category>
+                         <category xml:id="female-brest">
+                            <catDesc>female brest</catDesc>
+                         </category>
+                         <category xml:id="male-brest">
+                            <catDesc>male brest</catDesc>
+                         </category>
+                         <category xml:id="ovaries">
+                            <catDesc>ovaries</catDesc>
+                         </category>
+                         <category xml:id="semen">
+                            <catDesc>semen</catDesc>
+                         </category>
+                         <category xml:id="menstruation">
+                            <catDesc>menstruation</catDesc>
+                         </category>
+                      </category>
+                      <category xml:id="sexual-object">
+                         <catDesc>sexual object</catDesc>
+                      </category>
+                      <category xml:id="sexual-groups">
+                         <catDesc>groups defined by their sexuality</catDesc>
+                         <category xml:id="menstruation">
+                            <catDesc>menstruation</catDesc>
+                         </category>
+                      </category>
+                   </category>
+           </taxonomy>
+        </classDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+         <figure>
+            <graphic url="http://www.tei-c.org/logos/TEI-glow.png"/>
+         </figure>
+      </body>
+  </text>
+</TEI>
