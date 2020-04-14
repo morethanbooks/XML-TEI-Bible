@@ -282,12 +282,13 @@
 				<div />
 			</front>
 			<body>
-				<div xml:id="b.MAT" type="book">
-					<div xml:id="b.MAT.1" type="chapter" n="1" cert="high">
+				<div xml:id="test-1">
+				<div xml:id="test-1.b.MAT" type="book">
+					<div xml:id="test-1.b.MAT.1" type="chapter" n="1" cert="high">
 						
 						<div type="pericope">
 							<head type="pericope">Nacimiento de Jesucristo</head>
-							<ab xml:id="b.MAT.1.18" type="verse" n="18" ana="#b.MAT.1.18.ana">
+							<ab xml:id="test-1.b.MAT.1.18" type="verse" n="18">
 						    	<interpGrp>
 						    		<interp corresp="#fertilization">
 						    			<certainty locus="value" given="#christianity" degree="1"/>
@@ -304,10 +305,10 @@
 						    	El nacimiento de <rs key="#per1">Jesucristo</rs> fue Así: Su <rs key="#per11">madre</rs>
 								<rs key="#per11">María</rs> estaba desposada con <rs key="#per12">José</rs>; y antes de que se unieran, se Halló que ella Había concebido del <rs key="#per17">Espíritu Santo</rs>.
 							</ab>
-							<ab xml:id="b.MAT.1.19" type="verse" n="19">
+							<ab xml:id="test-1.b.MAT.1.19" type="verse" n="19">
 								<rs key="#per12">José</rs>, su marido, como era justo y no Quería difamarla, se propuso dejarla secretamente.
 							</ab>
-						    <ab xml:id="b.MAT.1.20" type="verse" n="20"><!--sexo: embarazo; -->
+						    <ab xml:id="test-1.b.MAT.1.20" type="verse" n="20"><!--sexo: embarazo; -->
 						    	<interpGrp>
 						    		<interp corresp="#pregnancy">
 						    			<certainty locus="value" given="#christianity" degree="1"/>
@@ -315,104 +316,378 @@
 						    	</interpGrp>
 						    	Mientras él pensaba en esto, he Aquí un <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> se le Apareció en sueños y le dijo: <q who="#org4" type="dream" toWhom="#per12"><rs key="#per12">José</rs>, <rs key="#per12">hijo de <rs key="per35">David</rs></rs>, no temas recibir a <rs key="#per11">María</rs> tu <rs key="#per11">mujer</rs>, porque lo que ha sido engendrado en ella es del <rs key="#per17">Espíritu Santo</rs>.</q>
 							</ab>
-							<ab xml:id="b.MAT.1.21" type="verse" n="21"><!--sexo: parto-->
+							<ab xml:id="test-1.b.MAT.1.21" type="verse" n="21"><!--sexo: parto-->
 								<q who="#org4" type="dream" toWhom="#per12">Ella Dará a luz un <rs key="#per1">hijo</rs>; y Llamarás su nombre <rs key="#per1">Jesús</rs>, porque él Salvará a su pueblo de sus pecados.</q>
 							</ab>
-							<ab xml:id="b.MAT.1.22" type="verse" n="22">
+							<ab xml:id="test-1.b.MAT.1.22" type="verse" n="22">
 								Todo esto Aconteció para que se cumpliese lo que Habló el <rs key="#per14">Señor</rs> por medio del <rs key="#org8">profeta</rs>, diciendo:
 							</ab>
-							<ab xml:id="b.MAT.1.23" type="verse" n="23"><!--sexo: embarazo; parto; virgindad-->
+							<ab xml:id="test-1.b.MAT.1.23" type="verse" n="23"><!--sexo: embarazo; parto; virgindad-->
 								<q who="#org8" type="written">He Aquí, la <rs key="#per11">virgen</rs> Concebirá y Dará a luz un <rs key="#per1">hijo</rs>, y Llamarán su nombre <rs key="#per1">Emanuel</rs>, que traducido quiere decir: <rs key="#per14">Dios</rs> con nosotros.</q>
 							</ab>
-							<ab xml:id="b.MAT.1.24" type="verse" n="24">
+							<ab xml:id="test-1.b.MAT.1.24" type="verse" n="24">
 								Cuando <rs key="#per12">José</rs> despertó del sueño, hizo como el <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> le Había mandado, y Recibió a su <rs key="#per11">mujer</rs>.
 							</ab>
-							<ab xml:id="b.MAT.1.25" type="verse" n="25"><!--sexo: coito; parto-->
+							<ab xml:id="test-1.b.MAT.1.25" type="verse" n="25"><!--sexo: coito; parto-->
 								Pero no la Conoció hasta que ella dio a luz un <rs key="#per1">hijo</rs>, y Llamó su nombre <rs key="#per1">Jesús</rs>.
 							</ab>
 						</div>
 					</div>
-				    <div xml:id="b.MAT.2" type="chapter" n="2"  cert="high">
+				    <div xml:id="test-1.b.MAT.2" type="chapter" n="2"  cert="high">
 						<div type="pericope">
 							<head type="pericope">La visita de los sabios de Oriente</head>
 
-							<ab xml:id="b.MAT.2.1" type="verse" n="1"><!--sexo: parto-->
+							<ab xml:id="test-1.b.MAT.2.1" type="verse" n="1"><!--sexo: parto-->
 								<rs key="#per1">Jesús</rs> Nació en <rs key="#pla1">Belén</rs> de <rs key="#pla2">Judea</rs>, en <rs key="#tim8">Días del rey <rs key="#per10">Herodes</rs></rs>. Y he aquí unos <rs key="#org10">magos</rs> vinieron del <rs key="#pla39">oriente</rs> a <rs key="#pla3">Jerusalén</rs>, </ab>
-							<ab xml:id="b.MAT.2.2" type="verse" n="2">
+							<ab xml:id="test-1.b.MAT.2.2" type="verse" n="2">
 								preguntando: <q type="oral" who="#org10" toWhom="#per10">¿Dónde Está el <rs key="#per1">rey de los <rs key="#org13">Judíos</rs></rs>, que ha nacido? Porque hemos visto su estrella en el oriente y hemos venido para adorarle.</q>
 							</ab>
-							<ab xml:id="b.MAT.2.3" type="verse" n="3">
+							<ab xml:id="test-1.b.MAT.2.3" type="verse" n="3">
 								Cuando el rey <rs key="#per10">Herodes</rs> Oyó esto, se Turbó, y toda <rs key="#pla3">Jerusalén</rs> con él.
 							</ab>
-							<ab xml:id="b.MAT.2.4" type="verse" n="4">
+							<ab xml:id="test-1.b.MAT.2.4" type="verse" n="4">
 								Y habiendo convocado a todos los <rs key="#org12">principales sacerdotes</rs> y a los <rs key="#org5">escribas del <rs key="org39">pueblo</rs></rs>, les Preguntó Dónde Había de nacer el <rs key="#per1">Cristo</rs>.
 							</ab>
-							<ab xml:id="b.MAT.2.5" type="verse" n="5">
+							<ab xml:id="test-1.b.MAT.2.5" type="verse" n="5">
 							Ellos le dijeron: <q type="oral" who="#org5" toWhom="#per10">En <rs key="#pla1">Belén</rs> de <rs key="#pla2">Judea</rs>, porque Así Está escrito por el <rs key="#org8">profeta</rs>:</q>
 							</ab>
-							<ab xml:id="b.MAT.2.6" type="verse" n="6"><!--sexo: nacimiento-->
+							<ab xml:id="test-1.b.MAT.2.6" type="verse" n="6"><!--sexo: nacimiento-->
 							    <q  type="oral" who="#org5" toWhom="#per10"><q who="#org8" type="written"  toWhom="#pla1">Y Tú, <rs key="#pla1">Belén</rs>, en la <rs key="#pla2">tierra de <rs key="#pla2">Judá</rs></rs>, de ninguna manera eres la <rs key="#pla1">Más pequeña entre los gobernadores de <rs key="#pla2">Judá</rs></rs>; porque de ti Saldrá un <rs key="#per1">gobernante</rs> que Pastoreará a mi <rs key="org70">pueblo</rs> <rs key="#org70">Israel</rs>.</q></q>
 							</ab>
-							<ab xml:id="b.MAT.2.7" type="verse" n="7">
+							<ab xml:id="test-1.b.MAT.2.7" type="verse" n="7">
 						Entonces <rs key="#per10">Herodes</rs> Llamó en secreto a los <rs key="#org10">magos</rs> e Indagó de ellos el tiempo de la Aparición de la estrella.
 							</ab>
-							<ab xml:id="b.MAT.2.8" type="verse" n="8">
+							<ab xml:id="test-1.b.MAT.2.8" type="verse" n="8">
 						Y Enviándolos a <rs key="#pla1">Belén</rs>, les dijo: <q type="oral" who="#per10" toWhom="#org10">Id y averiguad con cuidado acerca del <rs key="#per1">niño</rs>. Tan pronto le halléis, hacédmelo saber, para que yo también vaya y le adore.</q>
 							</ab>
-							<ab xml:id="b.MAT.2.9" type="verse" n="9">
+							<ab xml:id="test-1.b.MAT.2.9" type="verse" n="9">
 						Ellos, después de Oír al <rs key="#per10">rey</rs>, se fueron. Y he Aquí la estrella que Habían visto en el <rs key="#pla39">oriente</rs> iba delante de ellos, hasta que Llegó y se detuvo sobre donde estaba el <rs key="#per1">niño</rs>.
 							</ab>
-							<ab xml:id="b.MAT.2.10" type="verse" n="10">
+							<ab xml:id="test-1.b.MAT.2.10" type="verse" n="10">
 						Al ver la estrella, se regocijaron con gran Alegría.
 							</ab>
-							<ab xml:id="b.MAT.2.11" type="verse" n="11">
+							<ab xml:id="test-1.b.MAT.2.11" type="verse" n="11">
 						Cuando entraron en la casa, vieron al <rs key="#per1">niño</rs> con <rs key="#per11">María</rs> su <rs key="#per11">madre</rs>, y Postrándose le adoraron. Entonces abrieron sus tesoros y le ofrecieron presentes de oro, incienso y mirra.
 							</ab>
-							<ab xml:id="b.MAT.2.12" type="verse" n="12">
+							<ab xml:id="test-1.b.MAT.2.12" type="verse" n="12">
 						Pero advertidos por Revelación en sueños que no volviesen a <rs key="#per10">Herodes</rs>, regresaron a su <rs key="#pla39">País</rs> por otro camino.
 							</ab>
 						</div>
 						<div type="pericope">
 							<head type="pericope">La huida a Egipto</head>
-							<ab xml:id="b.MAT.2.13" type="verse" n="13">
+							<ab xml:id="test-1.b.MAT.2.13" type="verse" n="13">
 						Después que ellos partieron, he Aquí un <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> Apareció en sueños a <rs key="#per12">José</rs>, diciendo: <q type="dream" who="#org4" toWhom="#per12">Levántate; toma al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y huye a <rs key="#pla5">Egipto</rs>. Quédate Allá hasta que yo te diga, porque <rs key="#per10">Herodes</rs> va a buscar al <rs key="#per1">niño</rs> para matarlo.</q>
 							</ab>
-							<ab xml:id="b.MAT.2.14" type="verse" n="14">
+							<ab xml:id="test-1.b.MAT.2.14" type="verse" n="14">
 						Entonces <rs key="#per12">José</rs> se Levantó, Tomó de noche al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y se fue a <rs key="#pla5">Egipto</rs>.
 							</ab>
-							<ab xml:id="b.MAT.2.15" type="verse" n="15">
+							<ab xml:id="test-1.b.MAT.2.15" type="verse" n="15">
 							    Y estuvo Allí hasta la muerte de <rs key="#per10">Herodes</rs>, para que se cumpliese lo que Habló el <rs key="#per14">Señor</rs> por medio del <rs key="#org8">profeta</rs>, diciendo: <q who="#org8" type="written"><q who="#per14" toWhom="org8" type="oral">De <rs key="#pla5">Egipto</rs> llamé a mi <rs key="#per1">hijo</rs>.</q></q>
 							</ab>
 						</div>
 						<div type="pericope">
 							<head type="pericope">Matanza de los niños</head>
-							<ab xml:id="b.MAT.2.16" type="verse" n="16">
+							<ab xml:id="test-1.b.MAT.2.16" type="verse" n="16">
 						Entonces <rs key="#per10">Herodes</rs>, al verse burlado por los magos, se Enojó sobremanera y Mandó matar a todos los <rs key="org183">niños varones</rs> en <rs key="#pla1">Belén</rs> y en todos sus alrededores, de dos años de edad para abajo, conforme al tiempo que Había averiguado de los <rs key="#org10">magos</rs>.
 							</ab>
-							<ab xml:id="b.MAT.2.17" type="verse" n="17">
+							<ab xml:id="test-1.b.MAT.2.17" type="verse" n="17">
 						Entonces se Cumplió lo dicho por medio del <rs key="#org8">profeta</rs> <rs key="#per15">Jeremías</rs>, diciendo:
 							</ab>
-							<ab xml:id="b.MAT.2.18" type="verse" n="18">
+							<ab xml:id="test-1.b.MAT.2.18" type="verse" n="18">
 								<q who="#per15" type="written">Voz fue Oída en <rs key="#pla6">Ramá</rs>; grande llanto y Lamentación. <rs key="#per16">Raquel</rs> lloraba por sus hijos, y no Quería ser consolada, porque perecieron.</q>
 							</ab>
 						</div>
 						<div type="pericope">
 							<head type="pericope">El regreso de Egipto</head>
-							<ab xml:id="b.MAT.2.19" type="verse" n="19">
+							<ab xml:id="test-1.b.MAT.2.19" type="verse" n="19">
 						Cuando Había muerto <rs key="#per10">Herodes</rs>, he Aquí un <rs key="#org4">ángel del <rs key="#per14">Señor</rs></rs> Apareció en sueños a <rs key="#per12">José</rs> en <rs key="#pla5">Egipto</rs>,
 							</ab>
-							<ab xml:id="b.MAT.2.20" type="verse" n="20">
+							<ab xml:id="test-1.b.MAT.2.20" type="verse" n="20">
 							diciendo: <q who="#org4" type="dream" toWhom="#per12">Levántate, toma al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y vé a la tierra de <rs key="#pla4">Israel</rs>, porque han muerto los que procuraban quitar la vida al <rs key="#per1">niño</rs>.</q>
 							</ab>
-							<ab xml:id="b.MAT.2.21" type="verse" n="21">
+							<ab xml:id="test-1.b.MAT.2.21" type="verse" n="21">
 							    Entonces él se Levantó, Tomó al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y Entró en la <rs key="#pla4">tierra de <rs key="#pla4">Israel</rs></rs>.
 							</ab>
-							<ab xml:id="b.MAT.2.22" type="verse" n="22">
+							<ab xml:id="test-1.b.MAT.2.22" type="verse" n="22">
 							    Pero, al Oír que <rs key="#per62">Arquelao</rs> reinaba en <rs key="#pla2">Judea</rs> en lugar de su <rs key="#per10">padre</rs> <rs key="#per10">Herodes</rs>, tuvo miedo de ir Allá; y advertido por Revelación en sueños, fue a las regiones de <rs key="#pla7">Galilea</rs>.
 							</ab>
-							<ab xml:id="b.MAT.2.23" type="verse" n="23">
+							<ab xml:id="test-1.b.MAT.2.23" type="verse" n="23">
 							    Habiendo llegado, Habitó en la <rs key="#pla8">ciudad</rs> que se llama <rs key="#pla8">Nazaret</rs>. Así se Cumplió lo dicho por medio de los <rs key="#org8">profetas</rs>, que Había de ser llamado <rs key="#per1">nazareno</rs>.
 							</ab>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div xml:id="test-2">
+					<div xml:id="test-2.b.MAT" type="book">
+						<div xml:id="test-2.b.MAT.1" type="chapter" n="1" cert="high">
+							
+							<div type="pericope">
+								<head type="pericope">Nacimiento de Jesucristo</head>
+								<ab xml:id="test-2.b.MAT.1.18" type="verse" n="18" >
+									El nacimiento de <rs key="#per1">Jesucristo</rs> fue Así: Su <rs key="#per11">madre</rs>
+									<rs key="#per11">María</rs> estaba desposada con <rs key="#per12">José</rs>; y antes de que se unieran, se Halló que ella Había concebido del <rs key="#per17">Espíritu Santo</rs>.
+								</ab>
+								<ab xml:id="test-2.b.MAT.1.19" type="verse" n="19">
+									<rs key="#per12">José</rs>, su marido, como era justo y no Quería difamarla, se propuso dejarla secretamente.
+								</ab>
+								<ab xml:id="test-2.b.MAT.1.20" type="verse" n="20"><!--sexo: embarazo; -->
+									Mientras él pensaba en esto, he Aquí un <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> se le Apareció en sueños y le dijo: <q who="#org4" type="dream" toWhom="#per12"><rs key="#per12">José</rs>, <rs key="#per12">hijo de <rs key="per35">David</rs></rs>, no temas recibir a <rs key="#per11">María</rs> tu <rs key="#per11">mujer</rs>, porque lo que ha sido engendrado en ella es del <rs key="#per17">Espíritu Santo</rs>.</q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.1.21" type="verse" n="21"><!--sexo: parto-->
+									<q who="#org4" type="dream" toWhom="#per12">Ella Dará a luz un <rs key="#per1">hijo</rs>; y Llamarás su nombre <rs key="#per1">Jesús</rs>, porque él Salvará a su pueblo de sus pecados.</q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.1.22" type="verse" n="22">
+									Todo esto Aconteció para que se cumpliese lo que Habló el <rs key="#per14">Señor</rs> por medio del <rs key="#org8">profeta</rs>, diciendo:
+								</ab>
+								<ab xml:id="test-2.b.MAT.1.23" type="verse" n="23"><!--sexo: embarazo; parto; virgindad-->
+									<q who="#org8" type="written">He Aquí, la <rs key="#per11">virgen</rs> Concebirá y Dará a luz un <rs key="#per1">hijo</rs>, y Llamarán su nombre <rs key="#per1">Emanuel</rs>, que traducido quiere decir: <rs key="#per14">Dios</rs> con nosotros.</q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.1.24" type="verse" n="24">
+									Cuando <rs key="#per12">José</rs> despertó del sueño, hizo como el <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> le Había mandado, y Recibió a su <rs key="#per11">mujer</rs>.
+								</ab>
+								<ab xml:id="test-2.b.MAT.1.25" type="verse" n="25"><!--sexo: coito; parto-->
+									Pero no la Conoció hasta que ella dio a luz un <rs key="#per1">hijo</rs>, y Llamó su nombre <rs key="#per1">Jesús</rs>.
+								</ab>
+							</div>
+						</div>
+						<div xml:id="test-2.b.MAT.2" type="chapter" n="2"  cert="high">
+							<div type="pericope">
+								<head type="pericope">La visita de los sabios de Oriente</head>
+								
+								<ab xml:id="test-2.b.MAT.2.1" type="verse" n="1"><!--sexo: parto-->
+									<rs key="#per1">Jesús</rs> Nació en <rs key="#pla1">Belén</rs> de <rs key="#pla2">Judea</rs>, en <rs key="#tim8">Días del rey <rs key="#per10">Herodes</rs></rs>. Y he aquí unos <rs key="#org10">magos</rs> vinieron del <rs key="#pla39">oriente</rs> a <rs key="#pla3">Jerusalén</rs>, </ab>
+								<ab xml:id="test-2.b.MAT.2.2" type="verse" n="2">
+									preguntando: <q type="oral" who="#org10" toWhom="#per10">¿Dónde Está el <rs key="#per1">rey de los <rs key="#org13">Judíos</rs></rs>, que ha nacido? Porque hemos visto su estrella en el oriente y hemos venido para adorarle.</q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.3" type="verse" n="3">
+									Cuando el rey <rs key="#per10">Herodes</rs> Oyó esto, se Turbó, y toda <rs key="#pla3">Jerusalén</rs> con él.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.4" type="verse" n="4">
+									Y habiendo convocado a todos los <rs key="#org12">principales sacerdotes</rs> y a los <rs key="#org5">escribas del <rs key="org39">pueblo</rs></rs>, les Preguntó Dónde Había de nacer el <rs key="#per1">Cristo</rs>.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.5" type="verse" n="5">
+									Ellos le dijeron: <q type="oral" who="#org5" toWhom="#per10">En <rs key="#pla1">Belén</rs> de <rs key="#pla2">Judea</rs>, porque Así Está escrito por el <rs key="#org8">profeta</rs>:</q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.6" type="verse" n="6"><!--sexo: nacimiento-->
+									<q  type="oral" who="#org5" toWhom="#per10"><q who="#org8" type="written"  toWhom="#pla1">Y Tú, <rs key="#pla1">Belén</rs>, en la <rs key="#pla2">tierra de <rs key="#pla2">Judá</rs></rs>, de ninguna manera eres la <rs key="#pla1">Más pequeña entre los gobernadores de <rs key="#pla2">Judá</rs></rs>; porque de ti Saldrá un <rs key="#per1">gobernante</rs> que Pastoreará a mi <rs key="org70">pueblo</rs> <rs key="#org70">Israel</rs>.</q></q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.7" type="verse" n="7">
+									Entonces <rs key="#per10">Herodes</rs> Llamó en secreto a los <rs key="#org10">magos</rs> e Indagó de ellos el tiempo de la Aparición de la estrella.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.8" type="verse" n="8">
+									Y Enviándolos a <rs key="#pla1">Belén</rs>, les dijo: <q type="oral" who="#per10" toWhom="#org10">Id y averiguad con cuidado acerca del <rs key="#per1">niño</rs>. Tan pronto le halléis, hacédmelo saber, para que yo también vaya y le adore.</q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.9" type="verse" n="9">
+									Ellos, después de Oír al <rs key="#per10">rey</rs>, se fueron. Y he Aquí la estrella que Habían visto en el <rs key="#pla39">oriente</rs> iba delante de ellos, hasta que Llegó y se detuvo sobre donde estaba el <rs key="#per1">niño</rs>.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.10" type="verse" n="10">
+									Al ver la estrella, se regocijaron con gran Alegría.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.11" type="verse" n="11">
+									Cuando entraron en la casa, vieron al <rs key="#per1">niño</rs> con <rs key="#per11">María</rs> su <rs key="#per11">madre</rs>, y Postrándose le adoraron. Entonces abrieron sus tesoros y le ofrecieron presentes de oro, incienso y mirra.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.12" type="verse" n="12">
+									Pero advertidos por Revelación en sueños que no volviesen a <rs key="#per10">Herodes</rs>, regresaron a su <rs key="#pla39">País</rs> por otro camino.
+								</ab>
+							</div>
+							<div type="pericope">
+								<head type="pericope">La huida a Egipto</head>
+								<ab xml:id="test-2.b.MAT.2.13" type="verse" n="13">
+									Después que ellos partieron, he Aquí un <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> Apareció en sueños a <rs key="#per12">José</rs>, diciendo: <q type="dream" who="#org4" toWhom="#per12">Levántate; toma al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y huye a <rs key="#pla5">Egipto</rs>. Quédate Allá hasta que yo te diga, porque <rs key="#per10">Herodes</rs> va a buscar al <rs key="#per1">niño</rs> para matarlo.</q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.14" type="verse" n="14">
+									Entonces <rs key="#per12">José</rs> se Levantó, Tomó de noche al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y se fue a <rs key="#pla5">Egipto</rs>.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.15" type="verse" n="15">
+									Y estuvo Allí hasta la muerte de <rs key="#per10">Herodes</rs>, para que se cumpliese lo que Habló el <rs key="#per14">Señor</rs> por medio del <rs key="#org8">profeta</rs>, diciendo: <q who="#org8" type="written"><q who="#per14" toWhom="org8" type="oral">De <rs key="#pla5">Egipto</rs> llamé a mi <rs key="#per1">hijo</rs>.</q></q>
+								</ab>
+							</div>
+							<div type="pericope">
+								<head type="pericope">Matanza de los niños</head>
+								<ab xml:id="test-2.b.MAT.2.16" type="verse" n="16">
+									Entonces <rs key="#per10">Herodes</rs>, al verse burlado por los magos, se Enojó sobremanera y Mandó matar a todos los <rs key="org183">niños varones</rs> en <rs key="#pla1">Belén</rs> y en todos sus alrededores, de dos años de edad para abajo, conforme al tiempo que Había averiguado de los <rs key="#org10">magos</rs>.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.17" type="verse" n="17">
+									Entonces se Cumplió lo dicho por medio del <rs key="#org8">profeta</rs> <rs key="#per15">Jeremías</rs>, diciendo:
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.18" type="verse" n="18">
+									<q who="#per15" type="written">Voz fue Oída en <rs key="#pla6">Ramá</rs>; grande llanto y Lamentación. <rs key="#per16">Raquel</rs> lloraba por sus hijos, y no Quería ser consolada, porque perecieron.</q>
+								</ab>
+							</div>
+							<div type="pericope">
+								<head type="pericope">El regreso de Egipto</head>
+								<ab xml:id="test-2.b.MAT.2.19" type="verse" n="19">
+									Cuando Había muerto <rs key="#per10">Herodes</rs>, he Aquí un <rs key="#org4">ángel del <rs key="#per14">Señor</rs></rs> Apareció en sueños a <rs key="#per12">José</rs> en <rs key="#pla5">Egipto</rs>,
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.20" type="verse" n="20">
+									diciendo: <q who="#org4" type="dream" toWhom="#per12">Levántate, toma al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y vé a la tierra de <rs key="#pla4">Israel</rs>, porque han muerto los que procuraban quitar la vida al <rs key="#per1">niño</rs>.</q>
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.21" type="verse" n="21">
+									Entonces él se Levantó, Tomó al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y Entró en la <rs key="#pla4">tierra de <rs key="#pla4">Israel</rs></rs>.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.22" type="verse" n="22">
+									Pero, al Oír que <rs key="#per62">Arquelao</rs> reinaba en <rs key="#pla2">Judea</rs> en lugar de su <rs key="#per10">padre</rs> <rs key="#per10">Herodes</rs>, tuvo miedo de ir Allá; y advertido por Revelación en sueños, fue a las regiones de <rs key="#pla7">Galilea</rs>.
+								</ab>
+								<ab xml:id="test-2.b.MAT.2.23" type="verse" n="23">
+									Habiendo llegado, Habitó en la <rs key="#pla8">ciudad</rs> que se llama <rs key="#pla8">Nazaret</rs>. Así se Cumplió lo dicho por medio de los <rs key="#org8">profetas</rs>, que Había de ser llamado <rs key="#per1">nazareno</rs>.
+								</ab>
+							</div>
+						</div>
+					</div>
+					<div xml:id="test-2.annotations">
+						<interpGrp inst="test-2.b.MAT.1.18">
+							<interp corresp="#fertilization">
+								<certainty locus="value" given="#christianity" degree="1"/>
+							</interp>
+						</interpGrp>
+						<interpGrp inst="test-2.b.MAT.1.18">
+							<interp corresp="#sex-before-marriage">
+								<certainty locus="value" given="#protestantism" degree="0.6"/>
+							</interp>
+							<interp corresp="#celibacy">
+								<certainty locus="value" given="#catholicism" degree="0.6"/>
+							</interp>
+						</interpGrp>
+						<interpGrp inst="test-2.b.MAT.1.20">
+							<interp corresp="#pregnancy">
+								<certainty locus="value" given="#christianity" degree="1"/>
+							</interp>
+						</interpGrp>
+					</div>
+				</div>
+				<div xml:id="test-3">
+					<div xml:id="test-3.b.MAT" type="book">
+						<div xml:id="test-3.b.MAT.1" type="chapter" n="1" cert="high">
+							<div type="pericope">
+								<head type="pericope">Nacimiento de Jesucristo</head>
+								<ab xml:id="test-3.b.MAT.1.18" type="verse" n="18" ana="#b.MAT.1.18.ana">
+									<interpGrp>
+										<interp corresp="#fertilization">
+											<certainty locus="value" given="#christianity" degree="1"/>
+										</interp>
+									</interpGrp>
+									<interpGrp>
+										<interp corresp="#sex-before-marriage">
+											<certainty locus="value" given="#protestantism" degree="0.6"/>
+										</interp>
+										<interp corresp="#celibacy">
+											<certainty locus="value" given="#catholicism" degree="0.6"/>
+										</interp>
+									</interpGrp>
+									El nacimiento de <rs key="#per1">Jesucristo</rs> fue Así: Su <rs key="#per11">madre</rs>
+									<rs key="#per11">María</rs> estaba desposada con <rs key="#per12">José</rs>; y antes de que se unieran, se Halló que ella Había concebido del <rs key="#per17">Espíritu Santo</rs>.
+								</ab>
+								<ab xml:id="test-3.b.MAT.1.19" type="verse" n="19">
+									<rs key="#per12">José</rs>, su marido, como era justo y no Quería difamarla, se propuso dejarla secretamente.
+								</ab>
+								<ab xml:id="test-3.b.MAT.1.20" type="verse" n="20"><!--sexo: embarazo; -->
+									<interpGrp>
+										<interp corresp="#pregnancy">
+											<certainty locus="value" given="#christianity" degree="1"/>
+										</interp>
+									</interpGrp>
+									Mientras él pensaba en esto, he Aquí un <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> se le Apareció en sueños y le dijo: <q who="#org4" type="dream" toWhom="#per12"><rs key="#per12">José</rs>, <rs key="#per12">hijo de <rs key="per35">David</rs></rs>, no temas recibir a <rs key="#per11">María</rs> tu <rs key="#per11">mujer</rs>, porque lo que ha sido engendrado en ella es del <rs key="#per17">Espíritu Santo</rs>.</q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.1.21" type="verse" n="21"><!--sexo: parto-->
+									<q who="#org4" type="dream" toWhom="#per12">Ella Dará a luz un <rs key="#per1">hijo</rs>; y Llamarás su nombre <rs key="#per1">Jesús</rs>, porque él Salvará a su pueblo de sus pecados.</q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.1.22" type="verse" n="22">
+									Todo esto Aconteció para que se cumpliese lo que Habló el <rs key="#per14">Señor</rs> por medio del <rs key="#org8">profeta</rs>, diciendo:
+								</ab>
+								<ab xml:id="test-3.b.MAT.1.23" type="verse" n="23"><!--sexo: embarazo; parto; virgindad-->
+									<q who="#org8" type="written">He Aquí, la <rs key="#per11">virgen</rs> Concebirá y Dará a luz un <rs key="#per1">hijo</rs>, y Llamarán su nombre <rs key="#per1">Emanuel</rs>, que traducido quiere decir: <rs key="#per14">Dios</rs> con nosotros.</q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.1.24" type="verse" n="24">
+									Cuando <rs key="#per12">José</rs> despertó del sueño, hizo como el <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> le Había mandado, y Recibió a su <rs key="#per11">mujer</rs>.
+								</ab>
+								<ab xml:id="test-3.b.MAT.1.25" type="verse" n="25"><!--sexo: coito; parto-->
+									Pero no la Conoció hasta que ella dio a luz un <rs key="#per1">hijo</rs>, y Llamó su nombre <rs key="#per1">Jesús</rs>.
+								</ab>
+							</div>
+						</div>
+						<div xml:id="test-3.b.MAT.2" type="chapter" n="2"  cert="high">
+							<div type="pericope">
+								<head type="pericope">La visita de los sabios de Oriente</head>
+								
+								<ab xml:id="test-3.b.MAT.2.1" type="verse" n="1"><!--sexo: parto-->
+									<rs key="#per1">Jesús</rs> Nació en <rs key="#pla1">Belén</rs> de <rs key="#pla2">Judea</rs>, en <rs key="#tim8">Días del rey <rs key="#per10">Herodes</rs></rs>. Y he aquí unos <rs key="#org10">magos</rs> vinieron del <rs key="#pla39">oriente</rs> a <rs key="#pla3">Jerusalén</rs>, </ab>
+								<ab xml:id="test-3.b.MAT.2.2" type="verse" n="2">
+									preguntando: <q type="oral" who="#org10" toWhom="#per10">¿Dónde Está el <rs key="#per1">rey de los <rs key="#org13">Judíos</rs></rs>, que ha nacido? Porque hemos visto su estrella en el oriente y hemos venido para adorarle.</q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.3" type="verse" n="3">
+									Cuando el rey <rs key="#per10">Herodes</rs> Oyó esto, se Turbó, y toda <rs key="#pla3">Jerusalén</rs> con él.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.4" type="verse" n="4">
+									Y habiendo convocado a todos los <rs key="#org12">principales sacerdotes</rs> y a los <rs key="#org5">escribas del <rs key="org39">pueblo</rs></rs>, les Preguntó Dónde Había de nacer el <rs key="#per1">Cristo</rs>.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.5" type="verse" n="5">
+									Ellos le dijeron: <q type="oral" who="#org5" toWhom="#per10">En <rs key="#pla1">Belén</rs> de <rs key="#pla2">Judea</rs>, porque Así Está escrito por el <rs key="#org8">profeta</rs>:</q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.6" type="verse" n="6"><!--sexo: nacimiento-->
+									<q  type="oral" who="#org5" toWhom="#per10"><q who="#org8" type="written"  toWhom="#pla1">Y Tú, <rs key="#pla1">Belén</rs>, en la <rs key="#pla2">tierra de <rs key="#pla2">Judá</rs></rs>, de ninguna manera eres la <rs key="#pla1">Más pequeña entre los gobernadores de <rs key="#pla2">Judá</rs></rs>; porque de ti Saldrá un <rs key="#per1">gobernante</rs> que Pastoreará a mi <rs key="org70">pueblo</rs> <rs key="#org70">Israel</rs>.</q></q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.7" type="verse" n="7">
+									Entonces <rs key="#per10">Herodes</rs> Llamó en secreto a los <rs key="#org10">magos</rs> e Indagó de ellos el tiempo de la Aparición de la estrella.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.8" type="verse" n="8">
+									Y Enviándolos a <rs key="#pla1">Belén</rs>, les dijo: <q type="oral" who="#per10" toWhom="#org10">Id y averiguad con cuidado acerca del <rs key="#per1">niño</rs>. Tan pronto le halléis, hacédmelo saber, para que yo también vaya y le adore.</q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.9" type="verse" n="9">
+									Ellos, después de Oír al <rs key="#per10">rey</rs>, se fueron. Y he Aquí la estrella que Habían visto en el <rs key="#pla39">oriente</rs> iba delante de ellos, hasta que Llegó y se detuvo sobre donde estaba el <rs key="#per1">niño</rs>.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.10" type="verse" n="10">
+									Al ver la estrella, se regocijaron con gran Alegría.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.11" type="verse" n="11">
+									Cuando entraron en la casa, vieron al <rs key="#per1">niño</rs> con <rs key="#per11">María</rs> su <rs key="#per11">madre</rs>, y Postrándose le adoraron. Entonces abrieron sus tesoros y le ofrecieron presentes de oro, incienso y mirra.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.12" type="verse" n="12">
+									Pero advertidos por Revelación en sueños que no volviesen a <rs key="#per10">Herodes</rs>, regresaron a su <rs key="#pla39">País</rs> por otro camino.
+								</ab>
+							</div>
+							<div type="pericope">
+								<head type="pericope">La huida a Egipto</head>
+								<ab xml:id="test-3.b.MAT.2.13" type="verse" n="13">
+									Después que ellos partieron, he Aquí un <rs key="#org4">ángel</rs> del <rs key="#per14">Señor</rs> Apareció en sueños a <rs key="#per12">José</rs>, diciendo: <q type="dream" who="#org4" toWhom="#per12">Levántate; toma al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y huye a <rs key="#pla5">Egipto</rs>. Quédate Allá hasta que yo te diga, porque <rs key="#per10">Herodes</rs> va a buscar al <rs key="#per1">niño</rs> para matarlo.</q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.14" type="verse" n="14">
+									Entonces <rs key="#per12">José</rs> se Levantó, Tomó de noche al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y se fue a <rs key="#pla5">Egipto</rs>.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.15" type="verse" n="15">
+									Y estuvo Allí hasta la muerte de <rs key="#per10">Herodes</rs>, para que se cumpliese lo que Habló el <rs key="#per14">Señor</rs> por medio del <rs key="#org8">profeta</rs>, diciendo: <q who="#org8" type="written"><q who="#per14" toWhom="org8" type="oral">De <rs key="#pla5">Egipto</rs> llamé a mi <rs key="#per1">hijo</rs>.</q></q>
+								</ab>
+							</div>
+							<div type="pericope">
+								<head type="pericope">Matanza de los niños</head>
+								<ab xml:id="test-3.b.MAT.2.16" type="verse" n="16">
+									Entonces <rs key="#per10">Herodes</rs>, al verse burlado por los magos, se Enojó sobremanera y Mandó matar a todos los <rs key="org183">niños varones</rs> en <rs key="#pla1">Belén</rs> y en todos sus alrededores, de dos años de edad para abajo, conforme al tiempo que Había averiguado de los <rs key="#org10">magos</rs>.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.17" type="verse" n="17">
+									Entonces se Cumplió lo dicho por medio del <rs key="#org8">profeta</rs> <rs key="#per15">Jeremías</rs>, diciendo:
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.18" type="verse" n="18">
+									<q who="#per15" type="written">Voz fue Oída en <rs key="#pla6">Ramá</rs>; grande llanto y Lamentación. <rs key="#per16">Raquel</rs> lloraba por sus hijos, y no Quería ser consolada, porque perecieron.</q>
+								</ab>
+							</div>
+							<div type="pericope">
+								<head type="pericope">El regreso de Egipto</head>
+								<ab xml:id="test-3.b.MAT.2.19" type="verse" n="19">
+									Cuando Había muerto <rs key="#per10">Herodes</rs>, he Aquí un <rs key="#org4">ángel del <rs key="#per14">Señor</rs></rs> Apareció en sueños a <rs key="#per12">José</rs> en <rs key="#pla5">Egipto</rs>,
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.20" type="verse" n="20">
+									diciendo: <q who="#org4" type="dream" toWhom="#per12">Levántate, toma al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y vé a la tierra de <rs key="#pla4">Israel</rs>, porque han muerto los que procuraban quitar la vida al <rs key="#per1">niño</rs>.</q>
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.21" type="verse" n="21">
+									Entonces él se Levantó, Tomó al <rs key="#per1">niño</rs> y a su <rs key="#per11">madre</rs>, y Entró en la <rs key="#pla4">tierra de <rs key="#pla4">Israel</rs></rs>.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.22" type="verse" n="22">
+									Pero, al Oír que <rs key="#per62">Arquelao</rs> reinaba en <rs key="#pla2">Judea</rs> en lugar de su <rs key="#per10">padre</rs> <rs key="#per10">Herodes</rs>, tuvo miedo de ir Allá; y advertido por Revelación en sueños, fue a las regiones de <rs key="#pla7">Galilea</rs>.
+								</ab>
+								<ab xml:id="test-3.b.MAT.2.23" type="verse" n="23">
+									Habiendo llegado, Habitó en la <rs key="#pla8">ciudad</rs> que se llama <rs key="#pla8">Nazaret</rs>. Así se Cumplió lo dicho por medio de los <rs key="#org8">profetas</rs>, que Había de ser llamado <rs key="#per1">nazareno</rs>.
+								</ab>
+							</div>
 						</div>
 					</div>
 				</div>
