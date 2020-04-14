@@ -170,10 +170,14 @@
                             </category>
                          </category>
                       </category>
-                      <category xml:id="states">
+                   </category>
+                      <category xml:id="state">
                          <catDesc>states defined by sexuality</catDesc>
                          <category xml:id="virginity">
                             <catDesc>has not had sex before</catDesc>
+                         </category>
+                         <category xml:id="celibacy">
+                            <catDesc>planing not having sex with other people</catDesc>
                          </category>
                          <category xml:id="infertility">
                             <catDesc>cannot get pregnant</catDesc>
@@ -188,7 +192,7 @@
                             <catDesc>is pregnant</catDesc>
                          </category>
                       </category>
-                      <category xml:id="sexual-parts-functions">
+                      <category xml:id="parts-functions">
                          <catDesc>sexual parts and functions</catDesc>
                          <category xml:id="female-genitalia">
                             <catDesc>female genitals (vagina and vulva)</catDesc>
@@ -211,14 +215,17 @@
                          <category xml:id="semen">
                             <catDesc>semen</catDesc>
                          </category>
-                         <category xml:id="menstruation">
-                            <catDesc>menstruation</catDesc>
-                         </category>
                       </category>
-                      <category xml:id="sexual-object">
+                 <category xml:id="disease">
+                    <catDesc>corporal and sexual diseases</catDesc>
+                    <category xml:id="menstrual-disorder">
+                       <catDesc>female genitals (vagina and vulva)</catDesc>
+                    </category>
+                 </category>
+                 <category xml:id="object">
                          <catDesc>sexual object</catDesc>
                       </category>
-                      <category xml:id="sexual-groups">
+                      <category xml:id="groups">
                          <catDesc>groups defined by their sexuality</catDesc>
                          <category xml:id="heterosexuals">
                             <catDesc>heterosexuals</catDesc>
@@ -245,7 +252,6 @@
                             <catDesc>people who work in religious instituion and who offer sex as part of religious rituals</catDesc>
                          </category>
                       </category>
-                   </category>
            </taxonomy>
         </classDecl>
      </encodingDesc>
