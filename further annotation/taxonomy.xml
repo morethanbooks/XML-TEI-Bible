@@ -38,19 +38,10 @@
                       <category xml:id="wedding">
                          <catDesc>wedding</catDesc>
                       </category>
-                      <category xml:id="birth">
-                         <catDesc>birth</catDesc>
-                      </category>
-                      <category xml:id="misscarriage">
-                         <catDesc>misscarriage</catDesc>
-                      </category>
-                      <category xml:id="fertilization">
-                         <catDesc>fertilization</catDesc>
-                      </category>
                       <category xml:id="sexual-act">
                          <catDesc>sexual-act</catDesc>
-                      </category>
-                      <category xml:id="sections-sexual-act">
+                      
+                      <category xml:id="sexual-act-section">
                          <catDesc>section of a sexual or intimate encounter</catDesc>
                          <category xml:id="erotic-time">
                             <catDesc>erotic time between several people (foreplay)</catDesc>
@@ -67,7 +58,8 @@
                          <category xml:id="time-after-sex">
                             <catDesc>time between several people after having sex</catDesc>
                          </category>
-                      <category xml:id="type-sexual-act">
+                      </category>
+                      <category xml:id="sexual-act-type">
                            <catDesc>types of sexual acts</catDesc>
                            <category xml:id="coitus">
                               <catDesc>vaginal penetrative sexual act (coitus)</catDesc>
@@ -192,8 +184,10 @@
                             <catDesc>is pregnant</catDesc>
                          </category>
                       </category>
-                      <category xml:id="parts-functions">
-                         <catDesc>sexual parts and functions</catDesc>
+                     <category xml:id="body">
+                       <catDesc>vocabulary related to the body</catDesc>
+                      <category xml:id="body-part">
+                         <catDesc>sexual parts</catDesc>
                          <category xml:id="female-genitalia">
                             <catDesc>female genitals (vagina and vulva)</catDesc>
                          </category>
@@ -216,6 +210,25 @@
                             <catDesc>semen</catDesc>
                          </category>
                       </category>
+                         <category xml:id="body-function">
+                            <catDesc>body functions</catDesc>
+                            <category xml:id="birth">
+                               <catDesc>birth</catDesc>
+                            </category>
+                            <category xml:id="fertilization">
+                               <catDesc>fertilization</catDesc>
+                            </category>
+                            <category xml:id="misscarriage">
+                               <catDesc>misscarriage</catDesc>
+                            </category>
+                            <category xml:id="erection">
+                               <catDesc>erection</catDesc>
+                            </category>
+                            <category xml:id="menstruation">
+                               <catDesc>menstruation</catDesc>
+                            </category>
+                         </category>
+                     </category>
                  <category xml:id="disease">
                     <catDesc>corporal and sexual diseases</catDesc>
                     <category xml:id="menstrual-disorder">
@@ -225,7 +238,7 @@
                  <category xml:id="object">
                          <catDesc>sexual object</catDesc>
                       </category>
-                      <category xml:id="groups">
+                      <category xml:id="group">
                          <catDesc>groups defined by their sexuality</catDesc>
                          <category xml:id="heterosexuals">
                             <catDesc>heterosexuals</catDesc>
@@ -248,7 +261,7 @@
                          <category xml:id="male-prostitutes">
                             <catDesc>men who offer sex for money or goods</catDesc>
                          </category>
-                         <category xml:id="sexual-priest">
+                         <category xml:id="sexual-priests">
                             <catDesc>people who work in religious instituion and who offer sex as part of religious rituals</catDesc>
                          </category>
                       </category>
