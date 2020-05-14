@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Taxonomía de Rodríguez González, 2011.</title>
+			</titleStmt>
+			<publicationStmt>
+				<p>Publication information</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Information about the source</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<classDecl>
+				<taxonomy xml:id="theme">
+					<category xml:id="Órganos_sexuales_erógenos">
+						<catDesc>Órganos sexuales / erógenos</catDesc>
+						<category xml:id="órgano_sexual_masculino">
+							<catDesc>a) órgano sexual masculino:</catDesc>
+							<category xml:id="pene_partes_estado_tamaño">
+								<catDesc>-pene (partes, estado tamaño)</catDesc>
+							</category>
+							<category xml:id="testículos">
+								<catDesc>-testículos</catDesc>
+							</category>
+							<category xml:id="pene_y_testículos">
+								<catDesc>-pene y testículos</catDesc>
+							</category>
+							<category xml:id="fluidos_semen">
+								<catDesc>-fluidos: semen</catDesc>
+							</category>
+						</category>
+						<category xml:id="órgano_sexual_femenino">
+							<catDesc>b) órgano sexual femenino</catDesc>
+							<category xml:id="vagina_vulva_pelo">
+								<catDesc>- vagina, vulva (pelo)</catDesc>
+							</category>
+							<category xml:id="clítoris">
+								<catDesc>- clítoris</catDesc>
+							</category>
+							<category xml:id="himen">
+								<catDesc>- himen</catDesc>
+							</category>
+							<category xml:id="otras_partes">
+								<catDesc>- otras partes</catDesc>
+							</category>
+							<category xml:id="fluido_vaginal_menstrual">
+								<catDesc>- fluido vaginal / menstrual</catDesc>
+							</category>
+							<category xml:id="tener_la_menstruación">
+								<catDesc>- tener la menstruación</catDesc>
+							</category>
+						</category>
+						<category xml:id="genitales_masc_y_fem">
+							<catDesc>c) genitales (masc. y fem.)</catDesc>
+						</category>
+					</category>
+					<category xml:id="partes_erógenas">
+						<catDesc>2. Otras partes erógenas</catDesc>
+						<category xml:id="pechos_pezones_mujer_con_pechos_grandes_pequeños">
+							<catDesc>- pechos (pezones, mujer con pechos grandes /
+								pequeños)</catDesc>
+						</category>
+						<category xml:id="culo">
+							<catDesc>- culo</catDesc>
+						</category>
+						<category xml:id="ano">
+							<catDesc>- ano</catDesc>
+						</category>
+						<category xml:id="perineo">
+							<catDesc>- perineo</catDesc>
+						</category>
+					</category>
+
+					<category xml:id="Prácticas_sexuales_eróticas">
+						<catDesc>3. Prácticas sexuales / eróticas</catDesc>
+						<category
+							xml:id="realizar_el_acto_sexual_penetrar_acceder_al_acto_hacer_perder_la_virginidad">
+							<catDesc>- realizar el acto sexual / penetrar (acceder al acto / hacer
+								perder la virginidad)</catDesc>
+						</category>
+						<category xml:id="acto_o_relación_sexual_tipos">
+							<catDesc>- acto o relación sexual (tipos)</catDesc>
+						</category>
+						<category xml:id="coitus_interruptus">
+							<catDesc>- coitus interruptus</catDesc>
+						</category>
+						<category xml:id="sexo_anal_activo_pasivo">
+							<catDesc>- sexo anal (activo, pasivo)</catDesc>
+						</category>
+						<category xml:id="placer_intenso_máximo">
+							<catDesc>- placer intenso / máximo</catDesc>
+						</category>
+						<category xml:id="posturas_sexuales_posturitas">
+							<catDesc>- posturas sexuales / posturitas</catDesc>
+						</category>
+						<category xml:id="observar_el_acto">
+							<catDesc>- observar el acto</catDesc>
+						</category>
+						<category xml:id="escuchar_el_acto">
+							<catDesc>- escuchar el acto</catDesc>
+						</category>
+						<category xml:id="masturbarse_hombre_mujer">
+							<catDesc>- masturbarse (hombre, mujer)</catDesc>
+						</category>
+						<category xml:id="persona_que_se_masturba_que_es_masturbada">
+							<catDesc>- persona (que se masturba, que es masturbada)</catDesc>
+						</category>
+						<category xml:id="masturbación_general_fem_y_masc">
+							<catDesc>- masturbación (general, fem. y masc.)</catDesc>
+						</category>
+						<category xml:id="eyacular">
+							<catDesc>- eyacular</catDesc>
+						</category>
+						<category xml:id="eyaculación">
+							<catDesc>- eyaculación</catDesc>
+						</category>
+						<category xml:id="besar_se">
+							<catDesc>- besar(se)</catDesc>
+						</category>
+						<category xml:id="acariciarse_magrearse">
+							<catDesc>- acariciarse / magrearse</catDesc>
+						</category>
+						<category xml:id="desnudarse">
+							<catDesc>- desnudarse</catDesc>
+						</category>
+						<category xml:id="desnudo">
+							<catDesc>- desnudo</catDesc>
+						</category>
+						<category xml:id="sexo_oral_anal_fem_masc">
+							<catDesc>- sexo oral (anal, fem., masc.)</catDesc>
+						</category>
+						<category xml:id="técnicas_sexuales">
+							<catDesc>- técnicas sexuales</catDesc>
+						</category>
+						<category xml:id="otras_prácticas">
+							<catDesc>- otras prácticas</catDesc>
+						</category>
+						<category xml:id="sadomasoquismo">
+							<catDesc>- sadomasoquismo</catDesc>
+						</category>
+						<category xml:id="masajes">
+							<catDesc>- masajes</catDesc>
+						</category>
+						<category xml:id="juegos_fiestas">
+							<catDesc>- juegos / fiestas</catDesc>
+						</category>
+						<category xml:id="acciones_penadas">
+							<catDesc>- acciones penadas</catDesc>
+						</category>
+					</category>
+
+					<category xml:id="Prostitución">
+						<catDesc>4. Prostitución</catDesc>
+						<category xml:id="practicar_la_prostitución_prostituirse">
+							<catDesc>- practicar la prostitución / prostituirse</catDesc>
+						</category>
+						<category xml:id="prostitución">
+							<catDesc>- prostitución</catDesc>
+						</category>
+						<category xml:id="prostituta">
+							<catDesc>- prostituta</catDesc>
+						</category>
+						<category xml:id="prostituto">
+							<catDesc>- prostituto</catDesc>
+						</category>
+						<category xml:id="cliente_de_prostituta">
+							<catDesc>- cliente (de prostituta)</catDesc>
+						</category>
+						<category xml:id="proxeneta">
+							<catDesc>- proxeneta</catDesc>
+						</category>
+						<category xml:id="dueña_o_regente_de_un_prostíbulo">
+							<catDesc>- dueña o regente de un prostíbulo</catDesc>
+						</category>
+						<category xml:id="servicio_sexual">
+							<catDesc>- servicio sexual</catDesc>
+						</category>
+					</category>
+
+					<category xml:id="Lugares_de_reunión">
+						<catDesc>5. Lugares de reunión</catDesc>
+						<category xml:id="prostíbulo">
+							<catDesc>-prostíbulo</catDesc>
+						</category>
+						<category xml:id="zona_de_prostitución">
+							<catDesc>- zona de prostitución</catDesc>
+						</category>
+						<category
+							xml:id="otros_lugares_locales_de_sexo_de_ligue_etc_comercio_de_objetos_eróticos">
+							<catDesc>- otros lugares / locales (de sexo, de ligue, etc.) (comercio
+								de objetos eróticos)</catDesc>
+						</category>
+						<category xml:id="espectáculos">
+							<catDesc>- espectáculos</catDesc>
+						</category>
+					</category>
+
+					<category xml:id="Objetos">
+						<catDesc>6. Objetos</catDesc>
+						<category xml:id="juguetes_y_artilugios_sexuales">
+							<catDesc>- juguetes y artilugios sexuales</catDesc>
+						</category>
+						<category xml:id="medios_anticonceptivos">
+							<catDesc>- medios anticonceptivos</catDesc>
+						</category>
+						<category xml:id="preservativo_hombre_mujer">
+							<catDesc>- preservativo (hombre, mujer)</catDesc>
+						</category>
+						<category xml:id="vestimenta_bragueta_sujetador_otros">
+							<catDesc>- vestimenta (bragueta, sujetador, otros)</catDesc>
+						</category>
+						<category xml:id="otros">
+							<catDesc>- otros</catDesc>
+						</category>
+					</category>
+
+					<category xml:id="Relaciones_personales_íntimas">
+						<catDesc>7. Relaciones personales (íntimas)</catDesc>
+						<category
+							xml:id="mantener_relaciones_general_vivir_juntos_sin_estar_casados">
+							<catDesc>- mantener relaciones (general, vivir juntos sin estar
+								casados)</catDesc>
+						</category>
+						<category xml:id="relación_no_legalizada_acción_o_estado_persona">
+							<catDesc>- relación no legalizada (acción o estado, persona)</catDesc>
+						</category>
+						<category xml:id="relación_afectiva_sexual">
+							<catDesc>- relación afectiva / sexual</catDesc>
+						</category>
+						<category xml:id="relación_amorosa_superficial_acto_persona">
+							<catDesc>- relación amorosa superficial (acto, persona)</catDesc>
+						</category>
+						<category xml:id="relación_no_convencional">
+							<catDesc>- relación no convencional</catDesc>
+						</category>
+						<category
+							xml:id="relación_o_atracción_con_diferencia_de_edad_con_persona_joven_con_persona_mayor">
+							<catDesc>- relación (o atracción) con diferencia de edad (con persona
+								joven, con persona mayor)</catDesc>
+						</category>
+						<category xml:id="intermediarios">
+							<catDesc>- intermediarios</catDesc>
+						</category>
+						<category
+							xml:id="infidelidad_acto_acción_ser_infiel_persona_practicante_persona_víctima_investigador">
+							<catDesc>- infidelidad (acto, acción ser infiel, persona: practicante,
+								persona: víctima, investigador)</catDesc>
+						</category>
+						<category xml:id="ruptura">
+							<catDesc>- ruptura</catDesc>
+						</category>
+						<category xml:id="acompañamiento_control_de_los_novios">
+							<catDesc>-acompañamiento / control (de los novios)</catDesc>
+						</category>
+						<category xml:id="enamorar_se_estar_enamorado">
+							<catDesc>- enamorar(se) / estar enamorado</catDesc>
+						</category>
+						<category xml:id="enamorado_encaprichado">
+							<catDesc>- enamorado / encaprichado</catDesc>
+						</category>
+						<category xml:id="enamoramiento">
+							<catDesc>- enamoramiento</catDesc>
+						</category>
+						<category xml:id="amor">
+							<catDesc>- amor</catDesc>
+						</category>
+						<category
+							xml:id="excitar_se_tener_deseos_sexuales_hombre_mujer_hombre_y_mujer">
+							<catDesc>- excitar(se) / tener deseos sexuales (hombre, mujer, hombre y
+								mujer)</catDesc>
+						</category>
+						<category xml:id="excitación_deseo_sexual_hombre_mujer_hombre_y_mujer">
+							<catDesc>- excitación / deseo sexual (hombre, mujer, hombre y
+								mujer)</catDesc>
+						</category>
+						<category xml:id="falta_de_deseo_represión_sexual">
+							<catDesc>- falta de deseo / represión sexual</catDesc>
+						</category>
+						<category xml:id="búsqueda_de_relación_galanteo">
+							<catDesc>- búsqueda de relación / galanteo</catDesc>
+						</category>
+					</category>
+					<category xml:id="Cualidades_personales">
+						<catDesc>8. Cualidades personales</catDesc>
+						<category
+							xml:id="persona_atractiva_hombre_chico_mujer_chica_hombre_y_mujer">
+							<catDesc>- persona atractiva (hombre / chico, mujer / chica, hombre y
+								mujer)</catDesc>
+						</category>
+						<category xml:id="tener_atractivo_sexual">
+							<catDesc>- tener atractivo sexual</catDesc>
+						</category>
+						<category xml:id="persona_no_atractiva_hombre_mujer_hombre_y_mujer">
+							<catDesc>- persona no atractiva (hombre, mujer, hombre y
+								mujer)</catDesc>
+						</category>
+						<category
+							xml:id="persona_sexualmente_muy_activa_ardiente_excitada_hombre_o_mujer_mujer">
+							<catDesc>- persona sexualmente muy activa / ardiente/excitada (hombre o
+								mujer, mujer)</catDesc>
+						</category>
+						<category xml:id="persona_sexualmente_no_activa_insatisfecha">
+							<catDesc>- persona sexualmente no activa / insatisfecha</catDesc>
+						</category>
+						<category
+							xml:id="persona_promiscua_seductora_frívola_hombre_mujer_hombre_y_mujer">
+							<catDesc>- persona promiscua / seductora / frívola (hombre, mujer,
+								hombre y mujer)</catDesc>
+						</category>
+						<category xml:id="estereotipos_actitudes_sexuales_ideología">
+							<catDesc>- estereotipos (actitudes sexuales, ideología)</catDesc>
+						</category>
+					</category>
+
+					<category xml:id="Otros_aspectos_de_la_relación_sexual_efectos">
+						<catDesc>9. Otros aspectos de la relación sexual: efectos</catDesc>
+						<category xml:id="embarazar">
+							<catDesc>- embarazar</catDesc>
+						</category>
+						<category xml:id="efectos_estar_quedarse_embarazada">
+							<catDesc>- efectos: (estar/quedarse) embarazada</catDesc>
+						</category>
+						<category xml:id="enfermedad_venérea">
+							<catDesc>- enfermedad venérea</catDesc>
+						</category>
+					</category>
+
+					<category xml:id="Condiciones_u_opciones_sexuales">
+						<catDesc>10. Condiciones u opciones sexuales</catDesc>
+						<category xml:id="heterosexualidad">
+							<catDesc>1. heterosexualidad</catDesc>
+							<category xml:id="heterosexual">
+								<catDesc>- heterosexual</catDesc>
+							</category>
+						</category>
+						<category xml:id="No_heterosexualidad">
+							<catDesc>2. No heterosexualidad</catDesc>
+							<category xml:id="no_heterosexual">
+								<catDesc>- no heterosexual</catDesc>
+							</category>
+							<category xml:id="homosexualidad_masculina_y_general">
+								<catDesc>a. homosexualidad (masculina y general)</catDesc>
+								<category xml:id="homosexual_y_o_afeminado">
+									<catDesc>- homosexual (y/o afeminado)</catDesc>
+								</category>
+								<category xml:id="ser_homosexual">
+									<catDesc>- ser homosexual</catDesc>
+								</category>
+								<category xml:id="tipos">
+									<catDesc>- tipos</catDesc>
+								</category>
+								<category
+									xml:id="rol_sexual_estereotipos_activo_pasivo_activo_pasivo">
+									<catDesc>- rol sexual (estereotipos: activo, pasivo,
+										activo/pasivo)</catDesc>
+								</category>
+								<category xml:id="comportarse_como_homosexual_mariquita">
+									<catDesc>- comportarse como homosexual/ mariquita</catDesc>
+								</category>
+								<category xml:id="convertir_se_en_homosexual">
+									<catDesc>- convertir(se) en homosexual</catDesc>
+								</category>
+								<category xml:id="ocultar_revelar_la_homosexualidad">
+									<catDesc>- ocultar/ revelar la homosexualidad</catDesc>
+								</category>
+								<category xml:id="simpatizante">
+									<catDesc>- simpatizante</catDesc>
+								</category>
+								<category xml:id="afeminamiento_amaneramiento">
+									<catDesc>- afeminamiento / amaneramiento</catDesc>
+								</category>
+								<category xml:id="conjunto_o_colectivo">
+									<catDesc>- conjunto o colectivo</catDesc>
+								</category>
+								<category xml:id="búsqueda_de_relaciones">
+									<catDesc>- búsqueda de relaciones</catDesc>
+								</category>
+								<category xml:id="lugares">
+									<catDesc>- lugares</catDesc>
+								</category>
+								<category xml:id="amiga_de_gays">
+									<catDesc>- amiga de gays</catDesc>
+								</category>
+								<category xml:id="relaciones_afectivas">
+									<catDesc>- relaciones afectivas</catDesc>
+								</category>
+								<category xml:id="códigos">
+									<catDesc>- códigos</catDesc>
+								</category>
+								<category xml:id="símbolos">
+									<catDesc>- símbolos</catDesc>
+								</category>
+								<category xml:id="prácticas_sexuales_eróticas">
+									<catDesc>- prácticas sexuales / eróticas</catDesc>
+								</category>
+							</category>
+
+							<category xml:id="lesbianismo">
+								<catDesc>b. lesbianismo</catDesc>
+								<category xml:id="lesbiana">
+									<catDesc>- lesbiana</catDesc>
+								</category>
+								<category xml:id="tipos2">
+									<catDesc>- tipos</catDesc>
+								</category>
+								<category xml:id="rol_sexual">
+									<catDesc>- rol sexual</catDesc>
+									<category xml:id="a_viril">
+										<catDesc>a. viril</catDesc>
+									</category>
+									<category xml:id="b_femenina">
+										<catDesc>b. femenina</catDesc>
+									</category>
+								</category>
+								<category xml:id="amaneramiento">
+									<catDesc>- amaneramiento</catDesc>
+								</category>
+								<category xml:id="comportarse_como_una_lesbiana">
+									<catDesc>- comportarse como una lesbiana</catDesc>
+								</category>
+								<category xml:id="prácticas_sexuales">
+									<catDesc>- prácticas sexuales</catDesc>
+								</category>
+							</category>
+							<category xml:id="bisexualidad">
+								<catDesc>c. bisexualidad</catDesc>
+								<category xml:id="bisexual">
+									<catDesc>- bisexual</catDesc>
+								</category>
+							</category>
+							<category xml:id="opciones_afines">
+								<catDesc>- opciones afines</catDesc>
+							</category>
+						</category>
+					</category>
+
+					<category xml:id="Otras_categorías_transgénero_o_trans">
+						<catDesc>11. Otras categorías (transgénero o trans)</catDesc>
+						<category xml:id="drag_queen_drag_king">
+							<catDesc>- drag queen, drag king</catDesc>
+						</category>
+						<category xml:id="travestismo">
+							<catDesc>- travestismo</catDesc>
+						</category>
+						<category xml:id="transexualidad">
+							<catDesc>- transexualidad</catDesc>
+						</category>
+					</category>
+				</taxonomy>
+			</classDecl>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>Some text here.</p>
+			<figure>
+				<graphic url="http://www.tei-c.org/logos/TEI-glow.png"/>
+			</figure>
+		</body>
+	</text>
+</TEI>
