@@ -26,7 +26,7 @@
                   <category xml:id="poligamy">
                      <catDesc>poligamic relation (relation between more than two people)</catDesc>
                   </category>
-                  <category xml:id="marital-relation">
+                  <category xml:id="marriage">
                      <catDesc>relation between people that are married</catDesc>
                   </category>
                   <category xml:id="non-marital-relation">
@@ -153,7 +153,7 @@
                         </category>
                         <category xml:id="sex-outside-marriage">
                            <catDesc>sexual act between two people that do not have a stable
-                              relaitonship (they can be married or not)</catDesc>
+                              relationship (they can be married or not). Also called adultery.</catDesc>
                         </category>
                         <category xml:id="sex-outside">
                            <catDesc>sexual act outisde</catDesc>
@@ -327,16 +327,25 @@
                         <catDesc>married</catDesc>
                      </category>
                      <category xml:id="widow-widower">
-                        <catDesc>widow or widow</catDesc>
+                        <catDesc>widow or widower</catDesc>
+                        <category xml:id="widow">
+                           <catDesc>widow</catDesc>
+                        </category>
+                        <category xml:id="widower">
+                           <catDesc>widower</catDesc>
+                        </category>
                      </category>
                   </category>
                   <category xml:id="by-profession">
                      <catDesc>based on orientation</catDesc>
-                     <category xml:id="female-prostitutes">
-                        <catDesc>women who offer sex for money or goods</catDesc>
-                     </category>
-                     <category xml:id="male-prostitutes">
-                        <catDesc>men who offer sex for money or goods</catDesc>
+                     <category xml:id="prostitutes">
+                        <catDesc>women or men who offer sex for money or goods</catDesc>
+                        <category xml:id="female-prostitutes">
+                           <catDesc>women who offer sex for money or goods</catDesc>
+                        </category>
+                        <category xml:id="male-prostitutes">
+                           <catDesc>men who offer sex for money or goods</catDesc>
+                        </category>
                      </category>
                      <category xml:id="sexual-priests">
                         <catDesc>people who work in religious instituion and who offer sex as part
