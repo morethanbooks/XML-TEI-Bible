@@ -42,14 +42,14 @@ def finishing_xml(inputcsv, inputtei, outputtei):
                 print(re.findall(r'(<ab.*?(?: (?:key|corresp|who)(?:="| ))([a-z]+).*?</ab>)', content))
             content = re.sub(r'\n\n+', r'\n', content)
             content = re.sub(r'<(div|head)>', r'<\1 type="pericope">', content)
-            content = re.sub(r'^\t*(<ab.*?>)', r'\t\t\t\t\t\t\1\n\t\t\t\t\t\t\t', content, flags=re.MULTILINE)
+            #content = re.sub(r'^\t*(<ab.*?>)', r'\t\t\t\t\t\t\1\n\t\t\t\t\t\t\t', content, flags=re.MULTILINE)
             content = re.sub(r'^\t*(</div>)', r'\t\t\t\t\t\1', content, flags=re.MULTILINE)
             content = re.sub(r'^\t*(<div .*? type="book">)', r'\t\t\t\1', content, flags=re.MULTILINE)
             content = re.sub(r'^\t*(<div .*? type="chapter".*?>)', r'\t\t\t\t\1', content, flags=re.MULTILINE)
             content = re.sub(r'^\t*(<div type="pericope".*?>)', r'\t\t\t\t\t\1', content, flags=re.MULTILINE)
             content = re.sub(r'^\t*(<head type="pericope">)', r'\t\t\t\t\t\t\1', content, flags=re.MULTILINE)
             
-            content = re.sub(r'(</ab>)', r'\n\t\t\t\t\t\t\1', content,  flags=re.MULTILINE)
+            #content = re.sub(r'(</ab>)', r'\n\t\t\t\t\t\t\1', content,  flags=re.MULTILINE)
             content = re.sub(r'(<div [^>]*? type="chapter" [^>]*?) cert="high">', r'\1>', content)
     
             with open (os.path.join(outputtei, docFormatOut), "w", encoding="utf-8") as fout:
@@ -172,13 +172,12 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
     df["sum"] = df[titles].sum(axis=1)
     df.to_csv(outdir+"referer_refered.csv", sep="\t")
     return df
-"""
+
 finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/1CH.xml",
+    "/home/jose/Dropbox/biblia/tb/sexual-annotation/MAT.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/",
     )
-"""
 #df = get_referers_and_refereds()
 #entities = add_freq_of_entities(do_overwrite=True)
     
