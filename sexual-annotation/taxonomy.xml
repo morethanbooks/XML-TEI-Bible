@@ -27,6 +27,15 @@
                   <category xml:id="marriage">
                      <catDesc>relation between people that are married</catDesc>
                   </category>
+                  <category xml:id="second-marriage-divorce">
+                     <catDesc>relation between people that are married after a divorce of both or one of them</catDesc>
+                  </category>
+                  <category xml:id="second-marriage-widow">
+                     <catDesc>relation between people that are married after a divorce of both or one of them</catDesc>
+                  </category>
+                  <category xml:id="interfaith-marriage">
+                     <catDesc>relation between people that are married and that have different religions</catDesc>
+                  </category>
                   <category xml:id="non-marital-relation">
                      <catDesc>relation between people that are not married</catDesc>
                   </category>
@@ -66,10 +75,15 @@
                      <category xml:id="dance">
                         <catDesc>dance</catDesc>
                      </category>
+                     <category xml:id="abortion">
+                        <catDesc>abortion</catDesc>
+                     </category>                     
+                     <category xml:id="circumcision">
+                        <catDesc>circumcision</catDesc>
+                     </category>                     
                   </category>
                   <category xml:id="sexual-act">
                      <catDesc>sexual-act</catDesc>
-
                      <category xml:id="sexual-act-section">
                         <catDesc>section of a sexual or intimate encounter</catDesc>
                         <category xml:id="erotic-time">
@@ -336,6 +350,9 @@
                            <catDesc>widower</catDesc>
                         </category>
                      </category>
+                     <category xml:id="virgin">
+                        <catDesc>person without sexual experience with other person</catDesc>
+                     </category>
                   </category>
                   <category xml:id="by-profession">
                      <catDesc>based on orientation</catDesc>
@@ -353,14 +370,29 @@
                            of religious rituals</catDesc>
                      </category>
                   </category>
+                  <category xml:id="by-corporal-traits">
+                     <catDesc>based on corporal traites</catDesc>
+                     <category xml:id="circumcised">
+                        <catDesc>men who were circumcised</catDesc>
+                     </category>
+                     <category xml:id="uncircumcised">
+                        <catDesc>men who were not circumcised</catDesc>
+                     </category>
+                  </category>
                </category>
                <category xml:id="valorations">
                   <catDesc>valorations about acts, relations or states</catDesc>
                   <category xml:id="blessed-sexual-aspect">
                      <catDesc>aspects that are observed positively</catDesc>
                   </category>
-                  <category xml:id="condened-sexual-aspect">
+                  <category xml:id="condemned-sexual-aspect">
                      <catDesc>aspects that are condemned</catDesc>
+                  </category>
+                  <category xml:id="recommended-sexual-aspect">
+                     <catDesc>aspects that are recommended</catDesc>
+                  </category>
+                  <category xml:id="problematic-sexual-aspect">
+                     <catDesc>sexual problems</catDesc>
                   </category>
                </category>
             </taxonomy>
