@@ -39,7 +39,8 @@ def finishing_xml(inputcsv, inputtei, outputtei):
 
             if len(re.findall(r'( (key|corresp|who)(="| ))([a-z])', content)) > 0:
                 print("encontrados algunos problemas")
-                print(re.findall(r'(<ab.*?(?: (?:key|corresp|who)(?:="| ))([a-z]+).*?</ab>)', content))
+                print(re.findall(r'((?:(?:key|corresp|who)(?:="| ))(?:[a-z]+).*?)', content))
+                
             content = re.sub(r'\n\n+', r'\n', content)
             content = re.sub(r'<(div|head)>', r'<\1 type="pericope">', content)
             #content = re.sub(r'^\t*(<ab.*?>)', r'\t\t\t\t\t\t\1\n\t\t\t\t\t\t\t', content, flags=re.MULTILINE)
@@ -175,7 +176,7 @@ def get_referers_and_refereds(wdir = "/home/jose/Dropbox/biblia/tb/", bible_file
 
 finishing_xml(
     "/home/jose/Dropbox/biblia/tb/entities.xls",
-    "/home/jose/Dropbox/biblia/tb/sexual-annotation/MAT.xml",
+    "/home/jose/Dropbox/biblia/tb/sexual-annotation/1CO.xml",
     "/home/jose/Dropbox/biblia/tb/programming/python/output/",
     )
 #df = get_referers_and_refereds()

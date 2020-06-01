@@ -27,11 +27,14 @@
                   <category xml:id="marriage">
                      <catDesc>relation between people that are married</catDesc>
                   </category>
-                  <category xml:id="second-marriage-divorce">
-                     <catDesc>relation between people that are married after a divorce of both or one of them</catDesc>
-                  </category>
-                  <category xml:id="second-marriage-widow">
-                     <catDesc>relation between people that are married after a divorce of both or one of them</catDesc>
+                  <category xml:id="second-marriage">
+                     <catDesc>relation between people that were married before</catDesc>
+                     <category xml:id="second-marriage-divorce">
+                        <catDesc>relation between people that are married after a divorce of both or one of them</catDesc>
+                     </category>
+                     <category xml:id="second-marriage-widow">
+                        <catDesc>relation between people that are married after a divorce of both or one of them</catDesc>
+                     </category>
                   </category>
                   <category xml:id="interfaith-marriage">
                      <catDesc>relation between people that are married and that have different religions</catDesc>
