@@ -164,6 +164,13 @@ In the Entities file you find for each of this categories:
 - Gender (female, male or other, been male the default value)
 - normalized names in German and Portuguese (work in progress beeing made by Matthias Ziegler)
 
+# Publication
+Besides the repository in GitHub, the corpus has been published in two different long-time archives:
+
+* https://zenodo.org/record/3873336#.XtcpKcDgo2w
+* https://repository.de.dariah.eu/1.0/dhcrud//21.11113/0000-000C-D90A-5/landing
+
+
 # Previous Work and Inspiration
 
 There different projects that have helped to put together this idea. One incredible resource is http://www.openbible.info/, which have a similar orientation and offer a lot of interesting visualizations and data.
