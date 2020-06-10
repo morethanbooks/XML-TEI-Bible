@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
-<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
-<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
-<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+<?xml-stylesheet type="text/css" href="../styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="../styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="../styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="../styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
@@ -48,7 +48,7 @@
 			<div />
 		</front>
 		<body>
-			<div xml:id="b.REV" type="book" cert="high">
+			<div xml:id="b.REV" type="book">
 				<div xml:id="b.REV.1" type="chapter" n="1" cert="high">
 					<div type="pericope">
 						<ab type="pericope">La revelación de Jesucristo</ab>
@@ -724,26 +724,28 @@
 					<ab xml:id="b.REV.11.19" type="verse" n="19">
 						El <rs key="#pla73">templo de <rs key="#per14">Dios</rs></rs> fue abierto en el <rs key="#pla18">cielo</rs>, y el Arca de su pacto se dejó ver en el <rs key="#pla73">templo</rs>. Hubo relámpagos, voces, truenos, un terremoto y granizo grande.
 					</ab>
+					</div>
 				</div>
-				</div>
-<div xml:id="b.REV.12" type="chapter" n="12">
-<div type="pericope">
-<ab type="pericope">La mujer y el dragón</ab>
-
+				<div xml:id="b.REV.12" type="chapter" n="12" cert="high">
+					<div type="pericope">
+					<ab type="pericope">La mujer y el dragón</ab>
 					<ab xml:id="b.REV.12.1" type="verse" n="1">
 						Apareció en el cielo una gran señal: una <rs key="#org37" cert="low">mujer</rs> vestida del sol, con la luna debajo de sus pies y sobre su cabeza una corona de doce estrellas.
 					</ab>
 					<ab xml:id="b.REV.12.2" type="verse" n="2">
+						<!--sex: pregnancy; birth-->
 						Estaba encinta y gritaba con dolores de parto, en la angustia del alumbramiento.
 					</ab>
 					<ab xml:id="b.REV.12.3" type="verse" n="3">
 						Otra señal también apareció en el cielo: un <rs key="#per20">gran dragón escarlata</rs> que tenía siete cabezas y diez cuernos, y en sus cabezas tenía siete diademas.
 					</ab>
 					<ab xml:id="b.REV.12.4" type="verse" n="4">
+						<!--sex: pregnancy-->
 						Su cola arrastró la tercera parte de las estrellas del cielo y las arrojó sobre la tierra. Y el dragón se paró frente a la <rs key="#org37" cert="low">mujer</rs> que estaba para dar a luz, a fin de devorar a su hijo tan pronto como naciera.
 					</ab>
 					<ab xml:id="b.REV.12.5" type="verse" n="5">
-						Ella dio a luz un hijo varón, que va a regir a todas las naciones con vara de hierro; y su hijo fue arrebatado para <rs key="#per14">Dios</rs> y para su trono.
+						<!--sex: birth-->
+						Ella dio a luz un <rs key="org18" cert="medium">hijo varón</rs>, que va a regir a todas las <rs key="org0">naciones</rs> con vara de hierro; y su hijo fue arrebatado para <rs key="#per14">Dios</rs> y para su trono.
 					</ab>
 					<ab xml:id="b.REV.12.6" type="verse" n="6">
 						La <rs key="#org37" cert="low">mujer</rs> huyó al desierto, donde tenía un lugar preparado por <rs key="#per14">Dios</rs> para ser sustentada allí por mil doscientos sesenta días.
@@ -755,19 +757,20 @@
 						pero no prevalecieron ni se halló ya lugar para ellos en el <rs key="#pla18">cielo</rs>.
 					</ab>
 					<ab xml:id="b.REV.12.9" type="verse" n="9">
-						Y fue lanzado fuera el <rs key="#per20">gran dragón</rs>, la <rs key="#per20">serpiente antigua</rs>, que se llama <rs key="#per20">Diablo</rs> y <rs key="#per20">Satanás</rs>, el cual engaña al mundo entero. Fue arrojado a la tierra y sus <rs key="#org6">ángeles</rs> fueron arrojados con él.
+						Y fue lanzado fuera el <rs key="#per20">gran dragón</rs>, la <rs key="#per20">serpiente antigua</rs>, que se llama <rs key="#per20">Diablo</rs> y <rs key="#per20">Satanás</rs>, el cual engaña al <rs key="org0">mundo entero</rs>. Fue arrojado a la tierra y sus <rs key="#org6">ángeles</rs> fueron arrojados con él.
 					</ab>
 					<ab xml:id="b.REV.12.10" type="verse" n="10">
-						Entonces oí una gran voz en el <rs key="#pla18">cielo</rs>, que decía: <q who="#org4" toWhom="#per25" type="oral">«Ahora ha venido la salvación, el poder y el <rs key="#pla19">reino de nuestro <rs key="#per14">Dios</rs></rs> y la autoridad de su <rs key="#per1">Cristo</rs>, porque ha sido expulsado el <rs key="#per20">acusador de nuestros hermanos</rs>, el que los acusaba delante de nuestro <rs key="#per14">Dios</rs> día y noche.</q>
+						Entonces oí una gran voz en el <rs key="#pla18">cielo</rs>, que decía: <q who="#org4" toWhom="#per25" type="oral">«Ahora ha venido la salvación, el poder y el <rs key="#pla19">reino de nuestro <rs key="#per14">Dios</rs></rs> y la autoridad de su <rs key="#per1">Cristo</rs>, porque ha sido expulsado el <rs key="#per20">acusador de nuestros <rs key="org18" cert="medium">hermanos</rs></rs>, el que los acusaba delante de nuestro <rs key="#per14">Dios</rs> día y noche.</q>
 					</ab>
 					<ab xml:id="b.REV.12.11" type="verse" n="11">
 						<q who="#org4" toWhom="#per25" type="oral">Ellos lo han vencido por medio de la sangre del <rs key="#per1">Cordero</rs> y de la palabra del testimonio de ellos, que menospreciaron sus vidas hasta la muerte.</q>
 					</ab>
 					<ab xml:id="b.REV.12.12" type="verse" n="12">
-						<q who="#org4" toWhom="#per25" type="oral">Por lo cual alegraos, <rs key="#pla18">cielos</rs>, y los <rs key="#org4">que moráis en ellos</rs>. ¡Ay de los moradores de la tierra y del mar!, porque el <rs key="#per20">diablo</rs> ha descendido a vosotros con gran ira, sabiendo que tiene poco tiempo»</q>.
+						<q who="#org4" toWhom="#per25" type="oral">Por lo cual alegraos, <rs key="#pla18">cielos</rs>, y los que moráis en ellos. ¡Ay de los <rs key="org0">moradores de la tierra y del mar</rs>!, porque el <rs key="#per20">diablo</rs> ha descendido a vosotros con gran ira, sabiendo que tiene poco tiempo»</q>.
 					</ab>
 					<ab xml:id="b.REV.12.13" type="verse" n="13">
-						Cuando el <rs key="#per20">dragón</rs> vio que había sido arrojado a la tierra, persiguió a la <rs key="#org37" cert="low">mujer</rs> que había dado a luz al hijo varón.
+						<!--sex: birth-->						
+						Cuando el <rs key="#per20">dragón</rs> vio que había sido arrojado a la tierra, persiguió a la <rs key="#org37" cert="low">mujer</rs> que había dado a luz al <rs key="org18" cert="medium">hijo varón</rs>.
 					</ab>
 					<ab xml:id="b.REV.12.14" type="verse" n="14">
 						Pero se le dieron a la <rs key="#org37" cert="low">mujer</rs> las dos alas de la gran águila para que volara de delante de la <rs key="#per20">serpiente</rs> al desierto, a su lugar, donde es sustentada por un tiempo, tiempos y la mitad de un tiempo.
@@ -779,13 +782,13 @@
 						Pero la tierra ayudó a la <rs key="#org37" cert="low">mujer</rs>, pues la tierra abrió su boca y se tragó el río que el <rs key="#per20">dragón</rs> había echado de su boca.
 					</ab>
 					<ab xml:id="b.REV.12.17" type="verse" n="17">
-						Entonces el <rs key="#per20">dragón</rs> se llenó de ira contra la <rs key="#org37" cert="low">mujer</rs> y se fue a hacer la guerra contra el resto de la descendencia de ella, contra los que guardan los mandamientos de <rs key="#per14">Dios</rs> y tienen el testimonio de <rs key="#per1">Jesucristo</rs>.
+						Entonces el <rs key="#per20">dragón</rs> se llenó de ira contra la <rs key="#org37" cert="low">mujer</rs> y se fue a hacer la guerra contra el resto de la <rs key="org18">descendencia</rs> de ella, contra los que guardan los mandamientos de <rs key="#per14">Dios</rs> y tienen el testimonio de <rs key="#per1">Jesucristo</rs>.
 					</ab>
+					</div>
 				</div>
-				</div>
-<div xml:id="b.REV.13" type="chapter" n="13">
-<div type="pericope">
-<ab type="pericope">Las dos bestias</ab>
+				<div xml:id="b.REV.13" type="chapter" n="13">
+					<div type="pericope">
+					<ab type="pericope">Las dos bestias</ab>
 
 					<ab xml:id="b.REV.13.1" type="verse" n="1">
 							Me paré sobre la arena del mar y vi subir del mar una <rs key="#per20">bestia que tenía siete cabezas y diez cuernos</rs>: en sus cuernos tenía diez diademas, y sobre sus cabezas, nombres de blasfemia.
