@@ -25,9 +25,13 @@ import os
 import glob 
 from lxml import etree
 import Levenshtein
+import re
+
 
 wdir_str = "/home/jose/Dropbox/biblia/tb/sexual-annotation/"
-file_str = "1CO.xml"
+file_str = "REV.xml"
+
+book_name_str = file_str[0:3]
 
 def open_book(wdir_str, file_str):
 
@@ -66,7 +70,6 @@ categories_id_lt = get_list_categories(taxonomy_el)
 
 print(categories_id_lt)
 
-import re
 
 def parse_sexual_annotations_from_comments(book_str):
     sexual_annotations_from_comments_lt = re.findall('<ab xml:id="(.*?)".*?>\s*<!--\s*sexo?:\s*(.*?) ?;? ?-->', book_str)
@@ -80,14 +83,14 @@ def find_most_similar_id_of_errors(error_lt, categories_id_lt):
     for wrong_id_str in set_wrong_ids_lt:
         for category_id_str in categories_id_lt:
             ratio_nr = Levenshtein.ratio(wrong_id_str, category_id_str) 
-            if ratio_nr > 0.9:
+            if ratio_nr > 0.8   :
                 print("Consider substitue ", wrong_id_str, "with ", category_id_str, ". Levenshtein ratio:", ratio_nr)
 
 
-def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt, categories_id_lt, wdir_str = wdir_str):
+def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt, categories_id_lt, wdir_str = wdir_str, book_name_str = book_name_str):
     error_lt = []
     
-    standOff_str = '<standOff xml:id="b.MAT.sexualThemes">\n'
+    standOff_str = '<standOff xml:id="b.' + book_name_str + '.sexualThemes">\n'
     
     for verse_group_annotations_tp in sexual_annotations_from_comments_lt:
         verse_id_str, annotations_of_verse_str = verse_group_annotations_tp[0], verse_group_annotations_tp[1]
@@ -141,11 +144,11 @@ def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
 error_lt, standOff_str = parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt, categories_id_lt)
 
 
-def save_book_with_standOff_element(book_str, standOff_str, wdir_str = wdir_str):
+def save_book_with_standOff_element(book_str, standOff_str, wdir_str = wdir_str, book_name_str = book_name_str):
     book_str = re.sub(r'\s*<!--\s*sexo?:\s*(.*?) ?;? ?-->', r'', book_str)
     book_str = re.sub(r'</text>', r'</text>\n'+standOff_str, book_str)
 
-    text_file = open(wdir_str+"1CO_standOff.xml", "w")
+    text_file = open(wdir_str+ book_name_str +"_standOff.xml", "w")
     text_file.write(book_str)
     text_file.close()
     
