@@ -29,7 +29,7 @@ import re
 
 
 wdir_str = "/home/jose/Dropbox/biblia/tb/sexual-annotation/"
-file_str = "REV.xml"
+file_str = "SON.xml"
 
 book_name_str = file_str[0:3]
 
@@ -98,38 +98,43 @@ def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
         #print(len(group_annotations_str), (group_annotations_str))
         #group_annotations_str = group_annotations_str + ";"
         for different_annotations_str in list(filter(None, annotations_of_verse_str.split(sep=";"))):
-            print(different_annotations_str)
-            spanGrp_str = '<spanGrp type="theme" inst="#' + verse_id_str+ '">'        
-            for optional_annotation_str in list(filter(None, different_annotations_str.split(sep="|"))):
-                value_str = re.findall(r"^\s*([^ ]+)", optional_annotation_str,  flags=re.MULTILINE|re.DOTALL)[0]
-                span_str = '\n\t<span ana="#' + value_str+ '">\n\t\t<certainty match="@ana" locus="value"'
-                print(type(value_str))
-                print(value_str)
-                if "cert=" in optional_annotation_str:
-                    cert_str = re.findall(r'cert="(.*?)"', optional_annotation_str)[0]
-                else:
-                    cert_str = "high"
-                span_str = span_str + ' cert="' + cert_str+ '"'
-                    
-                if "given=" in optional_annotation_str:
-                    given_str = re.findall(r'given="(.*?)"', optional_annotation_str)[0]
-                else:
-                    given_str = "text"
-    
-                span_str = span_str + ' given="' + given_str+ '"'
-    
-                span_str = span_str + "/>\n\t</span>"
-    
-                if value_str not in categories_id_lt:
-                    print("ERROR!!", value_str)
-                    error_lt.append([verse_id_str, value_str])
-                spanGrp_str = spanGrp_str + span_str
-            spanGrp_str = spanGrp_str + "\n</spanGrp>\n"
-            standOff_str = standOff_str + spanGrp_str
+            if different_annotations_str == " ":
+                pass
+            else:
+                print(different_annotations_str)
+                spanGrp_str = '<spanGrp type="theme" inst="#' + verse_id_str+ '">'        
+                for optional_annotation_str in list(filter(None, different_annotations_str.split(sep="|"))):
+                    value_str = re.findall(r"^\s*([^ ]+)", optional_annotation_str,  flags=re.MULTILINE|re.DOTALL)[0]
+                    span_str = '\n\t<span ana="#' + value_str+ '">\n\t\t<certainty match="@ana" locus="value"'
+                    print(type(value_str))
+                    print(value_str)
+                    if "cert=" in optional_annotation_str:
+                        cert_str = re.findall(r'cert="(.*?)"', optional_annotation_str)[0]
+                    else:
+                        cert_str = "high"
+                    span_str = span_str + ' cert="' + cert_str+ '"'
+                        
+                    if "given=" in optional_annotation_str:
+                        given_str = re.findall(r'given="(.*?)"', optional_annotation_str)[0]
+                    else:
+                        given_str = "text"
+        
+                    span_str = span_str + ' given="' + given_str+ '"'
+        
+                    span_str = span_str + "/>\n\t</span>"
+        
+                    if value_str not in categories_id_lt:
+                        print("ERROR!!", value_str)
+                        error_lt.append([verse_id_str, value_str])
+                    spanGrp_str = spanGrp_str + span_str
+                spanGrp_str = spanGrp_str + "\n</spanGrp>\n"
+                standOff_str = standOff_str + spanGrp_str
     standOff_str = standOff_str + "\n</standOff>"
 
     #print(standOff_str)
-    print(error_lt)
+    print("errors", error_lt)
+    from collections import Counter
+    print (Counter([verse_annotation[1] for verse_annotation in error_lt]).most_common())
     
     find_most_similar_id_of_errors(error_lt, categories_id_lt)
 
