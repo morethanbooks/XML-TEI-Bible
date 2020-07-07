@@ -28,6 +28,7 @@ import Levenshtein
 import re
 
 
+
 wdir_str = "/home/jose/Dropbox/biblia/tb/sexual-annotation/"
 file_str = "SON.xml"
 

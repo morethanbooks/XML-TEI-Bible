@@ -58,6 +58,10 @@
                   <category xml:id="love">
                      <catDesc>relation between people that will get married</catDesc>
                   </category>
+                  <category xml:id="sibling-relation">
+                     <catDesc>relation between people that will get married</catDesc>
+                  </category>
+                  
                </category>
                <category xml:id="acts">
                   <catDesc>acts about relations and sex</catDesc>
@@ -248,6 +252,15 @@
                </category>
                <category xml:id="body">
                   <catDesc>vocabulary related to the body</catDesc>
+                  <category xml:id="body-by-gender">
+                     <catDesc>body by gender</catDesc>
+                     <category xml:id="female-body">
+                        <catDesc>female body</catDesc>
+                     </category>
+                     <category xml:id="male-body">
+                        <catDesc>male body</catDesc>
+                     </category>
+                  </category>
                   <category xml:id="body-part">
                      <catDesc>body parts, mainly the sexual ones</catDesc>
                      <category xml:id="genitalia">
@@ -334,6 +347,9 @@
                      <category xml:id="leg">
                         <catDesc>leg</catDesc>
                      </category>
+                     <category xml:id="arm">
+                        <catDesc>arm</catDesc>
+                     </category>
                      <category xml:id="lubrication">
                         <catDesc>lubrification</catDesc>
                      </category>
@@ -372,15 +388,36 @@
                      </category>
                   </category>
                </category>
-               <category xml:id="objects">
-                  <catDesc>objects</catDesc>
+               <category xml:id="things">
+                  <catDesc>things</catDesc>
                   <category xml:id="clothes">
                      <catDesc>clothes</catDesc>
+                     <category xml:id="belt">
+                        <catDesc>belt</catDesc>
+                        </category>
+                  </category>
+                  <category xml:id="juwels">
+                     <catDesc>juwels</catDesc>
+                     <category xml:id="earrings">
+                        <catDesc>earrings</catDesc>
+                     </category>
+                     <category xml:id="collar">
+                        <catDesc>collar</catDesc>
+                     </category>
                   </category>
                   <category xml:id="food">
                      <catDesc>food</catDesc>
+                     <category xml:id="water">
+                        <catDesc>water</catDesc>
+                     </category>
                      <category xml:id="spices">
                         <catDesc>spices</catDesc>
+                     </category>
+                     <category xml:id="honey">
+                        <catDesc>honey</catDesc>
+                     </category>
+                     <category xml:id="milk">
+                        <catDesc>milk</catDesc>
                      </category>
                      <category xml:id="wine">
                         <catDesc>wine</catDesc>
@@ -392,11 +429,36 @@
                         </category>
                         <category xml:id="grapes">
                            <catDesc>grapes</catDesc>
+                           <category xml:id="raisin">
+                              <catDesc>raisin</catDesc>
+                           </category>
+                        </category>
+                        <category xml:id="apples">
+                           <catDesc>apples</catDesc>
+                        </category>
+                        <category xml:id="figs">
+                           <catDesc>figs</catDesc>
                         </category>
                      </category>
-                     
-                     
                      </category>
+                  <category xml:id="carriage">
+                     <catDesc>carriage</catDesc>
+                  </category>
+                  <category xml:id="weapons">
+                     <catDesc>weapons</catDesc>
+                     <category xml:id="sword">
+                        <catDesc>sword</catDesc>
+                     </category>
+                  </category>
+                  <category xml:id="space-objetcs">
+                     <catDesc>ojects in the space</catDesc>
+                     <category xml:id="moon">
+                        <catDesc>moon</catDesc>
+                     </category>
+                     <category xml:id="sun">
+                        <catDesc>sun</catDesc>
+                     </category>
+                  </category>
                </category>
                <category xml:id="places">
                   <catDesc>sexual places</catDesc>
@@ -414,9 +476,17 @@
                      <category xml:id="garden">
                         <catDesc>garden</catDesc>
                      </category>
+                     <category xml:id="vineyard">
+                        <catDesc>vineyard</catDesc>
+                     </category>
+                     <category xml:id="spring">
+                        <catDesc>spring</catDesc>
+                     </category>
+                  </category>
+                  <category xml:id="door">
+                     <catDesc>door</catDesc>
                   </category>
                </category>
-
                <category xml:id="groups">
                   <catDesc>groups defined by their sexuality</catDesc>
                   <category xml:id="based-on-gender">
@@ -526,13 +596,42 @@
                   <category xml:id="dove">
                      <catDesc>dove</catDesc>
                   </category>
-                  
+                  <category xml:id="fox">
+                     <catDesc>fox</catDesc>
+                  </category>
+                  <category xml:id="goat">
+                     <catDesc>goat</catDesc>
+                  </category>
+                  <category xml:id="sheep">
+                     <catDesc>sheep</catDesc>
+                  </category>
+                  <category xml:id="leopard">
+                     <catDesc>leopard</catDesc>
+                  </category>
+                  <category xml:id="lion">
+                     <catDesc>lion</catDesc>
+                  </category>
+                  <category xml:id="crow">
+                     <catDesc>crow</catDesc>
+                  </category>
+                  <category xml:id="turtledove">
+                     <catDesc>turtledove</catDesc>
+                  </category>
+                  <category xml:id="horse">
+                     <catDesc>horse</catDesc>
+                  </category>
                </category>
                <category xml:id="plants">
                   <catDesc>plants</catDesc>
                   <category xml:id="flowers">
                      <catDesc>flowers</catDesc>
                      </category>
+                  <category xml:id="trees">
+                     <catDesc>trees</catDesc>
+                     <category xml:id="palms">
+                        <catDesc>palms</catDesc>
+                     </category>
+                  </category>
                </category>
             </taxonomy>
             <taxonomy xml:id="theoretical-frames">
