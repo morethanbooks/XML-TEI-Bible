@@ -40,6 +40,7 @@
 			<change when="2019-09-09" who="#jct">First version of Song of songs.</change>
 			<change when="2019-09-16" who="#jct">Song of songs finished.</change>
 		    <change when="2020-06-22" who="#jct">Starting annotation about sex.</change>
+			<change when="2020-07-09" who="#jct">Finished annotation about sex.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -925,7 +926,7 @@
 	</span>
 </spanGrp>
 <spanGrp type="theme" inst="#b.SON.2.4">
-	<span ana="#food">
+	<span ana="#food-and-related">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
@@ -960,7 +961,7 @@
 	</span>
 </spanGrp>
 <spanGrp type="theme" inst="#b.SON.2.5">
-	<span ana="#food">
+	<span ana="#food-and-related">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
@@ -1510,11 +1511,6 @@
 	</span>
 </spanGrp>
 <spanGrp type="theme" inst="#b.SON.3.7">
-	<span ana="#strength">
-		<certainty match="@ana" locus="value" cert="high" given="text"/>
-	</span>
-</spanGrp>
-<spanGrp type="theme" inst="#b.SON.3.7">
 	<span ana="#male-body">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
@@ -1691,11 +1687,6 @@
 </spanGrp>
 <spanGrp type="theme" inst="#b.SON.4.3">
 	<span ana="#lips">
-		<certainty match="@ana" locus="value" cert="high" given="text"/>
-	</span>
-</spanGrp>
-<spanGrp type="theme" inst="#b.SON.4.3">
-	<span ana="#talk">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
@@ -2208,7 +2199,7 @@
 	</span>
 </spanGrp>
 <spanGrp type="theme" inst="#b.SON.5.1">
-	<span ana="#food">
+	<span ana="#food-and-related">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
@@ -2987,11 +2978,6 @@
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
-<spanGrp type="theme" inst="#b.SON.6.10">
-	<span ana="#army">
-		<certainty match="@ana" locus="value" cert="high" given="text"/>
-	</span>
-</spanGrp>
 <spanGrp type="theme" inst="#b.SON.6.11">
 	<span ana="#garden">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
@@ -3068,7 +3054,7 @@
 	</span>
 </spanGrp>
 <spanGrp type="theme" inst="#b.SON.7.2">
-	<span ana="#wheet">
+	<span ana="#wheat">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
@@ -3658,7 +3644,7 @@
 	</span>
 </spanGrp>
 <spanGrp type="theme" inst="#b.SON.8.7">
-	<span ana="#rivers">
+	<span ana="#river">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
@@ -3723,7 +3709,7 @@
 	</span>
 </spanGrp>
 <spanGrp type="theme" inst="#b.SON.8.10">
-	<span ana="#towers">
+	<span ana="#tower">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>

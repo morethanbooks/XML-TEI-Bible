@@ -405,13 +405,19 @@
                         <catDesc>collar</catDesc>
                      </category>
                   </category>
-                  <category xml:id="food">
-                     <catDesc>food</catDesc>
+                  <category xml:id="food-and-related">
+                     <catDesc>food and food-related objects</catDesc>
                      <category xml:id="water">
                         <catDesc>water</catDesc>
                      </category>
+                     <category xml:id="glass">
+                        <catDesc>glass</catDesc>
+                     </category>
                      <category xml:id="spices">
                         <catDesc>spices</catDesc>
+                     </category>
+                     <category xml:id="wheat">
+                        <catDesc>wheat</catDesc>
                      </category>
                      <category xml:id="honey">
                         <catDesc>honey</catDesc>
@@ -423,7 +429,7 @@
                         <catDesc>wine</catDesc>
                      </category>
                      <category xml:id="fruits">
-                        <catDesc>wine</catDesc>
+                        <catDesc>fruits</catDesc>
                         <category xml:id="pomegranate">
                            <catDesc>pomegranate</catDesc>
                         </category>
@@ -449,14 +455,32 @@
                      <category xml:id="sword">
                         <catDesc>sword</catDesc>
                      </category>
+                     <category xml:id="shield">
+                        <catDesc>shield</catDesc>
+                     </category>
                   </category>
-                  <category xml:id="space-objetcs">
-                     <catDesc>ojects in the space</catDesc>
+                  <category xml:id="money">
+                     <catDesc>money</catDesc>
+                  </category>
+                  <category xml:id="metal">
+                     <catDesc>metal</catDesc>
+                     <category xml:id="silver">
+                        <catDesc>silver</catDesc>
+                     </category>
+                     </category>
+                  <category xml:id="environment">
+                     <catDesc>environment</catDesc>
                      <category xml:id="moon">
                         <catDesc>moon</catDesc>
                      </category>
                      <category xml:id="sun">
                         <catDesc>sun</catDesc>
+                     </category>
+                     <category xml:id="rain">
+                        <catDesc>rain</catDesc>
+                     </category>
+                     <category xml:id="wind">
+                        <catDesc>wind</catDesc>
                      </category>
                   </category>
                </category>
@@ -470,6 +494,18 @@
                            <catDesc>bed</catDesc>
                         </category>
                      </category>
+                        <category xml:id="door">
+                           <catDesc>door</catDesc>
+                        </category>
+                        <category xml:id="wall">
+                           <catDesc>wall</catDesc>
+                        </category>
+                        <category xml:id="house">
+                           <catDesc>house</catDesc>
+                        </category>
+                        <category xml:id="tower">
+                           <catDesc>tower</catDesc>
+                        </category>
                      </category>
                   <category xml:id="exterior-spaces">
                      <catDesc>exterior spaces</catDesc>
@@ -482,9 +518,18 @@
                      <category xml:id="spring">
                         <catDesc>spring</catDesc>
                      </category>
-                  </category>
-                  <category xml:id="door">
-                     <catDesc>door</catDesc>
+                     <category xml:id="desert">
+                        <catDesc>desert</catDesc>
+                     </category>
+                     <category xml:id="river">
+                        <catDesc>river</catDesc>
+                     </category>
+                     <category xml:id="field">
+                        <catDesc>field</catDesc>
+                     </category>
+                     <category xml:id="lake">
+                        <catDesc>lake</catDesc>
+                     </category>
                   </category>
                </category>
                <category xml:id="groups">
@@ -630,6 +675,24 @@
                      <catDesc>trees</catDesc>
                      <category xml:id="palms">
                         <catDesc>palms</catDesc>
+                     </category>
+                  </category>
+               </category>
+               <category xml:id="time">
+                  <catDesc>time</catDesc>
+                  <category xml:id="part-of-the-day">
+                     <catDesc>part of the day</catDesc>
+                     <category xml:id="night">
+                        <catDesc>night</catDesc>
+                     </category>
+                     <category xml:id="sunrise">
+                        <catDesc>sunrise</catDesc>
+                     </category>
+                  </category>
+                  <category xml:id="seasons">
+                     <catDesc>seasons</catDesc>
+                     <category xml:id="winter">
+                        <catDesc>winter</catDesc>
                      </category>
                   </category>
                </category>
