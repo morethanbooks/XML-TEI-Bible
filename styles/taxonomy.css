@@ -1,0 +1,97 @@
+encodingDesc
+	{
+		width:98%;
+		font-size:1em;
+		display:block;
+	}
+category category
+{
+		display:none;
+    
+}
+classDecl 
+	{
+		width:98%;
+		font-size:1em;
+        border: 5px solid blue;
+		margin:  0 0 0 0;
+		display:block;
+	}
+
+classDecl:hover category 
+{
+		display:block;
+
+}
+
+taxonomy
+	{
+		width:60%;
+		font-size:1em;
+        border: 5px solid grey;
+		margin:  0 14% 0 0;
+		display:block;
+		padding: 0 0 0 5%;
+	}
+
+
+taxonomy:hover category 
+{
+		display:none;
+
+}
+
+
+taxonomy:hover>category 
+{
+		display:block;
+
+}
+
+taxonomy:before
+    {
+ 		content:attr(n);
+		color:grey;       
+    }
+
+category
+{
+		display:block;
+        border: 4px solid grey;
+        width: 95%;
+		margin: 0 0 0 0;
+		padding: 1em 10% 1em 3em;
+}
+
+catergory:after
+{
+ 		content:attr(xml\:id);
+		color:grey;       
+}
+
+idno
+	{
+		display:block;
+		font-size:1em;
+}
+
+
+
+tei:hover>taxonomy>category 
+{
+		display:block;
+
+}
+
+
+/* 
+category>category {
+    display: none;
+}
+ */
+
+category:hover>category 
+{
+		display:block;
+
+}
