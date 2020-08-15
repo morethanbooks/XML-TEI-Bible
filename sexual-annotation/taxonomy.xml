@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="../styles/taxonomy.css" rel="stylesheet"?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -87,9 +89,19 @@
                      	<gloss>intense sentimental relation</gloss>
                      </desc>
                   </category>
+                  <category xml:id="jelocy"><!--revisar-->
+                     <desc type="implicitly-sexual">
+                        <gloss></gloss>
+                     </desc>
+                  </category>
                   <category xml:id="ascendant-descendant">
                      <desc type="implicitly-sexual">
                         <gloss>relation between parents and children</gloss>
+                     </desc>
+                  </category>
+                  <category xml:id="indirect-ascendant-descendant">
+                     <desc type="implicitly-sexual">
+                        <gloss>relation between people responsable for children without them being their biological parents</gloss>
                      </desc>
                   </category>
                </category>
@@ -360,6 +372,11 @@
                            	<gloss>sex between more than two people (threesome, orgies)</gloss>
                            </desc>
                         </category>
+                        <category xml:id="lord-servant-sex">
+                           <desc type="explicitly-sexual">
+                              <gloss>sex between a lord and their servant</gloss>
+                           </desc>
+                        </category>
                      </category>
                   </category>
                </category>
@@ -590,6 +607,7 @@
                         <desc type="explicitly-sexual">
                         	<gloss>fertilization</gloss>
                         </desc>
+                        <!--conception-->
                      </category>
                      <category xml:id="misscarriage">
                         <desc type="implicitly-sexual">
