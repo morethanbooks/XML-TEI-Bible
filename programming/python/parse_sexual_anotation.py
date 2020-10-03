@@ -26,17 +26,14 @@ import glob
 from lxml import etree
 import Levenshtein
 import re
+import pandas as pd
 
 
 
-wdir_str = "/home/jose/Dropbox/biblia/tb/sexual-annotation/"
-file_str = "SON.xml"
-
-book_name_str = file_str[0:3]
 
 def open_book(wdir_str, file_str):
 
-            
+    print(glob.glob(wdir_str + file_str))
     doc_str = glob.glob(wdir_str + file_str)[0]
     input_name_str  = os.path.splitext(os.path.split(doc_str)[1])[0]
     print(input_name_str)
@@ -46,9 +43,6 @@ def open_book(wdir_str, file_str):
         print(type(content_str))
     return content_str
 
-book_str = open_book(wdir_str, file_str)
-
-taxonomy_file_str = "taxonomy.xml"
 
 def open_taxonomy(wdir_str, taxonomy_file_str):
 
@@ -56,20 +50,14 @@ def open_taxonomy(wdir_str, taxonomy_file_str):
     print(type(taxonomy_el))
     return taxonomy_el
 
-taxonomy_el = open_taxonomy(wdir_str, taxonomy_file_str)
-
-namespaces_dict = {'tei':'http://www.tei-c.org/ns/1.0','xi':'http://www.w3.org/2001/XInclude'}
 
 
-def get_list_categories(taxonomy_el):
+def get_list_categories(taxonomy_el, namespaces):
     
-    categories_id_lt = taxonomy_el.xpath('//tei:category/@xml:id', namespaces = namespaces_dict)
+    categories_id_lt = taxonomy_el.xpath('//tei:category/@xml:id', namespaces = namespaces)
     
     return categories_id_lt
 
-categories_id_lt = get_list_categories(taxonomy_el)
-
-print(categories_id_lt)
 
 
 def parse_sexual_annotations_from_comments(book_str):
@@ -77,18 +65,40 @@ def parse_sexual_annotations_from_comments(book_str):
     print(sexual_annotations_from_comments_lt)
     return sexual_annotations_from_comments_lt
 
-sexual_annotations_from_comments_lt = parse_sexual_annotations_from_comments(book_str)
 
-def find_most_similar_id_of_errors(error_lt, categories_id_lt):
+def find_most_similar_id_of_errors(error_lt, categories_id_lt, standOff_str):
     set_wrong_ids_lt = list(set([list_[1] for list_ in error_lt]))
     for wrong_id_str in set_wrong_ids_lt:
+        ratios_category_ids = []
         for category_id_str in categories_id_lt:
             ratio_nr = Levenshtein.ratio(wrong_id_str, category_id_str) 
-            if ratio_nr > 0.8   :
-                print("Consider substitue ", wrong_id_str, "with ", category_id_str, ". Levenshtein ratio:", ratio_nr)
+            ratios_category_ids.append([category_id_str, ratio_nr])
+            
+        labels_ratio_df = pd.DataFrame(ratios_category_ids, columns=["category", "ratio"]).sort_values(by="ratio", ascending=False)
+        #print("labels_ratio_df", labels_ratio_df)
+        print("\n")
+        to_print = "Consider substitue " + str(wrong_id_str) + " with " + str(labels_ratio_df.iloc[0][0]) + " . Levenshtein ratio:" + str(round(labels_ratio_df.iloc[0][1],2))
+        response = input(to_print)
+        print(to_print)
+        replace_with = ""
+        if response not in ["", "0", 0, "n", "no"]:
+            if response in ["1", "y", "yes", "s", "sí", 1]:
+                replace_with = labels_ratio_df.iloc[0][0]
+                print("Replacement accepted")
+            else:
+                replace_with = response
+                print("Replacement modified with", response)
+            standOff_str = re.sub(wrong_id_str, replace_with, standOff_str)
+        else:
+            print("Replacement rejected. No change.")
+    return standOff_str
 
 
-def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt, categories_id_lt, wdir_str = wdir_str, book_name_str = book_name_str):
+def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
+    categories_id_lt,
+    book_name_str, 
+    wdir_str = "../../sexual-annotation/",
+    ):
     error_lt = []
     
     standOff_str = '<standOff xml:id="b.' + book_name_str + '.sexualThemes">\n'
@@ -137,7 +147,7 @@ def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
     from collections import Counter
     print (Counter([verse_annotation[1] for verse_annotation in error_lt]).most_common())
     
-    find_most_similar_id_of_errors(error_lt, categories_id_lt)
+    standOff_str = find_most_similar_id_of_errors(error_lt, categories_id_lt, standOff_str)
 
 
     
@@ -147,15 +157,16 @@ def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
     text_file.close()
     return error_lt, standOff_str
 
-error_lt, standOff_str = parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt, categories_id_lt)
 
 
-def save_book_with_standOff_element(book_str, standOff_str, wdir_str = wdir_str, book_name_str = book_name_str):
+def save_book_with_standOff_element(book_str, standOff_str,
+    book_name_str,
+    wdir_str = "../../sexual-annotation/",
+    ):
     book_str = re.sub(r'\s*<!--\s*sexo?:\s*(.*?) ?;? ?-->', r'', book_str)
     book_str = re.sub(r'</text>', r'</text>\n'+standOff_str, book_str)
 
-    text_file = open(wdir_str+ book_name_str +"_standOff.xml", "w")
+    text_file = open(wdir_str+ book_name_str +"_standOff.xml", "w", encoding="utf-8")
     text_file.write(book_str)
     text_file.close()
     
-save_book_with_standOff_element(book_str, standOff_str)

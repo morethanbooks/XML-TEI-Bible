@@ -57,7 +57,13 @@
                   </category>
                   <category xml:id="interfaith-marriage">
                      <desc type="implicitly-sexual">
-                        <gloss>relation between people that are married and that have different
+                        <gloss>relation between people that are married that have different
+                           religions</gloss>
+                     </desc>
+                  </category>
+                  <category xml:id="interfaith-relation">
+                     <desc type="implicitly-sexual">
+                        <gloss>relation between people unmarried that have different
                            religions</gloss>
                      </desc>
                   </category>
@@ -70,6 +76,7 @@
                      <desc type="implicitly-sexual">
                         <gloss>relation between people that are political family (for example with
                            the wife of your brother)</gloss>
+                        <variant>greater-family-relation</variant>
                      </desc>
                   </category>
                   <category xml:id="lord-servant-relation">
@@ -104,16 +111,16 @@
                         <gloss>intense sentimental relation</gloss>
                      </desc>
                   </category>
-                  <category xml:id="jelocy">
-                     <!--revisar-->
+                  <category xml:id="jealousy">
                      <desc type="implicitly-sexual">
-                        <gloss/>
+                        <gloss>jealousy</gloss>
                      </desc>
                   </category>
                   <category xml:id="ascendant-descendant">
                      <desc type="implicitly-sexual">
                         <gloss>relation between parents and children</gloss>
                         <note>This is only annotated when new information within the book is transmited. For example, when someone is born and their name is mentioned, it would be annotated. But if in further chapters their parent talk to them and called him/her "son" or "daughter", this is not annotated anymore.</note>
+                        <variant>descendant</variant>
                      </desc>
                   </category>
                   <category xml:id="indirect-ascendant-descendant">
@@ -224,6 +231,7 @@
                            <desc type="explicitly-sexual">
                               <gloss>first sexual act of a person (in which the person looses their
                                  virginity)</gloss>
+                              <variant>first-time</variant>
                            </desc>
                         </category>
                         <category xml:id="coitus-interruptus">
@@ -459,6 +467,11 @@
                         <gloss>beauty</gloss>
                      </desc>
                   </category>
+                  <category xml:id="dishonor">
+                     <desc type="implicitly-sexual">
+                        <gloss>dishonor</gloss>
+                     </desc>
+                  </category>
                </category>
                <category xml:id="body">
                   <desc type="implicitly-sexual">
@@ -596,6 +609,7 @@
                      <category xml:id="foot">
                         <desc type="no-sexual">
                            <gloss>foot</gloss>
+                           <variant>feet</variant>
                         </desc>
                      </category>
                      <category xml:id="waist">
@@ -626,11 +640,23 @@
                      <category xml:id="arm">
                         <desc type="no-sexual">
                            <gloss>arm</gloss>
+                           <variant>arms</variant>
+                        </desc>
+                     </category>
+                     <category xml:id="rib">
+                        <desc type="no-sexual">
+                           <gloss>rib</gloss>
+                           <variant>ribs</variant>
                         </desc>
                      </category>
                      <category xml:id="lubrication">
                         <desc type="explicitly-sexual">
                            <gloss>lubrification</gloss>
+                        </desc>
+                     </category>
+                     <category xml:id="face">
+                        <desc type="no-sexual">
+                           <gloss>face</gloss>
                         </desc>
                      </category>
                   </category>
@@ -704,6 +730,11 @@
                            <gloss>belt</gloss>
                         </desc>
                      </category>
+                     <category xml:id="veil">
+                        <desc type="no-sexual">
+                           <gloss>veil</gloss>
+                        </desc>
+                     </category>
                   </category>
                   <category xml:id="perfume">
                      <desc type="no-sexual">
@@ -719,20 +750,47 @@
                            <gloss>earrings</gloss>
                         </desc>
                      </category>
+                     <category xml:id="piercing">
+                        <desc type="no-sexual">
+                           <gloss>piercing</gloss>
+                        </desc>
+                     </category>
                      <category xml:id="collar">
                         <desc type="no-sexual">
                            <gloss>collar</gloss>
                         </desc>
                      </category>
+                     <category xml:id="bracelet">
+                        <desc type="no-sexual">
+                           <gloss>bracelet</gloss>
+                        </desc>
+                     </category>
+                     
                   </category>
                   <category xml:id="food-and-related">
                      <desc type="no-sexual">
                         <gloss>food and food-related objects</gloss>
+                        <variant>food</variant>
                      </desc>
-                     <category xml:id="water">
+                     <category xml:id="drink">
                         <desc type="no-sexual">
-                           <gloss>water</gloss>
+                           <gloss>drink</gloss>
                         </desc>
+                        <category xml:id="water">
+                           <desc type="no-sexual">
+                              <gloss>water</gloss>
+                           </desc>
+                        </category>
+                        <category xml:id="milk">
+                           <desc type="no-sexual">
+                              <gloss>milk</gloss>
+                           </desc>
+                        </category>
+                        <category xml:id="wine">
+                           <desc type="no-sexual">
+                              <gloss>wine</gloss>
+                           </desc>
+                        </category>
                      </category>
                      <category xml:id="glass">
                         <desc type="no-sexual">
@@ -752,16 +810,6 @@
                      <category xml:id="honey">
                         <desc type="no-sexual">
                            <gloss>honey</gloss>
-                        </desc>
-                     </category>
-                     <category xml:id="milk">
-                        <desc type="no-sexual">
-                           <gloss>milk</gloss>
-                        </desc>
-                     </category>
-                     <category xml:id="wine">
-                        <desc type="no-sexual">
-                           <gloss>wine</gloss>
                         </desc>
                      </category>
                      <category xml:id="fruits">
@@ -829,6 +877,26 @@
                            <gloss>silver</gloss>
                         </desc>
                      </category>
+                     <category xml:id="gold">
+                        <desc type="no-sexual">
+                           <gloss>gold</gloss>
+                        </desc>
+                     </category>
+                  </category>
+                  <category xml:id="fountain">
+                     <desc type="no-sexual">
+                        <gloss>fountain</gloss>
+                     </desc>
+                     </category>
+                  <category xml:id="well">
+                     <desc type="no-sexual">
+                        <gloss>well</gloss>
+                     </desc>
+                  </category>
+                  <category xml:id="pitcher">
+                     <desc type="no-sexual">
+                        <gloss>pitcher</gloss>
+                     </desc>
                   </category>
                   <category xml:id="environment">
                      <desc type="no-sexual">
@@ -1051,6 +1119,12 @@
                               of religious rituals</gloss>
                         </desc>
                      </category>
+                     <category xml:id="concubine">
+                        <desc type="explicitly-sexual">
+                           <gloss>concubine</gloss>
+                        </desc>
+                     </category>
+                     
                   </category>
                   <category xml:id="by-corporal-traits">
                      <desc type="implicitly-sexual">
@@ -1075,7 +1149,9 @@
                   <category xml:id="blessed-aspect">
                      <desc type="no-sexual">
                         <gloss>aspects that are observed positively</gloss>
+                        <variant>blessed</variant>
                      </desc>
+                     
                   </category>
                   <category xml:id="positive-aspect">
                      <desc type="no-sexual">
@@ -1157,6 +1233,22 @@
                         <gloss>horse</gloss>
                      </desc>
                   </category>
+                  <category xml:id="donkey">
+                     <desc type="no-sexual">
+                        <gloss>donkey</gloss>
+                     </desc>
+                  </category>
+                  <category xml:id="cow">
+                     <desc type="no-sexual">
+                        <gloss>cow</gloss>
+                     </desc>
+                  </category>
+                  <category xml:id="camel">
+                     <desc type="no-sexual">
+                        <gloss>camel</gloss>
+                     </desc>
+                  </category>
+                  
                </category>
                <category xml:id="plants">
                   <desc type="no-sexual">
@@ -1209,6 +1301,7 @@
                   </category>
                </category>
             </taxonomy>
+            <!--
             <taxonomy xml:id="theoretical-frames">
                <category xml:id="churches">
                   <desc type="no-sexual">
@@ -1240,7 +1333,9 @@
                      </category>
                   </category>
                </category>
+               
             </taxonomy>
+            -->
          </classDecl>
       </encodingDesc>
    </teiHeader>
