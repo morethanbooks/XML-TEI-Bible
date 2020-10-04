@@ -48,6 +48,7 @@
 		<revisionDesc>
 			<change when="2016-04-01" who="#jct">First version of Genesis</change>
 			<change when="2016-05-16" who="#jct" status="checked">Text and markup fully checked personally.</change>
+			<change when="2020-10-04" who="#jct" >Annotated manually sexual themes.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -5027,17 +5028,7 @@
 	</text>
 <standOff xml:id="b.GEN.sexualThemes">
 <spanGrp type="theme" inst="#b.GEN.2.7">
-	<span ana="#metaphorically">
-		<certainty match="@ana" locus="value" cert="high" given="text"/>
-	</span>
-</spanGrp>
-<spanGrp type="theme" inst="#b.GEN.2.7">
 	<span ana="#blessed-aspect">
-		<certainty match="@ana" locus="value" cert="high" given="text"/>
-	</span>
-</spanGrp>
-<spanGrp type="theme" inst="#b.GEN.2.21">
-	<span ana="#metaphorically">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
@@ -5053,11 +5044,6 @@
 </spanGrp>
 <spanGrp type="theme" inst="#b.GEN.2.21">
 	<span ana="#sleep">
-		<certainty match="@ana" locus="value" cert="high" given="text"/>
-	</span>
-</spanGrp>
-<spanGrp type="theme" inst="#b.GEN.2.22">
-	<span ana="#metaphorically">
 		<certainty match="@ana" locus="value" cert="high" given="text"/>
 	</span>
 </spanGrp>
