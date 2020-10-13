@@ -101,7 +101,7 @@ def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
     ):
     error_lt = []
     
-    standOff_str = '<standOff xml:id="b.' + book_name_str + '.sexualThemes">\n'
+    standOff_str = '<standOff xml:id="b.' + book_name_str + '.sexualThemes"  scheme="taxonomy.xml">\n'
     
     for verse_group_annotations_tp in sexual_annotations_from_comments_lt:
         verse_id_str, annotations_of_verse_str = verse_group_annotations_tp[0], verse_group_annotations_tp[1]
@@ -116,7 +116,7 @@ def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
                 spanGrp_str = '<spanGrp type="theme" inst="#' + verse_id_str+ '">'        
                 for optional_annotation_str in list(filter(None, different_annotations_str.split(sep="|"))):
                     value_str = re.findall(r"^\s*([^ ]+)", optional_annotation_str,  flags=re.MULTILINE|re.DOTALL)[0]
-                    span_str = '\n\t<span ana="#' + value_str+ '">\n\t\t<certainty match="@ana" locus="value"'
+                    span_str = '\n\t<span ana="' + value_str+ '">\n\t\t<certainty match="@ana" locus="value"'
                     print(type(value_str))
                     print(value_str)
                     if "cert=" in optional_annotation_str:
