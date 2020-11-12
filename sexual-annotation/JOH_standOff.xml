@@ -51,6 +51,7 @@
 			<change when="2016-02-13" who="#jct">First TEI version of Juan</change>
 			<change when="2016-03-12" who="#jct">Corrected the whole text</change>
 			<change when="2016-03-12" who="#jct">Put # in @who, @corresp and @key</change>
+			<change when="2020-11-12" who="#jct">.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -102,7 +103,6 @@
 							Estos no nacieron de sangre, ni por voluntad de carne, ni por voluntad de <rs key="org0" cert="medium">varón</rs>, sino de <rs key="#per14">Dios</rs>.
 						</ab>
 						<ab xml:id="b.JOH.001.014" type="verse" n="14">
-						    <!--sex: body; blessed-->
 							Y el <rs key="#per1">Verbo</rs> se hizo carne y habitó entre nosotros lleno de gracia y de verdad; y vimos su gloria, gloria como del <rs key="#per1">unigénito del <rs key="#per14">Padre</rs></rs>.
 						</ab>
 						<ab xml:id="b.JOH.001.015" type="verse" n="15">
@@ -237,11 +237,9 @@
 					<div type="pericope">
 						<ab type="pericope">Las bodas en Caná de Galilea</ab>
 						<ab xml:id="b.JOH.002.001" type="verse" n="1">
-							<!--sex: wedding; positive-->
 							Al tercer día se celebraron unas <rs key="#tim10">bodas en <rs key="#pla48">Caná</rs></rs> de <rs key="#pla7">Galilea</rs>, y estaba allí la <rs key="#per11">madre de <rs key="#per1">Jesús</rs></rs>.
 						</ab>
 						<ab xml:id="b.JOH.002.002" type="verse" n="2">
-							<!--sex: wedding; positive-->
 							También fueron invitados a las bodas <rs key="#per1">Jesús</rs> y sus <rs key="#org3">discípulos</rs>.
 						</ab>
 						<ab xml:id="b.JOH.002.003" type="verse" n="3">
@@ -332,27 +330,21 @@
 							Este vino a <rs key="#per1">Jesús</rs> de noche y le dijo <q who="#per103" toWhom="#per1" type="oral"> <rs key="#per1">Rabí</rs>, sabemos que has venido de <rs key="#per14">Dios</rs> como maestro, porque nadie puede hacer estas señales que tú haces, si no está <rs key="#per14">Dios</rs> con él.</q>
 						</ab>
 						<ab xml:id="b.JOH.003.003" type="verse" n="3">
-							<!--sex: birth; blessed-->
 							Le respondió <rs key="#per1">Jesús</rs> <q who="#per1" type="oral" toWhom="#per103"> De cierto, de cierto te digo que el que no nace de nuevo no puede ver el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.003.004" type="verse" n="4">
-							<!--sex: birth; pregnancy; uterus; neutral-->
 							<rs key="#per103">Nicodemo</rs> le preguntó <q type="oral" who="#per103" toWhom="#per1" > ¿Cómo puede un hombre nacer siendo viejo? ¿Puede acaso entrar por segunda vez en el vientre de su madre y nacer?</q>
 						</ab>
 						<ab xml:id="b.JOH.003.005" type="verse" n="5">
-							<!--sex: birth; blessed-->
 							Respondió <rs key="#per1">Jesús</rs> <q who="#per1" type="oral" toWhom="#per103">De cierto, de cierto te digo que el que no nace de agua y del <rs key="#per17">Espíritu</rs> no puede entrar en el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.003.006" type="verse" n="6">
-							<!--sex: birth; flesh; blessed; condemned-->
 							<q who="#per1" type="oral" toWhom="#per103">Lo que nace de la carne, carne es; y lo que nace del <rs key="#per17">Espíritu</rs>, espíritu es</q>.
 						</ab>
 						<ab xml:id="b.JOH.003.007" type="verse" n="7">
-							<!--sex: birth; blessed-->
 							<q who="#per1" type="oral" toWhom="#per103">No te maravilles de que te dije <q who="#per1" type="oral" toWhom="#per103"> Os es necesario nacer de nuevo.</q></q>
 						</ab>
 						<ab xml:id="b.JOH.003.008" type="verse" n="8">
-							<!--sex: birth; blessed-->
 							<q who="#per1" type="oral" toWhom="#per103">El viento sopla de donde quiere, y oyes su sonido, pero no sabes de dónde viene ni a dónde va. Así es todo aquel que nace del <rs key="#per17">Espíritu</rs></q>.
 						</ab>
 						<ab xml:id="b.JOH.003.009" type="verse" n="9">
@@ -445,7 +437,6 @@
 							<q who="#per18" type="oral" toWhom="#org27">porque aquel a quien <rs key="#per14">Dios</rs> envió, las palabras de <rs key="#per14">Dios</rs> habla, pues <rs key="#per14">Dios</rs> no da el <rs key="#per17">Espíritu</rs> por medida.</q>
 						</ab>
 						<ab xml:id="b.JOH.003.035" type="verse" n="35">
-							<!--sex: love; blessed-->
 							<q who="#per18" type="oral" toWhom="#org27">El <rs key="#per14">Padre</rs> ama al <rs key="#per1">Hijo</rs> y ha entregado todas las cosas en su mano.</q>
 						</ab>
 						<ab xml:id="b.JOH.003.036" type="verse" n="36">
@@ -475,50 +466,39 @@
 							Y estaba allí el pozo de <rs key="#per4">Jacob</rs>. Entonces <rs key="#per1">Jesús</rs>, cansado del viaje, se sentó junto al pozo. Era como la hora sexta.
 						</ab>
 						<ab xml:id="b.JOH.004.007" type="verse" n="7">
-							<!--sex: women; watter-->
 							Llegó una mujer de <rs key="#pla53">Samaria</rs> a sacar agua; y <rs key="#per1">Jesús</rs> le dijo <q who="#per1" type="oral" toWhom="#org122"> Dame de beber</q>
 						</ab>
 						<ab xml:id="b.JOH.004.008" type="verse" n="8">
 							pues sus <rs key="#org3">discípulos</rs> habían ido a la ciudad a comprar alimentos.
 						</ab>
 						<ab xml:id="b.JOH.004.009" type="verse" n="9">
-							<!--sex: women; water-->
 							La <rs key="#org122">mujer samaritana</rs> le dijo <q who="#org122" type="oral" toWhom="#per1"> ¿Cómo tú, siendo <rs key="per1">judío</rs>, me pides a mí de beber, que soy <rs key="org122">mujer samaritana</rs>? porque <rs key="#org13">judíos</rs> y <rs key="#org17">samaritanos</rs> no se tratan entre sí.</q>
 						</ab>
 						<ab xml:id="b.JOH.004.010" type="verse" n="10">
-							<!--sex: women; water-->
 							Respondió <rs key="#per1">Jesús</rs> y le dijo <q who="#per1" type="oral" toWhom="#org122"> Si conocieras el don de <rs key="#per14">Dios</rs>, y quién es el que te dice: <q who="#per1" type="oral" toWhom="#per0">Dame de beber</q>, tú le pedirías, y él te daría agua viva.</q>
 						</ab>
 						<ab xml:id="b.JOH.004.011" type="verse" n="11">
-							<!--sex: women; water-->
 							La <rs key="org122">mujer</rs> le dijo <q who="#org122" type="oral" toWhom="#org122"> <rs key="#per1">Señor</rs>, no tienes con qué sacarla, y el pozo es hondo. ¿De dónde, pues, tienes el agua viva?</q>
 						</ab>
 						<ab xml:id="b.JOH.004.012" type="verse" n="12">
-							<!--sex: water-->
 							<q who="#org122" type="oral" toWhom="#per1">¿Acaso eres tú mayor que nuestro <rs key="#per4">padre</rs> <rs key="#per4">Jacob</rs>, que nos dio este pozo, del cual bebieron él, sus <rs key="org88">hijos</rs> y sus ganados?</q>
 						</ab>
 						<ab xml:id="b.JOH.004.013" type="verse" n="13">
-							<!--sex: water-->
 							<rs key="#per1">Jesús</rs> le contestó <q who="#per1" type="oral" toWhom="#org122"> Cualquiera que beba de esta agua volverá a tener sed;</q>
 						</ab>
 						<ab xml:id="b.JOH.004.014" type="verse" n="14">
-							<!--sex: water-->
 							<q type="oral" who="#per1" toWhom="#org122">pero el que beba del agua que yo le daré no tendrá sed jamás, sino que el agua que yo le daré será en él una fuente de agua que salte para vida eterna.</q>
 						</ab>
 						<ab xml:id="b.JOH.004.015" type="verse" n="15">
-							<!--sex: water-->
 							La mujer le dijo <q who="org122" type="oral" toWhom="#per1"> <rs key="#per1">Señor</rs>, dame esa agua, para que no tenga yo sed ni venga aquí a sacarla.</q>
 						</ab>
 						<ab xml:id="b.JOH.004.016" type="verse" n="16">
-							<!--sex: marriage-->
 							<rs key="#per1">Jesús</rs> le dijo <q who="#per1" type="oral" toWhom="#org122"> Ve, llama a tu <rs key="org183">marido</rs>, y ven acá.</q>
 						</ab>
 						<ab xml:id="b.JOH.004.017" type="verse" n="17">
-							<!--sex: single-life; neutral-->
 							Respondió la <rs key="org122">mujer</rs> y dijo <q who="#org122" type="oral" toWhom="#per1"> No tengo <rs key="org183">marido</rs>.</q> <rs key="#per1">Jesús</rs> le dijo: <q who="#per1" type="oral" toWhom="#org122">Bien has dicho: No tengo <rs key="org183">marido</rs>,</q>
 						</ab>
 						<ab xml:id="b.JOH.004.018" type="verse" n="18">
-							<!--sex: non-marital-relation; negative; marriage-->
 							<q who="#per1" type="oral" toWhom="#org122">porque cinco <rs key="org183">maridos</rs> has tenido y el que ahora tienes no es tu <rs key="org183">marido</rs>. Esto has dicho con verdad.</q>
 						</ab>
 						<ab xml:id="b.JOH.004.019" type="verse" n="19">
@@ -955,35 +935,27 @@
 							<q who="#per1" type="oral" toWhom="#org13">Este es el <rs key="#per1">pan</rs> que desciende del <rs key="#pla18">cielo</rs> para que no muera quien coma de él.</q>
 						</ab>
 						<ab xml:id="b.JOH.006.051" type="verse" n="51">
-							<!--sex: body; flesh; positive-->
 							<q who="#per1" type="oral" toWhom="#org13">Yo soy el <rs key="#per1">pan vivo</rs> que descendió del <rs key="#pla18">cielo</rs>; si alguien come de este <rs key="#per1">pan</rs>, vivirá para siempre; y el pan que yo daré es mi carne, la cual yo daré por la vida del <rs key="org0">mundo</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.006.052" type="verse" n="52">
-							<!--sex: body; flesh; positive-->
 							Entonces los <rs key="#org13">judíos</rs> discutían entre sí, diciendo <q type="oral" who="#org3" toWhom="#org3"> ¿Cómo puede este darnos a comer su carne?</q>
 						</ab>
 						<ab xml:id="b.JOH.006.053" type="verse" n="53">
-							<!--sex: body; flesh; positive-->
 							<rs key="#per1">Jesús</rs> les dijo <q who="#per1" type="oral" toWhom="#org13">De cierto, de cierto os digo: Si no coméis la carne del <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> y bebéis su sangre, no tenéis vida en vosotros.</q>
 						</ab>
 						<ab xml:id="b.JOH.006.054" type="verse" n="54">
-							<!--sex: body; flesh; positive-->
 							<q who="#per1" type="oral" toWhom="#org13">El que come mi carne y bebe mi sangre tiene vida eterna, y yo lo resucitaré en el <rs key="#tim1">día final</rs>,</q>
 						</ab>
 						<ab xml:id="b.JOH.006.055" type="verse" n="55">
-							<!--sex: body; flesh; positive-->
 							<q who="#per1" type="oral" toWhom="#org13">porque mi carne es verdadera comida y mi sangre es verdadera bebida.</q>
 						</ab>
 						<ab xml:id="b.JOH.006.056" type="verse" n="56">
-							<!--sex: body; flesh; positive-->
 							<q who="#per1" type="oral" toWhom="#org13">El que come mi carne y bebe mi sangre permanece en mí y yo en él.</q>
 						</ab>
 						<ab xml:id="b.JOH.006.057" type="verse" n="57">
-							<!--sex: body; flesh; positive-->
 							<q who="#per1" type="oral" toWhom="#org13">Así como me envió el <rs key="#per14">Padre viviente</rs> y yo vivo por el <rs key="#per14">Padre</rs>, también el que me come vivirá por mí.</q>
 						</ab>
 						<ab xml:id="b.JOH.006.058" type="verse" n="58">
-							<!--sex: body; flesh; positive-->
 							<q who="#per1" type="oral" toWhom="#org13">Este es el <rs key="#per1">pan</rs> que descendió del <rs key="#pla18">cielo</rs>; no como vuestros <rs key="org22">padres</rs>, que comieron el maná y murieron; el que come este pan vivirá eternamente.</q>
 						</ab>
 						<ab xml:id="b.JOH.006.059" type="verse" n="59">
@@ -1002,7 +974,6 @@
 							<q who="#per1" type="oral" toWhom="#org3">¿Pues qué, si vierais al <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> subir a donde estaba primero?</q>
 						</ab>
 						<ab xml:id="b.JOH.006.063" type="verse" n="63">
-							<!--sex: body; flesh; neutral-->
 							<q who="#per1" type="oral" toWhom="#org3">El <rs key="#per17">espíritu</rs> es el que da vida; la carne para nada aprovecha. Las palabras que yo os he hablado son espíritu y son vida.</q>
 						</ab>
 						<ab xml:id="b.JOH.006.064" type="verse" n="64">
@@ -1102,11 +1073,9 @@
 							<rs key="#per1">Jesús</rs> respondió y les dijo <q who="#per1" type="oral" toWhom="#org13"> Una obra hice y todos os admiráis.</q>
 						</ab>
 						<ab xml:id="b.JOH.007.022" type="verse" n="22">
-							<!--sex: circumcision; neutral-->
 							<q who="#per1" type="oral" toWhom="#org13">Por cierto, <rs key="#per26">Moisés</rs> os dio la circuncisión no porque sea de <rs key="#per26">Moisés</rs>, sino de los <rs key="org22" cert="low">padres</rs> y en <rs key="#tim9">sábado</rs> circuncidáis al <rs key="org183">hombre</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.007.023" type="verse" n="23">
-							<!--sex: circumcision; positive-->
 							<q who="#per1" type="oral" toWhom="#org13">Si recibe el hombre la circuncisión en <rs key="#tim9">sábado</rs>, para que la <rs key="#wor1">Ley</rs> de <rs key="#per26">Moisés</rs> no sea quebrantada, ¿os enojáis conmigo porque en <rs key="#tim9">sábado</rs> sané completamente a un <rs key="org0">hombre</rs>?</q>
 						</ab>
 						<ab xml:id="b.JOH.007.024" type="verse" n="24">
@@ -1231,22 +1200,18 @@
 							Por la mañana volvió al <rs key="#pla30">Templo</rs>, y todo el <rs key="org0">pueblo</rs> vino a él; y sentándose, les enseñaba.
 						</ab>
 						<ab xml:id="b.JOH.008.003" type="verse" n="3">
-							<!--sex: condemned; adultery; women; -->
 							Entonces los <rs key="#org5">escribas</rs> y los <rs key="#org2">fariseos</rs> le trajeron una <rs key="org122">mujer</rs> sorprendida en adulterio y, poniéndola en medio,
 						</ab>
 						<ab xml:id="b.JOH.008.004" type="verse" n="4">
-							<!--sex: condemned; adultery; coitus; women; -->
 							le dijeron <q type="oral" who="#org5 #org2" toWhom="#per1"> <rs key="#per1">Maestro</rs>, esta <rs key="org122">mujer</rs> ha sido sorprendida en el acto mismo de adulterio,</q>
 						</ab>
 						<ab xml:id="b.JOH.008.005" type="verse" n="5">
-							<!--sex: condemned; adultery; coitus;  -->
 							<q type="oral" who="#org5 #org2" toWhom="#per1">y en la <rs key="#wor1">Ley</rs> nos mandó <rs key="#per26">Moisés</rs> apedrear a tales <rs key="org122">mujeres</rs>. Tú, pues, ¿qué dices?</q>
 						</ab>
 						<ab xml:id="b.JOH.008.006" type="verse" n="6">
 							Esto decían probándolo, para tener de qué acusarlo. Pero <rs key="#per1">Jesús</rs>, inclinado hacia el suelo, escribía en tierra con el dedo.
 						</ab>
 						<ab xml:id="b.JOH.008.007" type="verse" n="7">
-							<!--sex: condemned; adultery; -->
 							Y como insistieran en preguntarle, se enderezó y les dijo <q type="oral" who="#per1" toWhom="#org5 #org2"> El que de vosotros esté sin pecado sea el primero en arrojar la piedra contra ella.</q>
 							<!--jct: se puede interpretar como una comparación de un pecado sexual con otros no sexuales-->
 						</ab>
@@ -1257,11 +1222,9 @@
 							Pero ellos, al oir esto, acusados por su conciencia, fueron saliendo uno a uno, comenzando desde los más viejos hasta los más jóvenes; solo quedaron <rs key="#per1">Jesús</rs> y la <rs key="org122">mujer</rs> que estaba en medio.
 						</ab>
 						<ab xml:id="b.JOH.008.010" type="verse" n="10">
-							<!--sex: condemned; adultery; -->
 							Enderezándose <rs key="#per1">Jesús</rs> y no viendo a nadie sino a la <rs key="org122">mujer</rs>, le dijo <q who="#per1" type="oral" toWhom="#org122"> <rs key="org122">Mujer</rs>, ¿dónde están los que te acusaban? ¿Ninguno te condenó?</q>
 						</ab>
 						<ab xml:id="b.JOH.008.011" type="verse" n="11">
-							<!--sex: condemned; adultery; -->
 							Ella dijo <q who="#org122" type="oral" toWhom="#per1"> Ninguno, <rs key="#per1">Señor</rs></q>. Entonces <rs key="#per1">Jesús</rs> le dijo: <q who="#per1" type="oral" toWhom="#org122">Ni yo te condeno; vete y no peques más.</q>
 						</ab>
 					</div>
@@ -1276,8 +1239,7 @@
 						<ab xml:id="b.JOH.008.014" type="verse" n="14">
 							Respondió <rs key="#per1">Jesús</rs> y les dijo <q who="#per1" type="oral" toWhom="#org2"> Aunque yo doy testimonio acerca de mí mismo, mi testimonio es válido, porque sé de dónde he venido y a dónde voy; pero vosotros no sabéis de dónde vengo ni a dónde voy.</q>
 						</ab>
-						<ab xml:id="b.JOH.008.015" type="verse" n="15">
-							<!--sex: flesh; neutral; negative;-->							
+						<ab xml:id="b.JOH.008.015" type="verse" n="15">							
 							<q who="#per1" type="oral" toWhom="#org2">Vosotros juzgáis según la carne; yo no juzgo a nadie.</q>
 						</ab>
 						<ab xml:id="b.JOH.008.016" type="verse" n="16">
@@ -1365,11 +1327,9 @@
 							<q who="#per1" type="oral" toWhom="#org13">Pero ahora intentáis matarme a mí, que os he hablado la verdad, la cual he oído de <rs key="#per14">Dios</rs>. No hizo esto <rs key="#per2">Abraham</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.008.041" type="verse" n="41">
-							<!--sex: fornication; negative-->
 							<q who="#per1" type="oral" toWhom="#org13">Vosotros hacéis las obras de vuestro <rs key="org13">padre</rs>.</q> Entonces le dijeron <q who="#org13" type="oral" toWhom="#per1">¡Nosotros no hemos nacido de fornicación! ¡Un <rs key="per1">padre</rs> tenemos: <rs key="#per14">Dios</rs>!</q>
 						</ab>
 						<ab xml:id="b.JOH.008.042" type="verse" n="42">
-							<!--sex: birth; positive-->
 							<rs key="#per1">Jesús</rs> entonces les dijo <q who="#per1" type="oral" toWhom="#org13">Si vuestro <rs key="#per14">padre</rs> fuera <rs key="#per14">Dios</rs>, entonces me amaríais, porque yo de <rs key="#per14">Dios</rs> he salido y he venido, pues no he venido de mí mismo, sino que él me envió.</q>
 						</ab>
 						<ab xml:id="b.JOH.008.043" type="verse" n="43">
@@ -1434,11 +1394,9 @@
 					<div type="pericope">
 						<ab type="pericope">Jesús sana a un ciego de nacimiento</ab>
 						<ab xml:id="b.JOH.009.001" type="verse" n="1">
-							<!--sex: birth; negative-->
 							Al pasar <rs key="#per1">Jesús</rs> vio a un <rs key="#org15">hombre ciego de nacimiento</rs>.
 						</ab>
 						<ab xml:id="b.JOH.009.002" type="verse" n="2">
-							<!--sex: birth; negative-->
 							Y le preguntaron sus <rs key="#org3">discípulos</rs>, diciendo <q who="#org3" toWhom="#per1" type="oral"> <rs key="#per1">Rabí</rs>, ¿quién pecó, este o sus <rs key="org0">padres</rs>, para que haya nacido <rs key="#org15">ciego</rs>?</q>
 						</ab>
 						<ab xml:id="b.JOH.009.003" type="verse" n="3">
@@ -1494,7 +1452,6 @@
 							Pero los <rs key="#org13">judíos</rs> no creyeron que él había sido <rs key="#org15">ciego</rs> y que había recibido la vista, hasta que llamaron a los <rs key="org0">padres</rs> del que había recibido la vista,
 						</ab>
 						<ab xml:id="b.JOH.009.019" type="verse" n="19">
-							<!--sex: birth-->
 							y les preguntaron, diciendo <q who="#org13" type="oral" toWhom="#org0"> ¿Es este vuestro <rs key="org15">hijo</rs>, el que vosotros decís que nació <rs key="#org15">ciego</rs>? ¿Cómo, pues, ve ahora?</q>
 						</ab>
 						<ab xml:id="b.JOH.009.020" type="verse" n="20">
@@ -1534,7 +1491,6 @@
 							<q toWhom="#org13" type="oral" who="#org15">Y sabemos que <rs key="#per14">Dios</rs> no oye a los <rs key="org19">pecadores</rs>; pero si alguno es temeroso de <rs key="#per14">Dios</rs> y hace su voluntad, a ese oye.</q>
 						</ab>
 						<ab xml:id="b.JOH.009.032" type="verse" n="32">
-							<!--sex: birth; neutral-->
 							<q toWhom="#org13" type="oral" who="#org15">Nunca se ha oído decir que alguien abriera los ojos a uno que nació <rs key="#org15">ciego</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.009.033" type="verse" n="33">
@@ -1715,7 +1671,6 @@
 							Estaba <rs key="#org15">enfermo</rs> uno llamado <rs key="#per106">Lázaro</rs>, de <rs key="#pla31">Betania</rs>, la <rs key="#pla31">aldea de <rs key="#per107">María</rs> y de <rs key="#per108">Marta</rs></rs>, su <rs key="#per108">hermana</rs>.
 						</ab>
 						<ab xml:id="b.JOH.011.002" type="verse" n="2">
-							<!--sex: massage; feet; hair; perfume-->
 							(<rs key="#per107">María</rs>, cuyo <rs key="#org106">hermano</rs> <rs key="#per106">Lázaro</rs> estaba <rs key="#org15">enfermo</rs>, fue la que ungió al <rs key="#per1">Señor</rs> con perfume y le secó los pies con sus cabellos).
 						</ab>
 						<ab xml:id="b.JOH.011.003" type="verse" n="3">
@@ -1909,7 +1864,6 @@
 							Y le hicieron allí una cena; <rs key="#per108">Marta</rs> servía y <rs key="#per106">Lázaro</rs> era uno de los que estaban sentados a la mesa con él.
 						</ab>
 						<ab xml:id="b.JOH.012.003" type="verse" n="3">
-							<!--sex: massage; feet; perfume; hair; positive-->
 							Entonces <rs key="#per107">María</rs> tomó una libra de perfume de nardo puro, de mucho precio, y ungió los pies de <rs key="#per1">Jesús</rs> y los secó con sus cabellos; y la casa se llenó del olor del perfume.
 						</ab>
 						<ab xml:id="b.JOH.012.004" type="verse" n="4">
@@ -2081,7 +2035,6 @@
 
 						<ab type="pericope">Jesús lava los pies de sus discípulos</ab>
 						<ab xml:id="b.JOH.013.001" type="verse" n="1">
-							<!--sex: love; blessed-->
 							Antes de la fiesta de la <rs key="#tim5">Pascua</rs>, sabiendo <rs key="#per1">Jesús</rs> que su <rs key="#tim13">hora</rs> había llegado para que pasara de este mundo al <rs key="#per14">Padre</rs>, como había amado a los suyos que estaban en el mundo, los amó hasta el fin.
 						</ab>
 						<ab xml:id="b.JOH.013.002" type="verse" n="2">
@@ -2094,40 +2047,33 @@
 							se levantó de la cena, se quitó su manto y, tomando una toalla, se la ciñó.
 						</ab>
 						<ab xml:id="b.JOH.013.005" type="verse" n="5">
-							<!--sex: feet; massage; blessed-->
 							Luego puso agua en una vasija y comenzó a lavar los pies de los <rs key="#org3">discípulos</rs> y a secarlos con la toalla con que estaba ceñido.
 						</ab>
 						<ab xml:id="b.JOH.013.006" type="verse" n="6">
-							<!--sex: feet; massage; blessed-->
 							Cuando llegó a <rs key="#per21">Simón Pedro</rs> , este le dijo <q who="#per21" toWhom="#per1" type="oral"> <rs key="#per1">Señor</rs>, ¿tú me lavarás los pies?</q>
 						</ab>
 						<ab xml:id="b.JOH.013.007" type="verse" n="7">
 							Respondió <rs key="#per1">Jesús</rs> y le dijo <q who="#per1" toWhom="#per21" type="oral"> Lo que yo hago, tú no lo comprendes ahora, pero lo entenderás después.</q>
 						</ab>
 						<ab xml:id="b.JOH.013.008" type="verse" n="8">
-							<!--sex: feet; massage; blessed-->
 							<rs key="#per21">Pedro</rs> le dijo <q who="#per21" toWhom="#per1" type="oral"> No me lavarás los pies jamás.</q> <rs key="#per1">Jesús</rs> le respondió: <q who="#per1" toWhom="#per21" type="oral">Si no te lavo, no tendrás parte conmigo.</q>
 						</ab>
 						<ab xml:id="b.JOH.013.009" type="verse" n="9">
-							<!--sex: feet; massage; blessed; hands; head; water-->
 							Le dijo <rs key="#per21">Simón Pedro</rs>  <q who="#per21" toWhom="#per1" type="oral"> <rs key="#per1">Señor</rs>, no solo mis pies, sino también las manos y la cabeza.</q>
 						</ab>
 						<ab xml:id="b.JOH.013.010" type="verse" n="10">
-							<!--sex: feet; massage; blessed; negative-->
 							<rs key="#per1">Jesús</rs> le dijo <q who="#per1" toWhom="#org3 #per21" type="oral"> El que está lavado no necesita sino lavarse los pies, pues está todo limpio; y vosotros limpios estáis, aunque no todos.</q>
 						</ab>
 						<ab xml:id="b.JOH.013.011" type="verse" n="11">
 							Él sabía quién lo iba a entregar; por eso dijo <q who="#per1" toWhom="#org3 #per21" type="oral">No estáis limpios todos</q>.
 						</ab>
 						<ab xml:id="b.JOH.013.012" type="verse" n="12">
-							<!--sex: feet; water; blessed-->
 							Así que, después que les lavó los pies, tomó su manto, volvió a la mesa y les dijo <q who="#per1" toWhom="#org3" type="oral"> ¿Sabéis lo que os he hecho?</q>
 						</ab>
 						<ab xml:id="b.JOH.013.013" type="verse" n="13">
 							<q who="#per1" toWhom="#org3" type="oral">Vosotros me llamáis <rs key="#per1">Maestro</rs> y <rs key="#per1">Señor</rs>, y decís bien, porque lo soy.</q>
 						</ab>
 						<ab xml:id="b.JOH.013.014" type="verse" n="14">
-							<!--sex: feet; water; blessed-->
 							<q who="#per1" toWhom="#org3" type="oral">Pues si yo, el <rs key="#per1">Señor</rs> y el <rs key="#per1">Maestro</rs>, he lavado vuestros pies, vosotros también debéis lavaros los pies los unos a los otros,</q>
 						</ab>
 						<ab xml:id="b.JOH.013.015" type="verse" n="15">
@@ -2158,14 +2104,12 @@
 							Entonces los <rs key="#org3">discípulos</rs> se miraron unos a otros, dudando de quién hablaba.
 						</ab>
 						<ab xml:id="b.JOH.013.023" type="verse" n="23">
-							<!--sex: love-->
 							Y uno de sus <rs key="#per25" cert="low">discípulos</rs>, al cual <rs key="#per1">Jesús</rs> amaba, estaba recostado al lado de <rs key="#per1">Jesús</rs>.
 						</ab>
 						<ab xml:id="b.JOH.013.024" type="verse" n="24">
 							A este, pues, hizo señas <rs key="#per21">Simón Pedro</rs>  para que preguntara quién era aquel de quien hablaba.
 						</ab>
 						<ab xml:id="b.JOH.013.025" type="verse" n="25">
-							<!--sex: hug; breast; positive-->
 							Él entonces, recostándose sobre el pecho de <rs key="#per1">Jesús</rs>, le preguntó <q who="#per25" toWhom="#per1" type="oral"> <rs key="#per1">Señor</rs>, ¿quién es?</q>
 						</ab>
 						<ab xml:id="b.JOH.013.026" type="verse" n="26">
@@ -2197,7 +2141,6 @@
 							<q who="#per1" toWhom="#org3" type="oral"><rs key="#org3">Hijitos</rs>, aún estaré con vosotros un poco. Me buscaréis, pero, como dije a los <rs key="#org13">judíos</rs>, así os digo ahora a vosotros: A donde yo voy, vosotros no podéis ir.</q>
 						</ab>
 						<ab xml:id="b.JOH.013.034" type="verse" n="34">
-							<!--sex: love; blessed; -->
 							<q who="#per1" toWhom="#org3" type="oral">Un mandamiento nuevo os doy: Que os améis unos a otros; como yo os he amado, que también os améis unos a otros.</q>
 						</ab>
 						<ab xml:id="b.JOH.013.035" type="verse" n="35">
@@ -2268,7 +2211,6 @@
 					<div type="pericope">
 						<ab type="pericope">La promesa del Espíritu Santo</ab>
 						<ab xml:id="b.JOH.014.015" type="verse" n="15">
-							<!--sex: love-->
 							<q who="#per1" type="oral" toWhom="#org13 #per28">Si me amáis, guardad mis mandamientos.</q>
 						</ab>
 						<ab xml:id="b.JOH.014.016" type="verse" n="16">
@@ -2287,18 +2229,15 @@
 							<q who="#per1" toWhom="#org3 #per28" type="oral">En aquel día vosotros conoceréis que yo estoy en mi <rs key="#per14">Padre</rs>, y vosotros en mí y yo en vosotros.</q>
 						</ab>
 						<ab xml:id="b.JOH.014.021" type="verse" n="21">
-							<!--sex: love-->
 							<q who="#per1" toWhom="#org3 #per28" type="oral">El que tiene mis mandamientos y los guarda, ese es el que me ama; y el que me ama será amado por mi <rs key="#per14">Padre</rs>, y yo lo amaré y me manifestaré a él.</q>
 						</ab>
 						<ab xml:id="b.JOH.014.022" type="verse" n="22">
 							Le dijo <rs key="#per110">Judas</rs> (no el <rs key="#per34">Iscariote</rs>) <q who="#per110" toWhom="#org3 #per1" type="oral"> <rs key="#per1">Señor</rs>, ¿cómo es que te manifestarás a nosotros y no al <rs key="org0">mundo</rs>?</q>
 						</ab>
 						<ab xml:id="b.JOH.014.023" type="verse" n="23">
-							<!--sex: love-->
 							Respondió <rs key="#per1">Jesús</rs> y le dijo <q who="#per1" toWhom="#org3 #per110" type="oral"> El que me ama, mi palabra guardará; y mi <rs key="#per14">Padre</rs> lo amará, y vendremos a él y haremos morada con él.</q>
 						</ab>
 						<ab xml:id="b.JOH.014.024" type="verse" n="24">
-							<!--sex: love-->
 							<q who="#per1" toWhom="#org3 #per110" type="oral">El que no me ama no guarda mis palabras; y la palabra que habéis oído no es mía, sino del <rs key="#per14">Padre</rs> que me envió.</q>
 						</ab>
 						<ab xml:id="b.JOH.014.025" type="verse" n="25">
@@ -2320,7 +2259,6 @@
 							<q who="#per1" type="oral" toWhom="#org3 #per110">No hablaré ya mucho con vosotros, porque viene el <rs key="#per20">príncipe de este <rs key="pla41">mundo</rs></rs> y él nada tiene en mí.</q>
 						</ab>
 						<ab xml:id="b.JOH.014.031" type="verse" n="31">
-							<!--sex: love-->
 							<q who="#per1" type="oral" toWhom="#org3 #per110">Pero para que el <rs key="pla41">mundo</rs> conozca que amo al <rs key="#per14">Padre</rs>, y como el <rs key="#per14">Padre</rs> me mandó, así hago. ¡Levantaos, vámonos de aquí!</q>
 						</ab>
 					</div>
@@ -2353,22 +2291,18 @@
 							<q who="#per1" type="oral" toWhom="#org3">En esto es glorificado mi <rs key="#per14">Padre</rs>: en que llevéis mucho fruto y seáis así mis <rs key="#org3">discípulos</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.015.009" type="verse" n="9">
-							<!--sex: love; blessed-->
 							<q who="#per1" toWhom="#org3" type="oral">Como el <rs key="#per14">Padre</rs> me ha amado, así también yo os he amado; permaneced en mi amor.</q>
 						</ab>
 						<ab xml:id="b.JOH.015.010" type="verse" n="10">
-							<!--sex: love; blessed-->
 							<q who="#per1" toWhom="#org3" type="oral">Si guardáis mis mandamientos, permaneceréis en mi amor; así como yo he guardado los mandamientos de mi <rs key="#per14">Padre</rs> y permanezco en su amor.</q>
 						</ab>
 						<ab xml:id="b.JOH.015.011" type="verse" n="11">
 							<q who="#per1" type="oral" toWhom="#org3">»Estas cosas os he hablado para que mi gozo esté en vosotros, y vuestro gozo sea completo.</q>
 						</ab>
 						<ab xml:id="b.JOH.015.012" type="verse" n="12">
-							<!--sex: love; blessed-->
 							<q who="#per1" type="oral" toWhom="#org3">Este es mi mandamiento: Que os améis unos a otros, como yo os he amado.</q>
 						</ab>
 						<ab xml:id="b.JOH.015.013" type="verse" n="13">
-							<!--sex: love; blessed-->
 							<q who="#per1" type="oral" toWhom="#org3">Nadie tiene mayor amor que este, que uno ponga su vida por sus <rs key="org0">amigos</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.015.014" type="verse" n="14">
@@ -2381,7 +2315,6 @@
 							<q who="#per1" toWhom="#org3" type="oral">No me elegisteis vosotros a mí, sino que yo os elegí a vosotros y os he puesto para que vayáis y llevéis fruto, y vuestro fruto permanezca; para que todo lo que pidáis al <rs key="#per14">Padre</rs> en mi nombre, él os lo dé.</q>
 						</ab>
 						<ab xml:id="b.JOH.015.017" type="verse" n="17">
-							<!--sex: love; blessed-->
 							<q who="#per1" type="oral" toWhom="#org3">Esto os mando: Que os améis unos a otros.</q>
 						</ab>
 					</div>
@@ -2487,7 +2420,6 @@
 							<q who="#per1" type="oral" toWhom="#org3">De cierto, de cierto os digo que vosotros lloraréis y lamentaréis, y en cambio el <rs key="org0">mundo</rs> se alegrará; pero aunque vosotros estéis tristes, vuestra tristeza se convertirá en gozo.</q>
 						</ab>
 						<ab xml:id="b.JOH.016.021" type="verse" n="21">
-							<!--sex: birth; women; descendant; negative; positive-->
 							<q who="#per1" type="oral" toWhom="#org3">La <rs key="org122">mujer</rs> cuando da a luz tiene dolor, porque ha llegado su hora; pero después que ha dado a luz a un <rs key="org0">niño</rs>, ya no se acuerda de la angustia, por el gozo de que haya nacido un <rs key="org0">hombre</rs> en el <rs key="pla41">mundo</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.016.022" type="verse" n="22">
@@ -2539,7 +2471,6 @@
 							Estas cosas habló <rs key="#per1">Jesús</rs>, y levantando los ojos al <rs key="#pla18">cielo</rs>, dijo <q who="#per1" toWhom="#per14" type="prayer"> <rs key="#per14">Padre</rs>, la hora ha llegado: glorifica a tu <rs key="#per1">Hijo</rs>, para que también tu <rs key="#per1">Hijo</rs> te glorifique a ti,</q>
 						</ab>
 						<ab xml:id="b.JOH.017.002" type="verse" n="2">
-							<!-- sex: flesh-->
 							<q who="#per1" toWhom="#per14" type="prayer">pues le has dado potestad sobre toda carne para que dé vida eterna a todos los que le diste.</q>
 						</ab>
 						<ab xml:id="b.JOH.017.003" type="verse" n="3">
@@ -2603,18 +2534,15 @@
 							<q who="#per1" toWhom="#per14" type="prayer">Yo les he dado la gloria que me diste, para que sean uno, así como nosotros somos uno.</q>
 						</ab>
 						<ab xml:id="b.JOH.017.023" type="verse" n="23">
-							<!--sex: love; blessed-->
 							<q who="#per1" toWhom="#per14" type="prayer">Yo en ellos y tú en mí, para que sean perfectos en unidad, para que el mundo conozca que tú me enviaste, y que los has amado a ellos como también a mí me has amado.</q>
 						</ab>
 						<ab xml:id="b.JOH.017.024" type="verse" n="24">
-							<!--sex: love; blessed-->
 							<q who="#per1" toWhom="#per14" type="prayer">»<rs key="#per14" cert="low">Padre</rs>, aquellos que me has dado, quiero que donde yo esté, también ellos estén conmigo, para que vean mi gloria que me has dado, pues me has amado desde antes de la fundación del <rs key="pla41">mundo</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.017.025" type="verse" n="25">
 							<q who="#per1" toWhom="#per14" type="prayer"><rs key="#per14" cert="low">Padre justo</rs>, el <rs key="org0">mundo</rs> no te ha conocido, pero yo te he conocido, y estos han conocido que tú me enviaste.</q>
 						</ab>
 						<ab xml:id="b.JOH.017.026" type="verse" n="26">
-							<!--sex: love; blessed-->
 							<q who="#per1" toWhom="#per14" type="prayer">Les he dado a conocer tu nombre y lo daré a conocer aún, para que el amor con que me has amado esté en ellos y yo en ellos.</q>
 						</ab>
 					</div>
@@ -2910,7 +2838,6 @@
 							El <rs key="#tim1">primer día de la semana</rs>, <rs key="#per58">María Magdalena</rs> fue de mañana, siendo aún oscuro, al <rs key="#pla36">sepulcro</rs>, y vio quitada la piedra del <rs key="#pla36">sepulcro</rs>.
 						</ab>
 						<ab xml:id="b.JOH.020.002" type="verse" n="2">
-							<!--sex: love; blessed-->
 							Entonces corrió y fue a <rs key="#per21">Simón Pedro</rs>  y al otro <rs key="#per25" cert="medium">discípulo</rs>, aquel a quien amaba <rs key="#per1">Jesús</rs>, y les dijo <q who="#per58" toWhom="#per21 #per25" type="oral"> Se han llevado del <rs key="#pla36">sepulcro</rs> al <rs key="#per1">Señor</rs> y no sabemos dónde lo han puesto.</q>
 						</ab>
 						<ab xml:id="b.JOH.020.003" type="verse" n="3">
@@ -3037,7 +2964,6 @@
 							Él les dijo <q who="#per1" toWhom="#org3" type="oral"> Echad la red a la derecha de la barca y hallaréis.</q> Entonces la echaron, y ya no la podían sacar, por la gran cantidad de peces.
 						</ab>
 						<ab xml:id="b.JOH.021.007" type="verse" n="7">
-							<!--sex: love; positive-->
 							Entonces aquel <rs key="#per25">discípulo</rs> a quien <rs key="#per1">Jesús</rs> amaba dijo a <rs key="#per21">Pedro</rs> <q who="#per25" toWhom="#per21" type="oral"> ¡Es el <rs key="#per1">Señor</rs>!</q> <rs key="#per21">Simón Pedro</rs> , cuando oyó que era el <rs key="#per1">Señor</rs>, se ciñó la ropa (porque se había despojado de ella) y se tiró al <rs key="#pla43">mar</rs>.
 						</ab>
 						<ab xml:id="b.JOH.021.008" type="verse" n="8">
@@ -3065,15 +2991,12 @@
 					<div type="pericope">
 						<ab type="pericope">Apacienta mis ovejas</ab>
 						<ab xml:id="b.JOH.021.015" type="verse" n="15">
-							<!--sex: love; positive-->
 							Después de comer, <rs key="#per1">Jesús</rs> dijo a <rs key="#per21">Simón Pedro</rs>  <q who="#per1" toWhom="#per21" type="oral"> <rs key="#per21">Simón</rs> , <rs key="#per21">hijo de <rs key="#per40">Jonás</rs></rs>, ¿me amas más que estos?</q> Le respondió: <q who="#per21" toWhom="#per2" type="oral">Sí, <rs key="#per1">Señor</rs>; tú sabes que te quiero.</q> Él le dijo: <q who="#per1" toWhom="#per21" type="oral">Apacienta mis <rs key="org0" cert="medium">corderos</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.021.016" type="verse" n="16">
-							<!--sex: love; positive-->
 							Volvió a decirle la segunda vez <q who="#per1" toWhom="#per21" type="oral"> <rs key="#per21">Simón</rs> , <rs key="#per21">hijo de <rs key="#per40">Jonás</rs></rs>, ¿me amas?</q> <rs key="#per21">Pedro</rs> le respondió: <q who="#per21" toWhom="#per1" type="oral">Sí, <rs key="#per1">Señor</rs>; tú sabes que te quiero.</q> Le dijo: <q who="#per1" toWhom="#per21" type="oral">Pastorea mis <rs key="org0" cert="medium">ovejas</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.021.017" type="verse" n="17">
-							<!--sex: love; positive-->
 							Le dijo la tercera vez <q who="#per1" toWhom="#per21" type="oral"> <rs key="#per21">Simón</rs> , <rs key="#per21">hijo de <rs key="#per40">Jonás</rs></rs>, ¿me quieres?</q> <rs key="#per21">Pedro</rs> se entristeció de que le dijera por tercera vez <q who="#per1" toWhom="#per21" type="oral">¿Me quieres?</q>, y le respondió: <q who="#per21" toWhom="#per1" type="oral"><rs key="#per1">Señor</rs>, tú lo sabes todo; tú sabes que te quiero.</q> <rs key="#per1">Jesús</rs> le dijo: <q who="#per1" toWhom="#per21" type="oral">Apacienta mis <rs key="org0" cert="medium">ovejas</rs>.</q>
 						</ab>
 						<ab xml:id="b.JOH.021.018" type="verse" n="18">
@@ -3086,7 +3009,6 @@
 					<div type="pericope">
 						<ab type="pericope">El discípulo amado</ab>
 						<ab xml:id="b.JOH.021.020" type="verse" n="20">
-							<!--sex: love; positive-->
 							Volviéndose <rs key="#per21">Pedro</rs>, vio que los seguía el <rs key="#per25">discípulo a quien amaba <rs key="#per1">Jesús</rs></rs>, el mismo que en la cena se había recostado al lado de él y le había dicho <q who="#per21" toWhom="#per1" type="oral"><rs key="#per1">Señor</rs>, ¿quién es el que te ha de entregar?</q>.
 						</ab>
 						<ab xml:id="b.JOH.021.021" type="verse" n="21">
@@ -3113,4 +3035,929 @@
 			<div />
 		</back>
 	</text>
+<standOff xml:id="b.JOH.sexualThemes"  scheme="taxonomy.xml">
+<spanGrp type="theme" inst="#b.JOH.001.014">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.001.014">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.002.001">
+	<span ana="wedding">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.002.001">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.002.002">
+	<span ana="wedding">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.002.002">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.003">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.003">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.004">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.004">
+	<span ana="pregnancy">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.004">
+	<span ana="uterus">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.004">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.005">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.005">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.006">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.006">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.006">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.006">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.007">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.007">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.008">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.008">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.035">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.003.035">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.007">
+	<span ana="women">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.007">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.009">
+	<span ana="women">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.009">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.010">
+	<span ana="women">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.010">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.011">
+	<span ana="women">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.011">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.012">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.013">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.014">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.015">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.016">
+	<span ana="marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.017">
+	<span ana="single-life">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.017">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.018">
+	<span ana="non-marital-relation">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.018">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.004.018">
+	<span ana="marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.051">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.051">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.051">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.052">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.052">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.052">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.053">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.053">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.053">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.054">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.054">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.054">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.055">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.055">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.055">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.056">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.056">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.056">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.057">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.057">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.057">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.058">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.058">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.058">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.063">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.063">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.006.063">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.007.022">
+	<span ana="circumcision">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.007.022">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.007.023">
+	<span ana="circumcision">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.007.023">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.003">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.003">
+	<span ana="sex-before-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.003">
+	<span ana="women">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.004">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.004">
+	<span ana="sex-before-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.004">
+	<span ana="coitus">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.004">
+	<span ana="women">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.005">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.005">
+	<span ana="sex-before-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.005">
+	<span ana="coitus">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.007">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.007">
+	<span ana="sex-before-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.010">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.010">
+	<span ana="sex-before-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.011">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.011">
+	<span ana="sex-before-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.015">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.015">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.015">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.041">
+	<span ana="sex-outside-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.041">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.042">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.008.042">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.009.001">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.009.001">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.009.002">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.009.002">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.009.019">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.009.032">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.009.032">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.011.002">
+	<span ana="massage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.011.002">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.011.002">
+	<span ana="hair">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.011.002">
+	<span ana="perfume">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.012.003">
+	<span ana="massage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.012.003">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.012.003">
+	<span ana="perfume">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.012.003">
+	<span ana="hair">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.012.003">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.001">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.001">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.005">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.005">
+	<span ana="massage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.005">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.006">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.006">
+	<span ana="massage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.006">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.008">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.008">
+	<span ana="massage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.008">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.009">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.009">
+	<span ana="massage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+
+<spanGrp type="theme" inst="#b.JOH.013.009">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.009">
+	<span ana="hand">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.009">
+	<span ana="head">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.009">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.010">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.010">
+	<span ana="massage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+
+<spanGrp type="theme" inst="#b.JOH.013.010">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.010">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.012">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.012">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.012">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.014">
+	<span ana="foot">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.014">
+	<span ana="water">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.014">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.023">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.025">
+	<span ana="hug">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.025">
+	<span ana="female-breast">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.025">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.034">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.013.034">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.014.015">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.014.021">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.014.023">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.014.024">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.014.031">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.009">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.009">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.010">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.010">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.012">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.012">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.013">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.013">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.017">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.015.017">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.016.021">
+	<span ana="birth">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.016.021">
+	<span ana="women">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.016.021">
+	<span ana="ascendant-descendant">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.016.021">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.016.021">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.017.002">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.017.023">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.017.023">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.017.024">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.017.024">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.017.026">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.017.026">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.020.002">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.020.002">
+	<span ana="blessed-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.007">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.007">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.015">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.015">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.016">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.016">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.017">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.017">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.020">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.JOH.021.020">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+
+</standOff>
 </TEI>
