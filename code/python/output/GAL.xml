@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Gálatas</title>
+				<title type="idno">
+					<idno type="string">GAL</idno>
+					<idno type="viaf"></idno>
+				</title>
+				<author>
+					<name type="short"></name>
+					<name type="full"></name>
+					<idno type="viaf"></idno>
+				</author>
+				<principal key="#jct">José Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>José Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2018">2018</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2018-10-28" who="#jct">First version of Galatians.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div />
+		</front><body>
+			<div xml:id="b.GAL" type="book">
+				<div xml:id="b.GAL.1" type="chapter" n="1">
+					<div type="pericope">
+						<head type="pericope">Salutación</head>
+						<ab xml:id="b.GAL.1.1" type="verse" n="1">
+							<rs key="#per504">Pablo</rs>, <rs key="#per504">apóstol</rs> (no por disposición de <rs key="#org0">hombres</rs> ni por <rs key="#org0">hombre</rs>, sino por <rs key="#per1">Jesucristo</rs> y por <rs key="#per14">Dios</rs> <rs key="#per14">Padre</rs> que lo resucitó de los muertos),
+						</ab>
+						<ab xml:id="b.GAL.1.2" type="verse" n="2">
+							y todos los <rs key="#org282">hermanos</rs> que están conmigo, a las <rs key="#org282">iglesias de <rs key="#pla198">Galacia</rs></rs>:
+						</ab>
+						<ab xml:id="b.GAL.1.3" type="verse" n="3">
+							Gracia y paz sean a vosotros, de <rs key="#per14">Dios</rs> <rs key="#per14">Padre</rs> y de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>,
+						</ab>
+						<ab xml:id="b.GAL.1.4" type="verse" n="4">
+							el cual se dio a sí mismo por nuestros pecados para librarnos del presente siglo malo,, conforme a la voluntad de nuestro <rs key="#per14">Dios</rs> y <rs key="#per14">Padre</rs>,
+						</ab>
+						<ab xml:id="b.GAL.1.5" type="verse" n="5">
+							a quien sea la gloria por los siglos de los siglos. Amén.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">No hay otro evangelio</head>
+						<ab xml:id="b.GAL.1.6" type="verse" n="6">
+							Estoy asombrado de que tan pronto os hayáis alejado del que os llamó por la gracia de <rs key="#per1">Cristo</rs>, para seguir un evangelio diferente.
+						</ab>
+						<ab xml:id="b.GAL.1.7" type="verse" n="7">
+							No que haya otro, sino que hay algunos que os perturban y quieren alterar el evangelio de <rs key="#per1">Cristo</rs>.
+						</ab>
+						<ab xml:id="b.GAL.1.8" type="verse" n="8">
+							Pero si aun nosotros, o un <rs key="#org4">ángel del <rs key="#pla18">cielo</rs></rs>, os anuncia un evangelio diferente del que os hemos anunciado, sea anatema.
+						</ab>
+						<ab xml:id="b.GAL.1.9" type="verse" n="9">
+							Como antes hemos dicho, también ahora lo repito: Si alguien os predica un evangelio diferente del que habéis recibido, sea anatema.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El ministerio de Pablo</head>
+						<ab xml:id="b.GAL.1.10" type="verse" n="10">
+							¿Acaso busco ahora la aprobación de los <rs key="#org0">hombres</rs> o la de <rs key="#per14">Dios</rs>? ¿O trato de agradar a los <rs key="#org0">hombres</rs>? Si todavía agradara a los <rs key="#org0">hombres</rs>, no sería <rs key="#per504">siervo de <rs key="#per1">Cristo</rs></rs>.
+						</ab>
+						<ab xml:id="b.GAL.1.11" type="verse" n="11">
+							Pero os hago saber, <rs key="#org282">hermanos</rs>, que el evangelio anunciado por mí no es invención humana,
+						</ab>
+						<ab xml:id="b.GAL.1.12" type="verse" n="12">
+							pues yo ni lo recibí ni lo aprendí de <rs key="#org0">hombre</rs> alguno, sino por revelación de <rs key="#per1">Jesucristo</rs>.
+						</ab>
+						<ab xml:id="b.GAL.1.13" type="verse" n="13">
+							Ya habéis oído acerca de mi conducta en otro tiempo en el judaísmo, que perseguía sobremanera a la <rs key="#org37">iglesia de <rs key="#per14">Dios</rs></rs> y la asolaba.
+						</ab>
+						<ab xml:id="b.GAL.1.14" type="verse" n="14">
+							En el judaísmo aventajaba a muchos de mis <rs key="#org39">contemporáneos</rs> en mi <rs key="#pla4">nación</rs>, siendo mucho más celoso de las tradiciones de mis <rs key="#per1506 #per1507">padres</rs>.
+						</ab>
+						<ab xml:id="b.GAL.1.15" type="verse" n="15">
+							Pero cuando agradó a <rs key="#per14">Dios</rs>, que me apartó desde el vientre de mi <rs key="#per1506">madre</rs> y me llamó por su gracia,
+						</ab>
+						<ab xml:id="b.GAL.1.16" type="verse" n="16">
+							revelar a su <rs key="#per1">Hijo</rs> en mí, para que yo lo predicara entre los <rs key="#org16">gentiles</rs>, no me apresuré a consultar con carne y sangre.
+						</ab>
+						<ab xml:id="b.GAL.1.17" type="verse" n="17">
+							Tampoco subí a <rs key="#pla3">Jerusalén</rs> para ver a los que eran <rs key="#org3">apóstoles</rs> antes que yo; sino que fui a <rs key="#pla445">Arabia</rs> y volví de nuevo a <rs key="#pla80">Damasco</rs>.
+						</ab>
+						<ab xml:id="b.GAL.1.18" type="verse" n="18">
+							Después, pasados tres años, subí a <rs key="#pla3">Jerusalén</rs> para ver a <rs key="#per21">Pedro</rs> y permanecí con él quince días;
+						</ab>
+						<ab xml:id="b.GAL.1.19" type="verse" n="19">
+							pero no vi a ningún otro de los <rs key="#org3">apóstoles</rs>, sino a <rs key="#per98" cert="medium">Jacobo</rs> el <rs key="#per98">hermano del <rs key="#per1">Señor</rs></rs>.
+						</ab>
+						<ab xml:id="b.GAL.1.20" type="verse" n="20">
+							En esto que os escribo, os aseguro delante de <rs key="#per14">Dios</rs> que no miento.
+						</ab>
+						<ab xml:id="b.GAL.1.21" type="verse" n="21">
+							Después fui a las <rs key="#pla14 #pla173">regiones de <rs key="#pla14">Siria</rs> y de <rs key="#pla173">Cilicia</rs></rs>;
+						</ab>
+						<ab xml:id="b.GAL.1.22" type="verse" n="22">
+							pero no me conocían personalmente las <rs key="#org37">iglesias de <rs key="#pla2">Judea</rs></rs> que están en <rs key="#per1">Cristo</rs>,
+						</ab>
+						<ab xml:id="b.GAL.1.23" type="verse" n="23">
+							pues solo habían oído decir: <q who="#org37" toWhom="#org37" type="oral">«Aquel que en otro tiempo nos perseguía, ahora predica la fe que en otro tiempo combatía».</q>
+						</ab>
+						<ab xml:id="b.GAL.1.24" type="verse" n="24">
+							Y glorificaban a <rs key="#per14">Dios</rs> a causa de mí.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.GAL.2" type="chapter" n="2">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.GAL.2.1" type="verse" n="1">
+							Después, pasados catorce años, subí otra vez a <rs key="#pla3">Jerusalén</rs> con <rs key="#per483">Bernabé</rs>, llevando también conmigo a <rs key="#per907">Tito</rs>.
+						</ab>
+						<ab xml:id="b.GAL.2.2" type="verse" n="2">
+							Subí debido a una revelación y, para no correr o haber corrido en vano, expuse en privado a los que tenían cierta reputación, el evangelio que predico entre los <rs key="#org16">gentiles</rs>.
+						</ab>
+						<ab xml:id="b.GAL.2.3" type="verse" n="3">
+							Pero ni aun <rs key="#per907">Tito</rs>, que estaba conmigo, con todo y ser griego, fue obligado a circuncidarse,
+						</ab>
+						<ab xml:id="b.GAL.2.4" type="verse" n="4">
+							a pesar de los falsos hermanos que se habían introducido entre nosotros a escondidas, para espiar nuestra libertad la que tenemos en <rs key="#per1">Cristo</rs> <rs key="#per1">Jesús</rs>, para reducirnos a esclavitud.
+						</ab>
+						<ab xml:id="b.GAL.2.5" type="verse" n="5">
+							A los tales ni por un momento accedimos a someternos, para que la verdad del evangelio permaneciera con vosotros.
+						</ab>
+						<ab xml:id="b.GAL.2.6" type="verse" n="6">
+							Pero de los que tenían reputación de ser algo (lo que hayan sido en otro tiempo nada me importa; <rs key="#per14">Dios</rs> no hace acepción de <rs key="#org0">personas</rs>), a mí, pues, los de reputación nada nuevo me comunicaron.
+						</ab>
+						<ab xml:id="b.GAL.2.7" type="verse" n="7">
+							Antes por el contrario, como vieron que me había sido encomendado el evangelio de la incircuncisión, como a <rs key="#per21">Pedro</rs> el de la circuncisión
+						</ab>
+						<ab xml:id="b.GAL.2.8" type="verse" n="8">
+							(pues el que actuó en <rs key="#per21">Pedro</rs> para el apostolado de la circuncisión actuó también en mí para con los <rs key="#org16">gentiles</rs>),
+						</ab>
+						<ab xml:id="b.GAL.2.9" type="verse" n="9">
+							y reconociendo la gracia que me había sido dada, <rs key="#per98">Jacobo</rs>, <rs key="#per903">Cefas</rs> y <rs key="#per25">Juan</rs>, que eran considerados como <rs key="#per25 #per98 #per903">columnas</rs>, nos dieron a mí y a <rs key="#per483">Bernabé</rs> la diestra en señal de compañerismo, para que nosotros fuéramos a los <rs key="#org16">gentiles</rs> y ellos a los de la circuncisión.
+						</ab>
+						<ab xml:id="b.GAL.2.10" type="verse" n="10">
+							Solamente nos pidieron que nos acordáramos de los <rs key="#org102">pobres</rs>; lo cual también me apresuré a cumplir con diligencia.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Pablo reprende a Pedro en Antioquía</head>
+						<ab xml:id="b.GAL.2.11" type="verse" n="11">
+							Pero cuando <rs key="#per21">Pedro</rs> vino a <rs key="#pla171">Antioquía</rs>, lo reprendí cara a cara, porque era de condenar,
+						</ab>
+						<ab xml:id="b.GAL.2.12" type="verse" n="12">
+							pues antes que llegaran algunos de parte de <rs key="#per98">Jacobo</rs>, comía con los <rs key="#org16">gentiles</rs>; pero después que llegaron, se retraía y se apartaba, porque tenía miedo de los de la circuncisión.
+						</ab>
+						<ab xml:id="b.GAL.2.13" type="verse" n="13">
+							Y en su simulación participaban también los otros <rs key="#org13">judíos</rs>, de tal manera que aun <rs key="#per483">Bernabé</rs> fue también arrastrado por la hipocresía de ellos.
+						</ab>
+						<ab xml:id="b.GAL.2.14" type="verse" n="14">
+							Pero cuando vi que no andaban rectamente conforme a la verdad del evangelio, dije a <rs key="#per21">Pedro</rs> delante de todos:  <q who="#per504" toWhom="#per21" type="oral">«Si tú, siendo <rs key="#per21">judío</rs>, vives como los <rs key="#per21">gentiles</rs> y no como <rs key="#per21">judío</rs>, ¿por qué obligas a los <rs key="#org16">gentiles</rs> a judaizar?».</q>
+						</ab>
+						<ab xml:id="b.GAL.2.15" type="verse" n="15">
+							Nosotros <rs key="#org13 #per504">judíos de nacimiento</rs> y no <rs key="#org13">pecadores</rs> de entre los <rs key="#org16">gentiles</rs>,
+						</ab>
+						<ab xml:id="b.GAL.2.16" type="verse" n="16">
+							sabiendo que el <rs key="#org0">hombre</rs> no es justificado por las obras de la <rs key="#wor1">Ley</rs>, sino por la fe de <rs key="#per1">Jesucristo</rs>, nosotros también hemos creído en <rs key="#per1">Jesucristo</rs>, para ser justificados por la fe de <rs key="#per1">Cristo</rs> y no por las obras de la <rs key="#wor1">Ley</rs>, por cuanto por las obras de la <rs key="#wor1">Ley</rs> nadie será justificado.
+						</ab>
+						<ab xml:id="b.GAL.2.17" type="verse" n="17">
+							Ahora bien, si buscando ser justificados en <rs key="#per1">Cristo</rs>, también nosotros resultamos ser <rs key="#org19">pecadores</rs>, ¿es por eso <rs key="#per1">Cristo</rs> <rs key="#per1">ministro de pecado</rs>? ¡De ninguna manera!
+						</ab>
+						<ab xml:id="b.GAL.2.18" type="verse" n="18">
+							Porque si las cosas que destruí, las mismas vuelvo a edificar, <rs key="#per504">transgresor</rs> me hago.
+						</ab>
+						<ab xml:id="b.GAL.2.19" type="verse" n="19">
+							Yo por la <rs key="#wor1">Ley</rs> morí para la <rs key="#wor1">Ley</rs>, a fin de vivir para <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.GAL.2.20" type="verse" n="20">
+							Con <rs key="#per1">Cristo</rs> estoy juntamente crucificado, y ya no vivo yo, mas vive <rs key="#per1">Cristo</rs> en mí; y lo que ahora vivo en la carne, lo vivo en la fe del <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, el cual me amó y se entregó a sí mismo por mí.,
+						</ab>
+						<ab xml:id="b.GAL.2.21" type="verse" n="21">
+							No desecho la gracia de justicia, entonces en vano murió <rs key="#per1">Cristo</rs>.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.GAL.3" type="chapter" n="3">
+					<div type="pericope">
+						<head type="pericope">El Espíritu se recibe por la fe</head>
+						<ab xml:id="b.GAL.3.1" type="verse" n="1">
+							¡<rs key="#org282">Gálatas insensatos</rs>!, ¿quién os fascinó para no obedecer a la verdad, a vosotros ante cuyos ojos <rs key="#per1">Jesucristo</rs> fue ya presentado claramente crucificado?
+						</ab>
+						<ab xml:id="b.GAL.3.2" type="verse" n="2">
+							Esto solo quiero saber de vosotros: ¿Recibisteis el <rs key="#per17">Espíritu</rs> por las obras de la <rs key="#wor1">Ley</rs> o por el escuchar con fe?
+						</ab>
+						<ab xml:id="b.GAL.3.3" type="verse" n="3">
+							¿Tan insensatos sois? Habiendo comenzado por el <rs key="#per17">Espíritu</rs>, ¿ahora vais a acabar por la carne?
+						</ab>
+						<ab xml:id="b.GAL.3.4" type="verse" n="4">
+							¿Tantas cosas habéis padecido en vano? Si es que realmente fue en vano.
+						</ab>
+						<ab xml:id="b.GAL.3.5" type="verse" n="5">
+							Aquel, pues, que os da el <rs key="#per17">Espíritu</rs> y hace maravillas entre vosotros, ¿lo hace por las obras de la <rs key="#wor1">Ley</rs> o por el oir con fe?
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El pacto de Dios con Abraham</head>
+						<ab xml:id="b.GAL.3.6" type="verse" n="6">
+							Así <rs key="#per2">Abraham</rs> creyó a <rs key="#per14">Dios</rs> y le fue contado por justicia.
+						</ab><!--jct: probablemente uno de los versículos más cortos-->
+						<ab xml:id="b.GAL.3.7" type="verse" n="7">
+							Sabed, por tanto, que los que tienen fe, estos son <rs key="#org18 #org70">hijos de <rs key="#per2">Abraham</rs></rs>.
+						</ab>
+						<ab xml:id="b.GAL.3.8" type="verse" n="8">
+							Y la <rs key="#wor1">Escritura</rs>, previendo que <rs key="#per14">Dios</rs> había de justificar por la fe a los <rs key="#org16">gentiles</rs>, dio de antemano la buena nueva a <rs key="#per2">Abraham</rs>, diciendo: <q who="#per14" toWhom="#per2" type="oral">«En ti serán benditas todas las <rs key="#org0">naciones</rs>».</q>
+						</ab>
+						<ab xml:id="b.GAL.3.9" type="verse" n="9">
+							De modo que los que tienen fe son bendecidos con el <rs key="#per2">creyente Abraham</rs>.
+						</ab>
+						<ab xml:id="b.GAL.3.10" type="verse" n="10">
+							Todos los que dependen de las obras de la <rs key="#wor1">Ley</rs> están bajo maldición, pues escrito está: <q type="written"><q who="#per14" type="oral" cert="low">«Maldito sea el que no permanezca en todas las cosas escritas en el <rs key="#wor4">libro de la <rs key="#wor1">Ley</rs></rs>, para cumplirlas».</q></q>
+						</ab>
+						<ab xml:id="b.GAL.3.11" type="verse" n="11">
+							<q type="written"><q who="#per14" type="oral" cert="low">Y que por la justo por la fe vivirá».</q></q>
+						</ab>
+						<ab xml:id="b.GAL.3.12" type="verse" n="12">
+							Pero la <rs key="#wor1">Ley</rs> no procede de la fe, sino que dice: <q type="written"><q who="#per14" type="oral" cert="low">«El que haga estas cosas vivirá por ellas».</q></q>
+						</ab>
+						<ab xml:id="b.GAL.3.13" type="verse" n="13">
+							<rs key="#per1">Cristo</rs> nos redimió de la <rs key="#wor1">maldición de la <rs key="#wor1">Ley</rs></rs>, haciéndose <rs key="#per1">maldición</rs> por nosotros (pues está escrito: <q type="written"><q who="#per14" type="oral" cert="low">«Maldito todo el que es colgado en un madero»</q></q>),
+						</ab>
+						<ab xml:id="b.GAL.3.14" type="verse" n="14">
+							para que en <rs key="#per1">Cristo</rs> <rs key="#per1">Jesús</rs> la bendición de <rs key="#per2">Abraham</rs> alcanzara a los <rs key="#org16">gentiles</rs>, a fin de que por la fe recibiéramos la promesa del <rs key="#per17">Espíritu</rs>.
+						</ab>
+						<ab xml:id="b.GAL.3.15" type="verse" n="15">
+							<rs key="#org282">Hermanos</rs>, hablo en términos humanos: Un pacto, aunque sea hecho por un <rs key="#org0">hombre</rs>, una vez ratificado, nadie lo invalida, ni le añade.
+						</ab>
+						<ab xml:id="b.GAL.3.16" type="verse" n="16">
+							Ahora bien, a <rs key="#per2">Abraham</rs> fueron hechas las promesas, y a su <rs key="#org70">descendencia</rs>. No dice: <q who="#per14" toWhom="#per2" type="oral">«Y a los <rs key="#org70">descendientes</rs>»</q>, como si hablara de muchos, sino como de uno: <q who="#per14" toWhom="#per2" type="oral">«Y a tu <rs key="#per1">descendencia</rs>»</q>, la cual es <rs key="#per1">Cristo</rs>.
+						</ab>
+						<ab xml:id="b.GAL.3.17" type="verse" n="17">
+							Esto, pues, digo: El pacto previamente ratificado por <rs key="#per14">Dios</rs> en <rs key="#per1">Cristo</rs> no puede ser anulado por la <rs key="#wor1">Ley</rs>, la cual vino cuatrocientos treinta años después; eso habría invalidado la promesa,
+						</ab>
+						<ab xml:id="b.GAL.3.18" type="verse" n="18">
+							porque si la herencia es por la <rs key="#wor1">Ley</rs>, ya no es por la promesa; pero <rs key="#per14">Dios</rs> se la concedió a <rs key="#per2">Abraham</rs> mediante la promesa.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El propósito de la Ley</head>
+						<ab xml:id="b.GAL.3.19" type="verse" n="19">
+							Entonces, ¿para qué sirve la <rs key="#wor1">Ley</rs>? Fue añadida a causa de las transgresiones, hasta que viniera la <rs key="#org18">descendencia</rs> a quien fue hecha la promesa; y fue dada por medio de <rs key="#org4">ángeles</rs> en manos de un <rs key="#per2">mediador</rs>.
+						</ab>
+						<ab xml:id="b.GAL.3.20" type="verse" n="20">
+							Y el <rs key="#per2">mediador</rs> no lo es de uno solo; pero <rs key="#per14">Dios</rs> es uno.
+						</ab>
+						<ab xml:id="b.GAL.3.21" type="verse" n="21">
+							Entonces, ¿la justicia sería verdaderamente por la <rs key="#wor1">Ley</rs>.
+						</ab>
+						<ab xml:id="b.GAL.3.22" type="verse" n="22">
+							Pero la <rs key="#wor1">Escritura</rs> lo encerró todo bajo pecado, para que la promesa que es por la fe en <rs key="#per1">Jesucristo</rs> fuera dada a los <rs key="#org18">creyentes</rs>.
+						</ab>
+						<ab xml:id="b.GAL.3.23" type="verse" n="23">
+							Pero antes que llegara la fe, estábamos confinados bajo la <rs key="#wor1">Ley</rs>, encerrados para aquella fe que iba a ser revelada.
+						</ab>
+						<ab xml:id="b.GAL.3.24" type="verse" n="24">
+							De manera que la <rs key="#wor1">Ley</rs> ha sido nuestro guía para llevarnos a <rs key="#per1">Cristo</rs>, a fin de que fuéramos justificados por la fe.
+						</ab>
+						<ab xml:id="b.GAL.3.25" type="verse" n="25">
+							Pero ahora que ha venido la fe, ya no estamos bajo un guía,
+						</ab>
+						<ab xml:id="b.GAL.3.26" type="verse" n="26">
+							porque todos sois <rs key="#org18">hijos de <rs key="#per14">Dios</rs></rs> por la fe en <rs key="#per1">Cristo</rs> <rs key="#per1">Jesús</rs>,
+						</ab>
+						<ab xml:id="b.GAL.3.27" type="verse" n="27">
+							pues todos los que habéis sido bautizados en <rs key="#per1">Cristo</rs>, de <rs key="#per1">Cristo</rs> estáis revestidos.
+						</ab>
+						<ab xml:id="b.GAL.3.28" type="verse" n="28">
+							Ya no hay <rs key="#org13">judío</rs> ni <rs key="#org16">griego</rs>; no hay <rs key="#org131">esclavo</rs> ni <rs key="#org100">libre</rs>; no hay <rs key="#org183">hombre</rs> ni <rs key="#org122">mujer</rs>, porque todos vosotros sois uno en <rs key="#per1">Cristo</rs> <rs key="#per1">Jesús</rs>.
+						</ab>
+						<ab xml:id="b.GAL.3.29" type="verse" n="29">
+							Y si vosotros sois de <rs key="#per1">Cristo</rs>, ciertamente <rs key="#org18">descendientes de <rs key="#per2">Abraham</rs></rs> sois, y <rs key="#org18">herederos</rs> según la promesa.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.GAL.4" type="chapter" n="4">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.GAL.4.1" type="verse" n="1">
+							Pero también digo: Entre tanto que el <rs key="#org70">heredero</rs> es <rs key="#org70">niño</rs>, en nada difiere del <rs key="#org16">esclavo</rs>, aunque es <rs key="#org70">señor de todo</rs>,
+						</ab>
+						<ab xml:id="b.GAL.4.2" type="verse" n="2">
+							sino que está bajo <rs key="#org12">tutores</rs> y <rs key="#org12">administradores</rs> hasta el tiempo señalado por el <rs key="#per14">padre</rs>.
+						</ab>
+						<ab xml:id="b.GAL.4.3" type="verse" n="3">
+							Así también nosotros, cuando éramos <rs key="#org70">niños</rs> estábamos en esclavitud bajo los rudimentos del <rs key="#org0">mundo</rs>.
+						</ab>
+						<ab xml:id="b.GAL.4.4" type="verse" n="4">
+							Pero cuando vino el cumplimiento del tiempo, <rs key="#per14">Dios</rs> envió a su <rs key="#per1">Hijo</rs>, nacido de <rs key="#per11">mujer</rs> y nacido bajo la <rs key="#wor1">Ley</rs>,
+						</ab>
+						<ab xml:id="b.GAL.4.5" type="verse" n="5">
+							para redimir a los que estaban bajo la <rs key="#wor1">Ley</rs>, a fin de que recibiéramos la adopción de <rs key="#org18">hijos</rs>.
+						</ab>
+						<ab xml:id="b.GAL.4.6" type="verse" n="6">
+							Y por cuanto sois <rs key="#org18">hijos</rs>, <rs key="#per14">Dios</rs> envió a vuestros corazones el <rs key="#per17">Espíritu de su <rs key="#per1">Hijo</rs></rs>, el cual clama: <q who="#per1" toWhom="#per14" type="prayer">«¡Abba, <rs key="#per14">Padre</rs>!».</q>
+						</ab>
+						<ab xml:id="b.GAL.4.7" type="verse" n="7">
+							Así que ya no eres <rs key="#org16">esclavo</rs>, sino <rs key="#org18">hijo</rs>; y si <rs key="#org18">hijo</rs>, también <rs key="#org18">heredero de <rs key="#per14">Dios</rs></rs> por medio de <rs key="#per1">Cristo</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Exhortación contra el volver a la esclavitud</head>
+						<ab xml:id="b.GAL.4.8" type="verse" n="8">
+							Ciertamente, en otro tiempo, cuando no conocíais a <rs key="#per14">Dios</rs>, servíais a los que por naturaleza no son <rs key="#org103">dioses</rs>;
+						</ab>
+						<ab xml:id="b.GAL.4.9" type="verse" n="9">
+							pero ahora, ya que conocéis a <rs key="#per14">Dios</rs> o, más bien, que sois conocidos por <rs key="#per14">Dios</rs>, ¿cómo es que os volvéis de nuevo a los débiles y pobres rudimentos, a los cuales os queréis volver a esclavizar?
+						</ab>
+						<ab xml:id="b.GAL.4.10" type="verse" n="10">
+							Guardáis los días, los meses, los tiempos y los años.
+						</ab>
+						<ab xml:id="b.GAL.4.11" type="verse" n="11">
+							Temo que mi trabajo en vuestro medio haya sido en vano.
+						</ab>
+						<ab xml:id="b.GAL.4.12" type="verse" n="12">
+							Os ruego, <rs key="#org282">hermanos</rs>, que os hagáis como yo, porque yo también me hice como vosotros. Ninguna ofensa me habéis hecho,
+						</ab>
+						<ab xml:id="b.GAL.4.13" type="verse" n="13">
+							pues vosotros sabéis que a causa de una enfermedad del cuerpo os anuncié el evangelio al principio;
+						</ab>
+						<ab xml:id="b.GAL.4.14" type="verse" n="14">
+							y no me despreciasteis ni rechazasteis por la prueba que tenía en mi cuerpo. Al contrario, me recibisteis como a un <rs key="#per503">ángel de <rs key="#per14">Dios</rs></rs>, como a <rs key="#per503">Cristo</rs> <rs key="#per503">Jesús</rs>.
+						</ab><!--jct: es bastante sorprendente que Pablo se compare a sí mismo de esta manera a Jesús-->
+						<ab xml:id="b.GAL.4.15" type="verse" n="15">
+							¿Dónde, pues, está esa satisfacción que experimentabais? Porque os doy testimonio de que si hubierais podido, os habríais sacado vuestros propios ojos para dármelos.
+						</ab>
+						<ab xml:id="b.GAL.4.16" type="verse" n="16">
+							¿Me he hecho, pues, vuestro <rs key="#per503">enemigo</rs> por deciros la verdad?
+						</ab>
+						<ab xml:id="b.GAL.4.17" type="verse" n="17">
+							Se interesan por vosotros, pero no para vuestro bien, sino que quieren apartaros de nosotros para que vosotros os intereséis por ellos.
+						</ab>
+						<ab xml:id="b.GAL.4.18" type="verse" n="18">
+							Bueno es mostrar interés por lo bueno siempre, y no solamente cuando estoy presente con vosotros.
+						</ab>
+						<ab xml:id="b.GAL.4.19" type="verse" n="19">
+							<rs key="#org282">Hijitos</rs> míos, por quienes vuelvo a sufrir dolores de parto, hasta que <rs key="#per1">Cristo</rs> sea formado en vosotros,
+						</ab>
+						<ab xml:id="b.GAL.4.20" type="verse" n="20">
+							quisiera estar con vosotros ahora mismo y cambiar de tono, pues estoy perplejo en cuanto a vosotros.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Alegoría de Sara y Agar</head>
+						<ab xml:id="b.GAL.4.21" type="verse" n="21">
+							Decidme, los que queréis estar bajo la <rs key="#wor1">Ley</rs>: ¿no habéis oído la <rs key="#wor1">Ley</rs>?,
+						</ab>
+						<ab xml:id="b.GAL.4.22" type="verse" n="22">
+							pues está escrito que <rs key="#per2">Abraham</rs> tuvo <rs key="#per3 #per140">dos hijos</rs>: uno de la <rs key="#per143">esclava</rs> y el otro de la <rs key="#per134">libre</rs>.
+						</ab>
+						<ab xml:id="b.GAL.4.23" type="verse" n="23">
+							Pero el de la <rs key="#per143">esclava</rs> nació según la carne; pero el de la <rs key="#per134">libre</rs>, en virtud de la promesa.
+						</ab>
+						<ab xml:id="b.GAL.4.24" type="verse" n="24">
+							Lo cual es una alegoría, pues estas <rs key="#per143 #per134">mujeres</rs> son los dos <rs key="#per143 #per134">pactos</rs>; el uno proviene del <rs key="#pla159">monte</rs> <rs key="#pla159">Sinaí</rs>, el cual da <rs key="#org0">hijos</rs> para esclavitud; este es <rs key="#per143">Agar</rs>,
+						</ab>
+						<ab xml:id="b.GAL.4.25" type="verse" n="25">
+							pues <rs key="#per143">Agar</rs> es el <rs key="#per143">monte</rs> <rs key="#per143">Sinaí</rs>, en <rs key="#pla445">Arabia</rs>, y corresponde a la <rs key="#pla3">Jerusalén</rs> actual, ya que esta, junto con sus <rs key="#org70">hijos</rs>, está en esclavitud.
+						</ab>
+						<ab xml:id="b.GAL.4.26" type="verse" n="26">
+							Pero la <rs key="#pla71">Jerusalén de arriba</rs>, la cual es <rs key="#pla71">madre de todos nosotros</rs>, es libre,
+						</ab>
+						<ab xml:id="b.GAL.4.27" type="verse" n="27">
+							pues está escrito: <q type="written">«¡Regocíjate, estéril, tú que no das a luz; grita de júbilo y clama, tú que no tienes dolores de parto!, porque más son los hijos de la abandonada que los de la que tiene marido».</q>
+						</ab>
+						<ab xml:id="b.GAL.4.28" type="verse" n="28">
+							Así que, <rs key="#org282">hermanos</rs>, nosotros, como <rs key="#org18">Isaac</rs>, somos <rs key="#org18">hijos de la promesa</rs>.
+						</ab>
+						<ab xml:id="b.GAL.4.29" type="verse" n="29">
+							Pero como entonces el que había nacido según la carne perseguía al que había nacido según el <rs key="#per17">Espíritu</rs>, así también ahora.
+						</ab>
+						<ab xml:id="b.GAL.4.30" type="verse" n="30">
+							Pero ¿qué dice la <rs key="#wor1">Escritura</rs>?: <q type="written"><q who="#per14" toWhom="#per2" type="oral" cert="medium">«Echa fuera a la <rs key="#per143">esclava</rs> y a su <rs key="#per140">hijo</rs>, porque no heredará el <rs key="#per140">hijo de la <rs key="#per143">esclava</rs></rs> con el <rs key="#per3">hijo de la <rs key="#per134">libre</rs></rs>».</q></q>
+						</ab>
+						<ab xml:id="b.GAL.4.31" type="verse" n="31">
+							De manera, <rs key="#org282">hermanos</rs>, que no somos <rs key="#org18">hijos de la <rs key="#per143">esclava</rs></rs>, sino de la <rs key="#per134">libre</rs>.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.GAL.5" type="chapter" n="5">
+					<div type="pericope">
+						<head type="pericope">Estad firmes en la libertad</head>
+						<ab xml:id="b.GAL.5.1" type="verse" n="1">
+							Estad, pues, firmes en la libertad con que <rs key="#per1">Cristo</rs> nos hizo libres y no estéis otra vez sujetos al yugo de esclavitud.
+						</ab>
+						<ab xml:id="b.GAL.5.2" type="verse" n="2">
+							Ciertamente, yo, <rs key="#per504">Pablo</rs> os digo que si os circuncidáis, de nada os aprovechará <rs key="#per1">Cristo</rs>.
+						</ab>
+						<ab xml:id="b.GAL.5.3" type="verse" n="3">
+							Y otra vez testifico a todo <rs key="#org0">hombre</rs> que se circuncida, que está obligado a cumplir toda la <rs key="#wor1">Ley</rs>.
+						</ab>
+						<ab xml:id="b.GAL.5.4" type="verse" n="4">
+							De <rs key="#per1">Cristo</rs> os desligasteis, los que por la <rs key="#wor1">Ley</rs> os justificáis; de la gracia habéis caído.
+						</ab>
+						<ab xml:id="b.GAL.5.5" type="verse" n="5">
+							Nosotros, por el <rs key="#per17">Espíritu</rs>, aguardamos por fe la esperanza de la justicia,
+						</ab>
+						<ab xml:id="b.GAL.5.6" type="verse" n="6">
+							porque en <rs key="#per1">Cristo</rs> <rs key="#per1">Jesús</rs> ni la circuncisión vale algo ni la incircuncisión, sino la fe que obra por el amor.
+						</ab>
+						<ab xml:id="b.GAL.5.7" type="verse" n="7">
+							Vosotros corríais bien. ¿Quién os estorbó para no obedecer a la verdad?
+						</ab>
+						<ab xml:id="b.GAL.5.8" type="verse" n="8">
+							Esta persuasión no procede de aquel que os llama.
+						</ab>
+						<ab xml:id="b.GAL.5.9" type="verse" n="9">
+							«Un poco de levadura fermenta toda la masa».
+						</ab>
+						<ab xml:id="b.GAL.5.10" type="verse" n="10">
+							Yo confío respecto de vosotros en el <rs key="#per1">Señor</rs>, que no pensaréis de otro modo; pero el que os perturba llevará la sentencia, quienquiera que sea.
+						</ab>
+						<ab xml:id="b.GAL.5.11" type="verse" n="11">
+							En cuanto a mí, <rs key="#org282">hermanos</rs>, si aún predicara la circuncisión, ¿por qué padezco persecución todavía? En tal caso se habría quitado el escándalo de la cruz.
+						</ab>
+						<ab xml:id="b.GAL.5.12" type="verse" n="12">
+							¡Ojalá se mutilaran los que os perturban!
+						</ab>
+						<ab xml:id="b.GAL.5.13" type="verse" n="13">
+							Vosotros, <rs key="#org282">hermanos</rs>, a libertad fuisteis llamados; solamente que no uséis la libertad como ocasión para la carne, sino servíos por amor los unos a los otros,
+						</ab>
+						<ab xml:id="b.GAL.5.14" type="verse" n="14">
+							porque toda la <rs key="#wor1">Ley</rs> en esta sola palabra se cumple: <q type="written"><q who="#per14" toWhom="#org0" type="oral">«Amarás a tu <rs key="#org0">prójimo</rs> como a ti mismo».</q></q>
+						</ab>
+						<ab xml:id="b.GAL.5.15" type="verse" n="15">
+							Pero si os mordéis y os coméis unos a otros, mirad que también no os destruyáis unos a otros.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Las obras de la carne y el fruto del Espíritu</head>
+						<ab xml:id="b.GAL.5.16" type="verse" n="16">
+							Digo, pues: Andad en el <rs key="#per17">Espíritu</rs>, y no satisfagáis los deseos de la carne,
+						</ab>
+						<ab xml:id="b.GAL.5.17" type="verse" n="17">
+							porque el deseo de la carne es contra el <rs key="#per17">Espíritu</rs> y el del <rs key="#per17">Espíritu</rs> es contra la carne; y estos se oponen entre sí, para que no hagáis lo que quisierais.
+						</ab>
+						<ab xml:id="b.GAL.5.18" type="verse" n="18">
+							Pero si sois guiados por el <rs key="#per17">Espíritu</rs>, no estáis bajo la <rs key="#wor1">Ley</rs>.
+						</ab>
+						<ab xml:id="b.GAL.5.19" type="verse" n="19">
+							Manifiestas son las obras de la carne, que son: adulterio, fornicación, inmundicia, lujuria,
+						</ab>
+						<ab xml:id="b.GAL.5.20" type="verse" n="20">
+							idolatría, hechicerías, enemistades, pleitos, celos, iras, contiendas, divisiones, herejías,
+						</ab>
+						<ab xml:id="b.GAL.5.21" type="verse" n="21">
+							envidias, homicidios, borracheras, orgías, y cosas semejantes a estas. En cuanto a esto, os advierto, como ya os he dicho antes, que los que practican tales cosas no heredarán el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>.
+						</ab>
+						<ab xml:id="b.GAL.5.22" type="verse" n="22">
+							Pero el fruto del Espíritu es paz, paciencia, benignidad, bondad, fe,
+						</ab>
+						<ab xml:id="b.GAL.5.23" type="verse" n="23">
+							mansedumbre, templanza; contra tales cosas no hay <rs key="#wor1">ley</rs>.
+						</ab>
+						<ab xml:id="b.GAL.5.24" type="verse" n="24">
+							Pero los que son de <rs key="#per1">Cristo</rs> han crucificado la carne con sus pasiones y deseos.
+						</ab>
+						<ab xml:id="b.GAL.5.25" type="verse" n="25">
+							Si vivimos por el <rs key="#per17">Espíritu</rs>, andemos también por el <rs key="#per17">Espíritu</rs>.
+						</ab>
+						<ab xml:id="b.GAL.5.26" type="verse" n="26">
+							No busquemos la vanagloria, irritándonos unos a otros, envidiándonos unos a otros.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.GAL.6" type="chapter" n="6">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.GAL.6.1" type="verse" n="1">
+							<rs key="#org282">Hermanos</rs>, si alguno es sorprendido en alguna falta, vosotros que sois espirituales, restauradlo con espíritu de mansedumbre, considerándote a ti mismo, no sea que tú también seas tentado.
+						</ab>
+						<ab xml:id="b.GAL.6.2" type="verse" n="2">
+							Sobrellevad los unos las cargas de los otros, y cumplid así la ley de <rs key="#per1">Cristo</rs>.
+						</ab>
+						<ab xml:id="b.GAL.6.3" type="verse" n="3">
+							El que se cree ser algo, no siendo nada, a sí mismo se engaña.
+						</ab>
+						<ab xml:id="b.GAL.6.4" type="verse" n="4">
+							Así que, cada uno someta a prueba su propia obra y entonces tendrá, solo en sí mismo y no en otro, motivo de gloriarse,
+						</ab>
+						<ab xml:id="b.GAL.6.5" type="verse" n="5">
+							porque cada uno cargará con su propia responsabilidad.
+						</ab>
+						<ab xml:id="b.GAL.6.6" type="verse" n="6">
+							El que es enseñado en la palabra haga partícipe de toda cosa buena al que lo instruye.
+						</ab>
+						<ab xml:id="b.GAL.6.7" type="verse" n="7">
+							No os engañéis; <rs key="#per14">Dios</rs> no puede ser burlado, pues todo lo que el <rs key="#org0">hombre</rs> siembre, eso también segará,
+						</ab>
+						<ab xml:id="b.GAL.6.8" type="verse" n="8">
+							porque el que siembra para su carne, de la carne segará corrupción; pero el que siembra para el <rs key="#per17">Espíritu</rs>, del <rs key="#per17">Espíritu</rs> segará vida eterna.
+						</ab>
+						<ab xml:id="b.GAL.6.9" type="verse" n="9">
+							No nos cansemos, pues, de hacer bien, porque a su tiempo segaremos, si no desmayamos.
+						</ab>
+						<ab xml:id="b.GAL.6.10" type="verse" n="10">
+							Así que, según tengamos oportunidad, hagamos bien a todos, y especialmente a los de la familia de la fe.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Pablo se gloría en la cruz de Cristo</head>
+						<ab xml:id="b.GAL.6.11" type="verse" n="11">
+							Mirad con cuán grandes letras os escribo de mi propia mano.
+						</ab>
+						<ab xml:id="b.GAL.6.12" type="verse" n="12">
+							Todos los que quieren agradar en la carne, esos os obligan a que os circuncidéis, solamente para no padecer persecución a causa de la cruz de <rs key="#per1">Cristo</rs>,
+						</ab>
+						<ab xml:id="b.GAL.6.13" type="verse" n="13">
+							porque ni aun los mismos que se circuncidan guardan la <rs key="#wor1">Ley</rs>; pero quieren que vosotros os circuncidéis, para gloriarse en vuestra carne.
+						</ab>
+						<ab xml:id="b.GAL.6.14" type="verse" n="14">
+							Pero lejos esté de mí gloriarme, sino en la cruz de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>, por quien el <rs key="#org0">mundo</rs> ha sido crucificado para mí y yo para el <rs key="#org0">mundo</rs>,
+						</ab>
+						<ab xml:id="b.GAL.6.15" type="verse" n="15">
+							porque, en <rs key="#per1">Cristo</rs> <rs key="#per1">Jesús</rs>, ni la circuncisión vale nada ni la incircuncisión, sino la <rs key="#org18">nueva criatura</rs>.
+						</ab>
+						<ab xml:id="b.GAL.6.16" type="verse" n="16">
+							A todos los que anden conforme a esta regla, paz y misericordia sea a ellos, y al <rs key="#pla4">Israel de <rs key="#per14">Dios</rs></rs>.
+						</ab>
+						<ab xml:id="b.GAL.6.17" type="verse" n="17">
+							De aquí en adelante nadie me cause molestias, porque yo llevo en mi cuerpo las marcas del <rs key="#per1">Señor</rs> <rs key="#per1">Jesús</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Bendición final</head>
+						<ab xml:id="b.GAL.6.18" type="verse" n="18">
+							<rs key="#org282">Hermanos</rs>, la gracia de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs> sea con vuestro espíritu. Amén.
+						</ab>
+					</div>
+					</div>
+					</div>
+</body>
+<back />
+</text>
+</TEI>
