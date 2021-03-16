@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+
+
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>2 Corintios</title>
+				<title type="idno">
+					<idno type="string">2CO</idno>
+					<idno type="viaf">181845414</idno>
+				</title>
+				<author>
+					<name type="short">Pablo</name>
+					<name type="full">Pablo de Tarso</name>
+					<idno type="viaf">100178828</idno>
+				</author>
+				<principal key="#jct">José Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>José Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2017">2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2017-10-01" who="#jct">First version of 2 Corintian</change>
+			<change when="2017-10-12" who="#jct" status="checked">Text and markup fully checked personally.</change>
+			<change when="2017-11-30" who="#jct" status="checked">.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div />
+		</front><body>
+			<div xml:id="b.2CO" type="book" cert="high">
+				<div xml:id="b.2CO.1" type="chapter" n="1">
+					<div type="pericope">
+						<head type="pericope">Salutación</head>
+						<ab xml:id="b.2CO.001.001" type="verse" n="1">
+							<rs key="#per504">Pablo</rs>, <rs key="#per504">apóstol de <rs key="#per1">Jesucristo</rs></rs> por la voluntad de <rs key="#per14">Dios</rs>, y el <rs key="#per527">hermano</rs> <rs key="#per527">Timoteo</rs>, a la <rs key="#org185">iglesia de <rs key="#per14">Dios</rs></rs> que está en <rs key="#pla212">Corinto</rs>, con todos los <rs key="#org18">santos</rs> que están en toda <rs key="#pla472">Acaya</rs>:
+						</ab>
+						<ab xml:id="b.2CO.001.002" type="verse" n="2">
+							Gracia y paz a vosotros de <rs key="#per14">Dios</rs> nuestro <rs key="#per14">Padre</rs>, y del <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Aflicciones de Pablo</head>
+						<ab xml:id="b.2CO.001.003" type="verse" n="3">
+							Bendito sea el <rs key="#per14">Dios</rs> y <rs key="#per14">Padre de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs></rs>, <rs key="#per14">Padre de misericordias</rs> y <rs key="#per14">Dios de toda consolación</rs>,
+						</ab>
+						<ab xml:id="b.2CO.001.004" type="verse" n="4">
+							el cual nos consuela en todas nuestras tribulaciones, para que podamos también nosotros consolar a los que están en cualquier tribulación, por medio de la consolación con que nosotros somos consolados por <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.2CO.001.005" type="verse" n="5">
+							Así como abundan en nosotros las aflicciones de <rs key="#per1">Cristo</rs>, así abunda también por el mismo <rs key="#per1">Cristo</rs> nuestra consolación.
+						</ab>
+						<ab xml:id="b.2CO.001.006" type="verse" n="6">
+							Pero si somos atribulados es para vuestra consolación y salvación; o si somos consolados es para vuestra consolación y salvación, la cual se realiza en el sufrir las mismas aflicciones que nosotros también padecemos.
+						</ab>
+						<ab xml:id="b.2CO.001.007" type="verse" n="7">
+							Y nuestra esperanza respecto de vosotros es firme, pues sabemos que así como sois <rs key="#org185">compañeros en las aflicciones</rs>, también lo sois en la consolación.
+						</ab>
+						<ab xml:id="b.2CO.001.008" type="verse" n="8">
+							<rs key="#org185">Hermanos</rs>, no queremos que ignoréis acerca de la tribulación que nos sobrevino en <rs key="#pla63">Asia</rs>, pues fuimos abrumados en gran manera más allá de nuestras fuerzas, de tal modo que aun perdimos la esperanza de conservar la vida.
+						</ab>
+						<ab xml:id="b.2CO.001.009" type="verse" n="9">
+							Pero tuvimos en nosotros mismos sentencia de muerte, para que no confiáramos en nosotros mismos, sino en <rs key="#per14">Dios</rs> que resucita a los muertos.
+						</ab>
+						<ab xml:id="b.2CO.001.010" type="verse" n="10">
+							Él nos libró y nos libra y esperamos que aun nos librará de tan grave peligro de muerte.
+						</ab>
+						<ab xml:id="b.2CO.001.011" type="verse" n="11">
+							Para ello contamos con vuestras oraciones a nuestro favor; y así, siendo muchos los que interceden por nosotros, también serán muchos los que darán gracias por el don concedido a nosotros.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Por qué Pablo postergó su visita a Corinto</head>
+						<ab xml:id="b.2CO.001.012" type="verse" n="12">
+							Nuestro motivo de orgullo es este: el testimonio de nuestra conciencia, de que con sencillez y sinceridad de <rs key="#per14">Dios</rs> (no con sabiduría humana, sino con la gracia de <rs key="#per14">Dios</rs>), nos hemos conducido en el <rs key="#org0">mundo</rs>, y mucho más con vosotros.
+						</ab>
+						<ab xml:id="b.2CO.001.013" type="verse" n="13">
+							No os escribimos otras cosas de las que leéis o también entendéis; y espero que hasta el fin las entenderéis;
+						</ab>
+						<ab xml:id="b.2CO.001.014" type="verse" n="14">
+							como también en parte habéis entendido que somos vuestro <rs key="#per504">motivo de orgullo</rs>, así como también vosotros lo seréis para nosotros en el <rs key="#tim2">día del <rs key="#per1">Señor</rs> <rs key="#per1">Jesús</rs></rs>.
+						</ab>
+						<ab xml:id="b.2CO.001.015" type="verse" n="15">
+							Con esta confianza quise ir primero a vosotros para daros una doble alegría:
+						</ab>
+						<ab xml:id="b.2CO.001.016" type="verse" n="16">
+							de ahí pasar a <rs key="#pla199">Macedonia</rs> y desde <rs key="#pla199">Macedonia</rs> regresar a vosotros para ser encaminado por vosotros a <rs key="#pla2">Judea</rs>.
+						</ab>
+						<ab xml:id="b.2CO.001.017" type="verse" n="17">
+							Así que, al proponerme esto, ¿actué precipitadamente? O lo que pienso hacer, ¿lo pienso según la carne, para que haya en mí «sí» y «no»?
+						</ab>
+						<ab xml:id="b.2CO.001.018" type="verse" n="18">
+							Pero como <rs key="#per14">Dios</rs> es fiel, nuestra palabra a vosotros no es «sí» y «no»,
+						</ab>
+						<ab xml:id="b.2CO.001.019" type="verse" n="19">
+							porque el <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, <rs key="#per1">Jesucristo</rs>, que entre vosotros ha sido predicado por nosotros por mí, <rs key="#per117">Silvano</rs> y <rs key="#per527">Timoteo</rs>, no ha sido «sí» y «no», sino solamente «sí» en él,
+						</ab>
+						<ab xml:id="b.2CO.001.020" type="verse" n="20">
+							porque todas las promesas de <rs key="#per14">Dios</rs> son en él «sí», y en él «Amén», por medio de nosotros, para la gloria de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.2CO.001.021" type="verse" n="21">
+							Y el que nos confirma con vosotros en <rs key="#per1">Cristo</rs>, y el que nos ungió, es <rs key="#per14">Dios</rs>,
+						</ab>
+						<ab xml:id="b.2CO.001.022" type="verse" n="22">
+							el cual también nos ha sellado y nos ha dado, como garantía, el <rs key="#per17">Espíritu</rs> en nuestros corazones.
+						</ab>
+						<ab xml:id="b.2CO.001.023" type="verse" n="23">
+							Invoco a <rs key="#per14">Dios</rs> por <rs key="#per14">testigo sobre mi alma</rs>, que por ser indulgente con vosotros no he pasado todavía a <rs key="#pla212">Corinto</rs>.
+						</ab>
+						<ab xml:id="b.2CO.001.024" type="verse" n="24">
+							No que nos enseñoreemos de vuestra fe, sino que colaboramos para vuestro gozo porque por la fe estáis firmes.
+						</ab>
+
+					</div>
+				</div>
+				<div xml:id="b.2CO.2" type="chapter" n="2">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.2CO.002.001" type="verse" n="1">
+							Determiné, pues, no haceros otra visita que os causara tristeza,
+						</ab>
+						<ab xml:id="b.2CO.002.002" type="verse" n="2">
+							porque si yo os causo tristeza, ¿quién será luego el que me alegre, sino aquel a quien yo entristecí?
+						</ab>
+						<ab xml:id="b.2CO.002.003" type="verse" n="3">
+							Por eso os escribí como lo hice, para que, cuando llegue, no tenga tristeza de parte de aquellos de quienes me debiera gozar, confiado en que mi gozo es el de todos vosotros.
+						</ab>
+						<ab xml:id="b.2CO.002.004" type="verse" n="4">
+							Por la mucha tribulación y angustia del corazón os escribí con muchas lágrimas, no para que fuerais entristecidos, sino para que supierais cuán grande es el amor que os tengo.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Pablo perdona al ofensor</head>
+						<ab xml:id="b.2CO.002.005" type="verse" n="5">
+							Si alguno me ha causado tristeza, no me la ha causado a mí solo, sino en cierto modo (por no exagerar) a todos vosotros.
+						</ab>
+						<ab xml:id="b.2CO.002.006" type="verse" n="6">
+							Le basta a tal persona esta reprensión hecha por muchos.
+						</ab>
+						<ab xml:id="b.2CO.002.007" type="verse" n="7">
+							Así que, al contrario, vosotros más bien debéis perdonarlo y consolarlo, para que no sea consumido por demasiada tristeza.
+						</ab>
+						<ab xml:id="b.2CO.002.008" type="verse" n="8">
+							Por lo cual os ruego que confirméis el amor hacia él,
+						</ab>
+						<ab xml:id="b.2CO.002.009" type="verse" n="9">
+							pues también con este propósito os escribí, para tener la prueba de si vosotros sois obedientes en todo.
+						</ab>
+						<ab xml:id="b.2CO.002.010" type="verse" n="10">
+							Al que vosotros perdonáis, yo también, porque también yo, lo que he perdonado, si algo he perdonado, por vosotros lo he hecho en presencia de <rs key="#per1">Cristo</rs>,
+						</ab>
+						<ab xml:id="b.2CO.002.011" type="verse" n="11">
+							para que <rs key="#per20">Satanás</rs> no saque ventaja alguna sobre nosotros, pues no ignoramos sus maquinaciones.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Ansiedad de Pablo en Troas</head>
+						<ab xml:id="b.2CO.002.012" type="verse" n="12">
+							Cuando llegué a <rs key="#pla202">Troas</rs> para predicar el evangelio de <rs key="#per1">Cristo</rs>, aunque se me abrió puerta en el <rs key="#per1">Señor</rs>,
+						</ab>
+						<ab xml:id="b.2CO.002.013" type="verse" n="13">
+							no tuve reposo en mi espíritu, por no haber hallado a mi <rs key="#per907">hermano</rs> <rs key="#per907">Tito</rs>. Por eso, despidiéndome de ellos, partí para <rs key="#pla199">Macedonia</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Triunfantes en Cristo</head>
+						<ab xml:id="b.2CO.002.014" type="verse" n="14">
+							Pero gracias a <rs key="#per14">Dios</rs>, que nos lleva siempre en triunfo en <rs key="#per1">Cristo</rs> <rs key="#per1">Jesús</rs>, y que por medio de nosotros manifiesta en todo lugar el olor de su conocimiento,
+						</ab>
+						<ab xml:id="b.2CO.002.015" type="verse" n="15">
+							porque para <rs key="#per14">Dios</rs> somos <rs key="#org18">grato olor de <rs key="#per1">Cristo</rs></rs> entre los que se salvan y entre los que se pierden:
+						</ab>
+						<ab xml:id="b.2CO.002.016" type="verse" n="16">
+							para estos, ciertamente, <rs key="#org18">olor de muerte</rs> para muerte, y para aquellos, <rs key="#org18">olor de vida</rs> para vida. Y para estas cosas, ¿quién es suficiente?,
+						</ab>
+						<ab xml:id="b.2CO.002.017" type="verse" n="17">
+							pues no somos como muchos que se benefician falsificando la palabra de <rs key="#per14">Dios</rs>, sino que con sinceridad, como de parte de <rs key="#per14">Dios</rs>, y delante de <rs key="#per14">Dios</rs>, hablamos en <rs key="#per1">Cristo</rs>.
+						</ab>
+
+					</div>
+				</div>
+				<div xml:id="b.2CO.3" type="chapter" n="3">
+					<div type="pericope">
+						<head type="pericope">Ministros del nuevo pacto</head>
+						<ab xml:id="b.2CO.003.001" type="verse" n="1">
+							¿Comenzamos otra vez a recomendarnos a nosotros mismos? ¿O tenemos necesidad, como algunos, de cartas de recomendación para vosotros o de recomendación de vosotros?
+						</ab>
+						<ab xml:id="b.2CO.003.002" type="verse" n="2">
+							Nuestras <rs key="#org185">cartas</rs> sois vosotros, escritas en nuestros corazones, conocidas y leídas por todos los <rs key="#org0">hombres</rs>.
+						</ab>
+						<ab xml:id="b.2CO.003.003" type="verse" n="3">
+							Y es manifiesto que sois <rs key="#org185">carta de <rs key="#per1">Cristo</rs></rs> expedida por nosotros, escrita no con tinta, sino con el <rs key="#per17">Espíritu del <rs key="#per14">Dios vivo</rs></rs>; no en tablas de piedra, sino en tablas de carne del corazón.
+						</ab>
+						<ab xml:id="b.2CO.003.004" type="verse" n="4">
+							Esta confianza la tenemos mediante <rs key="#per1">Cristo</rs> para con <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.2CO.003.005" type="verse" n="5">
+							No que estemos capacitados para hacer algo por nosotros mismos; al contrario, nuestra capacidad proviene de <rs key="#per14">Dios</rs>,
+						</ab>
+						<ab xml:id="b.2CO.003.006" type="verse" n="6">
+							el cual asimismo nos capacitó para ser <rs key="#org18">ministros de un nuevo pacto</rs>, no de la letra, sino del <rs key="#per17" cert="medium">Espíritu</rs>, porque la letra mata, pero el <rs key="#per17">Espíritu</rs> da vida.
+						</ab>
+						<ab xml:id="b.2CO.003.007" type="verse" n="7">
+							Si el ministerio de muerte grabado con letras en piedras fue con gloria, tanto que los <rs key="#org70">hijos de <rs key="#pla4">Israel</rs></rs> no pudieron fijar la vista en el rostro de <rs key="#per26">Moisés</rs> a causa del resplandor de su rostro, el cual desaparecería,
+						</ab>
+						<ab xml:id="b.2CO.003.008" type="verse" n="8">
+							¿cómo no será más bien con gloria el ministerio del <rs key="#per17">Espíritu</rs>?
+						</ab>
+						<ab xml:id="b.2CO.003.009" type="verse" n="9">
+							Si el ministerio de condenación fue con gloria, mucho más abundará en gloria el ministerio de justificación,
+						</ab>
+						<ab xml:id="b.2CO.003.010" type="verse" n="10">
+							porque aun lo que fue glorioso, no es glorioso en este respecto, en comparación con la gloria más eminente.
+						</ab>
+						<ab xml:id="b.2CO.003.011" type="verse" n="11">
+							Si lo que perece tuvo gloria, mucho más glorioso será lo que permanece.
+						</ab>
+						<ab xml:id="b.2CO.003.012" type="verse" n="12">
+							Así que, teniendo tal esperanza, actuamos con mucha franqueza,
+						</ab>
+						<ab xml:id="b.2CO.003.013" type="verse" n="13">
+							y no como <rs key="#per26">Moisés</rs>, que ponía un velo sobre su rostro para que los <rs key="#org70">hijos de <rs key="#pla4">Israel</rs></rs> no fijaran la vista en el fin de aquello que había de desaparecer.
+						</ab>
+						<ab xml:id="b.2CO.003.014" type="verse" n="14">
+							Pero el entendimiento de ellos se embotó, porque hasta el día de hoy, cuando leen el antiguo pacto, les queda el mismo velo sin descorrer, el cual por <rs key="#per1">Cristo</rs> es quitado.
+						</ab>
+						<ab xml:id="b.2CO.003.015" type="verse" n="15">
+							Y aun hasta el día de hoy, cuando se lee a <rs key="#per26">Moisés</rs>, el velo está puesto sobre el corazón de ellos.
+						</ab>
+						<ab xml:id="b.2CO.003.016" type="verse" n="16">
+							Pero cuando se conviertan al <rs key="#per1">Señor</rs>, el velo será quitado.
+						</ab>
+						<ab xml:id="b.2CO.003.017" type="verse" n="17">
+							El <rs key="#per1">Señor</rs> es el <rs key="#per1">Espíritu</rs>; y donde está el <rs key="#per17">Espíritu del <rs key="#per1">Señor</rs></rs>, allí hay libertad.
+						</ab><!--jct: qué bonito-->
+						<ab xml:id="b.2CO.003.018" type="verse" n="18">
+							Por tanto, nosotros todos, mirando con el rostro descubierto y reflejando como en un espejo la gloria del <rs key="#per1">Señor</rs>, somos transformados de gloria en gloria en su misma imagen, por la acción del <rs key="#per17">Espíritu del <rs key="#per1">Señor</rs></rs>.
+						</ab>
+					</div>
+				</div>
+				
+				<div xml:id="b.2CO.4" type="chapter" n="4">
+					<div type="pericope">
+						<head type="pericope">Ministros del nuevo pacto</head>
+						<ab xml:id="b.2CO.004.001" type="verse" n="1">
+							Por lo cual, teniendo nosotros este ministerio según la misericordia que hemos recibido, no desmayamos.
+						</ab>
+						<ab xml:id="b.2CO.004.002" type="verse" n="2">
+							Antes bien renunciamos a lo oculto y vergonzoso, no andando con astucia, ni adulterando la palabra de <rs key="#per14">Dios</rs>. Por el contrario, manifestando la verdad, nos recomendamos, delante de <rs key="#per14">Dios</rs>, a toda conciencia humana.
+						</ab>
+						<ab xml:id="b.2CO.004.003" type="verse" n="3">
+							Pero si nuestro evangelio está aún encubierto, entre los que se pierden está encubierto;
+						</ab>
+						<ab xml:id="b.2CO.004.004" type="verse" n="4">
+							esto es, entre los <rs key="#org19">incrédulos</rs>, a quienes el <rs key="#per20" cert="low">dios de este <rs key="#org0">mundo</rs></rs> les cegó el entendimiento, para que no les resplandezca la luz del evangelio de la gloria de <rs key="#per1">Cristo</rs>, el cual es la imagen de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.2CO.004.005" type="verse" n="5">
+							No nos predicamos a nosotros mismos, sino a <rs key="#per1">Jesucristo</rs> como <rs key="#per14">Señor</rs>, y a nosotros como vuestros <rs key="#org18">siervos por amor de <rs key="#per1">Jesús</rs></rs>,
+						</ab>
+						<ab xml:id="b.2CO.004.006" type="verse" n="6">
+							porque <rs key="#per14">Dios</rs>, que mandó que de las tinieblas resplandeciera la luz, es el que resplandeció en nuestros corazones, para iluminación del conocimiento de la gloria de <rs key="#per14">Dios</rs> en la faz de <rs key="#per1">Jesucristo</rs>.
+						</ab>
+						<ab xml:id="b.2CO.004.007" type="verse" n="7">
+							Pero tenemos este tesoro en vasos de barro, para que la excelencia del poder sea de <rs key="#per14">Dios</rs> y no de nosotros,
+						</ab>
+						<ab xml:id="b.2CO.004.008" type="verse" n="8">
+							que estamos atribulados en todo, pero no angustiados; en apuros, pero no desesperados;
+						</ab>
+						<ab xml:id="b.2CO.004.009" type="verse" n="9">
+							perseguidos, pero no desamparados; derribados, pero no destruidos.
+						</ab>
+						<ab xml:id="b.2CO.004.010" type="verse" n="10">
+							Dondequiera que vamos, llevamos siempre en el cuerpo la muerte de <rs key="#per1">Jesús</rs>, para que también la vida de <rs key="#per1">Jesús</rs> se manifieste en nuestros cuerpos,
+						</ab>
+						<ab xml:id="b.2CO.004.011" type="verse" n="11">
+							pues nosotros, que vivimos, siempre estamos entregados a muerte por causa de <rs key="#per1">Jesús</rs>, para que también la vida de <rs key="#per1">Jesús</rs> se manifieste en nuestra carne mortal.
+						</ab>
+						<ab xml:id="b.2CO.004.012" type="verse" n="12">
+							De manera que la muerte actúa en nosotros, y en vosotros la vida.
+						</ab>
+						<ab xml:id="b.2CO.004.013" type="verse" n="13">
+							Pero teniendo el mismo espíritu de fe, conforme a lo que está escrito: <q toWhom="#org0" type="written">«Creí, por lo cual hablé»</q>, nosotros también creemos, por lo cual también hablamos.
+						</ab>
+						<ab xml:id="b.2CO.004.014" type="verse" n="14">
+							Y sabemos que el que resucitó al <rs key="#per1">Señor</rs> <rs key="#per1">Jesús</rs>, a nosotros también nos resucitará con <rs key="#per1">Jesús</rs>, y nos presentará juntamente con vosotros.
+						</ab>
+						<ab xml:id="b.2CO.004.015" type="verse" n="15">
+							Todas estas cosas padecemos por amor a vosotros, para que abundando la gracia por medio de muchos, la acción de gracias sobreabunde para gloria de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.2CO.004.016" type="verse" n="16">
+							Por tanto, no desmayamos; antes, aunque este nuestro hombre exterior se va desgastando, el interior no obstante se renueva de día en día,
+						</ab>
+						<ab xml:id="b.2CO.004.017" type="verse" n="17">
+							pues esta leve tribulación momentánea produce en nosotros un cada vez más excelente y eterno peso de gloria;
+						</ab>
+						<ab xml:id="b.2CO.004.018" type="verse" n="18">
+							no mirando nosotros las cosas que se ven, sino las que no se ven, pues las cosas que se ven son temporales, pero las que no se ven son eternas.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.2CO.5" type="chapter" n="5">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.2CO.005.001" type="verse" n="1">
+							Sabemos que si nuestra morada terrestre, este tabernáculo, se deshace, tenemos de <rs key="#per14">Dios</rs> un edificio, una casa no hecha por manos, eterna, en los <rs key="#pla18">cielos</rs>.
+						</ab>
+						<ab xml:id="b.2CO.005.002" type="verse" n="2">
+							Y por esto también gemimos, deseando ser revestidos de aquella nuestra habitación celestial,
+						</ab>
+						<ab xml:id="b.2CO.005.003" type="verse" n="3">
+							pues así seremos hallados vestidos y no desnudos.
+						</ab>
+						<ab xml:id="b.2CO.005.004" type="verse" n="4">
+							Asimismo los que estamos en este tabernáculo gemimos con angustia, pues no quisiéramos ser desnudados, sino revestidos, para que lo mortal sea absorbido por la vida.
+						</ab>
+						<ab xml:id="b.2CO.005.005" type="verse" n="5">
+							Pero el que nos hizo para esto mismo es <rs key="#per14">Dios</rs>, quien nos ha dado el <rs key="#per17">Espíritu</rs> como <rs key="#per17">garantía</rs>.
+						</ab>
+						<ab xml:id="b.2CO.005.006" type="verse" n="6">
+							Así que vivimos confiados siempre, y sabiendo que entre tanto que estamos en el cuerpo, estamos ausentes del <rs key="#per1">Señor</rs>
+						</ab>
+						<ab xml:id="b.2CO.005.007" type="verse" n="7">
+							(porque por fe andamos, no por vista).
+						</ab>
+						<ab xml:id="b.2CO.005.008" type="verse" n="8">
+							Pero estamos confiados, y más aún queremos estar ausentes del cuerpo y presentes al <rs key="#per1">Señor</rs>.
+						</ab>
+						<ab xml:id="b.2CO.005.009" type="verse" n="9">
+							Por tanto, procuramos también, o ausentes o presentes, serle agradables,
+						</ab>
+						<ab xml:id="b.2CO.005.010" type="verse" n="10">
+							porque es necesario que todos nosotros comparezcamos ante el tribunal de <rs key="#per1">Cristo</rs>, para que cada uno reciba según lo que haya hecho mientras estaba en el cuerpo, sea bueno o sea malo.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El ministerio de la reconciliación</head>
+						<ab xml:id="b.2CO.005.011" type="verse" n="11">
+							Conociendo, pues, el temor del <rs key="#per1">Señor</rs>, persuadimos a los <rs key="#org0">hombres</rs>; pero a <rs key="#per14">Dios</rs> le es manifiesto lo que somos, y espero que también lo sea a vuestras conciencias.
+						</ab>
+						<ab xml:id="b.2CO.005.012" type="verse" n="12">
+							No nos recomendamos, pues, otra vez a vosotros, sino os damos ocasión de gloriaros por nosotros, para que tengáis con qué responder a los que se glorían en las apariencias y no en el corazón.
+						</ab>
+						<ab xml:id="b.2CO.005.013" type="verse" n="13">
+							Si estamos locos, es para <rs key="#per14">Dios</rs>; y si somos cuerdos, es para vosotros.
+						</ab><!--jct: muy bueno-->
+						<ab xml:id="b.2CO.005.014" type="verse" n="14">
+							El amor de <rs key="#per1">Cristo</rs> nos constriñe, pensando esto: que si uno murió por todos, luego todos murieron;
+						</ab>
+						<ab xml:id="b.2CO.005.015" type="verse" n="15">
+							y él por todos murió, para que los que viven ya no vivan para sí, sino para aquel que murió y resucitó por ellos.
+						</ab>
+						<ab xml:id="b.2CO.005.016" type="verse" n="16">
+							De manera que nosotros de aquí en adelante a nadie conocemos según la carne; y aun si a <rs key="#per1">Cristo</rs> conocimos según la carne, ya no lo conocemos así.
+						</ab>
+						<ab xml:id="b.2CO.005.017" type="verse" n="17">
+							De modo que si alguno está en <rs key="#per1">Cristo</rs>, <rs key="#org18">nueva criatura</rs> es: las cosas viejas pasaron; todas son hechas nuevas.
+						</ab>
+						<ab xml:id="b.2CO.005.018" type="verse" n="18">
+							Y todo esto proviene de <rs key="#per14">Dios</rs>, quien nos reconcilió consigo mismo por <rs key="#per1">Cristo</rs>, y nos dio el ministerio de la reconciliación:
+						</ab>
+						<ab xml:id="b.2CO.005.019" type="verse" n="19">
+							<rs key="#per14">Dios</rs> estaba en <rs key="#per1">Cristo</rs> reconciliando consigo al <rs key="#org0">mundo</rs>, no tomándoles en cuenta a los <rs key="#org0">hombres</rs> sus pecados, y nos encargó a nosotros la palabra de la reconciliación.
+						</ab>
+						<ab xml:id="b.2CO.005.020" type="verse" n="20">
+							Así que, somos <rs key="#org18">embajadores en nombre de <rs key="#per1">Cristo</rs></rs>, como si <rs key="#per14">Dios</rs> rogara por medio de nosotros; os rogamos en nombre de <rs key="#per1">Cristo</rs>: Reconciliaos con <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.2CO.005.021" type="verse" n="21">
+							Al que no conoció pecado, por nosotros lo hizo pecado, para que nosotros seamos justicia de <rs key="#per14">Dios</rs> en él.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.2CO.6" type="chapter" n="6">
+					<div type="pericope">
+						<ab xml:id="b.2CO.006.001" type="verse" n="1">
+							Así, pues, nosotros, como <rs key="#org37">colaboradores</rs> suyos, os exhortamos también a que no recibáis en vano la gracia de <rs key="#per14">Dios</rs>,
+						</ab>
+						<ab xml:id="b.2CO.006.002" type="verse" n="2">
+							porque dice: <q who="#per14" toWhom="#org0" type="oral" cert="medium">«En tiempo aceptable te he oído, y en día de salvación te he socorrido»</q>. Ahora es el tiempo aceptable; ahora es el día de salvación.
+						</ab>
+						<ab xml:id="b.2CO.006.003" type="verse" n="3">
+							No damos a nadie ninguna ocasión de tropiezo, para que nuestro ministerio no sea desacreditado.
+						</ab>
+						<ab xml:id="b.2CO.006.004" type="verse" n="4">
+							Antes bien, nos recomendamos en todo como <rs key="#org37">ministros de <rs key="#per14">Dios</rs></rs>, en mucha paciencia, en tribulaciones, en necesidades, en angustias,
+						</ab>
+						<ab xml:id="b.2CO.006.005" type="verse" n="5">
+							en azotes, en cárceles, en tumultos, en trabajos, en desvelos, en ayunos;
+						</ab>
+						<ab xml:id="b.2CO.006.006" type="verse" n="6">
+							en pureza, en conocimiento, en tolerancia, en bondad, en el <rs key="#per17">Espíritu Santo</rs>, en amor sincero;
+						</ab>
+						<ab xml:id="b.2CO.006.007" type="verse" n="7">
+							en palabra de verdad, en poder de <rs key="#per14">Dios</rs> y con armas de justicia a diestra y a siniestra;
+						</ab>
+						<ab xml:id="b.2CO.006.008" type="verse" n="8">
+							por honra y por deshonra, por mala fama y por buena fama; como <rs key="#org37">engañadores</rs>, pero veraces;
+						</ab>
+						<ab xml:id="b.2CO.006.009" type="verse" n="9">
+							como <rs key="#org37">desconocidos</rs>, pero bien conocidos; como <rs key="#org37">moribundos</rs>, pero llenos de vida; como <rs key="#org37">castigados</rs>, pero no muertos;
+							<!--jct: "moribundos, pero llenos de vida"-->
+						</ab>
+						<ab xml:id="b.2CO.006.010" type="verse" n="10">
+							como <rs key="#org37">entristecidos</rs>, pero siempre gozosos; como <rs key="#org37">pobres</rs>, pero enriqueciendo a muchos; como no teniendo nada, pero poseyéndolo todo.
+						</ab>
+						<ab xml:id="b.2CO.006.011" type="verse" n="11">
+							Os hemos hablado con franqueza, <rs key="#org185">corintios</rs>; nuestro corazón os hemos abierto.
+						</ab>
+						<ab xml:id="b.2CO.006.012" type="verse" n="12">
+							No hemos sido mezquinos en nuestro amor por vosotros, pero vosotros sí lo habéis sido en vuestro propio corazón.
+						</ab>
+						<ab xml:id="b.2CO.006.013" type="verse" n="13">
+							Para corresponder, pues, del mismo modo os hablo como a <rs key="#org185">hijos</rs>, actuad también vosotros con franqueza.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Somos templo del Dios viviente</head>
+						<ab xml:id="b.2CO.006.014" type="verse" n="14">
+							No os unáis en yugo desigual con los <rs key="#org19">incrédulos</rs>, porque ¿qué compañerismo tiene la <rs key="#org18">justicia</rs> con la <rs key="#org19">injusticia</rs>? ¿Y qué comunión, la <rs key="#org18">luz</rs> con las <rs key="#org19">tinieblas</rs>?
+						</ab>
+						<ab xml:id="b.2CO.006.015" type="verse" n="15">
+							¿Qué armonía puede haber entre <rs key="#per1">Cristo</rs> y <rs key="#per906">Belial</rs>? ¿O qué parte el <rs key="#org18">creyente</rs> con el <rs key="#org19">incrédulo</rs>?
+						</ab>
+						<ab xml:id="b.2CO.006.016" type="verse" n="16">
+							¿Y qué acuerdo hay entre el <rs key="#pla30">templo de <rs key="#per14">Dios</rs></rs> y los <rs key="org103">ídolos</rs>? Y vosotros sois el <rs key="#org18">templo del <rs key="#per14">Dios viviente</rs></rs>, como <rs key="#per14">Dios</rs> dijo: <q type="written"><q who="#per14" toWhom="#org0" type="oral">«Habitaré y andaré entre ellos; yo seré su <rs key="#per14">Dios</rs> y ellos serán mi <rs key="#org70 #org18">pueblo</rs>».</q></q>
+						</ab>
+						<ab xml:id="b.2CO.006.017" type="verse" n="17">
+							Por lo cual, <q type="written"><q who="#per14" toWhom="#org0" type="oral">«Salid de en medio de ellos y apartaos, dice el <rs key="#per14">Señor</rs>, y no toquéis lo <rs key="#org19">impuro</rs>; y yo os recibiré</q></q>
+						</ab>
+						<ab xml:id="b.2CO.006.018" type="verse" n="18">
+							<q type="written"><q who="#per14" toWhom="#org0" type="oral">y seré para vosotros por <rs key="#per14">Padre</rs>, y vosotros me seréis <rs key="#org70 #org18">hijos</rs> e <rs key="#org70 #org18">hijas</rs>, dice el <rs key="#per14">Señor</rs> <rs key="#per14">Todopoderoso</rs>».</q></q>
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.2CO.7" type="chapter" n="7">
+					<div type="pericope">
+						<ab xml:id="b.2CO.007.001" type="verse" n="1">														Así que, <rs key="#org185">amados</rs>, puesto que tenemos tales promesas, limpiémonos de toda contaminación de carne y de espíritu, perfeccionando la santidad en el temor de <rs key="#per14">Dios</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Regocijo de Pablo al arrepentirse los corintios</head>
+						<ab xml:id="b.2CO.007.002" type="verse" n="2">
+							Admitidnos: a nadie hemos agraviado, a nadie hemos corrompido, a nadie hemos engañado.
+						</ab>
+						<ab xml:id="b.2CO.007.003" type="verse" n="3">
+							No lo digo para condenaros, pues ya he dicho antes que estáis en nuestro corazón, para morir y para vivir juntos.
+						</ab>
+						<ab xml:id="b.2CO.007.004" type="verse" n="4">
+							Mucha franqueza tengo con vosotros; mucho me glorío con respecto de vosotros. Estoy lleno de consuelo y sobreabundo de gozo en medio de todas nuestras tribulaciones.
+						</ab>
+						<ab xml:id="b.2CO.007.005" type="verse" n="5">
+							Cuando vinimos a <rs key="#pla199">Macedonia</rs>, ciertamente ningún reposo tuvo nuestro cuerpo, sino que en todo fuimos atribulados: de fuera, conflictos, y de dentro, temores.
+						</ab>
+						<ab xml:id="b.2CO.007.006" type="verse" n="6">
+							Pero <rs key="#per14">Dios</rs>, que consuela a los <rs key="#org102">humildes</rs>, nos consoló con la venida de <rs key="#per907">Tito</rs>;
+						</ab>
+						<ab xml:id="b.2CO.007.007" type="verse" n="7">
+							y no solo con su venida, sino también con la consolación con que él había sido consolado en cuanto a vosotros, haciéndonos saber vuestro gran afecto, vuestro llanto, vuestra preocupación por mí, de manera que me regocijé aún más.
+						</ab>
+						<ab xml:id="b.2CO.007.008" type="verse" n="8">
+							Aunque os entristecí con la <rs key="#wor9">carta</rs>, no me pesa, pero sí lo lamenté entonces, pues veo que aquella <rs key="#wor9">carta</rs> os entristeció por algún tiempo.
+						</ab>
+						<ab xml:id="b.2CO.007.009" type="verse" n="9">
+							Ahora me gozo, no porque hayáis sido entristecidos, sino porque fuisteis entristecidos para arrepentimiento, porque habéis sido entristecidos según <rs key="#per14">Dios</rs>, para que ninguna pérdida padecierais por nuestra parte.
+						</ab>
+						<ab xml:id="b.2CO.007.010" type="verse" n="10">
+							La tristeza que es según <rs key="#per14">Dios</rs> produce arrepentimiento para salvación, de lo cual no hay que arrepentirse; pero la tristeza del <rs key="#org0">mundo</rs> produce muerte.
+						</ab>
+						<ab xml:id="b.2CO.007.011" type="verse" n="11">
+							Esto mismo de que hayáis sido entristecidos según <rs key="#per14">Dios</rs>, ¡qué preocupación produjo en vosotros, qué defensa, qué indignación, qué temor, qué ardiente afecto, qué celo y qué vindicación! En todo os habéis mostrado limpios en el asunto.
+						</ab>
+						<ab xml:id="b.2CO.007.012" type="verse" n="12">
+							Así que, aunque os escribí, no fue por causa del que cometió el agravio, ni por causa del que lo padeció, sino para que se os hiciera evidente la preocupación que tenemos por vosotros delante de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.2CO.007.013" type="verse" n="13">
+							Por esto hemos sido consolados en vuestra consolación. Pero mucho más nos gozamos por el gozo de <rs key="#per907">Tito</rs>, que haya sido confortado su espíritu por todos vosotros.
+						</ab>
+						<ab xml:id="b.2CO.007.014" type="verse" n="14">
+							Si de algo me he gloriado con él respecto de vosotros, no he sido avergonzado. Al contrario, así como en todo os hemos hablado verdad, también resultó verdad el habernos gloriado con <rs key="#per907">Tito</rs> acerca de vosotros.
+						</ab>
+						<ab xml:id="b.2CO.007.015" type="verse" n="15">
+							Y su cariño por vosotros es aún más abundante, cuando se acuerda de la obediencia de todos vosotros, de cómo lo recibisteis con temor y temblor.
+						</ab>
+						<ab xml:id="b.2CO.007.016" type="verse" n="16">
+							Me gozo de que en todo tengo confianza en vosotros.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.2CO.8" type="chapter" n="8">
+					<div type="pericope">
+						<head type="pericope">Razones para ofrendar</head>
+						<ab xml:id="b.2CO.008.001" type="verse" n="1">
+							Asimismo, <rs key="#org185">hermanos</rs>, os hacemos saber la gracia de <rs key="#per14">Dios</rs> que se ha dado a las <rs key="#org188">iglesias de <rs key="#pla199">Macedonia</rs></rs>,
+						</ab>
+						<ab xml:id="b.2CO.008.002" type="verse" n="2">
+							porque, en las grandes tribulaciones con que han sido probadas, la abundancia de su gozo y su profunda pobreza abundaron en riquezas de su generosidad.
+						</ab>
+						<ab xml:id="b.2CO.008.003" type="verse" n="3">
+							Doy testimonio de que con agrado han dado conforme a sus fuerzas, y aun más allá de sus fuerzas,
+						</ab>
+						<ab xml:id="b.2CO.008.004" type="verse" n="4">
+							pidiéndonos con muchos ruegos que les concediéramos el privilegio de participar en este servicio para los <rs key="#org18">santos</rs>.
+						</ab>
+						<ab xml:id="b.2CO.008.005" type="verse" n="5">
+							Y no como lo esperábamos, sino que a sí mismos se dieron primeramente al <rs key="#per1">Señor</rs> y luego a nosotros, por la voluntad de <rs key="#per14">Dios</rs>;
+						</ab>
+						<ab xml:id="b.2CO.008.006" type="verse" n="6">
+							de manera que exhortamos a <rs key="#per907">Tito</rs>, para que tal como comenzó antes, asimismo acabe también entre vosotros esta obra de gracia.
+						</ab>
+						<ab xml:id="b.2CO.008.007" type="verse" n="7">
+							Por tanto, como en todo abundáis, en fe, en palabra, en conocimiento, en toda solicitud y en vuestro amor por nosotros, abundad también en esta gracia.
+						</ab>
+						<ab xml:id="b.2CO.008.008" type="verse" n="8">
+							No hablo como quien manda, sino para poner a prueba, por medio de la diligencia de otros, también la sinceridad del amor vuestro.
+						</ab>
+						<ab xml:id="b.2CO.008.009" type="verse" n="9">
+							Ya conocéis la gracia de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>, que por amor a vosotros se hizo pobre siendo rico, para que vosotros con su pobreza fuerais enriquecidos.
+						</ab>
+						<ab xml:id="b.2CO.008.010" type="verse" n="10">
+							En esto doy mi consejo, porque esto os conviene a vosotros, que comenzasteis antes, no solo a hacerlo, sino también a quererlo, desde el año pasado.
+						</ab>
+						<ab xml:id="b.2CO.008.011" type="verse" n="11">
+							Ahora, pues, llevad también a cabo el hacerlo, para que así como estuvisteis prontos a querer, también lo estéis a cumplir conforme a lo que tengáis,
+						</ab>
+						<ab xml:id="b.2CO.008.012" type="verse" n="12">
+							porque si primero está la voluntad dispuesta, será aceptado según lo que uno tiene, no según lo que no tiene.
+						</ab>
+						<ab xml:id="b.2CO.008.013" type="verse" n="13">
+							No digo esto para que haya para otros holgura y para vosotros escasez,
+						</ab>
+						<ab xml:id="b.2CO.008.014" type="verse" n="14">
+							sino para que en este momento, con igualdad, la abundancia vuestra supla la escasez de ellos, para que también la abundancia de ellos supla la necesidad vuestra, para que haya igualdad,
+						</ab>
+						<ab xml:id="b.2CO.008.015" type="verse" n="15">
+							como está escrito: <q type="written">«El que recogió mucho no tuvo más y el que poco, no tuvo menos».</q>
+						</ab>
+						<ab xml:id="b.2CO.008.016" type="verse" n="16">
+							Doy gracias a <rs key="#per14">Dios</rs> que puso en el corazón de <rs key="#per907">Tito</rs> la misma preocupación por vosotros,
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Razones para ofrendar</head>
+						<ab xml:id="b.2CO.008.017" type="verse" n="17">
+							pues a la verdad recibió la exhortación; pero estando también muy solícito, por su propia voluntad partió para ir a vosotros.
+						</ab>
+						<ab xml:id="b.2CO.008.018" type="verse" n="18">
+							Y enviamos juntamente con él al <rs key="#org110">hermano</rs> cuya alabanza en el evangelio se oye por todas las <rs key="#org18">iglesias</rs>.
+						</ab>
+						<ab xml:id="b.2CO.008.019" type="verse" n="19">
+							Y no solo esto, sino que también fue designado por las iglesias como <rs key="#per907">compañero de nuestra peregrinación</rs> para llevar este donativo, que es administrado por nosotros para gloria del <rs key="#per1">Señor</rs> mismo y para demostrar vuestra buena voluntad.
+						</ab>
+						<ab xml:id="b.2CO.008.020" type="verse" n="20">
+							Evitamos así que nadie nos censure en cuanto a esta ofrenda abundante que administramos,
+						</ab>
+						<ab xml:id="b.2CO.008.021" type="verse" n="21">
+							procurando hacer las cosas honradamente, no solo delante del <rs key="#per1">Señor</rs> sino también delante de los <rs key="#org0">hombres</rs>.
+						</ab>
+						<ab xml:id="b.2CO.008.022" type="verse" n="22">
+							Enviamos también con ellos a nuestro <rs key="#org110">hermano</rs>, cuya diligencia hemos comprobado repetidas veces en muchas cosas, y ahora se muestra mucho más diligente por la mucha confianza que tiene en vosotros.
+						</ab>
+						<ab xml:id="b.2CO.008.023" type="verse" n="23">
+							En cuanto a <rs key="#per907">Tito</rs>, es mi <rs key="#per907">compañero</rs> y <rs key="#per907">colaborador</rs> para con vosotros; y en cuanto a nuestros <rs key="#org110">hermanos</rs>, son <rs key="#org37">mensajeros de las <rs key="#org37">iglesias</rs></rs> y <rs key="#org37">gloria de <rs key="#per1">Cristo</rs></rs>.
+						</ab>
+						<ab xml:id="b.2CO.008.024" type="verse" n="24">
+							Mostrad, pues, con ellos, ante las <rs key="#org37">iglesias</rs>, la prueba de vuestro amor y de nuestro motivo de orgullo respecto de vosotros.
+						</ab>
+					</div>
+				</div>
+				
+				<div xml:id="b.2CO.9" type="chapter" n="9">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.2CO.009.001" type="verse" n="1">
+							En cuanto a la ayuda para los <rs key="#org18">santos</rs>, es por demás que yo os escriba,
+						</ab>
+						<ab xml:id="b.2CO.009.002" type="verse" n="2">
+							pues conozco vuestra buena voluntad, de la cual yo me glorío entre los de <rs key="#pla199">Macedonia</rs>, pues les he dicho que <rs key="#pla472" cert="medium">Acaya</rs> está preparada desde el año pasado; y vuestra diligencia ha estimulado a la mayoría.
+						</ab>
+						<ab xml:id="b.2CO.009.003" type="verse" n="3">
+							Pero he enviado a los <rs key="#org37">hermanos</rs> para que nuestro motivo de orgullo respecto de vosotros no sea vano en esta parte; para que, como lo he dicho, estéis preparados;
+						</ab>
+						<ab xml:id="b.2CO.009.004" type="verse" n="4">
+							no sea que si van conmigo algunos <rs key="#org37">macedonios</rs> y os hallan desprevenidos, nos avergoncemos nosotros, por no decir vosotros, de esta nuestra confianza.
+						</ab>
+						<ab xml:id="b.2CO.009.005" type="verse" n="5">
+							Por tanto, consideré necesario exhortar a los <rs key="#org37">hermanos</rs> que fueran primero a vosotros y prepararan primero vuestra generosidad antes prometida, para que esté lista como muestra de generosidad y no como de exigencia nuestra.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Exhortación a la generosidad</head>
+						<ab xml:id="b.2CO.009.006" type="verse" n="6">
+							Pero esto digo: El que siembra escasamente, también segará escasamente; y el que siembra generosamente, generosamente también segará.
+						</ab>
+						<ab xml:id="b.2CO.009.007" type="verse" n="7">
+							Cada uno dé como propuso en su corazón: no con tristeza ni por obligación, porque <rs key="#per14">Dios</rs> ama al <rs key="#org37">dador alegre</rs>.
+						</ab>
+						<ab xml:id="b.2CO.009.008" type="verse" n="8">
+							Y poderoso es <rs key="#per14">Dios</rs> para hacer que abunde en vosotros toda gracia, a fin de que, teniendo siempre en todas las cosas todo lo necesario, abundéis para toda buena obra;
+						</ab>
+						<ab xml:id="b.2CO.009.009" type="verse" n="9">
+							como está escrito: <q type="written">«Repartió, dio a los <rs key="#org102">pobres</rs>, su justicia permanece para siempre».</q>
+						</ab>
+						<ab xml:id="b.2CO.009.010" type="verse" n="10">
+							Y el que da semilla al que siembra y pan al que come, proveerá y multiplicará vuestra sementera y aumentará los frutos de vuestra justicia,
+						</ab>
+						<ab xml:id="b.2CO.009.011" type="verse" n="11">
+							para que seáis ricos en todo para toda generosidad, la cual produce, por medio de nosotros, acción de gracias a <rs key="#per14">Dios</rs>,
+						</ab>
+						<ab xml:id="b.2CO.009.012" type="verse" n="12">
+							porque la entrega de este servicio no solamente suple lo que a los <rs key="#org18">santos</rs> falta, sino que también abunda en muchas acciones de gracias a <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.2CO.009.013" type="verse" n="13">
+							Ellos, por la experiencia de este servicio glorifican a <rs key="#per14">Dios</rs> por la obediencia que profesáis al evangelio de <rs key="#per1">Cristo</rs>, y por la generosidad de vuestra contribución para ellos y para todos.
+						</ab>
+						<ab xml:id="b.2CO.009.014" type="verse" n="14">
+							De igual modo, en su oración a favor de vosotros, os aman a causa de la superabundante gracia de <rs key="#per14">Dios</rs> en vosotros.
+						</ab>
+						<ab xml:id="b.2CO.009.015" type="verse" n="15">
+							¡Gracias a <rs key="#per14">Dios</rs> por su don inefable!
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.2CO.10" type="chapter" n="10">
+					<div type="pericope">
+						<head type="pericope">Autoridad de Pablo</head>
+						<ab xml:id="b.2CO.010.001" type="verse" n="1">
+							Yo, <rs key="#per504">Pablo</rs>, os ruego por la mansedumbre y bondad de <rs key="#per1">Cristo</rs>, yo, que cuando estoy presente ciertamente soy humilde entre vosotros, pero que cuando estoy lejos soy atrevido con vosotros,
+						</ab>
+						<ab xml:id="b.2CO.010.002" type="verse" n="2">
+							os ruego, pues, que cuando esté presente, no tenga que usar de aquel atrevimiento con que estoy dispuesto a proceder resueltamente contra algunos que nos tienen como si anduviéramos según la carne.
+						</ab>
+						<ab xml:id="b.2CO.010.003" type="verse" n="3">
+							Aunque andamos en la carne, no militamos según la carne,
+						</ab>
+						<ab xml:id="b.2CO.010.004" type="verse" n="4">
+							porque las armas de nuestra milicia no son carnales, sino poderosas en <rs key="#per14">Dios</rs> para la destrucción de fortalezas,
+						</ab>
+						<ab xml:id="b.2CO.010.005" type="verse" n="5">
+							derribando argumentos y toda altivez que se levanta contra el conocimiento de <rs key="#per14">Dios</rs>, y llevando cautivo todo pensamiento a la obediencia a <rs key="#per1">Cristo</rs>,
+						</ab>
+						<ab xml:id="b.2CO.010.006" type="verse" n="6">
+							y estando prontos a castigar toda desobediencia, cuando vuestra obediencia sea perfecta.
+						</ab>
+						<ab xml:id="b.2CO.010.007" type="verse" n="7">
+							Miráis las cosas según la apariencia. Si alguno está persuadido en sí mismo de que es de <rs key="#per1">Cristo</rs>, esto también piense por sí mismo: que como él es de <rs key="#per1">Cristo</rs>, así también nosotros somos de <rs key="#per1">Cristo</rs>.
+						</ab>
+						<ab xml:id="b.2CO.010.008" type="verse" n="8">
+							Aunque me gloríe algo más todavía de nuestra autoridad, la cual el <rs key="#per1">Señor</rs> nos dio para edificación y no para vuestra destrucción, no me avergonzaré,
+						</ab>
+						<ab xml:id="b.2CO.010.009" type="verse" n="9">
+							para que no parezca como que os quiero amedrentar por <rs key="#wor9">cartas</rs>.
+						</ab>
+						<ab xml:id="b.2CO.010.010" type="verse" n="10">
+							A la verdad, algunos dicen que las <rs key="#wor9">cartas</rs> son duras y fuertes, pero que la presencia corporal es débil y la palabra despreciable.
+						</ab>
+						<ab xml:id="b.2CO.010.011" type="verse" n="11">
+							Esto tenga en cuenta tal <rs key="#org0">persona</rs>, que así como somos en la palabra por <rs key="#wor9">cartas</rs>, estando ausentes, lo seremos también en hechos, estando presentes.
+						</ab>
+						<ab xml:id="b.2CO.010.012" type="verse" n="12">
+							No nos atrevemos a contarnos ni a compararnos con algunos que se alaban a sí mismos; pero ellos manifiestan su falta de juicio al medirse con su propia medida y al compararse consigo mismos.
+						</ab>
+						<ab xml:id="b.2CO.010.013" type="verse" n="13">
+							Pero nosotros no nos gloriaremos desmedidamente, sino conforme a la regla que <rs key="#per14">Dios</rs> nos ha dado por medida al permitirnos llegar también hasta vosotros,
+						</ab>
+						<ab xml:id="b.2CO.010.014" type="verse" n="14">
+							porque no nos hemos extralimitado, como si no hubiéramos llegado hasta vosotros, pues fuimos los primeros en llegar hasta vosotros con el evangelio de <rs key="#per1">Cristo</rs>.
+						</ab>
+						<ab xml:id="b.2CO.010.015" type="verse" n="15">
+							No nos gloriamos desmedidamente en trabajos ajenos, sino que esperamos que conforme crezca vuestra fe seremos muy engrandecidos entre vosotros, conforme a nuestra regla.
+						</ab>
+						<ab xml:id="b.2CO.010.016" type="verse" n="16">
+							Así anunciaremos el evangelio en los lugares más allá de vosotros, sin entrar en la obra de otro para gloriarnos en lo que ya estaba preparado.
+						</ab>
+						<ab xml:id="b.2CO.010.017" type="verse" n="17">
+							Pero el que se gloría, gloríese en el <rs key="#per1">Señor</rs>.
+						</ab>
+						<ab xml:id="b.2CO.010.018" type="verse" n="18">
+							No es aprobado el que se alaba a sí mismo, sino aquel a quien <rs key="#per14">Dios</rs> alaba.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.2CO.11" type="chapter" n="11">
+					<div type="pericope">
+						<head type="pericope">Pablo y los falsos apóstoles</head>
+						<ab xml:id="b.2CO.011.001" type="verse" n="1">
+							¡Ojalá me toleraseis un poco de locura! Sí, toleradme,
+						</ab>
+						<ab xml:id="b.2CO.011.002" type="verse" n="2">
+							porque os celo con celo de <rs key="#per14">Dios</rs>, pues os he desposado con un solo <rs key="#per1">esposo</rs>, para presentaros como una <rs key="#org37">virgen pura</rs> a <rs key="#per1">Cristo</rs>.
+						</ab>
+						<ab xml:id="b.2CO.011.003" type="verse" n="3">
+							Pero temo que, así como la <rs key="#per20" cert="medium">serpiente</rs> con su astucia engañó a <rs key="#per241">Eva</rs>, vuestros sentidos sean también de alguna manera extraviados de la sincera fidelidad a <rs key="#per1">Cristo</rs>,
+						</ab>
+						<ab xml:id="b.2CO.011.004" type="verse" n="4">
+							porque si viene alguno predicando a otro <rs key="#org14">Jesús</rs> que el que os hemos predicado, o si recibís otro <rs key="#org6">espíritu</rs> que el que habéis recibido, u otro evangelio que el que habéis aceptado, bien lo toleráis.
+						</ab>
+						<ab xml:id="b.2CO.011.005" type="verse" n="5">
+							Pienso que en nada he sido inferior a aquellos «<rs key="#org110" cert="medium">grandes apóstoles</rs>»,
+						</ab>
+						<ab xml:id="b.2CO.011.006" type="verse" n="6">
+							pues aunque sea tosco en la palabra, no lo soy en el conocimiento; en todo y de todas maneras os lo hemos demostrado.
+						</ab>
+						<ab xml:id="b.2CO.011.007" type="verse" n="7">
+							¿Pequé yo humillándome a mí mismo, para que vosotros fuerais enaltecidos, por cuanto os he predicado de balde el evangelio de <rs key="#per14">Dios</rs>?
+						</ab>
+						<ab xml:id="b.2CO.011.008" type="verse" n="8">
+							He despojado a otras <rs key="#org37">iglesias</rs>, recibiendo salario para serviros a vosotros.
+						</ab>
+						<ab xml:id="b.2CO.011.009" type="verse" n="9">
+							Y cuando estaba entre vosotros y tuve necesidad, a ninguno fui carga, pues lo que me faltaba, lo suplieron los <rs key="#org188">hermanos</rs> que vinieron de <rs key="#pla199">Macedonia</rs>, y en todo me cuidé y me cuidaré de seros una <rs key="#per504">carga</rs>.
+						</ab>
+						<ab xml:id="b.2CO.011.010" type="verse" n="10">
+							Por la verdad de <rs key="#per1">Cristo</rs> que está en mí, que no se me impedirá esta mi gloria en las regiones de <rs key="#pla472">Acaya</rs>.
+						</ab>
+						<ab xml:id="b.2CO.011.011" type="verse" n="11">
+							¿Por qué? ¿Porque no os amo? <rs key="#per14">Dios</rs> lo sabe.
+						</ab>
+						<ab xml:id="b.2CO.011.012" type="verse" n="12">
+							Pero lo que hago, lo seguiré haciendo, con el fin de quitar la ocasión de los que la desean para ser hallados semejantes a nosotros en aquello en que se glorían,
+						</ab>
+						<ab xml:id="b.2CO.011.013" type="verse" n="13">
+							porque estos son <rs key="#org14" cert="medium">falsos apóstoles</rs>, <rs key="#org14" cert="medium">obreros fraudulentos</rs>, que se disfrazan de <rs key="#org14" cert="medium">apóstoles de <rs key="#per1">Cristo</rs></rs>.
+						</ab>
+						<ab xml:id="b.2CO.011.014" type="verse" n="14">
+							Y esto no es sorprendente, porque el mismo <rs key="#per20">Satanás</rs> se disfraza de <rs key="#per20">ángel de luz</rs>.
+						</ab>
+						<ab xml:id="b.2CO.011.015" type="verse" n="15">
+							Así que, no es extraño si también sus <rs key="#org14">ministros</rs> se disfrazan de <rs key="#org14">ministros de justicia</rs>; cuyo fin será conforme a sus obras.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Sufrimientos de Pablo como apóstol</head>
+						<ab xml:id="b.2CO.011.016" type="verse" n="16">
+							Otra vez digo: Que nadie me tenga por <rs key="#per504">loco</rs>; o de otra manera, recibidme como a <rs key="#per504">loco</rs>, para que yo también me gloríe un poquito.
+						</ab>
+						<ab xml:id="b.2CO.011.017" type="verse" n="17">
+							Lo que hablo, no lo hablo según el <rs key="#per1">Señor</rs>, sino como si estuviera loco, con la confianza de tener de qué gloriarme.
+						</ab>
+						<ab xml:id="b.2CO.011.018" type="verse" n="18">
+							Puesto que muchos se glorían según la carne, también yo me gloriaré,
+						</ab>
+						<ab xml:id="b.2CO.011.019" type="verse" n="19">
+							porque de buena gana toleráis a los necios, siendo vosotros <rs key="#org185">cuerdos</rs>,
+						</ab>
+						<ab xml:id="b.2CO.011.020" type="verse" n="20">
+							pues toleráis si alguno os esclaviza, si alguno os devora, si alguno toma lo vuestro, si alguno se enaltece, si alguno os da de bofetadas.
+						</ab>
+						<ab xml:id="b.2CO.011.021" type="verse" n="21">
+							Para vergüenza mía lo digo, para eso fuimos demasiado débiles. Pero en lo que otro sea atrevido (hablo con locura), también yo lo sea.
+							<!--jct: currículum-->
+						</ab>
+						<ab xml:id="b.2CO.011.022" type="verse" n="22">
+							¿Son <rs key="#org70">hebreos</rs>? Yo también. ¿Son <rs key="#org70">israelitas</rs>? Yo también. ¿Son <rs key="#org70">descendientes de <rs key="#per2">Abraham</rs></rs>? También yo.
+						</ab>
+						<ab xml:id="b.2CO.011.023" type="verse" n="23">
+							¿Son <rs key="#org70" cert="medium">ministros de <rs key="#per1">Cristo</rs></rs>? (Como si estuviera loco hablo.) Yo más; en trabajos, más abundante; en azotes, sin número; en cárceles, más; en peligros de muerte, muchas veces.
+						</ab>
+						<ab xml:id="b.2CO.011.024" type="verse" n="24">
+							De los <rs key="#org13">judíos</rs> cinco veces he recibido cuarenta azotes menos uno.
+						</ab>
+						<ab xml:id="b.2CO.011.025" type="verse" n="25">
+							Tres veces he sido azotado con varas; una vez apedreado; tres veces he padecido naufragio; una noche y un día he sido náufrago en <rs key="#pla153">alta mar</rs>;
+						</ab>
+						<ab xml:id="b.2CO.011.026" type="verse" n="26">
+							en caminos, muchas veces; en peligros de ríos, peligros de ladrones, peligros de los de mi nación, peligros de los <rs key="#org16">gentiles</rs>, peligros en la ciudad, peligros en el desierto, peligros en el mar, peligros entre <rs key="#org19">falsos hermanos</rs>;
+						</ab>
+						<ab xml:id="b.2CO.011.027" type="verse" n="27">
+							en trabajo y fatiga, en muchos desvelos, en hambre y sed, en muchos ayunos, en frío y desnudez.
+						</ab>
+						<ab xml:id="b.2CO.011.028" type="verse" n="28">
+							Y además de otras cosas, lo que sobre mí se añade cada día: la preocupación por todas las <rs key="#org37">iglesias</rs>.
+						</ab>
+						<ab xml:id="b.2CO.011.029" type="verse" n="29">
+							¿Quién enferma y yo no enfermo? ¿A quién se le hace tropezar y yo no me indigno?
+						</ab>
+						<ab xml:id="b.2CO.011.030" type="verse" n="30">
+							Si es necesario gloriarse, me gloriaré en lo que es de mi debilidad.
+						</ab>
+						<ab xml:id="b.2CO.011.031" type="verse" n="31">
+							El <rs key="#per14">Dios</rs> y <rs key="#per14">Padre de nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs></rs>, quien es bendito por los siglos, sabe que no miento.
+						</ab>
+						<ab xml:id="b.2CO.011.032" type="verse" n="32">
+							En <rs key="#pla80">Damasco</rs>, el <rs key="#org100">gobernador de la <rs key="#pla80">provincia del <rs key="#per908">rey</rs> <rs key="#per908">Aretas</rs></rs></rs> puso <rs key="#org24">guardias</rs> en la <rs key="#pla80">ciudad de los <rs key="#org189">damascenos</rs></rs> para apresarme;
+						</ab>
+						<ab xml:id="b.2CO.011.033" type="verse" n="33">
+							y fui descolgado en un canasto desde una ventana del muro, y escapé de sus manos.
+						</ab>
+
+					</div>
+				</div>
+				<div xml:id="b.2CO.12" type="chapter" n="12">
+					<div type="pericope">
+						<head type="pericope">El aguijón en la carne</head>
+						<ab xml:id="b.2CO.012.001" type="verse" n="1">
+							Ciertamente no me conviene gloriarme, pero me referiré a las visiones y a las revelaciones del <rs key="#per1">Señor</rs>.
+						</ab>
+						<ab xml:id="b.2CO.012.002" type="verse" n="2">
+							Conozco a un <rs key="#org18">hombre en <rs key="#per1">Cristo</rs></rs> que hace catorce años (si en el cuerpo, no lo sé; si fuera del cuerpo, no lo sé; <rs key="#per14">Dios</rs> lo sabe) fue arrebatado hasta el <rs key="#pla18">tercer cielo</rs>.
+						</ab><!--jct: Uauh! Esto es nuevo!-->
+						<ab xml:id="b.2CO.012.003" type="verse" n="3">
+							Y conozco al tal <rs key="#org18">hombre</rs> (si en el cuerpo, o fuera del cuerpo, no lo sé; <rs key="#per14">Dios</rs> lo sabe),
+						</ab>
+						<ab xml:id="b.2CO.012.004" type="verse" n="4">
+							que fue arrebatado al <rs key="#pla18">paraíso</rs>, donde oyó palabras inefables que no le es dado al <rs key="#org0">hombre</rs> expresar.
+						</ab>
+						<ab xml:id="b.2CO.012.005" type="verse" n="5">
+							De tal <rs key="#org18">hombre</rs> me gloriaré; pero de mí mismo, en nada me gloriaré sino en mis debilidades.
+						</ab>
+						<ab xml:id="b.2CO.012.006" type="verse" n="6">
+							Sin embargo, si quisiera gloriarme, no sería insensato, porque diría la verdad; pero lo dejo, para que nadie piense de mí más de lo que en mí ve u oye de mí.
+						</ab><!--jct: juegos retoricos sobre la humildad-->
+						<ab xml:id="b.2CO.012.007" type="verse" n="7">
+							Y para que la grandeza de las revelaciones no me exaltara, me fue dado un aguijón en mi carne, un mensajero de <rs key="#per20">Satanás</rs> que me abofetee, para que no me enaltezca;
+						</ab>
+						<ab xml:id="b.2CO.012.008" type="verse" n="8">
+							respecto a lo cual tres veces he rogado al <rs key="#per1">Señor</rs> que lo quite de mí.
+						</ab>
+						<ab xml:id="b.2CO.012.009" type="verse" n="9">
+							Y me ha dicho: <q who="#per1" toWhom="#per504" type="oral">«Bástate mi gracia, porque mi poder se perfecciona en la debilidad»</q>. Por tanto, de buena gana me gloriaré más bien en mis debilidades, para que repose sobre mí el poder de <rs key="#per1">Cristo</rs>.
+						</ab>
+						<ab xml:id="b.2CO.012.010" type="verse" n="10">
+							Por lo cual, por amor a <rs key="#per1">Cristo</rs> me gozo en las debilidades, en insultos, en necesidades, en persecuciones, en angustias; porque cuando soy débil, entonces soy fuerte.
+						</ab>
+						<ab xml:id="b.2CO.012.011" type="verse" n="11">
+							He sido un <rs key="#per504">necio</rs> al gloriarme, pero vosotros me obligasteis a ello. Yo debía ser alabado por vosotros, porque en nada he sido menos que aquellos «<rs key="#org110">grandes apóstoles</rs>», aunque nada soy.
+						</ab><!--jct: más juegos retoricos-->
+						<ab xml:id="b.2CO.012.012" type="verse" n="12">
+							Con todo, las señales de <rs key="#per504" cert="medium">apóstol</rs> han sido hechas entre vosotros en toda paciencia, señales, prodigios y milagros,
+						</ab>
+						<ab xml:id="b.2CO.012.013" type="verse" n="13">
+							porque ¿en qué habéis sido menos que las otras <rs key="#org37">iglesias</rs>, sino en que yo mismo no os he sido <rs key="#per504">carga</rs>? ¡Perdonadme este agravio!
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Pablo anuncia su tercera visita</head>
+						<ab xml:id="b.2CO.012.014" type="verse" n="14">
+							Ahora, por tercera vez estoy preparado para ir a vosotros; y no os seré una <rs key="#per504">carga</rs>, porque no busco lo vuestro, sino a vosotros, pues no deben atesorar los <rs key="#org185" cert="medium">hijos</rs> para los <rs key="#per504" cert="medium">padres</rs>, sino los <rs key="#per504" cert="medium">padres</rs> para los <rs key="#org185" cert="medium">hijos</rs>.
+						</ab>
+						<ab xml:id="b.2CO.012.015" type="verse" n="15">
+							Y yo, con el mayor placer, gastaré lo mío, y aun yo mismo me gastaré del todo por amor de vuestras almas, aunque amándoos más, sea amado menos.
+						</ab>
+						<ab xml:id="b.2CO.012.016" type="verse" n="16">
+							Pero admitamos esto: Yo no os he sido <rs key="#per504">carga</rs>, sino que como soy astuto, os atrapé con engaño.
+						</ab>
+						<ab xml:id="b.2CO.012.017" type="verse" n="17">
+							¿Acaso os he engañado por medio de alguno de los que he enviado a vosotros?
+						</ab>
+						<ab xml:id="b.2CO.012.018" type="verse" n="18">
+							Rogué a <rs key="#per907">Tito</rs>, y envié con él al <rs key="#org110">hermano</rs>. ¿Os engañó acaso <rs key="#per907">Tito</rs>? ¿No hemos procedido con el mismo espíritu? ¿No hemos seguido en las mismas pisadas?
+						</ab>
+						<ab xml:id="b.2CO.012.019" type="verse" n="19">
+							¿Acaso pensáis aún que nos disculpamos con vosotros? Delante de <rs key="#per14">Dios</rs> en <rs key="#per1">Cristo</rs> hablamos; y todo, muy amados, para vuestra edificación,
+						</ab>
+						<ab xml:id="b.2CO.012.020" type="verse" n="20">
+							pues me temo que cuando llegue, no os halle tales como quiero, y yo sea hallado por vosotros cual no queréis. Temo que haya entre vosotros contiendas, envidias, iras, divisiones, maledicencias, murmuraciones, soberbias, desórdenes;
+						</ab>
+						<ab xml:id="b.2CO.012.021" type="verse" n="21">
+							temo que cuando vuelva, me humille <rs key="#per14">Dios</rs> entre vosotros, y quizá tenga que llorar por muchos de los que antes han pecado y no se han arrepentido de la impureza, fornicación y lujuria que han cometido.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.2CO.13" type="chapter" n="13">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.2CO.013.001" type="verse" n="1">
+							Esta es la tercera vez que voy a vosotros. Por boca de dos o de <rs key="#org185" cert="medium">tres testigos</rs> se decidirá todo asunto.
+						</ab>
+						<ab xml:id="b.2CO.013.002" type="verse" n="2">
+							He dicho antes, y ahora digo otra vez como si estuviera presente, y ahora, que estoy ausente, lo escribo a los que antes pecaron, y a todos los demás, que si voy otra vez, no seré indulgente.
+						</ab>
+						<ab xml:id="b.2CO.013.003" type="verse" n="3">
+							Así tendréis una prueba de que habla <rs key="#per1">Cristo</rs> en mí, y él no es débil para con vosotros, sino que es poderoso en vosotros.
+						</ab>
+						<ab xml:id="b.2CO.013.004" type="verse" n="4">
+							Aunque fue crucificado en debilidad, vive por el poder de <rs key="#per14">Dios</rs>. Y también nosotros somos débiles en él, pero viviremos con él por el poder de <rs key="#per14">Dios</rs> para con vosotros.
+						</ab>
+						<ab xml:id="b.2CO.013.005" type="verse" n="5">
+							Examinaos a vosotros mismos, para ver si estáis en la fe; probaos a vosotros mismos. ¿O no os conocéis a vosotros mismos? ¿No sabéis que <rs key="#per1">Jesucristo</rs> está en vosotros? ¡A menos que estéis reprobados!
+						</ab>
+						<ab xml:id="b.2CO.013.006" type="verse" n="6">
+							Espero que sabréis que nosotros no estamos reprobados.
+						</ab>
+						<ab xml:id="b.2CO.013.007" type="verse" n="7">
+							Y oramos a <rs key="#per14">Dios</rs> que ninguna cosa mala hagáis; no para que nosotros aparezcamos aprobados, sino para que vosotros hagáis lo bueno, aunque nosotros seamos como reprobados,
+						</ab>
+						<ab xml:id="b.2CO.013.008" type="verse" n="8">
+							porque nada podemos contra la verdad, sino a favor de la verdad.
+						</ab>
+						<ab xml:id="b.2CO.013.009" type="verse" n="9">
+							Por lo cual nos gozamos de que seamos nosotros débiles, y que vosotros estéis fuertes; y aun oramos por vuestra perfección.
+						</ab>
+						<ab xml:id="b.2CO.013.010" type="verse" n="10">
+							Por esto os escribo estando ausente, para no usar de severidad cuando esté presente, conforme a la autoridad que el <rs key="#per1">Señor</rs> me ha dado para edificación, y no para destrucción.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Saludos y doxología final</head>
+						<ab xml:id="b.2CO.013.011" type="verse" n="11">
+							Por lo demás, <rs key="#org185">hermanos</rs>, tened gozo, perfeccionaos, consolaos, sed de un mismo sentir y vivid en paz; y el <rs key="#per14">Dios de paz y de amor</rs> estará con vosotros.
+						</ab>
+						<ab xml:id="b.2CO.013.012" type="verse" n="12">
+							Saludaos unos a otros con beso santo.
+						</ab>
+						<ab xml:id="b.2CO.013.013" type="verse" n="13">
+							Todos los <rs key="#org18">santos</rs> os saludan.
+						</ab>
+						<ab xml:id="b.2CO.013.014" type="verse" n="14">
+							La gracia del <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>, el amor de <rs key="#per14">Dios</rs> y la comunión del <rs key="#per17">Espíritu Santo</rs> sean con todos vosotros. Amén.
+						</ab>
+					</div>
+				</div>
+			</div>
+		</body>
+		<back />
+	</text>
+<standOff xml:id="b.2CO.sexualThemes"  scheme="taxonomy.xml">
+<spanGrp type="theme" inst="#b.2CO.002.004">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.002.004">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.002.004">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.002.008">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.002.008">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.003.002">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="medium" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.003.002">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.003.003">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="medium" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.003.003">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.002">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="low" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.002">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="low" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.005">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.005">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.006">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.006">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.010">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.010">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.011">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.004.011">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.001">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.001">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.002">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.002">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.003">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.003">
+	<span ana="clothes">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.003">
+	<span ana="nudity">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.003">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.003">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.004">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.004">
+	<span ana="clothes">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.004">
+	<span ana="nudity">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.004">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.004">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.006">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.006">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.008">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.008">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.008">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.010">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.010">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.010">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.014">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.014">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.016">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.005.016">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.006">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.006">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.011">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.011">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.012">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.012">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.014">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.014">
+	<span ana="interfaith-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.015">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.015">
+	<span ana="interfaith-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.016">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.016">
+	<span ana="interfaith-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.017">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.006.017">
+	<span ana="interfaith-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.001">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.001">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.003">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.003">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.005">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="medium" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.005">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.005">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.011">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.011">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.007.011">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.008.007">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.008.007">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.008.008">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.008.008">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.008.009">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.008.009">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.008.024">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.008.024">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.009.007">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.009.007">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.010.010">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.010.010">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.002">
+	<span ana="wedding">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.002">
+	<span ana="virgin">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.002">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.011">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.011">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.018">
+	<span ana="flesh">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.018">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.027">
+	<span ana="nudity">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.011.027">
+	<span ana="negative-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.002">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.002">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.003">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.003">
+	<span ana="neutral-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.007">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.007">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.008">
+	<span ana="body">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.008">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.015">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.015">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.021">
+	<span ana="sex-outside-marriage">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.021">
+	<span ana="condemned-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.012.021">
+	<span ana="sexual-desire">
+		<certainty match="@ana" locus="value" cert="medium" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.013.011">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.013.011">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.013.012">
+	<span ana="kiss">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.013.012">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.013.014">
+	<span ana="love">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+<spanGrp type="theme" inst="#b.2CO.013.014">
+	<span ana="positive-aspect">
+		<certainty match="@ana" locus="value" cert="high" given="text"/>
+	</span>
+</spanGrp>
+
+</standOff>
+</TEI>

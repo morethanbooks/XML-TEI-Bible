@@ -88,7 +88,7 @@ def find_most_similar_id_of_errors(error_lt, categories_id_lt, standOff_str):
             else:
                 replace_with = response
                 print("Replacement modified with", response)
-            standOff_str = re.sub(wrong_id_str, replace_with, standOff_str)
+            standOff_str = re.sub('"' + wrong_id_str + '"', '"' + replace_with + '"', standOff_str, flags=re.M)
         else:
             print("Replacement rejected. No change.")
     return standOff_str
@@ -97,7 +97,7 @@ def find_most_similar_id_of_errors(error_lt, categories_id_lt, standOff_str):
 def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
     categories_id_lt,
     book_name_str, 
-    wdir_str = "../../sexual-annotation/",
+    wdir_str = "./../../../sexual-annotation/",
     ):
     error_lt = []
     
@@ -152,7 +152,7 @@ def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
 
     
 
-    text_file = open(wdir_str+"standOff_element.xml", "w")
+    text_file = open(wdir_str + "standOff_element.xml", "w")
     n = text_file.write(standOff_str)
     text_file.close()
     return error_lt, standOff_str
@@ -161,12 +161,13 @@ def parse_each_sexual_annotation_as_comment(sexual_annotations_from_comments_lt,
 
 def save_book_with_standOff_element(book_str, standOff_str,
     book_name_str,
-    wdir_str = "../../sexual-annotation/",
+    wdir_str = "./../../sexual-annotation/",
     ):
     book_str = re.sub(r'\s*<!--\s*sexo?:\s*(.*?) ?;? ?-->', r'', book_str)
-    book_str = re.sub(r'</text>', r'</text>\n'+standOff_str, book_str)
+    book_str = re.sub(r'</text>', r'</text>\n' + standOff_str, book_str)
 
-    text_file = open(wdir_str+ book_name_str +"_standOff.xml", "w", encoding="utf-8")
+    text_file = open(wdir_str + book_name_str + "_standOff.xml", "w", encoding="utf-8")
     text_file.write(book_str)
     text_file.close()
-    
+   
+

@@ -122,6 +122,11 @@
                         <note>This is only annotated when new information within the book is transmited. For example, when someone is born and their name is mentioned, it would be annotated. But if in further chapters their parent talk to them and called him/her "son" or "daughter", this is not annotated anymore.</note>
                         <variant>descendant</variant>
                      </desc>
+                     <category xml:id="primogeniture">
+                        <desc type="implicitly-sexual">
+                           <gloss>primogeniture</gloss>
+                        </desc>
+                     </category>
                   </category>
                   <category xml:id="indirect-ascendant-descendant">
                      <desc type="implicitly-sexual">
@@ -957,10 +962,15 @@
                      <desc type="no-sexual">
                         <gloss>interior spaces</gloss>
                      </desc>
-                     <category xml:id="bedroom">
+                     <category xml:id="room">
+                        <desc type="no-sexual">
+                           <gloss>room</gloss>
+                        </desc>
+                        <category xml:id="bedroom">
                         <desc type="no-sexual">
                            <gloss>bedroom</gloss>
                         </desc>
+                        </category>
                         <category xml:id="bed">
                            <desc type="no-sexual">
                               <gloss>bed</gloss>
