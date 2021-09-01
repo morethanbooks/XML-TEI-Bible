@@ -279,15 +279,20 @@
                                  than the hands (petting, frottage, outercourse)</gloss>
                            </desc>
                         </category>
-                        <category xml:id="female-rape">
+                        <category xml:id="rape">
                            <desc type="explicitly-sexual">
-                              <gloss>sexual assault with penetration against a woman</gloss>
+                              <gloss>sexual assault with penetration</gloss>
                            </desc>
-                        </category>
-                        <category xml:id="male-rape">
-                           <desc type="explicitly-sexual">
-                              <gloss>sexual assault with penetration against a man</gloss>
-                           </desc>
+                           <category xml:id="female-rape">
+                              <desc type="explicitly-sexual">
+                                 <gloss>sexual assault with penetration against a woman</gloss>
+                              </desc>
+                           </category>
+                           <category xml:id="male-rape">
+                              <desc type="explicitly-sexual">
+                                 <gloss>sexual assault with penetration against a man</gloss>
+                              </desc>
+                           </category>
                         </category>
                         <category xml:id="sexual-assault">
                            <desc type="explicitly-sexual">
@@ -344,7 +349,7 @@
                         <category xml:id="sex-before-marriage">
                            <desc type="explicitly-sexual">
                               <gloss>sexual act between two people with a relationship but not yet
-                                 married. Also called adultery.</gloss>
+                                 married. Also called adultery. Use also for lovers.</gloss>
                            </desc>
                         </category>
                         <category xml:id="sex-outside-marriage">
@@ -359,7 +364,11 @@
                               <gloss>sexual act outisde</gloss>
                            </desc>
                         </category>
-                     </category>
+                        <category xml:id="sex-menstruation">
+                           <desc type="explicitly-sexual">
+                              <gloss>sex during menstruation</gloss>
+                           </desc>
+                        </category>                     </category>
                      <category xml:id="sexual-act-participants">
                         <desc type="explicitly-sexual">
                            <gloss>types of sexual acts by their participants</gloss>
@@ -410,6 +419,17 @@
                                  cousins, aunts or uncles, nieces and nephews)</gloss>
                            </desc>
                         </category>
+                        <category xml:id="interfaith-sex">
+                           <desc type="implicitly-sexual">
+                              <gloss>sex between people that have different religions</gloss>
+                           </desc>
+                        </category>
+                        <category xml:id="interracial-sex">
+                           <desc type="implicitly-sexual">
+                              <gloss>sex between people from different ethnicities</gloss>
+                           </desc>
+                        </category>
+                        
                         <category xml:id="angel-human-sex">
                            <desc type="explicitly-sexual">
                               <gloss>sex between people and angels</gloss>
@@ -689,6 +709,17 @@
                            <gloss>flesh</gloss>
                         </desc>
                      </category>
+                     <category xml:id="blood">
+                        <desc type="no-sexual">
+                           <gloss>blood</gloss>
+                        </desc>
+                     </category>
+                     <category xml:id="umbilical-cord">
+                        <desc type="no-sexual">
+                           <gloss>umbilical-cord</gloss>
+                        </desc>
+                     </category>
+                     
                   </category>
                   <category xml:id="body-function">
                      <desc type="implicitly-sexual">
@@ -765,6 +796,21 @@
                            <gloss>veil</gloss>
                         </desc>
                      </category>
+                     <category xml:id="underwear">
+                        <desc type="implicitly-sexual">
+                           <gloss>underwear</gloss>
+                        </desc>
+                        <category xml:id="male-underwear">
+                           <desc type="implicitly-sexual">
+                              <gloss>male underwear</gloss>
+                           </desc>
+                        </category>
+                        <category xml:id="female-underwear">
+                           <desc type="implicitly-sexual">
+                              <gloss>female underwear</gloss>
+                           </desc>
+                        </category>
+                     </category>
                   </category>
                   <category xml:id="perfume">
                      <desc type="no-sexual">
@@ -832,7 +878,11 @@
                            <gloss>glass</gloss>
                         </desc>
                      </category>
-                     <category xml:id="spices">
+                     <category xml:id="oil">
+                        <desc type="no-sexual">
+                           <gloss>oil</gloss>
+                        </desc>
+                     </category>                     <category xml:id="spices">
                         <desc type="no-sexual">
                            <gloss>spices</gloss>
                         </desc>
@@ -933,6 +983,16 @@
                         <gloss>pitcher</gloss>
                      </desc>
                   </category>
+                  <category xml:id="sexual-object">
+                     <desc type="explicitly-sexual">
+                        <gloss>sexual-object</gloss>
+                     </desc>
+                  </category>
+                  <category xml:id="make-up">
+                     <desc type="no-sexual">
+                        <gloss>make-up</gloss>
+                     </desc>
+                  </category>                  
                   <category xml:id="environment">
                      <desc type="no-sexual">
                         <gloss>environment</gloss>
