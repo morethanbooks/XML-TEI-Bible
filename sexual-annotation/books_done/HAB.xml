@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+
+
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Habacuc</title>
+                <title type="idno">
+                    <idno type="string">HAB</idno>
+                    <idno type="viaf">87146462592927770973</idno>
+                </title>
+                <author>
+                    <name type="short"></name>
+                    <name type="full"></name>
+                    <idno type="viaf"></idno>
+                </author>
+                <principal key="#jct">José Calvo Tello</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>José Calvo Tello</publisher>
+                <availability status="free">
+                    <p>The text is freely available.</p>
+                </availability>
+                <date when="2017">2017</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+                <bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+                <bibl type="edition-first"><date when="1569">1569</date></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p></p>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2017-01-21" who="#jct">First version of Habakkuk</change>
+            <change when="2017-01-28" who="#jct">Book of Habakkuk checked.</change>
+            <change when="2017-05-27" who="#jct">Starting sexual annotation.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="b.HAB" type="book">
+                <div xml:id="b.HAB.1" type="chapter" n="1">
+                    <div type="pericope">
+                        <ab xml:id="b.HAB.001.001" type="verse" n="1">
+                            Profecía que el <rs key="#per644">profeta</rs> <rs key="#per644">Habacuc</rs> recibió en una visión
+                        </ab>
+                        <ab xml:id="b.HAB.001.002" type="verse" n="2">
+                            <q who="#per644" toWhom="#per14" type="prayer">«¿Hasta cuándo, <rs key="#per14">Jehová</rs>, gritaré sin que tú escuches, y clamaré a causa de la violencia sin que tú salves?</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.003" type="verse" n="3">
+                            <q who="#per644" toWhom="#per14" type="prayer">¿Por qué me haces ver iniquidad y haces que vea tanta maldad? Ante mí solo hay destrucción y violencia; pleito y contienda se levantan.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.004" type="verse" n="4">
+                            <q who="#per644" toWhom="#per14" type="prayer">Por eso la <rs key="#wor1" cert="low">Ley</rs> se debilita y el juicio no se ajusta a la verdad; el <rs key="#org19">impío</rs> asedia al <rs key="#org18">justo</rs>, y así se tuerce la justicia.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.005" type="verse" n="5">
+                            <q who="#per14" toWhom="#per644 #org70" type="oral">»Mirad entre las <rs key="#org0">naciones</rs>, ved y asombraos, porque haré una obra en vuestros días, que, aun cuando se os contara, no la creeríais.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.006" type="verse" n="6">
+                            <q who="#per14" toWhom="#per644 #org70" type="oral">Porque yo levanto a los <rs key="#org64">caldeos</rs>, <rs key="#org64">nación cruel y presurosa</rs>, que camina por la anchura de la <rs key="#pla41">tierra</rs> para poseer las moradas ajenas.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.007" type="verse" n="7">
+                            <q who="#per14" toWhom="#per644 #org70" type="oral">Formidable es y terrible; de ella misma proceden su justicia y su dignidad.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.008" type="verse" n="8">
+                            <q who="#per14" toWhom="#per644 #org70" type="oral">Sus caballos son más ligeros que leopardos, más feroces que lobos nocturnos, y sus <rs key="#org24">jinetes</rs> se multiplicarán. Vienen de lejos sus <rs key="#org24">jinetes</rs>, vuelan como <rs key="#org24">águilas</rs> que se apresuran a devorar.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.009" type="verse" n="9">
+                            <q who="#per14" toWhom="#per644 #org70" type="oral">Toda ella acude a la violencia; el terror va delante de ella, y recoge <rs key="org0">cautivos</rs> como arena.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.010" type="verse" n="10">
+                            <q who="#per14" toWhom="#per644 #org70" type="oral">Se mofa de los <rs key="#org100">reyes</rs>, y de los <rs key="#org100">príncipes</rs> hace burla; se ríe de las fortalezas, levanta terraplenes y las toma.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.011" type="verse" n="11">
+                            <q who="#per14" toWhom="#per644 #org70" type="oral">Luego pasa como el <rs key="#org64">huracán</rs>, y peca porque hace de su fuerza su dios.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.012" type="verse" n="12">
+                            <q who="#per644" toWhom="#per14" type="prayer">»¿No eres tú desde el <rs key="#tim3">principio</rs>, <rs key="#per14">Jehová</rs>, <rs key="#per14">Dios</rs> mío, <rs key="#per14">Santo</rs> mío? No moriremos. <rs key="#per14">Jehová</rs>, para juicio lo pusiste; y tú, <rs key="#per14">Roca</rs>, lo estableciste para castigar.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.013" type="verse" n="13">
+                            <q who="#per644" toWhom="#per14" type="prayer">Muy limpio eres de ojos para ver el mal, ni puedes ver el agravio; ¿por qué, pues, ves a los <rs key="#org19">criminales</rs> y callas cuando destruye el <rs key="#org19">impío</rs> al que es más justo que él?</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.014" type="verse" n="14">
+                            <q who="#per644" toWhom="#per14" type="prayer">Tratas a los <rs key="#org0">hombres</rs> como a <rs key="#org0">peces del mar</rs>, como a <rs key="#org0">reptiles</rs> que no tienen dueño.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.015" type="verse" n="15">
+                            <q who="#per644" toWhom="#per14" type="prayer">A todos los pesca con anzuelo, los recoge con su red, los junta en sus mallas; por lo cual se alegra y se regocija.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.016" type="verse" n="16">
+                            <q who="#per644" toWhom="#per14" type="prayer">Por eso ofrece sacrificios a su red y quema incienso a sus mallas, porque gracias a ellas su porción es abundante y sabrosa su comida.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.001.017" type="verse" n="17">
+                            <q who="#per644" toWhom="#per14" type="prayer">¿Vaciará sin cesar su red y seguirá aniquilando sin piedad a las <rs key="#org0">naciones</rs>?».</q>
+                        </ab>
+                    </div>
+                </div>
+                <div xml:id="b.HAB.2" type="chapter" n="2">
+                    <div type="pericope" part="Y">
+                        <ab xml:id="b.HAB.002.001" type="verse" n="1">
+                            <q who="#per644" toWhom="#per14" type="prayer">«En mi puesto de guardia estaré, sobre la fortaleza afirmaré el pie. Velaré para ver lo que se me dirá y qué he de responder tocante a mi queja.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.002" type="verse" n="2">
+                            <q who="#per644" toWhom="#org0" type="written"><rs key="#org14">Jehová</rs> me respondió y dijo:  <q who="#per14" toWhom="#per644" type="oral">»Escribe la <rs key="#wor8">visión</rs>, grábala en <rs key="#wor8">tablas</rs>, para que pueda leerse de corrido.</q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.003" type="verse" n="3">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral">Aunque la <rs key="#wor8">visión</rs> tarda en cumplirse, se cumplirá a su tiempo, no fallará. Aunque tarde, espérala, porque sin duda vendrá, no tardará.</q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.004" type="verse" n="4">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">Aquel cuya alma no es recta se enorgullece; mas el <rs key="#org18">justo</rs> por su fe vivirá.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.005" type="verse" n="5">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">»Además, el que es dado al vino es traicionero, <rs key="#org18">hombre orgulloso</rs>, que no prosperará; ensancha como el <rs key="#pla15">seol</rs> su garganta y es insaciable como la muerte, aunque reúna para sí todas las <rs  key="#org0">naciones</rs> y acapare para sí todos los <rs key="#org0">pueblos</rs>.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.006" type="verse" n="6">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">»¿No entonarán todos estos contra él refranes y sarcasmos? Dirán: <q who="#org0" toWhom="#org0" type="soCalled">¡Ay del que multiplicó lo que no era suyo! ¿Hasta cuándo seguirá acumulando prenda tras prenda?</q>.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.007" type="verse" n="7">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">»¿No se levantarán de repente tus deudores y se despertarán los que te harán temblar? Tú serás como <rs key="#org19">despojo</rs> para ellos.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.008" type="verse" n="8">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">Por cuanto has despojado a muchas <rs key="#org0">naciones</rs>, todos los otros <rs key="#org0">pueblos</rs> te despojarán a ti, a causa de la sangre de los <rs key="#org0">hombres</rs>, y de las violencias hechas a la <rs key="#pla41">tierra</rs>, a las <rs key="#org0">ciudades</rs> y a todos los que en ellas habitaban.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.009" type="verse" n="9">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">»¡Ay del que codicia injusta ganancia para su casa, para poner en alto su nido, para escaparse del poder del mal!</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.010" type="verse" n="10">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">Tomaste consejo vergonzoso para tu casa, asolaste muchos <rs key="#org0">pueblos</rs> y has pecado contra tu vida.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.011" type="verse" n="11">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">Porque la piedra clamará desde el muro y la tabla del enmaderado le responderá.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.012" type="verse" n="12">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">»¡Ay del que edifica con sangre la <rs key="#org0">ciudad</rs> y del que la funda sobre la maldad!</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.013" type="verse" n="13">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">¿No viene esto de <rs key="#per14">Jehová de los ejércitos</rs>? Los <rs key="#org0">pueblos</rs>, pues, trabajarán para el fuego, y las <rs key="#org0">naciones</rs> se fatigarán en vano.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.014" type="verse" n="14">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">Porque la <rs key="#pla41">tierra</rs> se llenará del conocimiento de la gloria de <rs key="#per14">Jehová</rs>, como las aguas cubren el mar.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.015" type="verse" n="15">
+                            <!--sex: alcohol; nudity; sexual-desire; visual; condemned-->
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">»¡Ay del que da de beber a su <rs key="#org0">prójimo</rs>! ¡Ay de ti, que le acercas tu hiel y lo embriagas para mirar su desnudez!</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.016" type="verse" n="16">
+                            <!--sex: alcohol; nudity cert="medium"; condemned-->
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">Te has llenado de deshonra más que de honra; bebe tú también y serás descubierto; el cáliz de la mano derecha de <rs key="#per14">Jehová</rs> vendrá hasta ti y convertirá en humillación tu gloria.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.017" type="verse" n="17">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">Porque la rapiña del <rs key="#pla156">Líbano</rs> caerá sobre ti y la destrucción de las fieras te quebrantará, a causa de la sangre de los <rs key="#org0">hombres</rs>, y de las violencias hechas a la <rs key="#pla41">tierra</rs>, a las <rs key="#org0">ciudades</rs> y a todos los que en ellas habitaban.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.018" type="verse" n="18">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">»¿De qué sirve la escultura que esculpió el que la hizo, la estatua de fundición que enseña mentira, para que el artífice confíe en su obra haciendo imágenes mudas?</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.019" type="verse" n="19">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">»¡Ay del que dice al palo: <q who="#org0" toWhom="#org0" type="oral">Despiértate;</q> y a la piedra muda: <q who="#org0" toWhom="#org0" type="oral">Levántate!</q> ¿Podrán acaso enseñar? Aunque está cubierto de oro y plata, no hay espíritu dentro de él.</q></q></q>
+                        </ab>
+                        <ab xml:id="b.HAB.002.020" type="verse" n="20">
+                            <q who="#per644" toWhom="#org0" type="written"><q who="#per14" toWhom="#per644" type="oral"><q who="#per14" toWhom="#org19" type="oral">Mas <rs key="#per14">Jehová</rs> está en su <rs key="#pla30">santo Templo</rs>: ¡calle delante de él toda la <rs key="#pla41">tierra</rs>!».</q></q></q>
+                        </ab>
+                    </div>
+                </div>
+                <div xml:id="b.HAB.3" type="chapter" n="3">
+                    <div type="pericope" part="Y">
+                        <ab xml:id="b.HAB.003.001" type="verse" n="1">
+                            Oración del <rs key="#per644">profeta</rs> <rs key="#per644">Habacuc</rs>, sobre <rs key="#per645">Sigionot</rs>
+                        </ab>
+                        <ab xml:id="b.HAB.003.002" type="verse" n="2">
+                            <q who="#per644" toWhom="#per14" type="song">«¡<rs key="#per14">Jehová</rs>, he oído tu palabra, y temí! ¡<rs key="#per14">Jehová</rs>, aviva tu obra en medio de los tiempos, en medio de los tiempos hazla conocer; en la ira acuérdate de la misericordia!</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.003" type="verse" n="3">
+                            <q who="#per644" toWhom="#per14" type="song"><rs key="#per14">Dios</rs> viene de <rs key="#pla298">Temán</rs>; el <rs key="#per14">Santo</rs>, desde el <rs key="#pla126">monte</rs> <rs key="#pla126">Parán</rs>. <hi rend="italic">Selah</hi>» Su gloria cubrió los cielos, la <rs key="#pla41">tierra</rs> se llenó de su alabanza.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.004" type="verse" n="4">
+                            <q who="#per644" toWhom="#per14" type="song">Su resplandor es como la luz. Rayos brillantes salen de su mano; allí está escondido su poder.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.005" type="verse" n="5">
+                            <q who="#per644" toWhom="#per14" type="song">Delante de su rostro va la mortandad, y tras sus pies salen carbones encendidos.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.006" type="verse" n="6">
+                            <q who="#per644" toWhom="#per14" type="song">Se levanta y mide la <rs key="#pla41">tierra</rs>; mira, y se estremecen las <rs key="#org0">naciones</rs>. Los montes antiguos se desmoronan, los collados antiguos se derrumban; pero sus caminos son eternos.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.007" type="verse" n="7">
+                            <q who="#per644" toWhom="#per14" type="song">»He visto las tiendas de <rs key="#pla299">Cusán</rs> en aflicción; las tiendas de la <rs key="#pla249">tierra de <rs key="#pla249">Madián</rs></rs> tiemblan.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.008" type="verse" n="8">
+                            <q who="#per644" toWhom="#per14" type="song">¿Te has airado, <rs key="#per14">Jehová</rs>, contra los ríos? ¿Contra los ríos te has airado? ¿Arde tu ira contra el mar cuando montas en tus caballos, en tus carros de victoria?</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.009" type="verse" n="9">
+                            <q who="#per644" toWhom="#per14" type="song">»Tienes tu arco preparado; los juramentos a las <rs key="#org22">tribus</rs> fueron palabra segura. <hi rend="italic">Selah</hi>» Has hendido la <rs key="#pla41">tierra</rs> con los ríos.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.010" type="verse" n="10">
+                            <q who="#per644" toWhom="#per14" type="song">Te ven los montes y temen; pasa la inundación; el abismo deja oir su voz y alza sus manos a lo alto.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.011" type="verse" n="11">
+                            <q who="#per644" toWhom="#per14" type="song">El sol y la luna se detienen en su lugar, a la luz de tus saetas que cruzan, al resplandor de tu refulgente lanza.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.012" type="verse" n="12">
+                            <q who="#per644" toWhom="#per14" type="song">Con ira pisas la <rs key="#pla41">tierra</rs>, con furor pisoteas las <rs key="#org0">naciones</rs>.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.013" type="verse" n="13">
+                            <q who="#per644" toWhom="#per14" type="song">Has salido para socorrer a tu <rs key="#org70">pueblo</rs>, para socorrer a tu <rs cert="low">ungido</rs>. Has abatido la cabeza de la casa del <rs key="#org19">impío</rs>, has descubierto el cimiento hasta la roca. <hi rend="italic">Selah</hi></q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.014" type="verse" n="14">
+                            <q who="#per644" toWhom="#per14" type="song">»Traspasaste con sus propios dardos las cabezas de sus <rs key="#org65">guerreros</rs>, que como tempestad acometieron para dispersarme, regocijados como si fueran a devorar al pobre en secreto.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.015" type="verse" n="15">
+                            <q who="#per644" toWhom="#per14" type="song">»Caminas en el mar con tus caballos, sobre la mole de las muchas aguas.,</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.016" type="verse" n="16">
+                            <q who="#per644" toWhom="#per14" type="song">Oí, y se conmovieron mis entrañas; al oir la voz temblaron mis labios. Pudrición entró en mis huesos, y dentro de mí me estremecí. Tranquilo espero el día de la angustia que vendrá sobre el <rs key="#org133" cert="low">pueblo</rs> que nos ataca.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.017" type="verse" n="17">
+                            <q who="#per644" toWhom="#per14" type="song">»Aunque la higuera no florezca ni en las vides haya frutos, aunque falte el producto del olivo y los labrados no den mantenimiento, aunque las ovejas sean quitadas de la majada y no haya vacas en los corrales,</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.018" type="verse" n="18">
+                            <q who="#per644" toWhom="#per14" type="song">con todo, yo me alegraré en <rs key="#per14">Jehová</rs>, me gozaré en el <rs key="#per14">Dios de mi salvación</rs>.</q>
+                        </ab>
+                        <ab xml:id="b.HAB.003.019" type="verse" n="19">
+                            <q who="#per644" toWhom="#per14" type="song"><rs key="#per14">Jehová</rs>, el <rs key="#per14">Señor</rs>, es mi <rs key="#per14">fortaleza</rs>; él me da pies como de ciervas y me hace caminar por las alturas».</q> {Al <rs key="#org136">jefe de los cantores</rs>. Para instrumentos de cuerdas. }
+                        </ab>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
