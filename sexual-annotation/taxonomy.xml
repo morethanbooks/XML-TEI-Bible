@@ -72,10 +72,15 @@
                         <gloss>relation between people that are not married</gloss>
                      </desc>
                   </category>
+                  <category xml:id="relation-greater-family">
+                     <desc type="implicitly-sexual">
+                        <gloss>sentimental relation between people that are family (for example between a sister and a brother)</gloss>
+                        <variant>greater-family-relation</variant>
+                     </desc>
+                  </category>
                   <category xml:id="marital-relation-political-family">
                      <desc type="implicitly-sexual">
-                        <gloss>relation between people that are political family (for example with
-                           the wife of your brother)</gloss>
+                        <gloss>relation between people that are political family (for example with the wife of your brother)</gloss>
                         <variant>greater-family-relation</variant>
                      </desc>
                   </category>
@@ -210,6 +215,11 @@
                         <category xml:id="seduction">
                            <desc type="implicitly-sexual">
                               <gloss>seduction</gloss>
+                           </desc>
+                        </category>
+                        <category xml:id="rejection">
+                           <desc type="explicitly-sexual">
+                              <gloss>rejection</gloss>
                            </desc>
                         </category>
                         <category xml:id="erotic-time">
