@@ -37,6 +37,7 @@
                      <desc type="implicitly-sexual">
                         <gloss>relation between people that are married</gloss>
                      </desc>
+                     <!--matrimony-->
                   </category>
                   <category xml:id="second-marriage">
                      <desc type="implicitly-sexual">
@@ -203,6 +204,11 @@
                            <gloss>breast feeding</gloss>
                         </desc>
                      </category>
+                     <category xml:id="bath">
+                        <desc type="no-sexual">
+                           <gloss>bath</gloss>
+                        </desc>
+                     </category>
                   </category>
                   <category xml:id="sexual-act">
                      <desc type="explicitly-sexual">
@@ -351,6 +357,11 @@
                               <gloss>sex motivated for goods, but not with prostitutes</gloss>
                            </desc>
                         </category>
+                        <category xml:id="voyerism">
+                           <desc type="explicitly-sexual">
+                              <gloss>voyerism (i.e., looking at other people for sexual purposes without they knowing that they are being looked at).</gloss>
+                           </desc>
+                        </category>
                         <category xml:id="other-sexual-act">
                            <desc type="explicitly-sexual">
                               <gloss>other sexual acts</gloss>
@@ -369,14 +380,15 @@
                         <category xml:id="sex-before-marriage">
                            <desc type="explicitly-sexual">
                               <gloss>sexual act between two people with a relationship but not yet
-                                 married. Also called adultery. Use also for lovers.</gloss>
+                                 married. Use also for lovers.</gloss>
+                              <!--todo: hasta el 2022.3. aquí aparecía que se entendía esto como adulterio. A partir de esa fecha cambiado-->
                            </desc>
                         </category>
-                        <category xml:id="sex-outside-marriage">
+                           <category xml:id="sex-outside-marriage">
                            <desc type="explicitly-sexual">
                               <gloss>sexual act between two people that do not have a stable
                                  relationship (they can be married or not). Also called
-                                 fornication.</gloss>
+                                 fornication or adultery.</gloss>
                            </desc>
                         </category>
                         <category xml:id="sex-outside">
@@ -527,6 +539,11 @@
                         <gloss>dishonor</gloss>
                      </desc>
                   </category>
+                  <category xml:id="sickness">
+                     <desc type="no-sexual">
+                        <gloss>sickness</gloss>
+                     </desc>
+                  </category>
                </category>
                <category xml:id="body">
                   <desc type="implicitly-sexual">
@@ -572,6 +589,11 @@
                            <category xml:id="prepuce">
                               <desc type="explicitly-sexual">
                                  <gloss>prepuce</gloss>
+                              </desc>
+                           </category>
+                           <category xml:id="testicle">
+                              <desc type="explicitly-sexual">
+                                 <gloss>testicle</gloss>
                               </desc>
                            </category>
                         </category>
