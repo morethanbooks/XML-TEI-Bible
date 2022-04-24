@@ -209,6 +209,11 @@
                            <gloss>bath</gloss>
                         </desc>
                      </category>
+                     <category xml:id="wash">
+                        <desc type="no-sexual">
+                           <gloss>wash</gloss>
+                        </desc>
+                     </category>
                   </category>
                   <category xml:id="sexual-act">
                      <desc type="explicitly-sexual">
@@ -506,7 +511,7 @@
                   </category>
                   <category xml:id="celibacy">
                      <desc type="explicitly-sexual">
-                        <gloss>planing not having sex with other people</gloss>
+                        <gloss>planing not having sex with other people (also called abstinency)</gloss>
                      </desc>
                   </category>
                   <category xml:id="infertility">
@@ -1275,7 +1280,11 @@
                            <gloss>concubine</gloss>
                         </desc>
                      </category>
-                     
+                     <category xml:id="midwife">
+                        <desc type="implicitly-sexual">
+                           <gloss>midwife</gloss>
+                        </desc>
+                     </category>                     
                   </category>
                   <category xml:id="by-corporal-traits">
                      <desc type="implicitly-sexual">
@@ -1421,7 +1430,8 @@
                   </category>
                   
                </category>
-               <category xml:id="valorations">
+               
+                  <category xml:id="valorations">
                   <desc type="no-sexual">
                      <gloss>valorations about acts, relations or states</gloss>
                   </desc>
