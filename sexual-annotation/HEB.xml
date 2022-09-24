@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/morethanbooks/XML-TEI-Bible/master/scheme/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-quotes.css" rel="stylesheet" title="Word2Pix Quotations"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-reference.css" rel="stylesheet" title="Word2Pix References"?>
+<?xml-stylesheet type="text/css" href="styles/styles.css" rel="stylesheet" title="Classic"?>
+<?xml-stylesheet type="text/css" href="styles/word2pix-level-q.css" rel="stylesheet" title="Word2Pix Level Quotation"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Hebreos</title>
+				<title type="idno">
+					<idno type="string">HEB</idno>
+					<idno type="viaf">174581762</idno>
+				</title>
+				<author>
+					<name type="short"></name>
+					<name type="full"></name>
+					<idno type="viaf"></idno>
+				</author>
+				<principal key="#jct">José Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>José Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2018">2018</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source"><date when="2000">2000</date><idno></idno>.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2018-08-18" who="#jct">First version of Hebrews.</change>
+			<change when="2018-09-02" who="#jct">First version of Hebrews finished.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div />
+		</front><body>
+			<div xml:id="b.HEB" type="book">
+				<div xml:id="b.HEB.001" type="chapter" n="1">
+					<div type="pericope">
+						<ab xml:id="b.HEB.001.001" type="verse" n="1">	
+						  <!--sex: ascendant; neutral; positive-->
+							<rs key="#per14">Dios</rs>, habiendo hablado muchas veces y de muchas maneras en otro tiempo a los <rs key="#org70">padres</rs> por los <rs key="#org8">profetas</rs>,
+						</ab>
+						<ab xml:id="b.HEB.001.002" type="verse" n="2">							
+						  <!--sex: ascendant; neutral; positive-->
+						  en estos últimos días nos ha hablado por el <rs key="#per1">Hijo</rs>, a quien constituyó <rs key="#per1">heredero de todo</rs> y por quien asimismo hizo el universo.
+						</ab>
+						<ab xml:id="b.HEB.001.003" type="verse" n="3">							
+							Él, que es el <rs key="#per1">resplandor de su gloria</rs>, la <rs key="#per1">imagen misma de su sustancia</rs> y quien sustenta todas las cosas con la palabra de su poder, habiendo efectuado la purificación de nuestros pecados por medio de sí mismo, se sentó a la diestra de la <rs key="#per14">Majestad</rs> en las alturas,
+						</ab>
+						<ab xml:id="b.HEB.001.004" type="verse" n="4">							
+							hecho tanto superior a los <rs key="#org4">ángeles</rs> cuanto que heredó más excelente nombre que ellos.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El Hijo, superior a los ángeles</head>
+						<ab xml:id="b.HEB.001.005" type="verse" n="5">			
+						  <!--sex: ascendant; neutral; positive-->
+							¿A cuál de los <rs key="#org4">ángeles</rs> dijo <rs key="#per14">Dios</rs> jamás: <q who="#per14" toWhom="#org4" type="soCalled">«Mi <rs key="#org4">Hijo</rs> eres tú, yo te he engendrado hoy»</q>, ni tampoco: <q who="#per14" toWhom="#org4" type="soCalled">«Yo seré un <rs key="#per14">padre</rs> para él, y él será un <rs key="#org8">hijo</rs> para mí»?</q>
+						</ab>
+						<ab xml:id="b.HEB.001.006" type="verse" n="6">							
+						  <!--sex: ascendant; neutral; positive-->
+						  Y otra vez, cuando introduce al <rs key="#per1">Primogénito</rs> en el <rs key="#org0">mundo</rs>, dice: <q who="#per14" toWhom="#org4" type="oral">«Adórenlo todos los <rs key="#org4">ángeles de <rs key="#per14">Dios</rs></rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.001.007" type="verse" n="7">							
+							Y ciertamente, hablando de los <rs key="#org4">ángeles</rs> dice: <q who="#per14" toWhom="#org0" type="oral">«El que hace a sus <rs key="#org4">ángeles</rs> <rs key="#org4">espíritus</rs>, y a sus <rs cert="low" key="#org110">ministros</rs> <rs cert="low" key="#org110">llama de fuego</rs>»</q>.
+						</ab>
+						<ab xml:id="b.HEB.001.008" type="verse" n="8">							
+						  <!--sex: ascendant; neutral; positive-->
+						  Pero del <rs key="#per1">Hijo</rs> dice: <q who="#per14" toWhom="#per1" type="oral">«Tu trono, <rs key="#per1" cert="medium">Dios</rs>, por los siglos de los siglos. Cetro de equidad es el cetro de tu <rs key="#pla19">Reino</rs>.</q>
+						</ab>
+						<ab xml:id="b.HEB.001.009" type="verse" n="9">							
+							<q who="#per14" toWhom="#per1" type="oral">Has amado la justicia y odiado la maldad, por lo cual te ungió <rs key="#per14">Dios</rs>, el <rs key="#per14">Dios</rs> tuyo, con óleo de alegría más que a tus <rs cert="low" key="#org4">compañeros</rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.001.010" type="verse" n="10">							
+							También dice: <q who="#per1" toWhom="#per14" type="oral" cert="medium">«Tú, <rs key="#per14">Señor</rs>, en el <rs key="#tim3">principio</rs> fundaste la <rs key="#pla41">tierra</rs>, y los <rs key="#pla18">cielos</rs> son obra de tus manos.</q>
+						</ab>
+						<ab xml:id="b.HEB.001.011" type="verse" n="11">							
+							<q who="#per1" toWhom="#per14" type="oral" cert="medium">Ellos perecerán, mas tú permaneces. Todos ellos se envejecerán como una vestidura;</q>
+						</ab>
+						<ab xml:id="b.HEB.001.012" type="verse" n="12">							
+							<q who="#per1" toWhom="#per14" type="oral" cert="medium">como un vestido los envolverás, y serán mudados. Pero tú eres el mismo, y tus años no acabarán».</q>
+						</ab>
+						<ab xml:id="b.HEB.001.013" type="verse" n="13">							
+							¿A cuál de los <rs key="#org4">ángeles</rs> dijo <rs key="#per14">Dios</rs> jamás: <q who="#per14" toWhom="#org4" type="soCalled">«Siéntate a mi diestra, hasta que ponga a tus <rs key="#org101">enemigos</rs> por estrado de tus pies»?</q>
+						</ab>
+						<ab xml:id="b.HEB.001.014" type="verse" n="14">							
+							¿No son todos <rs key="#org4">espíritus ministradores</rs>, enviados para servicio a favor de los que serán <rs key="#org18">herederos de la salvación</rs>?
+						</ab>
+					</div>
+				</div>
+			  <!--sex: empezando HEB-->
+				<div xml:id="b.HEB.002" type="chapter" n="2">
+					<div type="pericope">
+						<head type="pericope">Una salvación tan grande</head>
+						<ab xml:id="b.HEB.002.001" type="verse" n="1">							
+							Por tanto, es necesario que con más diligencia atendamos a las cosas que hemos oído, no sea que nos deslicemos.
+						</ab>
+						<ab xml:id="b.HEB.002.002" type="verse" n="2">							
+							Porque si la palabra dicha por medio de los <rs key="#org4">ángeles</rs> fue firme y toda transgresión y desobediencia recibió justa retribución,
+						</ab>
+						<ab xml:id="b.HEB.002.003" type="verse" n="3">							
+							¿cómo escaparemos nosotros, si descuidamos una salvación tan grande? La cual, habiendo sido anunciada primeramente por el <rs key="#per1">Señor</rs>, nos fue confirmada por los que oyeron,
+						</ab>
+						<ab xml:id="b.HEB.002.004" type="verse" n="4">							
+							testificando <rs key="#per14">Dios</rs> juntamente con ellos, con señales, prodigios, diversos milagros y repartimientos del <rs key="#per17">Espíritu Santo</rs> según su voluntad.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El autor de la salvación</head>
+						<ab xml:id="b.HEB.002.005" type="verse" n="5">							
+							<rs key="#per14">Dios</rs> no sujetó a los <rs key="#org4">ángeles</rs> el <rs key="#org0">mundo venidero</rs>, acerca del cual estamos hablando.
+						</ab>
+						<ab xml:id="b.HEB.002.006" type="verse" n="6">							
+							Al contrario, alguien testificó en cierto lugar, diciendo: <q who="#org0" toWhom="#per14" type="oral" cert="low">«¿Qué es el <rs key="#org0">hombre</rs> para que te acuerdes de él, el <rs key="#org0">ser humano</rs> para que lo visites?</q>
+						</ab>
+						<ab xml:id="b.HEB.002.007" type="verse" n="7">							
+							<q who="#org0" toWhom="#per14" type="oral" cert="low">Lo hiciste un poco menor que los <rs key="#org4">ángeles</rs>, lo coronaste de gloria y de honra y lo pusiste sobre las obras de tus manos.</q>
+						</ab>
+						<ab xml:id="b.HEB.002.008" type="verse" n="8">							
+							<q who="#org0" toWhom="#per14" type="oral" cert="low">Todo lo sujetaste bajo sus pies».</q> En cuanto le sujetó todas las cosas, nada dejó que no le sea sujeto, aunque todavía no vemos que todas las cosas le sean sujetas.
+						</ab>
+						<ab xml:id="b.HEB.002.009" type="verse" n="9">							
+							Pero vemos a aquel que fue hecho un poco menor que los <rs key="#org4">ángeles</rs>, a <rs key="#per1">Jesús</rs>, coronado de gloria y de honra a causa del padecimiento de la muerte, para que por la gracia de <rs key="#per14">Dios</rs> experimentara la muerte por todos.
+						</ab>
+						<ab xml:id="b.HEB.002.010" type="verse" n="10">							
+							Convenía a aquel por cuya causa existen todas las cosas y por quien todas las cosas subsisten que, habiendo de llevar muchos <rs key="#org0">hijos</rs> a la gloria, perfeccionara por medio de las aflicciones al <rs key="#per1">autor de la salvación</rs> de ellos,
+						</ab>
+						<ab xml:id="b.HEB.002.011" type="verse" n="11">							
+							porque el que santifica y los que son santificados, de uno son todos; por lo cual no se avergüenza de llamarlos <rs key="#org18">hermanos</rs>,
+						</ab>
+						<ab xml:id="b.HEB.002.012" type="verse" n="12">							
+							diciendo: <q who="#org37" toWhom="#per1" type="prayer" cert="medium">«Anunciaré a mis <rs key="#org37">hermanos</rs> tu nombre, en medio de la <rs key="#org37">congregación</rs> te alabaré».</q>
+						</ab>
+						<ab xml:id="b.HEB.002.013" type="verse" n="13">							
+							Y otra vez dice: <q who="#org37" toWhom="#per1" type="prayer">«Yo confiaré en él»</q>. Y de nuevo: <q who="#org37" toWhom="#per1" type="prayer">«Aquí estoy yo con los <rs key="#org0">hijos</rs> que <rs key="#per14">Dios</rs> me dio».</q>
+						</ab>
+						<ab xml:id="b.HEB.002.014" type="verse" n="14">							
+							Así que, por cuanto los <rs key="#org0">hijos</rs> participaron de carne y sangre, él también participó de lo mismo para destruir por medio de la muerte al que tenía el imperio de la muerte, esto es, al <rs key="#per20">diablo</rs>,
+						</ab>
+						<ab xml:id="b.HEB.002.015" type="verse" n="15">							
+							y librar a todos los que por el temor de la muerte estaban durante toda la vida sujetos a servidumbre.
+						</ab>
+						<ab xml:id="b.HEB.002.016" type="verse" n="16">							
+							Ciertamente no socorrió a los <rs key="#org4">ángeles</rs>, sino que socorrió a la <rs key="#org0" cert="medium">descendencia de <rs key="#per2">Abraham</rs></rs>.
+						</ab>
+						<ab xml:id="b.HEB.002.017" type="verse" n="17">							
+							Por lo cual debía ser en todo semejante a sus <rs key="#org0">hermanos</rs>, para venir a ser misericordioso y <rs key="#per1">fiel sumo sacerdote</rs> en lo que a <rs key="#per14">Dios</rs> se refiere, para expiar los pecados del <rs key="#org70">pueblo</rs>.
+						</ab>
+						<ab xml:id="b.HEB.002.018" type="verse" n="18">							
+							Pues en cuanto él mismo padeció siendo tentado, es poderoso para socorrer a los que son tentados.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.003" type="chapter" n="3">
+					<div type="pericope">
+						<head type="pericope">El Hijo, superior a Moisés</head>
+						<ab xml:id="b.HEB.003.001" type="verse" n="1">							
+							Por tanto, <rs key="#org37">hermanos santos</rs>, participantes del llamamiento celestial, considerad al <rs key="#per1">apóstol</rs> y <rs key="#per1">sumo sacerdote de nuestra profesión</rs>, <rs key="#per1">Cristo</rs> <rs key="#per1">Jesús</rs>,
+						</ab>
+						<ab xml:id="b.HEB.003.002" type="verse" n="2">							
+							el cual es fiel al que lo constituyó, como también lo fue <rs key="#per26">Moisés</rs> en toda la <rs key="#org18">casa de <rs key="#per14">Dios</rs></rs>.
+						</ab>
+						<ab xml:id="b.HEB.003.003" type="verse" n="3">							
+							Porque de tanta mayor gloria que <rs key="#per26">Moisés</rs> es estimado digno este, cuanto mayor honra que la <rs key="#org18">casa</rs> tiene el que la hizo.
+						</ab>
+						<ab xml:id="b.HEB.003.004" type="verse" n="4">							
+							Toda casa es hecha por alguien; pero el que hizo todas las cosas es <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.003.005" type="verse" n="5">							
+							Y <rs key="#per26">Moisés</rs> a la verdad fue fiel en toda la <rs key="#org18">casa de <rs key="#per14">Dios</rs></rs>, como <rs key="#per26">siervo</rs>, para testimonio de lo que se iba a decir;
+						</ab>
+						<ab xml:id="b.HEB.003.006" type="verse" n="6">							
+							pero <rs key="#per1">Cristo</rs>, como <rs key="#per1">hijo</rs>, sobre su <rs key="#org18">casa</rs>. Y esa <rs key="#org18">casa</rs> somos nosotros, con tal que retengamos firme hasta el fin la confianza y el gloriarnos en la esperanza.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El reposo del pueblo de Dios</head>
+						<ab xml:id="b.HEB.003.007" type="verse" n="7">							
+							Por eso, como dice el <rs key="#per17">Espíritu Santo</rs>: <q who="#per17" toWhom="#org0" type="oral">«Si oís hoy su voz,</q>
+						</ab>
+						<ab xml:id="b.HEB.003.008" type="verse" n="8">							
+							<q who="#per17" toWhom="#org0" type="oral">no endurezcáis vuestros corazones como en la provocación, en el día de la tentación en el desierto,</q>
+						</ab>
+						<ab xml:id="b.HEB.003.009" type="verse" n="9">							
+							<q who="#per17" toWhom="#org0" type="oral">donde me tentaron vuestros <rs key="#org70">padres</rs>; me pusieron a prueba y vieron mis obras cuarenta años.</q>
+						</ab>
+						<ab xml:id="b.HEB.003.010" type="verse" n="10">							
+							<q who="#per17" toWhom="#org0" type="oral">Por eso me disgusté contra aquella <rs key="#org70">generación</rs> y dije: <q who="#per17" toWhom="#org0" type="oral">Siempre andan vagando en su corazón y no han conocido mis caminos.</q></q>
+						</ab>
+						<ab xml:id="b.HEB.003.011" type="verse" n="11">							
+							<q who="#per17" toWhom="#org0" type="oral">Por tanto, juré en mi ira: No entrarán en mi reposo».</q>
+						</ab>
+						<ab xml:id="b.HEB.003.012" type="verse" n="12">							
+							Mirad, <rs key="#org37">hermanos</rs>, que no haya en ninguno de vosotros corazón tan malo e incrédulo que se aparte del <rs key="#per14">Dios vivo</rs>.
+						</ab>
+						<ab xml:id="b.HEB.003.013" type="verse" n="13">							
+							Antes bien, exhortaos los unos a los otros cada día, entre tanto que se dice: <q who="#org0" toWhom="#org0" type="soCalled">«Hoy»</q>, para que ninguno de vosotros se endurezca por el engaño del pecado,
+						</ab>
+						<ab xml:id="b.HEB.003.014" type="verse" n="14">							
+							porque somos hechos <rs key="#org37">participantes de <rs key="#per1">Cristo</rs></rs>, con tal que retengamos firme hasta el fin nuestra confianza del principio.
+						</ab>
+						<ab xml:id="b.HEB.003.015" type="verse" n="15">							
+							Por lo cual dice: <q cert="low">«Si oís hoy su voz, no endurezcáis vuestros corazones como en la provocación».</q>
+						</ab>
+						<ab xml:id="b.HEB.003.016" type="verse" n="16">							
+							¿Quiénes fueron los que, habiendo oído, lo provocaron? ¿No fueron todos los que salieron de <rs key="#pla5">Egipto</rs> por mano de <rs key="#per26">Moisés</rs>?
+						</ab>
+						<ab xml:id="b.HEB.003.017" type="verse" n="17">							
+							¿Y con quiénes estuvo él disgustado cuarenta años? ¿No fue con los que pecaron, cuyos cuerpos cayeron en el <rs key="#pla176">desierto</rs>?
+						</ab>
+						<ab xml:id="b.HEB.003.018" type="verse" n="18">							
+							¿Y a quiénes juró que no entrarían en su reposo, sino a aquellos que desobedecieron?
+						</ab>
+						<ab xml:id="b.HEB.003.019" type="verse" n="19">							
+							Y vemos que no pudieron entrar a causa de su incredulidad.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.004" type="chapter" n="4">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.HEB.004.001" type="verse" n="1">							
+							Temamos, pues, no sea que permaneciendo aún la promesa de entrar en su reposo, alguno de vosotros parezca no haberlo alcanzado.
+						</ab>
+						<ab xml:id="b.HEB.004.002" type="verse" n="2">							
+							También a nosotros se nos ha anunciado la buena nueva como a ellos; a ellos de nada les sirvió haber oído la palabra, por no ir acompañada de fe en los que la oyeron.
+						</ab>
+						<ab xml:id="b.HEB.004.003" type="verse" n="3">							
+							Pero los que hemos creído entramos en el reposo, de la manera que dijo: <q who="#per14" toWhom="#org0" type="oral">«Por tanto, juré en mi ira que no entrarían en mi reposo»</q>, aunque las obras suyas estaban acabadas desde la fundación del <rs key="#org0">mundo</rs>,
+						</ab>
+						<ab xml:id="b.HEB.004.004" type="verse" n="4">							
+							pues en cierto lugar dijo así del <rs key="#tim9">séptimo día</rs>: <q type="oral" cert="medium" source="#wor1">«Y reposó <rs key="#per14">Dios</rs> de todas sus obras en el <rs key="#tim9">séptimo día</rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.004.005" type="verse" n="5">							
+							Nuevamente dice: <q who="#per14" toWhom="#org0" type="oral">«No entrarán en mi reposo».</q>
+						</ab>
+						<ab xml:id="b.HEB.004.006" type="verse" n="6">							
+							Por lo tanto, puesto que falta que algunos entren en él, y aquellos a quienes primero se les anunció la buena nueva no entraron por causa de la desobediencia,
+						</ab>
+						<ab xml:id="b.HEB.004.007" type="verse" n="7">							
+							otra vez determina un día: <q who="#per14" toWhom="#org0" type="oral" cert="medium">«Hoy»</q>, del cual habló <rs key="#per35">David</rs> mucho tiempo después, cuando dijo:  <q who="#per35" toWhom="#org0" type="oral">«Si oís hoy su voz, no endurezcáis vuestros corazones».</q>
+						</ab>
+						<ab xml:id="b.HEB.004.008" type="verse" n="8">							
+							Si <rs key="#per503">Josué</rs> les hubiera dado el reposo, no hablaría después de otro día.
+						</ab>
+						<ab xml:id="b.HEB.004.009" type="verse" n="9">							
+							Por tanto, queda un reposo para el <rs key="#org70">pueblo de <rs key="#per14">Dios</rs></rs>,
+						</ab>
+						<ab xml:id="b.HEB.004.010" type="verse" n="10">							
+							porque el que ha entrado en su reposo, también ha reposado de sus obras, como <rs key="#per14">Dios</rs> de las suyas.
+						</ab>
+						<ab xml:id="b.HEB.004.011" type="verse" n="11">							
+							Procuremos, pues, entrar en aquel reposo, para que ninguno caiga en semejante ejemplo de desobediencia.
+						</ab>
+						<ab xml:id="b.HEB.004.012" type="verse" n="12">							
+							La palabra de <rs key="#per14">Dios</rs> es viva, eficaz y más cortante que toda espada de dos filos: penetra hasta partir el alma y el espíritu, las coyunturas y los tuétanos, y discierne los pensamientos y las intenciones del corazón.
+						</ab>
+						<ab xml:id="b.HEB.004.013" type="verse" n="13">							
+							Y no hay cosa creada que no sea manifiesta en su presencia; antes bien todas las cosas están desnudas y abiertas a los ojos de aquel a quien tenemos que dar cuenta.
+						</ab>
+						<ab xml:id="b.HEB.004.014" type="verse" n="14">							
+							Por tanto, teniendo un <rs key="#per1">gran sumo sacerdote</rs> que traspasó los <rs key="#pla18">cielos</rs>, <rs key="#per1">Jesús</rs> el <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, retengamos nuestra profesión.
+						</ab>
+						<ab xml:id="b.HEB.004.015" type="verse" n="15">							
+							No tenemos un <rs key="#org12" cert="low">sumo sacerdote</rs> que no pueda compadecerse de nuestras debilidades, sino uno que fue tentado en todo según nuestra semejanza, pero sin pecado.
+						</ab>
+						<ab xml:id="b.HEB.004.016" type="verse" n="16">							
+							Acerquémonos, pues, confiadamente al trono de la gracia, para alcanzar misericordia y hallar gracia para el oportuno socorro.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.005" type="chapter" n="5">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.HEB.005.001" type="verse" n="1">							
+							Porque todo <rs key="#org12">sumo sacerdote</rs> es escogido de entre los <rs key="#org0">hombres</rs> y constituido a favor de los <rs key="#org0">hombres</rs> ante <rs key="#per14">Dios</rs>, para que presente ofrendas y sacrificios por los pecados,
+						</ab>
+						<ab xml:id="b.HEB.005.002" type="verse" n="2">							
+							él puede mostrarse paciente con los ignorantes y extraviados, puesto que él también está rodeado de debilidad,
+						</ab>
+						<ab xml:id="b.HEB.005.003" type="verse" n="3">							
+							por causa de la cual debe ofrecer por los pecados, tanto por sí mismo como también por el <rs key="#org70">pueblo</rs>.
+						</ab>
+						<ab xml:id="b.HEB.005.004" type="verse" n="4">							
+							Y nadie toma para sí esta honra, sino el que es llamado por <rs key="#per14">Dios</rs>, como lo fue <rs key="#per500">Aarón</rs>.
+						</ab>
+						<ab xml:id="b.HEB.005.005" type="verse" n="5">							
+							Por eso, tampoco <rs key="#per1">Cristo</rs> se glorificó a sí mismo haciéndose <rs key="#per1">sumo sacerdote</rs>, sino que fue <rs key="#per14">Dios</rs> quien le dijo: <q who="#per14" toWhom="#per1" type="oral">«Tú eres mi <rs key="#per1">Hijo</rs>, yo te he engendrado hoy».</q>
+						</ab>
+						<ab xml:id="b.HEB.005.006" type="verse" n="6">							
+							Como también dice en otro lugar: <q who="#per14" toWhom="#per500" type="oral" cert="medium" >«Tú eres <rs key="#per500" cert="medium">sacerdote</rs> para siempre, según el orden de <rs key="#per431">Melquisedec</rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.005.007" type="verse" n="7">							
+							Y <rs key="#per1">Cristo</rs>, en los días de su vida terrena, ofreció ruegos y súplicas con gran clamor y lágrimas al que lo podía librar de la muerte, y fue oído a causa de su temor reverente.
+						</ab>
+						<ab xml:id="b.HEB.005.008" type="verse" n="8">							
+							Y, aunque era <rs key="#per1">Hijo</rs>, a través del sufrimiento aprendió lo que es la obediencia;
+						</ab>
+						<ab xml:id="b.HEB.005.009" type="verse" n="9">							
+							y habiendo sido perfeccionado, vino a ser autor de eterna salvación para todos los que lo obedecen,
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Advertencia contra la apostasía</head>
+						<ab xml:id="b.HEB.005.010" type="verse" n="10">							
+							y fue declarado por <rs key="#per14">Dios</rs> <rs key="#per1">sumo sacerdote según el orden de <rs key="#per431">Melquisedec</rs></rs>.
+						</ab>
+						<ab xml:id="b.HEB.005.011" type="verse" n="11">							
+							Acerca de esto tenemos mucho que decir, pero es difícil de explicar, por cuanto os habéis hecho tardos para oir.
+						</ab>
+						<ab xml:id="b.HEB.005.012" type="verse" n="12">							
+							Debiendo ser ya <rs key="#org70">maestros</rs> después de tanto tiempo, tenéis necesidad de que se os vuelva a enseñar cuáles son los primeros rudimentos de las palabras de <rs key="#per14">Dios</rs>; y habéis llegado a ser tales, que tenéis necesidad de leche y no de alimento sólido.
+						</ab>
+						<ab xml:id="b.HEB.005.013" type="verse" n="13">							
+							Y todo aquel que participa de la leche es inexperto en la palabra de justicia, porque es <rs key="#org70">niño</rs>.
+						</ab>
+						<ab xml:id="b.HEB.005.014" type="verse" n="14">							
+							El alimento sólido es para los que han alcanzado madurez, para los que por el uso tienen los sentidos ejercitados en el discernimiento del bien y del mal.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.006" type="chapter" n="6">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.HEB.006.001" type="verse" n="1">							
+							Por tanto, dejando ya los rudimentos de la doctrina de <rs key="#per1">Cristo</rs>, vamos adelante a la perfección, no echando otra vez el fundamento del arrepentimiento de obras muertas, de la fe en <rs key="#per14">Dios</rs>,
+						</ab>
+						<ab xml:id="b.HEB.006.002" type="verse" n="2">							
+							de la doctrina de bautismos, de la imposición de manos, de la resurrección de los muertos y del juicio eterno.
+						</ab>
+						<ab xml:id="b.HEB.006.003" type="verse" n="3">							
+							Y esto haremos, si <rs key="#per14">Dios</rs> en verdad lo permite.
+						</ab>
+						<ab xml:id="b.HEB.006.004" type="verse" n="4">							
+							Es imposible que los que una vez fueron iluminados, gustaron del don celestial, fueron hechos partícipes del <rs key="#per17">Espíritu Santo</rs>
+						</ab>
+						<ab xml:id="b.HEB.006.005" type="verse" n="5">							
+							y asimismo gustaron de la buena palabra de <rs key="#per14">Dios</rs> y los poderes del <rs key="#pla18">mundo venidero</rs>,
+						</ab>
+						<ab xml:id="b.HEB.006.006" type="verse" n="6">							
+							y recayeron, sean otra vez renovados para arrepentimiento, crucificando de nuevo para sí mismos al <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs> y exponiéndolo a la burla.
+						</ab>
+						<ab xml:id="b.HEB.006.007" type="verse" n="7">							
+							La <rs key="#pla41" cert="medium">tierra</rs> que bebe la lluvia que muchas veces cae sobre ella, y produce hierba provechosa a aquellos por los cuales es labrada, recibe bendición de <rs key="#per14">Dios</rs>;
+						</ab>
+						<ab xml:id="b.HEB.006.008" type="verse" n="8">							
+							pero la que produce espinos y abrojos es reprobada, está próxima a ser maldecida y su fin es ser quemada.
+						</ab>
+						<ab xml:id="b.HEB.006.009" type="verse" n="9">							
+							Pero en cuanto a vosotros, <rs key="#org70">amados</rs>, estamos persuadidos de cosas mejores, pertenecientes a la salvación, aunque hablamos así,
+						</ab>
+						<ab xml:id="b.HEB.006.010" type="verse" n="10">							
+							porque <rs key="#per14">Dios</rs> no es injusto para olvidar vuestra obra y el trabajo de amor que habéis mostrado hacia su nombre, habiendo servido a los <rs key="#org18">santos</rs> y sirviéndolos aún.
+						</ab>
+						<ab xml:id="b.HEB.006.011" type="verse" n="11">							
+							Pero deseamos que cada uno de vosotros muestre la misma solicitud hasta el fin, para plena certeza de la esperanza,
+						</ab>
+						<ab xml:id="b.HEB.006.012" type="verse" n="12">							
+							a fin de que no os hagáis perezosos, sino <rs key="#org70">imitadores</rs> de aquellos que por la fe y la paciencia heredan las promesas.
+						</ab>
+						<ab xml:id="b.HEB.006.013" type="verse" n="13">							
+							Cuando <rs key="#per14">Dios</rs> hizo la promesa a <rs key="#per2">Abraham</rs>, no pudiendo jurar por otro mayor, juró por sí mismo
+						</ab>
+						<ab xml:id="b.HEB.006.014" type="verse" n="14">							
+							diciendo: <q who="#per14" toWhom="#per2" type="oral">«De cierto te bendeciré con abundancia y te multiplicaré grandemente».</q>
+						</ab>
+						<ab xml:id="b.HEB.006.015" type="verse" n="15">							
+							Y habiendo esperado con paciencia, alcanzó la promesa.
+						</ab>
+						<ab xml:id="b.HEB.006.016" type="verse" n="16">							
+							Los <rs key="#org0">hombres</rs> ciertamente juran por uno mayor que ellos, y para ellos el fin de toda controversia es el juramento para confirmación.
+						</ab>
+						<ab xml:id="b.HEB.006.017" type="verse" n="17">							
+							Por lo cual, queriendo <rs key="#per14">Dios</rs> mostrar más abundantemente a los <rs key="#org70">herederos de la promesa</rs> la inmutabilidad de su consejo, interpuso juramento,
+						</ab>
+						<ab xml:id="b.HEB.006.018" type="verse" n="18">							
+							para que por dos cosas inmutables, en las cuales es imposible que <rs key="#per14">Dios</rs> mienta, tengamos un fortísimo consuelo los que hemos acudido para asirnos de la esperanza puesta delante de nosotros.
+						</ab>
+						<ab xml:id="b.HEB.006.019" type="verse" n="19">							
+							La cual tenemos como segura y firme ancla del alma, y que penetra hasta dentro del velo,
+						</ab>
+						<ab xml:id="b.HEB.006.020" type="verse" n="20">							
+							donde <rs key="#per1">Jesús</rs> entró por nosotros como <rs key="#per1">precursor</rs>, hecho <rs key="#per1">sumo sacerdote</rs> para siempre según el orden de <rs key="#per431">Melquisedec</rs>.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.007" type="chapter" n="7">
+					<div type="pericope">
+						<head type="pericope">El sacerdocio de Melquisedec</head>
+						<ab xml:id="b.HEB.007.001" type="verse" n="1">							
+							Este <rs key="#per431">Melquisedec</rs>, <rs key="#per431">rey de <rs key="#pla130">Salem</rs></rs>, <rs key="#per431">sacerdote del <rs key="#per14">Dios Altísimo</rs></rs>, salió a recibir a <rs key="#per2">Abraham</rs> que volvía de la derrota de los <rs key="#org100">reyes</rs>, y lo bendijo.
+						</ab>
+						<ab xml:id="b.HEB.007.002" type="verse" n="2">							
+							A él asimismo dio <rs key="#per2">Abraham</rs> los diezmos de todo. <rs key="#per431">Melquisedec</rs> significa primeramente «<rs key="#per431">Rey de justicia</rs>», y también «<rs key="#per431">Rey de <rs key="#pla130">Salem</rs></rs>», esto es, «<rs key="#per431">Rey de paz</rs>».
+						</ab>
+						<ab xml:id="b.HEB.007.003" type="verse" n="3">							
+							Nada se sabe de su padre ni de su madre ni de sus antepasados; ni tampoco del principio y fin de su vida. Y así, a semejanza del <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, permanece <rs key="#per1 #per431">sacerdote</rs> para siempre.
+						</ab>
+						<ab xml:id="b.HEB.007.004" type="verse" n="4">							
+							Considerad, pues, cuán grande era este, a quien aun <rs key="#per2">Abraham</rs> el <rs key="#per2">patriarca</rs> dio diezmos del botín.
+						</ab>
+						<ab xml:id="b.HEB.007.005" type="verse" n="5">							
+							Ciertamente los que de entre los <rs key="#org46">hijos de <rs key="#per125">Leví</rs></rs> reciben el sacerdocio, tienen mandamiento de tomar del <rs key="#org70">pueblo</rs> los diezmos según la <rs key="#wor1">Ley</rs>, es decir, de sus <rs key="#org70">hermanos</rs>, aunque estos también sean <rs key="#org70">descendientes de <rs key="#per2">Abraham</rs></rs>.
+						</ab>
+						<ab xml:id="b.HEB.007.006" type="verse" n="6">							
+							Pero aquel cuya genealogía no es contada de entre ellos, tomó de <rs key="#per2">Abraham</rs> los diezmos y bendijo al que tenía las promesas.
+						</ab>
+						<ab xml:id="b.HEB.007.007" type="verse" n="7">							
+							Y, sin discusión alguna, el <rs key="#per431">menor</rs> es bendecido por el <rs key="#per2">mayor</rs>.
+						</ab>
+						<ab xml:id="b.HEB.007.008" type="verse" n="8">							
+							Y aquí ciertamente reciben los diezmos <rs key="#org0">hombres mortales</rs>; pero allí, uno de quien se da testimonio de que vive.
+						</ab>
+						<ab xml:id="b.HEB.007.009" type="verse" n="9">							
+							Y por decirlo así, en <rs key="#per2">Abraham</rs> pagó el diezmo también <rs key="#per125">Leví</rs>, que recibe los diezmos,
+						</ab>
+						<ab xml:id="b.HEB.007.010" type="verse" n="10">							
+							porque aún estaba en las entrañas de su <rs key="#per156">padre</rs> cuando <rs key="#per431">Melquisedec</rs> le salió al encuentro.
+						</ab>
+						<ab xml:id="b.HEB.007.011" type="verse" n="11">							
+							Si, pues, la perfección fuera por el <rs key="#org46">sacerdocio levítico</rs> bajo el cual recibió el <rs key="#org70">pueblo</rs> la <rs key="#wor1">Ley</rs>, ¿qué necesidad habría aún de que se levantara otro <rs key="#per1">sacerdote</rs>, según el orden de <rs key="#per431">Melquisedec</rs>, y que no fuera llamado según el orden de <rs key="#per500">Aarón</rs>?,
+						</ab>
+						<ab xml:id="b.HEB.007.012" type="verse" n="12">							
+							pues cambiado el sacerdocio, necesario es que haya también cambio de ley;
+						</ab>
+						<ab xml:id="b.HEB.007.013" type="verse" n="13">							
+							y aquel de quien se dice esto, es de otra <rs key="#org39">tribu</rs>, de la cual nadie sirvió al altar.
+						</ab>
+						<ab xml:id="b.HEB.007.014" type="verse" n="14">							
+							Porque sabido es que nuestro <rs key="#per1">Señor</rs> vino de la <rs key="#org39">tribu de <rs key="#pla2">Judá</rs></rs>, de la cual nada habló <rs key="#per26">Moisés</rs> tocante al sacerdocio.
+						</ab>
+						<ab xml:id="b.HEB.007.015" type="verse" n="15">							
+							Y esto es aun más evidente si a semejanza de <rs key="#per431">Melquisedec</rs> se levanta un <rs key="#per1">sacerdote distinto</rs>,
+						</ab>
+						<ab xml:id="b.HEB.007.016" type="verse" n="16">							
+							no constituido conforme a la ley meramente humana, sino según el poder de una vida indestructible,
+						</ab>
+						<ab xml:id="b.HEB.007.017" type="verse" n="17">							
+							pues se da testimonio de él: <q toWhom="#per1" type="oral" cert="low">«Tú eres <rs key="#per1">sacerdote</rs> para siempre, según el orden de <rs key="#per431">Melquisedec</rs>».</q>
+						</ab><!--jct: quién dice esto?-->
+						<ab xml:id="b.HEB.007.018" type="verse" n="18">							
+							Queda, pues, abrogado el mandamiento anterior a causa de su debilidad e ineficacia
+						</ab>
+						<ab xml:id="b.HEB.007.019" type="verse" n="19">							
+							pues la <rs key="#wor1">Ley</rs> nada perfeccionó y se introduce una mejor esperanza, por la cual nos acercamos a <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.007.020" type="verse" n="20">							
+							Y esto no fue hecho sin juramento;
+						</ab>
+						<ab xml:id="b.HEB.007.021" type="verse" n="21">							
+							porque los otros ciertamente sin juramento fueron hechos <rs key="#org12">sacerdotes</rs>; pero este, con el juramento del que le dijo:  <q toWhom="#per1" type="oral" cert="low">«Juró el <rs key="#per14">Señor</rs> y no se arrepentirá: tú eres <rs key="#per1">sacerdote</rs> para siempre, según el orden de <rs key="#per431">Melquisedec</rs>».,</q>
+						</ab>
+						<ab xml:id="b.HEB.007.022" type="verse" n="22">							
+							Por tanto, <rs key="#per1">Jesús</rs> es hecho <rs key="#per1">fiador de un mejor pacto</rs>.
+						</ab>
+						<ab xml:id="b.HEB.007.023" type="verse" n="23">							
+							Y los otros <rs key="#org12">sacerdotes</rs> llegaron a ser muchos, debido a que por la muerte no podían continuar;
+						</ab>
+						<ab xml:id="b.HEB.007.024" type="verse" n="24">							
+							pero este, por cuanto permanece para siempre, tiene un sacerdocio inmutable.
+						</ab>
+						<ab xml:id="b.HEB.007.025" type="verse" n="25">							
+							Por eso puede también salvar perpetuamente a los que por él se acercan a <rs key="#per14">Dios</rs>, viviendo siempre para interceder por ellos.
+						</ab>
+						<ab xml:id="b.HEB.007.026" type="verse" n="26">							
+							Tal <rs key="#per1">sumo sacerdote</rs> nos convenía: santo, inocente, sin mancha, apartado de los <rs key="#org19">pecadores</rs> y hecho más sublime que los <rs key="#pla18">cielos</rs>;
+						</ab>
+						<ab xml:id="b.HEB.007.027" type="verse" n="27">							
+							que no tiene necesidad cada día, como aquellos <rs key="#org12">sumos sacerdotes</rs>, de ofrecer primero sacrificios por sus propios pecados, y luego por los del <rs key="#org70">pueblo</rs>, porque esto lo hizo una vez para siempre, ofreciéndose a sí mismo.
+						</ab>
+						<ab xml:id="b.HEB.007.028" type="verse" n="28">							
+							La <rs key="#wor1">Ley</rs> constituye <rs key="#org12">sumos sacerdotes</rs> a <rs key="#org12">hombres débiles</rs>; pero la palabra del juramento, posterior a la <rs key="#wor1">Ley</rs>, constituye al <rs key="#per1">Hijo</rs>, hecho perfecto para siempre.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.008" type="chapter" n="8">
+					<div type="pericope">
+						<head type="pericope">El mediador de un nuevo pacto</head>
+						<ab xml:id="b.HEB.008.001" type="verse" n="1">							
+							Ahora bien, el punto principal de lo que venimos diciendo es que tenemos tal <rs key="#per1">sumo sacerdote</rs>, el cual se sentó a la diestra del trono de la <rs key="#per14">Majestad</rs> en los <rs key="#pla18">cielos</rs>.
+						</ab>
+						<ab xml:id="b.HEB.008.002" type="verse" n="2">							
+							Él es <rs key="#per1">ministro del santuario y de aquel verdadero <rs key="#pla73">tabernáculo</rs></rs> que levantó el <rs key="#per14">Señor</rs> y no el <rs key="#org0">hombre</rs>.
+						</ab>
+						<ab xml:id="b.HEB.008.003" type="verse" n="3">							
+							Todo <rs key="#org12 #per1">sumo sacerdote</rs> está constituido para presentar ofrendas y sacrificios, por lo cual es necesario que también este tenga algo que ofrecer.
+						</ab>
+						<ab xml:id="b.HEB.008.004" type="verse" n="4">							
+							Así que, si estuviera sobre la <rs key="#pla41">tierra</rs>, ni siquiera sería <rs key="#per1">sacerdote</rs>, habiendo aún <rs key="#org12">sacerdotes</rs> que presentan las ofrendas según la <rs key="#wor1">Ley</rs>.
+						</ab>
+						<ab xml:id="b.HEB.008.005" type="verse" n="5">							
+							Estos sirven a lo que es figura y sombra de las cosas celestiales, como se le advirtió a <rs key="#per26">Moisés</rs> cuando iba a erigir el <rs key="#pla263">Tabernáculo</rs>, diciéndole:  <q who="#per14" toWhom="#per26" type="oral">«Mira, haz todas las cosas conforme al modelo que se te ha mostrado en el <rs key="#pla72" cert="medium">monte</rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.008.006" type="verse" n="6">							
+							Pero ahora tanto mejor ministerio es el suyo, cuanto es <rs key="#per1">mediador de un mejor pacto</rs>, establecido sobre mejores promesas.
+						</ab>
+						<ab xml:id="b.HEB.008.007" type="verse" n="7">							
+							Si aquel primer pacto hubiera sido sin defecto, ciertamente no se habría procurado lugar para el segundo,
+						</ab>
+						<ab xml:id="b.HEB.008.008" type="verse" n="8">							
+							pues reprendiéndolos dice: <q who="#per14" toWhom="#org0" type="oral" cert="medium" source="#wor1">«Vienen días dice el <rs key="#per14">Señor</rs> en que estableceré con la <rs key="#org70">casa de <rs key="#pla4">Israel</rs></rs> y la <rs key="#org39">casa de <rs key="#pla2">Judá</rs></rs> un nuevo pacto.</q>
+						</ab>
+						<ab xml:id="b.HEB.008.009" type="verse" n="9">							
+							<q who="#per14" toWhom="#org0" type="oral" cert="medium" source="#wor1">No como el pacto que hice con sus <rs key="#org70">padres</rs> el día que los tomé de la mano para sacarlos de la <rs key="#pla5">tierra de <rs key="#pla5">Egipto</rs></rs>. Como ellos no permanecieron en mi pacto, yo me desentendí de ellos dice el <rs key="#per14">Señor</rs>.</q>
+						</ab>
+						<ab xml:id="b.HEB.008.010" type="verse" n="10">							
+							<q who="#per14" toWhom="#org0" type="oral" cert="medium" source="#wor1">Por lo cual, este es el pacto que haré con la <rs key="#org70">casa de <rs key="#pla4">Israel</rs></rs> después de aquellos días dice el <rs key="#per14">Señor</rs>: Pondré mis leyes en la mente de ellos, y sobre su corazón las escribiré; y seré a ellos por <rs key="#per14">Dios</rs> y ellos me serán a mí por <rs key="#org70">pueblo</rs>.</q>
+						</ab>
+						<ab xml:id="b.HEB.008.011" type="verse" n="11">							
+							<q who="#per14" toWhom="#org0" type="oral" cert="medium" source="#wor1">Ninguno enseñará a su <rs key="#org0">prójimo</rs>, ni ninguno a su <rs key="#org0">hermano</rs>, diciendo:  <q who="#org0" toWhom="#org0" type="oral">Conoce al <rs key="#per14">Señor</rs></q>, porque todos me conocerán, desde el menor hasta el mayor de ellos,</q>
+						</ab>
+						<ab xml:id="b.HEB.008.012" type="verse" n="12">							
+							<q who="#per14" toWhom="#org0" type="oral" cert="medium" source="#wor1">porque seré propicio a sus injusticias, y nunca más me acordaré de sus pecados ni de sus maldades».</q>
+						</ab>
+						<ab xml:id="b.HEB.008.013" type="verse" n="13">							
+							Al decir «Nuevo pacto», ha dado por viejo al primero; y lo que se da por viejo y se envejece está próximo a desaparecer.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.009" type="chapter" n="9">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.HEB.009.001" type="verse" n="1">							
+							Ahora bien, aun el primer pacto tenía ordenanzas de culto y un <rs key="#pla263">santuario terrenal</rs>,
+						</ab>
+						<ab xml:id="b.HEB.009.002" type="verse" n="2">							
+							pues el <rs key="#pla263">Tabernáculo</rs> estaba dispuesto así: en la primera parte, llamada el Lugar santo, estaban el candelabro, la mesa y los panes de la proposición.
+						</ab>
+						<ab xml:id="b.HEB.009.003" type="verse" n="3">							
+							Tras el segundo velo estaba la parte del <rs key="#pla263">Tabernáculo</rs> llamada el Lugar santísimo.
+						</ab>
+						<ab xml:id="b.HEB.009.004" type="verse" n="4">							
+							Allí había un incensario de oro y el Arca del pacto cubierta de oro por todas partes, en la que había una urna de oro que contenía el maná, la vara de <rs key="#per500">Aarón</rs> que reverdeció y las tablas del pacto.
+						</ab>
+						<ab xml:id="b.HEB.009.005" type="verse" n="5">							
+							Sobre la urna estaban los querubines de gloria que cubrían el propiciatorio. De estas cosas no se puede ahora hablar en detalle.
+						</ab>
+						<ab xml:id="b.HEB.009.006" type="verse" n="6">							
+							Así dispuestas estas cosas, en la primera parte del <rs key="#pla263">Tabernáculo</rs> entran los <rs key="#org12">sacerdotes</rs> continuamente para cumplir los oficios del culto.
+						</ab>
+						<ab xml:id="b.HEB.009.007" type="verse" n="7">							
+							Pero en la segunda parte, entra solo el <rs key="#org214">sumo sacerdote</rs> una vez al año, llevando la sangre que ofrece por sí mismo y por los pecados de ignorancia del <rs key="#org70">pueblo</rs>.
+						</ab>
+						<ab xml:id="b.HEB.009.008" type="verse" n="8">							
+							El <rs key="#per17">Espíritu Santo</rs> da a entender con esto que aún no se había abierto el camino al Lugar santísimo, entre tanto que la primera parte del <rs key="#pla263">Tabernáculo</rs> estuviera en pie.
+						</ab>
+						<ab xml:id="b.HEB.009.009" type="verse" n="9">							
+							Lo cual es símbolo para el tiempo presente, según el cual se presentan ofrendas y sacrificios que no pueden hacer perfecto, en cuanto a la conciencia, al que practica ese culto,
+						</ab>
+						<ab xml:id="b.HEB.009.010" type="verse" n="10">							
+							ya que consiste solo de comidas y bebidas, de diversas purificaciones y ordenanzas acerca de la carne, impuestas hasta el tiempo de reformar las cosas.
+						</ab>
+						<ab xml:id="b.HEB.009.011" type="verse" n="11">							
+							Pero estando ya presente <rs key="#per1">Cristo</rs>, <rs key="#per1">sumo sacerdote de los bienes venideros</rs>, por el más amplio y más perfecto <rs key="#pla73">tabernáculo</rs>, no hecho de manos, es decir, no de esta creación,
+						</ab>
+						<ab xml:id="b.HEB.009.012" type="verse" n="12">							
+							y no por sangre de machos cabríos ni de becerros, sino por su propia sangre, entró una vez para siempre en el Lugar santísimo, habiendo obtenido eterna redención.
+						</ab>
+						<ab xml:id="b.HEB.009.013" type="verse" n="13">							
+							Porque si la sangre de los toros y de los machos cabríos, y las cenizas de la becerra rociadas a los impuros, santifican para la purificación de la carne,
+						</ab>
+						<ab xml:id="b.HEB.009.014" type="verse" n="14">							
+							¿cuánto más la sangre de <rs key="#per1">Cristo</rs>, el cual mediante el <rs key="#per17">Espíritu eterno</rs> se ofreció a sí mismo sin mancha a <rs key="#per14">Dios</rs>, limpiará vuestras conciencias de obras muertas para que sirváis al <rs key="#per14">Dios vivo</rs>?
+						</ab>
+						<ab xml:id="b.HEB.009.015" type="verse" n="15">							
+							Por eso, <rs key="#per1">Cristo</rs> es <rs key="#per1">mediador de un nuevo pacto</rs>, para que, interviniendo muerte para la remisión de los pecados cometidos bajo el primer pacto, los llamados reciban la promesa de la herencia eterna,
+						</ab>
+						<ab xml:id="b.HEB.009.016" type="verse" n="16">							
+							pues donde hay testamento, es necesario que conste la muerte del <rs key="#per1">testador</rs>,
+						</ab>
+						<ab xml:id="b.HEB.009.017" type="verse" n="17">							
+							porque el testamento con la muerte se confirma, pues no es válido entre tanto que el <rs key="#per1">testador</rs> vive.
+						</ab>
+						<ab xml:id="b.HEB.009.018" type="verse" n="18">							
+							De donde ni aun el primer pacto fue instituido sin sangre,
+						</ab>
+						<ab xml:id="b.HEB.009.019" type="verse" n="19">							
+							porque habiendo anunciado <rs key="#per26">Moisés</rs> todos los mandamientos de la <rs key="#wor1">Ley</rs> a todo el <rs key="#org70">pueblo</rs>, tomó la sangre de los becerros y de los machos cabríos, con agua, lana escarlata e hisopo, y roció el mismo libro y también a todo el <rs key="#org70">pueblo</rs>
+						</ab>
+						<ab xml:id="b.HEB.009.020" type="verse" n="20">							
+							diciendo: <q who="#per26" toWhom="#org70" type="oral">«Esta es la sangre del pacto que <rs key="#per14">Dios</rs> os ha mandado».</q>
+						</ab>
+						<ab xml:id="b.HEB.009.021" type="verse" n="21">							
+							Además de esto, roció también con la sangre el <rs key="#pla263">Tabernáculo</rs> y todos los vasos del ministerio.
+						</ab>
+						<ab xml:id="b.HEB.009.022" type="verse" n="22">							
+							Y según la <rs key="#wor1">Ley</rs>, casi todo es purificado con sangre; y sin derramamiento de sangre no hay remisión.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El sacrificio de Cristo quita el pecado</head>
+						<ab xml:id="b.HEB.009.023" type="verse" n="23">							
+							Fue, pues, necesario que las figuras de las cosas celestiales fueran purificadas así; pero las cosas celestiales mismas, con mejores sacrificios que estos,
+						</ab>
+						<ab xml:id="b.HEB.009.024" type="verse" n="24">							
+							porque no entró <rs key="#per1">Cristo</rs> en el <rs key="#pla263">santuario hecho por los <rs key="#org0">hombres</rs></rs>, figura del verdadero, sino en el <rs key="#pla18">cielo</rs> mismo, para presentarse ahora por nosotros ante <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.009.025" type="verse" n="25">							
+							Y no entró para ofrecerse muchas veces, como entra el <rs key="#org214">sumo sacerdote</rs> en el Lugar santísimo cada año con sangre ajena.
+						</ab>
+						<ab xml:id="b.HEB.009.026" type="verse" n="26">							
+							De otra manera le hubiera sido necesario padecer muchas veces desde el <rs key="#tim3">principio del <rs key="#org0">mundo</rs></rs>; pero ahora, en la <rs key="#tim1" cert="medium">consumación de los tiempos</rs>, se presentó una vez para siempre por el sacrificio de sí mismo para quitar de en medio el pecado.
+						</ab>
+						<ab xml:id="b.HEB.009.027" type="verse" n="27">							
+							Y de la manera que está establecido para los <rs key="#org0">hombres</rs> que mueran una sola vez, y después de esto el juicio,
+						</ab>
+						<ab xml:id="b.HEB.009.028" type="verse" n="28">							
+							así también <rs key="#per1">Cristo</rs> fue ofrecido una sola vez para llevar los pecados de muchos; y aparecerá por segunda vez, sin relación con el pecado, para salvar a los que lo esperan.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.010" type="chapter" n="10">
+					<div type="pericope">
+						<ab xml:id="b.HEB.010.001" type="verse" n="1">							
+							La <rs key="#wor1">Ley</rs>, teniendo la sombra de los bienes venideros, no la imagen misma de las cosas, nunca puede, por los mismos sacrificios que se ofrecen continuamente cada año, hacer perfectos a los que se acercan.
+						</ab>
+						<ab xml:id="b.HEB.010.002" type="verse" n="2">							
+							De otra manera cesarían de ofrecerse, pues los que tributan este culto, limpios una vez, no tendrían ya más conciencia de pecado.
+						</ab>
+						<ab xml:id="b.HEB.010.003" type="verse" n="3">							
+							Pero en estos sacrificios cada año se hace memoria de los pecados,
+						</ab>
+						<ab xml:id="b.HEB.010.004" type="verse" n="4">							
+							porque la sangre de los toros y de los machos cabríos no puede quitar los pecados.
+						</ab>
+						<ab xml:id="b.HEB.010.005" type="verse" n="5">							
+							Por lo cual, entrando en el <rs key="#org0">mundo</rs> dice: <q type="oral" cert="low">«Sacrificio y ofrenda no quisiste, mas me diste un cuerpo.</q>
+						</ab>
+						<ab xml:id="b.HEB.010.006" type="verse" n="6">							
+							<q type="oral" cert="low">Holocaustos y expiaciones por el pecado no te agradaron.</q>
+						</ab>
+						<ab xml:id="b.HEB.010.007" type="verse" n="7">							
+							<q type="oral" cert="low">Entonces dije: <q type="oral" cert="low">He aquí, vengo, <rs key="#per14">Dios</rs>, para hacer tu voluntad, como en el <rs key="#wor4" cert="medium">rollo del libro</rs> está escrito de mí».</q></q>
+						</ab>
+						<ab xml:id="b.HEB.010.008" type="verse" n="8">							
+							Diciendo primero: <q type="oral" cert="low">«Sacrificio y ofrenda, holocaustos y expiaciones por el pecado no quisiste, ni te agradaron»</q> cosas que se ofrecen según la <rs key="#wor1">Ley</rs>,
+						</ab>
+						<ab xml:id="b.HEB.010.009" type="verse" n="9">							
+							y diciendo luego: <q type="oral" cert="low">«He aquí, vengo, <rs key="#per14">Dios</rs>, para hacer tu voluntad»</q>, quita lo primero para establecer esto último.
+						</ab>
+						<ab xml:id="b.HEB.010.010" type="verse" n="10">							
+							En esa voluntad somos santificados mediante la ofrenda del cuerpo de <rs key="#per1">Jesucristo</rs> hecha una vez para siempre.
+						</ab>
+						<ab xml:id="b.HEB.010.011" type="verse" n="11">							
+							Ciertamente, todo <rs key="#org12">sacerdote</rs> está día tras día ministrando y ofreciendo muchas veces los mismos sacrificios, que nunca pueden quitar los pecados.
+						</ab>
+						<ab xml:id="b.HEB.010.012" type="verse" n="12">							
+							Pero <rs key="#per1">Cristo</rs>, habiendo ofrecido una vez para siempre un solo sacrificio por los pecados, se ha sentado a la diestra de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.010.013" type="verse" n="13">							
+							Allí estará esperando hasta que sus <rs key="#org101">enemigos</rs> sean puestos por estrado de sus pies.
+						</ab>
+						<ab xml:id="b.HEB.010.014" type="verse" n="14">							
+							Y así, con una sola ofrenda hizo perfectos para siempre a los <rs key="#org18">santificados</rs>.
+						</ab>
+						<ab xml:id="b.HEB.010.015" type="verse" n="15">							
+							El <rs key="#per17">Espíritu Santo</rs> nos atestigua lo mismo, porque después de haber dicho:
+						</ab>
+						<ab xml:id="b.HEB.010.016" type="verse" n="16">							
+							<q who="#per14" toWhom="#org0" type="oral">«Este es el pacto que haré con ellos después de aquellos días, dice el <rs key="#per14">Señor</rs>: Pondré mis leyes en sus corazones, y en sus mentes las escribiré»,</q>
+						</ab>
+						<ab xml:id="b.HEB.010.017" type="verse" n="17">							
+							añade: <q who="#per14" toWhom="#org0" type="oral">«Y nunca más me acordaré de sus pecados y transgresiones»,</q>
+						</ab>
+						<ab xml:id="b.HEB.010.018" type="verse" n="18">							
+							pues donde hay remisión de estos, no hay más ofrenda por el pecado.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Exhortación a la fidelidad</head>
+						<ab xml:id="b.HEB.010.019" type="verse" n="19">							
+							Así que, <rs key="#org70">hermanos</rs>, tenemos libertad para entrar en el Lugar santísimo por la sangre de <rs key="#per1">Jesucristo</rs>,
+						</ab>
+						<ab xml:id="b.HEB.010.020" type="verse" n="20">							
+							por el camino nuevo y vivo que él nos abrió a través del velo, esto es, de su carne.
+						</ab>
+						<ab xml:id="b.HEB.010.021" type="verse" n="21">							
+							También tenemos un <rs key="#per1">gran sacerdote</rs> sobre la <rs key="#pla18">casa de <rs key="#per14">Dios</rs></rs>.
+						</ab>
+						<ab xml:id="b.HEB.010.022" type="verse" n="22">							
+							Acerquémonos, pues, con corazón sincero, en plena certidumbre de fe, purificados los corazones de mala conciencia y lavados los cuerpos con agua pura.
+						</ab>
+						<ab xml:id="b.HEB.010.023" type="verse" n="23">							
+							Mantengamos firme, sin fluctuar, la profesión de nuestra esperanza, porque fiel es el que prometió.
+						</ab>
+						<ab xml:id="b.HEB.010.024" type="verse" n="24">							
+							Y considerémonos unos a otros para estimularnos al amor y a las buenas obras,
+						</ab>
+						<ab xml:id="b.HEB.010.025" type="verse" n="25">							
+							no dejando de congregarnos, como algunos tienen por costumbre, sino exhortándonos; y tanto más, cuanto veis que aquel día se acerca.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Advertencia al que peca deliberadamente</head>
+						<ab xml:id="b.HEB.010.026" type="verse" n="26">							
+							Si pecamos voluntariamente después de haber recibido el conocimiento de la verdad, ya no queda más sacrificio por los pecados,
+						</ab>
+						<ab xml:id="b.HEB.010.027" type="verse" n="27">							
+							sino una horrenda expectación de juicio y de hervor de fuego que ha de devorar a los <rs key="#org19">adversarios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.010.028" type="verse" n="28">							
+							El que viola la <rs key="#wor1">Ley de <rs key="#per26">Moisés</rs></rs>, por el testimonio de dos o de <rs key="#org0">tres testigos</rs> muere irremisiblemente.
+						</ab>
+						<ab xml:id="b.HEB.010.029" type="verse" n="29">							
+							¿Cuánto mayor castigo pensáis que merecerá el que pisotee al <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, y tenga por inmunda la sangre del pacto en la cual fue santificado y ofenda al <rs key="#per17">Espíritu de gracia</rs>?
+						</ab>
+						<ab xml:id="b.HEB.010.030" type="verse" n="30">							
+							Pues conocemos al que dijo: <q who="#per14" toWhom="#org0" type="oral">«Mía es la venganza, yo daré el pago»</q> dice el <rs key="#per14">Señor</rs>. Y otra vez: <q who="#per14" toWhom="#org0" type="oral">«El <rs key="#per14">Señor</rs> juzgará a su <rs key="#org70" cert="medium">pueblo</rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.010.031" type="verse" n="31">							
+							¡Horrenda cosa es caer en manos del <rs key="#per14">Dios vivo</rs>!
+						</ab>
+						<ab xml:id="b.HEB.010.032" type="verse" n="32">							
+							Pero traed a la memoria los días pasados, en los cuales, después de haber sido iluminados, sostuvisteis un fuerte y doloroso combate;
+						</ab>
+						<ab xml:id="b.HEB.010.033" type="verse" n="33">							
+							por una parte, ciertamente, con vituperios y tribulaciones fuisteis hechos espectáculo, y por otra, llegasteis a ser <rs key="#org70">compañeros</rs> de los que estaban en una situación semejante:
+						</ab>
+						<ab xml:id="b.HEB.010.034" type="verse" n="34">							
+							porque de los presos también os compadecisteis, y el despojo de vuestros bienes sufristeis con gozo, sabiendo que tenéis en vosotros una mejor y perdurable herencia en los <rs key="#pla18">cielos</rs>.
+						</ab>
+						<ab xml:id="b.HEB.010.035" type="verse" n="35">							
+							No perdáis, pues, vuestra confianza, que tiene una gran recompensa,
+						</ab>
+						<ab xml:id="b.HEB.010.036" type="verse" n="36">							
+							pues os es necesaria la paciencia, para que, habiendo hecho la voluntad de <rs key="#per14">Dios</rs>, obtengáis la promesa.
+						</ab>
+						<ab xml:id="b.HEB.010.037" type="verse" n="37">							
+							<q who="#per14" toWhom="#org0" type="oral" cert="medium">«Porque aún un poco y el que ha de venir vendrá, y no tardará.</q>
+						</ab>
+						<ab xml:id="b.HEB.010.038" type="verse" n="38">							
+							<q who="#per14" toWhom="#org0" type="oral" cert="medium">Mas el <rs key="#org18">justo</rs> vivirá por fe; pero si retrocede, no agradará a mi alma».</q>
+						</ab>
+						<ab xml:id="b.HEB.010.039" type="verse" n="39">							
+							Pero nosotros no somos de los que retroceden para perdición, sino de los que tienen fe para preservación del alma.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.011" type="chapter" n="11">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.HEB.011.001" type="verse" n="1">							
+							Es, pues, la fe la certeza de lo que se espera, la convicción de lo que no se ve.
+						</ab>
+						<ab xml:id="b.HEB.011.002" type="verse" n="2">							
+							Por ella alcanzaron buen testimonio los antiguos.
+						</ab>
+						<ab xml:id="b.HEB.011.003" type="verse" n="3">							
+							Por la fe comprendemos que el universo fue hecho por la palabra de <rs key="#per14">Dios</rs>, de modo que lo que se ve fue hecho de lo que no se veía.
+						</ab>
+						<ab xml:id="b.HEB.011.004" type="verse" n="4">							
+							Por la fe <rs key="#per43">Abel</rs> ofreció a <rs key="#per14">Dios</rs> más excelente sacrificio que <rs key="#per142">Caín</rs>, por lo cual alcanzó testimonio de que era justo, dando <rs key="#per14">Dios</rs> testimonio de sus ofrendas; y muerto, aún habla por ella.
+						</ab>
+						<ab xml:id="b.HEB.011.005" type="verse" n="5">							
+							Por la fe <rs key="#per206" cert="medium">Enoc</rs> fue traspuesto para no ver muerte, y no fue hallado, porque lo traspuso <rs key="#per14">Dios</rs>; y antes que fuera traspuesto, tuvo testimonio de haber agradado a <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.011.006" type="verse" n="6">							
+							Pero sin fe es imposible agradar a <rs key="#per14">Dios</rs>, porque es necesario que el que se acerca a <rs key="#per14">Dios</rs> crea que él existe y que recompensa a los que lo buscan.
+						</ab>
+						<ab xml:id="b.HEB.011.007" type="verse" n="7">							
+							Por la fe <rs key="#per47">Noé</rs>, cuando fue advertido por <rs key="#per14">Dios</rs> acerca de cosas que aún no se veían, con temor preparó el arca en que su casa se salvaría; y por esa fe condenó al <rs key="#org0">mundo</rs> y fue hecho <rs key="#per47">heredero de la justicia</rs> que viene por la fe.
+						</ab>
+						<ab xml:id="b.HEB.011.008" type="verse" n="8">							
+							Por la fe <rs key="#per2">Abraham</rs>, siendo llamado, obedeció para salir al <rs key="#pla4">lugar</rs> que había de recibir como <rs key="#pla4">herencia</rs>; y salió sin saber a dónde iba.
+						</ab>
+						<ab xml:id="b.HEB.011.009" type="verse" n="9">							
+							Por la fe habitó como <rs key="#per2">extranjero en la <rs key="#pla4">tierra prometida</rs></rs> como en <rs key="#pla4">tierra ajena</rs>, habitando en tiendas con <rs key="#per3">Isaac</rs> y <rs key="#per4">Jacob</rs>, <rs key="#per3 #per4">coherederos de la misma promesa</rs>,
+						</ab>
+						<ab xml:id="b.HEB.011.010" type="verse" n="10">							
+							porque esperaba la <rs key="#pla18">ciudad</rs> que tiene fundamentos, cuyo <rs key="#per14">arquitecto</rs> y <rs key="#per14">constructor</rs> es <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.011.011" type="verse" n="11">							
+							Por la fe también la misma <rs key="#per134">Sara</rs>, siendo estéril, recibió fuerza para concebir; y dio a luz aun fuera del tiempo de la edad, porque creyó que era fiel quien lo había prometido.
+						</ab>
+						<ab xml:id="b.HEB.011.012" type="verse" n="12">							
+							Por lo cual también, de uno, y ese ya casi muerto, salieron como las estrellas del cielo en multitud, como la arena innumerable que está a la orilla del mar.
+						</ab>
+						<ab xml:id="b.HEB.011.013" type="verse" n="13">							
+							En la fe murieron todos estos sin haber recibido lo prometido, sino mirándolo de lejos, creyéndolo y saludándolo, y confesando que eran <rs key="#org22">extranjeros</rs> y <rs key="#org22">peregrinos sobre la <rs key="#pla41">tierra</rs></rs>.
+						</ab><!--jct: qué versículo más interesante-->
+						<ab xml:id="b.HEB.011.014" type="verse" n="14">							
+							Los que esto dicen, claramente dan a entender que buscan una <rs key="#pla18">patria</rs>,
+						</ab>
+						<ab xml:id="b.HEB.011.015" type="verse" n="15">							
+							pues si hubieran estado pensando en aquella de donde salieron, ciertamente tenían tiempo de volver.
+						</ab>
+						<ab xml:id="b.HEB.011.016" type="verse" n="16">							
+							Pero anhelaban una mejor, esto es, celestial; por lo cual <rs key="#per14">Dios</rs> no se avergüenza de llamarse <rs key="#per14">Dios</rs> de ellos, porque les ha preparado una <rs key="#pla18">ciudad</rs>.
+						</ab>
+						<ab xml:id="b.HEB.011.017" type="verse" n="17">							
+							Por la fe <rs key="#per2">Abraham</rs>, cuando fue probado, ofreció a <rs key="#per3">Isaac</rs>: el que había recibido las promesas, ofrecía su <rs key="#per3">unigénito</rs>,
+						</ab>
+						<ab xml:id="b.HEB.011.018" type="verse" n="18">							
+							habiéndosele dicho: <q who="#per14" toWhom="#per2" type="oral">«En <rs key="#per3">Isaac</rs> te será llamada <rs key="#per3">descendencia</rs>»,</q>
+						</ab>
+						<ab xml:id="b.HEB.011.019" type="verse" n="19">							
+							porque pensaba que <rs key="#per14">Dios</rs> es poderoso para levantar aun de entre los muertos, de donde, en sentido figurado, también lo volvió a recibir.
+						</ab>
+						<ab xml:id="b.HEB.011.020" type="verse" n="20">							
+							Por la fe bendijo <rs key="#per3">Isaac</rs> a <rs key="#per4">Jacob</rs> y a <rs key="#per131">Esaú</rs> respecto a cosas venideras.
+						</ab>
+						<ab xml:id="b.HEB.011.021" type="verse" n="21">							
+							Por la fe <rs key="#per4">Jacob</rs>, al morir, bendijo a cada uno de los <rs key="#per72 #per152">hijos de <rs key="#per60">José</rs></rs> y adoró apoyado sobre el extremo de su bastón.
+						</ab>
+						<ab xml:id="b.HEB.011.022" type="verse" n="22">							
+							Por la fe <rs key="#per60">José</rs>, al morir, mencionó la salida de los <rs key="#org70">hijos de <rs key="#per4">Israel</rs></rs> y dio mandamiento acerca de sus huesos.
+						</ab>
+						<ab xml:id="b.HEB.011.023" type="verse" n="23">							
+							Por la fe <rs key="#per26">Moisés</rs>, cuando nació, fue escondido por sus <rs key="#per496 #per582">padres</rs> por tres meses, porque lo vieron <rs key="#per26">niño hermoso</rs> y no temieron el decreto del <rs key="#per495">rey</rs>.
+						</ab>
+						<ab xml:id="b.HEB.011.024" type="verse" n="24">							
+							Por la fe <rs key="#per26">Moisés</rs>, hecho ya grande, rehusó llamarse <rs key="#per26">hijo de la <rs key="#per497">hija del <rs key="#per495">faraón</rs></rs></rs>,
+						</ab>
+						<ab xml:id="b.HEB.011.025" type="verse" n="25">							
+							prefiriendo ser maltratado con el <rs key="#org70">pueblo de <rs key="#per14">Dios</rs></rs>, antes que gozar de los deleites temporales del pecado,
+						</ab>
+						<ab xml:id="b.HEB.011.026" type="verse" n="26">							
+							teniendo por mayores riquezas el oprobio de <rs key="#per1">Cristo</rs> que los tesoros de los <rs key="#org65">egipcios</rs>, porque tenía puesta la mirada en la recompensa.
+						</ab>
+						<ab xml:id="b.HEB.011.027" type="verse" n="27">							
+							Por la fe dejó a <rs key="#pla5">Egipto</rs>, no temiendo la ira del <rs key="#per585">rey</rs>, porque se sostuvo como viendo al <rs key="#per14" cert="medium">Invisible</rs>.
+						</ab>
+						<ab xml:id="b.HEB.011.028" type="verse" n="28">							
+							Por la fe celebró la <rs key="#tim5">Pascua</rs> y la aspersión de la sangre, para que el que destruía a los <rs key="#org130">primogénitos</rs> no los tocara a ellos.
+						</ab>
+						<ab xml:id="b.HEB.011.029" type="verse" n="29">							
+							Por la fe pasaron el <rs key="#pla175">Mar Rojo</rs> como por tierra seca; e intentando los <rs key="#org65">egipcios</rs> hacer lo mismo, fueron ahogados.
+						</ab>
+						<ab xml:id="b.HEB.011.030" type="verse" n="30">							
+							Por la fe cayeron los muros de <rs key="#pla26">Jericó</rs> después de rodearlos siete días.
+						</ab>
+						<ab xml:id="b.HEB.011.031" type="verse" n="31">							
+							Por la fe <rs key="#per857">Rahab</rs> la <rs key="#per857">ramera</rs> no pereció juntamente con los <rs key="#org192">desobedientes</rs>, porque recibió a los <rs key="#org190">espías</rs> en paz.
+						</ab>
+						<ab xml:id="b.HEB.011.032" type="verse" n="32">							
+							¿Y qué más digo? El tiempo me faltaría para hablar de <rs key="#per991">Gedeón</rs>, de <rs key="#per690">Barac</rs>, de <rs key="#per990">Sansón</rs>, de <rs key="#per691">Jefté</rs>, de <rs key="#per35">David</rs>, así como de <rs key="#per481">Samuel</rs> y de los <rs key="#org8">profetas</rs>.
+						</ab>
+						<ab xml:id="b.HEB.011.033" type="verse" n="33">							
+							Todos ellos, por fe, conquistaron reinos, hicieron justicia, alcanzaron promesas, taparon bocas de leones,
+						</ab>
+						<ab xml:id="b.HEB.011.034" type="verse" n="34">							
+							apagaron fuegos impetuosos, evitaron filo de espada, sacaron fuerzas de debilidad, se hicieron fuertes en batallas, pusieron en fuga <rs key="#org24">ejércitos extranjeros</rs>.
+						</ab>
+						<ab xml:id="b.HEB.011.035" type="verse" n="35">							
+							Hubo <rs key="#org111">mujeres</rs> que recobraron con vida a sus muertos; pero otros fueron atormentados, no aceptando el rescate, a fin de obtener mejor resurrección.
+						</ab>
+						<ab xml:id="b.HEB.011.036" type="verse" n="36">							
+							Otros experimentaron oprobios, azotes y, a más de esto, prisiones y cárceles.
+						</ab>
+						<ab xml:id="b.HEB.011.037" type="verse" n="37">							
+							Fueron apedreados, aserrados, puestos a prueba, muertos a filo de espada. Anduvieron de acá para allá cubiertos de pieles de ovejas y de cabras, pobres, angustiados, maltratados.
+						</ab>
+						<ab xml:id="b.HEB.011.038" type="verse" n="38">							
+							Estos <rs key="#org18">hombres</rs>, de los cuales el <rs key="#org0">mundo</rs> no era digno, anduvieron errantes por los desiertos, por los montes, por las cuevas y por las cavernas de la <rs key="#pla41">tierra</rs>.
+						</ab>
+						<ab xml:id="b.HEB.011.039" type="verse" n="39">							
+							Pero ninguno de ellos, aunque alcanzaron buen testimonio mediante la fe, recibió lo prometido,
+						</ab>
+						<ab xml:id="b.HEB.011.040" type="verse" n="40">							
+							porque <rs key="#per14">Dios</rs> tenía reservado algo mejor para nosotros, para que no fueran ellos perfeccionados aparte de nosotros.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.012" type="chapter" n="12">
+					<div type="pericope">
+						<head type="pericope">Puestos los ojos en Jesús</head>
+						<ab xml:id="b.HEB.012.001" type="verse" n="1">							
+							Por tanto, nosotros también, teniendo en derredor nuestro tan grande <rs key="#org0">nube de testigos</rs>, despojémonos de todo peso y del pecado que nos asedia, y corramos con paciencia la carrera que tenemos por delante,
+						</ab>
+						<ab xml:id="b.HEB.012.002" type="verse" n="2">							
+							puestos los ojos en <rs key="#per1">Jesús</rs>, el <rs key="#per1">autor</rs> y <rs key="#per1">consumador de la fe</rs>, el cual por el gozo puesto delante de él sufrió la cruz, menospreciando el oprobio, y se sentó a la diestra del trono de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.012.003" type="verse" n="3">							
+							Considerad a aquel que sufrió tal contradicción de <rs key="#org19">pecadores</rs> contra sí mismo, para que vuestro ánimo no se canse hasta desmayar,
+						</ab>
+						<ab xml:id="b.HEB.012.004" type="verse" n="4">							
+							pues aún no habéis resistido hasta la sangre, combatiendo contra el pecado;
+						</ab>
+						<ab xml:id="b.HEB.012.005" type="verse" n="5">							
+							y habéis ya olvidado la exhortación que como a <rs key="#org70">hijos</rs> se os dirige, diciendo: <q who="#org70" toWhom="#org70" type="oral">«<rs key="#org70">Hijo</rs> mío, no menosprecies la disciplina del <rs key="#per14">Señor</rs> ni desmayes cuando eres reprendido por él,</q>
+						</ab>
+						<ab xml:id="b.HEB.012.006" type="verse" n="6">							
+							<q who="#org70" toWhom="#org70" type="oral">porque el <rs key="#per14">Señor</rs> al que ama, disciplina, y azota a todo el que recibe por <rs key="#org70">hijo</rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.012.007" type="verse" n="7">							
+							Si soportáis la disciplina, <rs key="#per14">Dios</rs> os trata como a <rs key="#org70">hijos</rs>; porque ¿qué <rs key="#org70">hijo</rs> es aquel a quien el <rs key="#per14">padre</rs> no disciplina?
+						</ab>
+						<ab xml:id="b.HEB.012.008" type="verse" n="8">							
+							Pero si se os deja sin disciplina, de la cual todos han sido participantes, entonces sois <rs key="#org70">bastardos</rs>, no <rs key="#org70">hijos</rs>.
+						</ab>
+						<ab xml:id="b.HEB.012.009" type="verse" n="9">							
+							Por otra parte, tuvimos a nuestros <rs key="#org70">padres terrenales</rs> que nos disciplinaban, y los venerábamos. ¿Por qué no obedeceremos mucho mejor al <rs key="#per14">Padre de los espíritus</rs>, y viviremos?
+						</ab>
+						<ab xml:id="b.HEB.012.010" type="verse" n="10">							
+							Y aquellos, ciertamente por pocos días nos disciplinaban como a ellos les parecía, pero este para lo que nos es provechoso, para que participemos de su santidad.
+						</ab>
+						<ab xml:id="b.HEB.012.011" type="verse" n="11">							
+							Es verdad que ninguna disciplina al presente parece ser causa de gozo, sino de tristeza; pero después da fruto apacible de justicia a los que por medio de ella han sido ejercitados.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Los que rechazan la gracia de Dios</head>
+						<ab xml:id="b.HEB.012.012" type="verse" n="12">							
+							Por eso, levantad las manos caídas y las rodillas paralizadas,
+						</ab>
+						<ab xml:id="b.HEB.012.013" type="verse" n="13">							
+							y haced sendas derechas para vuestros pies, para que lo cojo no se salga del camino, sino que sea sanado.
+						</ab>
+						<ab xml:id="b.HEB.012.014" type="verse" n="14">							
+							Seguid la paz con todos y la santidad, sin la cual nadie verá al <rs key="#per14" cert="medium">Señor</rs>.
+						</ab>
+						<ab xml:id="b.HEB.012.015" type="verse" n="15">							
+							Mirad bien, para que ninguno deje de alcanzar la gracia de <rs key="#per14">Dios</rs>, y para que no brote ninguna raíz de amargura que os perturbe y contamine a muchos.
+						</ab>
+						<ab xml:id="b.HEB.012.016" type="verse" n="16">							
+							Que no haya ningún <rs key="#org19">fornicario</rs> o <rs key="#org19">profano</rs>, como <rs key="#per131 #org19">Esaú</rs>, que por una sola comida vendió su primogenitura.
+						</ab>
+						<ab xml:id="b.HEB.012.017" type="verse" n="17">							
+							Ya sabéis que aun después, deseando heredar la bendición, fue desechado, y no tuvo oportunidad para el arrepentimiento, aunque la procuró con lágrimas.
+						</ab>
+						<ab xml:id="b.HEB.012.018" type="verse" n="18">							
+							No os habéis acercado al <rs cert="medium" key="#pla72">monte</rs> que se podía palpar y que ardía en fuego, a la oscuridad, a las tinieblas y a la tempestad,
+						</ab>
+						<ab xml:id="b.HEB.012.019" type="verse" n="19">							
+							al sonido de la trompeta y a la voz que hablaba, la cual los que la oyeron rogaron que no les siguiera hablando,
+						</ab>
+						<ab xml:id="b.HEB.012.020" type="verse" n="20">							
+							porque no podían soportar lo que se ordenaba: <q type="oral" cert="low">«Si aun una bestia toca el <rs cert="medium" key="#pla72">monte</rs>, será apedreada o asaetada».</q>
+						</ab>
+						<ab xml:id="b.HEB.012.021" type="verse" n="21">							
+							Tan terrible era lo que se veía, que <rs key="#per26">Moisés</rs> dijo:  <q who="#per26" toWhom="#org0" type="oral">«Estoy espantado y temblando».,</q>
+						</ab>
+						<ab xml:id="b.HEB.012.022" type="verse" n="22">							
+							Vosotros, en cambio, os habéis acercado al <rs key="#pla18">monte</rs> <rs key="#pla18">Sión</rs>, a la <rs key="#pla18">ciudad del <rs key="#per14">Dios vivo</rs></rs>, <rs key="#pla71">Jerusalén la celestial</rs>, a la compañía de muchos <rs key="#org4">millares de ángeles</rs>,
+						</ab>
+						<ab xml:id="b.HEB.012.023" type="verse" n="23">							
+							a la <rs key="#org130">congregación de los <rs key="#org130">primogénitos</rs></rs> que están inscritos en los <rs key="#pla18">cielos</rs>. Os habéis acercado a <rs key="#per14">Dios</rs>, <rs key="#per14">Juez de todos</rs>, a los <rs key="#org18">espíritus de los justos</rs> hechos perfectos,
+						</ab>
+						<ab xml:id="b.HEB.012.024" type="verse" n="24">							
+							a <rs key="#per1">Jesús</rs>, <rs key="#per1">Mediador del nuevo pacto</rs>, y a la sangre rociada que habla mejor que la de <rs key="#per43">Abel</rs>.
+						</ab>
+						<ab xml:id="b.HEB.012.025" type="verse" n="25">							
+							Mirad que no desechéis al que habla, pues si no escaparon aquellos que desecharon al que los amonestaba en la <rs key="#pla41">tierra</rs>, mucho menos nosotros, si desechamos al que amonesta desde los <rs key="#pla18">cielos</rs>.
+						</ab>
+						<ab xml:id="b.HEB.012.026" type="verse" n="26">							
+							Su voz conmovió entonces la <rs key="#pla41">tierra</rs>, pero ahora ha prometido diciendo: <q who="#per14" toWhom="#org0" type="oral" cert="medium">«Una vez más conmoveré no solamente la <rs key="#pla41">tierra</rs>, sino también el <rs key="#org18">cielo</rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.012.027" type="verse" n="27">							
+							Y esta frase: <q who="#per14" toWhom="#org0" type="oral" cert="medium">«Una vez más»</q>, indica la remoción de las cosas movibles, como cosas hechas, para que queden las inconmovibles.
+						</ab>
+						<ab xml:id="b.HEB.012.028" type="verse" n="28">							
+							Así que, recibiendo nosotros un <rs key="#pla18">Reino inconmovible</rs>, tengamos gratitud, y mediante ella sirvamos a <rs key="#per14">Dios</rs> agradándole con temor y reverencia,
+						</ab>
+						<ab xml:id="b.HEB.012.029" type="verse" n="29">							
+							porque nuestro <rs key="#per14">Dios</rs> es <rs key="#per14">fuego consumidor</rs>.
+						</ab>
+					</div>
+					</div>
+				<div xml:id="b.HEB.013" type="chapter" n="13">
+					<div type="pericope">
+						<ab xml:id="b.HEB.013.001" type="verse" n="1">							
+							Permanezca el amor fraternal.
+						</ab>
+						<ab xml:id="b.HEB.013.002" type="verse" n="2">							
+							No os olvidéis de la hospitalidad, porque por ella algunos, sin saberlo, hospedaron <rs key="#org4">ángeles</rs>.
+						</ab>
+						<ab xml:id="b.HEB.013.003" type="verse" n="3">							
+							Acordaos de los <rs key="#org102">presos</rs>, como si estuvierais presos juntamente con ellos; y de los <rs key="#org102">maltratados</rs>, como si vosotros estuvierais en su mismo cuerpo.
+						</ab>
+						<ab xml:id="b.HEB.013.004" type="verse" n="4">							
+							Honroso sea en todos el matrimonio y el lecho sin mancilla; pero a los <rs key="#org19">fornicarios</rs> y a los <rs key="#org19">adúlteros</rs> los juzgará <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.013.005" type="verse" n="5">							
+							Sean vuestras costumbres sin avaricia, contentos con lo que tenéis ahora, pues él dijo: <q who="#per14" toWhom="#org0" type="oral">«No te desampararé ni te dejaré».</q>
+						</ab>
+						<ab xml:id="b.HEB.013.006" type="verse" n="6">							
+							Así que podemos decir confiadamente: <q who="#org0" toWhom="#org0" type="oral">«El <rs key="#per14">Señor</rs> es mi <rs key="#per14">ayudador</rs>; no temeré lo que me pueda hacer el <rs key="#org0">hombre</rs>».</q>
+						</ab>
+						<ab xml:id="b.HEB.013.007" type="verse" n="7">							
+							Acordaos de vuestros <rs key="#org187">pastores</rs>, que os hablaron la palabra de <rs key="#per14">Dios</rs>; considerad cuál haya sido el resultado de su conducta e imitad su fe.
+						</ab>
+						<ab xml:id="b.HEB.013.008" type="verse" n="8">							
+							<rs key="#per1">Jesucristo</rs> es el mismo ayer, hoy y por los siglos.
+						</ab>
+						<ab xml:id="b.HEB.013.009" type="verse" n="9">							
+							No os dejéis llevar de doctrinas diversas y extrañas. Es mejor afirmar el corazón con la gracia, no con alimentos que nunca aprovecharon a los que se han ocupado de ellos.
+						</ab>
+						<ab xml:id="b.HEB.013.010" type="verse" n="10">							
+							Tenemos un altar, del cual no tienen derecho de comer los que sirven al <rs key="#pla263">Tabernáculo</rs>,
+						</ab>
+						<ab xml:id="b.HEB.013.011" type="verse" n="11">							
+							porque los cuerpos de aquellos animales cuya sangre a causa del pecado es introducida en el santuario por el <rs key="#org12">sumo sacerdote</rs>, son quemados fuera del campamento.
+						</ab>
+						<ab xml:id="b.HEB.013.012" type="verse" n="12">							
+							Por lo cual también <rs key="#per1">Jesús</rs>, para santificar al <rs key="#org0">pueblo</rs> mediante su propia sangre, padeció fuera de la puerta.
+						</ab>
+						<ab xml:id="b.HEB.013.013" type="verse" n="13">							
+							Salgamos, pues, a él, fuera del campamento, llevando su oprobio,
+						</ab>
+						<ab xml:id="b.HEB.013.014" type="verse" n="14">							
+							porque no tenemos aquí ciudad permanente, sino que buscamos la por venir.
+						</ab>
+						<ab xml:id="b.HEB.013.015" type="verse" n="15">							
+							Así que, ofrezcamos siempre a <rs key="#per14">Dios</rs>, por medio de él, sacrificio de alabanza, es decir, fruto de labios que confiesan su nombre.
+						</ab>
+						<ab xml:id="b.HEB.013.016" type="verse" n="16">							
+							Y de hacer el bien y de la ayuda mutua no os olvidéis, porque de tales sacrificios se agrada <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.HEB.013.017" type="verse" n="17">							
+							Obedeced a vuestros <rs key="#org187">pastores</rs> y sujetaos a ellos, porque ellos velan por vuestras almas como quienes han de dar cuenta, para que lo hagan con alegría, sin quejarse, porque esto no os es provechoso.
+						</ab>
+						<ab xml:id="b.HEB.013.018" type="verse" n="18">							
+							Orad por nosotros, pues confiamos en que tenemos buena conciencia, ya que deseamos conducirnos bien en todo.
+						</ab>
+						<ab xml:id="b.HEB.013.019" type="verse" n="19">							
+							Y más os ruego que lo hagáis así, para que pueda volver a estar pronto con vosotros.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Bendición</head>
+						<ab xml:id="b.HEB.013.020" type="verse" n="20">							
+							Que el <rs key="#per1">Dios de paz</rs>, que resucitó de los muertos a nuestro <rs key="#per1">Señor</rs> <rs key="#per1">Jesucristo</rs>, el <rs key="#per1">gran pastor de las ovejas</rs>, por la sangre del pacto eterno,
+						</ab>
+						<ab xml:id="b.HEB.013.021" type="verse" n="21">							
+							os haga aptos en toda obra buena para que hagáis su voluntad, haciendo él en vosotros lo que es agradable delante de él por <rs key="#per1">Jesucristo</rs>; al cual sea la gloria por los siglos de los siglos. Amén.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Salutaciones finales</head>
+						<ab xml:id="b.HEB.013.022" type="verse" n="22">							
+							Os ruego, <rs key="#org70">hermanos</rs>, que soportéis la palabra de exhortación, pues os he escrito brevemente.
+						</ab>
+						<ab xml:id="b.HEB.013.023" type="verse" n="23">							
+							Sabed que está en libertad nuestro <rs key="#per527">hermano</rs> <rs key="#per527">Timoteo</rs>, con el cual, si viene pronto, iré a veros.
+						</ab>
+						<ab xml:id="b.HEB.013.024" type="verse" n="24">							
+							Saludad a todos vuestros <rs key="#org187">pastores</rs> y a todos los <rs key="#org18">santos</rs>. Los de <rs key="#pla213">Italia</rs> os saludan.
+						</ab>
+						<ab xml:id="b.HEB.013.025" type="verse" n="25">							
+							La gracia sea con todos vosotros. Amén.
+						</ab>
+					</div>
+					</div>
+					</div>
+				</body>
+				<back />
+			</text>
+		</TEI>
