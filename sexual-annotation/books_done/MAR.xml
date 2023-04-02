@@ -1,0 +1,2537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Evangelio de Marcos</title>
+				<title type="idno">
+					<idno type="string">MAR</idno>
+					<idno type="viaf">179823714</idno>
+				</title>
+				<author>
+					<name type="short">Marcos</name>
+					<name type="full">Marcos</name>
+					<idno type="viaf">264405984</idno>
+				</author>
+				<principal key="#jct">José Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>José Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2017">2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source">, <date when="2000">2000</date>, <idno></idno>	.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2017-11-12" who="#jct">First version of Mark</change>
+			<change when="2017-12-02" who="#jct" status="checked">Text and markup fully checked personally.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div />
+		</front>
+	   <body>
+			<div xml:id="b.MAR" type="book">
+				<div xml:id="b.MAR.001" type="chapter" n="1">
+					<div type="pericope">
+						<head type="pericope">Predicación de Juan el Bautista</head>
+						<ab xml:id="b.MAR.001.001" type="verse" n="1">
+						   <!--sex: ascendant; positive; neutral-->
+							Principio del evangelio de <rs key="#per1">Jesucristo</rs>, <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>.
+						</ab>
+						<ab xml:id="b.MAR.001.002" type="verse" n="2">
+							Como está escrito en el <rs key="#per19">profeta</rs> <rs key="#per19">Isaías</rs>: <q who="#per19" toWhom="#org0" type="written"><q who="#per14" toWhom="#per1" type="oral">«Yo envío mi <rs key="#per18">mensajero</rs> delante de tu faz, el cual preparará tu camino delante de ti.</q></q>
+						</ab>
+						<ab xml:id="b.MAR.001.003" type="verse" n="3">
+							<q who="#per19" toWhom="#org0" type="written"><q who="#per14" toWhom="#per18" type="oral"><rs key="#per18">Voz</rs> del que clama en el desierto: Preparad el camino del <rs key="#per14">Señor</rs>. ¡Enderezad sus sendas!».</q></q>
+						</ab>
+						<ab xml:id="b.MAR.001.004" type="verse" n="4">
+							Bautizaba <rs key="#per18">Juan</rs> en el <rs cert="low">desierto</rs> y predicaba el bautismo de arrepentimiento para perdón de pecados.
+						</ab>
+						<ab xml:id="b.MAR.001.005" type="verse" n="5">
+							Acudía a él toda la <rs key="#pla2">provincia de <rs key="#pla2">Judea</rs></rs> y todos los de <rs key="#pla3">Jerusalén</rs>, y eran bautizados por él en el <rs key="#pla9">río</rs> <rs key="#pla9">Jordán</rs>, confesando sus pecados.
+						</ab>
+						<ab xml:id="b.MAR.001.006" type="verse" n="6">
+							<rs key="#per18">Juan</rs> estaba vestido de pelo de camello, tenía un cinto de cuero alrededor de su cintura, y comía langostas y miel silvestre.
+						</ab>
+						<ab xml:id="b.MAR.001.007" type="verse" n="7">
+							Y predicaba, diciendo: <q who="#per18" toWhom="#org0" type="oral">«Viene tras mí el que es más poderoso que yo, a quien no soy digno de desatar, agachado, la correa de su calzado.</q>
+						</ab>
+						<ab xml:id="b.MAR.001.008" type="verse" n="8">
+							<q who="#per18" toWhom="#org0" type="oral">Yo a la verdad os he bautizado con agua, pero él os bautizará con <rs key="#per17">Espíritu Santo</rs>».</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El bautismo de Jesús</head>
+						<ab xml:id="b.MAR.001.009" type="verse" n="9">
+							Aconteció en aquellos días que <rs key="#per1">Jesús</rs> vino de <rs key="#pla8">Nazaret de <rs key="#pla7">Galilea</rs></rs>, y fue bautizado por <rs key="#per18">Juan</rs> en el <rs key="#pla9">Jordán</rs>.
+						</ab>
+						<ab xml:id="b.MAR.001.010" type="verse" n="10">
+							Luego, cuando subía del agua, vio abrirse los cielos y al <rs key="#per17">Espíritu</rs> como <rs key="#per17">paloma</rs> que descendía sobre él.
+						</ab>
+						<ab xml:id="b.MAR.001.011" type="verse" n="11">
+						   <!--sex: ascendant; positive; blessed-->
+							Y vino una voz de los cielos que decía: <q who="#per14" toWhom="#per1" type="oral">«Tú eres mi <rs key="#per1">Hijo amado</rs>, en ti tengo complacencia».</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Tentación de Jesús</head>
+						<ab xml:id="b.MAR.001.012" type="verse" n="12">
+							Luego el <rs key="#per17">Espíritu</rs> lo impulsó al <rs cert="low">desierto</rs>.
+						</ab>
+						<ab xml:id="b.MAR.001.013" type="verse" n="13">
+							Y estuvo allí en el desierto cuarenta días. Era tentado por <rs key="#per20">Satanás</rs>, y estaba con las fieras, y los <rs key="#org4">ángeles</rs> lo servían.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús principia su ministerio</head>
+						<ab xml:id="b.MAR.001.014" type="verse" n="14">
+							Después que <rs key="#per18">Juan</rs> fue encarcelado, <rs key="#per1">Jesús</rs> fue a <rs key="#pla7">Galilea</rs> predicando el evangelio del <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>.
+						</ab>
+						<ab xml:id="b.MAR.001.015" type="verse" n="15">
+							Decía: <q who="#per1" toWhom="#org0" type="oral">«El tiempo se ha cumplido y el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs> se ha acercado. ¡Arrepentíos y creed en el evangelio!».</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús llama a cuatro pescadores</head>
+						<ab xml:id="b.MAR.001.016" type="verse" n="16">
+							Andando junto al <rs key="#pla43">Mar de <rs key="#pla7">Galilea</rs></rs>, vio a <rs key="#per21">Simón</rs> y a su <rs key="#per22">hermano</rs> <rs key="#per22">Andrés</rs> que echaban la red en el <rs key="#pla43">mar</rs>, porque eran <rs key="#per21 #per22">pescadores</rs>.
+						</ab>
+						<ab xml:id="b.MAR.001.017" type="verse" n="17">
+							<rs key="#per1">Jesús</rs> les dijo:  <q who="#per1" toWhom="#per21 #per22" type="oral">Venid en pos de mí, y haré que seáis <rs key="#per21 #per22">pescadores de <rs key="#org0">hombres</rs></rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.001.018" type="verse" n="18">
+							Y dejando al instante sus redes, lo siguieron.
+						</ab>
+						<ab xml:id="b.MAR.001.019" type="verse" n="19">
+						   <!--sex: ascendant; neutral-->
+							Pasando de allí un poco más adelante, vio a <rs key="#per23">Jacobo</rs>, <rs key="#per23">hijo de <rs key="#per24">Zebedeo</rs></rs>, y a su <rs key="#per25">hermano</rs> <rs key="#per25">Juan</rs>, que estaban en la barca remendando las redes;
+						</ab>
+						<ab xml:id="b.MAR.001.020" type="verse" n="20">
+						   <!--sex: ascendant; positive; negative-->
+						   y en seguida los llamó. Entonces, dejando a su <rs key="#per24">padre</rs>, <rs key="#per24">Zebedeo</rs>, en la barca con los jornaleros, lo siguieron.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Un hombre que tenía un espíritu impuro</head>
+						<ab xml:id="b.MAR.001.021" type="verse" n="21">
+							Entraron en <rs key="#pla11">Capernaúm</rs>, y el <rs key="#tim9">sábado</rs> entró <rs key="#per1">Jesús</rs> en la <rs key="#pla47">sinagoga</rs> y comenzó a enseñar.
+						</ab>
+						<ab xml:id="b.MAR.001.022" type="verse" n="22">
+							Y se admiraban de su doctrina, porque les enseñaba como quien tiene autoridad, y no como los <rs key="#org5">escribas</rs>.
+						</ab>
+						<ab xml:id="b.MAR.001.023" type="verse" n="23">
+							Pero había en la <rs key="#pla47">sinagoga</rs> de ellos un <rs key="#org15">hombre con <rs key="#org6">espíritu impuro</rs></rs>, que gritó:
+						</ab>
+						<ab xml:id="b.MAR.001.024" type="verse" n="24">
+							<q who="#org6" toWhom="#per1" type="oral">¡Ah! ¿Qué tienes con nosotros, <rs key="#per1">Jesús nazareno</rs>? ¿Has venido a destruirnos? Sé quién eres: el <rs key="#per1">Santo de <rs key="#per14">Dios</rs></rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.001.025" type="verse" n="25">
+							Entonces <rs key="#per1">Jesús</rs> lo reprendió, diciendo:  <q who="#per1" toWhom="#org6" type="oral">¡Cállate y sal de él!</q>
+						</ab>
+						<ab xml:id="b.MAR.001.026" type="verse" n="26">
+							Y el <rs key="#org6">espíritu impuro</rs>, sacudiéndolo con violencia y dando un alarido, salió de él.
+						</ab>
+						<ab xml:id="b.MAR.001.027" type="verse" n="27">
+							Todos se asombraron, de tal manera que discutían entre sí, diciendo: <q who="#org0" toWhom="#org0" type="oral">¿Qué es esto? ¿Qué nueva doctrina es esta, que con autoridad manda aun a los <rs key="#org6">espíritus impuros</rs>, y lo obedecen?</q>
+						</ab>
+						<ab xml:id="b.MAR.001.028" type="verse" n="28">
+							Muy pronto se difundió su fama por toda la provincia alrededor de <rs key="#pla7">Galilea</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús sana a la suegra de Pedro</head>
+						<ab xml:id="b.MAR.001.029" type="verse" n="29">
+							Al salir de la <rs key="#pla47">sinagoga</rs>, fueron a casa de <rs key="#per21">Simón</rs> y <rs key="#per22">Andrés</rs>, con <rs key="#per23">Jacobo</rs> y <rs key="#per18">Juan</rs>.
+						</ab>
+						<ab xml:id="b.MAR.001.030" type="verse" n="30">
+						   <!--sex: ascendant; marriage-relation; negative; neutral-->
+							La <rs key="#per97">suegra de <rs key="#per21">Simón</rs></rs> estaba acostada con fiebre, y en seguida le hablaron de ella.
+						</ab>
+						<ab xml:id="b.MAR.001.031" type="verse" n="31">
+							Entonces él se acercó, la tomó de la mano y la levantó; e inmediatamente se le pasó la fiebre y los servía.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús sana a muchos enfermos</head>
+						<ab xml:id="b.MAR.001.032" type="verse" n="32">
+							Cuando llegó la noche, luego que el sol se puso, le llevaron a todos los <rs key="#org15">enfermos</rs> y <rs key="#org15">endemoniados</rs>.
+						</ab>
+						<ab xml:id="b.MAR.001.033" type="verse" n="33">
+							Toda la <rs key="#pla11">ciudad</rs> se agolpó a la puerta.
+						</ab>
+						<ab xml:id="b.MAR.001.034" type="verse" n="34">
+							Y sanó a muchos que padecían de diversas enfermedades, y echó fuera muchos <rs key="#org6">demonios</rs>; y no dejaba hablar a los <rs key="#org6">demonios</rs>, porque lo conocían.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús recorre Galilea predicando</head>
+						<ab xml:id="b.MAR.001.035" type="verse" n="35">
+							Levantándose muy de mañana, siendo aún muy oscuro, salió y se fue a un lugar desierto, y allí oraba.
+						</ab>
+						<ab xml:id="b.MAR.001.036" type="verse" n="36">
+							Lo buscó <rs key="#per21">Simón</rs> y los que con él estaban,
+						</ab>
+						<ab xml:id="b.MAR.001.037" type="verse" n="37">
+							y hallándolo, le dijeron: <q who="#per21 #org3" toWhom="#per1" type="oral">Todos te buscan.</q>
+						</ab>
+						<ab xml:id="b.MAR.001.038" type="verse" n="38">
+							Él les dijo: <q who="#per1" toWhom="#per21 #org3" type="oral">Vamos a los lugares vecinos para que predique también allí, porque para esto he venido.</q>
+						</ab>
+						<ab xml:id="b.MAR.001.039" type="verse" n="39">
+							Y predicaba en las <rs key="#pla47">sinagogas</rs> de ellos en toda <rs key="#pla7">Galilea</rs>, y echaba fuera los <rs key="#org6">demonios</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús sana a un leproso</head>
+						<ab xml:id="b.MAR.001.040" type="verse" n="40">
+							Vino a él un <rs key="#org15">leproso</rs> que, de rodillas, le dijo: <q who="#org15" toWhom="#per1" type="oral">Si quieres, puedes limpiarme.</q>
+						</ab>
+						<ab xml:id="b.MAR.001.041" type="verse" n="41">
+							<rs key="#per1">Jesús</rs>, teniendo misericordia de él, extendió la mano, lo tocó y le dijo:  <q who="#per1" toWhom="#org15" type="oral">Quiero, sé limpio.</q>
+						</ab>
+						<ab xml:id="b.MAR.001.042" type="verse" n="42">
+							Tan pronto terminó de hablar, la lepra desapareció del <rs key="#org15">hombre</rs>, y quedó limpio.
+						</ab>
+						<ab xml:id="b.MAR.001.043" type="verse" n="43">
+							Entonces lo despidió en seguida, y le ordenó estrictamente:
+						</ab>
+						<ab xml:id="b.MAR.001.044" type="verse" n="44">
+							<q who="#per1" toWhom="#org15" type="oral">Mira, no digas a nadie nada, sino ve, muéstrate al <rs key="#org12">sacerdote</rs> y ofrece por tu purificación lo que <rs key="#per26">Moisés</rs> mandó, para testimonio a ellos.</q>
+						</ab>
+						<ab xml:id="b.MAR.001.045" type="verse" n="45">
+							Pero, al salir, comenzó a publicar y a divulgar mucho el hecho, de manera que ya <rs key="#per1">Jesús</rs> no podía entrar abiertamente en la <rs key="#pla11">ciudad</rs>, sino que se quedaba fuera, en los lugares desiertos; y venían a él de todas partes.
+						</ab>
+					</div>
+				</div>
+			   
+				<div xml:id="b.MAR.002" type="chapter" n="2">
+					<div type="pericope">
+						<head type="pericope">Jesús sana a un paralítico</head>
+						<ab xml:id="b.MAR.002.001" type="verse" n="1">
+							Después de algunos días, <rs key="#per1">Jesús</rs> entró otra vez en <rs key="#pla11">Capernaúm</rs>. Cuando se supo que estaba en casa,
+						</ab>
+						<ab xml:id="b.MAR.002.002" type="verse" n="2">
+							inmediatamente se juntaron muchos, de manera que ya no cabían ni aun a la puerta; y les predicaba la palabra.
+						</ab>
+						<ab xml:id="b.MAR.002.003" type="verse" n="3">
+							Entonces vinieron a él unos trayendo a un <rs key="#org15">paralítico</rs>, que era cargado por cuatro.
+						</ab>
+						<ab xml:id="b.MAR.002.004" type="verse" n="4">
+							Y como no podían acercarse a él a causa de la <rs key="#org0">multitud</rs>, quitaron parte del techo de donde él estaba y, a través de la abertura, bajaron la camilla en que yacía el <rs key="#org15">paralítico</rs>.
+						</ab>
+						<ab xml:id="b.MAR.002.005" type="verse" n="5">
+							<!--sex: ascendant; blessed; negative-->
+							Al ver <rs key="#per1">Jesús</rs> la fe de ellos, dijo al <rs key="#org15">paralítico</rs>:  <q who="#per1" toWhom="#org15" type="oral"><rs key="#org15">Hijo</rs>, tus pecados te son perdonados.</q>
+						</ab>
+						<ab xml:id="b.MAR.002.006" type="verse" n="6">
+							Estaban allí sentados algunos de los <rs key="#org5">escribas</rs>, los cuales pensaban para sí:
+						</ab>
+						<ab xml:id="b.MAR.002.007" type="verse" n="7">
+							<q who="#org5" toWhom="#org5" type="thought">«¿Por qué habla este de ese modo? Blasfemias dice. ¿Quién puede perdonar pecados, sino sólo <rs key="#per14">Dios</rs>?».</q>
+						</ab>
+						<ab xml:id="b.MAR.002.008" type="verse" n="8">
+							Y conociendo luego <rs key="#per1">Jesús</rs> en su espíritu que pensaban de esta manera dentro de sí mismos, les preguntó:  <q who="#per1" toWhom="#org5" type="oral">¿Por qué pensáis así?</q>
+						</ab>
+						<ab xml:id="b.MAR.002.009" type="verse" n="9">
+							<q who="#per1" toWhom="#org5" type="oral">¿Qué es más fácil, decir al <rs key="#org15">paralítico</rs>: <q who="#per1" toWhom="#org15" type="soCalled">Tus pecados te son perdonados</q>, o decirle: <q who="#per1" toWhom="#org15" type="soCalled">Levántate, toma tu camilla y anda?</q></q>
+						</ab>
+						<ab xml:id="b.MAR.002.010" type="verse" n="10">
+							<!--sex: ascendant; positive; negative-->
+							<q who="#per1" toWhom="#org5" type="oral">Pues para que sepáis que el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> tiene potestad en la <rs key="#pla41">tierra</rs> para perdonar pecados</q> dijo al <rs key="#org15">paralítico</rs>:
+						</ab>
+						<ab xml:id="b.MAR.002.011" type="verse" n="11">
+							<q who="#per1" toWhom="#org15" type="oral">A ti te digo: Levántate, toma tu camilla y vete a tu casa.</q>
+						</ab>
+						<ab xml:id="b.MAR.002.012" type="verse" n="12">
+							Entonces él se levantó y, tomando su camilla, salió delante de todos, de manera que todos se asombraron y glorificaron a <rs key="#per14">Dios</rs>, diciendo:  <q who="#org0" toWhom="#org0" type="oral">Nunca hemos visto tal cosa.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Llamamiento de Leví</head>
+						<ab xml:id="b.MAR.002.013" type="verse" n="13">
+							Después volvió a la orilla del <rs key="#pla43">mar</rs>; y toda la <rs key="#org0">gente</rs> venía a él, y les enseñaba.
+						</ab>
+						<ab xml:id="b.MAR.002.014" type="verse" n="14">
+							<!--sex: ascendant; positive; neutral-->
+							Al pasar, vio a <rs key="#per31">Leví</rs> <rs key="#per31">hijo de <rs key="#per32">Alfeo</rs></rs> sentado al banco de los tributos públicos, y le dijo:  <q who="#per1" toWhom="#per31" type="oral">Sígueme</q>. Y levantándose, lo siguió.
+						</ab>
+						<ab xml:id="b.MAR.002.015" type="verse" n="15">
+							Aconteció que estando <rs key="#per1">Jesús</rs> a la mesa en casa de él, muchos <rs key="#org20">publicanos</rs> y <rs key="#org19">pecadores</rs> estaban también a la mesa juntamente con <rs key="#per1">Jesús</rs> y sus <rs key="#org3">discípulos</rs>, porque eran muchos los que lo habían seguido.
+						</ab>
+						<ab xml:id="b.MAR.002.016" type="verse" n="16">
+							Los <rs key="#org5">escribas</rs> y los <rs key="#org2">fariseos</rs>, viéndolo comer con los <rs key="#org20">publicanos</rs> y con los <rs key="#org19">pecadores</rs>, dijeron a los <rs key="#org3">discípulos</rs>: <q who="#org2 #org5" toWhom="#org3" type="oral">¿Qué es esto, que él come y bebe con los <rs key="#org20">publicanos</rs> y <rs key="#org19">pecadores</rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.002.017" type="verse" n="17">
+							Al oir esto <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" toWhom="#org2 #org5" type="oral">Los <rs key="#org18">sanos</rs> no tienen necesidad de <rs key="#per1">médico</rs>, sino los <rs key="#org15 #org19">enfermos</rs>. No he venido a llamar a <rs key="#org18">justos</rs>, sino a <rs key="#org19">pecadores</rs>.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La pregunta sobre el ayuno</head>
+						<ab xml:id="b.MAR.002.018" type="verse" n="18">
+							Los <rs key="#org27">discípulos de <rs key="#per25">Juan</rs></rs> y los de los <rs key="#org2">fariseos</rs> estaban ayunando. Entonces fueron y le preguntaron: <q who="#org2" toWhom="#per1" type="oral">¿Por qué los <rs key="#org27">discípulos de <rs key="#per25">Juan</rs></rs> y los de los <rs key="#org2">fariseos</rs> ayunan, y tus <rs key="#org3">discípulos</rs> no ayunan?</q>
+						</ab>
+						<ab xml:id="b.MAR.002.019" type="verse" n="19">
+							<!--sex: wedding; esposo; positive; negative-->
+							<rs key="#per1">Jesús</rs> les dijo:  <q who="#per1" toWhom="#org2" type="oral">¿Acaso pueden ayunar los que están de bodas mientras está con ellos el <rs key="#per1">esposo</rs>? Entre tanto que tienen consigo al <rs key="#per1">esposo</rs>, no pueden ayunar.</q>
+						</ab>
+						<ab xml:id="b.MAR.002.020" type="verse" n="20">
+							<!--sex: esposo; positive; negative-->
+							<q who="#per1" toWhom="#org2" type="oral">Pero vendrán días cuando el <rs key="#per1">esposo</rs> les será quitado, y entonces, en aquellos días, ayunarán.</q>
+						</ab>
+						<ab xml:id="b.MAR.002.021" type="verse" n="21">
+							<q who="#per1" toWhom="#org2" type="oral">»Nadie pone remiendo de paño nuevo en vestido viejo; de otra manera, el mismo remiendo nuevo tira de lo viejo y se hace peor la rotura.</q>
+						</ab>
+						<ab xml:id="b.MAR.002.022" type="verse" n="22">
+							<q who="#per1" toWhom="#org2" type="oral">Y nadie echa vino nuevo en odres viejos; de otra manera, el vino nuevo rompe los odres, el vino se derrama y los odres se pierden; pero el vino nuevo en odres nuevos se ha de echar.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Los discípulos arrancan espigas en sábado</head>
+						<ab xml:id="b.MAR.002.023" type="verse" n="23">
+							Aconteció que al pasar él por los sembrados un <rs key="#tim9">sábado</rs>, sus <rs key="#org3">discípulos</rs>, mientras andaban, comenzaron a arrancar espigas.
+						</ab>
+						<ab xml:id="b.MAR.002.024" type="verse" n="24">
+							Entonces los <rs key="#org2">fariseos</rs> le dijeron:  <q who="#org2" toWhom="#per1" type="oral">Mira, ¿por qué hacen en <rs key="#tim9">sábado</rs> lo que no es lícito?</q>
+						</ab>
+						<ab xml:id="b.MAR.002.025" type="verse" n="25">
+							Pero él les dijo: <q who="#per1" toWhom="#org2" type="oral">¿Nunca leísteis lo que hizo <rs key="#per35">David</rs> cuando tuvo necesidad y sintió hambre, él y los que con él estaban;</q>
+						</ab>
+						<ab xml:id="b.MAR.002.026" type="verse" n="26">
+							<q who="#per1" toWhom="#org2" type="oral">cómo entró en la <rs key="#pla262" cert="low">casa de <rs key="#per14">Dios</rs></rs>, siendo <rs key="#per706">Abiatar</rs> <rs key="#per706">sumo sacerdote</rs>, y comió los panes de la proposición, de los cuales no es lícito comer sino a los <rs key="#org12">sacerdotes</rs>, y aun dio a los que con él estaban?</q>
+						</ab>
+						<ab xml:id="b.MAR.002.027" type="verse" n="27">
+							También les dijo: <q who="#per1" toWhom="#org2" type="oral">El <rs key="#tim9">sábado</rs> fue hecho por causa del <rs key="#org0">hombre</rs>, y no el <rs key="#org0">hombre</rs> por causa del <rs key="#tim9">sábado</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.002.028" type="verse" n="28">
+							<!--sex: ascendant; positive; neutral-->
+							<q who="#per1" toWhom="#org2" type="oral">Por tanto, el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> es <rs key="#per1">Señor aun del <rs key="#tim9">sábado</rs></rs></q>.
+						</ab>
+					</div>
+				</div>
+				
+				<div xml:id="b.MAR.003" type="chapter" n="3">
+					<div type="pericope">
+						<head type="pericope">El hombre de la mano seca</head>
+						<ab xml:id="b.MAR.003.001" type="verse" n="1">
+							Otra vez entró <rs key="#per1">Jesús</rs> en la <rs key="#pla47">sinagoga</rs>. Había allí un <rs key="#org15">hombre</rs> que tenía seca una mano.
+						</ab>
+						<ab xml:id="b.MAR.003.002" type="verse" n="2">
+							Y lo acechaban para ver si lo sanaría en <rs key="#tim9">sábado</rs>, a fin de poder acusarlo.
+						</ab>
+						<ab xml:id="b.MAR.003.003" type="verse" n="3">
+							Entonces dijo al <rs key="#org15">hombre</rs> que tenía la mano seca:  <q who="#per1" toWhom="#org15" type="oral">Levántate y ponte en medio.</q>
+						</ab>
+						<ab xml:id="b.MAR.003.004" type="verse" n="4">
+							Y les preguntó: <q who="#per1" toWhom="#org2" type="oral">¿Es lícito en los <rs key="#tim9">sábados</rs> hacer bien, o hacer mal; salvar la vida, o quitarla? </q>Pero ellos callaban.
+						</ab>
+						<ab xml:id="b.MAR.003.005" type="verse" n="5">
+							Entonces, mirándolos con enojo, entristecido por la dureza de sus corazones, dijo al <rs key="#org15">hombre</rs>:  <q who="#per1" toWhom="#org15" type="oral">Extiende tu mano.</q> Él la extendió, y la mano le fue restaurada sana.
+						</ab>
+						<ab xml:id="b.MAR.003.006" type="verse" n="6">
+							Salieron entonces los <rs key="#org2">fariseos</rs> y se confabularon con los <rs key="#org9">herodianos</rs> para destruirlo.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La multitud a la orilla del mar</head>
+						<ab xml:id="b.MAR.003.007" type="verse" n="7">
+							Pero <rs key="#per1">Jesús</rs> se retiró al <rs key="#pla43">mar</rs> con sus <rs key="#org3">discípulos</rs>, y lo siguió <rs key="#org0">gran multitud de <rs key="#pla7">Galilea</rs></rs>. También de <rs key="#pla2">Judea</rs>,
+						</ab>
+						<ab xml:id="b.MAR.003.008" type="verse" n="8">
+							de <rs key="#pla3">Jerusalén</rs>, de <rs key="#pla735">Idumea</rs>, del otro lado del <rs key="#pla9">Jordán</rs> y de los alrededores de <rs key="#pla22">Tiro</rs> y de <rs key="#pla23">Sidón</rs>, oyendo cuán grandes cosas hacía, <rs key="#org0">grandes multitudes</rs> vinieron a él.
+						</ab>
+						<ab xml:id="b.MAR.003.009" type="verse" n="9">
+							Entonces dijo a sus <rs key="#org3">discípulos</rs> que le tuvieran siempre lista la barca, para evitar que la <rs key="#org0">multitud</rs> lo oprimiera,
+						</ab>
+						<ab xml:id="b.MAR.003.010" type="verse" n="10">
+							pues, como había sanado a muchos, todos los que tenían plagas se echaban sobre él para tocarlo.
+						</ab>
+						<ab xml:id="b.MAR.003.011" type="verse" n="11">
+							<!--sex: ascendant; negative; positive-->
+							Y los <rs key="#org6">espíritus impuros</rs>, al verlo, se postraban delante de él y gritaban: <q who="#org6" toWhom="#per1" type="oral">¡Tú eres el <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>!</q>
+						</ab>
+						<ab xml:id="b.MAR.003.012" type="verse" n="12">
+							Pero él los reprendía para que no lo descubrieran.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Elección de los doce apóstoles</head>
+						<ab xml:id="b.MAR.003.013" type="verse" n="13">
+							Después subió al monte y llamó a sí a los que él quiso, y vinieron a él.
+						</ab>
+						<ab xml:id="b.MAR.003.014" type="verse" n="14">
+							Designó entonces a <rs key="#org3">doce</rs> para que estuvieran con él, para enviarlos a predicar
+						</ab>
+						<ab xml:id="b.MAR.003.015" type="verse" n="15">
+							y que tuvieran autoridad para sanar enfermedades y para echar fuera <rs key="#org6">demonios</rs>:
+						</ab>
+						<ab xml:id="b.MAR.003.016" type="verse" n="16">
+							a <rs key="#per21">Simón</rs>, a quien puso por sobrenombre <rs key="#per21">Pedro</rs>,
+						</ab>
+						<ab xml:id="b.MAR.003.017" type="verse" n="17">
+							<!--sex: ascendant; neutral; positive-->
+							a <rs key="#per23">Jacobo</rs>, <rs key="#per23">hijo de <rs key="#per24">Zebedeo</rs></rs>, y a <rs key="#per25" cert="low">Juan</rs>, <rs key="#per25">hermano de <rs key="#per23">Jacobo</rs></rs>, a quienes apellidó <rs key="#per25 #per23" cert="low">Boanerges</rs>, es decir, <rs key="#per25 #per23">Hijos del trueno</rs>;
+						</ab>
+						<ab xml:id="b.MAR.003.018" type="verse" n="18">
+							<!--sex: ascendant; neutral; positive-->
+							a <rs key="#per22">Andrés</rs>, <rs key="#per28">Felipe</rs>, <rs key="#per29">Bartolomé</rs>, <rs key="#per27">Mateo</rs>, <rs key="#per30">Tomás</rs>, <rs key="#per31">Jacobo</rs> <rs key="#per31">hijo de <rs key="#per32">Alfeo</rs></rs>, <rs key="#per33">Tadeo</rs>, <rs key="#per477">Simón</rs>, el <rs key="#per477">cananita</rs>,
+						</ab>
+						<ab xml:id="b.MAR.003.019" type="verse" n="19">
+							y <rs key="#per34">Judas Iscariote</rs>, el que lo entregó. Volvieron a casa,
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La blasfemia contra el Espíritu Santo</head>
+						<ab xml:id="b.MAR.003.020" type="verse" n="20">
+							y se juntó de nuevo tanta <rs key="#org0">gente</rs> que ni siquiera podían comer pan.
+						</ab>
+						<ab xml:id="b.MAR.003.021" type="verse" n="21">
+							Cuando lo oyeron los suyos, vinieron para prenderlo, porque decían: <q who="#org3" toWhom="#org3" type="oral" cert="low">«Está fuera de sí».</q>
+						</ab>
+						<ab xml:id="b.MAR.003.022" type="verse" n="22">
+							Pero los <rs key="#org5">escribas</rs> que habían venido de <rs key="#pla3">Jerusalén</rs> decían que tenía a <rs key="#per20">Beelzebú</rs>, y que por el <rs key="#per20">príncipe de los <rs key="#org6">demonios</rs></rs> echaba fuera los <rs key="#org6">demonios</rs>.
+						</ab>
+						<ab xml:id="b.MAR.003.023" type="verse" n="23">
+							Y habiéndolos llamado, les hablaba en parábolas: <q who="#per1" toWhom="#org5" type="oral">¿Cómo puede <rs key="#per20">Satanás</rs> echar fuera a <rs key="#per20">Satanás</rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.003.024" type="verse" n="24">
+							<q who="#per1" toWhom="#org5" type="oral">Si un reino está dividido contra sí mismo, tal reino no puede permanecer.</q>
+						</ab>
+						<ab xml:id="b.MAR.003.025" type="verse" n="25">
+							<q who="#per1" toWhom="#org5" type="oral">Y si una casa está dividida contra sí misma, tal casa no puede permanecer.</q>
+						</ab>
+						<ab xml:id="b.MAR.003.026" type="verse" n="26">
+							<q who="#per1" toWhom="#org5" type="oral">Y si <rs key="#per20">Satanás</rs> se levanta contra sí mismo y se divide, no puede permanecer, sino que ha llegado su fin.</q>
+						</ab>
+						<ab xml:id="b.MAR.003.027" type="verse" n="27">
+							<q who="#per1" toWhom="#org5" type="oral">»Nadie puede entrar en la casa de un hombre fuerte y saquear sus bienes, si antes no lo ata; solamente así podrá saquear su casa.</q>
+						</ab>
+						<ab xml:id="b.MAR.003.028" type="verse" n="28">
+							<!--sex: condemned; blessed; ascendant-->
+							<q who="#per1" toWhom="#org5" type="oral">»De cierto os digo que todos los pecados y las blasfemias, cualesquiera que sean, les serán perdonados a los <rs key="#org0">hijos de los <rs key="#org0">hombres</rs></rs>;</q>
+						</ab>
+						<ab xml:id="b.MAR.003.029" type="verse" n="29">
+							<q who="#per1" toWhom="#org5" type="oral">pero el que blasfeme contra el <rs key="#per17">Espíritu Santo</rs>, no tiene jamás perdón, sino que es reo de juicio eterno.</q>
+						</ab>
+						<ab xml:id="b.MAR.003.030" type="verse" n="30">
+							Es que ellos habían dicho: <q who="#org5" toWhom="#org5" type="oral">«Tiene <rs key="#org6">espíritu impuro</rs>».</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La madre y los hermanos de Jesús</head>
+						<ab xml:id="b.MAR.003.031" type="verse" n="31">
+							<!--sex: ascendant; negative; positive-->
+							Entre tanto, llegaron sus <rs key="#org11">hermanos</rs> y su <rs key="#per11">madre</rs> y, quedándose afuera, enviaron a llamarlo.
+						</ab>
+						<ab xml:id="b.MAR.003.032" type="verse" n="32">
+							<!--sex: ascendant; neutral; positive-->
+							Entonces la <rs key="#org0">gente</rs> que estaba sentada alrededor de él le dijo:  <q who="#org0" toWhom="#per1" type="oral">Tu <rs key="#per11">madre</rs> y tus <rs key="#org11">hermanos</rs> están afuera y te buscan.</q>
+						</ab>
+						<ab xml:id="b.MAR.003.033" type="verse" n="33">
+							<!--sex: ascendant; negative; positive-->
+							Él les respondió diciendo: <q who="#per1" toWhom="#org0" type="oral">¿Quiénes son mi <rs key="#per11">madre</rs> y mis <rs key="#org11">hermanos</rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.003.034" type="verse" n="34">
+							<!--sex: ascendant; negative; positive-->
+							Y mirando a los que estaban sentados alrededor de él, dijo: <q who="#per1" toWhom="#org0" type="oral">Aquí están mi <rs key="#org18">madre</rs> y mis <rs key="#org18">hermanos</rs>,</q>
+						</ab>
+						<ab xml:id="b.MAR.003.035" type="verse" n="35">
+							<!--sex: ascendant; negative; positive-->
+							<q who="#per1" toWhom="#org0" type="oral">porque todo aquel que hace la voluntad de <rs key="#per14">Dios</rs>, ese es mi <rs key="#org18">hermano</rs>, mi <rs key="#org18">hermana</rs> y mi <rs key="#org18">madre</rs>.</q>
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.MAR.004" type="chapter" n="4">
+					<div type="pericope">
+						<head type="pericope">Parábola del sembrador</head>
+						<ab xml:id="b.MAR.004.001" type="verse" n="1">
+							Otra vez comenzó <rs key="#per1">Jesús</rs> a enseñar junto al <rs key="#pla43">mar</rs>. Y se reunió alrededor de él tanta <rs key="#org0">gente</rs>, que subió a una barca que estaba en el <rs key="#pla43">mar</rs>, y se sentó; mientras, la <rs key="#org0">gente</rs> se quedaba en la orilla.
+						</ab>
+						<ab xml:id="b.MAR.004.002" type="verse" n="2">
+							Entonces les enseñaba por medio de parábolas muchas cosas. Les decía en su enseñanza:
+						</ab>
+						<ab xml:id="b.MAR.004.003" type="verse" n="3">
+							<q who="#per1" toWhom="#org0" type="oral">Oíd: El sembrador salió a sembrar;</q>
+						</ab>
+						<ab xml:id="b.MAR.004.004" type="verse" n="4">
+							<q who="#per1" toWhom="#org0" type="oral">y, al sembrar, aconteció que una parte cayó junto al camino, y vinieron las aves del cielo y se la comieron.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.005" type="verse" n="5">
+							<q who="#per1" toWhom="#org0" type="oral">Otra parte cayó en pedregales, donde no había mucha tierra, y brotó pronto, porque la tierra no era profunda;</q>
+						</ab>
+						<ab xml:id="b.MAR.004.006" type="verse" n="6">
+							<q who="#per1" toWhom="#org0" type="oral">pero cuando salió el sol se quemó, y como no tenía raíz, se secó.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.007" type="verse" n="7">
+							<q who="#per1" toWhom="#org0" type="oral">Otra parte cayó entre espinos; y los espinos crecieron y la ahogaron, y no dio fruto.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.008" type="verse" n="8">
+							<q who="#per1" toWhom="#org0" type="oral">Pero otra parte cayó en buena tierra, y dio fruto, pues brotó, creció y produjo a treinta, a sesenta y a ciento por uno.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.009" type="verse" n="9">
+							Entonces añadió: <q who="#per1" toWhom="#org0" type="oral">El que tiene oídos para oir, oiga.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Propósito de las parábolas</head>
+						<ab xml:id="b.MAR.004.010" type="verse" n="10">
+							Cuando quedó solo, los que estaban cerca de él con los <rs key="#org3">doce</rs> le preguntaron sobre la parábola.
+						</ab>
+						<ab xml:id="b.MAR.004.011" type="verse" n="11">
+							Y les dijo: <q who="#per1" toWhom="#org3" type="oral">A vosotros os es dado saber el misterio del <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>; pero a los que están fuera, por parábolas todas las cosas,</q>
+						</ab>
+						<ab xml:id="b.MAR.004.012" type="verse" n="12">
+							<q who="#per1" toWhom="#org3" type="oral">para que viendo, vean y no perciban; y oyendo, oigan y no entiendan; para que no se conviertan y les sean perdonados los pecados.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús explica la parábola del sembrador</head>
+						<ab xml:id="b.MAR.004.013" type="verse" n="13">
+							Y les dijo: <q who="#per1" toWhom="#org3" type="oral">¿No entendéis esta parábola? ¿Cómo, pues, entenderéis todas las parábolas?</q>
+						</ab>
+						<ab xml:id="b.MAR.004.014" type="verse" n="14">
+							<q who="#per1" toWhom="#org3" type="oral">El sembrador es el que siembra la palabra.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.015" type="verse" n="15">
+							<q who="#per1" toWhom="#org3" type="oral">Los de junto al camino son aquellos en quienes se siembra la palabra, pero después que la oyen viene <rs key="#per20">Satanás</rs> y quita la palabra que se sembró en sus corazones.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.016" type="verse" n="16">
+							<q who="#per1" toWhom="#org3" type="oral">De igual modo, los que fueron sembrados en pedregales son los que, al oir la palabra, al momento la reciben con gozo;</q>
+						</ab>
+						<ab xml:id="b.MAR.004.017" type="verse" n="17">
+							<q who="#per1" toWhom="#org3" type="oral">pero no tienen raíz en sí y no se mantienen firmes; por eso, cuando viene la tribulación o la persecución por causa de la palabra, tropiezan.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.018" type="verse" n="18">
+							<q who="#per1" toWhom="#org3" type="oral">Los que fueron sembrados entre espinos son los que oyen la palabra,</q>
+						</ab>
+						<ab xml:id="b.MAR.004.019" type="verse" n="19">
+							<q who="#per1" toWhom="#org3" type="oral">pero los afanes de este siglo, el engaño de las riquezas y las codicias de otras cosas, entran y ahogan la palabra, y la hacen infructuosa.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.020" type="verse" n="20">
+							<q who="#per1" toWhom="#org3" type="oral">Y los que fueron sembrados en buena tierra son los que oyen la palabra, la reciben y dan fruto a treinta, a sesenta y a ciento por uno.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Nada oculto que no haya de ser manifestado</head>
+						<ab xml:id="b.MAR.004.021" type="verse" n="21">
+							También les dijo: <q who="#per1" toWhom="#org3" type="oral">¿Acaso se trae la luz para ponerla debajo de una vasija o debajo de la cama? ¿No es para ponerla en el candelero?</q>
+						</ab>
+						<ab xml:id="b.MAR.004.022" type="verse" n="22">
+							<q who="#per1" toWhom="#org3" type="oral">Pues bien, nada hay oculto que no haya de ser manifestado, ni escondido que no haya de salir a luz.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.023" type="verse" n="23">
+							<q who="#per1" toWhom="#org3" type="oral">Si alguno tiene oídos para oir, oiga.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.024" type="verse" n="24">
+							Les dijo también: <q who="#per1" toWhom="#org3" type="oral">Prestad atención a lo que oís, porque con la medida con que medís, os será medido, y aun se os añadirá a vosotros los que oís,</q>
+						</ab>
+						<ab xml:id="b.MAR.004.025" type="verse" n="25">
+							<q who="#per1" toWhom="#org3" type="oral">porque al que tiene, se le dará; pero al que no tiene, aun lo que tiene se le quitará.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Parábola del crecimiento de la semilla</head>
+						<ab xml:id="b.MAR.004.026" type="verse" n="26">
+							Decía además: <q who="#per1" toWhom="#org3" type="oral">«Así es el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>, como cuando un hombre echa semilla en la tierra.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.027" type="verse" n="27">
+							<q who="#per1" toWhom="#org3" type="oral">Duerma y vele, de noche y de día, la semilla brota y crece sin que él sepa cómo,</q>
+						</ab>
+						<ab xml:id="b.MAR.004.028" type="verse" n="28">
+							<q who="#per1" toWhom="#org3" type="oral">porque de por sí lleva fruto la tierra: primero hierba, luego espiga, después grano lleno en la espiga;</q>
+						</ab>
+						<ab xml:id="b.MAR.004.029" type="verse" n="29">
+							<q who="#per1" toWhom="#org3" type="oral">y cuando el fruto está maduro, en seguida se mete la hoz, porque la siega ha llegado».</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Parábola de la semilla de mostaza</head>
+						<ab xml:id="b.MAR.004.030" type="verse" n="30">
+							Decía también: <q who="#per1" toWhom="#org3" type="oral">«¿A qué compararemos el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>? ¿Qué parábola nos servirá para representarlo?</q>
+						</ab>
+						<ab xml:id="b.MAR.004.031" type="verse" n="31">
+							<q who="#per1" toWhom="#org3" type="oral">Es como el <rs key="#pla19">grano de mostaza</rs>, que cuando se siembra es la más pequeña de todas las semillas que hay en la tierra,</q>
+						</ab>
+						<ab xml:id="b.MAR.004.032" type="verse" n="32">
+							<q who="#per1" toWhom="#org3" type="oral">pero después de sembrado crece y se hace la mayor de todas las hortalizas, y echa grandes ramas, de tal manera que las aves del cielo pueden morar bajo su sombra».</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El uso que Jesús hace de las parábolas</head>
+						<ab xml:id="b.MAR.004.033" type="verse" n="33">
+							Con muchas parábolas como estas les hablaba la palabra, conforme a lo que podían oir.
+						</ab>
+						<ab xml:id="b.MAR.004.034" type="verse" n="34">
+							Y sin parábolas no les hablaba; aunque a sus <rs key="#org3">discípulos</rs> se lo explicaba todo en privado.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús calma la tempestad</head>
+						<ab xml:id="b.MAR.004.035" type="verse" n="35">
+							Aquel día, cuando llegó la noche, les dijo: <q who="#per1" toWhom="#org3" type="oral">Pasemos al otro lado.</q>
+						</ab>
+						<ab xml:id="b.MAR.004.036" type="verse" n="36">
+							Una vez despedida la <rs key="#org0">multitud</rs>, se lo llevaron tal como estaba en la barca. También había otras barcas.
+						</ab>
+						<ab xml:id="b.MAR.004.037" type="verse" n="37">
+							Pero se levantó una gran tempestad de viento que echaba las olas en la barca, de tal manera que ya se anegaba.
+						</ab>
+						<ab xml:id="b.MAR.004.038" type="verse" n="38">
+							Él estaba en la popa, durmiendo sobre un cabezal. Lo despertaron y le dijeron: <q who="#org3" toWhom="#per1" type="oral">¡<rs key="#per1">Maestro</rs>!, ¿no tienes cuidado que perecemos?</q>
+						</ab>
+						<ab xml:id="b.MAR.004.039" type="verse" n="39">
+							Él, levantándose, reprendió al viento y dijo al <rs key="#pla43">mar</rs>: <q who="#per1" toWhom="#pla43" type="oral">¡Calla, enmudece!</q> Entonces cesó el viento y sobrevino una gran calma.
+						</ab>
+						<ab xml:id="b.MAR.004.040" type="verse" n="40">
+							Y les dijo: <q who="#per1" toWhom="#org3" type="oral">¿Por qué estáis así amedrentados? ¿Cómo no tenéis fe?</q>
+						</ab>
+						<ab xml:id="b.MAR.004.041" type="verse" n="41">
+							Entonces sintieron un gran temor, y se decían el uno al otro: <q who="#org3" toWhom="#org3" type="oral">¿Quién es este, que aun el viento y el <rs key="#pla43">mar</rs> lo obedecen?</q>
+						</ab>
+					</div>
+				</div>
+				
+				<div xml:id="b.MAR.005" type="chapter" n="5">
+					<div type="pericope">
+						<head type="pericope">El endemoniado gadareno</head>
+						<ab xml:id="b.MAR.005.001" type="verse" n="1">
+							Vinieron al otro lado del <rs key="#pla43">mar</rs>, a la <rs key="#pla736">región de los <rs key="#org219">gadarenos</rs></rs>.
+						</ab>
+						<ab xml:id="b.MAR.005.002" type="verse" n="2">
+							Cuando salió él de la barca, en seguida vino a su encuentro, de los sepulcros, un <rs key="#org15">hombre con un <rs key="#org6">espíritu impuro</rs></rs>
+						</ab>
+						<ab xml:id="b.MAR.005.003" type="verse" n="3">
+							que habitaba en los sepulcros y nadie podía atarlo, ni aun con cadenas.
+						</ab>
+						<ab xml:id="b.MAR.005.004" type="verse" n="4">
+							Muchas veces había sido atado con grillos y cadenas, pero las cadenas habían sido hechas pedazos por él, y desmenuzados los grillos. Nadie lo podía dominar.
+						</ab>
+						<ab xml:id="b.MAR.005.005" type="verse" n="5">
+							Y siempre, de día y de noche, andaba gritando en los montes y en los sepulcros, e hiriéndose con piedras.
+						</ab>
+						<ab xml:id="b.MAR.005.006" type="verse" n="6">
+							Cuando vio, pues, a <rs key="#per1">Jesús</rs> de lejos, corrió y se arrodilló ante él.
+						</ab>
+						<ab xml:id="b.MAR.005.007" type="verse" n="7">
+							<!--sex: ascendant; positive; negative-->
+							Y clamando a gran voz, dijo: <q who="#org6" toWhom="#per1" type="oral">¿Qué tienes conmigo, <rs key="#per1">Jesús</rs>, <rs key="#per1">Hijo del <rs key="#per14">Dios Altísimo</rs></rs>? ¡Te conjuro por <rs key="#per14">Dios</rs> que no me atormentes!,</q>
+						</ab>
+						<ab xml:id="b.MAR.005.008" type="verse" n="8">
+							porque le decía: <q who="#per1" toWhom="#org6" type="oral">«Sal de este <rs key="#org15">hombre</rs>, <rs key="#org6">espíritu impuro</rs>».</q>
+						</ab>
+						<ab xml:id="b.MAR.005.009" type="verse" n="9">
+							<rs key="#per1">Jesús</rs> le preguntó:  <q who="#per1" toWhom="#org6" type="oral">¿Cómo te llamas?</q> Y respondió diciendo: <q who="#org6" toWhom="#per1" type="oral"><rs key="#org6">Legión</rs> me llamo, porque somos muchos.</q>
+						</ab>
+						<ab xml:id="b.MAR.005.010" type="verse" n="10">
+							Y le rogaba mucho que no los enviara fuera de aquella <rs key="#pla736">región</rs>.
+						</ab>
+						<ab xml:id="b.MAR.005.011" type="verse" n="11">
+							Estaba allí cerca del monte un gran hato de cerdos paciendo.
+						</ab>
+						<ab xml:id="b.MAR.005.012" type="verse" n="12">
+							Y le rogaron todos los <rs key="#org6">demonios</rs>, diciendo:  <q who="#org6" toWhom="#per1" type="oral">Envíanos a los cerdos para que entremos en ellos.</q>
+						</ab>
+						<ab xml:id="b.MAR.005.013" type="verse" n="13">
+							<rs key="#per1">Jesús</rs>, de inmediato, les dio permiso. Y saliendo aquellos <rs key="#org6">espíritus impuros</rs>, entraron en los cerdos, los cuales eran como dos mil. El hato se precipitó al <rs key="#pla43">mar</rs> por un despeñadero, y en el <rs key="#pla43">mar</rs> se ahogaron.
+						</ab><!--jct: 2000 cerdos muriendo ahogados en el mar! qué horror!-->
+						<ab xml:id="b.MAR.005.014" type="verse" n="14">
+							Los que cuidaban los cerdos huyeron y dieron aviso en la <rs key="#pla736">ciudad</rs> y en los campos. Y la <rs key="#org0">gente</rs> salió a ver qué era aquello que había sucedido.
+						</ab>
+						<ab xml:id="b.MAR.005.015" type="verse" n="15">
+							Llegaron a <rs key="#per1">Jesús</rs> y vieron al que había estado atormentado por el <rs key="#org6">demonio</rs>, el que había tenido la legión, sentado, vestido y en su juicio cabal; y tuvieron miedo.
+						</ab>
+						<ab xml:id="b.MAR.005.016" type="verse" n="16">
+							Y los que lo habían visto les contaron lo que le había acontecido al que había tenido el <rs key="#org6">demonio</rs>, y lo de los cerdos.
+						</ab>
+						<ab xml:id="b.MAR.005.017" type="verse" n="17">
+							Entonces comenzaron a rogarle que se fuera de sus contornos.
+						</ab>
+						<ab xml:id="b.MAR.005.018" type="verse" n="18">
+							Al entrar él en la barca, el que había estado endemoniado le rogaba que lo dejara quedarse con él.
+						</ab>
+						<ab xml:id="b.MAR.005.019" type="verse" n="19">
+							Pero <rs key="#per1">Jesús</rs> no se lo permitió, sino que le dijo:  <q who="#per1" toWhom="#org15" type="oral">Vete a tu casa, a los tuyos, y cuéntales cuán grandes cosas el <rs key="#per14">Señor</rs> ha hecho contigo y cómo ha tenido misericordia de ti.</q>
+						</ab>
+						<ab xml:id="b.MAR.005.020" type="verse" n="20">
+							Él se fue y comenzó a publicar en <rs key="#pla40">Decápolis</rs> cuán grandes cosas había hecho <rs key="#per1">Jesús</rs> con él; y todos se maravillaban.
+						</ab>
+						<ab xml:id="b.MAR.005.021" type="verse" n="21">
+							Al pasar otra vez <rs key="#per1">Jesús</rs> en una barca a la otra orilla, se reunió a su alrededor una <rs key="#org0">gran multitud</rs>; y él estaba junto al <rs key="#pla43">mar</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La hija de Jairo, y la mujer con flujo de sangre</head>
+						<ab xml:id="b.MAR.005.022" type="verse" n="22">
+							Y vino un <rs key="#per950">alto dignatario de la <rs key="#pla47">sinagoga</rs></rs>, llamado <rs key="#per950">Jairo</rs>. Al verlo, se postró a sus pies,
+						</ab>
+						<ab xml:id="b.MAR.005.023" type="verse" n="23">
+							<!--sex: ascendant; positive; blessed-->
+							y le rogaba mucho, diciendo: <q who="#per950" toWhom="#per1" type="oral">Mi <rs key="#org15">hija</rs> está agonizando; ven y pon las manos sobre ella para que sea salva, y viva.</q>
+						</ab>
+						<ab xml:id="b.MAR.005.024" type="verse" n="24">
+							Fue, pues, con él, y lo seguía una <rs key="#org0">gran multitud</rs>, y lo apretaban.
+						</ab>
+						<ab xml:id="b.MAR.005.025" type="verse" n="25">
+							<!--sex: menstrual-disorder; women; negative; neutral-->
+							Pero una <rs key="#org15">mujer</rs> que desde hacía doce años padecía de flujo de sangre,
+						</ab>
+						<ab xml:id="b.MAR.005.026" type="verse" n="26">
+							y había sufrido mucho a manos de muchos médicos, y había gastado todo lo que tenía y de nada le había servido, antes le iba peor,
+						</ab>
+						<ab xml:id="b.MAR.005.027" type="verse" n="27">
+							cuando oyó hablar de <rs key="#per1">Jesús</rs> se acercó por detrás entre la <rs key="#org0">multitud</rs> y tocó su manto,
+						</ab>
+						<ab xml:id="b.MAR.005.028" type="verse" n="28">
+							porque decía: <q who="#org15" toWhom="#org0" type="oral">«Si toco tan solo su manto, seré salva».</q>
+						</ab>
+						<ab xml:id="b.MAR.005.029" type="verse" n="29">
+							<!--sex: menstrual-disorder; negative; positive-->
+							Inmediatamente la fuente de su sangre se secó, y sintió en el cuerpo que estaba sana de su azote.
+						</ab>
+						<ab xml:id="b.MAR.005.030" type="verse" n="30">
+							Luego <rs key="#per1">Jesús</rs>, conociendo en sí mismo el poder que había salido de él, volviéndose a la <rs key="#org0">multitud</rs>, preguntó:  <q who="#per1" toWhom="#org0" type="oral">¿Quién ha tocado mis vestidos?</q>
+						</ab>
+						<ab xml:id="b.MAR.005.031" type="verse" n="31">
+							Sus <rs key="#org3">discípulos</rs> le dijeron:  <q who="#org3" toWhom="#per1" type="oral">Ves que la <rs key="#org0">multitud</rs> te aprieta, y preguntas: <q who="#per1" toWhom="#org0" type="oral">¿Quién me ha tocado?</q>.</q>
+						</ab>
+						<ab xml:id="b.MAR.005.032" type="verse" n="32">
+							Pero él miraba alrededor para ver quién lo había hecho.
+						</ab>
+						<ab xml:id="b.MAR.005.033" type="verse" n="33">
+							Entonces la <rs key="#org15">mujer</rs>, temiendo y temblando, sabiendo lo que en ella había sido hecho, vino y se postró delante de él y le dijo toda la verdad.
+						</ab>
+						<ab xml:id="b.MAR.005.034" type="verse" n="34">
+							<!--sex: ascendant; menstrual-disorder; blessed; negative-->
+							Él le dijo: <q who="#per1" toWhom="#org15" type="oral"><rs key="#org15">Hija</rs>, tu fe te ha salvado. Vete en paz y queda sana de tu enfermedad.</q>
+						</ab>
+						<ab xml:id="b.MAR.005.035" type="verse" n="35">
+							<!--sex: ascendant; negative; positive-->
+							Mientras él aún hablaba, vinieron de casa del <rs key="#per950">alto dignatario de la <rs key="#pla47">sinagoga</rs></rs>, diciendo: <q who="#org0" toWhom="#per950" type="oral">Tu <rs key="#org15">hija</rs> ha muerto, ¿para qué molestas más al <rs key="#per1">Maestro</rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.005.036" type="verse" n="36">
+							Pero <rs key="#per1">Jesús</rs>, luego que oyó lo que se decía, dijo al <rs key="#per950">alto dignatario de la <rs key="#pla47">sinagoga</rs></rs>:  <q who="#per1" toWhom="#per950" type="oral">No temas, cree solamente.</q>
+						</ab>
+						<ab xml:id="b.MAR.005.037" type="verse" n="37">
+							Y no permitió que lo siguiera nadie sino <rs key="#per21">Pedro</rs>, <rs key="#per23">Jacobo</rs> y <rs key="#per18">Juan</rs>, <rs key="#per18">hermano de <rs key="#per23">Jacobo</rs></rs>.
+						</ab>
+						<ab xml:id="b.MAR.005.038" type="verse" n="38">
+							Vino a casa del <rs key="#per950">alto dignatario de la <rs key="#pla47">sinagoga</rs></rs>, y vio el alboroto y a los que lloraban y lamentaban mucho.
+						</ab>
+						<ab xml:id="b.MAR.005.039" type="verse" n="39">
+							Entró y les dijo: <q who="#per1" toWhom="#org0" type="oral">¿Por qué alborotáis y lloráis? La <rs key="#org15">niña</rs> no está muerta, sino dormida.</q>
+						</ab>
+						<ab xml:id="b.MAR.005.040" type="verse" n="40">
+							<!--sex: ascendant; negative; positive-->
+							Y se burlaban de él. Pero él, echando fuera a todos, tomó al <rs key="#per950">padre</rs> y a la madre de la <rs key="#org15">niña</rs>, y a los que estaban con él, y entró donde estaba la <rs key="#org15">niña</rs>.
+						</ab>
+						<ab xml:id="b.MAR.005.041" type="verse" n="41">
+							Tomó la mano de la <rs key="#org15">niña</rs> y le dijo: <q who="#per1" toWhom="#org15" type="oral">¡Talita cumi!</q> (que significa: <q who="#per1" toWhom="#org15" type="oral"><rs key="#org15">Niña</rs>, a ti te digo, levántate</q>).
+						</ab><!-- jct: por qué aparece esto en el idioma original y traducido? Y de qué idioma?-->
+						<ab xml:id="b.MAR.005.042" type="verse" n="42">
+							Inmediatamente la <rs key="#org15">niña</rs> se levantó y andaba, pues tenía doce años. Y la <rs key="#org0">gente</rs> se llenó de asombro.
+						</ab>
+						<ab xml:id="b.MAR.005.043" type="verse" n="43">
+							Pero él les insistió en que nadie lo supiera, y dijo que dieran de comer a la <rs key="#org15">niña</rs>.
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.MAR.006" type="chapter" n="6">
+					<div type="pericope">
+						<head type="pericope">Jesús en Nazaret</head>
+						<ab xml:id="b.MAR.006.001" type="verse" n="1">
+							Salió <rs key="#per1">Jesús</rs> de allí y vino a su <rs key="#pla8" cert="low">tierra</rs>, y lo seguían sus <rs key="#org3">discípulos</rs>.
+						</ab>
+						<ab xml:id="b.MAR.006.002" type="verse" n="2">
+							Cuando llegó el <rs key="#tim9">sábado</rs>, comenzó a enseñar en la <rs key="#pla47">sinagoga</rs>; y muchos, oyéndolo, se admiraban y preguntaban: <q who="#org0" toWhom="#org0" type="oral">¿De dónde saca este estas cosas? ¿Y qué sabiduría es esta que le es dada, y estos milagros que por sus manos son hechos?</q>
+						</ab>
+						<ab xml:id="b.MAR.006.003" type="verse" n="3">
+							<!--sex: ascendant; negative; neutral-->
+							<q who="#org0" toWhom="#org0" type="oral">¿No es este el <rs key="#per1">carpintero</rs>, <rs key="#per1">hijo de <rs key="#per11">María</rs></rs>, <rs key="#per1">hermano de <rs key="#per98">Jacobo</rs>, de <rs key="#per99">José</rs>, de <rs key="#per101">Judas</rs> y de <rs key="#per100">Simón</rs></rs>? ¿No están también aquí con nosotros sus <rs key="#org11">hermanas</rs>?</q> Y se escandalizaban de él.
+						</ab>
+						<ab xml:id="b.MAR.006.004" type="verse" n="4">
+							Pero <rs key="#per1">Jesús</rs> les dijo:  <q who="#per1" toWhom="#org0" type="oral">No hay <rs key="#org8">profeta</rs> sin honra sino en su propia tierra, entre sus parientes y en su casa.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.005" type="verse" n="5">
+							No pudo hacer allí ningún milagro, salvo que sanó a unos pocos <rs key="#org15">enfermos</rs> poniendo sobre ellos las manos.
+						</ab>
+						<ab xml:id="b.MAR.006.006" type="verse" n="6">
+							Y estaba asombrado de la incredulidad de ellos. Y recorría las aldeas de alrededor, enseñando.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Misión de los doce discípulos</head>
+						<ab xml:id="b.MAR.006.007" type="verse" n="7">
+							Después llamó a los <rs key="#org3">doce</rs> y comenzó a enviarlos de dos en dos, y les dio autoridad sobre los <rs key="#org6">espíritus impuros</rs>.
+						</ab>
+						<ab xml:id="b.MAR.006.008" type="verse" n="8">
+							Les mandó que no llevaran nada para el camino, sino solamente bastón. Ni bolsa, ni pan, ni dinero en el cinto;
+						</ab>
+						<ab xml:id="b.MAR.006.009" type="verse" n="9">
+							sino que calzaran sandalias y no llevaran dos túnicas.
+						</ab>
+						<ab xml:id="b.MAR.006.010" type="verse" n="10">
+							Y añadió: <q who="#per1" toWhom="#org3" type="oral">Dondequiera que entréis en una casa, posad en ella hasta que salgáis de aquel lugar.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.011" type="verse" n="11">
+							<q who="#per1" toWhom="#org3" type="oral">Y si en algún lugar no os reciben ni os oyen, salid de allí y sacudid el polvo que está debajo de vuestros pies, para testimonio a ellos. De cierto os digo que en el <rs key="#tim2">día del juicio</rs> será más tolerable el castigo para los de <rs key="#pla16">Sodoma</rs> y <rs key="#pla17">Gomorra</rs> que para aquella ciudad.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.012" type="verse" n="12">
+							Y, saliendo, predicaban que los <rs key="#org0">hombres</rs> se arrepintieran.
+						</ab>
+						<ab xml:id="b.MAR.006.013" type="verse" n="13">
+							Y echaban fuera muchos <rs key="#org6">demonios</rs>, ungían con aceite a muchos <rs key="#org15">enfermos</rs> y los sanaban.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Muerte de Juan el Bautista</head>
+						<ab xml:id="b.MAR.006.014" type="verse" n="14">
+							Oyó el <rs key="#per10">rey</rs> <rs key="#per10">Herodes</rs> la fama de <rs key="#per1">Jesús</rs>, porque su nombre se había hecho notorio, y dijo: <q who="#per10" toWhom="#org0" type="oral"><rs key="#per1 #per18">Juan el Bautista</rs> ha resucitado de los muertos, y por eso actúan en él estos poderes.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.015" type="verse" n="15">
+							Otros decían: <q who="#org0" toWhom="#org0" type="oral">«Es <rs key="#per1 #per13">Elías</rs></q>». Y otros:  <q who="#org0" toWhom="#org0" type="oral">«Es un <rs key="#per1">profeta</rs>, como los <rs key="#org8">profetas antiguos</rs>».</q>
+						</ab><!--interesantes relaciones entre personas-->
+						<ab xml:id="b.MAR.006.016" type="verse" n="16">
+							Al oir esto, <rs key="#per10">Herodes</rs> dijo:  <q who="#per10" toWhom="#org0" type="oral">Este es <rs key="#per1">Juan</rs>, el que yo decapité, que ha resucitado de los muertos.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.017" type="verse" n="17">
+							<!--sex: second-marriage-widow; marital-relation-political-family; negative; neutral--->
+							El mismo <rs key="#per10">Herodes</rs> había enviado a prender a <rs key="#per18">Juan</rs>, y lo había encadenado en la cárcel por causa de <rs key="#per951">Herodías</rs>, <rs key="#per951">mujer de <rs key="#per102">Felipe</rs></rs>, su <rs key="#per102">hermano</rs>, pues la había tomado por <rs key="#per951">mujer</rs>,
+						</ab>
+						<ab xml:id="b.MAR.006.018" type="verse" n="18">
+							<!--sex: second-marriage-widow; marital-relation-political-family; condemned; neutral--->
+							porque <rs key="#per18">Juan</rs> había dicho a <rs key="#per10">Herodes</rs>: <q who="#per18" toWhom="#per10" type="oral">«No te está permitido tener la <rs key="#per951">mujer de tu <rs key="#per102">hermano</rs></rs>».</q>
+						</ab>
+						<ab xml:id="b.MAR.006.019" type="verse" n="19">
+							Por eso, <rs key="#per951">Herodías</rs> lo acechaba y deseaba matarlo; pero no podía,
+						</ab>
+						<ab xml:id="b.MAR.006.020" type="verse" n="20">
+							porque <rs key="#per10">Herodes</rs> temía a <rs key="#per18">Juan</rs>, sabiendo que era un <rs key="#per18">hombre justo y santo</rs>, y lo protegía. Cuando lo oía, se quedaba muy perplejo, pero lo escuchaba de buena gana.
+						</ab>
+						<ab xml:id="b.MAR.006.021" type="verse" n="21">
+							Llegó el día oportuno cuando <rs key="#per10">Herodes</rs>, en la fiesta de su cumpleaños, daba una cena a sus <rs key="#org100">príncipes</rs> y <rs key="#org100">tribunos</rs> y a los <rs key="#org100">altos dignatarios de <rs key="#pla7">Galilea</rs></rs>.
+						</ab>
+						<ab xml:id="b.MAR.006.022" type="verse" n="22">
+							<!--sex: dance; ascendant; erotic-time cert="medium"; positive; neutral-->
+							Entró la <rs key="#per38">hija de <rs key="#per951">Herodías</rs></rs> y danzó, y agradó a <rs key="#per10">Herodes</rs> y a los que estaban con él a la mesa. El <rs key="#per10">rey</rs> entonces dijo a la <rs key="#per38">muchacha</rs>:  <q who="#per10" toWhom="#per38" type="oral">Pídeme lo que quieras y yo te lo daré.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.023" type="verse" n="23">
+							Y le juró: <q who="#per10" toWhom="#per951" type="oral">Todo lo que me pidas te daré, hasta la mitad de mi <rs key="#pla2" cert="low">reino</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.024" type="verse" n="24">
+							<!--sex: ascendant; negative; positive-->
+							Saliendo ella, dijo a su <rs key="#per951">madre</rs>: <q who="#per38" toWhom="#per951" type="oral">¿Qué pediré?</q> Y esta le dijo: <q who="#per951" toWhom="#per38" type="oral">La cabeza de <rs key="#per18">Juan el Bautista</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.025" type="verse" n="25">
+							Entonces ella entró apresuradamente ante el <rs key="#per10">rey</rs>, y pidió diciendo:  <q who="#per38" toWhom="#per10" type="oral">Quiero que ahora mismo me des en un plato la cabeza de <rs key="#per18">Juan el Bautista</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.026" type="verse" n="26">
+							El <rs key="#per10">rey</rs> se entristeció mucho, pero a causa del juramento y de los que estaban con él a la mesa, no quiso desairarla.
+						</ab>
+						<ab xml:id="b.MAR.006.027" type="verse" n="27">
+							En seguida el <rs key="#per10">rey</rs>, enviando a uno de la <rs key="#org24">guardia</rs>, mandó que fuera traída la cabeza de <rs key="#per18">Juan</rs>.
+						</ab>
+						<ab xml:id="b.MAR.006.028" type="verse" n="28">
+							<!--sex: ascendant; negative; neutral-->
+							El <rs key="#org24">guarda</rs> fue y lo decapitó en la cárcel, trajo su cabeza en un plato y la dio a la <rs key="#per38">muchacha</rs>, y la <rs key="#per38">muchacha</rs> la dio a su <rs key="#per951">madre</rs>.
+						</ab>
+						<ab xml:id="b.MAR.006.029" type="verse" n="29">
+							Cuando oyeron esto sus <rs key="#org27">discípulos</rs>, vinieron y tomaron su cuerpo, y lo pusieron en un sepulcro.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Alimentación de los cinco mil</head>
+						<ab xml:id="b.MAR.006.030" type="verse" n="30">
+							Entonces los <rs key="#org3">apóstoles</rs> se reunieron con <rs key="#per1">Jesús</rs> y le contaron todo lo que habían hecho y lo que habían enseñado.
+						</ab>
+						<ab xml:id="b.MAR.006.031" type="verse" n="31">
+							Él les dijo: <q who="#per1" toWhom="#org3" type="oral">Venid vosotros aparte, a un lugar desierto, y descansad un poco.</q> (Eran muchos los que iban y venían, de manera que ni aun tenían tiempo para comer.)
+						</ab><!--jct: estrés-->
+						<ab xml:id="b.MAR.006.032" type="verse" n="32">
+							Y se fueron solos en una barca a un lugar desierto.
+						</ab>
+						<ab xml:id="b.MAR.006.033" type="verse" n="33">
+							Pero muchos los vieron ir y lo reconocieron; entonces muchos fueron allá a pie desde las ciudades, y llegaron antes que ellos, y se juntaron a él.
+						</ab>
+						<ab xml:id="b.MAR.006.034" type="verse" n="34">
+							Salió <rs key="#per1">Jesús</rs> y vio una <rs key="#org0">gran multitud</rs>, y tuvo compasión de ellos, porque eran como <rs key="#org0">ovejas</rs> que no tenían <rs key="#per1">pastor</rs>; y comenzó a enseñarles muchas cosas.
+						</ab>
+						<ab xml:id="b.MAR.006.035" type="verse" n="35">
+							Cuando ya era muy avanzada la hora, sus <rs key="#org3">discípulos</rs> se acercaron a él, y le dijeron:  <q who="#org3" toWhom="#per1" type="oral">El lugar es desierto y la hora ya muy avanzada.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.036" type="verse" n="36">
+							<q who="#org3" toWhom="#per1" type="oral">Despídelos para que vayan a los campos y aldeas de alrededor y compren pan, pues no tienen qué comer.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.037" type="verse" n="37">
+							Respondiendo él, les dijo: <q who="#per1" toWhom="#org3" type="oral">Dadles vosotros de comer.</q> Ellos le dijeron: <q who="#org3" toWhom="#per1" type="oral">¿Quieres que vayamos y compremos pan por doscientos denarios y les demos de comer?</q>
+						</ab>
+						<ab xml:id="b.MAR.006.038" type="verse" n="38">
+							Él les preguntó: <q who="#per1" toWhom="#org3" type="oral">¿Cuántos panes tenéis? Id a ver.</q> Y al saberlo, dijeron: <q who="#org3" toWhom="#per1" type="oral">Cinco, y dos peces.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.039" type="verse" n="39">
+							Entonces les mandó que hicieran recostar a todos por grupos sobre la hierba verde.
+						</ab>
+						<ab xml:id="b.MAR.006.040" type="verse" n="40">
+							Se recostaron por grupos, de ciento en ciento, y de cincuenta en cincuenta.
+						</ab>
+						<ab xml:id="b.MAR.006.041" type="verse" n="41">
+							Entonces tomó los cinco panes y los dos peces y, levantando los ojos al cielo, bendijo, y partió los panes y dio a sus <rs key="#org3">discípulos</rs> para que los pusieran delante; también repartió los dos peces entre todos.
+						</ab>
+						<ab xml:id="b.MAR.006.042" type="verse" n="42">
+							Comieron todos y se saciaron.
+						</ab>
+						<ab xml:id="b.MAR.006.043" type="verse" n="43">
+							Y recogieron, de los pedazos y de lo que sobró de los peces, doce cestas llenas.
+						</ab>
+						<ab xml:id="b.MAR.006.044" type="verse" n="44">
+							Los que comieron eran <rs key="#org0">cinco mil hombres</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús anda sobre el mar</head>
+						<ab xml:id="b.MAR.006.045" type="verse" n="45">
+							En seguida hizo a sus <rs key="#org3">discípulos</rs> entrar en la barca e ir delante de él a <rs key="#pla45">Betsaida</rs>, en la otra ribera, entre tanto que él despedía a la <rs key="#org0">multitud</rs>.
+						</ab>
+						<ab xml:id="b.MAR.006.046" type="verse" n="46">
+							Y después que los despidió, se fue al monte a orar.
+						</ab>
+						<ab xml:id="b.MAR.006.047" type="verse" n="47">
+							Al llegar la noche, la barca estaba en medio del <rs key="#pla43">mar</rs>, y él solo en tierra.
+						</ab>
+						<ab xml:id="b.MAR.006.048" type="verse" n="48">
+							Viéndolos remar con gran esfuerzo, porque el viento les era contrario, cerca de la cuarta vigilia de la noche vino a ellos andando sobre el <rs key="#pla43">mar</rs>, y quería adelantárseles.
+						</ab>
+						<ab xml:id="b.MAR.006.049" type="verse" n="49">
+							Viéndolo ellos andar sobre el <rs key="#pla43">mar</rs>, pensaron que era un <rs key="#per1">fantasma</rs> y gritaron,
+						</ab>
+						<ab xml:id="b.MAR.006.050" type="verse" n="50">
+							porque todos lo veían, y se asustaron. Pero en seguida habló con ellos, y les dijo: <q who="#per1" toWhom="#org3" type="oral">¡Tened ánimo! Soy yo, no temáis.</q>
+						</ab>
+						<ab xml:id="b.MAR.006.051" type="verse" n="51">
+							Subió a la barca con ellos, y se calmó el viento. Ellos se asustaron mucho, y se maravillaban,
+						</ab>
+						<ab xml:id="b.MAR.006.052" type="verse" n="52">
+							pues aún no habían entendido lo de los panes, por cuanto estaban endurecidos sus corazones.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús sana a los enfermos en Genesaret</head>
+						<ab xml:id="b.MAR.006.053" type="verse" n="53">
+							Terminada la travesía, vinieron a <rs key="#pla21">tierra de <rs key="#pla21">Genesaret</rs></rs> y arribaron a la orilla.
+						</ab>
+						<ab xml:id="b.MAR.006.054" type="verse" n="54">
+							Al salir ellos de la barca, en seguida la <rs key="#org0">gente</rs> lo reconoció.
+						</ab>
+						<ab xml:id="b.MAR.006.055" type="verse" n="55">
+							Mientras recorrían toda la <rs key="#pla21">tierra de alrededor</rs>, comenzaron a traer de todas partes <rs key="#org15">enfermos</rs> en camillas a donde oían que estaba.
+						</ab>
+						<ab xml:id="b.MAR.006.056" type="verse" n="56">
+							Y dondequiera que entraba, ya fuera en <rs key="#pla21">aldeas</rs>, en <rs key="#pla21">ciudades</rs> o en campos, ponían en las calles a los que estaban <rs key="#org15">enfermos</rs> y le rogaban que los dejara tocar siquiera el borde de su manto; y todos los que lo tocaban quedaban sanos.
+						</ab>
+					</div>
+				</div>
+				
+				<div xml:id="b.MAR.007" type="chapter" n="7">
+					<div type="pericope">
+						<head type="pericope">Lo que contamina al hombre</head>
+						<ab xml:id="b.MAR.007.001" type="verse" n="1">
+							Se acercaron a <rs key="#per1">Jesús</rs> los <rs key="#org2">fariseos</rs> y algunos de los <rs key="#org5">escribas</rs>, que habían venido de <rs key="#pla3">Jerusalén</rs>;
+						</ab>
+						<ab xml:id="b.MAR.007.002" type="verse" n="2">
+							estos, viendo a algunos de los <rs key="#org3">discípulos de <rs key="#per1">Jesús</rs></rs> comer pan con manos impuras, esto es, no lavadas, los condenaban,,
+						</ab>
+						<ab xml:id="b.MAR.007.003" type="verse" n="3">
+							(pues los <rs key="#org2">fariseos</rs> y todos los <rs key="#org13">judíos</rs>, aferrándose a la tradición de los <rs key="#org25">ancianos</rs>, si no se lavan muchas veces las manos, no comen.
+						</ab>
+						<ab xml:id="b.MAR.007.004" type="verse" n="4">
+							Y cuando regresan de la plaza, si no se lavan, no comen. Y otras muchas cosas hay que se aferran en guardar, como los lavamientos de los vasos de beber, de los jarros, de los utensilios de metal y de las camas.)
+						</ab>
+						<ab xml:id="b.MAR.007.005" type="verse" n="5">
+							Le preguntaron, pues, los <rs key="#org2">fariseos</rs> y los <rs key="#org5">escribas</rs>: <q who="#org2 #org5" toWhom="#per1" type="oral">¿Por qué tus <rs key="#org3">discípulos</rs> no andan conforme a la tradición de los <rs key="#org25">ancianos</rs>, sino que comen pan con manos impuras?</q>
+						</ab>
+						<ab xml:id="b.MAR.007.006" type="verse" n="6">
+							Respondiendo él, les dijo: <q who="#per1" toWhom="#org2 #org5" type="oral">¡Hipócritas! Bien profetizó de vosotros <rs key="#per19">Isaías</rs>, como está escrito: <q who="#per19" toWhom="#org0" type="written"><q who="#per14" toWhom="#org0" type="oral">Este <rs key="#org70">pueblo</rs> de labios me honra, mas su corazón está lejos de mí,</q></q></q>
+						</ab>
+						<ab xml:id="b.MAR.007.007" type="verse" n="7">
+							<q who="#per1" toWhom="#org2 #org5" type="oral"><q who="#per19" toWhom="#org0" type="written"><q who="#per14" toWhom="#org0" type="oral">pues en vano me honran, enseñando como doctrinas, mandamientos de <rs key="#org0">hombres</rs>,</q></q></q>
+						</ab>
+						<ab xml:id="b.MAR.007.008" type="verse" n="8">
+							<q who="#per1" toWhom="#org2 #org5" type="oral">porque, dejando el mandamiento de <rs key="#per14">Dios</rs>, os aferráis a la tradición de los <rs key="#org70">hombres</rs>: los lavamientos de los jarros y de los vasos de beber. Y hacéis otras muchas cosas semejantes.</q>
+						</ab>
+						<ab xml:id="b.MAR.007.009" type="verse" n="9">
+							Les decía también: <q who="#per1" toWhom="#org2 #org5" type="oral">Bien invalidáis el mandamiento de <rs key="#per14">Dios</rs> para guardar vuestra tradición,</q>
+						</ab>
+						<ab xml:id="b.MAR.007.010" type="verse" n="10">
+							<!--sex: ascendant; positive; condemned-->
+							<q who="#per1" toWhom="#org2 #org5" type="oral">porque <rs key="#per26">Moisés</rs> dijo:  <q who="#per26" toWhom="#org0" type="oral">Honra a tu padre y a tu madre</q> y <q who="#per26" toWhom="#org0" type="oral">El que maldiga al padre o a la madre, muera irremisiblemente,</q></q>
+						</ab>
+						<ab xml:id="b.MAR.007.011" type="verse" n="11">
+							<!--sex: ascendant; positive; neutral-->
+							<q who="#per1" toWhom="#org2 #org5" type="oral">pero vosotros decís: <q who="#org2 #org5" toWhom="#org0" type="soCalled">Basta que diga un hombre al padre o a la madre: <q who="#org0" toWhom="#org0" type="oral">Es Corbán</q> (que quiere decir:  <q who="#org0" toWhom="#org0" type="oral">Mi ofrenda a <rs key="#per14">Dios</rs></q>) <q who="#org0" toWhom="#org0" type="oral">todo aquello con que pudiera ayudarte ,</q></q></q>
+						</ab>
+						<ab xml:id="b.MAR.007.012" type="verse" n="12">
+							<!--sex: ascendant; positive; neutral-->
+							<q who="#per1" toWhom="#org2 #org5" type="oral">y no lo dejáis hacer más por su padre o por su madre,</q>
+						</ab>
+						<ab xml:id="b.MAR.007.013" type="verse" n="13">
+							<q who="#per1" toWhom="#org2 #org5" type="oral">invalidando la palabra de <rs key="#per14">Dios</rs> con vuestra tradición que habéis transmitido. Y muchas cosas hacéis semejantes a estas.</q>
+						</ab>
+						<ab xml:id="b.MAR.007.014" type="verse" n="14">
+							Llamando a sí a toda la <rs key="#org0">multitud</rs>, les dijo: <q who="#per1" toWhom="#org0" type="oral">Oídme todos y entended:</q>
+						</ab>
+						<ab xml:id="b.MAR.007.015" type="verse" n="15">
+							<q who="#per1" toWhom="#org0" type="oral">Nada hay fuera del <rs key="#org0">hombre</rs> que entre en él, que lo pueda contaminar; pero lo que sale de él, eso es lo que contamina al <rs key="#org0">hombre</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.007.016" type="verse" n="16">
+							<q who="#per1" toWhom="#org0" type="oral">Si alguno tiene oídos para oir, oiga.</q>
+						</ab>
+						<ab xml:id="b.MAR.007.017" type="verse" n="17">
+							Cuando se alejó de la <rs key="#org0">multitud</rs> y entró en casa, le preguntaron sus <rs key="#org3">discípulos</rs> sobre la parábola.
+						</ab>
+						<ab xml:id="b.MAR.007.018" type="verse" n="18">
+							Él les dijo: <q who="#per1" toWhom="#org3" type="oral">¿También vosotros estáis así, sin entendimiento? ¿No entendéis que nada de fuera que entra en el <rs key="#org0">hombre</rs> lo puede contaminar,</q>
+						</ab>
+						<ab xml:id="b.MAR.007.019" type="verse" n="19">
+							<q who="#per1" toWhom="#org3" type="oral">porque no entra en su corazón, sino en el vientre, y sale a la letrina?</q> Esto decía, declarando limpios todos los alimentos.
+						</ab>
+						<ab xml:id="b.MAR.007.020" type="verse" n="20">
+							Pero decía que lo que sale del <rs key="#org0">hombre</rs>, eso contamina al <rs key="#org0">hombre</rs>,
+						</ab>
+						<ab xml:id="b.MAR.007.021" type="verse" n="21">
+							<!--sex: adultery; fornication; condemned; neutral-->
+							porque de dentro, del corazón de los <rs key="#org0">hombres</rs>, salen los malos pensamientos, los adulterios, las fornicaciones, los homicidios,
+							<!--jct:
+								* fornicaciones: porneia πορνεῖαι  πορνεiαι https://biblehub.com/greek/4202.htm
+								* adulterio: moicheiai μοιχεῖαι μοιχειαι   
+								https://biblehub.com/greek/3430.htm
+							-->
+						</ab>
+						<ab xml:id="b.MAR.007.022" type="verse" n="22">
+							<!--sex: lust; condemned-->
+							los hurtos, las avaricias, las maldades, el engaño, la lujuria, la envidia, la calumnia, el orgullo y la insensatez.
+							<!--jct:
+								lujuria: ἀσέλγεια  ασέλγεια, aselgeia; 
+							https://biblehub.com/greek/766.htm
+							-->
+						</ab>
+						<ab xml:id="b.MAR.007.023" type="verse" n="23">
+							Todas estas maldades salen de dentro y contaminan al <rs key="#org0">hombre</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La fe de la mujer sirofenicia</head>
+						<ab xml:id="b.MAR.007.024" type="verse" n="24">
+							Levantándose de allí, se fue a la región de <rs key="#pla22">Tiro</rs> y de <rs key="#pla23">Sidón</rs>. Entró en una casa, y no quería que nadie lo supiera; pero no pudo esconderse.
+						</ab>
+						<ab xml:id="b.MAR.007.025" type="verse" n="25">
+							<!--sex: ascendant; negative; neutral-->
+							Una <rs key="#per952">mujer</rs>, cuya <rs key="#org15">hija</rs> tenía un <rs key="#org6">espíritu impuro</rs>, luego que oyó de él vino y se postró a sus pies.
+						</ab>
+						<ab xml:id="b.MAR.007.026" type="verse" n="26">
+							<!--sex: ascendant; negative; neutral-->
+							La <rs key="#per952">mujer</rs> era <rs key="#per952">griega</rs>, <rs key="#per952">sirofenicia</rs> de origen, y le rogaba que echara fuera de su <rs key="#org15">hija</rs> al <rs key="#org6">demonio</rs>.
+						</ab>
+						<ab xml:id="b.MAR.007.027" type="verse" n="27">
+							<!--sex: ascendant; condemned; neutral-->
+							Pero <rs key="#per1">Jesús</rs> le dijo:  <q who="#per1" toWhom="#per952" type="oral">Deja primero que se sacien los hijos, porque no está bien tomar el pan de los hijos y echarlo a los perros.</q>
+						</ab>
+						<ab xml:id="b.MAR.007.028" type="verse" n="28">
+							Respondió ella y le dijo: <q who="#per952" toWhom="#per1" type="oral">Sí, <rs key="#per1">Señor</rs>; pero aun los perros, debajo de la mesa, comen de las migajas de los hijos.</q>
+						</ab>
+						<ab xml:id="b.MAR.007.029" type="verse" n="29">
+							<!--sex: ascendant; blessed; negative-->
+							Entonces le dijo: <q who="#per1" toWhom="#per952" type="oral">Por causa de esta palabra, vete; el <rs key="#org6">demonio</rs> ha salido de tu <rs key="#org15">hija</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.007.030" type="verse" n="30">
+							<!--sex: ascendant; blessed; negative-->
+							Cuando la <rs key="#per952">mujer</rs> llegó a su casa, halló a la <rs key="#org15">hija</rs> acostada en la cama, y que el <rs key="#org6">demonio</rs> había salido de ella.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús sana a un sordomudo</head>
+						<ab xml:id="b.MAR.007.031" type="verse" n="31">
+							Volviendo a salir de la región de <rs key="#pla22">Tiro</rs>, vino por <rs key="#pla23">Sidón</rs> al <rs key="#pla43">Mar de <rs key="#pla7">Galilea</rs></rs>, pasando por la <rs key="#pla40">región de <rs key="#pla40">Decápolis</rs></rs>.
+						</ab>
+						<ab xml:id="b.MAR.007.032" type="verse" n="32">
+							Le trajeron un <rs key="#org15">sordo y tartamudo</rs>, y le rogaron que pusiera la mano sobre él.
+						</ab>
+						<ab xml:id="b.MAR.007.033" type="verse" n="33">
+							Entonces, apartándolo de la <rs key="#org0">gente</rs>, le metió los dedos en los oídos, escupió y tocó su lengua.
+						</ab>
+						<ab xml:id="b.MAR.007.034" type="verse" n="34">
+							Luego, levantando los ojos al cielo, gimió y le dijo: <q who="#per1" toWhom="#org15" type="oath" cert="low">¡Efata!</q> (que quiere decir: <q who="#per1" toWhom="#org15" type="oath">Sé abierto</q>).
+						</ab>
+						<ab xml:id="b.MAR.007.035" type="verse" n="35">
+							Al momento fueron abiertos sus oídos, se desató la ligadura de su lengua y hablaba bien.
+						</ab>
+						<ab xml:id="b.MAR.007.036" type="verse" n="36">
+							Y les mandó que no lo dijeran a nadie; pero, cuanto más les mandaba, tanto más y más lo divulgaban.
+						</ab>
+						<ab xml:id="b.MAR.007.037" type="verse" n="37">
+							Y en gran manera se maravillaban, diciendo: <q who="#org0" toWhom="#org0" type="oral">Bien lo ha hecho todo; hace a los <rs key="#org0">sordos</rs> oir y a los <rs key="#org0">mudos</rs> hablar.</q>
+						</ab>
+					</div>
+				</div>
+				
+				<div xml:id="b.MAR.008" type="chapter" n="8">
+					<div type="pericope">
+						<head type="pericope">Alimentación de los cuatro mil</head>
+						<ab xml:id="b.MAR.008.001" type="verse" n="1">
+							En aquellos días, como había una <rs key="#org0">gran multitud</rs> y no tenían qué comer, <rs key="#per1">Jesús</rs> llamó a sus <rs key="#org3">discípulos</rs> y les dijo:
+						</ab>
+						<ab xml:id="b.MAR.008.002" type="verse" n="2">
+							<q who="#per1" toWhom="#org3" type="oral">Tengo compasión de la <rs key="#org0">gente</rs>, porque ya hace tres días que están conmigo y no tienen qué comer;</q>
+						</ab>
+						<ab xml:id="b.MAR.008.003" type="verse" n="3">
+							<q who="#per1" toWhom="#org3" type="oral">y si los envío en ayunas a sus casas, se desmayarán en el camino, pues algunos de ellos han venido de lejos.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.004" type="verse" n="4">
+							Sus <rs key="#org3">discípulos</rs> le respondieron:  <q who="#org3" toWhom="#per1" type="oral">¿De dónde podrá alguien saciar de pan a estos aquí en el desierto?</q>
+						</ab>
+						<ab xml:id="b.MAR.008.005" type="verse" n="5">
+							Él les preguntó: <q who="#per1" toWhom="#org3" type="oral">¿Cuántos panes tenéis?</q> Ellos dijeron: <q who="#org3" toWhom="#per1" type="oral">Siete.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.006" type="verse" n="6">
+							Entonces mandó a la <rs key="#org0">multitud</rs> que se recostara en tierra, tomó los siete panes y, habiendo dado gracias, los partió y dio a sus <rs key="#org3">discípulos</rs> para que los pusieran delante; y los pusieron delante de la <rs key="#org0">multitud</rs>.
+						</ab>
+						<ab xml:id="b.MAR.008.007" type="verse" n="7">
+							Tenían además unos pocos pececillos; los bendijo y mandó que también los pusieran delante.
+						</ab>
+						<ab xml:id="b.MAR.008.008" type="verse" n="8">
+							Comieron y se saciaron; y recogieron, de los pedazos que habían sobrado, siete canastas.
+						</ab>
+						<ab xml:id="b.MAR.008.009" type="verse" n="9">
+							Los que comieron eran como <rs key="#org0">cuatro mil</rs>; y los despidió.
+						</ab>
+						<ab xml:id="b.MAR.008.010" type="verse" n="10">
+							Luego, entrando en la barca con sus <rs key="#org3">discípulos</rs>, vino a la región de <rs key="#pla737">Dalmanuta</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La demanda de una señal</head>
+						<ab xml:id="b.MAR.008.011" type="verse" n="11">
+							Vinieron entonces los <rs key="#org2">fariseos</rs> y comenzaron a discutir con él, pidiéndole señal del <rs key="#pla18">cielo</rs> para tentarlo.
+						</ab>
+						<ab xml:id="b.MAR.008.012" type="verse" n="12">
+							Él, gimiendo en su espíritu, dijo: <q who="#per1" toWhom="#org2" type="oral">¿Por qué pide señal esta generación? De cierto os digo que no se dará señal a esta generación.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.013" type="verse" n="13">
+							Y dejándolos, volvió a entrar en la barca y se fue a la otra ribera.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La levadura de los fariseos</head>
+						<ab xml:id="b.MAR.008.014" type="verse" n="14">
+							Se olvidaron de llevar pan, y no tenían sino un pan consigo en la barca.
+						</ab>
+						<ab xml:id="b.MAR.008.015" type="verse" n="15">
+							Y él les mandó, diciendo: <q who="#per1" toWhom="#org3" type="oral">Mirad, guardaos de la levadura de los <rs key="#org2">fariseos</rs> y de la levadura de <rs key="#per10">Herodes</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.016" type="verse" n="16">
+							Discutían entre sí, diciendo: <q who="#org3" toWhom="#org3" type="oral">Es porque no trajimos pan.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.017" type="verse" n="17">
+							Entendiéndolo <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" toWhom="#org3" type="oral">¿Qué discutís?, ¿porque no tenéis pan? ¿No entendéis ni comprendéis? ¿Aún tenéis endurecido vuestro corazón?</q>
+						</ab>
+						<ab xml:id="b.MAR.008.018" type="verse" n="18">
+							<q who="#per1" toWhom="#org3" type="oral">¿Teniendo ojos no veis, y teniendo oídos no oís? ¿No recordáis?</q>
+						</ab>
+						<ab xml:id="b.MAR.008.019" type="verse" n="19">
+							<q who="#per1" toWhom="#org3" type="oral">Cuando partí los cinco panes entre <rs key="#org0">cinco mil</rs>, ¿cuántas cestas llenas de los pedazos recogisteis?</q> Y ellos dijeron: <q who="#org3" toWhom="#per1" type="oral">Doce.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.020" type="verse" n="20">
+							<q who="#per1" toWhom="#org3" type="oral">Y cuando repartí los siete panes entre <rs key="#org0">cuatro mil</rs>, ¿cuántas canastas llenas de los pedazos recogisteis?</q> Y ellos dijeron: <q who="#org3" toWhom="#per1" type="oral">Siete.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.021" type="verse" n="21">
+							Y les dijo: <q who="#per1" toWhom="#org0" type="oral">¿Cómo es que aún no entendéis?</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Un ciego sanado en Betsaida</head>
+						<ab xml:id="b.MAR.008.022" type="verse" n="22">
+							Vino luego a <rs key="#pla45">Betsaida</rs>, y le trajeron un <rs key="#org15">ciego</rs>, y le rogaron que lo tocara.
+						</ab>
+						<ab xml:id="b.MAR.008.023" type="verse" n="23">
+							Entonces, tomando la mano del ciego, lo sacó fuera de la aldea; escupió en sus ojos, puso sus manos sobre él y le preguntó si veía algo.
+						</ab>
+						<ab xml:id="b.MAR.008.024" type="verse" n="24">
+							Él, mirando, dijo: <q who="#org15" toWhom="#per1" type="oral">Veo los <rs key="#org0">hombres</rs> como árboles, pero los veo que andan.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.025" type="verse" n="25">
+							Luego le puso otra vez las manos sobre los ojos, y le hizo que mirara; y fue restablecido, y vio de lejos y claramente a todos.
+						</ab>
+						<ab xml:id="b.MAR.008.026" type="verse" n="26">
+							<rs key="#per1">Jesús</rs> lo envió a su casa, diciendo:  <q who="#per1" toWhom="#org15" type="oral">No entres en la aldea, ni lo digas a nadie en la aldea.,</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La confesión de Pedro</head>
+						<ab xml:id="b.MAR.008.027" type="verse" n="27">
+							Salieron <rs key="#per1">Jesús</rs> y sus <rs key="#org3">discípulos</rs> por las <rs key="#pla24">aldeas de <rs key="#pla24">Cesarea de <rs key="#pla25">Filipo</rs></rs></rs>. Y en el camino preguntó a sus <rs key="#org3">discípulos</rs>, diciéndoles: <q who="#per1" toWhom="#org3" type="oral">¿Quién dicen los <rs key="#org0">hombres</rs> que soy yo?</q>
+						</ab>
+						<ab xml:id="b.MAR.008.028" type="verse" n="28">
+							Ellos respondieron: <q who="#org3" toWhom="#per1" type="oral">Unos, <rs key="#per1 #per18">Juan el Bautista</rs>; otros, <rs key="#per1 #per13">Elías</rs>; y otros, alguno de los <rs key="#per1">profetas</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.029" type="verse" n="29">
+							Entonces él les dijo: <q who="#per1" toWhom="#org3" type="oral">Y vosotros, ¿quién decís que soy?</q> Respondiendo <rs key="#per21">Pedro</rs>, le dijo: <q who="#per21" toWhom="#per1" type="oral">Tú eres el <rs key="#per1">Cristo</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.030" type="verse" n="30">
+							Pero él les mandó que no dijeran esto de él a nadie.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús anuncia su muerte</head>
+						<ab xml:id="b.MAR.008.031" type="verse" n="31">
+							<!--sex: ascendant; negative; blessed-->
+							Comenzó a enseñarles que le era necesario al <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> padecer mucho, ser desechado por los <rs key="#org25">ancianos</rs>, por los <rs key="#org12">principales sacerdotes</rs> y por los <rs key="#org5">escribas</rs>, ser muerto y resucitar después de tres días.
+						</ab>
+						<ab xml:id="b.MAR.008.032" type="verse" n="32">
+							Esto les decía claramente. Entonces <rs key="#per21">Pedro</rs> lo tomó aparte y comenzó a reconvenirlo.
+						</ab>
+						<ab xml:id="b.MAR.008.033" type="verse" n="33">
+							Pero él, volviéndose y mirando a los <rs key="#org3">discípulos</rs>, reprendió a <rs key="#per21">Pedro</rs>, diciendo: <q who="#per1" toWhom="#per21 #per20" type="oral">¡Quítate de delante de mí, <rs key="#per20">Satanás</rs>!, porque no pones la mira en las cosas de <rs key="#per14">Dios</rs>, sino en las de los <rs key="#org0">hombres</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.034" type="verse" n="34">
+							Y llamando a la <rs key="#org0">gente</rs> y a sus <rs key="#org3">discípulos</rs>, les dijo: <q who="#per1" toWhom="#org3 #org0" type="oral">Si alguno quiere venir en pos de mí, niéguese a sí mismo, tome su cruz y sígame.</q>
+						</ab>
+						<ab xml:id="b.MAR.008.035" type="verse" n="35">
+							<q who="#per1" toWhom="#org3 #org0" type="oral">Todo el que quiera salvar su vida, la perderá; y todo el que pierda su vida por causa de mí y del evangelio, la salvará,</q>
+						</ab>
+						<ab xml:id="b.MAR.008.036" type="verse" n="36">
+							<q who="#per1" toWhom="#org3 #org0" type="oral">porque ¿de qué le aprovechará al <rs key="#org0">hombre</rs> ganar todo el mundo, si pierde su alma?</q>
+						</ab>
+						<ab xml:id="b.MAR.008.037" type="verse" n="37">
+							<q who="#per1" toWhom="#org3 #org0" type="oral">¿O qué recompensa dará el <rs key="#org0">hombre</rs> por su alma?</q>
+						</ab>
+						<ab xml:id="b.MAR.008.038" type="verse" n="38">
+							<!--sex: adultery; condemned; positive-->
+							<q who="#per1" toWhom="#org3 #org0" type="oral">Por tanto, el que se avergüence de mí y de mis palabras en esta generación adúltera y pecadora, también el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> se avergonzará de él cuando venga en la gloria de su <rs key="#per14">Padre</rs> con los <rs key="#org4">santos ángeles</rs>.</q>
+						</ab>
+					</div>
+				</div>
+				
+				<div xml:id="b.MAR.009" type="chapter" n="9">
+					<div type="pericope" part="Y">
+						<ab xml:id="b.MAR.009.001" type="verse" n="1">
+							También les dijo: <q who="#per1" toWhom="#org3 #org0" type="oral">De cierto os digo que algunos de los que están aquí no gustarán la muerte hasta que hayan visto que el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs> ha venido con poder.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La transfiguración</head>
+						<ab xml:id="b.MAR.009.002" type="verse" n="2">
+							Seis días después, <rs key="#per1">Jesús</rs> tomó a <rs key="#per21">Pedro</rs>, a <rs key="#per23">Jacobo</rs> y a <rs key="#per25">Juan</rs>, y los llevó aparte solos a un monte alto. Allí se transfiguró delante de ellos.
+						</ab>
+						<ab xml:id="b.MAR.009.003" type="verse" n="3">
+							Sus vestidos se volvieron resplandecientes, muy blancos, como la nieve, tanto que ningún lavador en la tierra los puede dejar tan blancos.
+							<!--jct: el comentario parece parte de un anuncio de detergentes-->
+						</ab>
+						<ab xml:id="b.MAR.009.004" type="verse" n="4">
+							Y vieron a <rs key="#per13">Elías</rs> y a <rs key="#per26">Moisés</rs> que hablaban con <rs key="#per1">Jesús</rs>.
+						</ab>
+						<ab xml:id="b.MAR.009.005" type="verse" n="5">
+							Entonces <rs key="#per21">Pedro</rs> dijo a <rs key="#per1">Jesús</rs>: <q who="#per21" toWhom="#per1" type="oral">¡<rs key="#per1">Maestro</rs>, bueno es para nosotros que estemos aquí! Hagamos tres enramadas: una para ti, otra para <rs key="#per26">Moisés</rs> y otra para <rs key="#per13">Elías</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.006" type="verse" n="6">
+							No sabía lo que hablaba, pues estaban asustados.
+						</ab>
+						<ab xml:id="b.MAR.009.007" type="verse" n="7">
+							<!--sex: ascendant; blessed; positive-->
+							Entonces vino una nube que les hizo sombra, y desde la nube una voz que decía: <q who="#per14" toWhom="#per21 #per23 #per25 #per13 #per26" type="oral">«Este es mi <rs key="#per1">Hijo amado</rs>; a él oíd».</q>
+						</ab>
+						<ab xml:id="b.MAR.009.008" type="verse" n="8">
+							Y luego, cuando miraron, no vieron a nadie más con ellos, sino a <rs key="#per1">Jesús</rs> solo.
+						</ab>
+						<ab xml:id="b.MAR.009.009" type="verse" n="9">
+							<!--sex: ascendant; positive; negative-->
+							Mientras descendían del monte, les mandó que a nadie dijeran lo que habían visto, hasta que el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> hubiera resucitado de los muertos.
+						</ab>
+						<ab xml:id="b.MAR.009.010" type="verse" n="10">
+							Por eso guardaron la palabra entre sí, discutiendo qué sería aquello de resucitar de los muertos.
+						</ab>
+						<ab xml:id="b.MAR.009.011" type="verse" n="11">
+							Le preguntaron, diciendo: <q who="#per21 #per23 #per25" toWhom="#per1" type="oral">¿Por qué dicen los <rs key="#org5">escribas</rs> que es necesario que <rs key="#per13">Elías</rs> venga primero?</q>
+						</ab>
+						<ab xml:id="b.MAR.009.012" type="verse" n="12">
+							<!--sex: negative; positive; ascendant-->
+							Respondiendo él, les dijo: <q who="#per1" toWhom="#per21 #per23 #per25" type="oral"><rs key="#per13">Elías</rs> a la verdad vendrá primero y restaurará todas las cosas. Pero ¿no dice la <rs key="#wor1">Escritura</rs> que el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> debe padecer mucho y ser despreciado?</q>
+						</ab>
+						<ab xml:id="b.MAR.009.013" type="verse" n="13">
+							<q who="#per1" toWhom="#per21 #per23 #per25" type="oral">Pero os digo que <rs key="#per13">Elías</rs> ya vino, y le hicieron todo lo que quisieron, como está escrito de él.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús sana a un muchacho endemoniado</head>
+						<ab xml:id="b.MAR.009.014" type="verse" n="14">
+							Cuando llegó a donde estaban los <rs key="#org3">discípulos</rs>, vio una <rs key="#org0">gran multitud</rs> alrededor de ellos, y <rs key="#org5">escribas</rs> que discutían con ellos.
+						</ab>
+						<ab xml:id="b.MAR.009.015" type="verse" n="15">
+							En seguida toda la <rs key="#org0">gente</rs>, viéndolo, se asombró; y corriendo a él, lo saludaron.
+						</ab>
+						<ab xml:id="b.MAR.009.016" type="verse" n="16">
+							Él les preguntó: <q who="#per1" toWhom="#org0" type="oral">¿Qué discutís con ellos?</q>
+						</ab>
+						<ab xml:id="b.MAR.009.017" type="verse" n="17">
+							<!--sex: ascendant; positive; neutral-->
+							Respondiendo uno de la <rs key="#org0">multitud</rs>, dijo: <q who="#org0" toWhom="#per1" type="oral"><rs key="#per1">Maestro</rs>, traje a ti mi <rs key="#org15">hijo</rs>, que tiene un <rs key="#org6">espíritu mudo</rs>,</q>
+						</ab>
+						<ab xml:id="b.MAR.009.018" type="verse" n="18">
+							<q who="#org0" toWhom="#per1" type="oral">el cual, dondequiera que lo toma, lo sacude; echa espumarajos, cruje los dientes y se va secando. Dije a tus <rs key="#org3">discípulos</rs> que lo echaran fuera, pero no pudieron.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.019" type="verse" n="19">
+							Respondiendo él, les dijo: <q who="#per1" toWhom="#org0 #org3" type="oral">¡Generación incrédula! ¿Hasta cuándo he de estar con vosotros? ¿Hasta cuándo os he de soportar? Traédmelo.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.020" type="verse" n="20">
+							Se lo trajeron, y cuando el <rs key="#org6">espíritu</rs> vio a <rs key="#per1">Jesús</rs>, sacudió con violencia al <rs key="#org15">muchacho</rs>, que cayó al suelo revolcándose y echando espumarajos.
+						</ab>
+						<ab xml:id="b.MAR.009.021" type="verse" n="21">
+							<!--sex: ascendant; negative; neutral-->
+							<rs key="#per1">Jesús</rs> preguntó al <rs key="#org0">padre</rs>:  <q who="#per1" toWhom="#org0" type="oral">¿Cuánto tiempo hace que le sucede esto?</q> Él dijo: <q who="#org0" toWhom="#per1" type="oral">Desde <rs key="#org15">niño</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.022" type="verse" n="22">
+							<!--sex: ascendant; negative; neutral-->
+							<q who="#org0" toWhom="#per1" type="oral">Y muchas veces lo arroja al fuego o al agua, para matarlo; pero si puedes hacer algo, ten misericordia de nosotros y ayúdanos.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.023" type="verse" n="23">
+							<rs key="#per1">Jesús</rs> le dijo:  <q who="#per1" toWhom="#org0" type="oral">Si puedes creer, al que cree todo le es posible.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.024" type="verse" n="24">
+							<!--sex: ascendant; negative; positive-->
+							Inmediatamente el <rs key="#org0">padre del <rs key="#org15">muchacho</rs></rs> clamó y dijo: <q who="#org0" toWhom="#per1" type="oral">Creo; ayuda mi incredulidad.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.025" type="verse" n="25">
+							Cuando <rs key="#per1">Jesús</rs> vio que la <rs key="#org0">multitud</rs> se agolpaba, reprendió al <rs key="#org6">espíritu impuro</rs>, diciéndole:  <q who="#per1" toWhom="#org6" type="oral"><rs key="#org6">Espíritu mudo y sordo</rs>, yo te mando que salgas de él y no entres más en él.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.026" type="verse" n="26">
+							Entonces el <rs key="#org6">espíritu</rs>, clamando y sacudiéndolo con violencia, salió; y él quedó como muerto, de modo que muchos decían: <q who="#org0" toWhom="#org0" type="oral">«Está muerto».</q>
+						</ab>
+						<ab xml:id="b.MAR.009.027" type="verse" n="27">
+							Pero <rs key="#per1">Jesús</rs>, tomándolo de la mano, lo enderezó; y se levantó.
+						</ab>
+						<ab xml:id="b.MAR.009.028" type="verse" n="28">
+							Cuando él entró en casa, sus <rs key="#org3">discípulos</rs> le preguntaron aparte:  <q who="#per1" toWhom="#org3" type="oral">¿Por qué nosotros no pudimos echarlo fuera?</q>
+						</ab>
+						<ab xml:id="b.MAR.009.029" type="verse" n="29">
+							Y les dijo: <q who="#org3" toWhom="#per1" type="oral">Este género con nada puede salir, sino con oración y ayuno.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús anuncia otra vez su muerte</head>
+						<ab xml:id="b.MAR.009.030" type="verse" n="30">
+							Saliendo de allí, caminaron por <rs key="#pla7">Galilea</rs>; y no quería que nadie lo supiera,
+						</ab>
+						<ab xml:id="b.MAR.009.031" type="verse" n="31">
+							<!--sex: ascendant; negative; positive-->
+							pues enseñaba a sus <rs key="#org3">discípulos</rs>, y les decía:  <q who="#per1" toWhom="#org3" type="oral">El <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> será entregado en manos de <rs key="#org0">hombres</rs>, y lo matarán; pero, después de muerto, resucitará al <rs key="#tim1">tercer día</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.032" type="verse" n="32">
+							Pero ellos no entendían esta palabra, y tenían miedo de preguntarle.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">¿Quién es el mayor?</head>
+						<ab xml:id="b.MAR.009.033" type="verse" n="33">
+							Llegó a <rs key="#pla11">Capernaúm</rs> y, cuando estuvo en casa, les preguntó: <q who="#per1" toWhom="#org3" type="oral">¿Qué discutíais entre vosotros por el camino?</q>
+						</ab>
+						<ab xml:id="b.MAR.009.034" type="verse" n="34">
+							Pero ellos callaron, porque por el camino habían discutido entre sí sobre quién había de ser el mayor.
+						</ab>
+						<ab xml:id="b.MAR.009.035" type="verse" n="35">
+							Entonces él se sentó, llamó a los <rs key="#org3">doce</rs> y les dijo: <q who="#per1" toWhom="#org3" type="oral">Si alguno quiere ser el primero, será el último de todos y el servidor de todos.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.036" type="verse" n="36">
+							Y tomó a un niño, lo puso en medio de ellos y, tomándolo en sus brazos, les dijo:
+						</ab>
+						<ab xml:id="b.MAR.009.037" type="verse" n="37">
+							<q who="#per1" toWhom="#org3" type="oral">El que reciba en mi nombre a un niño como este, me recibe a mí; y el que a mí me recibe, no me recibe a mí sino al que me envió.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El que no está contra nosotros, por nosotros está</head>
+						<ab xml:id="b.MAR.009.038" type="verse" n="38">
+							<rs key="#per25">Juan</rs> le respondió diciendo:  <q who="#per25" toWhom="#per1" type="oral"><rs key="#per1">Maestro</rs>, hemos visto a uno que en tu nombre echaba fuera <rs key="#org6">demonios</rs>, pero él no nos sigue, y se lo prohibimos porque no nos seguía.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.039" type="verse" n="39">
+							Pero <rs key="#per1">Jesús</rs> dijo:  <q who="#per1" toWhom="#per25 #org3" type="oral">No se lo prohibáis, porque ninguno hay que haga milagro en mi nombre, que luego pueda hablar mal de mí,</q>
+						</ab>
+						<ab xml:id="b.MAR.009.040" type="verse" n="40">
+							<q who="#per1" toWhom="#per25 #org3" type="oral">pues el que no está contra nosotros, por nosotros está.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.041" type="verse" n="41">
+							<q who="#per1" toWhom="#per25 #org3" type="oral">Y cualquiera que os dé un vaso de agua en mi nombre, porque sois de <rs key="#per1">Cristo</rs>, de cierto os digo que no perderá su recompensa.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Ocasiones de caer</head>
+						<ab xml:id="b.MAR.009.042" type="verse" n="42">
+							<q who="#per1" toWhom="#org3" type="oral">A cualquiera que haga tropezar a uno de estos pequeñitos que creen en mí, mejor le sería que se le atara una piedra de molino al cuello y se le arrojara al mar.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.043" type="verse" n="43">
+							<q who="#per1" toWhom="#org3" type="oral">Si tu mano te es ocasión de caer, córtala, porque mejor te es entrar en la vida manco, que teniendo dos manos ir al <rs key="#pla15">infierno</rs>, al fuego que no puede ser apagado,</q>
+						</ab>
+						<ab xml:id="b.MAR.009.044" type="verse" n="44">
+							<q who="#per1" toWhom="#org3" type="oral">donde el gusano de ellos no muere y el fuego nunca se apaga.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.045" type="verse" n="45">
+							<q who="#per1" toWhom="#org3" type="oral">Y si tu pie te es ocasión de caer, córtalo, porque mejor te es entrar en la vida cojo, que teniendo dos pies ser arrojado al <rs key="#pla15">infierno</rs>, al fuego que no puede ser apagado,</q>
+						</ab>
+						<ab xml:id="b.MAR.009.046" type="verse" n="46">
+							<q who="#per1" toWhom="#org3" type="oral">donde el gusano de ellos no muere y el fuego nunca se apaga.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.047" type="verse" n="47">
+							<!--sex: lust cert="low"; eye; condemned; positive-->
+							<q who="#per1" toWhom="#org3" type="oral">Y si tu ojo te es ocasión de caer, sácalo, porque mejor te es entrar en el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs> con un ojo, que teniendo dos ojos ser arrojado al <rs key="#pla15">infierno</rs>,</q>
+						</ab>
+						<ab xml:id="b.MAR.009.048" type="verse" n="48">
+							<q who="#per1" toWhom="#org3" type="oral">donde el gusano de ellos no muere y el fuego nunca se apaga.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.049" type="verse" n="49">
+							<q who="#per1" toWhom="#org3" type="oral">Todos serán salados con fuego, y todo sacrificio será salado con sal.</q>
+						</ab>
+						<ab xml:id="b.MAR.009.050" type="verse" n="50">
+							<q who="#per1" toWhom="#org3" type="oral">Buena es la sal; pero si la sal se hace insípida, ¿con qué la sazonaréis? Tened sal en vosotros mismos, y vivid en paz los unos con los otros.</q>
+						</ab>
+					</div>
+				</div>
+				<div xml:id="b.MAR.010" type="chapter" n="10">
+					<div type="pericope">
+						<head type="pericope">Jesús enseña sobre el divorcio</head>
+						<ab xml:id="b.MAR.010.001" type="verse" n="1">
+							Levantándose de allí, vino a la <rs key="#pla2">región de <rs key="#pla2">Judea</rs></rs> y al otro lado del <rs key="#pla9">Jordán</rs>. Y volvió el <rs key="#org70">pueblo</rs> a juntarse a él, y de nuevo les enseñaba como solía.
+						</ab>
+						<ab xml:id="b.MAR.010.002" type="verse" n="2">
+							<!--sex: divorce; neutral; negative-->
+							Se acercaron los <rs key="#org2">fariseos</rs> y le preguntaron, para tentarlo, si era lícito al <rs key="#org183">marido</rs> repudiar a su <rs key="#org122">mujer</rs>.
+						</ab>
+						<ab xml:id="b.MAR.010.003" type="verse" n="3">
+							Él, respondiendo, les dijo: <q who="#per1" toWhom="#org70" type="oral">¿Qué os mandó <rs key="#per26">Moisés</rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.010.004" type="verse" n="4">
+							<!--sex: divorce; positive; negative-->
+							Ellos dijeron: <q who="#org70" toWhom="#per1" type="oral"><rs key="#per26">Moisés</rs> permitió dar carta de divorcio y repudiarla.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.005" type="verse" n="5">
+							Respondiendo <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" toWhom="#org70" type="oral">Por la dureza de vuestro corazón os escribió este mandamiento;</q>
+						</ab>
+						<ab xml:id="b.MAR.010.006" type="verse" n="6">
+							<!--sex: woman; man; positive; neutral-->
+							<q who="#per1" toWhom="#org70" type="oral">pero al principio de la creación, <rs key="#per145">hombre</rs> y <rs key="#per241">mujer</rs> los hizo <rs key="#per14">Dios</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.007" type="verse" n="7">
+							<!--sex: marriage cert="medium"; woman; man; positive; neutral-->
+							<q who="#per1" toWhom="#org70" type="oral">Por esto dejará el <rs key="#org183">hombre</rs> a su padre y a su madre, y se unirá a su <rs key="#org122">mujer</rs>,</q>
+						</ab>
+						<ab xml:id="b.MAR.010.008" type="verse" n="8">
+							<!--sex: sex; positive; neutral-->
+							<q who="#per1" toWhom="#org70" type="oral">y los dos serán una sola carne; así que no son ya más dos, sino uno.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.009" type="verse" n="9">
+							<q who="#per1" toWhom="#org70" type="oral">Por tanto, lo que <rs key="#per14">Dios</rs> juntó, no lo separe el <rs key="#org0">hombre</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.010" type="verse" n="10">
+							En casa volvieron los <rs key="#org3">discípulos</rs> a preguntarle sobre lo mismo,
+						</ab>
+						<ab xml:id="b.MAR.010.011" type="verse" n="11">
+							<!--sex: divorce; adultery; negative; neutral-->
+							y les dijo: <q who="#per1" toWhom="#org3" type="oral">Cualquiera que repudia a su <rs key="#org122">mujer</rs> y se casa con otra, comete adulterio contra ella;</q>
+						</ab>
+						<ab xml:id="b.MAR.010.012" type="verse" n="12">
+							<!--sex: divorce; adultery; negative; neutral-->
+							<q who="#per1" toWhom="#org3" type="oral">y si la <rs key="#org122">mujer</rs> repudia a su <rs key="#org183">marido</rs> y se casa con otro, comete adulterio.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús bendice a los niños</head>
+						<ab xml:id="b.MAR.010.013" type="verse" n="13">
+							Le presentaban niños para que los tocara, pero los <rs key="#org3">discípulos</rs> reprendían a los que los presentaban.
+						</ab>
+						<ab xml:id="b.MAR.010.014" type="verse" n="14">
+							Viéndolo <rs key="#per1">Jesús</rs>, se indignó y les dijo:  <q who="#per1" toWhom="#org3" type="oral">Dejad a los niños venir a mí, y no se lo impidáis, porque de los tales es el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.015" type="verse" n="15">
+							<q who="#per1" toWhom="#org3" type="oral">De cierto os digo que el que no reciba el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs> como un niño, no entrará en él.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.016" type="verse" n="16">
+							Y tomándolos en los brazos, ponía las manos sobre ellos y los bendecía.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El joven rico</head>
+						<ab xml:id="b.MAR.010.017" type="verse" n="17">
+							Al salir él para seguir su camino, llegó uno corriendo y, arrodillándose delante de él, le preguntó: <q who="#org0" toWhom="#per1" type="oral"><rs key="#per1">Maestro bueno</rs>, ¿qué haré para heredar la vida eterna?</q>
+						</ab>
+						<ab xml:id="b.MAR.010.018" type="verse" n="18">
+							<rs key="#per1">Jesús</rs> le dijo:  <q who="#per1" toWhom="#org0" type="oral">¿Por qué me llamas bueno? Nadie es bueno, sino sólo uno, <rs key="#per14">Dios</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.019" type="verse" n="19">
+							<!--sex: ascendant; blessed; adultery; condmened-->
+							<q who="#per1" toWhom="#org0" type="oral">Los mandamientos sabes: No adulteres. No mates. No hurtes. No digas falso testimonio. No defraudes. Honra a tu padre y a tu madre.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.020" type="verse" n="20">
+							Él entonces, respondiendo, le dijo: <q who="#org0" toWhom="#per1" type="oral"><rs key="#per1">Maestro</rs>, todo esto lo he guardado desde mi juventud.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.021" type="verse" n="21">
+							Entonces <rs key="#per1">Jesús</rs>, mirándolo, lo amó y le dijo:  <q who="#per1" toWhom="#org0" type="oral">Una cosa te falta: anda, vende todo lo que tienes y dalo a los <rs key="#org102">pobres</rs>, y tendrás tesoro en el <rs key="#pla18">cielo</rs>; y ven, sígueme, tomando tu cruz.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.022" type="verse" n="22">
+							Pero él, afligido por esta palabra, se fue triste, porque tenía muchas posesiones.
+						</ab>
+						<ab xml:id="b.MAR.010.023" type="verse" n="23">
+							Entonces <rs key="#per1">Jesús</rs>, mirando alrededor, dijo a sus <rs key="#org3">discípulos</rs>: <q who="#per1" toWhom="#org3" type="oral">¡Cuán difícilmente entrarán en el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs> los que tienen riquezas!</q>
+						</ab>
+						<ab xml:id="b.MAR.010.024" type="verse" n="24">
+							<!--sex: ascendant; positive; negative-->
+							Los <rs key="#org3">discípulos</rs> se asombraron de sus palabras; pero <rs key="#per1">Jesús</rs>, respondiendo, volvió a decirles: <q who="#per1" toWhom="#org3" type="oral"><rs key="#org3">Hijos</rs>, ¡cuán difícil les es entrar en el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs> a los que confían en las riquezas!</q>
+						</ab>
+						<ab xml:id="b.MAR.010.025" type="verse" n="25">
+							<q who="#per1" toWhom="#org3" type="oral">Más fácil es pasar un camello por el ojo de una aguja, que entrar un <rs key="#org100">rico</rs> en el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.026" type="verse" n="26">
+							Ellos se asombraban aun más, diciendo entre sí: <q who="#org3" toWhom="#org3" type="oral">¿Quién, pues, podrá ser salvo?</q>
+						</ab>
+						<ab xml:id="b.MAR.010.027" type="verse" n="27">
+							Entonces <rs key="#per1">Jesús</rs>, mirándolos, dijo:  <q who="#per1" toWhom="#org3" type="oral">Para los <rs key="#org0">hombres</rs> es imposible, pero no para <rs key="#per14">Dios</rs>, porque todas las cosas son posibles para <rs key="#per14">Dios</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.028" type="verse" n="28">
+							Entonces <rs key="#per21">Pedro</rs> comenzó a decirle:  <q who="#per21" toWhom="#per1" type="oral">Nosotros lo hemos dejado todo y te hemos seguido.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.029" type="verse" n="29">
+							<!--sex: ascendant; negative; positive-->
+							Respondió <rs key="#per1">Jesús</rs> y dijo:  <q who="#per1" toWhom="#per21 #org3" type="oral">De cierto os digo que no hay nadie que haya dejado casa, o hermanos, o hermanas, o padre, o madre, o mujer, o hijos, o tierras, por causa de mí y del evangelio,</q>
+							<!--jct: qué duros estos versículos-->
+						</ab>
+						<ab xml:id="b.MAR.010.030" type="verse" n="30">
+							<!--sex: ascendant; negative; positive-->
+							<q who="#per1" toWhom="#per21 #org3" type="oral">que no reciba cien veces más ahora en este tiempo: casas, hermanos, hermanas, madres, hijos y tierras, aunque con persecuciones, y en el siglo venidero la vida eterna.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.031" type="verse" n="31">
+							<q who="#per1" toWhom="#per21 #org3" type="oral">Pero muchos primeros serán los últimos, y los últimos, primeros.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Nuevamente Jesús anuncia su muerte</head>
+						<ab xml:id="b.MAR.010.032" type="verse" n="32">
+							Iban por el camino subiendo a <rs key="#pla3">Jerusalén</rs>. <rs key="#per1">Jesús</rs> iba delante, y ellos, asombrados, lo seguían con miedo. Entonces, volviendo a tomar a los <rs key="#org3">doce</rs> aparte, les comenzó a decir las cosas que le habían de acontecer:
+						</ab>
+						<ab xml:id="b.MAR.010.033" type="verse" n="33">
+							<!--sex: ascendant; positive; negative-->
+							<q who="#per1" toWhom="#org3" type="oral">Ahora subimos a <rs key="#pla3">Jerusalén</rs>, y el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> será entregado a los <rs key="#org12">principales sacerdotes</rs> y a los <rs key="#org5">escribas</rs>. Lo condenarán a muerte y lo entregarán a los <rs key="#org16">gentiles</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.034" type="verse" n="34">
+							<q who="#per1" toWhom="#org3" type="oral">Se burlarán de él, lo azotarán, lo escupirán y lo matarán; pero al <rs key="#tim1">tercer día</rs> resucitará.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Petición de Santiago y de Juan</head>
+						<ab xml:id="b.MAR.010.035" type="verse" n="35">
+							<!--sex: ascendant; neutral; positive-->
+							Entonces <rs key="#per23">Jacobo</rs> y <rs key="#per25">Juan</rs>, <rs key="#per23 #per25">hijos de <rs key="#per24">Zebedeo</rs></rs>, se le acercaron y le dijeron: <q who="#per23 #per25" toWhom="#per1" type="oral"><rs key="#per1">Maestro</rs>, queremos que nos concedas lo que vamos a pedirte.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.036" type="verse" n="36">
+							Él les preguntó: <q who="#per1" toWhom="#per23 #per25" type="oral">¿Qué queréis que os haga?</q>
+						</ab>
+						<ab xml:id="b.MAR.010.037" type="verse" n="37">
+							Ellos le contestaron: <q who="#per23 #per25" toWhom="#per1" type="oral">Concédenos que en tu gloria nos sentemos el uno a tu derecha y el otro a tu izquierda.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.038" type="verse" n="38">
+							Entonces <rs key="#per1">Jesús</rs> les dijo:  <q who="#per1" toWhom="#per23 #per25" type="oral">No sabéis lo que pedís. ¿Podéis beber del vaso que yo bebo, o ser bautizados con el bautismo con que yo soy bautizado?</q>
+						</ab>
+						<ab xml:id="b.MAR.010.039" type="verse" n="39">
+							Ellos respondieron: <q who="#per23 #per25" toWhom="#per1" type="oral">Podemos.</q> <rs key="#per1">Jesús</rs> les dijo: <q who="#per1" toWhom="#per23 #per25" type="oral">A la verdad, del vaso que yo bebo beberéis, y con el bautismo con que yo soy bautizado seréis bautizados;</q>
+						</ab>
+						<ab xml:id="b.MAR.010.040" type="verse" n="40">
+							<q who="#per1" toWhom="#per23 #per25" type="oral">pero el sentaros a mi derecha y a mi izquierda no es mío darlo, sino a aquellos para quienes está preparado.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.041" type="verse" n="41">
+							Cuando lo oyeron los <rs key="#org3">diez</rs>, comenzaron a enojarse contra <rs key="#per23">Jacobo</rs> y contra <rs key="#per25">Juan</rs>.
+						</ab>
+						<ab xml:id="b.MAR.010.042" type="verse" n="42">
+							Pero <rs key="#per1">Jesús</rs>, llamándolos, les dijo:  <q who="#per1" toWhom="#org3" type="oral">Sabéis que los que son tenidos por <rs key="#org100">gobernantes de las <rs key="#org0">naciones</rs></rs> se enseñorean de ellas, y sus <rs key="#org100">grandes</rs> ejercen sobre ellas potestad.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.043" type="verse" n="43">
+							<q who="#per1" toWhom="#org3" type="oral">Pero no será así entre vosotros, sino que el que quiera hacerse grande entre vosotros, será vuestro servidor;</q>
+						</ab>
+						<ab xml:id="b.MAR.010.044" type="verse" n="44">
+							<q who="#per1" toWhom="#org3" type="oral">y el que de vosotros quiera ser el primero, será siervo de todos,</q>
+						</ab>
+						<ab xml:id="b.MAR.010.045" type="verse" n="45">
+							<!--sex: ascendant; blessed; negative-->
+							<q who="#per1" toWhom="#org3" type="oral">porque el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> no vino para ser servido, sino para servir y para dar su vida en rescate por todos.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El ciego Bartimeo recibe la vista</head>
+						<ab xml:id="b.MAR.010.046" type="verse" n="46">
+							<!--sex: ascendant; negative; positive-->
+							Entonces vinieron a <rs key="#pla26">Jericó</rs>; y al salir de <rs key="#pla26">Jericó</rs> él, sus <rs key="#org3">discípulos</rs> y una <rs key="#org0">gran multitud</rs>, <rs key="#per953">Bartimeo</rs>, el <rs key="#per953">ciego</rs>, <rs key="#per953">hijo de <rs key="#per954">Timeo</rs></rs>, estaba sentado junto al camino, mendigando.
+						</ab>
+						<ab xml:id="b.MAR.010.047" type="verse" n="47">
+							<!--sex: ascendant; positive; negative-->
+							Al oir que era <rs key="#per1">Jesús nazareno</rs>, comenzó a gritar: <q who="#per953" toWhom="#per1" type="oral">¡<rs key="#per1">Jesús</rs>, <rs key="#per1">Hijo de <rs key="#per35">David</rs></rs>, ten misericordia de mí!</q>
+						</ab>
+						<ab xml:id="b.MAR.010.048" type="verse" n="48">
+							<!--sex: ascendant; positive; negative-->
+							Y muchos lo reprendían para que callara, pero él clamaba mucho más: <q who="#per953" toWhom="#per1" type="oral">¡<rs key="#per1">Hijo de <rs key="#per35">David</rs></rs>, ten misericordia de mí!</q>
+						</ab>
+						<ab xml:id="b.MAR.010.049" type="verse" n="49">
+							Entonces <rs key="#per1">Jesús</rs>, deteniéndose, mandó llamarlo; y llamaron al <rs key="#per953">ciego</rs>, diciéndole:  <q who="#per1" toWhom="#per953" type="oral">Ten confianza; levántate, te llama.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.050" type="verse" n="50">
+							Él entonces, arrojando su capa, se levantó y vino a <rs key="#per1">Jesús</rs>.
+						</ab>
+						<ab xml:id="b.MAR.010.051" type="verse" n="51">
+							<rs key="#per1">Jesús</rs> le preguntó:  <q who="#per1" toWhom="#per953" type="oral">¿Qué quieres que te haga?</q> El <rs key="#per953">ciego</rs> le dijo: <q who="#per953" toWhom="#per1" type="oral"><rs key="#per1">Maestro</rs>, que recobre la vista.</q>
+						</ab>
+						<ab xml:id="b.MAR.010.052" type="verse" n="52">
+							<rs key="#per1">Jesús</rs> le dijo:  <q who="#per1" toWhom="#per953" type="oral">Vete, tu fe te ha salvado.</q> Al instante recobró la vista, y seguía a <rs key="#per1">Jesús</rs> por el camino.
+						</ab>
+					</div>
+				</div>
+				<!--cap 10 anotado-->
+				<div xml:id="b.MAR.011" type="chapter" n="11">
+					<div type="pericope">
+						<head type="pericope">La entrada triunfal en Jerusalén</head>
+						<ab xml:id="b.MAR.011.001" type="verse" n="1">
+							Cuando se acercaban a <rs key="#pla3">Jerusalén</rs>, junto a <rs key="#pla27">Betfagé</rs> y a <rs key="#pla31">Betania</rs>, frente al <rs key="#pla28">Monte de los Olivos</rs>, <rs key="#per1">Jesús</rs> envió a dos de sus <rs key="#org3">discípulos</rs>,
+						</ab>
+						<ab xml:id="b.MAR.011.002" type="verse" n="2">
+							y les dijo: <q who="#per1" toWhom="#org3" type="oral">Id a la <rs key="#pla31">aldea</rs> que está enfrente de vosotros, y al entrar en ella hallaréis un pollino atado, en el cual ningún <rs key="#org0">hombre</rs> ha montado. Desatadlo y traedlo.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.003" type="verse" n="3">
+							<q who="#per1" toWhom="#org3" type="oral">Y si alguien os pregunta: <q who="#org0" toWhom="#org0" type="soCalled">¿Por qué hacéis eso?</q>, decid que el <rs key="#per1">Señor</rs> lo necesita y que luego lo devolverá.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.004" type="verse" n="4">
+							Fueron, y hallaron el pollino atado afuera a la puerta, en el recodo del camino, y lo desataron.
+						</ab>
+						<ab xml:id="b.MAR.011.005" type="verse" n="5">
+							Algunos de los que estaban allí les preguntaron: <q who="#org0" toWhom="#org3" type="oral">¿Qué hacéis desatando el pollino?</q>
+						</ab>
+						<ab xml:id="b.MAR.011.006" type="verse" n="6">
+							Ellos entonces les dijeron como <rs key="#per1">Jesús</rs> había dicho, y los dejaron ir.
+						</ab>
+						<ab xml:id="b.MAR.011.007" type="verse" n="7">
+							Trajeron el pollino a <rs key="#per1">Jesús</rs>, echaron sobre él sus mantos, y se sentó sobre él.
+						</ab>
+						<ab xml:id="b.MAR.011.008" type="verse" n="8">
+							También muchos tendían sus mantos por el camino, y otros cortaban ramas de los árboles y las tendían por el camino.
+						</ab>
+						<ab xml:id="b.MAR.011.009" type="verse" n="9">
+							Los que iban delante y los que venían detrás gritaban, diciendo: <q who="#org0" toWhom="#per1" type="oral">¡Hosana! ¡Bendito el que viene en el nombre del <rs key="#per14">Señor</rs>!</q>
+						</ab>
+						<ab xml:id="b.MAR.011.010" type="verse" n="10">
+							<!--sex: ascendant; blessed; positive-->
+							<q who="#org0" toWhom="#per1" type="oral">¡Bendito el <rs key="#pla4">reino de nuestro <rs key="#per35">padre</rs> <rs key="#per35">David</rs></rs> que viene! ¡Hosana en las alturas!</q>
+						</ab>
+						<ab xml:id="b.MAR.011.011" type="verse" n="11">
+							Entró <rs key="#per1">Jesús en <rs key="#pla3">Jerusalén</rs></rs> y fue al <rs key="#pla30">Templo</rs>. Después de observarlo todo, como ya anochecía, se fue a <rs key="#pla31">Betania</rs> con los <rs key="#org3">doce</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús maldice la higuera estéril</head>
+						<ab xml:id="b.MAR.011.012" type="verse" n="12">
+							Al día siguiente, cuando salieron de <rs key="#pla31">Betania</rs>, tuvo hambre.
+						</ab>
+						<ab xml:id="b.MAR.011.013" type="verse" n="13">
+							Viendo a lo lejos una higuera que tenía hojas, fue a ver si tal vez hallaba en ella algo; pero cuando llegó a ella, nada halló sino hojas, pues no era tiempo de higos.
+						</ab>
+						<ab xml:id="b.MAR.011.014" type="verse" n="14">
+							<!--sex: condemned; neutral; fertilization-->
+							Entonces <rs key="#per1">Jesús</rs> dijo a la higuera:  <q who="#per1" toWhom="#thin0" type="oral">¡Nunca jamás coma nadie fruto de ti!</q> Y lo oyeron sus <rs key="#org3">discípulos</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Purificación del Templo</head>
+						<ab xml:id="b.MAR.011.015" type="verse" n="15">
+							Vinieron, pues, a <rs key="#pla3">Jerusalén</rs>, y entrando <rs key="#per1">Jesús</rs> en el <rs key="#pla30">Templo</rs> comenzó a echar fuera a los que vendían y compraban en el <rs key="#pla30">Templo</rs>. Volcó las mesas de los cambistas y las sillas de los que vendían palomas;
+						</ab>
+						<ab xml:id="b.MAR.011.016" type="verse" n="16">
+							y no consentía que nadie atravesara el <rs key="#pla30">Templo</rs> llevando utensilio alguno.
+						</ab>
+						<ab xml:id="b.MAR.011.017" type="verse" n="17">
+							Y les enseñaba, diciendo: <q who="#per1" toWhom="#org0" type="oral">¿No está escrito: <q who="#org0" toWhom="#org0" type="written" cert="low"><q who="#per14" toWhom="#org0" type="oral">Mi <rs key="#pla30">casa</rs> será llamada <rs key="#pla30">casa de oración para todas las <rs key="#org0">naciones</rs></rs></q></q>? Pero vosotros la habéis hecho <rs key="#pla30">cueva de <rs key="#org19">ladrones</rs></rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.018" type="verse" n="18">
+							Lo oyeron los <rs key="#org5">escribas</rs> y los <rs key="#org12">principales sacerdotes</rs>, y buscaban cómo matarlo, porque le tenían miedo, por cuanto todo el <rs key="#org70">pueblo</rs> estaba admirado de su doctrina.
+						</ab>
+						<ab xml:id="b.MAR.011.019" type="verse" n="19">
+							Pero al llegar la noche, <rs key="#per1">Jesús</rs> salió de la <rs key="#pla3">ciudad</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La higuera maldecida se seca</head>
+						<ab xml:id="b.MAR.011.020" type="verse" n="20">
+							Por la mañana, al pasar junto a la higuera, vieron que se había secado desde las raíces.
+						</ab>
+						<ab xml:id="b.MAR.011.021" type="verse" n="21">
+							Entonces <rs key="#per21">Pedro</rs>, acordándose, le dijo:  <q who="#per21" toWhom="#per1" type="oral"><rs key="#per1">Maestro</rs>, mira, la higuera que maldijiste se ha secado.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.022" type="verse" n="22">
+							Respondiendo <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" toWhom="#per21 #org3" type="oral">Tened fe en <rs key="#per14">Dios</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.023" type="verse" n="23">
+							<q who="#per1" toWhom="#per21 #org3" type="oral">De cierto os digo que cualquiera que diga a este monte: <q who="#org0" toWhom="#thin0" type="soCalled">Quítate y arrójate en el mar</q>, y no duda en su corazón, sino que cree que será hecho lo que dice, lo que diga le será hecho.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.024" type="verse" n="24">
+							<q who="#per1" toWhom="#per21 #org3" type="oral">Por tanto, os digo que todo lo que pidáis orando, creed que lo recibiréis, y os vendrá.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.025" type="verse" n="25">
+							<!--sex: ascendant; blessed; negative-->
+							<q who="#per1" toWhom="#per21 #org3" type="oral">Y cuando estéis orando, perdonad, si tenéis algo contra alguien, para que también vuestro <rs key="#per14">Padre</rs> que está en los <rs key="#pla18">cielos</rs> os perdone a vosotros vuestras ofensas,</q>
+						</ab>
+						<ab xml:id="b.MAR.011.026" type="verse" n="26">
+							<!--sex: ascendant; condemned; positive-->
+							<q who="#per1" toWhom="#per21 #org3" type="oral">porque si vosotros no perdonáis, tampoco vuestro <rs key="#per14">Padre</rs> que está en los <rs key="#pla18">cielos</rs> os perdonará vuestras ofensas.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La autoridad de Jesús</head>
+						<ab xml:id="b.MAR.011.027" type="verse" n="27">
+							Volvieron entonces a <rs key="#pla3">Jerusalén</rs> y, andando él por el <rs key="#pla30">Templo</rs>, se le acercaron los <rs key="#org12">principales sacerdotes</rs>, los <rs key="#org5">escribas</rs> y los <rs key="#org25">ancianos</rs>,
+						</ab>
+						<ab xml:id="b.MAR.011.028" type="verse" n="28">
+							y le preguntaron: <q who="#org12 #org5 #org25" toWhom="#per1" type="oral">¿Con qué autoridad haces estas cosas? ¿Quién te dio autoridad para hacer estas cosas?</q>
+						</ab>
+						<ab xml:id="b.MAR.011.029" type="verse" n="29">
+							<rs key="#per1">Jesús</rs>, respondiendo, les dijo:  <q who="#per1" toWhom="#org12 #org5 #org25" type="oral">Os haré yo también una pregunta. Respondedme y os diré con qué autoridad hago estas cosas.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.030" type="verse" n="30">
+							<q who="#per1" toWhom="#org12 #org5 #org25" type="oral">El bautismo de <rs key="#per18">Juan</rs>, ¿era del <rs key="#pla18">cielo</rs>, o de los <rs key="#org0">hombres</rs>? Respondedme.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.031" type="verse" n="31">
+							Entonces ellos discutían entre sí, diciendo: <q who="#org12 #org5 #org25" toWhom="#org12 #org5 #org25" type="oral">Si decimos del <rs key="#pla18">cielo</rs>, dirá: <q who="#per1" toWhom="#org12 #org5 #org25" type="soCalled">¿Por qué, pues, no lo creísteis?</q>.</q>
+						</ab>
+						<ab xml:id="b.MAR.011.032" type="verse" n="32">
+							<q who="#org12 #org5 #org25" toWhom="#org12 #org5 #org25" type="oral">¿Y si decimos de los <rs key="#org0">hombres</rs>...?</q> Pero temían al <rs key="#org70">pueblo</rs>, pues todos tenían a <rs key="#per18">Juan</rs> como un <rs key="#per18">verdadero profeta</rs>.
+						</ab>
+						<ab xml:id="b.MAR.011.033" type="verse" n="33">
+							Así que, respondiendo, dijeron a <rs key="#per1">Jesús</rs>:  <q who="#org12 #org5 #org25" toWhom="#per1" type="oral">No sabemos.</q> Entonces, respondiendo <rs key="#per1">Jesús</rs>, les dijo: <q who="#per1" toWhom="#org12 #org5 #org25" type="oral">Tampoco yo os digo con qué autoridad hago estas cosas.</q>
+						</ab>
+					</div>
+				</div>
+				<!--sex: cap 11 anotado-->
+				<div xml:id="b.MAR.012" type="chapter" n="12">
+					<div type="pericope">
+						<head type="pericope">Los labradores malvados</head>
+						<ab xml:id="b.MAR.012.001" type="verse" n="1">
+							Entonces comenzó <rs key="#per1">Jesús</rs> a decirles por parábolas:  <q who="#per1" toWhom="#org0" type="oral">«Un <rs key="#per14">hombre</rs> plantó una viña, la rodeó con una cerca, cavó un lagar y edificó una torre; luego la arrendó a unos labradores y se fue lejos.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.002" type="verse" n="2">
+							<q who="#per1" toWhom="#org0" type="oral">A su tiempo envió un siervo a los labradores para recibir de estos del fruto de la viña.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.003" type="verse" n="3">
+							<q who="#per1" toWhom="#org0" type="oral">Pero ellos, tomándolo, lo golpearon y lo enviaron con las manos vacías.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.004" type="verse" n="4">
+							<q who="#per1" toWhom="#org0" type="oral">Volvió a enviarles otro siervo; pero, apedreándolo, lo hirieron en la cabeza, y también lo insultaron.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.005" type="verse" n="5">
+							<q who="#per1" toWhom="#org0" type="oral">Volvió a enviar otro, y a este lo mataron. Después envió otros muchos: a unos los golpearon y a otros los mataron.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.006" type="verse" n="6">
+							<!--sex: ascendant; positive; neutral-->
+							<q who="#per1" toWhom="#org0" type="oral">»Por último, teniendo aún un <rs key="#per1">hijo</rs> suyo, amado, lo envió también a ellos, diciendo: <q who="#per14" toWhom="#org0" type="oral">Tendrán respeto a mi <rs key="#per1">hijo</rs>.</q></q>
+						</ab>
+						<ab xml:id="b.MAR.012.007" type="verse" n="7">
+							<!--sex: ascendant; negative; positive-->
+							<q who="#per1" toWhom="#org0" type="oral">Pero aquellos labradores dijeron entre sí: <q who="#org0" toWhom="#org0" type="oral">Este es el <rs key="#per1">heredero</rs>; venid, matémoslo, y la heredad será nuestra.</q></q>
+						</ab>
+						<ab xml:id="b.MAR.012.008" type="verse" n="8">
+							<q who="#per1" toWhom="#org0" type="oral">Y tomándolo, lo mataron y lo arrojaron fuera de la viña.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.009" type="verse" n="9">
+							<q who="#per1" toWhom="#org0" type="oral">»¿Qué, pues, hará el <rs key="#per14">señor de la viña</rs>? Irá, destruirá a los labradores y dará su viña a otros.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.010" type="verse" n="10">
+							<q who="#per1" toWhom="#org0" type="oral">»¿Ni aun esta <rs key="#wor1">escritura</rs> habéis leído: <q who="#org0" toWhom="#org0" type="written">La piedra que desecharon los edificadores ha venido a ser cabeza del ángulo.</q></q>
+						</ab>
+						<ab xml:id="b.MAR.012.011" type="verse" n="11">
+							<q who="#per1" toWhom="#org0" type="oral"><q who="#org0" toWhom="#org0" type="written">El <rs key="#per14">Señor</rs> ha hecho esto, y es cosa maravillosa a nuestros ojos?»</q></q>
+						</ab>
+						<ab xml:id="b.MAR.012.012" type="verse" n="12">
+							Procuraban prenderlo, porque entendían que decía contra ellos aquella parábola; pero temían a la <rs key="#org0">multitud</rs> y, dejándolo, se fueron.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La cuestión del tributo</head>
+						<ab xml:id="b.MAR.012.013" type="verse" n="13">
+							Le enviaron algunos de los <rs key="#org2">fariseos</rs> y de los <rs key="#org9">herodianos</rs> para que lo sorprendieran en alguna palabra.
+						</ab>
+						<ab xml:id="b.MAR.012.014" type="verse" n="14">
+							Viniendo ellos, le dijeron: <q who="#org2 #org9" toWhom="#per1" type="oral"><rs key="#per1">Maestro</rs>, sabemos que eres <rs key="#per1">hombre veraz</rs> y que no te cuidas de nadie, porque no miras la apariencia de los <rs key="#org0">hombres</rs>, sino que con verdad enseñas el camino de <rs key="#per14">Dios</rs>. ¿Es lícito dar tributo a <rs key="#per42">César</rs>, o no? ¿Daremos, o no daremos?</q>
+						</ab>
+						<ab xml:id="b.MAR.012.015" type="verse" n="15">
+							Pero él, percibiendo la hipocresía de ellos, les dijo: <q who="#per1" toWhom="#org2 #org9" type="oral">¿Por qué me tentáis? Traedme un denario para que lo vea.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.016" type="verse" n="16">
+							Ellos se lo trajeron; y él entonces preguntó: <q who="#per1" toWhom="#org2 #org9" type="oral">¿De quién es esta imagen y la inscripción?</q> Ellos le dijeron: <q who="#org2 #org9" toWhom="#per1" type="oral">De <rs key="#per42">César</rs></q>.
+						</ab>
+						<ab xml:id="b.MAR.012.017" type="verse" n="17">
+							Respondiendo <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" toWhom="#org2 #org9" type="oral">Dad a <rs key="#per42">César</rs> lo que es de <rs key="#per42">César</rs>, y a <rs key="#per14">Dios</rs> lo que es de <rs key="#per14">Dios</rs>.</q> Y se maravillaron de él.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La pregunta sobre la resurrección</head>
+						<ab xml:id="b.MAR.012.018" type="verse" n="18">
+							Entonces vinieron a él los <rs key="#org7">saduceos</rs>, los que dicen que no hay resurrección, y le preguntaron, diciendo:
+						</ab>
+						<ab xml:id="b.MAR.012.019" type="verse" n="19">
+							<!--sex: second-marriage-widow; arranged-marriage; marital-relation-political-family; positive; negative; ascendant-->
+							<q who="#org7" toWhom="#per1" type="oral"><rs key="#per1">Maestro</rs>, <rs key="#per26">Moisés</rs> nos escribió que si el hermano de alguno muere y deja esposa, pero no deja hijos, su hermano debe casarse con ella y levantar descendencia a su hermano.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.020" type="verse" n="20">
+							<!--sex: marriage; positive; negative; ascendant-->
+							<q who="#org7" toWhom="#per1" type="oral">Hubo siete hermanos: el primero tomó esposa, y murió sin dejar descendencia.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.021" type="verse" n="21">
+							<!--sex: second-marriage-widow; arranged-marriage; marital-relation-political-family; positive; negative; ascendant-->
+							<q who="#org7" toWhom="#per1" type="oral">Entonces el segundo se casó con ella, pero él también murió sin dejar descendencia. Lo mismo pasó con el tercero,</q>
+						</ab>
+						<ab xml:id="b.MAR.012.022" type="verse" n="22">
+							<!--sex: second-marriage-widow; arranged-marriage; marital-relation-political-family; positive; negative; ascendant-->
+							<q who="#org7" toWhom="#per1" type="oral">y con los siete: ninguno dejó descendencia. Finalmente, murió también la mujer.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.023" type="verse" n="23">
+							<!--sex: second-marriage-widow; arranged-marriage; marital-relation-political-family; positive; negative-->
+							<q who="#org7" toWhom="#per1" type="oral">En la resurrección, pues, cuando resuciten, ¿de cuál de ellos será ella mujer, ya que los siete la tuvieron por mujer?</q>
+						</ab>
+						<ab xml:id="b.MAR.012.024" type="verse" n="24">
+							Entonces, respondiendo <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" toWhom="#org7" type="oral">Erráis también en esto, porque ignoráis las <rs key="#wor1">Escrituras</rs> y el poder de <rs key="#per14">Dios</rs>,</q>
+						</ab>
+						<ab xml:id="b.MAR.012.025" type="verse" n="25">
+							<!--sex: marriage; positive; neutral-->
+							<q who="#per1" toWhom="#org7" type="oral">porque cuando resuciten de los muertos, ni se casarán ni se darán en casamiento, sino que serán como los <rs key="#org4">ángeles</rs> que están en los <rs key="#pla18">cielos</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.026" type="verse" n="26">
+							<q who="#per1" toWhom="#org7" type="oral">Pero respecto a que los muertos resucitan, ¿no habéis leído en el libro de <rs key="#per26">Moisés</rs> cómo le habló <rs key="#per14">Dios</rs> en la zarza, diciendo: <q who="#per14" toWhom="#per26" type="oral">Yo soy el <rs key="#per14">Dios de <rs key="#per2">Abraham</rs></rs>, el <rs key="#per14">Dios de <rs key="#per3">Isaac</rs></rs> y el <rs key="#per14">Dios de <rs key="#per4">Jacob</rs></rs>?</q></q>
+						</ab>
+						<ab xml:id="b.MAR.012.027" type="verse" n="27">
+							<q who="#per1" toWhom="#org7" type="oral">¡<rs key="#per14">Dios</rs> no es <rs key="#per14">Dios de muertos</rs>, sino <rs key="#per14">Dios de vivos</rs>! Así que vosotros mucho erráis.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El gran mandamiento</head>
+						<ab xml:id="b.MAR.012.028" type="verse" n="28">
+							Acercándose uno de los <rs key="#org5">escribas</rs>, que los había oído discutir y sabía que les había respondido bien, le preguntó:  <q who="#per1" toWhom="#org5" type="oral">¿Cuál es el primer mandamiento de todos?</q>
+						</ab>
+						<ab xml:id="b.MAR.012.029" type="verse" n="29">
+							<rs key="#per1">Jesús</rs> le respondió:  <q who="#per1" toWhom="#org5" type="oral">El primero de todos los mandamiento es: Oye, <rs key="#pla4">Israel</rs>: el <rs key="#per14">Señor</rs> nuestro <rs key="#per14">Dios</rs>, el <rs key="#per14">Señor</rs> uno es.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.030" type="verse" n="30">
+							<!--sex: love; blessed; positive-->
+							<q who="#per1" toWhom="#org5" type="oral">Y amarás al <rs key="#per14">Señor</rs> tu <rs key="#per14">Dios</rs> con todo tu corazón, con toda tu alma, con toda tu mente y con todas tus fuerzas. Este es el principal mandamiento.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.031" type="verse" n="31">
+							<!--sex: love; blessed; positive-->
+							<q who="#per1" toWhom="#org5" type="oral">El segundo es semejante: Amarás a tu <rs key="#org0">prójimo</rs> como a ti mismo. No hay otro mandamiento mayor que estos.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.032" type="verse" n="32">
+							Entonces el <rs key="#org5">escriba</rs> le dijo: <q who="#org5" toWhom="#per1" type="oral">Bien, <rs key="#per1">Maestro</rs>, verdad has dicho, que uno es <rs key="#per14">Dios</rs> y no hay otro fuera de él;</q>
+						</ab>
+						<ab xml:id="b.MAR.012.033" type="verse" n="33">
+							<!--sex: love; positive; neutral-->
+							<q who="#org5" toWhom="#per1" type="oral">y amarlo con todo el corazón, con todo el entendimiento, con toda el alma y con todas las fuerzas, y amar al prójimo como a uno mismo, es más que todos los holocaustos y sacrificios.</q>
+						</ab>
+						<ab xml:id="b.MAR.012.034" type="verse" n="34">
+							<rs key="#per1">Jesús</rs> entonces, viendo que había respondido sabiamente, le dijo:  <q who="#per1" toWhom="#org5" type="oral">No estás lejos del <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>.</q> Y ya nadie se atrevía a preguntarle.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">¿De quién es hijo el Cristo?</head>
+						<ab xml:id="b.MAR.012.035" type="verse" n="35">
+							<!--sex: ascendant; neutral; positive-->
+							Enseñando <rs key="#per1">Jesús</rs> en el <rs key="#pla30">Templo</rs>, decía:  <q who="#per1" toWhom="#org0" type="oral">«¿Cómo dicen los <rs key="#org5">escribas</rs> que el <rs key="#per1">Cristo</rs> es <rs key="#per1">hijo de <rs key="#per35">David</rs></rs>?,</q>
+						</ab>
+						<ab xml:id="b.MAR.012.036" type="verse" n="36">
+							<q who="#per1" toWhom="#org0" type="oral">pues el mismo <rs key="#per35">David</rs> dijo por el <rs key="#per17">Espíritu Santo</rs>: <q who="#per35" toWhom="#org0" type="oral">»Dijo el <rs key="#per14">Señor</rs> a mi <rs key="#per1" cert="low">Señor</rs>: <q who="#per14" toWhom="#per1" type="oral" cert="low">Siéntate a mi diestra, hasta que ponga tus <rs key="#org101">enemigos</rs> por estrado de tus pies .</q></q></q>
+						</ab>
+						<ab xml:id="b.MAR.012.037" type="verse" n="37">
+							<!--sex: ascendant; positive; neutral-->
+							<q who="#per1" toWhom="#org0" type="oral">»<rs key="#per35">David</rs> mismo lo llama <rs key="#per1">Señor</rs>; ¿cómo, pues, es su <rs key="#per1">hijo</rs>?».</q> Y gran multitud del <rs key="#org70">pueblo</rs> lo oía de buena gana.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús acusa a los escribas</head>
+						<ab xml:id="b.MAR.012.038" type="verse" n="38">
+							Les decía en su enseñanza: <q who="#per1" toWhom="#org0" type="oral">«Guardaos de los <rs key="#org5">escribas</rs>, que gustan de andar con largas ropas, y aman las salutaciones en las plazas,</q>
+						</ab>
+						<ab xml:id="b.MAR.012.039" type="verse" n="39">
+							<q who="#per1" toWhom="#org0" type="oral">las primeras sillas en las sinagogas y los primeros asientos en las cenas,</q>
+						</ab>
+						<ab xml:id="b.MAR.012.040" type="verse" n="40">
+							<q who="#per1" toWhom="#org0" type="oral">que devoran las casas de las <rs key="#org102">viudas</rs> y, para disimularlo, hacen largas oraciones. Estos recibirán mayor condenación».</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La ofrenda de la viuda</head>
+						<ab xml:id="b.MAR.012.041" type="verse" n="41">
+							Estando <rs key="#per1">Jesús</rs> sentado delante del arca de la ofrenda, miraba cómo el <rs key="#org70">pueblo</rs> echaba dinero en el arca; y muchos ricos echaban mucho.
+						</ab>
+						<ab xml:id="b.MAR.012.042" type="verse" n="42">
+							<!--sex: widow; negative; neutral-->
+							Y vino una <rs key="#org102">viuda pobre</rs> y echó dos blancas, o sea, un cuadrante.
+						</ab>
+						<ab xml:id="b.MAR.012.043" type="verse" n="43">
+							<!--sex: widow; negative; blessed-->
+							Entonces, llamando a sus <rs key="#org3">discípulos</rs>, les dijo:  <q who="#per1" toWhom="#org3" type="oral">De cierto os digo que esta <rs key="#org102">viuda pobre</rs> echó más que todos los que han echado en el arca,</q>
+						</ab>
+						<ab xml:id="b.MAR.012.044" type="verse" n="44">
+							<q who="#per1" toWhom="#org3" type="oral">porque todos han echado de lo que les sobra, pero esta, de su pobreza echó todo lo que tenía, todo su sustento.</q>
+						</ab>
+					</div>
+				</div>
+				<!--sex: cap 12 anotado-->
+				<div xml:id="b.MAR.013" type="chapter" n="13">
+					<div type="pericope">
+						<head type="pericope">Jesús predice la destrucción del templo</head>
+						<ab xml:id="b.MAR.013.001" type="verse" n="1">
+							Al salir <rs key="#per1">Jesús</rs> del <rs key="#pla30">templo</rs>, le dijo uno de sus <rs key="#org3">discípulos</rs>: <q who="#org3" toWhom="#org3" type="oral"><rs key="#per1">Maestro</rs>, ¡mira qué piedras y qué <rs key="#pla30">edificios</rs>!</q>
+						</ab>
+						<ab xml:id="b.MAR.013.002" type="verse" n="2">
+							<rs key="#per1">Jesús</rs>, respondiendo, le dijo:  <q who="#per1" toWhom="#org3" type="oral">¿Ves estos <rs key="#pla30">grandes edificios</rs>? No quedará piedra sobre piedra que no sea derribada.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Señales antes del fin</head>
+						<ab xml:id="b.MAR.013.003" type="verse" n="3">
+							Y se sentó en el <rs key="#pla28">Monte de los Olivos</rs>, frente al <rs key="#pla30">Templo</rs>. Entonces <rs key="#per21">Pedro</rs>, <rs key="#per23">Jacobo</rs>, <rs key="#per25">Juan</rs> y <rs key="#per22">Andrés</rs> le preguntaron aparte:
+						</ab>
+						<ab xml:id="b.MAR.013.004" type="verse" n="4">
+							<q who="#per23 #per22 #per25 #per21" toWhom="#per1" type="oral">Dinos, ¿cuándo serán estas cosas? ¿Y qué señal habrá cuando todas estas cosas hayan de cumplirse?</q>
+						</ab>
+						<ab xml:id="b.MAR.013.005" type="verse" n="5">
+							<rs key="#per1">Jesús</rs>, respondiéndoles, comenzó a decir: <q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Mirad que nadie os engañe,</q>
+						</ab>
+						<ab xml:id="b.MAR.013.006" type="verse" n="6">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">porque vendrán muchos en mi nombre, diciendo: <q who="#org23" toWhom="#org23" type="soCalled">Yo soy el <rs key="#org23">Cristo</rs></q>; y engañarán a muchos.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.007" type="verse" n="7">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Pero cuando oigáis de guerras y de rumores de guerras, no os turbéis, porque es necesario que así suceda; pero aún no es el fin,</q>
+						</ab>
+						<ab xml:id="b.MAR.013.008" type="verse" n="8">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">pues se levantará <rs key="#org0">nación</rs> contra <rs key="#org0">nación</rs> y <rs key="#org0">reino</rs> contra <rs key="#org0">reino</rs>; y habrá terremotos en muchos lugares, y habrá hambres y alborotos; principios de dolores son estos.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.009" type="verse" n="9">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">»Pero cuidad de vosotros mismos, porque os entregarán a los concilios, y en las sinagogas os azotarán; y delante de <rs key="#org100">gobernadores</rs> y de <rs key="#org100">reyes</rs> os llevarán por causa de mí, para testimonio a ellos.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.010" type="verse" n="10">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Y es necesario que el evangelio sea predicado antes a todas las <rs key="#org0">naciones</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.011" type="verse" n="11">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Pero cuando os lleven para entregaros, no os preocupéis por lo que habéis de decir, ni lo penséis, sino lo que os sea dado en aquella hora, eso hablad, porque no sois vosotros los que habláis, sino el <rs key="#per17">Espíritu Santo</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.012" type="verse" n="12">
+							<!--sex: ascendant; negative; positive-->
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">El <rs key="#org0">hermano</rs> entregará a la muerte al <rs key="#org0">hermano</rs>, y el <rs key="#org0">padre</rs> al <rs key="#org0">hijo</rs>; y se levantarán los <rs key="#org0">hijos</rs> contra los <rs key="#org0">padres</rs>, y los matarán.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.013" type="verse" n="13">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Y seréis odiados por todos por causa de mi nombre; pero el que persevere hasta el fin, este será salvo.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.014" type="verse" n="14">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">»Pero cuando veáis la abominación desoladora de que habló el <rs key="#per46">profeta</rs> <rs key="#per46">Daniel</rs>, puesta donde no debe estar (el que lee, entienda), entonces los que estén en <rs key="#pla2">Judea</rs> huyan a los montes.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.015" type="verse" n="15">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">El que esté en la azotea, no descienda a la casa ni entre para tomar algo de su casa;</q>
+						</ab>
+						<ab xml:id="b.MAR.013.016" type="verse" n="16">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">y el que esté en el campo, no vuelva atrás a tomar su capa.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.017" type="verse" n="17">
+							<!--sex: pregnangcy; ascendant; negative; positive-->
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">¡Ay de las que estén encinta y de las que críen en aquellos días!</q>
+						</ab>
+						<ab xml:id="b.MAR.013.018" type="verse" n="18">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Orad, pues, para que vuestra huida no sea en invierno,</q>
+						</ab>
+						<ab xml:id="b.MAR.013.019" type="verse" n="19">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">porque aquellos días serán de tribulación cual nunca ha habido desde el principio de la creación que <rs key="#per14">Dios</rs> hizo, hasta este tiempo, ni la habrá.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.020" type="verse" n="20">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Y si el <rs key="#per14">Señor</rs> no hubiera acortado aquellos días, nadie sería salvo; pero por causa de los <rs key="#org18">escogidos</rs> que él eligió, acortó aquellos días.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.021" type="verse" n="21">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">»Entonces, si alguno os dice: <q who="#org0" toWhom="#org0" type="soCalled">Mirad, aquí está el <rs key="#per1">Cristo</rs></q> o <q who="#org0" toWhom="#org0" type="soCalled">Mirad, allí está</q>, no le creáis,</q>
+						</ab>
+						<ab xml:id="b.MAR.013.022" type="verse" n="22">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">porque se levantarán <rs key="#org23">falsos cristos</rs> y <rs key="#org14">falsos profetas</rs>, y harán señales y prodigios para engañar, si fuera posible, aun a los <rs key="#org18">escogidos</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.023" type="verse" n="23">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Pero vosotros ¡tened cuidado! Os lo he dicho todo de antemano.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La venida del Hijo del hombre</head>
+						<ab xml:id="b.MAR.013.024" type="verse" n="24">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">»Pero en aquellos días, después de aquella tribulación, el sol se oscurecerá y la luna no dará su resplandor.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.025" type="verse" n="25">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Las estrellas caerán del cielo y las potencias que están en los cielos serán conmovidas.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.026" type="verse" n="26">
+							<!--sex: ascendant; positive; neutral-->
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Entonces verán al <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs>, que vendrá en las nubes con gran poder y gloria.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.027" type="verse" n="27">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Entonces enviará a sus <rs key="#org4">ángeles</rs> y juntará a sus <rs key="#org18">escogidos</rs> de los cuatro vientos, desde el extremo de la <rs key="#pla41">tierra</rs> hasta el extremo del <rs key="#pla18">cielo</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.028" type="verse" n="28">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">»De la higuera aprended la parábola: Cuando ya su rama está tierna y brotan las hojas, sabéis que el verano está cerca.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.029" type="verse" n="29">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Así también vosotros, cuando veáis que suceden estas cosas, conoced que está cerca, a las puertas.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.030" type="verse" n="30">
+							<!--sex: ascendant; negative; positive-->
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">De cierto os digo que no pasará esta generación sin que todo esto acontezca.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.031" type="verse" n="31">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">El cielo y la <rs key="#pla41">tierra</rs> pasarán, pero mis palabras no pasarán.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.032" type="verse" n="32">
+							<!--sex: ascendant; negative; positive-->
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">»Pero de aquel día y de la hora nadie sabe, ni aun los <rs key="#org4">ángeles</rs> que están en el <rs key="#pla18">cielo</rs>, ni el <rs key="#per1">Hijo</rs>, sino el <rs key="#per14">Padre</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.033" type="verse" n="33">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Mirad, velad y orad, porque no sabéis cuándo será el tiempo.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.034" type="verse" n="34">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Es como el <rs key="#per1">hombre</rs> que, yéndose lejos, dejó su casa, dio autoridad a sus <rs key="#org0">siervos</rs>, a cada uno le dio un trabajo y al portero mandó que velara.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.035" type="verse" n="35">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Velad, pues, porque no sabéis cuándo vendrá el <rs key="#per1">señor de la casa</rs>; si al anochecer, a la medianoche, al canto del gallo o a la mañana;</q>
+						</ab>
+						<ab xml:id="b.MAR.013.036" type="verse" n="36">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">para que cuando venga de repente, no os halle durmiendo.</q>
+						</ab>
+						<ab xml:id="b.MAR.013.037" type="verse" n="37">
+							<q who="#per1" toWhom="#per23 #per22 #per25 #per21" type="oral">Y lo que a vosotros digo, a todos lo digo: ¡Velad!</q>
+						</ab>
+					</div>
+				</div>
+				<!--sex: cap 13 anotado-->
+				<div xml:id="b.MAR.014" type="chapter" n="14">
+					<div type="pericope">
+						<head type="pericope">El complot para prender a Jesús</head>
+						<ab xml:id="b.MAR.014.001" type="verse" n="1">
+							Dos días después era la <rs key="#tim5">Pascua</rs> y la <rs key="#tim6">fiesta de los Panes sin levadura</rs>. Los <rs key="#org12">principales sacerdotes</rs> y los <rs key="#org5">escribas</rs> buscaban cómo prenderlo con engaño y matarlo.
+						</ab>
+						<ab xml:id="b.MAR.014.002" type="verse" n="2">
+							Y decían: <q who="#org12 #org5" toWhom="#org12 #org5" type="oral">«No durante la <rs key="#tim5 #tim6">Fiesta</rs>, para que no se alborote el <rs key="#org70">pueblo</rs>».</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús es ungido en Betania</head>
+						<ab xml:id="b.MAR.014.003" type="verse" n="3">
+							<!--sex: perfume; hair; head; positive; neutral; massage cert="medium"-->
+							Pero estando él en <rs key="#pla31">Betania</rs>, sentado a la mesa en casa de <rs key="#per49">Simón el leproso</rs>, vino una mujer con un vaso de alabastro de perfume de nardo puro de mucho valor; y quebrando el vaso de alabastro, se lo derramó sobre su cabeza.
+						</ab>
+						<ab xml:id="b.MAR.014.004" type="verse" n="4">
+							<!--sex: perfume; positive; negative-->
+							Entonces algunos se enojaron dentro de sí, y dijeron: <q who="#org0" toWhom="#org0" type="oral">¿Para qué se ha hecho este desperdicio de perfume?,</q>
+						</ab>
+						<ab xml:id="b.MAR.014.005" type="verse" n="5">
+							<q who="#org0" toWhom="#org0" type="oral">pues podía haberse vendido por más de trescientos denarios y haberse dado a los <rs key="#org102">pobres</rs>.</q> Y murmuraban contra ella.
+						</ab>
+						<ab xml:id="b.MAR.014.006" type="verse" n="6">
+							<!--sex: perfume; massage; blessed; negative-->
+							Pero <rs key="#per1">Jesús</rs> dijo:  <q who="#per1" toWhom="#org0" type="oral">Dejadla, ¿por qué la molestáis? Buena obra me ha hecho.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.007" type="verse" n="7">
+							<q who="#per1" toWhom="#org0" type="oral">Siempre tendréis a los <rs key="#org102">pobres</rs> con vosotros y cuando queráis les podréis hacer bien; pero a mí no siempre me tendréis.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.008" type="verse" n="8">
+							<!--sex: perfume; body; positive; negative-->
+							<q who="#per1" toWhom="#org0" type="oral">Esta ha hecho lo que podía, porque se ha anticipado a ungir mi cuerpo para la sepultura.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.009" type="verse" n="9">
+							<!--sex: perfume; massage; blessed; neutral-->
+							<q who="#per1" toWhom="#org0" type="oral">De cierto os digo que dondequiera que se predique este evangelio, en todo el <rs key="#pla41">mundo</rs>, también se contará lo que esta ha hecho, para memoria de ella.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Judas ofrece entregar a Jesús</head>
+						<ab xml:id="b.MAR.014.010" type="verse" n="10">
+							Entonces <rs key="#per34">Judas Iscariote</rs>, uno de los <rs key="#org3">doce</rs>, fue a los <rs key="#org12">principales sacerdotes</rs> para entregárselo.
+						</ab>
+						<ab xml:id="b.MAR.014.011" type="verse" n="11">
+							Ellos, al oírlo, se alegraron y prometieron darle dinero. Y <rs key="#per34">Judas</rs> buscaba oportunidad para entregarlo.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Institución de la Cena del Señor</head>
+						<ab xml:id="b.MAR.014.012" type="verse" n="12">
+							El <rs key="#tim6">primer día de la fiesta de los Panes sin levadura</rs>, cuando sacrificaban el cordero de la <rs key="#tim5">Pascua</rs>, sus <rs key="#org3">discípulos</rs> le preguntaron:  <q who="#org3" toWhom="#per1" type="oral">¿Dónde quieres que vayamos a preparar para que comas la <rs key="#tim5">Pascua</rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.014.013" type="verse" n="13">
+							Y envió a <rs key="#org3">dos de sus discípulos</rs> diciéndoles:  <q who="#per1" toWhom="#org3" type="oral">Id a la <rs key="#pla3" cert="low">ciudad</rs>, y os saldrá al encuentro un <rs key="#org0">hombre</rs> que lleva un cántaro de agua; seguidlo,</q>
+						</ab>
+						<ab xml:id="b.MAR.014.014" type="verse" n="14">
+							<q who="#per1" toWhom="#org3" type="oral">y donde entre decid al <rs key="#org0">señor de la casa</rs>: <q who="#org3" toWhom="#org0" type="soCalled">El <rs key="#per1">Maestro</rs> dice: <q who="#per1" toWhom="#org0" type="oral">¿Dónde está el aposento donde he de comer la <rs key="#tim5">Pascua</rs> con mis <rs key="#org3">discípulos</rs>? .</q></q></q>
+						</ab>
+						<ab xml:id="b.MAR.014.015" type="verse" n="15">
+							<q who="#per1" toWhom="#org3" type="oral">Entonces él os mostrará un gran aposento alto ya dispuesto. Haced allí los preparativos para nosotros.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.016" type="verse" n="16">
+							Fueron sus <rs key="#org3">discípulos</rs>, entraron en la <rs key="#pla3">ciudad</rs>, hallaron lo que les había dicho y prepararon la <rs key="#tim5">Pascua</rs>.
+						</ab>
+						<ab xml:id="b.MAR.014.017" type="verse" n="17">
+							Cuando llegó la noche vino él con los <rs key="#org3">doce</rs>.
+						</ab>
+						<ab xml:id="b.MAR.014.018" type="verse" n="18">
+							Y cuando se sentaron a la mesa, mientras comían, dijo <rs key="#per1">Jesús</rs>:  <q who="#per1" toWhom="#org3" type="oral">De cierto os digo que uno de vosotros, que come conmigo, me va a entregar.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.019" type="verse" n="19">
+							Entonces ellos comenzaron a entristecerse y a decirle uno tras otro: <q who="#org3" toWhom="#per1" type="oral">¿Seré yo?</q> Y el otro: <q who="#org3" toWhom="#per1" type="oral">¿Seré yo?</q>
+						</ab>
+						<ab xml:id="b.MAR.014.020" type="verse" n="20">
+							Él, respondiendo, les dijo: <q who="#per1" toWhom="#org3" type="oral">Es uno de los <rs key="#org3">doce</rs>, el que moja conmigo en el plato.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.021" type="verse" n="21">
+							<!--sex: ascendant; condemned; neutral-->
+							<q who="#per1" toWhom="#org3" type="oral">A la verdad el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> va, tal como está escrito de él, pero ¡ay de aquel <rs key="#per34">hombre</rs> por quien el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> es entregado! Bueno le fuera a ese <rs key="#per34">hombre</rs> no haber nacido.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.022" type="verse" n="22">
+							<!--sex: body; blessed; nuetral; negative-->
+							Mientras comían, <rs key="#per1">Jesús</rs> tomó pan, lo bendijo, lo partió y les dio, diciendo:  <q who="#per1" toWhom="#org3" type="oral">Tomad, esto es mi cuerpo.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.023" type="verse" n="23">
+							<!--sex: wine; blessed; nuetral-->
+							Después tomó la copa y, habiendo dado gracias, les dio y bebieron de ella todos.
+						</ab>
+						<ab xml:id="b.MAR.014.024" type="verse" n="24">
+							<!--sex: wine; positive; negative; blood-->
+							Y les dijo: <q who="#per1" toWhom="#org3" type="oral">Esto es mi sangre del nuevo pacto que por muchos es derramada.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.025" type="verse" n="25">
+							<!--sex: wine; positive; neutral; positive-->
+							<q who="#per1" toWhom="#org3" type="oral">De cierto os digo que no beberé más del fruto de la vid, hasta aquel día en que lo beba nuevo en el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús anuncia la negación de Pedro</head>
+						<ab xml:id="b.MAR.014.026" type="verse" n="26">
+							Después de haber cantado el himno, salieron al <rs key="#pla28">Monte de los Olivos</rs>.
+						</ab>
+						<ab xml:id="b.MAR.014.027" type="verse" n="27">
+							Entonces <rs key="#per1">Jesús</rs> les dijo:  <q who="#per1" toWhom="#org3" type="oral">Todos os escandalizaréis de mí esta noche, pues escrito está: <q type="written" cert="low">Heriré al <rs key="#per1">pastor</rs> y las <rs key="#org3">ovejas</rs> serán dispersadas.</q></q>
+						</ab>
+						<ab xml:id="b.MAR.014.028" type="verse" n="28">
+							Pero después que haya resucitado, iré delante de vosotros a <rs key="#pla7">Galilea</rs>.
+						</ab>
+						<ab xml:id="b.MAR.014.029" type="verse" n="29">
+							Entonces <rs key="#per21">Pedro</rs> le dijo:  <q who="#per21" toWhom="#per1" type="oral">Aunque todos se escandalicen, yo no.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.030" type="verse" n="30">
+							Y le dijo <rs key="#per1">Jesús</rs>:  <q who="#per1" toWhom="#per21" type="oral">De cierto te digo que tú hoy, en esta noche, antes que el gallo haya cantado dos veces, me negarás tres veces.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.031" type="verse" n="31">
+							Pero él con mayor insistencia decía: <q who="#per21" toWhom="#per1" type="oral">Aunque tenga que morir contigo, no te negaré.</q> También todos decían lo mismo.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús ora en Getsemaní</head>
+						<ab xml:id="b.MAR.014.032" type="verse" n="32">
+							Vinieron, pues, a un lugar que se llama <rs key="#pla32">Getsemaní</rs>, y dijo a sus <rs key="#org3">discípulos</rs>:  <q who="#per1" toWhom="#org3" type="oral">Sentaos aquí, entre tanto que yo oro.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.033" type="verse" n="33">
+							Se llevó consigo a <rs key="#per21">Pedro</rs>, a <rs key="#per23">Jacobo</rs> y a <rs key="#per25">Juan</rs>, y comenzó a entristecerse y a angustiarse.
+						</ab>
+						<ab xml:id="b.MAR.014.034" type="verse" n="34">
+							Y les dijo: <q who="#per1" toWhom="#per21 #per23 #per25" type="oral">Mi alma está muy triste, hasta la muerte; quedaos aquí y velad.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.035" type="verse" n="35">
+							Yéndose un poco adelante, se postró en tierra, y oró que, si fuera posible, pasara de él aquella hora.
+						</ab>
+						<ab xml:id="b.MAR.014.036" type="verse" n="36">
+							<!--sex: ascendant; positive; negative-->
+							Y decía: <q who="#per1" toWhom="#per14" type="prayer">«¡Abba, <rs key="#per14">Padre</rs>!, todas las cosas son posibles para ti. Aparta de mí esta copa; pero no se haga lo que yo quiero, sino lo que quieres tú».</q>
+						</ab>
+						<ab xml:id="b.MAR.014.037" type="verse" n="37">
+							Vino luego y los halló durmiendo, y dijo a <rs key="#per21">Pedro</rs>:  <q who="#per1" toWhom="#per21" type="oral"><rs key="#per21">Simón</rs>, ¿duermes? ¿No has podido velar una hora?</q>
+						</ab>
+						<ab xml:id="b.MAR.014.038" type="verse" n="38">
+							<!--sex: body cert="medium"; flesh; negative; positive-->
+							<q who="#per1" toWhom="#per21 #per23 #per25" type="oral">Velad y orad para que no entréis en tentación; el espíritu a la verdad está dispuesto, pero la carne es débil.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.039" type="verse" n="39">
+							Otra vez fue y oró, diciendo las mismas palabras.
+						</ab>
+						<ab xml:id="b.MAR.014.040" type="verse" n="40">
+							Al volver, otra vez los halló durmiendo, porque los ojos de ellos estaban cargados de sueño; y no sabían qué responderle.
+						</ab>
+						<ab xml:id="b.MAR.014.041" type="verse" n="41">
+							<!--sex: ascendant; negative; positive-->
+							Vino la tercera vez, y les dijo: <q who="#per1" toWhom="#per21 #per23 #per25" type="oral">¡Dormid ya y descansad! ¡Basta, la hora ha llegado! He aquí, el <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> es entregado en manos de los <rs key="#org18">pecadores</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.042" type="verse" n="42">
+							<q who="#per1" toWhom="#per21 #per23 #per25" type="oral">»¡Levantaos! ¡Vamos! Ya se acerca el que me entrega.</q>
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Arresto de Jesús</head>
+						<ab xml:id="b.MAR.014.043" type="verse" n="43">
+							Aún estaba él hablando cuando vino <rs key="#per34">Judas</rs>, que era uno de los <rs key="#org3">doce</rs>, y con él mucha <rs key="#org24">gente con espadas y palos</rs>, de parte de los <rs key="#org12">principales sacerdotes</rs>, de los <rs key="#org5">escribas</rs> y de los <rs key="#org25">ancianos</rs>.
+						</ab>
+						<ab xml:id="b.MAR.014.044" type="verse" n="44">
+							<!--sex: kiss; negative; postive-->
+							El que lo entregaba les había dado señal, diciendo: <q who="#per34" toWhom="#org12 #org5 #org25" type="oral">«Al que yo bese, ese es. Prendedlo y llevadlo con seguridad».</q>
+						</ab>
+						<ab xml:id="b.MAR.014.045" type="verse" n="45">
+							<!--sex: kiss; negative; postive-->
+							Cuando vino, se acercó luego a él y le dijo: <q who="#per34" toWhom="#per1" type="oral">¡<rs key="#per1">Maestro</rs>! ¡<rs key="#per1">Maestro</rs>!</q> Y lo besó.
+						</ab>
+						<ab xml:id="b.MAR.014.046" type="verse" n="46">
+							Entonces ellos le echaron mano y lo prendieron.
+						</ab>
+						<ab xml:id="b.MAR.014.047" type="verse" n="47">
+							Pero uno de los que estaban allí, sacando la espada, hirió al <rs key="#org24">siervo del <rs key="#org214" cert="medium">Sumo sacerdote</rs></rs> y le cortó la oreja.
+						</ab>
+						<ab xml:id="b.MAR.014.048" type="verse" n="48">
+							Respondiendo <rs key="#per1">Jesús</rs>, les dijo:  <q who="#per1" toWhom="#per34 #org12 #org5 #org25" type="oral">¿Como contra un <rs key="#per1">ladrón</rs> habéis salido con espadas y con palos para prenderme?</q>
+						</ab>
+						<ab xml:id="b.MAR.014.049" type="verse" n="49">
+							<q who="#per1" toWhom="#per34 #org12 #org5 #org25" type="oral">Cada día estaba con vosotros enseñando en el <rs key="#pla30">Templo</rs> y no me prendisteis; pero así es, para que se cumplan las <rs key="#wor1">Escrituras</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.050" type="verse" n="50">
+							Entonces todos los <rs key="#org3">discípulos</rs>, dejándolo, huyeron.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">El joven que huyó</head>
+						<ab xml:id="b.MAR.014.051" type="verse" n="51">
+							<!--sex: clothes; neutral-->
+							Pero cierto <rs key="#org0" cert="low">joven</rs> lo seguía, cubierto el cuerpo con una sábana. Lo prendieron,
+						</ab>
+						<ab xml:id="b.MAR.014.052" type="verse" n="52">
+							<!--sex: nudity; neutral; clothes-->
+							pero él, dejando la sábana, huyó desnudo.
+						</ab><!--jct: una escena rarísima y poco conocida-->
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús ante el Concilio</head>
+						<ab xml:id="b.MAR.014.053" type="verse" n="53">
+							Trajeron, pues, a <rs key="#per1">Jesús</rs> al <rs key="#per48">Sumo sacerdote</rs>; y se reunieron todos los <rs key="#org12">principales sacerdotes</rs>, los <rs key="#org25">ancianos</rs> y los <rs key="#org5">escribas</rs>.
+						</ab>
+						<ab xml:id="b.MAR.014.054" type="verse" n="54">
+							<rs key="#per21">Pedro</rs> lo siguió de lejos hasta dentro del patio del <rs key="#per48">Sumo sacerdote</rs>; y estaba sentado con los <rs key="#org24">guardias</rs>, calentándose al fuego.
+						</ab>
+						<ab xml:id="b.MAR.014.055" type="verse" n="55">
+							Los <rs key="#org12">principales sacerdotes</rs> y todo el <rs key="#org29">Concilio</rs> buscaban testimonio contra <rs key="#per1">Jesús</rs> para entregarlo a la muerte, pero no lo hallaban,
+						</ab>
+						<ab xml:id="b.MAR.014.056" type="verse" n="56">
+							porque muchos daban falso testimonio contra él, pero sus testimonios no concordaban.
+						</ab>
+						<ab xml:id="b.MAR.014.057" type="verse" n="57">
+							Entonces, levantándose unos, dieron falso testimonio contra él, diciendo:
+						</ab>
+						<ab xml:id="b.MAR.014.058" type="verse" n="58">
+							<q who="#org0" toWhom="#org29 #org12 #per48" type="oral">Nosotros lo hemos oído decir: <q who="#per1" toWhom="#org0" type="soCalled">Yo derribaré este <rs key="#pla30">templo</rs> hecho a mano, y en tres días edificaré otro no hecho a mano.</q></q>
+							<!--jct: interesting questions appear with this verse. Does Jesus say that? And should we encode templo as #per1 or #pla30?-->
+						</ab>
+						<ab xml:id="b.MAR.014.059" type="verse" n="59">
+							Pero ni aun así concordaban en el testimonio.
+						</ab>
+						<ab xml:id="b.MAR.014.060" type="verse" n="60">
+							Entonces el <rs key="#per48">Sumo sacerdote</rs>, levantándose en medio, preguntó a <rs key="#per1">Jesús</rs>, diciendo:  <q who="#per48" toWhom="#per1" type="oral">¿No respondes nada? ¿Qué testifican estos contra ti?</q>
+						</ab>
+						<ab xml:id="b.MAR.014.061" type="verse" n="61">
+							<!--sex: ascendant; negative; positive-->
+							Pero él callaba y nada respondía. El <rs key="#per48">Sumo sacerdote</rs> le volvió a preguntar: <q who="#per48" toWhom="#per1" type="oral">¿Eres tú el <rs key="#per1">Cristo</rs>, el <rs key="#per1">Hijo del <rs key="#per14">Bendito</rs></rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.014.062" type="verse" n="62">
+							<!--sex: ascendant; neutral; blessed-->
+							<rs key="#per1">Jesús</rs> le dijo:  <q who="#per1" toWhom="#per48" type="oral">Yo soy. Y veréis al <rs key="#per1">Hijo del <rs key="#org0">hombre</rs></rs> sentado a la diestra del poder de <rs key="#per14">Dios</rs> y viniendo en las nubes del cielo.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.063" type="verse" n="63">
+							Entonces el <rs key="#per48">Sumo sacerdote</rs>, rasgando su vestidura, dijo: <q who="#per48" toWhom="#org29 #org12" type="oral">¿Qué más necesidad tenemos de testigos?</q>
+						</ab>
+						<ab xml:id="b.MAR.014.064" type="verse" n="64">
+							<q who="#per48" toWhom="#org29 #org12" type="oral">Habéis oído la blasfemia; ¿qué os parece?</q> Y todos ellos lo condenaron, declarándolo digno de muerte.
+						</ab>
+						<ab xml:id="b.MAR.014.065" type="verse" n="65">
+							Entonces algunos comenzaron a escupirlo, a cubrirle el rostro, a darle puñetazos y a decirle: <q who="#org0" toWhom="#per1" type="oral">«¡Profetiza!»</q>. También los <rs key="#org24">guardias</rs> le daban bofetadas.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Pedro niega a Jesús</head>
+						<ab xml:id="b.MAR.014.066" type="verse" n="66">
+							Estando <rs key="#per21">Pedro</rs> abajo, en el patio, vino una de las criadas del <rs key="#per48">Sumo sacerdote</rs>,
+						</ab>
+						<ab xml:id="b.MAR.014.067" type="verse" n="67">
+							y cuando vio a <rs key="#per21">Pedro</rs> que se calentaba, mirándolo, le dijo:  <q who="#org0" toWhom="#per21" type="oral">Tú también estabas con <rs key="#per1">Jesús</rs>, el <rs key="#per1">nazareno</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.068" type="verse" n="68">
+							Pero él negó, diciendo: <q who="#per21" toWhom="#org0" type="oral">No lo conozco, ni sé lo que dices.</q> Y salió a la entrada, y cantó el gallo.
+						</ab>
+						<ab xml:id="b.MAR.014.069" type="verse" n="69">
+							La criada, viéndolo otra vez, comenzó a decir a los que estaban allí: <q who="#org0" toWhom="#org0" type="oral">Este es uno de ellos.</q>
+						</ab>
+						<ab xml:id="b.MAR.014.070" type="verse" n="70">
+							Pero él volvió a negarlo. Poco después, los que estaban allí dijeron otra vez a <rs key="#per21">Pedro</rs>:  <q who="#org0" toWhom="#per21" type="oral">Verdaderamente tú eres de ellos, porque eres <rs key="#per21">galileo</rs> y tu manera de hablar es semejante a la de ellos.</q>
+							<!--jct: dialecto-->
+						</ab>
+						<ab xml:id="b.MAR.014.071" type="verse" n="71">
+							Entonces él comenzó a maldecir y a jurar: <q who="#per21" toWhom="#org0" type="oral">¡No conozco a este <rs key="#per1">hombre</rs> de quien habláis!</q>
+						</ab>
+						<ab xml:id="b.MAR.014.072" type="verse" n="72">
+							Y el gallo cantó la segunda vez. Entonces <rs key="#per21">Pedro</rs> se acordó de las palabras que <rs key="#per1">Jesús</rs> le había dicho: <q who="#per1" toWhom="#per21" type="oral">«Antes que el gallo cante dos veces, me negarás tres veces»</q>. Y pensando en esto, lloraba.
+						</ab>
+					</div>
+				</div>
+				<!--sex: cap 14 anotado-->
+				<div xml:id="b.MAR.015" type="chapter" n="15">
+					<div type="pericope">
+						<head type="pericope">Jesús ante Pilato</head>
+						<ab xml:id="b.MAR.015.001" type="verse" n="1">
+							Muy de mañana, habiendo tenido consejo los <rs key="#org12">principales sacerdotes</rs> con los <rs key="#org25">ancianos</rs>, con los <rs key="#org5">escribas</rs> y con todo el <rs key="#org29">Concilio</rs>, llevaron a <rs key="#per1">Jesús</rs> atado y lo entregaron a <rs key="#per50">Pilato</rs>.
+						</ab>
+						<ab xml:id="b.MAR.015.002" type="verse" n="2">
+							<rs key="#per50">Pilato</rs> le preguntó:  <q who="#per50" toWhom="#per1" type="oral">¿Eres tú el <rs key="#per1">Rey de los <rs key="#org13">judíos</rs></rs>?</q> Respondiendo él, le dijo: <q who="#per1" toWhom="#per50" type="oral">Tú lo dices</q>.
+						</ab>
+						<ab xml:id="b.MAR.015.003" type="verse" n="3">
+							Y los <rs key="#org12">principales sacerdotes</rs> lo acusaban mucho.
+						</ab>
+						<ab xml:id="b.MAR.015.004" type="verse" n="4">
+							Otra vez le preguntó <rs key="#per50">Pilato</rs>, diciendo:  <q who="#per50" toWhom="#per1" type="oral">¿Nada respondes? Mira de cuántas cosas te acusan.</q>
+						</ab>
+						<ab xml:id="b.MAR.015.005" type="verse" n="5">
+							Pero <rs key="#per1">Jesús</rs> ni aun con eso respondió, de modo que <rs key="#per50">Pilato</rs> quedó muy extrañado.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús sentenciado a muerte</head>
+						<ab xml:id="b.MAR.015.006" type="verse" n="6">
+							En el día de la <rs key="#tim5">Fiesta</rs> les soltaba un <rs key="#org102">preso</rs>, cualquiera que pidieran.
+						</ab>
+						<ab xml:id="b.MAR.015.007" type="verse" n="7">
+							Y había uno que se llamaba <rs key="#per51">Barrabás</rs>, <rs key="#per51">preso</rs> con sus compañeros de motín que habían cometido homicidio en una revuelta.
+						</ab>
+						<ab xml:id="b.MAR.015.008" type="verse" n="8">
+							Viniendo la <rs key="#org0">multitud</rs>, comenzó a pedir que hiciera como siempre les había hecho.
+						</ab>
+						<ab xml:id="b.MAR.015.009" type="verse" n="9">
+							<rs key="#per50">Pilato</rs> les respondió diciendo:  <q who="#per50" toWhom="#org0" type="oral">¿Queréis que os suelte al <rs key="#per1">Rey de los <rs key="#org13">judíos</rs></rs>?,</q>
+						</ab>
+						<ab xml:id="b.MAR.015.010" type="verse" n="10">
+							porque sabía que por envidia lo habían entregado los <rs key="#org12">principales sacerdotes</rs>.
+						</ab>
+						<ab xml:id="b.MAR.015.011" type="verse" n="11">
+							Pero los <rs key="#org12">principales sacerdotes</rs> incitaron a la <rs key="#org0">multitud</rs> para que les soltara más bien a <rs key="#per51">Barrabás</rs>.
+						</ab>
+						<ab xml:id="b.MAR.015.012" type="verse" n="12">
+							Respondiendo <rs key="#per50">Pilato</rs>, les dijo otra vez:  <q who="#per50" toWhom="#org0" type="oral">¿Qué, pues, queréis que haga del que llamáis <rs key="#per1">Rey de los <rs key="#org13">judíos</rs></rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.015.013" type="verse" n="13">
+							Y ellos volvieron a gritar: <q who="#org0" toWhom="#per50" type="oral">¡Crucifícalo!</q>
+						</ab>
+						<ab xml:id="b.MAR.015.014" type="verse" n="14">
+							<rs key="#per50">Pilato</rs> dijo:  <q who="#per50" toWhom="#org0" type="oral">¿Pues qué mal ha hecho?</q> Pero ellos gritaban aun más: <q who="#org0" toWhom="#per50" type="oral">¡Crucifícalo!</q>
+						</ab>
+						<ab xml:id="b.MAR.015.015" type="verse" n="15">
+							<rs key="#per50">Pilato</rs>, queriendo satisfacer al <rs key="#org70">pueblo</rs>, les soltó a <rs key="#per51">Barrabás</rs>, y entregó a <rs key="#per1">Jesús</rs>, después de azotarlo, para que fuera crucificado.
+						</ab>
+						<ab xml:id="b.MAR.015.016" type="verse" n="16">
+							Entonces los <rs key="#org24">soldados</rs> lo llevaron dentro del atrio, esto es, al <rs key="#pla37">pretorio</rs>, y reunieron a toda la compañía.
+						</ab>
+						<ab xml:id="b.MAR.015.017" type="verse" n="17">
+							Lo vistieron de púrpura, le pusieron una corona tejida de espinas
+						</ab>
+						<ab xml:id="b.MAR.015.018" type="verse" n="18">
+							y comenzaron a saludarlo: <q who="#org24" toWhom="#per1" type="oral">¡Salve, <rs key="#per1">Rey de los <rs key="#org13">judíos</rs></rs>!</q>
+						</ab>
+						<ab xml:id="b.MAR.015.019" type="verse" n="19">
+							Le golpeaban la cabeza con una caña, lo escupían y, puestos de rodillas, le hacían reverencias.
+						</ab>
+						<ab xml:id="b.MAR.015.020" type="verse" n="20">
+							Después de haberse burlado de él, le quitaron la púrpura, le pusieron sus propios vestidos y lo sacaron para crucificarlo.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Crucifixión y muerte de Jesús</head>
+						<ab xml:id="b.MAR.015.021" type="verse" n="21">
+							<!--sex: ascendant; negative; neutral-->
+							Obligaron a uno que pasaba, <rs key="#per54">Simón de <rs key="#pla33">Cirene</rs></rs>, <rs key="#per54">padre de <rs key="#per955">Alejandro</rs> y de <rs key="#per956">Rufo</rs></rs>, que venía del campo, a que le llevara la cruz.
+						</ab>
+						<ab xml:id="b.MAR.015.022" type="verse" n="22">
+							Y lo llevaron a un lugar llamado <rs key="#pla34">Gólgota</rs>, (que significa: <rs key="#pla34">Lugar de la Calavera</rs>).
+						</ab>
+						<ab xml:id="b.MAR.015.023" type="verse" n="23">
+							Le dieron a beber vino mezclado con mirra, pero él no lo tomó.
+						</ab>
+						<ab xml:id="b.MAR.015.024" type="verse" n="24">
+							Cuando lo crucificaron, repartieron entre sí sus vestidos, echando suertes sobre ellos para ver qué se llevaría cada uno.
+						</ab>
+						<ab xml:id="b.MAR.015.025" type="verse" n="25">
+							Era la hora tercera cuando lo crucificaron.
+						</ab>
+						<ab xml:id="b.MAR.015.026" type="verse" n="26">
+							El título escrito que señalaba la causa de su condena era: <q who="#org24" toWhom="#org0" type="written" cert="medium">«El <rs key="#per1">Rey de los <rs key="#org13">Judíos</rs></rs>».</q>
+						</ab>
+						<ab xml:id="b.MAR.015.027" type="verse" n="27">
+							Crucificaron también con él a <rs key="#per55 #per56">dos ladrones</rs>, uno a su derecha y el otro a su izquierda.
+						</ab>
+						<ab xml:id="b.MAR.015.028" type="verse" n="28">
+							Así se cumplió la <rs key="#wor1">Escritura</rs> que dice: <q toWhom="#org0" type="written" cert="low">«Y fue contado con los <rs key="#org19">pecadores</rs>».</q>
+						</ab>
+						<ab xml:id="b.MAR.015.029" type="verse" n="29">
+							Los que pasaban lo insultaban, meneando la cabeza y diciendo: <q who="#org0" toWhom="#per1" type="oral">¡Bah! tú que derribarías el <rs key="#pla30">Templo de <rs key="#per14">Dios</rs></rs> y en tres días lo reedificarías,</q>
+						</ab>
+						<ab xml:id="b.MAR.015.030" type="verse" n="30">
+							<q who="#org0" toWhom="#per1" type="oral">sálvate a ti mismo y desciende de la cruz.</q>
+						</ab>
+						<ab xml:id="b.MAR.015.031" type="verse" n="31">
+							De esta manera también los <rs key="#org12">principales sacerdotes</rs>, burlándose, se decían unos a otros, con los <rs key="#org5">escribas</rs>: <q who="#org12 #org5" toWhom="#org5 #org12" type="oral">A otros salvó, pero a sí mismo no se puede salvar.</q>
+						</ab>
+						<ab xml:id="b.MAR.015.032" type="verse" n="32">
+							<q who="#org12" toWhom="#org5" type="oral">¡El <rs key="#per1">Cristo</rs>! ¡<rs key="#per1">Rey de <rs key="#pla4">Israel</rs></rs>! ¡Que descienda ahora de la cruz, para que veamos y creamos!</q> También los que estaban crucificados con él lo insultaban.
+						</ab>
+						<ab xml:id="b.MAR.015.033" type="verse" n="33">
+							Cuando vino la hora sexta, hubo tinieblas sobre toda la tierra hasta la hora novena.
+						</ab>
+						<ab xml:id="b.MAR.015.034" type="verse" n="34">
+							Y a la hora novena <rs key="#per1">Jesús</rs> clamó a gran voz, diciendo:  <q who="#per1" toWhom="#per14" type="prayer">¡<rs key="#per14">Eloi</rs>, <rs key="#per14">Eloi</rs>!, ¿lama sabactani?</q> (que significa: <q who="#per1" toWhom="#per14" type="prayer"><rs key="#per14">Dios</rs> mío, <rs key="#per14">Dios</rs> mío, ¿por qué me has desamparado?).</q>
+						</ab>
+						<ab xml:id="b.MAR.015.035" type="verse" n="35">
+							Algunos de los que estaban allí decían, al oírlo: <q who="#org0" toWhom="#org0" type="oral">Mirad, llama a <rs key="#per13">Elías</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.015.036" type="verse" n="36">
+							Corrió uno y, empapando una esponja en vinagre, la puso en una caña y le dio a beber, diciendo: <q who="#org0" toWhom="#per1" type="oral">Dejad, veamos si viene <rs key="#per13">Elías</rs> a bajarlo.</q>
+						</ab>
+						<ab xml:id="b.MAR.015.037" type="verse" n="37">
+							Pero <rs key="#per1">Jesús</rs>, lanzando un fuerte grito, expiró.
+						</ab>
+						<ab xml:id="b.MAR.015.038" type="verse" n="38">
+							Entonces el velo del <rs key="#pla30">Templo</rs> se rasgó en dos, de arriba abajo.
+						</ab>
+						<ab xml:id="b.MAR.015.039" type="verse" n="39">
+							<!--sex: ascendant; negative; positive-->
+							Y el <rs key="#org24">centurión</rs> que estaba frente a él, viendo que después de clamar había expirado así, dijo: <q who="#org24" toWhom="#org0" type="oral">¡Verdaderamente este <rs key="#per1">hombre</rs> era <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>!</q>
+						</ab>
+						<ab xml:id="b.MAR.015.040" type="verse" n="40">
+							<!--sex: ascendant; negative; neutral; woman-->
+							También había algunas <rs key="#org111">mujeres</rs> mirando de lejos, entre las cuales estaban <rs key="#per59">María Magdalena</rs>, <rs key="#per59">María</rs> la <rs key="#per59">madre de <rs key="#per31">Jacobo el menor</rs> y de <rs key="#per60">José</rs></rs>, y <rs key="#per957">Salomé</rs>,
+						</ab>
+						<ab xml:id="b.MAR.015.041" type="verse" n="41">
+							quienes, cuando él estaba en <rs key="#pla7">Galilea</rs>, lo seguían y le servían; y otras muchas que habían subido con él a <rs key="#pla3">Jerusalén</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús es sepultado</head>
+						<ab xml:id="b.MAR.015.042" type="verse" n="42">
+							Cuando llegó la noche, porque era la preparación, es decir, la víspera del <rs key="#tim9">sábado</rs>,
+						</ab>
+						<ab xml:id="b.MAR.015.043" type="verse" n="43">
+							<!--sex: body; negative; positive-->
+							<rs key="#per61">José de <rs key="#pla35">Arimatea</rs></rs>, <rs key="#per61">miembro noble del <rs key="#org29">Concilio</rs></rs>, que también esperaba el <rs key="#pla19">reino de <rs key="#per14">Dios</rs></rs>, vino y entró osadamente a <rs key="#per50">Pilato</rs>, y pidió el cuerpo de <rs key="#per1">Jesús</rs>.
+						</ab>
+						<ab xml:id="b.MAR.015.044" type="verse" n="44">
+							<rs key="#per50">Pilato</rs> se sorprendió de que ya hubiera muerto, y llamando al <rs key="#org24">centurión</rs>, le preguntó si ya estaba muerto.
+						</ab>
+						<ab xml:id="b.MAR.015.045" type="verse" n="45">
+							<!--sex: body; negative; positive-->
+							E informado por el centurión, dio el cuerpo a <rs key="#per61">José</rs>,
+						</ab>
+						<ab xml:id="b.MAR.015.046" type="verse" n="46">
+							el cual compró una sábana y, bajándolo, lo envolvió en la sábana, lo puso en un <rs key="#pla36">sepulcro</rs> que estaba cavado en una peña e hizo rodar una piedra a la entrada del <rs key="#pla36">sepulcro</rs>.
+						</ab>
+						<ab xml:id="b.MAR.015.047" type="verse" n="47">
+							<!--sex: ascendant; negative; neutral; woman-->
+							<rs key="#per58">María Magdalena</rs> y <rs key="#per59">María</rs> <rs key="#per59">madre de <rs key="#per60">José</rs></rs> miraban dónde lo ponían.
+						</ab>
+					</div>
+				</div>
+				<!--sex: cap 15 anotado-->
+				<div xml:id="b.MAR.016" type="chapter" n="16">
+					<div type="pericope">
+						<head type="pericope">La resurrección</head>
+						<ab xml:id="b.MAR.016.001" type="verse" n="1">
+							<!--sex: ascendant; positive; neutral-->
+							Cuando pasó el <rs key="#tim9">sábado</rs>, <rs key="#per58">María Magdalena</rs>, <rs key="#per59">María</rs> la <rs key="#per59">madre de <rs key="#per31">Jacobo</rs></rs>, y <rs key="#per957">Salomé</rs>, compraron especias aromáticas para ir a ungirlo.
+						</ab>
+						<ab xml:id="b.MAR.016.002" type="verse" n="2">
+							Muy de mañana, el primer día de la semana, vinieron al <rs key="#pla36">sepulcro</rs>, recién salido el sol.
+						</ab>
+						<ab xml:id="b.MAR.016.003" type="verse" n="3">
+							Pero decían entre sí: <q who="#per58 #per59 #per957" toWhom="#per58 #per59 #per957" type="oral">¿Quién nos removerá la piedra de la entrada del <rs key="#pla36">sepulcro</rs>?</q>
+						</ab>
+						<ab xml:id="b.MAR.016.004" type="verse" n="4">
+							Pero cuando miraron, vieron removida la piedra, aunque era muy grande.
+						</ab>
+						<ab xml:id="b.MAR.016.005" type="verse" n="5">
+							Y cuando entraron en el <rs key="#pla36">sepulcro</rs>, vieron a un <rs key="#org4">joven</rs> sentado al lado derecho, cubierto de una larga ropa blanca, y se asustaron.
+						</ab>
+						<ab xml:id="b.MAR.016.006" type="verse" n="6">
+							Pero él les dijo: <q who="#org4" toWhom="#per58 #per59 #per957" type="oral">No os asustéis; buscáis a <rs key="#per1">Jesús nazareno</rs>, el que fue crucificado. Ha resucitado, no está aquí; mirad el lugar en donde lo pusieron.</q>
+						</ab>
+						<ab xml:id="b.MAR.016.007" type="verse" n="7">
+							<q who="#org4" toWhom="#per58 #per59 #per957" type="oral">Pero id, decid a sus <rs key="#org3">discípulos</rs>, y a <rs key="#per21">Pedro</rs>, que él va delante de vosotros a <rs key="#pla7">Galilea</rs>; allí lo veréis, como os dijo.</q>
+						</ab>
+						<ab xml:id="b.MAR.016.008" type="verse" n="8">
+							Ellas salieron huyendo del <rs key="#pla36">sepulcro</rs>, porque les había entrado temblor y espanto; y no dijeron nada a nadie, porque tenían miedo.
+						</ab>
+						<ab xml:id="b.MAR.016.009" type="verse" n="9">
+							Habiendo, pues, resucitado <rs key="#per1">Jesús</rs> por la mañana, el primer día de la semana, apareció primeramente a <rs key="#per58">María Magdalena</rs>, de quien había echado <rs key="#org6">siete demonios</rs>.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús se aparece a María Magdalena</head>
+						<ab xml:id="b.MAR.016.010" type="verse" n="10">
+							Yendo ella, lo hizo saber a los que habían estado con él, los cuales estaban tristes y llorando.
+						</ab>
+						<ab xml:id="b.MAR.016.011" type="verse" n="11">
+							Ellos, cuando oyeron que vivía y que había sido visto por ella, no lo creyeron.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús se aparece a dos de sus discípulos</head>
+						<ab xml:id="b.MAR.016.012" type="verse" n="12">
+							Pero después apareció en otra forma a dos de ellos que iban de camino al campo.
+						</ab>
+						<ab xml:id="b.MAR.016.013" type="verse" n="13">
+							Ellos fueron y lo hicieron saber a los otros; y ni aun a ellos les creyeron.
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">Jesús comisiona a los apóstoles</head>
+						<ab xml:id="b.MAR.016.014" type="verse" n="14">
+							Finalmente se apareció a los <rs key="#org3">once</rs> mismos, estando ellos sentados a la mesa, y les reprochó su incredulidad y dureza de corazón, porque no habían creído a los que lo habían visto resucitado.
+						</ab>
+						<ab xml:id="b.MAR.016.015" type="verse" n="15">
+							Y les dijo: <q who="#per1" toWhom="#org3" type="oral">Id por todo el <rs key="#org0">mundo</rs> y predicad el evangelio a toda <rs key="#org0">criatura</rs>.</q>
+						</ab>
+						<ab xml:id="b.MAR.016.016" type="verse" n="16">
+							<q who="#per1" toWhom="#org3" type="oral">El que crea y sea bautizado, será salvo; pero el que no crea, será condenado.</q>
+						</ab>
+						<ab xml:id="b.MAR.016.017" type="verse" n="17">
+							<q who="#per1" toWhom="#org3" type="oral">Estas señales seguirán a los que creen: En mi nombre echarán fuera <rs key="#org6">demonios</rs>, hablarán nuevas lenguas,</q>
+						</ab>
+						<ab xml:id="b.MAR.016.018" type="verse" n="18">
+							<q who="#per1" toWhom="#org3" type="oral">tomarán serpientes en las manos y, aunque beban cosa mortífera, no les hará daño; sobre los <rs key="#org15">enfermos</rs> pondrán sus manos, y sanarán.</q>
+							<!--jct: interesantes versículos-->
+						</ab>
+					</div>
+					<div type="pericope">
+						<head type="pericope">La ascensión</head>
+						<ab xml:id="b.MAR.016.019" type="verse" n="19">
+							Y el <rs key="#per1">Señor</rs>, después que les habló, fue recibido arriba en el <rs key="#pla18">cielo</rs> y se sentó a la diestra de <rs key="#per14">Dios</rs>.
+						</ab>
+						<ab xml:id="b.MAR.016.020" type="verse" n="20">
+							Ellos, saliendo, predicaron en todas partes, ayudándolos el <rs key="#per1">Señor</rs> y confirmando la palabra con las señales que la acompañaban. Amén.
+						</ab>
+					</div>
+				</div>
+			</div>
+		</body>
+		<back />
+	</text>
+</TEI>
