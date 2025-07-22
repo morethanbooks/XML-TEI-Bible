@@ -1,0 +1,1453 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Apocalipsis</title>
+				<title type="idno">
+					<idno type="string">REV</idno>
+					<idno type="viaf">181843323</idno>
+				</title>
+				<author>
+					<name type="short">Juan</name>
+					<name type="full">San Juan</name>
+					<idno type="viaf"/>
+				</author>
+				<principal key="#jct">Jos&#233; Calvo Tello</principal>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Jos&#233; Calvo Tello</publisher>
+				<availability status="free">
+					<p>The text is freely available.</p>
+				</availability>
+				<date when="2015">2015</date>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source">, <date when="2000">?</date>, <idno/>	.</bibl>
+				<bibl type="print-source">Reina Valera, <date when="1995">1995</date></bibl>
+				<bibl type="edition-first"><date when="1569">1569</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>Codificado bestia, falso profeta y drag&#243;n con #per20 como diablo.</p>
+			<p>Codificado los cuatro seres con un grupo aparte (#org51); de la misma manera los 24 ancianos.</p>
+		</encodingDesc>
+		<revisionDesc>
+			<change when="2016-03-15" who="#jct">First TEI version of Apocalipsis</change>
+			<change when="2016-03-28" who="#jct">Text corrected</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div/>
+		</front>
+		<body>
+			<div xml:id="b.REV" type="book" cert="high">
+				<div xml:id="b.REV.1" type="chapter" n="1">
+					<div type="pericope">
+						<ab type="pericope">La revelaci&#243;n de Jesucristo</ab>
+						<ab xml:id="b.REV.1.1" type="verse" n="1">
+						La revelaci&#243;n de <rs key="#per1">Jesucristo</rs>, que <rs key="#per14">Dios</rs> le dio para manifestar a sus siervos las cosas que deben suceder pronto. La declar&#243; envi&#225;ndola por medio de su <rs key="#org4">&#225;ngel</rs> a su <rs key="#per25">siervo</rs> <rs key="#per25">Juan</rs>,
+					</ab>
+					<ab xml:id="b.REV.1.2" type="verse" n="2">
+						el cual ha dado testimonio de la palabra de <rs key="#per14">Dios</rs>, del testimonio de <rs key="#per1">Jesucristo</rs> y de todas las cosas que ha visto.
+					</ab>
+					<ab xml:id="b.REV.1.3" type="verse" n="3">
+						Bienaventurado el que lee y los que oyen las palabras de esta <rs key="#wor3">profec&#237;a</rs>, y guardan las cosas en ella escritas, porque el <rs key="#tim2">tiempo</rs> est&#225; cerca.
+					</ab>
+					</div>
+					<div type="pericope">
+						<ab type="pericope">Salutaciones a las siete iglesias</ab>
+						<ab xml:id="b.REV.1.4" type="verse" n="4">
+						<rs key="#per25">Juan</rs>, a las <rs key="#org30 #org31 #org32 #org33 #org34 #org35 #org36">siete iglesias que est&#225;n en <rs key="#pla63">Asia</rs></rs>: Gracia y paz a vosotros de parte del que es y que era y que ha de venir, de los siete esp&#237;ritus que est&#225;n delante de su trono,
+					</ab>
+						
+					<ab xml:id="b.REV.1.5" type="verse" n="5">
+						y de <rs key="#per1">Jesucristo</rs>, el <rs key="#per1">testigo fiel</rs>, el <rs key="#per1">primog&#233;nito de los muertos</rs> y el <rs key="#per1">soberano de los reyes de la tierra</rs>. Al <rs key="#per1">que nos ama</rs>, nos ha lavado de nuestros pecados con su sangre
+					</ab>
+					<ab xml:id="b.REV.1.6" type="verse" n="6">
+						y nos hizo <rs key="#org18">reyes</rs> y <rs key="#org18">sacerdotes</rs> para <rs key="#per14">Dios</rs>, su <rs key="#per14">Padre</rs>, a &#233;l sea gloria e imperio por los siglos de los siglos. Am&#233;n.
+					</ab>
+					<ab xml:id="b.REV.1.7" type="verse" n="7">
+						He aqu&#237; que viene con las nubes: Todo ojo lo ver&#225;, y los que lo traspasaron; y todos los linajes de la tierra se lamentar&#225;n por causa de &#233;l. S&#237;, am&#233;n.
+					</ab>
+					<ab xml:id="b.REV.1.8" type="verse" n="8">
+						<q who="#per1" toWhom="#per25" type="oral">Yo soy el <rs key="#per1">Alfa</rs> y la <rs key="#per1">Omega</rs>, <rs key="#per1">principio</rs> y <rs key="#per1">fin</rs></q>, dice el <rs key="#per1">Se&#241;or</rs>, el que es y que era y que ha de venir, el <rs key="#per1">Todopoderoso</rs>.
+					</ab>
+					</div>
+					<div type="pericope">
+						<ab type="pericope">Una visi&#243;n del Hijo del hombre</ab>
+					<ab xml:id="b.REV.1.9" type="verse" n="9">
+						Yo, <rs key="#per25">Juan</rs>, vuestro <rs key="#per25">hermano</rs> y <rs key="#per25">compa&#241;ero en la tribulaci&#243;n</rs>, en el <rs key="#pla19">reino y en la perseverancia de <rs key="#per1">Jesucristo</rs></rs>, estaba en la <rs key="#pla70">isla</rs> llamada <rs key="#pla70">Patmos</rs>, por causa de la palabra de <rs key="#per14">Dios</rs> y del testimonio de <rs key="#per1">Jesucristo</rs>.
+					</ab>
+					<ab xml:id="b.REV.1.10" type="verse" n="10">
+						Estando yo en el <rs key="#per17">Esp&#237;ritu</rs> en el <rs cert="low" key="#tim9">d&#237;a del <rs key="#per14">Se&#241;or</rs></rs> o&#237; detr&#225;s de m&#237; una gran voz, como de trompeta,
+					</ab>
+					<ab xml:id="b.REV.1.11" type="verse" n="11">
+						que dec&#237;a: <q who="#per1" toWhom="#per25" type="oral">Yo soy el <rs key="#per14">Alfa</rs> y la <rs key="#per1">Omega</rs>, el <rs key="#per1">primero</rs> y el <rs key="#per1">&#250;ltimo</rs>. Escribe en un <rs key="#wor3">libro</rs> lo que ves y env&#237;alo a las <rs key="#org30 #org31 #org32 #org33 #org34 #org35 #org36">siete iglesias que est&#225;n en <rs key="#pla63">Asia</rs></rs>: a <rs key="#org30">&#201;feso</rs>, <rs key="#org31">Esmirna</rs>, <rs key="#org32">P&#233;rgamo</rs>, <rs key="#org33">Tiatira</rs>, <rs key="#org34">Sardis</rs>, <rs key="#org35">Filadelfia</rs> y <rs key="#org36">Laodicea</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.1.12" type="verse" n="12">
+						Me volv&#237; para ver la voz que hablaba conmigo. Y vuelto, vi <rs key="#org30 #org31 #org32 #org33 #org34 #org35 #org36">siete candelabros de oro</rs>,
+					</ab>
+					<ab xml:id="b.REV.1.13" type="verse" n="13">
+						y en medio de los <rs key="#org30 #org31 #org32 #org33 #org34 #org35 #org36">siete candelabros</rs> a uno semejante al <rs key="#per1">Hijo del hombre</rs>, vestido de una ropa que llegaba hasta los pies, y ten&#237;a el pecho ce&#241;ido con un cinto de oro.
+					</ab>
+					<ab xml:id="b.REV.1.14" type="verse" n="14">
+						Su cabeza y sus cabellos eran blancos como blanca lana, como nieve; sus ojos, como llama de fuego.
+					</ab>
+					<ab xml:id="b.REV.1.15" type="verse" n="15">
+						Sus pies eran semejantes al bronce pulido, refulgente como en un horno, y su voz como el estruendo de muchas aguas.
+					</ab>
+					<ab xml:id="b.REV.1.16" type="verse" n="16">
+						En su diestra ten&#237;a siete estrellas; de su boca sal&#237;a una espada aguda de dos filos y su rostro era como el sol cuando resplandece con toda su fuerza.
+					</ab>
+					<ab xml:id="b.REV.1.17" type="verse" n="17">
+						Cuando lo vi, ca&#237; a sus pies como muerto. Y &#233;l puso su diestra sobre m&#237;, dici&#233;ndome: <q who="#per1" toWhom="#per25" type="oral">No temas. Yo soy el <rs key="#per1">primero</rs> y el <rs key="#per1">&#250;ltimo</rs>,</q>
+					</ab>
+					<ab xml:id="b.REV.1.18" type="verse" n="18">
+						<q who="#per1" toWhom="#per25" type="oral">el <rs key="#per1">que vive</rs>. Estuve muerto, pero vivo por los siglos de los siglos, am&#233;n. Y tengo las llaves de la muerte y del <rs key="#pla15">Hades</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.1.19" type="verse" n="19">
+						<q who="#per1" toWhom="#per25" type="oral">Escribe, pues, las cosas que has visto, las que son y las que han de ser despu&#233;s de estas.</q>
+					</ab>
+					<ab xml:id="b.REV.1.20" type="verse" n="20">
+						<q who="#per1" toWhom="#per25" type="oral">Respecto al misterio de las <rs key="#org4">siete estrellas</rs> que has visto en mi diestra, y de los <rs key="#org30 #org31 #org32 #org33 #org34 #org35 #org36">siete candelabros de oro</rs>: las <rs key="#org4">siete estrellas</rs> son los <rs key="#org4">&#225;ngeles de las <rs key="#org30 #org31 #org32 #org33 #org34 #org35 #org36">siete iglesias</rs></rs>, y los <rs key="#org30 #org31 #org32 #org33 #org34 #org35 #org36">siete candelabros</rs> que has visto son las <rs key="#org30 #org31 #org32 #org33 #org34 #org35 #org36">siete iglesias</rs>.</q>
+					</ab>
+					</div>
+				</div>
+				<div xml:id="b.REV.2" type="chapter" n="2">
+					<div type="pericope">
+						<ab type="pericope">El mensaje a &#201;feso</ab>
+					<ab xml:id="b.REV.2.1" type="verse" n="1">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;Escribe al <rs key="#org4">&#225;ngel</rs> de la <rs key="#org30">iglesia en <rs key="#pla62">&#201;feso</rs></rs>: <q who="#per25" toWhom="#org30" type="written">&#187;El <rs key="#per1">que tiene las siete estrellas en su diestra</rs>, el <rs key="#per1">que camina en medio de los siete candelabros de oro</rs>, dice esto:</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.2" type="verse" n="2">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org30" type="written">&#187;Yo conozco tus obras, tu arduo trabajo y tu perseverancia, y que no puedes soportar a los malos, has probado a los que se dicen ser ap&#243;stoles y no lo son, y los has hallado mentirosos.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.3" type="verse" n="3">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org30" type="written">Has sufrido, has sido perseverante, has trabajado arduamente por amor de mi nombre y no has desmayado.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.4" type="verse" n="4">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org30" type="written">Pero tengo contra ti que has dejado tu primer amor.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.5" type="verse" n="5">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org30" type="written">Recuerda, por tanto, de d&#243;nde has ca&#237;do, arrepi&#233;ntete y haz las primeras obras, pues si no te arrepientes, pronto vendr&#233; a ti y quitar&#233; tu candelabro de su lugar.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.6" type="verse" n="6">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org30" type="written">Pero tienes esto: que aborreces las obras de los nicola&#237;tas, las cuales yo tambi&#233;n aborrezco.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.7" type="verse" n="7">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org30" type="written">El que tiene o&#237;do, oiga lo que el <rs key="#per17">Esp&#237;ritu</rs> dice a las <rs key="#org37">iglesias</rs>. Al vencedor le dar&#233; a comer del &#225;rbol de la vida, que est&#225; en medio del <rs key="#pla18">para&#237;so de <rs key="#per14">Dios</rs></rs>.</q></q>
+					</ab>
+					</div>
+					<div type="pericope">
+						<ab type="pericope">El mensaje a Esmirna</ab>
+					<ab xml:id="b.REV.2.8" type="verse" n="8">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;Escribe al <rs key="#org4">&#225;ngel</rs> de la <rs key="#org31">iglesia en <rs key="#pla65">Esmirna</rs></rs>: <q who="#per1" toWhom="#org31" type="written">&#187;El <rs key="#per1">primero</rs> y el <rs key="#per1">postrero</rs>, el <rs key="#per1">que estuvo muerto</rs> y vivi&#243;, dice esto:</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.9" type="verse" n="9">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org31" type="written">&#187;Yo conozco tus obras, tu tribulaci&#243;n, tu pobreza (aunque eres rico) y la blasfemia de los que dicen ser <rs key="#org13">jud&#237;os </rs>y no lo son, sino que son sinagoga de <rs key="#per20">Satan&#225;s</rs>.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.10" type="verse" n="10">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org31" type="written">No temas lo que has de padecer. El <rs key="#per20">diablo</rs> echar&#225; a algunos de vosotros en la c&#225;rcel para que se&#225;is probados, y tendr&#233;is tribulaci&#243;n por diez d&#237;as. &#161;S&#233; fiel hasta la muerte y yo te dar&#233; la corona de la vida!</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.11" type="verse" n="11">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org31" type="written">El que tiene o&#237;do, oiga lo que el <rs key="#per17">Esp&#237;ritu</rs> dice a las <rs key="#org37">iglesias</rs>. El vencedor no sufrir&#225; da&#241;o de la segunda muerte&#160;.</q></q>
+					</ab>
+					</div>
+					<div type="pericope">
+						<ab type="pericope">El mensaje a P&#233;rgamo</ab>
+					<ab xml:id="b.REV.2.12" type="verse" n="12">
+						&#187;Escribe al <rs key="#org4">&#225;ngel</rs> de la <rs key="#org32">iglesia en <rs key="#pla68">P&#233;rgamo</rs></rs>: <q who="#org4" toWhom="#org32" type="written">&#187;El <rs key="#per20">que tiene la espada aguda de dos filos</rs> dice esto:</q>
+					</ab>
+					<ab xml:id="b.REV.2.13" type="verse" n="13">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org32" type="written">&#187;Yo conozco tus obras y d&#243;nde habitas: donde est&#225; el trono de <rs key="#per20">Satan&#225;s</rs>. Pero retienes mi nombre y no has negado mi fe ni aun en los d&#237;as en que <rs key="#per116">Antipas</rs>, mi <rs key="#per116">testigo fiel</rs>, fue muerto entre vosotros, donde habita <rs key="#per20">Satan&#225;s</rs>.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.14" type="verse" n="14">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org32" type="written">Pero tengo unas pocas cosas contra ti: que tienes ah&#237; a los que retienen la doctrina de <rs key="#per639">Balaam</rs>, que ense&#241;aba a <rs key="#per638">Balac</rs> a poner tropiezo ante los <rs key="#org13" cert="medium">hijos de <rs key="#pla4">Israel</rs></rs>, a comer de cosas sacrificadas a los &#237;dolos y a cometer fornicaci&#243;n.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.15" type="verse" n="15">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org32" type="written">Y tambi&#233;n tienes a los que retienen la doctrina de los nicola&#237;tas, la que yo aborrezco.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.16" type="verse" n="16">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org32" type="written">Por tanto, arrepi&#233;ntete, pues si no, vendr&#233; pronto hasta ti y pelear&#233; contra ellos con la espada de mi boca.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.17" type="verse" n="17">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org32" type="written">El que tiene o&#237;do, oiga lo que el <rs key="#per17">Esp&#237;ritu</rs> dice a las <rs key="#org37">iglesias</rs>. Al vencedor le dar&#233; de comer del man&#225; escondido, y le dar&#233; una piedrecita blanca y en la piedrecita un nombre nuevo escrito, el cual nadie conoce sino el que lo recibe&#160;.</q></q>
+					</ab>
+						</div>
+					<div type="pericope">
+						<ab type="pericope">El mensaje a Tiatira</ab>
+					<ab xml:id="b.REV.2.18" type="verse" n="18">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;Escribe al <rs key="#org4">&#225;ngel</rs> de la <rs key="#org33">iglesia en <rs key="#pla61">Tiatira</rs></rs>: <q who="#per25" toWhom="#org33" type="written">&#187;El <rs key="#per1">Hijo de <rs key="#per14">Dios</rs></rs>, el <rs key="#per1">que tiene ojos como llama de fuego y pies semejantes al bronce pulido</rs>, dice esto:</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.19" type="verse" n="19">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">&#187;Yo conozco tus obras, tu amor, tu fe, tu servicio, tu perseverancia y que tus obras postreras son superiores a las primeras.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.20" type="verse" n="20">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">Pero tengo contra ti que toleras que esa <rs key="#per119">mujer</rs> <rs key="#per119">Jezabel</rs>, que se dice <rs key="#per119">profetisa</rs>, ense&#241;e y seduzca a mis siervos para fornicar y para comer cosas sacrificadas a los &#237;dolos.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.21" type="verse" n="21">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">Yo le he dado tiempo para que se arrepienta, pero no quiere arrepentirse de su fornicaci&#243;n.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.22" type="verse" n="22">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">Por tanto, yo la arrojo en cama; y en gran tribulaci&#243;n a los que adulteran con ella, si no se arrepienten de las obras de ella.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.23" type="verse" n="23">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">A sus hijos herir&#233; de muerte y todas las <rs key="#org37">iglesias</rs> sabr&#225;n que yo soy el que escudri&#241;a la mente y el coraz&#243;n. Os dar&#233; a cada uno seg&#250;n vuestras obras.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.24" type="verse" n="24">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">Pero a los dem&#225;s que est&#225;n en <rs key="#pla61">Tiatira</rs>, a cuantos no tienen esa doctrina y no han conocido lo que ellos llaman las profundidades de <rs key="#per20">Satan&#225;s</rs>, yo os digo: No os impongo otra carga;</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.25" type="verse" n="25">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">pero lo que ten&#233;is, retenedlo hasta que yo venga.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.26" type="verse" n="26">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">Al vencedor que guarde mis obras hasta el fin, yo le dar&#233; autoridad sobre las naciones;</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.27" type="verse" n="27">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">las regir&#225; con vara de hierro y ser&#225;n quebradas como un vaso de alfarero; como yo tambi&#233;n la he recibido de mi <rs key="#per14">Padre</rs>.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.28" type="verse" n="28">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">Y le dar&#233; la estrella de la ma&#241;ana.</q></q>
+					</ab>
+					<ab xml:id="b.REV.2.29" type="verse" n="29">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org33" type="written">El que tiene o&#237;do, oiga lo que el <rs key="#per17">Esp&#237;ritu</rs> dice a las <rs key="#org37">iglesias</rs>.</q></q>
+					</ab>
+					</div>
+				</div>
+				<div xml:id="b.REV.3" type="chapter" n="3">
+<div type="pericope">
+<ab type="pericope">El mensaje a Sardis</ab>
+
+					<ab xml:id="b.REV.3.1" type="verse" n="1">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;Escribe al <rs key="#org4">&#225;ngel</rs> de la <rs key="#org34">iglesia en <rs key="#pla60">Sardis</rs></rs>: <q who="#per25" toWhom="#org34" type="written">&#187;El <rs key="#per1">que tiene los siete esp&#237;ritus de <rs key="#per14">Dios</rs> y las siete estrellas dice esto</rs>: &#187;Yo conozco tus obras, que tienes nombre de que vives y est&#225;s muerto.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.2" type="verse" n="2">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">S&#233; vigilante y confirma las otras cosas que est&#225;n para morir, porque no he hallado tus obras bien acabadas delante de <rs key="#per14">Dios</rs>.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.3" type="verse" n="3">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">Acu&#233;rdate, pues, de lo que has recibido y o&#237;do; gu&#225;rdalo y arrepi&#233;ntete, pues si no velas vendr&#233; sobre ti como ladr&#243;n y no sabr&#225;s a qu&#233; hora vendr&#233; sobre ti.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.4" type="verse" n="4">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">Pero tienes unas pocas personas en <rs key="#pla60">Sardis</rs> que no han manchado sus vestiduras y andar&#225;n conmigo en vestiduras blancas, porque son dignas.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.5" type="verse" n="5">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">El vencedor ser&#225; vestido de vestiduras blancas, y no borrar&#233; su nombre del <rs key="#wor4">libro de la vida</rs>, y confesar&#233; su nombre delante de mi <rs key="#per14">Padre</rs> y delante de sus <rs key="#org4">&#225;ngeles</rs>.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.6" type="verse" n="6">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">El que tiene o&#237;do, oiga lo que el <rs key="#per17">Esp&#237;ritu</rs> dice a las <rs key="#org37">iglesias</rs>&#160;.</q></q>
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">El mensaje a Filadelfia</ab>
+
+					<ab xml:id="b.REV.3.7" type="verse" n="7">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;Escribe al <rs key="#org4">&#225;ngel</rs> de la <rs key="#org35">iglesia en <rs key="#pla67">Filadelfia</rs></rs>: <q who="#per25" toWhom="#org35" type="written">&#187;Esto dice el <rs key="#per1">Santo</rs>, el <rs key="#per1">Verdadero</rs>, el <rs key="#per1">que tiene la llave de <rs key="#per35">David</rs></rs>, el <rs key="#per1">que abre y ninguno cierra, y cierra y ninguno abre</rs>:</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.8" type="verse" n="8">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org35" type="written">&#187;Yo conozco tus obras. Por eso, he puesto delante de ti una puerta abierta, la cual nadie puede cerrar, pues aunque tienes poca fuerza, has guardado mi palabra y no has negado mi nombre.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.9" type="verse" n="9">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org35" type="written">De la sinagoga de <rs key="#per20">Satan&#225;s</rs>, de los que dicen ser <rs key="#org13">jud&#237;os</rs> y no lo son, sino que mienten, te dar&#233; algunos. Yo har&#233; que vengan y se postren a tus pies reconociendo que yo te he amado.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.10" type="verse" n="10">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">Por cuanto has guardado la palabra de mi paciencia, yo tambi&#233;n te guardar&#233; de la hora de la prueba que ha de venir sobre el mundo entero para probar a los que habitan sobre la tierra.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.11" type="verse" n="11">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">Vengo pronto; ret&#233;n lo que tienes, para que ninguno tome tu corona.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.12" type="verse" n="12">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">Al vencedor yo lo har&#233; columna en el <rs key="#pla73">templo de mi <rs key="#per14">Dios</rs></rs> y nunca m&#225;s saldr&#225; de all&#237;. Escribir&#233; sobre &#233;l el nombre de mi <rs key="#per14">Dios</rs> y el nombre de la <rs key="#pla71">ciudad de mi <rs key="#per14">Dios</rs></rs>, la <rs key="#pla71">nueva Jerusal&#233;n</rs>, la cual desciende del cielo, con mi <rs key="#per14">Dios</rs>, y mi nombre nuevo.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.13" type="verse" n="13">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org34" type="written">El que tiene o&#237;do, oiga lo que el Esp&#237;ritu dice a las iglesias&#160;.</q></q>
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">El mensaje a Laodicea</ab>
+
+					<ab xml:id="b.REV.3.14" type="verse" n="14">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;Escribe al <rs key="#org4">&#225;ngel</rs> de la <rs key="#org36">iglesia en <rs key="#pla66">Laodicea</rs></rs>: <q who="#per25" toWhom="#org36" type="written">&#187;El <rs key="#per1">Am&#233;n</rs>, el <rs key="#per1">testigo fiel y verdadero</rs>, el <rs key="#per1">Principio de la creaci&#243;n de <rs key="#per14">Dios</rs></rs>, dice esto:</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.15" type="verse" n="15">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org36" type="written">&#187;Yo conozco tus obras, que ni eres fr&#237;o ni caliente. &#161;Ojal&#225; fueras fr&#237;o o caliente!</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.16" type="verse" n="16">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org36" type="written">Pero por cuanto eres tibio y no fr&#237;o ni caliente, te vomitar&#233; de mi boca.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.17" type="verse" n="17">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org36" type="written">T&#250; dices: <q who="#org36" toWhom="#org0" type="oral">Yo soy rico, me he enriquecido y de nada tengo necesidad.</q> Pero no sabes que eres desventurado, miserable, pobre, ciego y est&#225;s desnudo.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.18" type="verse" n="18">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org36" type="written">Por tanto, yo te aconsejo que compres de m&#237; oro refinado en el fuego para que seas rico, y vestiduras blancas para vestirte, para que no se descubra la verg&#252;enza de tu desnudez. Y unge tus ojos con colirio para que veas.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.19" type="verse" n="19">
+					<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org36" type="written">	Yo reprendo y castigo a todos los que amo; s&#233;, pues, celoso y arrepi&#233;ntete.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.20" type="verse" n="20">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org36" type="written">Yo estoy a la puerta y llamo; si alguno oye mi voz y abre la puerta, entrar&#233; a &#233;l y cenar&#233; con &#233;l y &#233;l conmigo.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.21" type="verse" n="21">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org36" type="written">Al vencedor le conceder&#233; que se siente conmigo en mi trono, as&#237; como yo he vencido y me he sentado con mi <rs key="#per14">Padre</rs> en su trono.</q></q>
+					</ab>
+					<ab xml:id="b.REV.3.22" type="verse" n="22">
+						<q who="#per1" toWhom="#per25" type="oral"><q who="#per25" toWhom="#org36" type="written">El que tiene o&#237;do, oiga lo que el <rs key="#per17">Esp&#237;ritu</rs> dice a las <rs key="#org37">iglesias</rs>&#160;&#187;.</q></q>
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.4" type="chapter" n="4">
+<div type="pericope">
+<ab type="pericope">La adoraci&#243;n celestial</ab>
+
+					<ab xml:id="b.REV.4.1" type="verse" n="1">
+						Despu&#233;s de esto mir&#233;, y vi que hab&#237;a una puerta abierta en el <rs key="#pla18">cielo</rs>. La primera voz que o&#237; era como de una trompeta que, hablando conmigo, dijo <q who="#per1" toWhom="#per25" type="oral">&#161;Sube ac&#225; y yo te mostrar&#233; las cosas que suceder&#225;n despu&#233;s de estas!</q>.
+					</ab>
+					<ab xml:id="b.REV.4.2" type="verse" n="2">
+						Al instante, estando yo en el <rs key="#per17">Esp&#237;ritu</rs>, vi un trono establecido en el cielo, y en el trono, uno sentado.
+					</ab>
+					<ab xml:id="b.REV.4.3" type="verse" n="3">
+						La apariencia del <rs key="#per14" cert="low">que estaba sentado</rs> era semejante a una piedra de jaspe y de cornalina, y alrededor del trono hab&#237;a un arco iris semejante en su apariencia a la esmeralda.
+					</ab>
+					<ab xml:id="b.REV.4.4" type="verse" n="4">
+						Alrededor del trono hab&#237;a veinticuatro tronos, y en los tronos vi sentados a <rs key="#org52" cert="low">veinticuatro ancianos</rs> vestidos de ropas blancas, con coronas de oro en sus cabezas.
+					</ab>
+					<ab xml:id="b.REV.4.5" type="verse" n="5">
+						Del trono sal&#237;an rel&#225;mpagos, truenos y voces. Delante del trono ard&#237;an <rs key="#org4" cert="low">siete l&#225;mparas de fuego</rs>, que son los <rs key="#org4" cert="low">siete esp&#237;ritus de <rs key="#per14">Dios</rs></rs>.
+					</ab>
+					<ab xml:id="b.REV.4.6" type="verse" n="6">
+						Tambi&#233;n delante del trono hab&#237;a como un mar de vidrio semejante al cristal, y junto al trono y alrededor del trono hab&#237;a <rs key="#org51" cert="low">cuatro seres vivientes llenos de ojos por delante y por detr&#225;s</rs>.
+					</ab>
+					<ab xml:id="b.REV.4.7" type="verse" n="7">
+						El <rs key="#org51" cert="low">primer ser viviente</rs> era semejante a un <rs key="#org51" cert="low">le&#243;n</rs>; el segundo era semejante a un <rs key="#org51" cert="low">becerro</rs>; el tercero ten&#237;a rostro como de <rs key="#org51" cert="low">hombre</rs>; y el cuarto era semejante a un <rs key="#org51" cert="low">&#225;guila</rs> volando.
+					</ab>
+					<ab xml:id="b.REV.4.8" type="verse" n="8">
+						Los <rs key="#org51" cert="low">cuatro seres vivientes</rs> ten&#237;an cada uno seis alas, y alrededor y por dentro estaban llenos de ojos, y d&#237;a y noche, sin cesar, dec&#237;an <q who="#org51" toWhom="#per14" type="prayer">&#161;<rs key="#per14">Santo</rs>, santo, santo es el <rs key="#per14">Se&#241;or</rs> <rs key="#per14">Dios</rs> <rs key="#per14">Todopoderoso</rs>, el <rs key="#per14">que era</rs>, el <rs key="#per14">que es</rs> y el <rs key="#per14">que ha de venir</rs>!</q>.
+					</ab>
+					<ab xml:id="b.REV.4.9" type="verse" n="9">
+						Cada vez que aquellos <rs key="#org51">seres vivientes</rs> dan gloria y honra y acci&#243;n de gracias al <rs key="#per14">que est&#225; sentado en el trono</rs>, al <rs key="#per14">que vive por los siglos de los siglos</rs>,
+					</ab>
+					<ab xml:id="b.REV.4.10" type="verse" n="10">
+						los <rs key="#org52" cert="low">veinticuatro ancianos</rs> se postran delante del <rs key="#per14">que est&#225; sentado en el trono</rs> y adoran al <rs key="#per14">que vive por los siglos de los siglos</rs>, y echan sus coronas delante del trono, diciendo:
+					</ab>
+					<ab xml:id="b.REV.4.11" type="verse" n="11">
+						<q who="#org52" toWhom="#per14" type="prayer"><rs key="#per14">Se&#241;or</rs>, digno eres de recibir la gloria, la honra y el poder, porque t&#250; creaste todas las cosas, y por tu voluntad existen y fueron creadas</q>.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.5" type="chapter" n="5">
+<div type="pericope">
+<ab type="pericope">El rollo y el Cordero</ab>
+
+					<ab xml:id="b.REV.5.1" type="verse" n="1">
+						Vi en la mano derecha del <rs key="#per14" cert="low">que estaba sentado en el trono</rs> un <rs key="#wor4">libro escrito por dentro y por fuera, sellado con siete sellos</rs>.
+					</ab>
+					<ab xml:id="b.REV.5.2" type="verse" n="2">
+						Y vi un <rs key="#org4">&#225;ngel</rs> poderoso que pregonaba a gran voz <q who="#org4" toWhom="#org0" type="oral">&#191;Qui&#233;n es digno de abrir el <rs key="#wor4">libro</rs> y desatar sus sellos?</q>.
+					</ab>
+					<ab xml:id="b.REV.5.3" type="verse" n="3">
+						Pero ninguno, ni en el cielo ni en la tierra ni debajo de la tierra, pod&#237;a abrir el <rs key="#wor4">libro</rs>, ni siquiera mirarlo.
+					</ab>
+					<ab xml:id="b.REV.5.4" type="verse" n="4">
+						Y lloraba yo mucho, porque no se hallaba a nadie que fuera digno de abrir el <rs key="#wor4">libro</rs>, ni siquiera de mirarlo.
+					</ab>
+					<ab xml:id="b.REV.5.5" type="verse" n="5">
+						Entonces uno de los <rs key="#org52">ancianos</rs> me dijo <q who="#org52" toWhom="#per25" type="oral">No llores, porque el <rs key="#per1">Le&#243;n de la tribu de <rs key="#per5">Jud&#225;</rs></rs>, la <rs key="#per1">ra&#237;z de <rs key="#per35">David</rs></rs>, ha vencido para abrir el <rs key="#wor4">libro</rs> y desatar sus siete sellos</q>.
+					</ab>
+					<ab xml:id="b.REV.5.6" type="verse" n="6">
+						Mir&#233;, y vi que en medio del trono y de los <rs key="#org51">cuatro seres vivientes</rs> y en medio de los <rs key="#org52">ancianos</rs> estaba en pie un <rs key="#per1">Cordero</rs> como inmolado, que ten&#237;a siete cuernos y siete ojos, los cuales son los <rs key="#org4" cert="low">siete esp&#237;ritus de <rs key="#per14">Dios</rs></rs> enviados por toda la tierra.
+					</ab>
+					<ab xml:id="b.REV.5.7" type="verse" n="7">
+						&#201;l vino y tom&#243; el <rs key="#wor4">libro</rs> de la mano derecha del <rs key="#per14">que estaba sentado en el trono</rs>.
+					</ab>
+					<ab xml:id="b.REV.5.8" type="verse" n="8">
+						Cuando hubo tomado el libro, los <rs key="#org51">cuatro seres vivientes</rs> y los <rs key="#org52">veinticuatro ancianos</rs> se postraron delante del <rs key="#per1">Cordero</rs>. Todos ten&#237;an arpas y copas de oro llenas de incienso, que son las oraciones de los santos.
+					</ab>
+					<ab xml:id="b.REV.5.9" type="verse" n="9">
+						Y cantaban un c&#225;ntico nuevo, diciendo: <q who="#org51 #org52" toWhom="#per1" type="prayer">&#171;Digno eres de tomar el <rs key="#wor4">libro</rs> y de abrir sus sellos, porque t&#250; fuiste inmolado, y con tu sangre nos has redimido para <rs key="#per14">Dios</rs>, de todo linaje, lengua, pueblo y naci&#243;n;</q>
+					</ab>
+					<ab xml:id="b.REV.5.10" type="verse" n="10">
+						<q who="#org51 #org52" toWhom="#per1" type="prayer">nos has hecho para nuestro <rs key="#per14">Dios</rs> un reino y sacerdotes, y reinaremos sobre la tierra&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.5.11" type="verse" n="11">
+						Mir&#233;, y o&#237; la voz de muchos <rs key="#org4">&#225;ngeles</rs> alrededor del trono, de los <rs key="#org51">seres vivientes</rs> y de <rs key="#org52">los ancianos</rs>. Su n&#250;mero era millones de millones,
+					</ab>
+					<ab xml:id="b.REV.5.12" type="verse" n="12">
+						y dec&#237;an a gran voz <q who="#org4 #org51 #org52" toWhom="#per1" type="prayer">El <rs key="#per1">Cordero</rs> que fue inmolado es digno de tomar el poder, las riquezas, la sabidur&#237;a, la fortaleza, la honra, la gloria y la alabanza</q>.
+					</ab>
+					<ab xml:id="b.REV.5.13" type="verse" n="13">
+						A todo lo creado que est&#225; en el cielo, sobre la tierra, debajo de la tierra y en el mar, y a todas las cosas que hay en ellos, o&#237; decir <q who="#org0" toWhom="#per1 #per14" type="prayer">Al <rs key="#per14">que est&#225; sentado en el trono</rs> y al <rs key="#per1">Cordero</rs>, sea la alabanza, la honra, la gloria y el poder, por los siglos de los siglos</q>.
+					</ab>
+					<ab xml:id="b.REV.5.14" type="verse" n="14">
+						Los <rs key="#org51">cuatro seres vivientes</rs> dec&#237;an <q who="#org51" toWhom="#per14 #per1" type="prayer">&#161;Am&#233;n!</q>. Y los <rs key="#org52">veinticuatro ancianos</rs> se postraron sobre sus rostros y adoraron al <rs key="#per14 #per1" cert="low">que vive por los siglos de los siglos</rs>.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.6" type="chapter" n="6">
+<div type="pericope">
+<ab type="pericope">Los sellos</ab>
+
+					<ab xml:id="b.REV.6.1" type="verse" n="1">
+						Entonces vi que el <rs key="#per1">Cordero</rs> abri&#243; uno de los sellos, y o&#237; a <rs key="#org51">uno de los cuatro seres vivientes</rs> decir con una voz como de trueno <q who="#org51" toWhom="#per25" type="oral">&#161;Ven!</q>.
+					</ab>
+					<ab xml:id="b.REV.6.2" type="verse" n="2">
+						Mir&#233;, y vi un caballo blanco. El <rs key="#org6" cert="low">que lo montaba</rs> ten&#237;a un arco y le fue dada una corona, y sali&#243; venciendo y para vencer.
+					</ab>
+					<ab xml:id="b.REV.6.3" type="verse" n="3">
+						Cuando abri&#243; el segundo sello, o&#237; al <rs key="#org51">segundo ser viviente</rs>, que dec&#237;a <q who="#org51" toWhom="#per25" type="oral">&#161;Ven!</q>.
+					</ab>
+					<ab xml:id="b.REV.6.4" type="verse" n="4">
+						Sali&#243; otro caballo, de color rojizo. Al <rs key="#org6" cert="low">que lo montaba</rs> le fue dado poder para quitar la paz de la tierra y hacer que se mataran unos a otros. Y se le dio una espada muy grande.
+					</ab>
+					<ab xml:id="b.REV.6.5" type="verse" n="5">
+						Cuando abri&#243; el tercer sello, o&#237; al <rs key="#org51">tercer ser viviente</rs>, que dec&#237;a <q who="#org51" toWhom="#per25" type="oral">&#161;Ven!</q>. Mir&#233;, y vi un caballo negro. El <rs key="#org6" cert="low">que lo montaba</rs> ten&#237;a una balanza en la mano.
+					</ab>
+					<ab xml:id="b.REV.6.6" type="verse" n="6">
+						Y o&#237; una voz de en medio de los cuatro seres vivientes, que dec&#237;a <q who="#org4" toWhom="#org0" type="oral" cert="low">Dos libras de trigo por un denario y seis libras de cebada por un denario, pero no da&#241;es el aceite ni el vino</q>.
+					</ab>
+					<ab xml:id="b.REV.6.7" type="verse" n="7">
+						Cuando abri&#243; el cuarto sello, o&#237; la voz del <rs key="#org51">cuarto ser viviente</rs> que dec&#237;a <q who="#org51" toWhom="#per25" type="oral">&#161;Ven!</q>.
+					</ab>
+					<ab xml:id="b.REV.6.8" type="verse" n="8">
+						Mir&#233;, y vi un caballo amarillo. El <rs key="#org6" cert="low">que lo montaba</rs> ten&#237;a por nombre <rs key="#org6">Muerte</rs>, y el <rs key="#org6">Hades</rs> lo segu&#237;a: y les fue dada potestad sobre la cuarta parte de la tierra, para matar con espada, con hambre, con mortandad y con las fieras de la tierra.
+					</ab>
+					<ab xml:id="b.REV.6.9" type="verse" n="9">
+						Cuando abri&#243; el quinto sello, vi debajo del altar las almas de los que hab&#237;an muerto por causa de la palabra de <rs key="#per14">Dios</rs> y del testimonio que ten&#237;an.
+					</ab>
+					<ab xml:id="b.REV.6.10" type="verse" n="10">
+						Clamaban a gran voz, diciendo <q who="#org0" toWhom="#per17" type="prayer">&#191;Hasta cu&#225;ndo <rs key="#per14">Se&#241;or</rs>, santo y verdadero, vas a tardar en juzgar y vengar nuestra sangre de los que habitan sobre la tierra?</q>.,
+					</ab>
+					<ab xml:id="b.REV.6.11" type="verse" n="11">
+						Entonces se les dio vestiduras blancas y se les dijo que descansaran todav&#237;a un poco de tiempo, hasta que se completara el n&#250;mero de sus consiervos y sus hermanos que tambi&#233;n hab&#237;an de ser muertos como ellos.
+					</ab>
+					<ab xml:id="b.REV.6.12" type="verse" n="12">
+						Mir&#233; cuando abri&#243; el sexto sello, y hubo un gran terremoto. El sol se puso negro como tela de luto, la luna entera se volvi&#243; toda como sangre
+					</ab>
+					<ab xml:id="b.REV.6.13" type="verse" n="13">
+						y las estrellas del cielo cayeron sobre la tierra, como la higuera deja caer sus higos cuando es sacudida por un fuerte viento.
+					</ab>
+					<ab xml:id="b.REV.6.14" type="verse" n="14">
+						El cielo se repleg&#243; como un pergamino que se enrolla, y todo monte y toda isla fueron removidos de sus lugares.
+					</ab>
+					<ab xml:id="b.REV.6.15" type="verse" n="15">
+						Los reyes de la tierra, los grandes, los ricos, los capitanes, los poderosos, todo esclavo y todo libre, se escondieron en las cuevas y entre las pe&#241;as de los montes,
+					</ab>
+					<ab xml:id="b.REV.6.16" type="verse" n="16">
+						y dec&#237;an a los montes y a las pe&#241;as: <q who="#org0" toWhom="#org0" type="oral">&#171;Caed sobre nosotros y escondednos del rostro de aquel que est&#225; sentado sobre el trono, y de la ira del <rs key="#per1">Cordero</rs>,</q>
+					</ab>
+					<ab xml:id="b.REV.6.17" type="verse" n="17">
+						<q who="#org0" toWhom="#org0" type="oral">porque el <rs key="#tim2">gran d&#237;a de su ira</rs> ha llegado y &#191;qui&#233;n podr&#225; sostenerse en pie?&#187;.</q>
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.7" type="chapter" n="7">
+<div type="pericope">
+<ab type="pericope">Los 144 mil sellados</ab>
+
+					<ab xml:id="b.REV.7.1" type="verse" n="1">
+						Despu&#233;s de esto vi <rs key="#org4">cuatro &#225;ngeles</rs> de pie sobre los cuatro &#225;ngulos de la tierra, deteniendo los cuatro vientos de la tierra para que no soplara viento alguno sobre la tierra ni sobre el mar ni sobre &#225;rbol alguno.
+					</ab>
+					<ab xml:id="b.REV.7.2" type="verse" n="2">
+						Vi tambi&#233;n otro <rs key="#org4">&#225;ngel</rs>, que sub&#237;a desde donde sale el sol y que ten&#237;a el sello del <rs key="#per14">Dios</rs> vivo. Clam&#243; a gran voz a los cuatro <rs key="#org4">&#225;ngeles</rs> a quienes se les hab&#237;a dado el poder de hacer da&#241;o a la tierra y al mar,
+					</ab>
+					<ab xml:id="b.REV.7.3" type="verse" n="3">
+						diciendo <q who="#org4" toWhom="#org4" type="oral">No hag&#225;is da&#241;o a la tierra ni al mar ni a los &#225;rboles hasta que hayamos sellado en sus frentes a los <rs key="#org38">siervos de nuestro <rs key="#per14">Dios</rs></rs></q>.
+					</ab>
+					<ab xml:id="b.REV.7.4" type="verse" n="4">
+						Y o&#237; el n&#250;mero de los sellados: <rs key="#org38">ciento cuarenta y cuatro mil sellados de todas las tribus de los <rs key="#org13">hijos de <rs key="#pla4">Israel</rs></rs></rs>.
+					</ab>
+					<ab xml:id="b.REV.7.5" type="verse" n="5">
+						De la <rs key="#org39">tribu de <rs key="#per5">Jud&#225;</rs></rs>, doce mil sellados. De la <rs key="#org40">tribu de <rs key="#per109">Rub&#233;n</rs></rs>, doce mil. De la <rs key="#org41">tribu de <rs key="#per120">Gad</rs></rs>, doce mil.
+					</ab>
+					<ab xml:id="b.REV.7.6" type="verse" n="6">
+						De la <rs key="#org42">tribu de <rs key="#per121">Aser</rs></rs>, doce mil. De la <rs key="#org43">tribu de <rs key="#per122">Neftal&#237;</rs></rs>, doce mil. De la <rs key="#org44">tribu de <rs key="#per123">Manas&#233;s</rs></rs>, doce mil.
+					</ab>
+					<ab xml:id="b.REV.7.7" type="verse" n="7">
+						De la <rs key="#org45">tribu de <rs key="#per124">Sime&#243;n</rs></rs>, doce mil. De la <rs key="#org46">tribu de <rs key="#per125">Lev&#237;</rs></rs>, doce mil. De la <rs key="#org47">tribu de <rs key="#per126">Isacar</rs></rs>, doce mil.
+					</ab>
+					<ab xml:id="b.REV.7.8" type="verse" n="8">
+						De la <rs key="#org48">tribu de <rs key="#per127">Zabul&#243;n</rs></rs>, doce mil. De la <rs key="#org49">tribu de <rs key="#per104">Jos&#233;</rs></rs>, doce mil. De la <rs key="#org50">tribu de <rs key="#per128">Benjam&#237;n</rs></rs>, doce mil sellados.
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">La multitud vestida de ropas blancas</ab>
+
+					<ab xml:id="b.REV.7.9" type="verse" n="9">
+						Despu&#233;s de esto mir&#233;, y vi una gran multitud, la cual nadie pod&#237;a contar, de todas las naciones, tribus, pueblos y lenguas. Estaban delante del trono y en la presencia del <rs key="#per1">Cordero</rs>, vestidos de ropas blancas y con palmas en sus manos.
+					</ab>
+					<ab xml:id="b.REV.7.10" type="verse" n="10">
+						Clamaban a gran voz, diciendo <q who="#org0" toWhom="#org0" type="oral">&#161;La salvaci&#243;n pertenece a nuestro <rs key="#per14">Dios</rs>, que est&#225; sentado en el trono, y al <rs key="#per1">Cordero</rs>!</q>.
+					</ab>
+					<ab xml:id="b.REV.7.11" type="verse" n="11">
+						Y todos los <rs key="#org4">&#225;ngeles</rs> que estaban en pie alrededor del trono y de los <rs key="#org52">ancianos</rs> y de los <rs key="#org51">cuatro seres vivientes</rs>, se postraron sobre sus rostros delante del trono y adoraron a <rs key="#per14">Dios</rs>,
+					</ab>
+					<ab xml:id="b.REV.7.12" type="verse" n="12">
+						diciendo <q who="#org4 #org51 #org52" toWhom="#per14" type="prayer">&#161;Am&#233;n! La bendici&#243;n, la gloria, la sabidur&#237;a, la acci&#243;n de gracias, la honra, el poder y la fortaleza sean a nuestro <rs key="#per14">Dios</rs> por los siglos de los siglos. &#161;Am&#233;n!</q>.
+					</ab>
+					<ab xml:id="b.REV.7.13" type="verse" n="13">
+						Entonces uno de los <rs key="#org52">ancianos</rs> habl&#243;, dici&#233;ndome <q who="#org52" toWhom="#per25" type="oral">Estos que est&#225;n vestidos de ropas blancas, &#191;qui&#233;nes son y de d&#243;nde han venido?</q>.
+					</ab>
+					<ab xml:id="b.REV.7.14" type="verse" n="14">
+						Yo le dije <q who="#per25" toWhom="#org52" type="oral"><rs key="#org52">Se&#241;or</rs>, t&#250; lo sabes</q>. &#201;l me dijo: <q who="#org52" toWhom="#per25" type="oral">&#171;Estos son los que han salido de la gran tribulaci&#243;n; han lavado sus ropas y las han blanqueado en la sangre del <rs key="#per1">Cordero</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.7.15" type="verse" n="15">
+						<q who="#org52" toWhom="#per25" type="oral">Por eso est&#225;n delante del trono de <rs key="#per14">Dios</rs> y lo sirven d&#237;a y noche en su <rs key="#pla73">templo</rs>. El que est&#225; sentado sobre el trono extender&#225; su tienda junto a ellos.</q>
+					</ab>
+					<ab xml:id="b.REV.7.16" type="verse" n="16">
+						<q who="#org52" toWhom="#per25" type="oral">&#187;Ya no tendr&#225;n hambre ni sed, y el sol no caer&#225; m&#225;s sobre ellos, ni calor alguno,</q>
+					</ab>
+					<ab xml:id="b.REV.7.17" type="verse" n="17">
+						<q who="#org52" toWhom="#per25" type="oral">porque el <rs key="#per1">Cordero</rs> que est&#225; en medio del trono los pastorear&#225; y los guiar&#225; a fuentes de aguas vivas. Y <rs key="#per14">Dios</rs> enjugar&#225; toda l&#225;grima de los ojos de ellos&#187;.</q>
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.8" type="chapter" n="8">
+	<div type="pericope" part="F">
+					<ab xml:id="b.REV.8.1" type="verse" n="1">
+						Cuando abri&#243; el s&#233;ptimo sello, se hizo silencio en el cielo como por media hora.
+					</ab>
+					<ab xml:id="b.REV.8.2" type="verse" n="2">
+						Luego vi los <rs key="#org4">siete &#225;ngeles</rs> que estaban de pie ante <rs key="#per14">Dios</rs>, y se les dieron siete trompetas.
+					</ab>
+					<ab xml:id="b.REV.8.3" type="verse" n="3">
+						Otro <rs key="#org4">&#225;ngel</rs> vino entonces y se par&#243; ante el altar, con un incensario de oro; y se le dio mucho incienso para a&#241;adirlo a las oraciones de todos los santos sobre el altar de oro que estaba delante del trono.
+					</ab>
+					<ab xml:id="b.REV.8.4" type="verse" n="4">
+						El humo del incienso con las oraciones de los santos subi&#243; de la mano del <rs key="#org4">&#225;ngel</rs> a la presencia de <rs key="#per14">Dios</rs>.
+					</ab>
+					<ab xml:id="b.REV.8.5" type="verse" n="5">
+						Y el <rs key="#org4">&#225;ngel</rs> tom&#243; el incensario, lo llen&#243; del fuego del altar y lo arroj&#243; a la tierra; y hubo truenos, voces, rel&#225;mpagos y un terremoto.
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">Las seis primeras trompetas</ab>
+
+					<ab xml:id="b.REV.8.6" type="verse" n="6">
+						Los <rs key="#org4">siete &#225;ngeles</rs> que ten&#237;an las siete trompetas se dispusieron a tocarlas.
+					</ab>
+					<ab xml:id="b.REV.8.7" type="verse" n="7">
+						El <rs key="#org4">primer &#225;ngel</rs> toc&#243; la trompeta, y hubo granizo y fuego mezclados con sangre que fueron lanzados sobre la tierra. Y se quem&#243; la tercera parte de los &#225;rboles, y toda la hierba verde fue quemada.
+					</ab>
+					<ab xml:id="b.REV.8.8" type="verse" n="8">
+						El <rs key="#org4">segundo &#225;ngel</rs> toc&#243; la trompeta, y algo como un gran monte ardiendo en fuego fue precipitado en el mar. La tercera parte del mar se convirti&#243; en sangre,
+					</ab>
+					<ab xml:id="b.REV.8.9" type="verse" n="9">
+						muri&#243; la tercera parte de los seres vivientes que estaban en el mar y la tercera parte de las naves fue destruida.
+					</ab>
+					<ab xml:id="b.REV.8.10" type="verse" n="10">
+						El <rs key="#org4">tercer &#225;ngel</rs> toc&#243; la trompeta, y cay&#243; del cielo una gran estrella ardiendo como una antorcha. Cay&#243; sobre la tercera parte de los r&#237;os y sobre las fuentes de las aguas.
+					</ab>
+					<ab xml:id="b.REV.8.11" type="verse" n="11">
+						El nombre de la estrella es Ajenjo. La tercera parte de las aguas se convirti&#243; en ajenjo y muchos hombres murieron a causa de esas aguas, porque se volvieron amargas.
+					</ab>
+					<ab xml:id="b.REV.8.12" type="verse" n="12">
+						El <rs key="#org4">cuarto &#225;ngel</rs> toc&#243; la trompeta, y fue herida la tercera parte del sol, la tercera parte de la luna y la tercera parte de las estrellas, para que se oscureciera la tercera parte de ellos y no hubiera luz en la tercera parte del d&#237;a, y asimismo en la noche.
+					</ab>
+					<ab xml:id="b.REV.8.13" type="verse" n="13">
+						Mir&#233;, y o&#237; un <rs key="#org4">&#225;ngel</rs> que volaba en medio del cielo y dec&#237;a a gran voz <q who="#org4" toWhom="#org0" type="oral">&#161;Ay, ay, ay de los que habitan en la tierra, a causa de los otros toques de trompeta que est&#225;n para tocar los <rs key="#org4">tres &#225;ngeles</rs>!</q>.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.9" type="chapter" n="9">
+	<div type="pericope" part="F">
+					<ab xml:id="b.REV.9.1" type="verse" n="1">
+						El quinto <rs key="#org4">&#225;ngel</rs> toc&#243; la trompeta, y vi una estrella que cay&#243; del cielo a la tierra. Y se le dio la llave del pozo del abismo.
+					</ab>
+					<ab xml:id="b.REV.9.2" type="verse" n="2">
+						Abri&#243; el pozo del abismo, y del pozo subi&#243; humo como humo de un gran horno, y el sol y el aire se oscurecieron por el humo del pozo.
+					</ab>
+					<ab xml:id="b.REV.9.3" type="verse" n="3">
+						Del humo salieron langostas sobre la tierra, y se les dio poder, como el poder que tienen los escorpiones de la tierra.
+					</ab>
+					<ab xml:id="b.REV.9.4" type="verse" n="4">
+						Se les mand&#243; que no da&#241;aran la hierba de la tierra, ni cosa verde alguna ni ning&#250;n &#225;rbol, sino solamente a los hombres que no tuvieran el sello de <rs key="#per14">Dios</rs> en sus frentes.
+					</ab>
+					<ab xml:id="b.REV.9.5" type="verse" n="5">
+						Pero no se les permiti&#243; que los mataran, sino que los atormentaran cinco meses; y su tormento era como el tormento del escorpi&#243;n cuando hiere al hombre.
+					</ab>
+					<ab xml:id="b.REV.9.6" type="verse" n="6">
+						En aquellos d&#237;as los hombres buscar&#225;n la muerte, pero no la hallar&#225;n; ansiar&#225;n morir, pero la muerte huir&#225; de ellos.
+					</ab>
+					<ab xml:id="b.REV.9.7" type="verse" n="7">
+						El aspecto de las langostas era semejante a caballos preparados para la guerra; en las cabezas ten&#237;an como coronas de oro, sus caras eran como caras humanas,
+					</ab>
+					<ab xml:id="b.REV.9.8" type="verse" n="8">
+						ten&#237;an cabello como cabello de mujer y sus dientes eran como de leones;
+					</ab>
+					<ab xml:id="b.REV.9.9" type="verse" n="9">
+						ten&#237;an corazas como corazas de hierro y el ruido de sus alas era como el estruendo de muchos carros de caballos corriendo a la batalla;
+					</ab>
+					<ab xml:id="b.REV.9.10" type="verse" n="10">
+						ten&#237;an colas como de escorpiones, y tambi&#233;n aguijones, y en sus colas ten&#237;an poder para da&#241;ar a los hombres durante cinco meses.
+					</ab>
+					<ab xml:id="b.REV.9.11" type="verse" n="11">
+						Sobre ellos tienen como <rs key="#per129">rey</rs> al <rs key="#per129">&#225;ngel del abismo</rs>, cuyo nombre en hebreo es <rs key="#per129">Abad&#243;n</rs>, y en griego, <rs key="#per129">Apoli&#243;n</rs>.
+					</ab>
+					<ab xml:id="b.REV.9.12" type="verse" n="12">
+						El primer ay pas&#243;; pero vienen a&#250;n dos ayes despu&#233;s de esto.
+					</ab>
+					<ab xml:id="b.REV.9.13" type="verse" n="13">
+						El sexto <rs key="#org4">&#225;ngel</rs> toc&#243; la trompeta, y o&#237; una voz de entre los cuatro cuernos del altar de oro que estaba delante de <rs key="#per14">Dios</rs>,
+					</ab>
+					<ab xml:id="b.REV.9.14" type="verse" n="14">
+						la cual dec&#237;a al sexto <rs key="#org4">&#225;ngel</rs> que ten&#237;a la trompeta <q who="#org4" toWhom="#org4" type="oral">&#161;Desata a los <rs key="#org4">cuatro &#225;ngeles</rs> que est&#225;n atados junto al gran r&#237;o <rs key="#pla64">&#201;ufrates</rs>!</q>.
+					</ab>
+					<ab xml:id="b.REV.9.15" type="verse" n="15">
+						Y fueron desatados los <rs key="#org4">cuatro &#225;ngeles</rs> que estaban preparados para la hora, d&#237;a, mes y a&#241;o, a fin de matar la tercera parte de los hombres.
+					</ab>
+					<ab xml:id="b.REV.9.16" type="verse" n="16">
+						Y el n&#250;mero de los ej&#233;rcitos de los jinetes era de doscientos millones. Yo o&#237; su n&#250;mero.
+					</ab>
+					<ab xml:id="b.REV.9.17" type="verse" n="17">
+						As&#237; vi en visi&#243;n los caballos y sus jinetes, que ten&#237;an corazas de fuego, zafiro y azufre. Las cabezas de los caballos eran como cabezas de leones, y de sus bocas sal&#237;a fuego, humo y azufre.
+					</ab>
+					<ab xml:id="b.REV.9.18" type="verse" n="18">
+						Por estas tres plagas fue muerta la tercera parte de los hombres: por el fuego, el humo y el azufre que sal&#237;a de sus bocas,
+					</ab>
+					<ab xml:id="b.REV.9.19" type="verse" n="19">
+						pues el poder de los caballos estaba en sus bocas y en sus colas, porque sus colas, semejantes a serpientes, ten&#237;an cabezas y con ellas da&#241;an.
+					</ab>
+					<ab xml:id="b.REV.9.20" type="verse" n="20">
+						Los dem&#225;s hombres, los que no fueron muertos con estas plagas, ni aun as&#237; se arrepintieron de las obras de sus manos ni dejaron de adorar a los <rs key="#org6">demonios</rs> y a las im&#225;genes de oro, plata, bronce, piedra y madera, las cuales no pueden ver ni oir ni andar.
+					</ab>
+					<ab xml:id="b.REV.9.21" type="verse" n="21">
+						No se arrepintieron de sus homicidios, ni de sus hechicer&#237;as, ni de su fornicaci&#243;n, ni de sus robos.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.10" type="chapter" n="10">
+<div type="pericope">
+<ab type="pericope">El &#225;ngel con el librito</ab>
+
+					<ab xml:id="b.REV.10.1" type="verse" n="1">
+						Vi descender del cielo otro <rs key="#org4">&#225;ngel fuerte</rs>, envuelto en una nube, con el arco iris sobre su cabeza. Su rostro era como el sol y sus pies como columnas de fuego.
+					</ab>
+					<ab xml:id="b.REV.10.2" type="verse" n="2">
+						Ten&#237;a en su mano un <rs key="#wor3">librito</rs> abierto; puso su pie derecho sobre el mar y el izquierdo sobre la tierra
+					</ab>
+					<ab xml:id="b.REV.10.3" type="verse" n="3">
+						y clam&#243; a gran voz, como ruge un le&#243;n; y cuando hubo clamado, siete truenos emitieron sus voces.
+					</ab>
+					<ab xml:id="b.REV.10.4" type="verse" n="4">
+						Cuando los siete truenos hubieron emitido sus voces, yo iba a escribir; pero o&#237; una voz del cielo que me dec&#237;a <q who="#per14" toWhom="#per25" type="oral" cert="low">Sella las cosas que los siete truenos han dicho, y no las escribas</q>.
+					</ab>
+					<ab xml:id="b.REV.10.5" type="verse" n="5">
+						El <rs key="#org4">&#225;ngel</rs> que vi de pie sobre el mar y sobre la tierra levant&#243; su mano hacia el cielo
+					</ab>
+					<ab xml:id="b.REV.10.6" type="verse" n="6">
+						y jur&#243; por el <rs key="#per14">que vive por los siglos de los siglos</rs>, <rs key="#per14">que cre&#243; el cielo y las cosas que est&#225;n en &#233;l, y la tierra y las cosas que est&#225;n en ella, y el mar y las cosas que est&#225;n en &#233;l</rs>, que el tiempo no ser&#237;a m&#225;s,
+					</ab>
+					<ab xml:id="b.REV.10.7" type="verse" n="7">
+						sino que en los d&#237;as de la voz del s&#233;ptimo <rs key="#org4">&#225;ngel</rs>, cuando &#233;l comience a tocar la trompeta, el misterio de <rs key="#per14">Dios</rs> se consumar&#225;, como &#233;l lo anunci&#243; a sus siervos los <rs key="#org8">profetas</rs>.
+					</ab>
+					<ab xml:id="b.REV.10.8" type="verse" n="8">
+						La voz que o&#237; del cielo habl&#243; otra vez conmigo, y dijo <q who="#per14" toWhom="#per25" type="oral" cert="low">Ve y toma el <rs key="#wor3">librito</rs> que est&#225; abierto en la mano del <rs key="#org4">&#225;ngel</rs> que est&#225; en pie sobre el mar y sobre la tierra</q>.
+					</ab>
+					<ab xml:id="b.REV.10.9" type="verse" n="9">
+						Fui donde el <rs key="#org4">&#225;ngel</rs>, dici&#233;ndole que me diera el <rs key="#wor3">librito</rs>. Y &#233;l me dijo <q who="#org4" toWhom="#per25" type="oral">Toma y c&#243;melo; te amargar&#225; el vientre, pero en tu boca ser&#225; dulce como la miel</q>.
+					</ab>
+					<ab xml:id="b.REV.10.10" type="verse" n="10">
+						Entonces tom&#233; el <rs key="#wor3">librito</rs> de la mano del <rs key="#org4">&#225;ngel</rs> y lo com&#237;. En mi boca era dulce como la miel, pero cuando lo hube comido amarg&#243; mi vientre.
+					</ab>
+					<ab xml:id="b.REV.10.11" type="verse" n="11">
+						&#201;l me dijo <q who="#org4" toWhom="#per25" type="oral">Es necesario que profetices otra vez sobre muchos pueblos, naciones, lenguas y reyes</q>.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.11" type="chapter" n="11">
+<div type="pericope">
+<ab type="pericope">Los dos testigos</ab>
+
+					<ab xml:id="b.REV.11.1" type="verse" n="1">
+						Entonces me fue dada una ca&#241;a semejante a una vara de medir y se me dijo: <q who="#per14" toWhom="#per25" type="oral" cert="low">&#171;Lev&#225;ntate y mide el <rs key="#pla73">templo de <rs key="#per14">Dios</rs></rs> y el altar y a los que adoran en &#233;l.</q>
+					</ab>
+					<ab xml:id="b.REV.11.2" type="verse" n="2">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Pero el patio que est&#225; fuera del <rs key="#pla73">templo</rs> d&#233;jalo aparte y no lo midas, porque ha sido entregado a los <rs key="#org16">gentiles</rs>. Ellos hollar&#225;n la <rs key="#pla3">ciudad santa</rs> cuarenta y dos meses.</q>
+					</ab>
+					<ab xml:id="b.REV.11.3" type="verse" n="3">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Y ordenar&#233; a mis <rs key="#org8">dos testigos</rs> que profeticen por mil doscientos sesenta d&#237;as, vestidos con ropas &#225;speras&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.11.4" type="verse" n="4">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Estos <rs key="#org8">testigos</rs> son los <rs key="#org8">dos olivos</rs> y los <rs key="#org8">dos candelabros</rs> que est&#225;n de pie delante del <rs key="#per14">Dios de la tierra</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.11.5" type="verse" n="5">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Si alguno quiere da&#241;arlos, sale fuego de la boca de ellos y devora a sus enemigos; si alguno quiere hacerles da&#241;o, debe morir de la misma manera.</q>
+					</ab>
+					<ab xml:id="b.REV.11.6" type="verse" n="6">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Estos tienen poder para cerrar el cielo a fin de que no llueva en los d&#237;as de su profec&#237;a; y tienen poder sobre las aguas, para convertirlas en sangre y para herir la tierra con toda plaga cuantas veces quieran.</q>
+					</ab>
+					<ab xml:id="b.REV.11.7" type="verse" n="7">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Cuando hayan acabado su testimonio, la <rs key="#per20" cert="low">bestia que sube del abismo</rs> har&#225; guerra contra ellos, los vencer&#225; y los matar&#225;.</q>
+					</ab>
+					<ab xml:id="b.REV.11.8" type="verse" n="8">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Sus cad&#225;veres estar&#225;n en la plaza de la <rs>gran ciudad</rs> que en sentido espiritual se llama <rs key="#pla16">Sodoma</rs> y <rs key="#pla5">Egipto</rs>, donde tambi&#233;n nuestro <rs key="#per14">Se&#241;or</rs> fue crucificado.</q>
+					</ab>
+					<ab xml:id="b.REV.11.9" type="verse" n="9">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Gentes de todo pueblo, tribu, lengua y naci&#243;n ver&#225;n sus cad&#225;veres por tres d&#237;as y medio y no permitir&#225;n que sean sepultados.</q>
+					</ab>
+					<ab xml:id="b.REV.11.10" type="verse" n="10">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Los habitantes de la tierra se regocijar&#225;n sobre ellos, se alegrar&#225;n y se enviar&#225;n regalos unos a otros, porque estos <rs key="#org8">dos profetas</rs> hab&#237;an atormentado a los habitantes de la tierra.</q>
+					</ab>
+					<ab xml:id="b.REV.11.11" type="verse" n="11">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Pero despu&#233;s de tres d&#237;as y medio el <rs key="#per17">esp&#237;ritu de vida enviado por <rs key="#per14">Dios</rs></rs> entr&#243; en ellos, se levantaron sobre sus pies y cay&#243; gran temor sobre los que los vieron.</q>
+					</ab>
+					<ab xml:id="b.REV.11.12" type="verse" n="12">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">Entonces oyeron una gran voz del cielo, que les dec&#237;a <q who="#per14" toWhom="#per25" type="oral" cert="low">&#161;Subid ac&#225;!</q>. Y subieron al cielo en una nube, y los vieron sus enemigos.</q>
+					</ab>
+					<ab xml:id="b.REV.11.13" type="verse" n="13">
+						<q who="#per14" toWhom="#per25" type="oral" cert="low">En aquella hora hubo un gran terremoto y la d&#233;cima parte de la <rs key="#pla3" cert="low">ciudad</rs> se derrumb&#243;. Por el terremoto murieron siete mil hombres. Los dem&#225;s se aterrorizaron y dieron gloria al <rs key="#per14">Dios</rs> del cielo.</q>
+					</ab>
+					<ab xml:id="b.REV.11.14" type="verse" n="14">
+						El segundo ay pas&#243;. He aqu&#237; que el tercer ay viene pronto.
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">La s&#233;ptima trompeta</ab>
+
+					<ab xml:id="b.REV.11.15" type="verse" n="15">
+						El <rs key="#org4">s&#233;ptimo &#225;ngel</rs> toc&#243; la trompeta, y hubo grandes voces en el <rs key="#pla18">cielo</rs>, que dec&#237;an <q who="#org4" toWhom="#org0" type="oral">Los reinos del mundo han venido a ser de nuestro <rs key="#per14">Se&#241;or</rs> y de su <rs key="#per1">Cristo</rs>; y &#233;l reinar&#225; por los siglos de los siglos</q>.
+					</ab>
+					<ab xml:id="b.REV.11.16" type="verse" n="16">
+						Los <rs key="#org52">veinticuatro ancianos</rs> que estaban sentados en sus tronos delante de <rs key="#per14">Dios</rs>, se postraron sobre sus rostros y adoraron a <rs key="#per14">Dios</rs>,
+					</ab>
+					<ab xml:id="b.REV.11.17" type="verse" n="17">
+						diciendo: <q who="#org52" toWhom="#per17" type="oral">&#171;Te damos gracias, <rs key="#per14">Se&#241;or</rs> <rs key="#per14">Dios Todopoderoso</rs>, el <rs key="#per14">que eres, que eras y que has de venir</rs>, porque has tomado tu gran poder y has reinado.</q>
+					</ab>
+					<ab xml:id="b.REV.11.18" type="verse" n="18">
+						<q who="#org52" toWhom="#per17" type="oral">Las naciones se airaron y tu ira ha venido: el tiempo de juzgar a los muertos, de dar el galard&#243;n a tus siervos los <rs key="#org8">profetas</rs>, a los santos y a los que temen tu nombre, a los peque&#241;os y a los grandes, y de destruir a los que destruyen la tierra&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.11.19" type="verse" n="19">
+						El <rs key="#pla73">templo de <rs key="#per14">Dios</rs></rs> fue abierto en el <rs key="#pla18">cielo</rs>, y el Arca de su pacto se dej&#243; ver en el <rs key="#pla73">templo</rs>. Hubo rel&#225;mpagos, voces, truenos, un terremoto y granizo grande.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.12" type="chapter" n="12">
+<div type="pericope">
+<ab type="pericope">La mujer y el drag&#243;n</ab>
+
+					<ab xml:id="b.REV.12.1" type="verse" n="1">
+						Apareci&#243; en el cielo una gran se&#241;al: una <rs key="#org37" cert="low">mujer</rs> vestida del sol, con la luna debajo de sus pies y sobre su cabeza una corona de doce estrellas.
+					</ab>
+					<ab xml:id="b.REV.12.2" type="verse" n="2">
+						Estaba encinta y gritaba con dolores de parto, en la angustia del alumbramiento.
+					</ab>
+					<ab xml:id="b.REV.12.3" type="verse" n="3">
+						Otra se&#241;al tambi&#233;n apareci&#243; en el cielo: un <rs key="#per20">gran drag&#243;n escarlata</rs> que ten&#237;a siete cabezas y diez cuernos, y en sus cabezas ten&#237;a siete diademas.
+					</ab>
+					<ab xml:id="b.REV.12.4" type="verse" n="4">
+						Su cola arrastr&#243; la tercera parte de las estrellas del cielo y las arroj&#243; sobre la tierra. Y el drag&#243;n se par&#243; frente a la <rs key="#org37" cert="low">mujer</rs> que estaba para dar a luz, a fin de devorar a su hijo tan pronto como naciera.
+					</ab>
+					<ab xml:id="b.REV.12.5" type="verse" n="5">
+						Ella dio a luz un hijo var&#243;n, que va a regir a todas las naciones con vara de hierro; y su hijo fue arrebatado para <rs key="#per14">Dios</rs> y para su trono.
+					</ab>
+					<ab xml:id="b.REV.12.6" type="verse" n="6">
+						La <rs key="#org37" cert="low">mujer</rs> huy&#243; al desierto, donde ten&#237;a un lugar preparado por <rs key="#per14">Dios</rs> para ser sustentada all&#237; por mil doscientos sesenta d&#237;as.
+					</ab>
+					<ab xml:id="b.REV.12.7" type="verse" n="7">
+						Entonces hubo una guerra en el <rs key="#pla18">cielo</rs>: <rs key="#per130">Miguel</rs> y sus <rs key="#org4">&#225;ngeles</rs> luchaban contra el <rs key="#per20">drag&#243;n</rs>. Luchaban el <rs key="#per20">drag&#243;n</rs> y sus <rs key="#org6">&#225;ngeles</rs>,
+					</ab>
+					<ab xml:id="b.REV.12.8" type="verse" n="8">
+						pero no prevalecieron ni se hall&#243; ya lugar para ellos en el <rs key="#pla18">cielo</rs>.
+					</ab>
+					<ab xml:id="b.REV.12.9" type="verse" n="9">
+						Y fue lanzado fuera el <rs key="#per20">gran drag&#243;n</rs>, la <rs key="#per20">serpiente antigua</rs>, que se llama <rs key="#per20">Diablo</rs> y <rs key="#per20">Satan&#225;s</rs>, el cual enga&#241;a al mundo entero. Fue arrojado a la tierra y sus <rs key="#org6">&#225;ngeles</rs> fueron arrojados con &#233;l.
+					</ab>
+					<ab xml:id="b.REV.12.10" type="verse" n="10">
+						Entonces o&#237; una gran voz en el <rs key="#pla18">cielo</rs>, que dec&#237;a: <q who="#org4" toWhom="#per25" type="oral">&#171;Ahora ha venido la salvaci&#243;n, el poder y el <rs key="#pla19">reino de nuestro <rs key="#per14">Dios</rs></rs> y la autoridad de su <rs key="#per1">Cristo</rs>, porque ha sido expulsado el <rs key="#per20">acusador de nuestros hermanos</rs>, el que los acusaba delante de nuestro <rs key="#per14">Dios</rs> d&#237;a y noche.</q>
+					</ab>
+					<ab xml:id="b.REV.12.11" type="verse" n="11">
+						<q who="#org4" toWhom="#per25" type="oral">Ellos lo han vencido por medio de la sangre del <rs key="#per1">Cordero</rs> y de la palabra del testimonio de ellos, que menospreciaron sus vidas hasta la muerte.</q>
+					</ab>
+					<ab xml:id="b.REV.12.12" type="verse" n="12">
+						<q who="#org4" toWhom="#per25" type="oral">Por lo cual alegraos, <rs key="#pla18">cielos</rs>, y los <rs key="#org4">que mor&#225;is en ellos</rs>. &#161;Ay de los moradores de la tierra y del mar!, porque el <rs key="#per20">diablo</rs> ha descendido a vosotros con gran ira, sabiendo que tiene poco tiempo&#187;</q>.
+					</ab>
+					<ab xml:id="b.REV.12.13" type="verse" n="13">
+						Cuando el <rs key="#per20">drag&#243;n</rs> vio que hab&#237;a sido arrojado a la tierra, persigui&#243; a la <rs key="#org37" cert="low">mujer</rs> que hab&#237;a dado a luz al hijo var&#243;n.
+					</ab>
+					<ab xml:id="b.REV.12.14" type="verse" n="14">
+						Pero se le dieron a la <rs key="#org37" cert="low">mujer</rs> las dos alas de la gran &#225;guila para que volara de delante de la <rs key="#per20">serpiente</rs> al desierto, a su lugar, donde es sustentada por un tiempo, tiempos y la mitad de un tiempo.
+					</ab>
+					<ab xml:id="b.REV.12.15" type="verse" n="15">
+						Y la <rs key="#per20">serpiente</rs> arroj&#243; de su boca, tras la <rs key="#org37" cert="low">mujer</rs>, agua como un r&#237;o, para que fuera arrastrada por el r&#237;o.
+					</ab>
+					<ab xml:id="b.REV.12.16" type="verse" n="16">
+						Pero la tierra ayud&#243; a la <rs key="#org37" cert="low">mujer</rs>, pues la tierra abri&#243; su boca y se trag&#243; el r&#237;o que el <rs key="#per20">drag&#243;n</rs> hab&#237;a echado de su boca.
+					</ab>
+					<ab xml:id="b.REV.12.17" type="verse" n="17">
+						Entonces el <rs key="#per20">drag&#243;n</rs> se llen&#243; de ira contra la <rs key="#org37" cert="low">mujer</rs> y se fue a hacer la guerra contra el resto de la descendencia de ella, contra los que guardan los mandamientos de <rs key="#per14">Dios</rs> y tienen el testimonio de <rs key="#per1">Jesucristo</rs>.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.13" type="chapter" n="13">
+<div type="pericope">
+<ab type="pericope">Las dos bestias</ab>
+
+					<ab xml:id="b.REV.13.1" type="verse" n="1">
+							Me par&#233; sobre la arena del mar y vi subir del mar una <rs key="#per20">bestia que ten&#237;a siete cabezas y diez cuernos</rs>: en sus cuernos ten&#237;a diez diademas, y sobre sus cabezas, nombres de blasfemia.
+					</ab>
+					<ab xml:id="b.REV.13.2" type="verse" n="2">
+						La <rs key="#per20">bestia</rs> que vi era semejante a un leopardo, sus pies eran como de oso y su boca como boca de le&#243;n. El <rs key="#per20">drag&#243;n</rs> le dio su poder, su trono y gran autoridad.
+					</ab>
+					<ab xml:id="b.REV.13.3" type="verse" n="3">
+						Vi una de sus cabezas como herida de muerte, pero su herida mortal fue sanada. Toda la tierra se maravill&#243; en pos de la <rs key="#per20">bestia</rs>,
+					</ab>
+					<ab xml:id="b.REV.13.4" type="verse" n="4">
+						y adoraron al <rs key="#per20">drag&#243;n</rs> que hab&#237;a dado autoridad a la <rs key="#per20">bestia</rs>, y adoraron a la <rs key="#per20">bestia</rs>, diciendo <q who="#org0" toWhom="#org0" type="oral">&#191;Qui&#233;n como la <rs key="#per20">bestia</rs> y qui&#233;n podr&#225; luchar contra ella?</q>.
+					</ab>
+					<ab xml:id="b.REV.13.5" type="verse" n="5">
+						Tambi&#233;n se le dio boca que hablaba arrogancias y blasfemias, y se le dio autoridad para actuar por cuarenta y dos meses.
+					</ab>
+					<ab xml:id="b.REV.13.6" type="verse" n="6">
+						Y abri&#243; su boca para blasfemar contra <rs key="#per14">Dios</rs>, para blasfemar de su nombre, de su <rs key="#pla73">tabern&#225;culo</rs> y de los que habitan en el <rs key="#pla18">cielo</rs>.
+					</ab>
+					<ab xml:id="b.REV.13.7" type="verse" n="7">
+						Se le permiti&#243; hacer guerra contra los santos, y vencerlos. Tambi&#233;n se le dio autoridad sobre toda tribu, pueblo, lengua y naci&#243;n.
+					</ab>
+					<ab xml:id="b.REV.13.8" type="verse" n="8">
+						La adoraron todos los habitantes de la tierra cuyos nombres no estaban escritos desde el principio del mundo en el <rs key="#wor4">libro de la vida</rs> del <rs key="#per1">Cordero</rs> que fue inmolado.
+					</ab>
+					<ab xml:id="b.REV.13.9" type="verse" n="9">
+						Si alguno tiene o&#237;do, oiga:
+					</ab>
+					<ab xml:id="b.REV.13.10" type="verse" n="10">
+						 Si alguno lleva en cautividad, a cautividad ir&#225;. Si alguno mata a espada, a espada ser&#225; muerto. Aqu&#237; est&#225; la perseverancia y la fe de los santos.
+					</ab>
+					<ab xml:id="b.REV.13.11" type="verse" n="11">
+						Despu&#233;s vi otra <rs key="#per20">bestia</rs> que sub&#237;a de la tierra. Ten&#237;a dos cuernos semejantes a los de un cordero, pero hablaba como un <rs key="#per20">drag&#243;n</rs>.
+					</ab>
+					<ab xml:id="b.REV.13.12" type="verse" n="12">
+						Ejerce toda la autoridad de la primera <rs key="#per20">bestia</rs> en presencia de ella, y hace que la tierra y sus habitantes adoren a la primera <rs key="#per20">bestia</rs>, cuya herida mortal fue sanada.
+					</ab>
+					<ab xml:id="b.REV.13.13" type="verse" n="13">
+						Tambi&#233;n hace grandes se&#241;ales, de tal manera que incluso hace descender fuego del cielo a la tierra delante de los hombres.
+					</ab>
+					<ab xml:id="b.REV.13.14" type="verse" n="14">
+						Enga&#241;a a los habitantes de la tierra con las se&#241;ales que se le ha permitido hacer en presencia de la <rs key="#per20">bestia</rs>, diciendo a los habitantes de la tierra que le hagan una imagen a la <rs key="#per20">bestia</rs> que fue herida de espada y revivi&#243;.
+					</ab>
+					<ab xml:id="b.REV.13.15" type="verse" n="15">
+						Se le permiti&#243; infundir aliento a la imagen de la bestia, para que la imagen hablara e hiciera matar a todo el que no la adorara.
+					</ab>
+					<ab xml:id="b.REV.13.16" type="verse" n="16">
+						Y hac&#237;a que a todos, peque&#241;os y grandes, ricos y pobres, libres y esclavos, se les pusiera una marca en la mano derecha o en la frente,
+					</ab>
+					<ab xml:id="b.REV.13.17" type="verse" n="17">
+						y que ninguno pudiera comprar ni vender, sino el que tuviera la marca o el nombre de la <rs key="#per20">bestia</rs> o el n&#250;mero de su nombre.
+					</ab>
+					<ab xml:id="b.REV.13.18" type="verse" n="18">
+						Aqu&#237; hay sabidur&#237;a. El que tiene entendimiento cuente el n&#250;mero de la <rs key="#per20">bestia</rs>, pues es n&#250;mero de hombre. Y su n&#250;mero es seiscientos sesenta y seis.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.14" type="chapter" n="14">
+<div type="pericope">
+<ab type="pericope">El c&#225;ntico de los 144 mil</ab>
+
+					<ab xml:id="b.REV.14.1" type="verse" n="1">
+						Despu&#233;s mir&#233;, y vi que el <rs key="#per1">Cordero</rs> estaba de pie sobre el monte de <rs key="#pla72">Si&#243;n</rs>, y con &#233;l ciento cuarenta y cuatro mil que ten&#237;an el nombre de &#233;l y el de su <rs key="#per14">Padre</rs> escrito en la frente.
+					</ab>
+					<ab xml:id="b.REV.14.2" type="verse" n="2">
+						O&#237; una voz del <rs key="#pla18">cielo</rs> como el estruendo de muchas aguas y como el sonido de un gran trueno. La voz que o&#237; era como de arpistas que tocaban sus arpas.
+					</ab>
+					<ab xml:id="b.REV.14.3" type="verse" n="3">
+						Cantaban un c&#225;ntico nuevo delante del trono y delante de los <rs key="#org51">cuatro seres vivientes</rs> y de los <rs key="#org52">ancianos</rs>. Nadie pod&#237;a aprender el c&#225;ntico, sino aquellos ciento cuarenta y cuatro mil que fueron redimidos de entre los de la tierra.
+					</ab>
+					<ab xml:id="b.REV.14.4" type="verse" n="4">
+						Estos son los que no se han contaminado con mujeres, pues son v&#237;rgenes. Son los que siguen al <rs key="#per1">Cordero</rs> por dondequiera que va. Estos fueron redimidos de entre los hombres como primicias para <rs key="#per14">Dios</rs> y para el <rs key="#per1">Cordero</rs>.
+					</ab>
+					<ab xml:id="b.REV.14.5" type="verse" n="5">
+						En sus bocas no fue hallada mentira, pues son sin mancha delante del trono de <rs key="#per14">Dios</rs>.
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">El mensaje de los tres &#225;ngeles</ab>
+
+					<ab xml:id="b.REV.14.6" type="verse" n="6">
+						En medio del cielo vi volar otro <rs key="#org4">&#225;ngel</rs> que ten&#237;a el evangelio eterno para predicarlo a los habitantes de la tierra, a toda naci&#243;n, tribu, lengua y pueblo.
+					</ab>
+					<ab xml:id="b.REV.14.7" type="verse" n="7">
+						Dec&#237;a a gran voz <q who="#org4" toWhom="#org0" type="oral">&#161;Temed a <rs key="#per14">Dios</rs> y dadle gloria, porque la hora de su juicio ha llegado. Adorad a <rs key="#per14">aquel que hizo el cielo y la tierra, el mar y las fuentes de las aguas</rs>!</q>.
+					</ab>
+					<ab xml:id="b.REV.14.8" type="verse" n="8">
+						Otro <rs key="#org4">&#225;ngel</rs> lo sigui&#243;, diciendo <q who="#org4" toWhom="#org0" type="oral">Ha ca&#237;do, ha ca&#237;do <rs key="#pla69">Babilonia</rs>, la <rs key="#pla69">gran ciudad</rs>, porque ha hecho beber a todas las naciones del vino del furor de su fornicaci&#243;n</q>.
+					</ab>
+					<ab xml:id="b.REV.14.9" type="verse" n="9">
+						Y un tercer <rs key="#org4">&#225;ngel</rs> los sigui&#243;, diciendo a gran voz: <q who="#org4" toWhom="#org0" type="oral">&#171;Si alguno adora a la <rs key="#per20">bestia</rs> y a su imagen y recibe la marca en su frente o en su mano,</q>
+					</ab>
+					<ab xml:id="b.REV.14.10" type="verse" n="10">
+						<q who="#org4" toWhom="#org0" type="oral">&#233;l tambi&#233;n beber&#225; del vino de la ira de <rs key="#per14">Dios</rs>, que ha sido vaciado puro en el c&#225;liz de su ira; y ser&#225; atormentado con fuego y azufre delante de los santos <rs key="#org4">&#225;ngeles</rs> y del <rs key="#per1">Cordero</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.14.11" type="verse" n="11">
+						<q who="#org4" toWhom="#org0" type="oral">El humo de su tormento sube por los siglos de los siglos. No tienen reposo de d&#237;a ni de noche los que adoran a la <rs key="#per20">bestia</rs> y a su imagen, ni nadie que reciba la marca de su nombre&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.14.12" type="verse" n="12">
+						<q who="#org4" toWhom="#org0" type="oral">Aqu&#237; est&#225; la perseverancia de los santos, los que guardan los mandamientos de <rs key="#per14">Dios</rs> y la fe de <rs key="#per1">Jes&#250;s</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.14.13" type="verse" n="13">
+						Y o&#237; una voz que me dec&#237;a desde el <rs key="#pla18">cielo</rs> <q who="#per14" toWhom="#per25" type="oral">Escribe: <q who="#per25" toWhom="#org0" type="written">Bienaventurados de aqu&#237; en adelante los muertos que mueren en el <rs key="#per14">Se&#241;or</rs>. S&#237;, dice el <rs key="#per17">Esp&#237;ritu</rs>, descansar&#225;n de sus trabajos, porque sus obras con ellos siguen</q></q>.
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">La tierra es segada</ab>
+
+					<ab xml:id="b.REV.14.14" type="verse" n="14">
+						Mir&#233;, y vi una nube blanca. Sentado sobre la nube, uno semejante al <rs key="#per1">Hijo del hombre</rs>, que llevaba en la cabeza una corona de oro y en la mano una hoz aguda.
+					</ab>
+					<ab xml:id="b.REV.14.15" type="verse" n="15">
+						Y otro <rs key="#org4">&#225;ngel</rs> sali&#243; del <rs key="#pla73">templo</rs> gritando a gran voz al que estaba sentado sobre la nube <q who="#org4" toWhom="#per1" type="oral">&#161;Mete tu hoz y siega, porque la hora de segar ha llegado, pues la mies de la tierra est&#225; madura!</q>.
+					</ab>
+					<ab xml:id="b.REV.14.16" type="verse" n="16">
+						El <rs key="#per1">que estaba sentado sobre la nube</rs> meti&#243; su hoz en la tierra y la tierra fue segada.
+					</ab>
+					<ab xml:id="b.REV.14.17" type="verse" n="17">
+						Otro <rs key="#org4">&#225;ngel</rs> sali&#243; del <rs key="#pla73">templo</rs> que est&#225; en el <rs key="#pla18">cielo</rs>, llevando tambi&#233;n una hoz aguda.
+					</ab>
+					<ab xml:id="b.REV.14.18" type="verse" n="18">
+						Y sali&#243; del altar otro <rs key="#org4">&#225;ngel</rs>, que ten&#237;a poder sobre el fuego, y llam&#243; a gran voz al que llevaba la hoz aguda, diciendo <q who="#org4" toWhom="#org4" type="oral">&#161;Mete tu hoz aguda y vendimia los racimos de la tierra, porque sus uvas est&#225;n maduras!</q>.
+					</ab>
+					<ab xml:id="b.REV.14.19" type="verse" n="19">
+						El <rs key="#org4">&#225;ngel</rs> meti&#243; su hoz en la tierra, vendimi&#243; la vi&#241;a de la tierra y ech&#243; las uvas en el gran lagar de la ira de <rs key="#per14">Dios</rs>.
+					</ab>
+					<ab xml:id="b.REV.14.20" type="verse" n="20">
+						El lagar fue pisado fuera de la ciudad, y del lagar sali&#243; sangre que lleg&#243; hasta los frenos de los caballos en una extensi&#243;n de mil seiscientos estadios.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.15" type="chapter" n="15">
+<div type="pericope">
+<ab type="pericope">Los &#225;ngeles con las siete plagas postreras</ab>
+
+					<ab xml:id="b.REV.15.1" type="verse" n="1">
+						Vi en el cielo otra se&#241;al grande y admirable: <rs key="#org4">siete &#225;ngeles</rs> con las siete plagas postreras, porque en ellas se consumaba la ira de <rs key="#per14">Dios</rs>.
+					</ab>
+					<ab xml:id="b.REV.15.2" type="verse" n="2">
+						Tambi&#233;n vi como un mar de vidrio mezclado con fuego, y a los que hab&#237;an alcanzado la victoria sobre la <rs key="#per20">bestia</rs> y su imagen, sobre su marca y el n&#250;mero de su nombre, de pie sobre el mar de vidrio, con las arpas de <rs key="#per14">Dios</rs>.
+					</ab>
+					<ab xml:id="b.REV.15.3" type="verse" n="3">
+						Y cantan el c&#225;ntico de <rs key="#per26">Mois&#233;s</rs>, siervo de <rs key="#per14">Dios</rs>, y el c&#225;ntico del <rs key="#per1">Cordero</rs>, diciendo:<q who="#org0" toWhom="#per14" type="prayer"> &#171;Grandes y maravillosas son tus obras, <rs key="#per14">Se&#241;or</rs> <rs key="#per14">Dios Todopoderoso</rs>; justos y verdaderos son tus caminos, <rs key="#per14">Rey de los santos</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.15.4" type="verse" n="4">
+						<q who="#org0" toWhom="#per14" type="prayer">&#191;Qui&#233;n no te temer&#225;, <rs key="#per14">Se&#241;or</rs>, y glorificar&#225; tu nombre?, pues solo t&#250; eres <rs key="#per14">santo</rs>; por lo cual todas las naciones vendr&#225;n y te adorar&#225;n, porque tus juicios se han manifestado&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.15.5" type="verse" n="5">
+						Despu&#233;s de estas cosas mir&#233;, y fue abierto en el <rs key="#pla18">cielo</rs> el santuario del <rs key="#pla73">tabern&#225;culo</rs> del testimonio.
+					</ab>
+					<ab xml:id="b.REV.15.6" type="verse" n="6">
+						Del <rs key="#pla73">templo</rs> salieron los <rs key="#org4">siete &#225;ngeles</rs> con las siete plagas, vestidos de lino limpio y resplandeciente y ce&#241;idos alrededor del pecho con cintos de oro.
+					</ab>
+					<ab xml:id="b.REV.15.7" type="verse" n="7">
+						Uno de los <rs key="#org4">cuatro seres vivientes</rs> dio a los <rs key="#org4">siete &#225;ngeles</rs> siete copas de oro llenas de la ira de <rs key="#per14">Dios</rs>, <rs key="#per14">quien vive por los siglos de los siglos</rs>.
+					</ab>
+					<ab xml:id="b.REV.15.8" type="verse" n="8">
+						Y el <rs key="#pla73">templo</rs> se llen&#243; de humo por causa de la gloria de <rs key="#per14">Dios</rs> y por causa de su poder. Nadie pod&#237;a entrar en el <rs key="#pla73">templo</rs> hasta que se cumplieran las siete plagas de los <rs key="#org4">siete &#225;ngeles</rs>.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.16" type="chapter" n="16">
+<div type="pericope">
+<ab type="pericope">Las copas de ira</ab>
+
+					<ab xml:id="b.REV.16.1" type="verse" n="1">
+						Entonces o&#237; desde el <rs key="#pla73">templo</rs> una gran voz que dec&#237;a a los <rs key="#org4">siete &#225;ngeles</rs> <q who="#per14" toWhom="#org4" type="oral">Id y derramad sobre la tierra las siete copas de la ira de <rs key="#per14">Dios</rs></q>.
+					</ab>
+					<ab xml:id="b.REV.16.2" type="verse" n="2">
+						Fue el primero y derram&#243; su copa sobre la tierra, y vino una &#250;lcera maligna y pestilente sobre los hombres que ten&#237;an la marca de la <rs key="#per20">bestia</rs> y que adoraban su imagen.
+					</ab>
+					<ab xml:id="b.REV.16.3" type="verse" n="3">
+						El segundo <rs key="#org4">&#225;ngel</rs> derram&#243; su copa sobre el mar, y este se convirti&#243; en sangre como de muerto, y muri&#243; todo ser viviente que hab&#237;a en el mar.
+					</ab>
+					<ab xml:id="b.REV.16.4" type="verse" n="4">
+						El tercer <rs key="#org4">&#225;ngel</rs> derram&#243; su copa sobre los r&#237;os y sobre las fuentes de las aguas, y se convirtieron en sangre.
+					</ab>
+					<ab xml:id="b.REV.16.5" type="verse" n="5">
+						Y o&#237; que el <rs key="#org4">&#225;ngel</rs> de las aguas dec&#237;a: <q who="#org4" toWhom="#per14" type="prayer">&#171;Justo eres t&#250;, <rs key="#per14">Se&#241;or</rs>, el <rs key="#per14">que eres y que eras</rs>, el <rs key="#per14">Santo</rs>, porque has juzgado estas cosas.</q>
+					</ab>
+					<ab xml:id="b.REV.16.6" type="verse" n="6">
+						<q who="#org4" toWhom="#per14" type="prayer">Por cuanto derramaron la sangre de los santos y de los <rs key="#org8">profetas</rs>, tambi&#233;n t&#250; les has dado a beber sangre, pues se lo merecen&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.16.7" type="verse" n="7">
+						Tambi&#233;n o&#237; a otro, que desde el altar dec&#237;a <q who="#org4" toWhom="#per14" type="prayer">&#161;Ciertamente, <rs key="#per14">Se&#241;or</rs> <rs key="#per14">Dios Todopoderoso</rs>, tus juicios son verdaderos y justos!</q>.
+					</ab>
+					<ab xml:id="b.REV.16.8" type="verse" n="8">
+						El cuarto <rs key="#org4">&#225;ngel</rs> derram&#243; su copa sobre el sol, al cual le fue permitido quemar a los hombres con fuego.
+					</ab>
+					<ab xml:id="b.REV.16.9" type="verse" n="9">
+						Los hombres fueron quemados con el gran calor y blasfemaron el nombre de <rs key="#per14">Dios</rs>, que tiene poder sobre estas plagas, y no se arrepintieron para darle gloria.
+					</ab>
+					<ab xml:id="b.REV.16.10" type="verse" n="10">
+						El quinto <rs key="#org4">&#225;ngel</rs> derram&#243; su copa sobre el trono de la <rs key="#per20">bestia</rs>, y su reino se cubri&#243; de tinieblas. La gente se mord&#237;a la lengua por causa del dolor
+					</ab>
+					<ab xml:id="b.REV.16.11" type="verse" n="11">
+						y blasfemaron contra el <rs key="#per14">Dios del <rs key="#pla18">cielo</rs></rs> por sus dolores y por sus &#250;lceras, y no se arrepintieron de sus obras.
+					</ab>
+					<ab xml:id="b.REV.16.12" type="verse" n="12">
+						El sexto <rs key="#org4">&#225;ngel</rs> derram&#243; su copa sobre el <rs key="#pla64">gran r&#237;o</rs> <rs key="#pla64">&#201;ufrates</rs>, y el agua de este se sec&#243; para preparar el camino a los reyes del oriente.
+					</ab>
+					<ab xml:id="b.REV.16.13" type="verse" n="13">
+						Vi salir de la boca del <rs key="#per20">drag&#243;n</rs>, de la boca de la <rs key="#per20">bestia</rs> y de la boca del <rs key="#org14">falso profeta</rs>, tres <rs key="#org6">esp&#237;ritus inmundos</rs> semejantes a ranas.
+					</ab>
+					<ab xml:id="b.REV.16.14" type="verse" n="14">
+						Son <rs key="#org6">esp&#237;ritus de demonios</rs>, que hacen se&#241;ales y van a los reyes de la tierra en todo el mundo para reunirlos para la batalla de aquel gran d&#237;a del <rs key="#per14">Dios Todopoderoso</rs>.
+					</ab>
+					<ab xml:id="b.REV.16.15" type="verse" n="15">
+						 <q who="#per14" toWhom="#org0" type="oral" cert="low">Yo vengo como ladr&#243;n. Bienaventurado el que vela y guarda sus vestiduras, no sea que ande desnudo y vean su verg&#252;enza</q>.
+					</ab>
+					<ab xml:id="b.REV.16.16" type="verse" n="16">
+						Y los reuni&#243; en el lugar que en hebreo se llama <rs key="#pla74">Armaged&#243;n</rs>.
+					</ab>
+					<ab xml:id="b.REV.16.17" type="verse" n="17">
+						El s&#233;ptimo <rs key="#org4">&#225;ngel</rs> derram&#243; su copa por el aire. Y sali&#243; una gran voz del santuario del <rs key="#pla18">cielo</rs>, desde el trono, que dec&#237;a <q who="#per14" toWhom="#org0" type="oral">&#161;Ya est&#225; hecho!</q>.
+					</ab>
+					<ab xml:id="b.REV.16.18" type="verse" n="18">
+						Entonces hubo rel&#225;mpagos, voces, truenos y un gran temblor de tierra, un terremoto tan grande cual no lo hubo jam&#225;s desde que los hombres existen sobre la tierra.
+					</ab>
+					<ab xml:id="b.REV.16.19" type="verse" n="19">
+						La <rs key="#pla3" cert="low">gran ciudad</rs> se dividi&#243; en tres partes y las ciudades de las naciones cayeron. La gran <rs key="#pla69">Babilonia</rs> vino en memoria delante de <rs key="#per14">Dios</rs>, para darle el c&#225;liz del vino del ardor de su ira.
+					</ab>
+					<ab xml:id="b.REV.16.20" type="verse" n="20">
+						Toda isla huy&#243; y los montes ya no fueron hallados.
+					</ab>
+					<ab xml:id="b.REV.16.21" type="verse" n="21">
+						Del <rs key="#pla18">cielo</rs> cay&#243; sobre los hombres un enorme granizo, como del peso de un talento. Y los hombres blasfemaron contra <rs key="#per14">Dios</rs> por la plaga del granizo, porque su plaga fue sumamente grande.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.17" type="chapter" n="17">
+<div type="pericope">
+<ab type="pericope">Condenaci&#243;n de la gran ramera</ab>
+
+					<ab xml:id="b.REV.17.1" type="verse" n="1">
+						Vino uno de los siete <rs key="#org4">&#225;ngeles</rs> que ten&#237;an las siete copas y habl&#243; conmigo, diciendo: <q who="#org4" toWhom="#per25" type="oral">&#171;Ven ac&#225; y te mostrar&#233; la sentencia contra la <rs key="#pla69">gran ramera</rs>, la <rs key="#pla69">que est&#225; sentada sobre muchas aguas</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.17.2" type="verse" n="2">
+						<q who="#org4" toWhom="#per25" type="oral">Con ella han fornicado los reyes de la tierra, y los habitantes de la tierra se han embriagado con el vino de su fornicaci&#243;n&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.17.3" type="verse" n="3">
+						Me llev&#243; en el <rs key="#per17">Esp&#237;ritu</rs> al desierto, y vi a una <rs key="#pla69">mujer</rs> sentada sobre una <rs key="#per20">bestia escarlata</rs> llena de nombres de blasfemia, que ten&#237;a siete cabezas y diez cuernos.
+					</ab>
+					<ab xml:id="b.REV.17.4" type="verse" n="4">
+						La <rs key="#pla69">mujer</rs> estaba vestida de p&#250;rpura y escarlata, adornada de oro, piedras preciosas y perlas, y ten&#237;a en la mano un c&#225;liz de oro lleno de abominaciones y de la inmundicia de su fornicaci&#243;n.
+					</ab>
+					<ab xml:id="b.REV.17.5" type="verse" n="5">
+						En su frente ten&#237;a un nombre escrito, un misterio <q who="#org0" toWhom="#org0" type="written" cert="low"><rs key="#pla69">Babilonia</rs> la grande, la <rs key="#pla69">madre de las rameras y de las abominaciones de la tierra</rs></q>.
+					</ab>
+					<ab xml:id="b.REV.17.6" type="verse" n="6">
+						Vi a la <rs key="#pla69">mujer</rs> ebria de la sangre de los santos y de la sangre de los m&#225;rtires de <rs key="#per1">Jes&#250;s</rs>. Cuando la vi qued&#233; asombrado con gran asombro.
+					</ab>
+					<ab xml:id="b.REV.17.7" type="verse" n="7">
+						El <rs key="#org4">&#225;ngel</rs> me dijo:  <q who="#org4" toWhom="#per25" type="oral">&#171;&#191;Por qu&#233; te asombras? Yo te dir&#233; el misterio de la <rs key="#pla69">mujer</rs> y de la <rs key="#per20">bestia</rs> que la lleva, la cual tiene siete cabezas y diez cuernos.</q>
+					</ab>
+					<ab xml:id="b.REV.17.8" type="verse" n="8">
+						<q who="#org4" toWhom="#per25" type="oral">La <rs key="#per20">bestia</rs> que has visto era y no es, y est&#225; para subir del abismo e ir a perdici&#243;n. Los habitantes de la tierra, aquellos cuyos nombres no est&#225;n escritos en el <rs key="#wor4">libro de la vida</rs> desde la fundaci&#243;n del mundo, se asombrar&#225;n viendo la <rs key="#per20">bestia</rs> que era y no es, y ser&#225;.</q>
+					</ab>
+					<ab xml:id="b.REV.17.9" type="verse" n="9">
+						<q who="#org4" toWhom="#per25" type="oral">&#187;Esto, para la mente que tenga sabidur&#237;a: Las siete cabezas son siete montes sobre los cuales se sienta la <rs key="#pla69">mujer</rs>,</q>
+					</ab>
+					<ab xml:id="b.REV.17.10" type="verse" n="10">
+						<q who="#org4" toWhom="#per25" type="oral">y son siete reyes. Cinco de ellos han ca&#237;do; uno es y el otro a&#250;n no ha venido, y cuando venga deber&#225; durar breve tiempo.</q>
+					</ab>
+					<ab xml:id="b.REV.17.11" type="verse" n="11">
+						<q who="#org4" toWhom="#per25" type="oral">La <rs key="#per20">bestia</rs> que era y no es, es tambi&#233;n el octavo, y es uno de los siete y va a la perdici&#243;n.</q>
+					</ab>
+					<ab xml:id="b.REV.17.12" type="verse" n="12">
+						<q who="#org4" toWhom="#per25" type="oral">Los diez cuernos que has visto son diez reyes que a&#250;n no han recibido reino; pero recibir&#225;n autoridad como reyes por una hora, juntamente con la <rs key="#per20">bestia</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.17.13" type="verse" n="13">
+						<q who="#org4" toWhom="#per25" type="oral">Estos tienen un mismo prop&#243;sito: entregar&#225;n su poder y autoridad a la <rs key="#per20">bestia</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.17.14" type="verse" n="14">
+						<q who="#org4" toWhom="#per25" type="oral">Pelear&#225;n contra el <rs key="#per1">Cordero</rs>, y el <rs key="#per1">Cordero</rs> los vencer&#225;, porque es <rs key="#per1">Se&#241;or de se&#241;ores</rs> y <rs key="#per1">Rey de reyes</rs>; y los que est&#225;n con &#233;l son llamados, elegidos y fieles&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.17.15" type="verse" n="15">
+						Tambi&#233;n me dijo: <q who="#org4" toWhom="#per25" type="oral">&#171;Las aguas que has visto, donde se sienta la <rs key="#pla69">ramera</rs>, son pueblos, muchedumbres, naciones y lenguas.</q>
+					</ab>
+					<ab xml:id="b.REV.17.16" type="verse" n="16">
+						<q who="#org4" toWhom="#per25" type="oral">Y los diez cuernos que viste, y la <rs key="#per20">bestia</rs>, aborrecer&#225;n a la <rs key="#pla69">ramera</rs>, la dejar&#225;n desolada y desnuda, devorar&#225;n sus carnes y la quemar&#225;n con fuego.</q>
+					</ab>
+					<ab xml:id="b.REV.17.17" type="verse" n="17">
+						<q who="#org4" toWhom="#per25" type="oral"><rs key="#per14">Dios</rs> ha puesto en sus corazones el ejecutar lo que &#233;l quiso: ponerse de acuerdo y dar su <rs key="#pla19" cert="low">reino</rs> a la <rs key="#per20">bestia</rs> hasta que se hayan cumplido las palabras de <rs key="#per14">Dios</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.17.18" type="verse" n="18">
+						<q who="#org4" toWhom="#per25" type="oral">Y la <rs key="#pla69">mujer</rs> que has visto es la <rs key="#pla69">gran ciudad</rs> que reina sobre los reyes de la tierra&#187;.</q>
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.18" type="chapter" n="18">
+<div type="pericope">
+<ab type="pericope">La ca&#237;da de Babilonia</ab>
+
+					<ab xml:id="b.REV.18.1" type="verse" n="1">
+						Despu&#233;s de esto vi otro <rs key="#org4">&#225;ngel</rs> que descend&#237;a del <rs key="#pla18">cielo</rs> con gran poder, y la tierra fue alumbrada con su gloria.
+					</ab>
+					<ab xml:id="b.REV.18.2" type="verse" n="2">
+						Clam&#243; con voz potente, diciendo: <q who="#org4" toWhom="#org0" type="oral">&#171;&#161;Ha ca&#237;do, ha ca&#237;do la <rs key="#pla69">gran Babilonia</rs>! Se ha convertido en habitaci&#243;n de <rs key="#org6">demonios</rs>, en guarida de todo <rs key="#org6">esp&#237;ritu inmundo</rs> y en albergue de toda ave inmunda y aborrecible,</q>
+					</ab>
+					<ab xml:id="b.REV.18.3" type="verse" n="3">
+						<q who="#org4" toWhom="#org0" type="oral">porque todas las naciones han bebido del vino del furor de su fornicaci&#243;n. Los reyes de la tierra han fornicado con ella y los mercaderes de la tierra se han enriquecido con el poder de sus lujos sensuales&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.18.4" type="verse" n="4">
+						Y o&#237; otra voz del <rs key="#pla18">cielo</rs>, que dec&#237;a: <q who="#per14" toWhom="#org0" type="oral" cert="medium">&#171;&#161;Salid de ella, pueblo m&#237;o, para que no se&#225;is part&#237;cipes de sus pecados ni recib&#225;is parte de sus plagas!,</q>
+					</ab>
+					<ab xml:id="b.REV.18.5" type="verse" n="5">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">porque sus pecados han llegado hasta el <rs key="#pla18">cielo</rs> y <rs key="#per14">Dios</rs> se ha acordado de sus maldades.</q>
+					</ab>
+					<ab xml:id="b.REV.18.6" type="verse" n="6">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Dadle a ella tal como ella os ha dado y pagadle el doble seg&#250;n sus obras. En el c&#225;liz en que ella prepar&#243; bebida, preparadle el doble a ella.</q>
+					</ab>
+					<ab xml:id="b.REV.18.7" type="verse" n="7">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Cuanto ella se ha glorificado y ha vivido en deleites, tanto dadle de tormento y llanto, porque dice en su coraz&#243;n: <q who="#pla69" toWhom="#pla69" type="thought">Yo estoy sentada como una reina, no soy viuda y no ver&#233; llanto&#187;.</q></q>
+					</ab>
+					<ab xml:id="b.REV.18.8" type="verse" n="8">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Por lo cual, en un solo d&#237;a vendr&#225;n sus plagas: muerte, llanto y hambre, y ser&#225; quemada con fuego, porque poderoso es <rs key="#per14">Dios</rs> el <rs key="#per14">Se&#241;or</rs>, que la juzga.</q>
+					</ab>
+					<ab xml:id="b.REV.18.9" type="verse" n="9">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Los reyes de la tierra que han fornicado con ella y con ella han vivido en deleites, llorar&#225;n y har&#225;n lamentaci&#243;n sobre ella cuando vean el humo de su incendio.</q>
+					</ab>
+					<ab xml:id="b.REV.18.10" type="verse" n="10">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Poni&#233;ndose lejos por el temor de su tormento, dir&#225;n <q who="#org0" toWhom="#org0" type="oral">&#161;Ay, ay de la gran ciudad, de <rs key="#pla69">Babilonia</rs>, la ciudad fuerte!, porque en una sola hora vino tu juicio</q>.</q>
+					</ab>
+					<ab xml:id="b.REV.18.11" type="verse" n="11">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Los mercaderes de la tierra lloran y hacen lamentaci&#243;n sobre ella, porque ninguno compra m&#225;s sus mercader&#237;as:</q>
+					</ab>
+					<ab xml:id="b.REV.18.12" type="verse" n="12">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">mercader&#237;a de oro y plata; de piedras preciosas y perlas; de lino fino, p&#250;rpura, seda y escarlata; de toda madera olorosa, todo objeto de marfil y todo objeto de madera preciosa; de cobre, hierro y m&#225;rmol;</q>
+					</ab>
+					<ab xml:id="b.REV.18.13" type="verse" n="13">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">canela y especias arom&#225;ticas; incienso, mirra y ol&#237;bano; vino y aceite; flor de harina y trigo; <rs key="#per20">bestia</rs>s y ovejas; caballos y carros; esclavos y almas de hombres.</q>
+					</ab>
+					<ab xml:id="b.REV.18.14" type="verse" n="14">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Los frutos codiciados por tu alma se apartaron de ti, y todas las cosas exquisitas y espl&#233;ndidas te han faltado y nunca m&#225;s las hallar&#225;s.</q>
+					</ab>
+					<ab xml:id="b.REV.18.15" type="verse" n="15">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Los mercaderes de estas cosas, que se han enriquecido a costa de ella, se pondr&#225;n lejos por el temor de su tormento, llorando y lamentando,</q>
+					</ab>
+					<ab xml:id="b.REV.18.16" type="verse" n="16">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">diciendo: <q who="#org0" toWhom="#org0" type="oral">&#171;&#161;Ay, ay de la <rs key="#pla69">gran ciudad</rs>, que estaba vestida de lino fino, p&#250;rpura y escarlata, y estaba adornada de oro, piedras preciosas y perlas!,</q></q>
+					</ab>
+					<ab xml:id="b.REV.18.17" type="verse" n="17">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium"><q who="#org0" toWhom="#org0" type="oral">porque en una sola hora han sido consumidas tantas riquezas&#187;</q>. Todo piloto y todos los que viajan en naves, los marineros y todos los que trabajan en el mar, se pusieron lejos,</q>
+					</ab>
+					<ab xml:id="b.REV.18.18" type="verse" n="18">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">y viendo el humo de su incendio dieron voces, diciendo <q who="#org0" toWhom="#org0" type="oral">&#191;Qu&#233; ciudad era semejante a esta <rs key="#pla69">gran ciudad</rs>?</q>.</q>
+					</ab>
+					<ab xml:id="b.REV.18.19" type="verse" n="19">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Y echaron polvo sobre sus cabezas y dieron voces, llorando y lamentando, diciendo: <q who="#org0" toWhom="#org0" type="oral">&#171;&#161;Ay, ay de la <rs key="#pla69">gran ciudad</rs>, en la cual todos los que ten&#237;an naves en el mar se hab&#237;an enriquecido de sus riquezas! &#161;En una sola hora ha sido desolada!</q></q>
+					</ab>
+					<ab xml:id="b.REV.18.20" type="verse" n="20">
+						<q who="#per14" toWhom="#org0" type="oral" cert="medium">Al&#233;grate sobre ella, <rs key="#pla18">cielo</rs>, y vosotros santos, <rs key="#org3">ap&#243;stoles</rs> y <rs key="#org8">profetas</rs>, porque <rs key="#per14">Dios</rs> os ha hecho justicia en ella&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.18.21" type="verse" n="21">
+						Un <rs key="#org4">&#225;ngel</rs> poderoso tom&#243; una piedra, como una gran piedra de molino, y la arroj&#243; en el mar, diciendo: <q who="#org4" toWhom="#org0" type="oral">&#171;Con el mismo &#237;mpetu ser&#225; derribada <rs key="#pla69">Babilonia</rs>, la <rs key="#pla69">gran ciudad</rs>, y nunca m&#225;s ser&#225; hallada.</q>
+					</ab>
+					<ab xml:id="b.REV.18.22" type="verse" n="22">
+						<q who="#org4" toWhom="#org0" type="oral">Voz de arpistas, m&#250;sicos, flautistas y trompetistas no se oir&#225; m&#225;s de ti. Ni se hallar&#225; m&#225;s en ti art&#237;fice de oficio alguno, ni ruido de molinos se oir&#225; m&#225;s en ti.</q>
+					</ab>
+					<ab xml:id="b.REV.18.23" type="verse" n="23">
+						<q who="#org4" toWhom="#org0" type="oral">Luz de l&#225;mpara no alumbrar&#225; m&#225;s en ti, ni voz de esposo y esposa se oir&#225; m&#225;s en ti, porque tus mercaderes eran los grandes de la tierra y por tus hechicer&#237;as fueron enga&#241;adas todas las naciones.</q>
+					</ab>
+					<ab xml:id="b.REV.18.24" type="verse" n="24">
+						<q who="#org4" toWhom="#org0" type="oral">En ella se hall&#243; la sangre de los <rs key="#org8">profetas</rs> y de los santos y de todos los que han sido muertos en la tierra&#187;.</q>
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.19" type="chapter" n="19">
+<div type="pericope">
+<ab type="pericope">Alabanzas en el cielo</ab>
+
+					<ab xml:id="b.REV.19.1" type="verse" n="1">
+						Despu&#233;s de esto o&#237; una gran voz, como de una gran multitud en el <rs key="#pla18">cielo</rs>, que dec&#237;a: <q who="#org4" toWhom="#org0" type="prayer">&#171;&#161;Aleluya! Salvaci&#243;n, honra, gloria y poder son del <rs key="#per14">Se&#241;or</rs> <rs key="#per14">Dios nuestro</rs>,</q>
+					</ab>
+					<ab xml:id="b.REV.19.2" type="verse" n="2">
+						<q who="#org4" toWhom="#org0" type="prayer">porque sus juicios son verdaderos y justos, pues ha juzgado a la <rs key="#pla69">gran ramera</rs> que corromp&#237;a la tierra con su fornicaci&#243;n, y ha vengado la sangre de sus siervos de la mano de ella&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.19.3" type="verse" n="3">
+						Otra vez dijeron <q who="#org4" toWhom="#org0" type="prayer">&#161;Aleluya! El humo de ella ha de subir por los siglos de los siglos</q>.
+					</ab>
+					<ab xml:id="b.REV.19.4" type="verse" n="4">
+						Entonces los <rs key="#org52">veinticuatro ancianos</rs> y los <rs key="#org51">cuatro seres vivientes</rs> se postraron en tierra y adoraron a <rs key="#per14">Dios</rs>, que estaba sentado en el trono. Dec&#237;an <q who="#org4" toWhom="#per14" type="prayer">&#161;Am&#233;n! &#161;Aleluya!</q>.
+					</ab>
+					<ab xml:id="b.REV.19.5" type="verse" n="5">
+						Y del trono sali&#243; una voz que dec&#237;a <q who="#org4" toWhom="#org0" type="prayer">Alabad a <rs key="#per14">nuestro Dios</rs> todos sus siervos, y los que lo tem&#233;is, as&#237; peque&#241;os como grandes</q>.
+					</ab>
+					<ab xml:id="b.REV.19.6" type="verse" n="6">
+						Y o&#237; como la voz de una gran multitud, como el estruendo de muchas aguas y como la voz de grandes truenos, que dec&#237;a: <q who="#org4" toWhom="#org0" type="prayer">&#171;&#161;Aleluya!, porque el <rs key="#per14">Se&#241;or</rs>, <rs key="#per14">nuestro Dios Todopoderoso</rs>, reina.</q>
+					</ab>
+					<ab xml:id="b.REV.19.7" type="verse" n="7">
+						<q who="#org4" toWhom="#org0" type="prayer">Goc&#233;monos, alegr&#233;monos y d&#233;mosle gloria, porque han llegado las bodas del <rs key="#per1">Cordero</rs> y su <rs key="#org37">esposa</rs> se ha preparado.</q>
+					</ab>
+					<ab xml:id="b.REV.19.8" type="verse" n="8">
+						<q who="#org4" toWhom="#org0" type="prayer">Y a ella se le ha concedido que se vista de lino fino, limpio y resplandeciente (pues el lino fino significa las acciones justas de los santos)&#187;.</q>
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">La cena de las bodas del Cordero</ab>
+
+					<ab xml:id="b.REV.19.9" type="verse" n="9">
+						El <rs key="#org4">&#225;ngel</rs> me dijo <q who="#org4" toWhom="#per25" type="oral">Escribe: <q who="#per25" toWhom="#org0" type="written">Bienaventurados los que son llamados a la cena de las bodas del <rs key="#per1">Cordero</rs></q></q>. Y me dijo <q who="#org4" toWhom="#per25" type="oral">Estas son palabras verdaderas de <rs key="#per14">Dios</rs></q>.
+					</ab>
+					<ab xml:id="b.REV.19.10" type="verse" n="10">
+						Yo me postr&#233; a sus pies para adorarlo, pero &#233;l me dijo <q who="#org4" toWhom="#per25" type="oral">&#161;Mira, no lo hagas! Yo soy consiervo tuyo y de tus hermanos que mantienen el testimonio de <rs key="#per1">Jes&#250;s</rs>. &#161;Adora a <rs key="#per14">Dios</rs>!</q>. (El testimonio de <rs key="#per1">Jes&#250;s</rs> es el esp&#237;ritu de la profec&#237;a.)
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">El jinete del caballo blanco</ab>
+
+					<ab xml:id="b.REV.19.11" type="verse" n="11">
+						Entonces vi el <rs key="#pla18">cielo</rs> abierto, y hab&#237;a un caballo blanco. El que lo montaba se llamaba <rs key="#per1" cert="low">Fiel</rs> y <rs key="#per1" cert="low">Verdadero</rs>, y con justicia juzga y pelea.
+					</ab>
+					<ab xml:id="b.REV.19.12" type="verse" n="12">
+						Sus ojos eran como llama de fuego, en su cabeza ten&#237;a muchas diademas y ten&#237;a escrito un nombre que ninguno conoc&#237;a sino &#233;l mismo.
+					</ab>
+					<ab xml:id="b.REV.19.13" type="verse" n="13">
+						Estaba vestido de una ropa te&#241;ida en sangre y su nombre es: La <rs key="#per1" cert="low">Palabra de Dios</rs>.
+					</ab>
+					<ab xml:id="b.REV.19.14" type="verse" n="14">
+						Los <rs key="#org4">ej&#233;rcitos celestiales</rs>, vestidos de lino fin&#237;simo, blanco y limpio, lo segu&#237;an en caballos blancos.
+					</ab>
+					<ab xml:id="b.REV.19.15" type="verse" n="15">
+						De su boca sale una espada aguda para herir con ella a las naciones, y &#233;l las regir&#225; con vara de hierro. &#201;l pisa el lagar del vino del furor y de la ira del <rs key="#per14">Dios Todopoderoso</rs>.
+					</ab>
+					<ab xml:id="b.REV.19.16" type="verse" n="16">
+						En su vestidura y en su muslo tiene escrito este nombre: <rs key="#per14">Rey de reyes</rs> y <rs key="#per14">Se&#241;or de se&#241;ores</rs>.
+					</ab>
+					<ab xml:id="b.REV.19.17" type="verse" n="17">
+						Vi un <rs key="#org4">&#225;ngel</rs> que estaba de pie en el sol, y clam&#243; a gran voz diciendo a todas las aves que vuelan en medio del <rs key="#pla18">cielo</rs>: <q who="#org4" toWhom="#org0" type="oral">&#171;&#161;Venid y congregaos a la gran cena de <rs key="#per14">Dios</rs>!</q>
+					</ab>
+					<ab xml:id="b.REV.19.18" type="verse" n="18">
+						<q who="#org4" toWhom="#org0" type="oral">Para que com&#225;is carnes de reyes y capitanes y carnes de fuertes; carnes de caballos y de sus jinetes; carnes de todos, libres y esclavos, peque&#241;os y grandes&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.19.19" type="verse" n="19">
+						Vi a la <rs key="#per20">bestia</rs> y a los reyes de la tierra y sus ej&#233;rcitos, reunidos para guerrear contra el <rs key="#per1">que montaba el caballo</rs> y contra su <rs key="#org4">ej&#233;rcito</rs>.
+					</ab>
+					<ab xml:id="b.REV.19.20" type="verse" n="20">
+						La <rs key="#per20">bestia</rs> fue apresada, y con ella el <rs key="#per20">falso profeta</rs> que hab&#237;a hecho delante de ella las se&#241;ales con las cuales hab&#237;a enga&#241;ado a los que recibieron la marca de la <rs key="#per20">bestia</rs> y hab&#237;an adorado su imagen. Estos dos fueron lanzados vivos dentro de un <rs key="#pla15">lago de fuego que arde con azufre</rs>.
+					</ab>
+					<ab xml:id="b.REV.19.21" type="verse" n="21">
+						Los dem&#225;s fueron muertos con la espada que sal&#237;a de la boca del <rs key="#per1">que montaba el caballo</rs>, y todas las aves se saciaron de las carnes de ellos.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.20" type="chapter" n="20">
+<div type="pericope">
+<ab type="pericope">Los mil a&#241;os</ab>
+
+					<ab xml:id="b.REV.20.1" type="verse" n="1">
+						Vi un <rs key="#org4">&#225;ngel</rs> que descend&#237;a del <rs key="#pla18">cielo</rs> con la llave del <rs key="#pla15">abismo</rs> y una gran cadena en la mano.
+					</ab>
+					<ab xml:id="b.REV.20.2" type="verse" n="2">
+						Prendi&#243; al <rs key="#per20">drag&#243;n</rs>, la <rs key="#per20">serpiente antigua</rs>, que es el <rs key="#per20">Diablo</rs> y <rs key="#per20">Satan&#225;s</rs>, y lo at&#243; por mil a&#241;os.
+					</ab>
+					<ab xml:id="b.REV.20.3" type="verse" n="3">
+						Lo arroj&#243; al <rs key="#pla15">abismo</rs>, lo encerr&#243; y puso un sello sobre &#233;l, para que no enga&#241;ara m&#225;s a las naciones hasta que fueran cumplidos mil a&#241;os. Despu&#233;s de esto debe ser desatado por un poco de tiempo.
+					</ab>
+					<ab xml:id="b.REV.20.4" type="verse" n="4">
+						Vi tronos, y se sentaron sobre ellos los que recibieron facultad de juzgar. Y vi las almas de los decapitados por causa del testimonio de <rs key="#per1">Jes&#250;s</rs> y por la palabra de <rs key="#per14">Dios</rs>, los que no hab&#237;an adorado a la <rs key="#per20">bestia</rs> ni a su imagen, ni recibieron la marca en sus frentes ni en sus manos; y vivieron y reinaron con <rs key="#per1">Cristo</rs> mil a&#241;os.
+					</ab>
+					<ab xml:id="b.REV.20.5" type="verse" n="5">
+						Pero los otros muertos no volvieron a vivir hasta que se cumplieron mil a&#241;os. Esta es la primera resurrecci&#243;n.
+					</ab>
+					<ab xml:id="b.REV.20.6" type="verse" n="6">
+						Bienaventurado y santo el que tiene parte en la primera resurrecci&#243;n; la segunda muerte no tiene poder sobre estos, sino que ser&#225;n sacerdotes de <rs key="#per14">Dios</rs> y de <rs key="#per1">Cristo</rs> y reinar&#225;n con &#233;l mil a&#241;os.
+					</ab>
+					<ab xml:id="b.REV.20.7" type="verse" n="7">
+						Cuando los mil a&#241;os se cumplan, <rs key="#per20">Satan&#225;s</rs> ser&#225; suelto de su prisi&#243;n
+					</ab>
+					<ab xml:id="b.REV.20.8" type="verse" n="8">
+						y saldr&#225; a enga&#241;ar a las naciones que est&#225;n en los cuatro &#225;ngulos de la tierra, a <rs key="#pla75">Gog</rs> y a <rs key="#pla76">Magog</rs>, a fin de reunirlos para la batalla. Su n&#250;mero es como la arena del mar.
+					</ab>
+					<ab xml:id="b.REV.20.9" type="verse" n="9">
+						Subieron por la anchura de la tierra y rodearon el campamento de los santos y la <rs key="#pla3" cert="low">ciudad amada</rs>; pero de <rs key="#per14">Dios</rs> descendi&#243; fuego del <rs key="#pla18">cielo</rs> y los consumi&#243;.
+					</ab>
+					<ab xml:id="b.REV.20.10" type="verse" n="10">
+						Y el <rs key="#per20">diablo</rs>, que los enga&#241;aba, fue lanzado en el lago de fuego y azufre donde estaban la <rs key="#per20">bestia</rs> y el <rs key="#per20">falso profeta</rs>; y ser&#225;n atormentados d&#237;a y noche por los siglos de los siglos.
+					</ab>
+				</div>
+				<div type="pericope">
+					<ab type="pericope">El juicio ante el gran trono blanco</ab>
+
+					<ab xml:id="b.REV.20.11" type="verse" n="11">
+						Vi un gran trono blanco y al <rs key="#per14">que estaba sentado</rs> en &#233;l, de delante del cual huyeron la tierra y el <rs key="#pla18">cielo</rs> y ning&#250;n lugar se hall&#243; ya para ellos.
+					</ab>
+					<ab xml:id="b.REV.20.12" type="verse" n="12">
+						Y vi los muertos, grandes y peque&#241;os, de pie ante <rs key="#per14">Dios</rs>. Los libros fueron abiertos, y otro <rs key="#wor4">libro</rs> fue abierto, el cual es el <rs key="#wor4">libro de la vida</rs>. Y fueron juzgados los muertos por las cosas que estaban escritas en los libros, seg&#250;n sus obras.
+					</ab>
+					<ab xml:id="b.REV.20.13" type="verse" n="13">
+						El mar entreg&#243; los muertos que hab&#237;a en &#233;l, y la muerte y el <rs key="#pla15">Hades</rs> entregaron los muertos que hab&#237;a en ellos, y fueron juzgados cada uno seg&#250;n sus obras.
+					</ab>
+					<ab xml:id="b.REV.20.14" type="verse" n="14">
+						La muerte y el <rs key="#pla15">Hades</rs> fueron lanzados al <rs key="#pla15">lago de fuego</rs>. Esta es la muerte segunda.
+					</ab>
+					<ab xml:id="b.REV.20.15" type="verse" n="15">
+						El que no se hall&#243; inscrito en el <rs key="#wor4">libro de la vida</rs>, fue lanzado al lago de fuego.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.21" type="chapter" n="21">
+<div type="pericope">
+<ab type="pericope">Cielo nuevo y tierra nueva</ab>
+
+					<ab xml:id="b.REV.21.1" type="verse" n="1">
+						Entonces vi un <rs key="#pla18">cielo</rs> nuevo y una <rs key="#pla18">tierra nueva</rs>, porque el primer cielo y la primera tierra hab&#237;an pasado y el mar ya no exist&#237;a m&#225;s.
+					</ab>
+					<ab xml:id="b.REV.21.2" type="verse" n="2">
+						Y yo, <rs key="#per25">Juan</rs>, vi la <rs key="#pla71">santa ciudad</rs>, la <rs key="#pla71">nueva Jerusal&#233;n</rs>, descender del <rs key="#pla18">cielo</rs>, de parte de <rs key="#per14">Dios</rs>, ataviada como una <rs key="#pla71">esposa</rs> hermoseada para su <rs key="#per14">esposo</rs>.
+					</ab>
+					<ab xml:id="b.REV.21.3" type="verse" n="3">
+						Y o&#237; una gran voz del <rs key="#pla18">cielo</rs>, que dec&#237;a: <q who="#org4" toWhom="#org0" type="oral" cert="low"> &#171;El <rs key="#pla73">tabern&#225;culo</rs> de <rs key="#per14">Dios</rs> est&#225; ahora con los hombres. &#201;l morar&#225; con ellos, ellos ser&#225;n su pueblo y <rs key="#per14">Dios</rs> mismo estar&#225; con ellos como su <rs key="#per14">Dios</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.21.4" type="verse" n="4">
+						<q who="#org4" toWhom="#org0" type="oral" cert="low">Enjugar&#225; <rs key="#per14">Dios</rs> toda l&#225;grima de los ojos de ellos; y ya no habr&#225; m&#225;s muerte, ni habr&#225; m&#225;s llanto ni clamor ni dolor, porque las primeras cosas ya pasaron&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.21.5" type="verse" n="5">
+						El que estaba sentado en el trono dijo <q who="#per14" toWhom="#org0" type="oral">Yo hago nuevas todas las cosas</q>. Me dijo <q who="#per14" toWhom="#per25" type="oral">Escribe, porque estas palabras son fieles y verdaderas</q>.
+					</ab>
+					<ab xml:id="b.REV.21.6" type="verse" n="6">
+						Y me dijo: <q who="#per14" toWhom="#per25" type="oral">&#171;Hecho est&#225;. Yo soy el <rs key="#per14">Alfa</rs> y la <rs key="#per14">Omega</rs>, el <rs key="#per14">principio</rs> y el <rs key="#per14">fin</rs>. Al que tiene sed, le dar&#233; gratuitamente de la fuente del agua de vida.</q>
+					</ab>
+					<ab xml:id="b.REV.21.7" type="verse" n="7">
+						<q who="#per14" toWhom="#per25" type="oral">El vencedor heredar&#225; todas las cosas, y yo ser&#233; su <rs key="#per14">Dios</rs> y &#233;l ser&#225; mi hijo.</q>
+					</ab>
+					<ab xml:id="b.REV.21.8" type="verse" n="8">
+						<q who="#per14" toWhom="#per25" type="oral">Pero los cobardes e incr&#233;dulos, los abominables y homicidas, los fornicarios y hechiceros, los id&#243;latras y todos los mentirosos tendr&#225;n su parte en el lago que arde con fuego y azufre, que es la muerte segunda&#187;.</q>
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">La nueva Jerusal&#233;n</ab>
+
+					<ab xml:id="b.REV.21.9" type="verse" n="9">
+						Entonces vino a m&#237; uno de los <rs key="#org4">siete &#225;ngeles </rs> que ten&#237;an las siete copas llenas de las siete plagas postreras y habl&#243; conmigo, diciendo <q who="#org4" toWhom="#per25" type="oral">Ven ac&#225;, te mostrar&#233; la <rs key="#org37">desposada</rs>, la <rs key="#org37">esposa del <rs key="#per1">Cordero</rs></rs></q>.
+					</ab>
+					<ab xml:id="b.REV.21.10" type="verse" n="10">
+						Me llev&#243; en el <rs key="#per17">Esp&#237;ritu</rs> a un monte grande y alto y me mostr&#243; la <rs key="#pla71">gran ciudad</rs>, la <rs key="#pla71">santa Jerusal&#233;n</rs>, que descend&#237;a del <rs key="#pla18">cielo</rs> de parte de <rs key="#per14">Dios</rs>.
+					</ab>
+					<ab xml:id="b.REV.21.11" type="verse" n="11">
+						Ten&#237;a la gloria de <rs key="#per14">Dios</rs> y su fulgor era semejante al de una piedra precios&#237;sima, como piedra de jaspe, di&#225;fana como el cristal.
+					</ab>
+					<ab xml:id="b.REV.21.12" type="verse" n="12">
+						Ten&#237;a un muro grande y alto, con doce puertas, y en las puertas <rs key="#org4">doce &#225;ngeles</rs>, y nombres inscritos, que son los de las <rs key="#org22">doce tribus de los hijos de <rs key="#pla4">Israel</rs></rs>.
+					</ab>
+					<ab xml:id="b.REV.21.13" type="verse" n="13">
+						Tres puertas al oriente, tres puertas al norte, tres puertas al sur, tres puertas al occidente.
+					</ab>
+					<ab xml:id="b.REV.21.14" type="verse" n="14">
+						El muro de la <rs key="#pla71">ciudad</rs> ten&#237;a doce cimientos y sobre ellos los doce nombres de los <rs key="#org3">doce ap&#243;stoles del <rs key="#per1">Cordero</rs></rs>.
+					</ab>
+					<ab xml:id="b.REV.21.15" type="verse" n="15">
+						El <rs key="#org4">que hablaba conmigo</rs> ten&#237;a una ca&#241;a de medir, de oro, para medir la <rs key="#pla71">ciudad</rs>, sus puertas y su muro.
+					</ab>
+					<ab xml:id="b.REV.21.16" type="verse" n="16">
+						La <rs key="#pla71">ciudad</rs> se halla establecida como un cuadrado: su longitud es igual a su anchura. Con la ca&#241;a midi&#243; la <rs key="#pla71">ciudad</rs>: doce mil estadios. La longitud, la altura y la anchura de ella son iguales.
+					</ab>
+					<ab xml:id="b.REV.21.17" type="verse" n="17">
+						Y midi&#243; su muro: ciento cuarenta y cuatro codos, seg&#250;n medida de hombre, la cual era la del <rs key="#org4">&#225;ngel</rs>.
+					</ab>
+					<ab xml:id="b.REV.21.18" type="verse" n="18">
+						El material de su muro era de jaspe, pero la <rs key="#pla71">ciudad</rs> era de oro puro, semejante al vidrio limpio.
+					</ab>
+					<ab xml:id="b.REV.21.19" type="verse" n="19">
+						Los cimientos del muro de la <rs key="#pla71">ciudad</rs> estaban adornados con toda clase de piedras preciosas. El primer cimiento era de jaspe, el segundo de zafiro, el tercero de &#225;gata, el cuarto de esmeralda,
+					</ab>
+					<ab xml:id="b.REV.21.20" type="verse" n="20">
+						el quinto de &#243;nice, el sexto de cornalina, el s&#233;ptimo de cris&#243;lito, el octavo de berilo, el noveno de topacio, el d&#233;cimo de crisopraso, el und&#233;cimo de jacinto y el duod&#233;cimo de amatista.
+					</ab>
+					<ab xml:id="b.REV.21.21" type="verse" n="21">
+						Las doce puertas eran doce perlas; cada una de las puertas era una perla. Y la calle de la <rs key="#pla71">ciudad</rs> era de oro puro, como vidrio transparente.
+					</ab>
+					<ab xml:id="b.REV.21.22" type="verse" n="22">
+						En ella no vi templo, porque el <rs key="#per14">Se&#241;or</rs> <rs key="#per14">Dios Todopoderoso</rs> es su <rs key="#per14">templo</rs>, y el <rs key="#per1">Cordero</rs>.
+					</ab>
+					<ab xml:id="b.REV.21.23" type="verse" n="23">
+						La <rs key="#pla71">ciudad</rs> no tiene necesidad de sol ni de luna que brillen en ella, porque la gloria de <rs key="#per14">Dios</rs> la ilumina y el <rs key="#per1">Cordero</rs> es su <rs key="#per1">lumbrera</rs>.
+					</ab>
+					<ab xml:id="b.REV.21.24" type="verse" n="24">
+						Las naciones que hayan sido salvas andar&#225;n a la luz de ella y los reyes de la tierra traer&#225;n su gloria y su honor a ella.
+					</ab>
+					<ab xml:id="b.REV.21.25" type="verse" n="25">
+						Sus puertas nunca ser&#225;n cerradas de d&#237;a, pues all&#237; no habr&#225; noche.
+					</ab>
+					<ab xml:id="b.REV.21.26" type="verse" n="26">
+						Llevar&#225;n a ella la gloria y el honor de las naciones.
+					</ab>
+					<ab xml:id="b.REV.21.27" type="verse" n="27">
+						No entrar&#225; en ella ninguna cosa impura o que haga abominaci&#243;n y mentira, sino solamente los que est&#225;n inscritos en el <rs key="#wor4">libro de la vida del <rs key="#per1">Cordero</rs></rs>.
+					</ab>
+				</div>
+				</div>
+<div xml:id="b.REV.22" type="chapter" n="22">
+	<div type="pericope" part="F">
+					<ab xml:id="b.REV.22.1" type="verse" n="1">
+						Despu&#233;s me mostr&#243; un r&#237;o limpio, de agua de vida, resplandeciente como cristal, que flu&#237;a del trono de <rs key="#per14">Dios</rs> y del <rs key="#per1">Cordero</rs>.
+					</ab>
+					<ab xml:id="b.REV.22.2" type="verse" n="2">
+						En medio de la calle de la <rs key="#pla71">ciudad</rs> y a uno y otro lado del r&#237;o estaba el &#225;rbol de la vida, que produce doce frutos, dando cada mes su fruto; y las hojas del &#225;rbol eran para la sanidad de las naciones.
+					</ab>
+					<ab xml:id="b.REV.22.3" type="verse" n="3">
+						Y no habr&#225; m&#225;s maldici&#243;n. El trono de <rs key="#per14">Dios</rs> y del <rs key="#per1">Cordero</rs> estar&#225; en ella, sus siervos lo servir&#225;n,
+					</ab>
+					<ab xml:id="b.REV.22.4" type="verse" n="4">
+						ver&#225;n su rostro y su nombre estar&#225; en sus frentes.
+					</ab>
+					<ab xml:id="b.REV.22.5" type="verse" n="5">
+						All&#237; no habr&#225; m&#225;s noche; y no tienen necesidad de luz de l&#225;mpara ni de luz del sol, porque <rs key="#per14">Dios</rs> el <rs key="#per14">Se&#241;or</rs> los iluminar&#225; y reinar&#225;n por los siglos de los siglos.
+					</ab>
+</div>
+<div type="pericope">
+<ab type="pericope">La venida de Cristo est&#225; cerca</ab>
+
+					<ab xml:id="b.REV.22.6" type="verse" n="6">
+						Me dijo: <q who="#per14" toWhom="#per25" cert="low" type="oral">&#171;Estas palabras son fieles y verdaderas. El <rs key="#per14">Se&#241;or</rs>, el <rs key="#per14">Dios de los esp&#237;ritus de los <rs key="#org8">profetas</rs></rs>, ha enviado su <rs key="#org4">&#225;ngel</rs> para mostrar a sus siervos las cosas que deben suceder pronto.</q>
+					</ab>
+					<ab xml:id="b.REV.22.7" type="verse" n="7">
+						<q who="#per14" toWhom="#per25" cert="low" type="oral">&#187;&#161;Vengo pronto! Bienaventurado el que guarda las palabras de la profec&#237;a de este <rs key="#wor3">libro</rs>&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.22.8" type="verse" n="8">
+						Yo, <rs key="#per25">Juan</rs>, soy el que oy&#243; y vio estas cosas. Despu&#233;s que las hube o&#237;do y visto, me postr&#233; a los pies del <rs key="#org4">&#225;ngel</rs> que me mostraba estas cosas, para adorarlo.
+					</ab>
+					<ab xml:id="b.REV.22.9" type="verse" n="9">
+						Pero &#233;l me dijo <q who="#org4" toWhom="#per25" type="oral">&#161;Mira, no lo hagas!, pues yo soy <rs key="#org4">consiervo</rs> tuyo, de tus <rs key="#org8">hermanos</rs> los <rs key="#org8">profetas</rs> y de los que guardan las palabras de este <rs key="#wor3">libro</rs>. &#161;Adora a <rs key="#per14">Dios</rs>!</q>.
+					</ab>
+					<ab xml:id="b.REV.22.10" type="verse" n="10">
+						Y me dijo: <q who="#org4" toWhom="#per25" type="oral">&#171;No selles las palabras de la profec&#237;a de este <rs key="#wor3">libro</rs>, porque el tiempo est&#225; cerca.</q>
+					</ab>
+					<ab xml:id="b.REV.22.11" type="verse" n="11">
+						El que es injusto, sea injusto todav&#237;a; el que es impuro, sea impuro todav&#237;a; el que es justo, practique la justicia todav&#237;a, y el que es santo, santif&#237;quese m&#225;s todav&#237;a.
+					</ab>
+					<ab xml:id="b.REV.22.12" type="verse" n="12">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;&#161;Vengo pronto!, y mi galard&#243;n conmigo, para recompensar a cada uno seg&#250;n sea su obra.</q>
+					</ab>
+					<ab xml:id="b.REV.22.13" type="verse" n="13">
+						<q who="#per1" toWhom="#per25" type="oral">Yo soy el <rs key="#per1">Alfa</rs> y la <rs key="#per1">Omega</rs>, el <rs key="#per1">principio</rs> y el <rs key="#per1">fin</rs>, el <rs key="#per1">primero</rs> y el <rs key="#per1">&#250;ltimo</rs>.</q>
+					</ab>
+					<ab xml:id="b.REV.22.14" type="verse" n="14">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;Bienaventurados los que lavan sus ropas para tener derecho al &#225;rbol de la vida y para entrar por las puertas en la ciudad.</q>
+					</ab>
+					<ab xml:id="b.REV.22.15" type="verse" n="15">
+						<q who="#per1" toWhom="#per25" type="oral">Pero los perros estar&#225;n afuera, y los hechiceros, los fornicarios, los homicidas, los id&#243;latras y todo aquel que ama y practica la mentira.</q>
+					</ab>
+					<ab xml:id="b.REV.22.16" type="verse" n="16">
+						<q who="#per1" toWhom="#per25" type="oral">&#187;Yo, <rs key="#per1">Jes&#250;s</rs>, he enviado mi <rs key="#org4">&#225;ngel</rs> para daros testimonio de estas cosas en las <rs key="#org37">iglesias</rs>. Yo soy la <rs key="#per1">ra&#237;z</rs> y el <rs key="#per1">linaje de <rs key="#per35">David</rs></rs>, la <rs key="#per1">estrella resplandeciente de la ma&#241;ana</rs>&#187;.</q>
+					</ab>
+					<ab xml:id="b.REV.22.17" type="verse" n="17">
+						El <rs key="#per17">Esp&#237;ritu</rs> y la <rs key="#org37">Esposa</rs> dicen <q who="#org37 #per17" toWhom="#per1" type="prayer" cert="low">&#161;Ven!</q>. El que oye, diga <q who="#org0" toWhom="#per1" type="prayer">&#161;Ven!</q>. Y el que tiene sed, venga. El que quiera, tome gratuitamente del agua de la vida.
+					</ab>
+					<ab xml:id="b.REV.22.18" type="verse" n="18">
+						Yo advierto a todo aquel que oye las palabras de la <rs key="#wor3">profec&#237;a de este libro</rs>: Si alguno a&#241;ade a estas cosas, <rs key="#per14">Dios</rs> traer&#225; sobre &#233;l las plagas que est&#225;n escritas en este <rs key="#wor3">libro</rs>.
+					</ab>
+					<ab xml:id="b.REV.22.19" type="verse" n="19">
+						Y si alguno quita de las palabras del <rs key="#wor3">libro de esta profec&#237;a</rs>, <rs key="#per14">Dios</rs> quitar&#225; su parte del <rs key="#wor4">libro de la vida</rs> y de la <rs key="#pla71">santa ciudad</rs> y de las cosas que est&#225;n escritas en este <rs key="#wor3">libro</rs>.
+					</ab>
+					<ab xml:id="b.REV.22.20" type="verse" n="20">
+						El que da testimonio de estas cosas dice <q who="#per1" toWhom="#per25" type="oral">Ciertamente vengo en breve</q>. &#161;Am&#233;n! &#161;Ven, <rs key="#per1">Se&#241;or</rs> <rs key="#per1">Jes&#250;s</rs>!
+					</ab>
+					<ab xml:id="b.REV.22.21" type="verse" n="21">
+						La gracia de nuestro <rs key="#per1">Se&#241;or</rs> <rs key="#per1">Jesucristo</rs> sea con todos vosotros. Am&#233;n.
+					</ab>
+				</div>
+			</div>
+			</div>
+		</body>
+		<back>
+			<div/>
+		</back>
+	</text>
+						</TEI>
+
+
