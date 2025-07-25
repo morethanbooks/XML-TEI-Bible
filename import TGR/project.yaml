@@ -1,0 +1,82 @@
+project:
+  title: Biblia XML-TEI (20250725_1)
+  description: 
+  avatar: avatar.png
+  xslt:
+  collectors:
+    - fullname: José Calvo Tello 
+      url:
+proposals:
+  min_hitrate: 50
+subprojects:
+  - inpath: /home/jovyan/corpora/biblia
+    name: jovyan_corpora_biblia
+    outpath: /home/jovyan/workdir/projects/biblia_20250725_1/jovyan_corpora_biblia/result
+    basepath: /home/jovyan/workdir/projects/biblia_20250725_1/jovyan_corpora_biblia
+    files:
+      - /home/jovyan/corpora/biblia/00_GEN.xml
+      - /home/jovyan/corpora/biblia/01_EXO.xml
+      - /home/jovyan/corpora/biblia/02_LEV.xml
+      - /home/jovyan/corpora/biblia/03_NUM.xml
+      - /home/jovyan/corpora/biblia/04_DEU.xml
+      - /home/jovyan/corpora/biblia/05_JOS.xml
+      - /home/jovyan/corpora/biblia/06_JDG.xml
+      - /home/jovyan/corpora/biblia/07_RUT.xml
+      - /home/jovyan/corpora/biblia/08_1SA.xml
+      - /home/jovyan/corpora/biblia/09_2SA.xml
+      - /home/jovyan/corpora/biblia/10_1KI.xml
+      - /home/jovyan/corpora/biblia/11_2KI.xml
+      - /home/jovyan/corpora/biblia/12_1CH.xml
+      - /home/jovyan/corpora/biblia/13_2CH.xml
+      - /home/jovyan/corpora/biblia/14_EZR.xml
+      - /home/jovyan/corpora/biblia/15_NEH.xml
+      - /home/jovyan/corpora/biblia/16_EST.xml
+      - /home/jovyan/corpora/biblia/17_JOB.xml
+      - /home/jovyan/corpora/biblia/18_PSA.xml
+      - /home/jovyan/corpora/biblia/19_PRO.xml
+      - /home/jovyan/corpora/biblia/20_ECC.xml
+      - /home/jovyan/corpora/biblia/21_SON.xml
+      - /home/jovyan/corpora/biblia/22_ISA.xml
+      - /home/jovyan/corpora/biblia/23_JER.xml
+      - /home/jovyan/corpora/biblia/24_LAM.xml
+      - /home/jovyan/corpora/biblia/25_EZE.xml
+      - /home/jovyan/corpora/biblia/26_DAN.xml
+      - /home/jovyan/corpora/biblia/27_HOS.xml
+      - /home/jovyan/corpora/biblia/28_JOE.xml
+      - /home/jovyan/corpora/biblia/29_AMO.xml
+      - /home/jovyan/corpora/biblia/30_OBA.xml
+      - /home/jovyan/corpora/biblia/31_JON.xml
+      - /home/jovyan/corpora/biblia/32_MIC.xml
+      - /home/jovyan/corpora/biblia/33_NAH.xml
+      - /home/jovyan/corpora/biblia/34_HAB.xml
+      - /home/jovyan/corpora/biblia/35_ZEP.xml
+      - /home/jovyan/corpora/biblia/36_HAG.xml
+      - /home/jovyan/corpora/biblia/37_ZEC.xml
+      - /home/jovyan/corpora/biblia/38_MAL.xml
+      - /home/jovyan/corpora/biblia/39_MAT.xml
+      - /home/jovyan/corpora/biblia/40_MAR.xml
+      - /home/jovyan/corpora/biblia/41_LUK.xml
+      - /home/jovyan/corpora/biblia/42_JOH.xml
+      - /home/jovyan/corpora/biblia/43_ACT.xml
+      - /home/jovyan/corpora/biblia/44_ROM.xml
+      - /home/jovyan/corpora/biblia/45_1CO.xml
+      - /home/jovyan/corpora/biblia/46_2CO.xml
+      - /home/jovyan/corpora/biblia/47_GAL.xml
+      - /home/jovyan/corpora/biblia/48_EPH.xml
+      - /home/jovyan/corpora/biblia/49_PHI.xml
+      - /home/jovyan/corpora/biblia/50_COL.xml
+      - /home/jovyan/corpora/biblia/51_1TH.xml
+      - /home/jovyan/corpora/biblia/52_2TH.xml
+      - /home/jovyan/corpora/biblia/53_1TI.xml
+      - /home/jovyan/corpora/biblia/54_2TI.xml
+      - /home/jovyan/corpora/biblia/55_TIT.xml
+      - /home/jovyan/corpora/biblia/56_PHM.xml
+      - /home/jovyan/corpora/biblia/57_HEB.xml
+      - /home/jovyan/corpora/biblia/58_JAM.xml
+      - /home/jovyan/corpora/biblia/59_1PE.xml
+      - /home/jovyan/corpora/biblia/60_2PE.xml
+      - /home/jovyan/corpora/biblia/61_1JO.xml
+      - /home/jovyan/corpora/biblia/62_2JO.xml
+      - /home/jovyan/corpora/biblia/63_3JO.xml
+      - /home/jovyan/corpora/biblia/64_JUD.xml
+      - /home/jovyan/corpora/biblia/65_REV.xml

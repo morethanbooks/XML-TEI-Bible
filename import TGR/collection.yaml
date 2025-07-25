@@ -1,0 +1,286 @@
+collection:
+  title:  # Title of the collection
+    short: jovyan_corpora_biblia  # Short title of the collection
+    long: biblia_20250725_1 - jovyan_corpora_biblia  # Long title of the collection
+  # Collection rights holder
+  #  examples:
+  # - fullname: Lanegan, Mark
+  #   url: https://en.wikipedia.org/wiki/Mark_Lanegan
+  # - fullname: Gossard, Stone
+  #   url: https://en.wikipedia.org/wiki/Stone_Gossard
+  rights_holder:
+    - fullname: José Calvo Tello
+      url:
+  # Collection collector
+  #  examples:
+  # - fullname: Vedder, Eddie
+  #   url: https://en.wikipedia.org/wiki/Eddie_Vedder
+  # - fullname: Cornell, Chris
+  #   url: https://en.wikipedia.org/wiki/Chris_Cornell
+  collector:
+    - fullname: José Calvo Tello
+      url:
+  attributes:  # define an xpath for each attribute within TEI file
+    work:
+      title:  # This is the main title
+        xpath: //fileDesc//titleStmt//title
+        value:
+      author:
+        id:
+          xpath: //bibl[@type="work"]/author/idno[@type="wikidata"]/@corresp
+          value:
+        fullname: 
+          xpath: //bibl[@type="work"]/author/name
+          value: 
+        firstname:
+          xpath:
+          value:
+        lastname:
+          xpath:
+          value:
+      genre:
+        xpath: //keywords[@scheme="http://textgrid.info/namespaces/metadata/core/2010#genre"]/term
+        value:
+      dateOfCreation:
+        date:
+          xpath:
+          value:
+        notBefore:
+          xpath:
+          value: -1500
+        notAfter:
+          xpath:
+          value: 1000
+      place:
+        xpath:
+        value:
+      id:
+        xpath:
+        value: //bibl[@type="work"]/idno[@type="wikidata"]/@corresp
+    edition:
+      title:
+        xpath: //fileDesc//titleStmt//title
+        value:
+      author:
+        id:
+          xpath: //bibl[@type="work"]/author/idno[@type="wikidata"]/@corresp
+          value:
+        fullname:
+          xpath: //bibl[@type="work"]/author/name
+          value:
+        firstname:
+          xpath:
+          value:
+        lastname:
+          xpath:
+          value:
+      license:
+        title:
+          xpath: 
+          value: "CC BY 4.0"
+        url:
+          xpath:
+          value: "https://creativecommons.org/licenses/by/4.0/"
+      date:
+        xpath: //bibl[@type="print-source"]/date
+        value:
+      place:
+        xpath:
+        value:
+      language:
+        xpath: //profileDesc/langUsage/language/@ident
+        value:
+      wordcount:
+        xpath:
+        value:
+  # basic_classifications can be defined as a list of dictionaries with the following
+  # examples:
+  # - id:
+  #      value:
+  #      xpath: //find_me[@via="this"]/xpath
+  #   url:
+  #      value: https://d-nb.info/gnd/
+  #      xpath:
+  #   value:
+  #      value: I am a fixed value
+  #      xpath:
+  basic_classifications:
+    - id:
+        xpath: //keywords[@scheme="http://uri.gbv.de/terminology/bk/"]/term/@key
+        value:
+      url:
+        xpath:
+        value: http://uri.gbv.de/terminology/bk/
+      value:
+        xpath: //keywords[@scheme="http://uri.gbv.de/terminology/bk/"]/term
+        value:
+  # gnd_subjects can be defined as a list of dictionaries with the following
+  # examples:
+  # - id:
+  #      value:
+  #      xpath: //keywords[@scheme="https://d-nb.info/gnd/"]/term/@ref
+  #   url:
+  #      value: https://d-nb.info/gnd/
+  #      xpath:
+  #   value:
+  #      value:
+  #      xpath: //keywords[@scheme="https://d-nb.info/gnd/"]/term
+  gnd_subjects:
+    - id:
+        xpath: //keywords[@scheme="https://d-nb.info/gnd/"]/term/@ref
+        value:
+      url:
+        xpath:
+        value: https://d-nb.info/gnd/
+      value:
+        xpath: //keywords[@scheme="https://d-nb.info/gnd/"]/term
+        value:
+  eltec_specs:  # eltec_specifications
+    time_slot:
+      xpath:
+      value:
+    author_gender:
+      xpath:
+      value:
+    size:
+      xpath:
+      value:
+    reprintCount:
+      xpath:
+      value:
+    corpus_collection:
+      xpath:
+      value:
+  elements:
+    - fullpath: /home/jovyan/corpora/biblia/00_GEN.xml
+      filename: 00_GEN.xml
+    - fullpath: /home/jovyan/corpora/biblia/01_EXO.xml
+      filename: 01_EXO.xml
+    - fullpath: /home/jovyan/corpora/biblia/02_LEV.xml
+      filename: 02_LEV.xml
+    - fullpath: /home/jovyan/corpora/biblia/03_NUM.xml
+      filename: 03_NUM.xml
+    - fullpath: /home/jovyan/corpora/biblia/04_DEU.xml
+      filename: 04_DEU.xml
+    - fullpath: /home/jovyan/corpora/biblia/05_JOS.xml
+      filename: 05_JOS.xml
+    - fullpath: /home/jovyan/corpora/biblia/06_JDG.xml
+      filename: 06_JDG.xml
+    - fullpath: /home/jovyan/corpora/biblia/07_RUT.xml
+      filename: 07_RUT.xml
+    - fullpath: /home/jovyan/corpora/biblia/08_1SA.xml
+      filename: 08_1SA.xml
+    - fullpath: /home/jovyan/corpora/biblia/09_2SA.xml
+      filename: 09_2SA.xml
+    - fullpath: /home/jovyan/corpora/biblia/10_1KI.xml
+      filename: 10_1KI.xml
+    - fullpath: /home/jovyan/corpora/biblia/11_2KI.xml
+      filename: 11_2KI.xml
+    - fullpath: /home/jovyan/corpora/biblia/12_1CH.xml
+      filename: 12_1CH.xml
+    - fullpath: /home/jovyan/corpora/biblia/13_2CH.xml
+      filename: 13_2CH.xml
+    - fullpath: /home/jovyan/corpora/biblia/14_EZR.xml
+      filename: 14_EZR.xml
+    - fullpath: /home/jovyan/corpora/biblia/15_NEH.xml
+      filename: 15_NEH.xml
+    - fullpath: /home/jovyan/corpora/biblia/16_EST.xml
+      filename: 16_EST.xml
+    - fullpath: /home/jovyan/corpora/biblia/17_JOB.xml
+      filename: 17_JOB.xml
+    - fullpath: /home/jovyan/corpora/biblia/18_PSA.xml
+      filename: 18_PSA.xml
+    - fullpath: /home/jovyan/corpora/biblia/19_PRO.xml
+      filename: 19_PRO.xml
+    - fullpath: /home/jovyan/corpora/biblia/20_ECC.xml
+      filename: 20_ECC.xml
+    - fullpath: /home/jovyan/corpora/biblia/21_SON.xml
+      filename: 21_SON.xml
+    - fullpath: /home/jovyan/corpora/biblia/22_ISA.xml
+      filename: 22_ISA.xml
+    - fullpath: /home/jovyan/corpora/biblia/23_JER.xml
+      filename: 23_JER.xml
+    - fullpath: /home/jovyan/corpora/biblia/24_LAM.xml
+      filename: 24_LAM.xml
+    - fullpath: /home/jovyan/corpora/biblia/25_EZE.xml
+      filename: 25_EZE.xml
+    - fullpath: /home/jovyan/corpora/biblia/26_DAN.xml
+      filename: 26_DAN.xml
+    - fullpath: /home/jovyan/corpora/biblia/27_HOS.xml
+      filename: 27_HOS.xml
+    - fullpath: /home/jovyan/corpora/biblia/28_JOE.xml
+      filename: 28_JOE.xml
+    - fullpath: /home/jovyan/corpora/biblia/29_AMO.xml
+      filename: 29_AMO.xml
+    - fullpath: /home/jovyan/corpora/biblia/30_OBA.xml
+      filename: 30_OBA.xml
+    - fullpath: /home/jovyan/corpora/biblia/31_JON.xml
+      filename: 31_JON.xml
+    - fullpath: /home/jovyan/corpora/biblia/32_MIC.xml
+      filename: 32_MIC.xml
+    - fullpath: /home/jovyan/corpora/biblia/33_NAH.xml
+      filename: 33_NAH.xml
+    - fullpath: /home/jovyan/corpora/biblia/34_HAB.xml
+      filename: 34_HAB.xml
+    - fullpath: /home/jovyan/corpora/biblia/35_ZEP.xml
+      filename: 35_ZEP.xml
+    - fullpath: /home/jovyan/corpora/biblia/36_HAG.xml
+      filename: 36_HAG.xml
+    - fullpath: /home/jovyan/corpora/biblia/37_ZEC.xml
+      filename: 37_ZEC.xml
+    - fullpath: /home/jovyan/corpora/biblia/38_MAL.xml
+      filename: 38_MAL.xml
+    - fullpath: /home/jovyan/corpora/biblia/39_MAT.xml
+      filename: 39_MAT.xml
+    - fullpath: /home/jovyan/corpora/biblia/40_MAR.xml
+      filename: 40_MAR.xml
+    - fullpath: /home/jovyan/corpora/biblia/41_LUK.xml
+      filename: 41_LUK.xml
+    - fullpath: /home/jovyan/corpora/biblia/42_JOH.xml
+      filename: 42_JOH.xml
+    - fullpath: /home/jovyan/corpora/biblia/43_ACT.xml
+      filename: 43_ACT.xml
+    - fullpath: /home/jovyan/corpora/biblia/44_ROM.xml
+      filename: 44_ROM.xml
+    - fullpath: /home/jovyan/corpora/biblia/45_1CO.xml
+      filename: 45_1CO.xml
+    - fullpath: /home/jovyan/corpora/biblia/46_2CO.xml
+      filename: 46_2CO.xml
+    - fullpath: /home/jovyan/corpora/biblia/47_GAL.xml
+      filename: 47_GAL.xml
+    - fullpath: /home/jovyan/corpora/biblia/48_EPH.xml
+      filename: 48_EPH.xml
+    - fullpath: /home/jovyan/corpora/biblia/49_PHI.xml
+      filename: 49_PHI.xml
+    - fullpath: /home/jovyan/corpora/biblia/50_COL.xml
+      filename: 50_COL.xml
+    - fullpath: /home/jovyan/corpora/biblia/51_1TH.xml
+      filename: 51_1TH.xml
+    - fullpath: /home/jovyan/corpora/biblia/52_2TH.xml
+      filename: 52_2TH.xml
+    - fullpath: /home/jovyan/corpora/biblia/53_1TI.xml
+      filename: 53_1TI.xml
+    - fullpath: /home/jovyan/corpora/biblia/54_2TI.xml
+      filename: 54_2TI.xml
+    - fullpath: /home/jovyan/corpora/biblia/55_TIT.xml
+      filename: 55_TIT.xml
+    - fullpath: /home/jovyan/corpora/biblia/56_PHM.xml
+      filename: 56_PHM.xml
+    - fullpath: /home/jovyan/corpora/biblia/57_HEB.xml
+      filename: 57_HEB.xml
+    - fullpath: /home/jovyan/corpora/biblia/58_JAM.xml
+      filename: 58_JAM.xml
+    - fullpath: /home/jovyan/corpora/biblia/59_1PE.xml
+      filename: 59_1PE.xml
+    - fullpath: /home/jovyan/corpora/biblia/60_2PE.xml
+      filename: 60_2PE.xml
+    - fullpath: /home/jovyan/corpora/biblia/61_1JO.xml
+      filename: 61_1JO.xml
+    - fullpath: /home/jovyan/corpora/biblia/62_2JO.xml
+      filename: 62_2JO.xml
+    - fullpath: /home/jovyan/corpora/biblia/63_3JO.xml
+      filename: 63_3JO.xml
+    - fullpath: /home/jovyan/corpora/biblia/64_JUD.xml
+      filename: 64_JUD.xml
+    - fullpath: /home/jovyan/corpora/biblia/65_REV.xml
+      filename: 65_REV.xml

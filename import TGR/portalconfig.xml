@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portalconfig xmlns="http://textgrid.info/namespaces/metadata/portalconfig/2020-06-16"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://textgrid.info/namespaces/metadata/portalconfig-2020-06-16
+    https://textgridlab.org/schema/textgrid-portalconfig_2020-06-16.xsd">
+
+<!-- Name and description of this project: How should it be listed in
+    textgridrep.org/projects
+-->
+    <name>Biblia XML-TEI (20250725_1)</name>
+    <description>Set description of your project </description>
+
+<!-- Use this if you want to upload an avatar (logo) for your project.
+    Avatar is a TextGrid URI pointing to a published image, it will be
+    shown in 250x250px
+    <avatar>image_path.png</avatar>
+-->
+    <avatar>other_files/avatar.png</avatar>
+<!--
+    Use this if you want to use project-specific XSLT for the HTML transformation.
+    The XSLT stylesheet should be published in TGR and its TextGrid URI included
+    in the `html` element, as the example shows.
+
+    If forMime attribute is given, the stylesheet will only be applied for selected
+    mime types (=format in metadata schema).
+    <xslt>
+        <html>other_files/my_style.xslt</html>
+    </xslt>
+--><facets>
+
+		<facet select="work.vocab.subject.gnd">
+	    		<title xml:lang="de">GND Gattung</title>
+    			<title xml:lang="en">GND Genre</title>
+
+                <label for="4045113-6" xml:lang="de">Pentateuch</label>
+                <label for="4045113-6" xml:lang="en">Pentateuch</label>
+                
+                <label for="4120873-0" xml:lang="de">GeschichtsbÃ¼cher</label>
+                <label for="4120873-0" xml:lang="en">Historical</label>
+                
+                <label for="4068609-7" xml:lang="de">Poetische BÃ¼cher</label>
+                <label for="4068609-7" xml:lang="en">Wisdom</label>
+                
+                <label for="4068610-3" xml:lang="de">Prophetische BÃ¼cher</label>
+                <label for="4068610-3" xml:lang="en">Prophetic</label>
+                
+                <label for="4132837-1" xml:lang="de">Evangelien und Apostelgeschichte</label>
+                <label for="4132837-1" xml:lang="en">Gospels and Acts</label>
+                
+                <label for="4075310-4" xml:lang="de">Briefe</label>
+                <label for="4075310-4" xml:lang="en">Epistles</label>
+                
+                <label for="4002431-3" xml:lang="de">Apokalyptik</label>
+                <label for="4002431-3" xml:lang="en">Apocalypse</label>
+                
+                
+
+		        <label for="4001515-4" xml:lang="de">Altes Testament</label>
+                <label for="4001515-4" xml:lang="en">Old Testament</label>
+                
+                <label for="4041771-2" xml:lang="de">Neues Testament</label>
+                <label for="4041771-2" xml:lang="en">New Testament</label>
+
+    	</facet>
+    	
+		<facet select="work.vocab.subject.bk">
+    		<title xml:lang="de">Basisklassifikation</title>
+    		<title xml:lang="en">Basic Classification</title>
+
+    		<label for="11.31" xml:lang="de">11.31 Bibeltext. BibelÃ¼bersetzungen</label>
+    		<label for="11.31" xml:lang="en">11.31 Bible text. Bible translations</label>
+            
+            <label for="18.30" xml:lang="de">18.30 Spanische Sprache und Literatur</label>
+            <label for="18.30" xml:lang="en">18.30 Spanish language and literature</label>
+            
+
+    	</facet>
+    	    	
+	</facets>
+
+</portalconfig>
